@@ -5,7 +5,7 @@ ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'phase1_strategy'
 EXPECTED={0:1162931,1:5999,2:10371,3:6024,4:188473}
 SENSORS=['vdc1','vdc2','idc1','idc2','irr','pvt']
-PDF_SHA='ed5cadb52009606f2bcc71cbd03e54646411a29cf4c4568dab5ae95dacce9177'
+PDF_SHA='dfb3f253f3e059ece168d9c6edffc10f68a0a21ba8b738a6fb2b2d2c1d962497'
 IGNORED_PARTS={'.git','.venv','.cache','.tools','.review','.uv-cache','.python','__pycache__','.ipynb_checkpoints'}
 def submission_file(path):
     return path.is_file() and not (set(path.relative_to(ROOT).parts)&IGNORED_PARTS) and not path.is_relative_to(ROOT/'data/raw/candidate_evidence')
