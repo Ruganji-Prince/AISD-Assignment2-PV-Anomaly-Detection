@@ -3,7 +3,7 @@
 Ruganji Prince | Carnegie Mellon University Africa
 
 **Course:** 04-652 Artificial Intelligence System Design  
-**Assignment:** Assignment 2: Data Preprocessing ? Phase 1  
+**Assignment:** Assignment 2: Data Preprocessing — Phase 1  
 **Task Type: Multiclass Classification**
 
 This submission contains the raw-data audit and preprocessing/feature-engineering design. Future implementation directories contain structural placeholders. Implementation evaluation is outside this Phase 1 submission and is intended for a later submission after professor feedback.
@@ -26,7 +26,7 @@ Source: [original author PV Fault Dataset](https://github.com/clayton-h-costa/pv
 
 - N = 1,373,798 raw observations/source positions.
 - P = 7 total variables: six predictors plus target Y = f_nv.
-- Continuous predictors: vdc1/vdc2 (V), idc1/idc2 (A), irr (W/m?), pvt (?C).
+- Continuous predictors: vdc1/vdc2 (V), idc1/idc2 (A), irr (W/m²), pvt (°C).
 - Nominal target codes: 0 normal; 1 short circuit; 2 resistive degradation; 3 open circuit; 4 natural building shade.
 - Six measurements load as float64; the target loads as uint8, without ordinal/continuous interpretation.
 - No discrete-count, ordinal, datetime, text or categorical predictor fields are exported.
@@ -39,7 +39,7 @@ The intentionally published [raw CSV](data/raw/pv_fault_dataset.csv) contains ev
 
 All seven columns contain zero conventional missing cells: 0/9,616,586 cells (0%). All 1,373,798 observed rows are complete; none is incomplete. This does not establish uninterrupted monitoring because omitted time intervals cannot be reconstructed.
 
-There are 62 suspicious paired irr=0/pvt=0 positions, in runs of 1/32/29. They remain quality annotations rather than confirmed missingness. Zero exported NaNs provides no empirical diagnosis of MCAR, MAR or MNAR. One irradiance measurement is -0.0381 W/m?; its proposed near-zero clamp is an engineering convention. Negative Celsius readings remain valid.
+There are 62 suspicious paired irr=0/pvt=0 positions, in runs of 1/32/29. They remain quality annotations rather than confirmed missingness. Zero exported NaNs provides no empirical diagnosis of MCAR, MAR or MNAR. One irradiance measurement is -0.0381 W/m²; its proposed near-zero clamp is an engineering convention. Negative Celsius readings remain valid.
 
 Normal accounts for 84.6508% of raw positions; equipment states are rare. [Class counts](phase1_strategy/Class_Distribution.csv) motivate macro-F1, classwise precision/recall and PR measures. Training-derived balanced/unweighted variants are planned; validation/test data will not be rebalanced.
 
@@ -55,19 +55,19 @@ Logistic Regression will use training-fitted StandardScaler; Random Forest will 
 
 ## Planned split and leakage prevention
 
-Sixteen signal-defined operating blocks arise from irr <100 W/m? stretches of at least 3,600 source positions. These positions are not interpreted as seconds, hours or verified days/sessions. Strong neighboring-row dependence makes naive random row splitting inappropriate.
+Sixteen signal-defined operating blocks arise from irr <100 W/m² stretches of at least 3,600 source positions. These positions are not interpreted as seconds, hours or verified days/sessions. Strong neighboring-row dependence makes naive random row splitting inappropriate.
 
 | Partition | Blocks | Interval [start,end) | N | Retained-row % |
 | --- | --- | --- | --- | --- |
-| Training | 1?12 | [0,1006129) | 1,006,129 | 79.2498 |
-| Validation | 13?14 | [1056990,1173967) | 116,977 | 9.2139 |
-| Test | 15?16 | [1227337,1373798) | 146,461 | 11.5363 |
+| Training | 1–12 | [0,1006129) | 1,006,129 | 79.2498 |
+| Validation | 13–14 | [1056990,1173967) | 116,977 | 9.2139 |
+| Test | 15–16 | [1227337,1373798) | 146,461 | 11.5363 |
 
 Two separator regions withhold 104,231 positions; retained N is 1,269,567. The 12/2/2 block percentages are 75/12.5/12.5%, distinct from row percentages.
 
 Validation block 13 [1056990,1089790), N=32,800, is designated for model/settings selection. Block 14 [1140571,1173967), N=33,396, is designated for equipment-threshold selection. Test blocks are isolated from those decisions in the planned architecture. [Split manifest](phase1_strategy/Phase1_Split_Manifest.json) supplies the exact bounds/class supports.
 
-Planned flow: immutable raw data ? schema/partition ? fit preprocessing/model on training only ? transform validation/test ? validation-only settings/threshold decisions ? fixed held-out evaluation.
+Planned flow: immutable raw data → schema/partition → fit preprocessing/model on training only → transform validation/test → validation-only settings/threshold decisions → fixed held-out evaluation.
 
 All learned medians, scaling, distribution bounds, selection/PCA and class weights will use training only. The target, acquisition_index, block IDs, future readings and post-event information are excluded from model predictors. A Pipeline/ColumnTransformer will own learned transformations.
 
@@ -103,4 +103,4 @@ The root contains README/dependencies/ignore rules; data/raw contains the approv
 
 [Phase 1 verification](phase1_strategy/Submission_Verification.json) and [preparation change log](phase1_strategy/Phase1_Change_Log.md) record local checks. The decision log and original rationale contain historical infrastructure statements; [submission status](phase1_strategy/GitHub_Setup.md) explains the current local snapshot state.
 
-This snapshot is prepared locally with independent clean Git history. It has no remote and has not been pushed. Repository destination and Canvas submission require separate approval. The existing URL embedded in the approved PDF is retained unchanged; publication at that address requires a separate repository decision.
+This repository is the professor-facing Phase 1 submission snapshot for Assignment 2. It uses an independent clean Git history and intentionally excludes completed Phase 2 implementation outputs and evaluation results. The repository URL embedded in the approved Phase 1 report resolves to this public Phase 1 snapshot.
