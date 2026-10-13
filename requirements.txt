@@ -1,0 +1,6 @@
+# Phase 1 audit/document inspection; original verified Python 3.14.7 package pins.
+numpy==2.5.4
+pandas==3.0.6
+scipy==1.18.1
+PyMuPDF==1.28.2
+reportlab==5.0.1

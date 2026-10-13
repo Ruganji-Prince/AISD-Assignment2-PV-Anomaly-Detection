@@ -1,0 +1,30 @@
+[
+  {
+    "name": "clayton-h-costa_dataset_amb.mat",
+    "source_url": "https://raw.githubusercontent.com/clayton-h-costa/pv_fault_dataset/e9ed8ad8072dcb3ffc643b0f3604219798708551/dataset_amb.mat",
+    "commit": "e9ed8ad8072dcb3ffc643b0f3604219798708551",
+    "bytes": 9933741,
+    "sha256": "e4619812a5b6c1331332248f052cb09938f9a43ccac8bcc512796c6e906da7e0"
+  },
+  {
+    "name": "clayton-h-costa_dataset_elec.mat",
+    "source_url": "https://raw.githubusercontent.com/clayton-h-costa/pv_fault_dataset/e9ed8ad8072dcb3ffc643b0f3604219798708551/dataset_elec.mat",
+    "commit": "e9ed8ad8072dcb3ffc643b0f3604219798708551",
+    "bytes": 18143444,
+    "sha256": "c04ed3fcc0e338703e87d387b1ce6ef51da1848e77b4d491e62afe08934ce494"
+  },
+  {
+    "name": "clayton-h-costa_README.md",
+    "source_url": "https://raw.githubusercontent.com/clayton-h-costa/pv_fault_dataset/e9ed8ad8072dcb3ffc643b0f3604219798708551/README.md",
+    "commit": "e9ed8ad8072dcb3ffc643b0f3604219798708551",
+    "bytes": 3014,
+    "sha256": "5204f6da3e825f093779e8df4f19f66efb7268a2ecb3a3ae81e298caac9e01ca"
+  },
+  {
+    "name": "clayton-h-costa_LICENSE",
+    "source_url": "https://raw.githubusercontent.com/clayton-h-costa/pv_fault_dataset/e9ed8ad8072dcb3ffc643b0f3604219798708551/LICENSE",
+    "commit": "e9ed8ad8072dcb3ffc643b0f3604219798708551",
+    "bytes": 11357,
+    "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+  }
+]

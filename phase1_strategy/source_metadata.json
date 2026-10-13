@@ -1,0 +1,73 @@
+{
+  "18225566": {
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "files": [
+      {
+        "id": "02cb4585-0b40-4628-b9e8-fd4f013f4e0e",
+        "key": "eaai_public_subset_bundle.zip",
+        "size": 61486,
+        "checksum": "md5:7f30b297aae0fa96f8017d03cbdb9a0d",
+        "links": {
+          "self": "https://zenodo.org/api/records/18225566/files/eaai_public_subset_bundle.zip/content"
+        }
+      }
+    ]
+  },
+  "18326501": {
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "files": [
+      {
+        "id": "6bfd5f9d-c43d-4f1a-99f3-b619aec8a4e9",
+        "key": "A Photovoltaic Performance Dataset for Benchmarking of Failure Detection and Diagnosis Algorithms.pdf",
+        "size": 1145740,
+        "checksum": "md5:530728e2a218bb33dfbc402086cc17f5",
+        "links": {
+          "self": "https://zenodo.org/api/records/18326501/files/A%20Photovoltaic%20Performance%20Dataset%20for%20Benchmarking%20of%20Failure%20Detection%20and%20Diagnosis%20Algorithms.pdf/content"
+        }
+      }
+    ]
+  },
+  "19259504": {
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "files": [
+      {
+        "id": "1fd9f6bc-eb49-424b-8a54-afd8427aa310",
+        "key": "df_ia_raw_acquisition.csv",
+        "size": 35925387,
+        "checksum": "md5:9724cf087bb9a809a1a582483e1d9d8d",
+        "links": {
+          "self": "https://zenodo.org/api/records/19259504/files/df_ia_raw_acquisition.csv/content"
+        }
+      },
+      {
+        "id": "38bae514-7a18-4b46-8e32-19fd75e331fc",
+        "key": "PV_Diagnostic_Final_Labels.csv",
+        "size": 41740480,
+        "checksum": "md5:5314a2dce0365ff04b2aecd48d8ff9aa",
+        "links": {
+          "self": "https://zenodo.org/api/records/19259504/files/PV_Diagnostic_Final_Labels.csv/content"
+        }
+      }
+    ]
+  },
+  "clayton-h-costa": {
+    "commit": "e9ed8ad8072dcb3ffc643b0f3604219798708551",
+    "license": "Apache-2.0"
+  },
+  "EddieOuyang2004": {
+    "commit": "b18c85b377f7e5eb8a9df915148f525c5da59516",
+    "license": "Apache-2.0"
+  },
+  "kaggle": [
+    {
+      "ref": "anikannal/solar-power-generation-data",
+      "licenseName": "Data files \u00a9 Original Authors"
+    }
+  ]
+}

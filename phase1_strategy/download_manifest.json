@@ -1,0 +1,185 @@
+{
+  "access_date": "2026-10-12",
+  "files": [
+    {
+      "url": "https://raw.githubusercontent.com/clayton-h-costa/pv_fault_dataset/master/README.md",
+      "file": "clayton-h-costa_README.md",
+      "bytes": 3014,
+      "sha256": "5204f6da3e825f093779e8df4f19f66efb7268a2ecb3a3ae81e298caac9e01ca",
+      "cached": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/clayton-h-costa/pv_fault_dataset/master/LICENSE",
+      "file": "clayton-h-costa_LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "cached": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/clayton-h-costa/pv_fault_dataset/master/dataset_amb.mat",
+      "file": "clayton-h-costa_dataset_amb.mat",
+      "bytes": 9933741,
+      "sha256": "e4619812a5b6c1331332248f052cb09938f9a43ccac8bcc512796c6e906da7e0",
+      "cached": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/clayton-h-costa/pv_fault_dataset/master/dataset_elec.mat",
+      "file": "clayton-h-costa_dataset_elec.mat",
+      "bytes": 18143444,
+      "sha256": "c04ed3fcc0e338703e87d387b1ce6ef51da1848e77b4d491e62afe08934ce494",
+      "cached": true
+    },
+    {
+      "url": "https://api.github.com/repos/clayton-h-costa/pv_fault_dataset/commits/master",
+      "file": "clayton-h-costa_commit.json",
+      "bytes": 5929,
+      "sha256": "76d3c3182a3fe90ddd639ba76154bb265a508863e1e14f2402763745ae6fa031",
+      "cached": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/EddieOuyang2004/pv_fault_dataset/master/README.md",
+      "file": "EddieOuyang2004_README.md",
+      "bytes": 3783,
+      "sha256": "b9d6d23133a44cd82695826859a45eb80be3fbeae047e3190db9eaeddfac0195",
+      "cached": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/EddieOuyang2004/pv_fault_dataset/master/LICENSE",
+      "file": "EddieOuyang2004_LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "cached": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/EddieOuyang2004/pv_fault_dataset/master/dataset_amb.mat",
+      "file": "EddieOuyang2004_dataset_amb.mat",
+      "bytes": 9933741,
+      "sha256": "e4619812a5b6c1331332248f052cb09938f9a43ccac8bcc512796c6e906da7e0",
+      "cached": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/EddieOuyang2004/pv_fault_dataset/master/dataset_elec.mat",
+      "file": "EddieOuyang2004_dataset_elec.mat",
+      "bytes": 18143444,
+      "sha256": "c04ed3fcc0e338703e87d387b1ce6ef51da1848e77b4d491e62afe08934ce494",
+      "cached": true
+    },
+    {
+      "url": "https://api.github.com/repos/EddieOuyang2004/pv_fault_dataset/commits/master",
+      "file": "EddieOuyang2004_commit.json",
+      "bytes": 98826,
+      "sha256": "0344310f5a715fd274a18115f89734188c92abf46bf5c543291652b807338fad",
+      "cached": true
+    },
+    {
+      "url": "https://zenodo.org/api/records/18225566",
+      "file": "zenodo_18225566.json",
+      "bytes": 7583,
+      "sha256": "51aefa1375aade6e72bc73f9e522cb3835573335c4134c6204c39ca23e93274c",
+      "cached": true
+    },
+    {
+      "url": "https://zenodo.org/api/records/18326501",
+      "file": "zenodo_18326501.json",
+      "bytes": 6200,
+      "sha256": "85fddd801ed2692f8999ad45649edd87c8169ad0ce0a3e4719e6b892815c6177",
+      "cached": true
+    },
+    {
+      "url": "https://zenodo.org/api/records/19259504",
+      "file": "zenodo_19259504.json",
+      "bytes": 5573,
+      "sha256": "b2080c36fc1b933c38bb7c1f3e0eb393a65fcad5a70a6592244fd868ac0f8d74",
+      "cached": true
+    },
+    {
+      "url": "https://zenodo.org/records/18225566/files/eaai_public_subset_bundle.zip?download=1",
+      "file": "maintenance_bundle.zip",
+      "bytes": 61486,
+      "sha256": "086da5bb222e7e1e431f491671d54732db26c5cb536a3e724c28a00e1610cd4a",
+      "cached": true
+    },
+    {
+      "url": "https://zenodo.org/records/18326501/files/A%20Photovoltaic%20Performance%20Dataset%20for%20Benchmarking%20of%20Failure%20Detection%20and%20Diagnosis%20Algorithms.pdf?download=1",
+      "file": "benchmark_description.pdf",
+      "bytes": 1145740,
+      "sha256": "696186d83ab71c12fbeb98f0d7c964faa7c9a3b9e55f87b7f8d93d9842eca777",
+      "cached": true
+    },
+    {
+      "url": "https://oedi-data-lake.s3.amazonaws.com/pvdaq/csv/systems_20250729.csv",
+      "file": "pvdaq_systems.csv",
+      "bytes": 383559,
+      "sha256": "54ddbd1ef044a7eb822ddf8bf3e53f319606598cc37b20d05c96b4631e03d65c",
+      "cached": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NatLabRockies/pvdaq_access/main/README.md",
+      "file": "pvdaq_access_README.md",
+      "bytes": 3568,
+      "sha256": "00bf2aad505031eb6cbe5097b2b8e98212ba75d3d26f5b57d1f501b24e09d9ca",
+      "cached": true
+    },
+    {
+      "url": "https://www.mdpi.com/1424-8220/20/17/4688/pdf",
+      "file": "lazzaretti_paper.pdf",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.kaggle.com/api/v1/datasets/download/anikannal/solar-power-generation-data",
+      "file": "kaggle_solar.zip",
+      "bytes": 1988756,
+      "sha256": "fecbfdd22aca74bd5e89c56e7ef5de4a06a02e00bc5125e6fd64ff3855690c32",
+      "cached": true
+    },
+    {
+      "url": "https://www.kaggle.com/api/v1/datasets/list?search=solar-power-generation-data",
+      "file": "kaggle_metadata.json",
+      "bytes": 70301,
+      "sha256": "e512e2b2e0e035ccb8b9d0fae0ed61a2adbd10ffd11b98e7ab1e9d231da8bfe2",
+      "cached": true
+    },
+    {
+      "url": "https://zenodo.org/api/records/19259504/files/df_ia_raw_acquisition.csv/content",
+      "file": "df_ia_raw_acquisition.csv",
+      "bytes": 35925387,
+      "sha256": "62a60b1571ad70723728d83a991815092b5d48b0eff6edee584aaf962b328693",
+      "cached": true
+    },
+    {
+      "url": "https://zenodo.org/api/records/19259504/files/PV_Diagnostic_Final_Labels.csv/content",
+      "file": "PV_Diagnostic_Final_Labels.csv",
+      "bytes": 41740480,
+      "sha256": "2546484d452360a107dae0bce53c28ab1f4d84f63fffa7a06a2c7990bf07bd9d",
+      "cached": true
+    },
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7506914/fullTextXML",
+      "file": "lazzaretti_paper.xml",
+      "bytes": 232193,
+      "sha256": "4ab48316093d67577872a5ab854831b9a64226dd027e6a8769cfe727d7ddb686",
+      "cached": true
+    },
+    {
+      "url": "https://oedi-data-lake.s3.amazonaws.com/?list-type=2&prefix=pvdaq/csv/pvdaq_system_10/&max-keys=5",
+      "file": "pvdaq_listing.xml",
+      "bytes": 268,
+      "sha256": "6f186c6898c7f4f8f79ac3b2824f6ef501e5e552301d086ace0d780a593d55df",
+      "cached": true
+    },
+    {
+      "url": "https://oedi-data-lake.s3.amazonaws.com/?list-type=2&prefix=pvdaq/csv/pvdata/system_id=10/year=2000/month=4/&max-keys=5",
+      "resolved_url": "https://oedi-data-lake.s3.amazonaws.com/",
+      "file": "pvdaq_system10_listing.xml",
+      "bytes": 570,
+      "sha256": "930fed1ce3da822c35b23f8de641f6c727a25723ab5853e1f405b1d6fd9885b6"
+    },
+    {
+      "url": "https://oedi-data-lake.s3.amazonaws.com/pvdaq/csv/pvdata/system_id=10/year=2000/month=4/day=23/system_10__date_2000_04_23.csv",
+      "file": "pvdaq_system10_sample.csv",
+      "bytes": 390,
+      "sha256": "6f0cdc7880e9910bbc7e8997a804bbccc381b2ab71049a110eaead1ff42d1732",
+      "cached": true
+    }
+  ]
+}

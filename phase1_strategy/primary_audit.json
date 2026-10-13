@@ -1,0 +1,1120 @@
+{
+  "audit_date": "2026-10-12",
+  "python": "3.14.7",
+  "packages": {
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "pymupdf": "1.28.2",
+    "reportlab": "5.0.1"
+  },
+  "source_commit": "e9ed8ad8072dcb3ffc643b0f3604219798708551",
+  "files": [
+    {
+      "name": "clayton-h-costa_dataset_amb.mat",
+      "bytes": 9933741,
+      "sha256": "e4619812a5b6c1331332248f052cb09938f9a43ccac8bcc512796c6e906da7e0",
+      "variables": [
+        [
+          "f_nv",
+          [
+            1373798,
+            1
+          ],
+          "double"
+        ],
+        [
+          "irr",
+          [
+            1,
+            1373798
+          ],
+          "double"
+        ],
+        [
+          "pvt",
+          [
+            1,
+            1373798
+          ],
+          "double"
+        ]
+      ]
+    },
+    {
+      "name": "clayton-h-costa_dataset_elec.mat",
+      "bytes": 18143444,
+      "sha256": "c04ed3fcc0e338703e87d387b1ce6ef51da1848e77b4d491e62afe08934ce494",
+      "variables": [
+        [
+          "idc1",
+          [
+            1,
+            1373798
+          ],
+          "double"
+        ],
+        [
+          "idc2",
+          [
+            1,
+            1373798
+          ],
+          "double"
+        ],
+        [
+          "vdc1",
+          [
+            1,
+            1373798
+          ],
+          "double"
+        ],
+        [
+          "vdc2",
+          [
+            1,
+            1373798
+          ],
+          "double"
+        ]
+      ]
+    }
+  ],
+  "raw_N": 1373798,
+  "raw_total_columns": 7,
+  "raw_predictors": 6,
+  "raw_cells": 9616586,
+  "raw_missing_cells": 0,
+  "raw_missing_pct": 0.0,
+  "raw_complete_rows": 1373798,
+  "raw_incomplete_rows": 0,
+  "raw_duplicate_rows": 0,
+  "raw_infinite_cells": 0,
+  "missing_runs_by_sensor": {
+    "vdc1": [],
+    "vdc2": [],
+    "idc1": [],
+    "idc2": [],
+    "irr": [],
+    "pvt": []
+  },
+  "class_counts": {
+    "0": 1162931,
+    "1": 5999,
+    "2": 10371,
+    "3": 6024,
+    "4": 188473
+  },
+  "normal_to_smallest_class_ratio": 193.85414235705952,
+  "paired_zero_rows": 62,
+  "paired_zero_runs": [
+    {
+      "start": 209486,
+      "end_exclusive": 209487,
+      "length": 1
+    },
+    {
+      "start": 317565,
+      "end_exclusive": 317597,
+      "length": 32
+    },
+    {
+      "start": 1203727,
+      "end_exclusive": 1203756,
+      "length": 29
+    }
+  ],
+  "negative_irradiance_rows": [
+    1916
+  ],
+  "inventory": [
+    {
+      "name": "vdc1",
+      "meaning": "String 1 DC RMS voltage",
+      "unit": "V",
+      "mat_header_class": "double",
+      "loaded_dtype": "float64",
+      "analytical_category": "Continuous",
+      "role": "predictor",
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "unique": 189504,
+      "potential_leakage": "No target-derived content documented; shared conditions and source alignment remain risks.",
+      "treatment": "Retain; quality flags; training-only median fallback if needed; scaler depends on model.",
+      "justification": "Measurements support physical interpretation and sensor ablation; no automatic correlation deletion.",
+      "raw_min": 0.3799,
+      "raw_max": 363.974,
+      "raw_mean": 135.11827315740743,
+      "raw_median": 37.77625,
+      "raw_skewness": 0.08518927329754285,
+      "negative_count": 0,
+      "zero_count": 0
+    },
+    {
+      "name": "vdc2",
+      "meaning": "String 2 DC RMS voltage",
+      "unit": "V",
+      "mat_header_class": "double",
+      "loaded_dtype": "float64",
+      "analytical_category": "Continuous",
+      "role": "predictor",
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "unique": 217090,
+      "potential_leakage": "No target-derived content documented; shared conditions and source alignment remain risks.",
+      "treatment": "Retain; quality flags; training-only median fallback if needed; scaler depends on model.",
+      "justification": "Measurements support physical interpretation and sensor ablation; no automatic correlation deletion.",
+      "raw_min": 0.3164,
+      "raw_max": 368.749,
+      "raw_mean": 134.71989706063047,
+      "raw_median": 39.837450000000004,
+      "raw_skewness": 0.1157584297295513,
+      "negative_count": 0,
+      "zero_count": 0
+    },
+    {
+      "name": "idc1",
+      "meaning": "String 1 DC RMS current",
+      "unit": "A",
+      "mat_header_class": "double",
+      "loaded_dtype": "float64",
+      "analytical_category": "Continuous",
+      "role": "predictor",
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "unique": 92082,
+      "potential_leakage": "No target-derived content documented; shared conditions and source alignment remain risks.",
+      "treatment": "Retain; quality flags; training-only median fallback if needed; scaler depends on model.",
+      "justification": "Measurements support physical interpretation and sensor ablation; no automatic correlation deletion.",
+      "raw_min": 0.0418,
+      "raw_max": 9.6549,
+      "raw_mean": 2.276919376502222,
+      "raw_median": 0.1136,
+      "raw_skewness": 1.0109221596092202,
+      "negative_count": 0,
+      "zero_count": 0
+    },
+    {
+      "name": "idc2",
+      "meaning": "String 2 DC RMS current",
+      "unit": "A",
+      "mat_header_class": "double",
+      "loaded_dtype": "float64",
+      "analytical_category": "Continuous",
+      "role": "predictor",
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "unique": 89853,
+      "potential_leakage": "No target-derived content documented; shared conditions and source alignment remain risks.",
+      "treatment": "Retain; quality flags; training-only median fallback if needed; scaler depends on model.",
+      "justification": "Measurements support physical interpretation and sensor ablation; no automatic correlation deletion.",
+      "raw_min": 0.0046,
+      "raw_max": 9.4987,
+      "raw_mean": 2.000343579114251,
+      "raw_median": 0.0441,
+      "raw_skewness": 1.1438033841086344,
+      "negative_count": 0,
+      "zero_count": 0
+    },
+    {
+      "name": "irr",
+      "meaning": "Reported one-second average plane-of-array irradiance",
+      "unit": "W/m^2",
+      "mat_header_class": "double",
+      "loaded_dtype": "float64",
+      "analytical_category": "Continuous",
+      "role": "predictor",
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "unique": 514895,
+      "potential_leakage": "No target-derived content documented; shared conditions and source alignment remain risks.",
+      "treatment": "Retain; proposed flagged clamp for -1<=irr<0; suspected joint-zero annotation; training-only fallback/scaling if needed.",
+      "justification": "One -0.0381 reading; zero generation can be valid; irradiance helps distinguish environment from equipment change.",
+      "raw_min": -0.0381,
+      "raw_max": 1085.92,
+      "raw_mean": 257.61107193903325,
+      "raw_median": 1.7364,
+      "raw_skewness": 0.8897218783912068,
+      "negative_count": 1,
+      "zero_count": 62
+    },
+    {
+      "name": "pvt",
+      "meaning": "Reported one-second average of aggregate module temperature",
+      "unit": "deg C",
+      "mat_header_class": "double",
+      "loaded_dtype": "float64",
+      "analytical_category": "Continuous",
+      "role": "predictor",
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "unique": 384420,
+      "potential_leakage": "No target-derived content documented; shared conditions and source alignment remain risks.",
+      "treatment": "Retain negative temperatures; annotate suspected joint-zero events; no raw log; training-only fallback/scaling if needed.",
+      "justification": "Subzero readings are plausible; aggregate of four source probes is one exported feature, not one physical sensing point.",
+      "raw_min": -1.6543,
+      "raw_max": 60.8215,
+      "raw_mean": 22.772770415228443,
+      "raw_median": 18.490450000000003,
+      "raw_skewness": 0.5942970954112802,
+      "negative_count": 24172,
+      "zero_count": 62
+    },
+    {
+      "name": "f_nv",
+      "meaning": "Experimental operating-state annotation",
+      "unit": "unitless",
+      "mat_header_class": "double",
+      "loaded_dtype": "uint8",
+      "analytical_category": "Nominal categorical",
+      "role": "target",
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "unique": 5,
+      "potential_leakage": "Target itself: exclude from all predictors.",
+      "treatment": "Preserve five nominal codes; never scale, impute or use as a predictor.",
+      "justification": "Codes identify unordered experimental operating states; mapping is not severity."
+    }
+  ],
+  "proposed_split": {
+    "training": {
+      "start": 0,
+      "end_exclusive": 1006129,
+      "N": 1006129,
+      "labels": {
+        "0": 844805,
+        "1": 1226,
+        "2": 5695,
+        "3": 1204,
+        "4": 153199
+      }
+    },
+    "validation": {
+      "start": 1056990,
+      "end_exclusive": 1173967,
+      "N": 116977,
+      "labels": {
+        "0": 90107,
+        "1": 2412,
+        "2": 2406,
+        "3": 2410,
+        "4": 19642
+      }
+    },
+    "test": {
+      "start": 1227337,
+      "end_exclusive": 1373798,
+      "N": 146461,
+      "labels": {
+        "0": 124512,
+        "1": 2361,
+        "2": 2270,
+        "3": 2410,
+        "4": 14908
+      }
+    }
+  },
+  "group_rule": {
+    "irradiance_below": 100,
+    "min_consecutive_positions": 3600,
+    "allocation_blocks": [
+      12,
+      2,
+      2
+    ]
+  },
+  "low_light_separators": [
+    {
+      "start": 0,
+      "end_exclusive": 30682,
+      "length": 30682
+    },
+    {
+      "start": 62131,
+      "end_exclusive": 113399,
+      "length": 51268
+    },
+    {
+      "start": 144846,
+      "end_exclusive": 203253,
+      "length": 58407
+    },
+    {
+      "start": 231256,
+      "end_exclusive": 286293,
+      "length": 55037
+    },
+    {
+      "start": 317766,
+      "end_exclusive": 373095,
+      "length": 55329
+    },
+    {
+      "start": 404170,
+      "end_exclusive": 459544,
+      "length": 55374
+    },
+    {
+      "start": 490952,
+      "end_exclusive": 542446,
+      "length": 51494
+    },
+    {
+      "start": 579054,
+      "end_exclusive": 628739,
+      "length": 49685
+    },
+    {
+      "start": 663118,
+      "end_exclusive": 716322,
+      "length": 53204
+    },
+    {
+      "start": 753065,
+      "end_exclusive": 801046,
+      "length": 47981
+    },
+    {
+      "start": 839157,
+      "end_exclusive": 887670,
+      "length": 48513
+    },
+    {
+      "start": 925029,
+      "end_exclusive": 972858,
+      "length": 47829
+    },
+    {
+      "start": 1006129,
+      "end_exclusive": 1056990,
+      "length": 50861
+    },
+    {
+      "start": 1089790,
+      "end_exclusive": 1140571,
+      "length": 50781
+    },
+    {
+      "start": 1173967,
+      "end_exclusive": 1227337,
+      "length": 53370
+    },
+    {
+      "start": 1260143,
+      "end_exclusive": 1313915,
+      "length": 53772
+    },
+    {
+      "start": 1346470,
+      "end_exclusive": 1373798,
+      "length": 27328
+    }
+  ],
+  "operating_blocks": [
+    {
+      "block": 1,
+      "start": 30682,
+      "end_exclusive": 62131,
+      "N": 31449
+    },
+    {
+      "block": 2,
+      "start": 113399,
+      "end_exclusive": 144846,
+      "N": 31447
+    },
+    {
+      "block": 3,
+      "start": 203253,
+      "end_exclusive": 231256,
+      "N": 28003
+    },
+    {
+      "block": 4,
+      "start": 286293,
+      "end_exclusive": 317766,
+      "N": 31473
+    },
+    {
+      "block": 5,
+      "start": 373095,
+      "end_exclusive": 404170,
+      "N": 31075
+    },
+    {
+      "block": 6,
+      "start": 459544,
+      "end_exclusive": 490952,
+      "N": 31408
+    },
+    {
+      "block": 7,
+      "start": 542446,
+      "end_exclusive": 579054,
+      "N": 36608
+    },
+    {
+      "block": 8,
+      "start": 628739,
+      "end_exclusive": 663118,
+      "N": 34379
+    },
+    {
+      "block": 9,
+      "start": 716322,
+      "end_exclusive": 753065,
+      "N": 36743
+    },
+    {
+      "block": 10,
+      "start": 801046,
+      "end_exclusive": 839157,
+      "N": 38111
+    },
+    {
+      "block": 11,
+      "start": 887670,
+      "end_exclusive": 925029,
+      "N": 37359
+    },
+    {
+      "block": 12,
+      "start": 972858,
+      "end_exclusive": 1006129,
+      "N": 33271
+    },
+    {
+      "block": 13,
+      "start": 1056990,
+      "end_exclusive": 1089790,
+      "N": 32800
+    },
+    {
+      "block": 14,
+      "start": 1140571,
+      "end_exclusive": 1173967,
+      "N": 33396
+    },
+    {
+      "block": 15,
+      "start": 1227337,
+      "end_exclusive": 1260143,
+      "N": 32806
+    },
+    {
+      "block": 16,
+      "start": 1313915,
+      "end_exclusive": 1346470,
+      "N": 32555
+    }
+  ],
+  "excluded_separator_rows": 104231,
+  "excluded_separator_intervals": [
+    {
+      "start": 1006129,
+      "end_exclusive": 1056990,
+      "length": 50861
+    },
+    {
+      "start": 1173967,
+      "end_exclusive": 1227337,
+      "length": 53370
+    }
+  ],
+  "validation_subblocks": {
+    "model_selection": {
+      "start": 1056990,
+      "end_exclusive": 1089790,
+      "N": 32800,
+      "labels": {
+        "0": 18504,
+        "1": 1232,
+        "2": 1222,
+        "3": 1206,
+        "4": 10636
+      }
+    },
+    "alert_threshold": {
+      "start": 1140571,
+      "end_exclusive": 1173967,
+      "N": 33396,
+      "labels": {
+        "0": 21147,
+        "1": 1180,
+        "2": 1184,
+        "3": 1204,
+        "4": 8681
+      }
+    }
+  },
+  "retained_row_split_pct": {
+    "training": 79.24977571093137,
+    "validation": 9.213928843456076,
+    "test": 11.53629544561256
+  },
+  "equipment_label_runs_crossing_base_boundaries": [],
+  "equipment_label_run_count": 57,
+  "training_statistics": [
+    {
+      "sensor": "vdc1",
+      "mean": 137.10837407916878,
+      "median": 51.2504,
+      "std": 136.99575732204144,
+      "skewness": 0.06828681368211051,
+      "q1": 1.0184,
+      "q3": 274.472,
+      "iqr_lower": -409.162,
+      "iqr_upper": 684.6524,
+      "iqr_flagged_count": 0,
+      "iqr_flagged_pct": 0.0,
+      "z_gt_3_count": 0,
+      "flags_by_label": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "sensor": "vdc2",
+      "mean": 136.92353648528172,
+      "median": 53.1038,
+      "std": 137.28317146177127,
+      "skewness": 0.09091961632266786,
+      "q1": 0.9824,
+      "q3": 272.378,
+      "iqr_lower": -406.111,
+      "iqr_upper": 679.4713999999999,
+      "iqr_flagged_count": 0,
+      "iqr_flagged_pct": 0.0,
+      "z_gt_3_count": 0,
+      "flags_by_label": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "sensor": "idc1",
+      "mean": 2.248128546538267,
+      "median": 0.1105,
+      "std": 3.1252498165259897,
+      "skewness": 1.004557993529788,
+      "q1": 0.0648,
+      "q3": 4.967,
+      "iqr_lower": -7.288499999999999,
+      "iqr_upper": 12.3203,
+      "iqr_flagged_count": 0,
+      "iqr_flagged_pct": 0.0,
+      "z_gt_3_count": 0,
+      "flags_by_label": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "sensor": "idc2",
+      "mean": 1.9763158404141024,
+      "median": 0.0432,
+      "std": 2.9887473808382725,
+      "skewness": 1.145042727880105,
+      "q1": 0.0088,
+      "q3": 4.0011,
+      "iqr_lower": -5.97965,
+      "iqr_upper": 9.989550000000001,
+      "iqr_flagged_count": 0,
+      "iqr_flagged_pct": 0.0,
+      "z_gt_3_count": 0,
+      "flags_by_label": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "sensor": "irr",
+      "mean": 257.9284812663188,
+      "median": 1.8733,
+      "std": 349.0183350638065,
+      "skewness": 0.8744624607268767,
+      "q1": 1.2889,
+      "q3": 586.381,
+      "iqr_lower": -876.34925,
+      "iqr_upper": 1464.01915,
+      "iqr_flagged_count": 0,
+      "iqr_flagged_pct": 0.0,
+      "z_gt_3_count": 0,
+      "flags_by_label": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "sensor": "pvt",
+      "mean": 23.11647218477949,
+      "median": 19.4501,
+      "std": 14.349387057135386,
+      "skewness": 0.5157227690526774,
+      "q1": 12.5516,
+      "q3": 34.0299,
+      "iqr_lower": -19.66585,
+      "iqr_upper": 66.24735,
+      "iqr_flagged_count": 0,
+      "iqr_flagged_pct": 0.0,
+      "z_gt_3_count": 0,
+      "flags_by_label": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    }
+  ],
+  "training_correlated_pairs": [
+    {
+      "a": "vdc1",
+      "b": "vdc2",
+      "pearson_r": 0.9891027602285769
+    },
+    {
+      "a": "idc1",
+      "b": "idc2",
+      "pearson_r": 0.952832711587032
+    },
+    {
+      "a": "idc1",
+      "b": "irr",
+      "pearson_r": 0.9794723761665458
+    },
+    {
+      "a": "idc1",
+      "b": "pvt",
+      "pearson_r": 0.8622889138042289
+    },
+    {
+      "a": "idc2",
+      "b": "irr",
+      "pearson_r": 0.9559821219702014
+    }
+  ],
+  "training_vif": {
+    "vdc1": 52.1682018204496,
+    "vdc2": 56.34566192094718,
+    "idc1": 31.49561042933859,
+    "idc2": 15.780846723576708,
+    "irr": 39.292650631727625,
+    "pvt": 4.0697977182273934
+  },
+  "training_lag_index_correlations": {
+    "vdc1": {
+      "1": 0.9997958396180863,
+      "10": 0.9995400846759027,
+      "100": 0.9976439587271391,
+      "600": 0.9811503436888545,
+      "3600": 0.8492817777336689
+    },
+    "vdc2": {
+      "1": 0.9997571607879453,
+      "10": 0.9994754631428302,
+      "100": 0.997296128773217,
+      "600": 0.979999431396551,
+      "3600": 0.8487993188044812
+    },
+    "idc1": {
+      "1": 0.999964232591415,
+      "10": 0.999630987086355,
+      "100": 0.9964804041103457,
+      "600": 0.980418976041078,
+      "3600": 0.8765200810336622
+    },
+    "idc2": {
+      "1": 0.9999104489598235,
+      "10": 0.9991772824261304,
+      "100": 0.9931442213929023,
+      "600": 0.9618386449715862,
+      "3600": 0.8585552628699649
+    },
+    "irr": {
+      "1": 0.9999951115369475,
+      "10": 0.9998296070108269,
+      "100": 0.997752414221964,
+      "600": 0.986504170342512,
+      "3600": 0.8937453039914275
+    },
+    "pvt": {
+      "1": 0.999996390219774,
+      "10": 0.9999652728891549,
+      "100": 0.9993392049235845,
+      "600": 0.9917311840003931,
+      "3600": 0.9275130397782818
+    }
+  },
+  "training_point_biserial_ovr_effects": {
+    "vdc1": {
+      "0": -0.4652812229640521,
+      "1": 0.03216195857788984,
+      "2": 0.06541812739625588,
+      "3": -0.001037655601718172,
+      "4": 0.45849726190241563
+    },
+    "vdc2": {
+      "0": -0.47219441914645527,
+      "1": 0.017310004187337212,
+      "2": 0.05602489463208943,
+      "3": -0.00023674979340135478,
+      "4": 0.46888403404512924
+    },
+    "idc1": {
+      "0": -0.2717419002204331,
+      "1": 0.07661072191040441,
+      "2": 0.15684267770639224,
+      "3": 0.02592170961804769,
+      "4": 0.2348394183332974
+    },
+    "idc2": {
+      "0": -0.14569180156004433,
+      "1": 0.07920286569331297,
+      "2": 0.15502513179910332,
+      "3": 0.029335135788070465,
+      "4": 0.10590685938891739
+    },
+    "irr": {
+      "0": -0.3272802161565798,
+      "1": 0.07024302254252592,
+      "2": 0.14461553586854337,
+      "3": 0.07083020111291204,
+      "4": 0.2904094539630293
+    },
+    "pvt": {
+      "0": -0.2703922283664349,
+      "1": 0.04967829089249281,
+      "2": 0.14348486514283348,
+      "3": 0.05359841620370404,
+      "4": 0.2362022314555112
+    }
+  },
+  "acquisition_index_profiles": [
+    {
+      "start": 0,
+      "end_exclusive": 100000,
+      "N": 100000,
+      "missing_cells": 0,
+      "labels": {
+        "0": 84799,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 15201
+      },
+      "active_normal_N": 14132,
+      "active_normal_medians": {
+        "vdc1": 285.086,
+        "vdc2": 284.38800000000003,
+        "idc1": 7.43095,
+        "idc2": 7.34535,
+        "irr": 842.0184999999999,
+        "pvt": 30.6667
+      }
+    },
+    {
+      "start": 100000,
+      "end_exclusive": 200000,
+      "N": 100000,
+      "missing_cells": 0,
+      "labels": {
+        "0": 84667,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 15333
+      },
+      "active_normal_N": 14424,
+      "active_normal_medians": {
+        "vdc1": 278.204,
+        "vdc2": 276.803,
+        "idc1": 7.40515,
+        "idc2": 7.32705,
+        "irr": 842.3875,
+        "pvt": 37.61265
+      }
+    },
+    {
+      "start": 200000,
+      "end_exclusive": 300000,
+      "N": 100000,
+      "missing_cells": 0,
+      "labels": {
+        "0": 79672,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 20328
+      },
+      "active_normal_N": 18889,
+      "active_normal_medians": {
+        "vdc1": 275.904,
+        "vdc2": 274.496,
+        "idc1": 7.3549,
+        "idc2": 7.2639,
+        "irr": 844.34,
+        "pvt": 39.1637
+      }
+    },
+    {
+      "start": 300000,
+      "end_exclusive": 400000,
+      "N": 100000,
+      "missing_cells": 0,
+      "labels": {
+        "0": 83995,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 16005
+      },
+      "active_normal_N": 29155,
+      "active_normal_medians": {
+        "vdc1": 279.343,
+        "vdc2": 277.521,
+        "idc1": 7.4543,
+        "idc2": 7.3122,
+        "irr": 835.907,
+        "pvt": 36.8515
+      }
+    },
+    {
+      "start": 400000,
+      "end_exclusive": 500000,
+      "N": 100000,
+      "missing_cells": 0,
+      "labels": {
+        "0": 84581,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 15419
+      },
+      "active_normal_N": 20487,
+      "active_normal_medians": {
+        "vdc1": 270.807,
+        "vdc2": 269.734,
+        "idc1": 7.1224,
+        "idc2": 6.9454,
+        "irr": 819.496,
+        "pvt": 44.4683
+      }
+    },
+    {
+      "start": 500000,
+      "end_exclusive": 600000,
+      "N": 100000,
+      "missing_cells": 0,
+      "labels": {
+        "0": 86413,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 13587
+      },
+      "active_normal_N": 21921,
+      "active_normal_medians": {
+        "vdc1": 267.398,
+        "vdc2": 266.654,
+        "idc1": 7.1962,
+        "idc2": 6.9773,
+        "irr": 820.483,
+        "pvt": 47.0936
+      }
+    },
+    {
+      "start": 600000,
+      "end_exclusive": 700000,
+      "N": 100000,
+      "missing_cells": 0,
+      "labels": {
+        "0": 88416,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 11584
+      },
+      "active_normal_N": 21562,
+      "active_normal_medians": {
+        "vdc1": 266.85249999999996,
+        "vdc2": 266.459,
+        "idc1": 6.82455,
+        "idc2": 6.56165,
+        "irr": 781.6225,
+        "pvt": 48.03295
+      }
+    },
+    {
+      "start": 700000,
+      "end_exclusive": 800000,
+      "N": 100000,
+      "missing_cells": 0,
+      "labels": {
+        "0": 87833,
+        "1": 0,
+        "2": 1779,
+        "3": 4,
+        "4": 10384
+      },
+      "active_normal_N": 23975,
+      "active_normal_medians": {
+        "vdc1": 255.49,
+        "vdc2": 259.752,
+        "idc1": 8.0571,
+        "idc2": 7.4702,
+        "irr": 807.95,
+        "pvt": 51.8004
+      }
+    },
+    {
+      "start": 800000,
+      "end_exclusive": 900000,
+      "N": 100000,
+      "missing_cells": 0,
+      "labels": {
+        "0": 80204,
+        "1": 0,
+        "2": 2695,
+        "3": 1,
+        "4": 17100
+      },
+      "active_normal_N": 30380,
+      "active_normal_medians": {
+        "vdc1": 262.937,
+        "vdc2": 260.2735,
+        "idc1": 7.275600000000001,
+        "idc2": 7.01765,
+        "irr": 805.1965,
+        "pvt": 46.0817
+      }
+    },
+    {
+      "start": 900000,
+      "end_exclusive": 1000000,
+      "N": 100000,
+      "missing_cells": 0,
+      "labels": {
+        "0": 83716,
+        "1": 1226,
+        "2": 1221,
+        "3": 1199,
+        "4": 12638
+      },
+      "active_normal_N": 34320,
+      "active_normal_medians": {
+        "vdc1": 264.27250000000004,
+        "vdc2": 268.3555,
+        "idc1": 8.6047,
+        "idc2": 8.2831,
+        "irr": 906.31,
+        "pvt": 42.3915
+      }
+    },
+    {
+      "start": 1000000,
+      "end_exclusive": 1100000,
+      "N": 100000,
+      "missing_cells": 0,
+      "labels": {
+        "0": 79392,
+        "1": 1232,
+        "2": 1222,
+        "3": 1206,
+        "4": 16948
+      },
+      "active_normal_N": 19013,
+      "active_normal_medians": {
+        "vdc1": 263.789,
+        "vdc2": 265.696,
+        "idc1": 7.7889,
+        "idc2": 7.4171,
+        "irr": 850.355,
+        "pvt": 45.7026
+      }
+    },
+    {
+      "start": 1100000,
+      "end_exclusive": 1200000,
+      "N": 100000,
+      "missing_cells": 0,
+      "labels": {
+        "0": 87394,
+        "1": 1180,
+        "2": 1184,
+        "3": 1204,
+        "4": 9038
+      },
+      "active_normal_N": 20098,
+      "active_normal_medians": {
+        "vdc1": 271.434,
+        "vdc2": 276.719,
+        "idc1": 7.4944500000000005,
+        "idc2": 7.11425,
+        "irr": 819.8815,
+        "pvt": 37.4188
+      }
+    },
+    {
+      "start": 1200000,
+      "end_exclusive": 1300000,
+      "N": 100000,
+      "missing_cells": 0,
+      "labels": {
+        "0": 88442,
+        "1": 1179,
+        "2": 1093,
+        "3": 1205,
+        "4": 8081
+      },
+      "active_normal_N": 20064,
+      "active_normal_medians": {
+        "vdc1": 266.09950000000003,
+        "vdc2": 272.431,
+        "idc1": 7.406000000000001,
+        "idc2": 7.08525,
+        "irr": 804.6285,
+        "pvt": 43.9273
+      }
+    },
+    {
+      "start": 1300000,
+      "end_exclusive": 1373798,
+      "N": 73798,
+      "missing_cells": 0,
+      "labels": {
+        "0": 63407,
+        "1": 1182,
+        "2": 1177,
+        "3": 1205,
+        "4": 6827
+      },
+      "active_normal_N": 20833,
+      "active_normal_medians": {
+        "vdc1": 267.509,
+        "vdc2": 271.23,
+        "idc1": 7.4828,
+        "idc2": 7.2112,
+        "irr": 798.434,
+        "pvt": 40.7822
+      }
+    }
+  ],
+  "temporal_status": "No timestamp/day/session metadata. Operating blocks and separator buffers are signal-based index proxies, not recovered time."
+}

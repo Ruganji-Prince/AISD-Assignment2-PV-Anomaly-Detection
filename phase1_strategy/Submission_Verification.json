@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "official_report_sha256": "ed5cadb52009606f2bcc71cbd03e54646411a29cf4c4568dab5ae95dacce9177",
+  "official_report_pages": 10,
+  "raw_N": 1373798,
+  "raw_total_P": 7,
+  "predictors": 6,
+  "class_counts": {
+    "0": 1162931,
+    "1": 5999,
+    "2": 10371,
+    "3": 6024,
+    "4": 188473
+  },
+  "raw_missing_cells": 0,
+  "paired_zero_positions": 62,
+  "small_negative_irradiance_positions": 1,
+  "negative_temperature_positions": 24172,
+  "split_N": [
+    1006129,
+    116977,
+    146461
+  ],
+  "separator_positions": 104231,
+  "blocks": [
+    12,
+    2,
+    2
+  ],
+  "phase2_results_and_implementation_absent": true,
+  "src_docstring_placeholders_only": true,
+  "secret_pattern_matches": [],
+  "absolute_Windows_paths": [],
+  "broken_relative_links": [],
+  "intentional_large_files": [
+    {
+      "file": "data/raw/pv_fault_dataset.csv",
+      "bytes": 64143812
+    }
+  ],
+  "approved_PDF_layout_observations": [
+    {
+      "page": 7,
+      "note": "Existing approved content extends past right page boundary; PDF retained unchanged."
+    }
+  ],
+  "no_training_or_scientific_report_regeneration": true,
+  "GitHub_push": "not performed"
+}

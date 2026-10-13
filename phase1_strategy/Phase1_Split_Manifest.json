@@ -1,0 +1,210 @@
+{
+  "source_commit": "e9ed8ad8072dcb3ffc643b0f3604219798708551",
+  "raw_N": 1373798,
+  "raw_total_columns": 7,
+  "raw_predictors": 6,
+  "group_rule": {
+    "irradiance_below": 100,
+    "min_consecutive_positions": 3600,
+    "allocation_blocks": [
+      12,
+      2,
+      2
+    ]
+  },
+  "operating_blocks": [
+    {
+      "block": 1,
+      "start": 30682,
+      "end_exclusive": 62131,
+      "N": 31449
+    },
+    {
+      "block": 2,
+      "start": 113399,
+      "end_exclusive": 144846,
+      "N": 31447
+    },
+    {
+      "block": 3,
+      "start": 203253,
+      "end_exclusive": 231256,
+      "N": 28003
+    },
+    {
+      "block": 4,
+      "start": 286293,
+      "end_exclusive": 317766,
+      "N": 31473
+    },
+    {
+      "block": 5,
+      "start": 373095,
+      "end_exclusive": 404170,
+      "N": 31075
+    },
+    {
+      "block": 6,
+      "start": 459544,
+      "end_exclusive": 490952,
+      "N": 31408
+    },
+    {
+      "block": 7,
+      "start": 542446,
+      "end_exclusive": 579054,
+      "N": 36608
+    },
+    {
+      "block": 8,
+      "start": 628739,
+      "end_exclusive": 663118,
+      "N": 34379
+    },
+    {
+      "block": 9,
+      "start": 716322,
+      "end_exclusive": 753065,
+      "N": 36743
+    },
+    {
+      "block": 10,
+      "start": 801046,
+      "end_exclusive": 839157,
+      "N": 38111
+    },
+    {
+      "block": 11,
+      "start": 887670,
+      "end_exclusive": 925029,
+      "N": 37359
+    },
+    {
+      "block": 12,
+      "start": 972858,
+      "end_exclusive": 1006129,
+      "N": 33271
+    },
+    {
+      "block": 13,
+      "start": 1056990,
+      "end_exclusive": 1089790,
+      "N": 32800
+    },
+    {
+      "block": 14,
+      "start": 1140571,
+      "end_exclusive": 1173967,
+      "N": 33396
+    },
+    {
+      "block": 15,
+      "start": 1227337,
+      "end_exclusive": 1260143,
+      "N": 32806
+    },
+    {
+      "block": 16,
+      "start": 1313915,
+      "end_exclusive": 1346470,
+      "N": 32555
+    }
+  ],
+  "proposed_split": {
+    "training": {
+      "start": 0,
+      "end_exclusive": 1006129,
+      "N": 1006129,
+      "labels": {
+        "0": 844805,
+        "1": 1226,
+        "2": 5695,
+        "3": 1204,
+        "4": 153199
+      }
+    },
+    "validation": {
+      "start": 1056990,
+      "end_exclusive": 1173967,
+      "N": 116977,
+      "labels": {
+        "0": 90107,
+        "1": 2412,
+        "2": 2406,
+        "3": 2410,
+        "4": 19642
+      }
+    },
+    "test": {
+      "start": 1227337,
+      "end_exclusive": 1373798,
+      "N": 146461,
+      "labels": {
+        "0": 124512,
+        "1": 2361,
+        "2": 2270,
+        "3": 2410,
+        "4": 14908
+      }
+    }
+  },
+  "excluded_separator_intervals": [
+    {
+      "start": 1006129,
+      "end_exclusive": 1056990,
+      "length": 50861
+    },
+    {
+      "start": 1173967,
+      "end_exclusive": 1227337,
+      "length": 53370
+    }
+  ],
+  "excluded_separator_rows": 104231,
+  "validation_subblocks": {
+    "model_selection": {
+      "start": 1056990,
+      "end_exclusive": 1089790,
+      "N": 32800,
+      "labels": {
+        "0": 18504,
+        "1": 1232,
+        "2": 1222,
+        "3": 1206,
+        "4": 10636
+      }
+    },
+    "alert_threshold": {
+      "start": 1140571,
+      "end_exclusive": 1173967,
+      "N": 33396,
+      "labels": {
+        "0": 21147,
+        "1": 1180,
+        "2": 1184,
+        "3": 1204,
+        "4": 8681
+      }
+    }
+  },
+  "retained_row_split_pct": {
+    "training": 79.24977571093137,
+    "validation": 9.213928843456076,
+    "test": 11.53629544561256
+  },
+  "temporal_status": "No timestamp/day/session metadata. Operating blocks and separator buffers are signal-based index proxies, not recovered time.",
+  "status": "Phase 1 planned evaluation manifest; no processed dataset or classifier has been generated.",
+  "target": "f_nv five-class nominal operating state; equipment probabilities summed for 1,2,3",
+  "predictors": [
+    "vdc1",
+    "vdc2",
+    "idc1",
+    "idc2",
+    "irr",
+    "pvt"
+  ],
+  "source_sha256": {
+    "clayton-h-costa_dataset_amb.mat": "e4619812a5b6c1331332248f052cb09938f9a43ccac8bcc512796c6e906da7e0",
+    "clayton-h-costa_dataset_elec.mat": "c04ed3fcc0e338703e87d387b1ce6ef51da1848e77b4d491e62afe08934ce494"
+  }
+}
