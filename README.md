@@ -3,7 +3,7 @@
 Ruganji Prince | Carnegie Mellon University Africa
 
 **Course:** 04-652 Artificial Intelligence System Design  
-**Assignment:** Assignment 2: Data Preprocessing — Phase 1  
+**Assignment:** Assignment 2: Data Preprocessing  Phase 1  
 **Task Type: Multiclass Classification**
 
 This submission contains the raw-data audit and preprocessing/feature-engineering design. Future implementation directories contain structural placeholders. Implementation evaluation is outside this Phase 1 submission and is intended for a later submission after professor feedback.
@@ -14,7 +14,7 @@ The project investigates the minimum sensing and computational configuration tha
 
 SDG 7 reliable, affordable energy motivates the application. Evidence comes from one experimental Brazilian plant and does not establish Rwanda/Sub-Saharan African field generalization or maintenance effectiveness.
 
-## Official Phase 1 report
+## Phase 1 report
 
 The official report is the [final approved strategy PDF](phase1_strategy/Phase1_Strategy_Report.pdf). It is copied byte-for-byte from AISD_Assignment2_Phase1.pdf; its scientific content has not been edited. [Report provenance](phase1_strategy/Approved_Report_Provenance.json) records its SHA-256. No corresponding finalized LaTeX source was available; older report drafts are not presented as the source of this PDF.
 
@@ -71,7 +71,7 @@ Planned flow: immutable raw data → schema/partition → fit preprocessing/mode
 
 All learned medians, scaling, distribution bounds, selection/PCA and class weights will use training only. The target, acquisition_index, block IDs, future readings and post-event information are excluded from model predictors. A Pipeline/ColumnTransformer will own learned transformations.
 
-## Planned sensor-ablation experiment
+## Planned sensor ablation experiment
 
 F6, E5, E4, C3, C2, S4 and S2 are planned for comparison on identical partitions using engineering rules, Logistic Regression and a bounded Random Forest. A removed channel must not be reconstructed from another feature using that removed measurement. The planned comparison examines macro-F1 degradation alongside absolute fault recall/false alarms, acquisition requirements, latency, footprint and availability. The official report records the proposed budgets and success criteria; this submission reports no implementation outcomes.
 
@@ -103,4 +103,3 @@ The root contains README/dependencies/ignore rules; data/raw contains the approv
 
 [Phase 1 verification](phase1_strategy/Submission_Verification.json) and [preparation change log](phase1_strategy/Phase1_Change_Log.md) record local checks. The decision log and original rationale contain historical infrastructure statements; [submission status](phase1_strategy/GitHub_Setup.md) explains the current local snapshot state.
 
-This repository is the professor-facing Phase 1 submission snapshot for Assignment 2. It uses an independent clean Git history and intentionally excludes completed Phase 2 implementation outputs and evaluation results. The repository URL embedded in the approved Phase 1 report resolves to this public Phase 1 snapshot.
