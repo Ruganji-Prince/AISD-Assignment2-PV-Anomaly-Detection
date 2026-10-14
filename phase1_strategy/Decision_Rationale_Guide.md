@@ -6,9 +6,9 @@ The original author dataset is approved. These are measured audit findings and p
 
 ## 1. Original author dataset
 
-**Simple explanation:** We need real measurements and a defensible account of plant conditions. The original author provides both; cite the original rather than a copy.
+**Simple explanation:** The study requires real measurements and a defensible account of plant conditions. The original dataset source provides both and is preferred over a copy for citation.
 
-**Technical evidence:** Verified hashes; student approval.
+**Technical evidence:** Verified hashes; documented dataset approval.
 
 **Selected approach:** Use pinned original, retain source limitations.
 
@@ -22,7 +22,7 @@ The original author dataset is approved. These are measured audit findings and p
 
 ## 2. Five-class target plus equipment alert
 
-**Simple explanation:** The label names an operating state. A building blocking sunlight is different from a broken electrical connection, so report equipment alerts separately.
+**Simple explanation:** The label names an operating state. A building blocking sunlight is different from a broken electrical connection, so equipment alerts are planned for separate reporting.
 
 **Technical evidence:** Source has five nominal labels; shade is environmental.
 
@@ -38,7 +38,7 @@ The original author dataset is approved. These are measured audit findings and p
 
 ## 3. Source alignment
 
-**Simple explanation:** A row number is a position in a file, not a date or a measured time gap. Do not invent clocks from nominal logging frequency.
+**Simple explanation:** A row number is a position in a file, not a date or a measured time gap. Clock information is not inferred from nominal logging frequency.
 
 **Technical evidence:** Equal array lengths; acquisition description.
 
@@ -86,7 +86,7 @@ The original author dataset is approved. These are measured audit findings and p
 
 ## 6. Imputation and abstention
 
-**Simple explanation:** A middle training value is a cheap fallback, but can still be wrong for daylight operation. Stop confident predictions when measurement loss becomes sustained.
+**Simple explanation:** A training median is a computationally inexpensive fallback but may be unsuitable during daylight operation. Abstention is planned when measurement loss becomes sustained.
 
 **Technical evidence:** Skew/mean-median gaps; no baseline NaNs.
 
@@ -102,7 +102,7 @@ The original author dataset is approved. These are measured audit findings and p
 
 ## 7. Outlier retention
 
-**Simple explanation:** Unusual measurements may be the fault signal we need. Statistical fences do not by themselves establish broken sensors.
+**Simple explanation:** Unusual measurements may contain relevant fault signals. Statistical fences do not by themselves establish broken sensors.
 
 **Technical evidence:** All six training IQR/z screens flag zero.
 
@@ -118,7 +118,7 @@ The original author dataset is approved. These are measured audit findings and p
 
 ## 8. Association matching
 
-**Simple explanation:** Class codes are names, not physical distances. Use methods that compare measurements with nominal classes rather than treating code 4 as twice code 2.
+**Simple explanation:** Class codes are names, not physical distances. The association strategy compares measurements with nominal classes rather than treating code 4 as twice code 2.
 
 **Technical evidence:** Continuous X, nominal five-class Y.
 
@@ -134,7 +134,7 @@ The original author dataset is approved. These are measured audit findings and p
 
 ## 9. Keep collinear sensors
 
-**Simple explanation:** Two strings often behave similarly, but their differences during faults may be valuable. Keep the full reference and test sensor removal explicitly.
+**Simple explanation:** Two strings often behave similarly, but their differences during faults may be valuable. The full reference is retained, and explicit sensor-removal tests are planned.
 
 **Technical evidence:** Five correlated pairs; five VIFs >10.
 
@@ -182,7 +182,7 @@ The original author dataset is approved. These are measured audit findings and p
 
 ## 12. Buffered operating-block split
 
-**Simple explanation:** Close neighbors are almost the same operating conditions. Keep whole measured operating blocks apart and preserve file order instead of randomly mixing rows.
+**Simple explanation:** Close neighbors are almost the same operating conditions. The split strategy separates whole measured operating blocks and preserves file order instead of randomly mixing rows.
 
 **Technical evidence:** 16 signal-defined blocks; high lag dependence; 70% misses short circuit.
 
@@ -198,7 +198,7 @@ The original author dataset is approved. These are measured audit findings and p
 
 ## 13. Limited validation, not artificial CV
 
-**Simple explanation:** Many readings are not many independent experiments. A few fault blocks cannot justify impressive-looking random five-fold validation.
+**Simple explanation:** Many readings are not many independent experiments. A few fault blocks cannot justify random five-fold validation that overstates independent evidence.
 
 **Technical evidence:** Short circuit concentrated in late blocks.
 
@@ -214,7 +214,7 @@ The original author dataset is approved. These are measured audit findings and p
 
 ## 14. Ablation and useful detection
 
-**Simple explanation:** Remove sensors deliberately and compare what is lost and saved under the same evaluation conditions. A small loss against a weak reference is not enough.
+**Simple explanation:** Planned sensor ablation compares detection losses and resource savings under the same evaluation conditions. A small loss against a weak reference is not enough.
 
 **Technical evidence:** Research question; temperature channel aggregates four probes.
 
@@ -230,7 +230,7 @@ The original author dataset is approved. These are measured audit findings and p
 
 ## 15. Infrastructure and phase boundary
 
-**Simple explanation:** Another person should reproduce the source and audit. Local documents do not constitute a live GitHub submission or permission to begin the next phase.
+**Simple explanation:** Source retrieval and the audit should be reproducible independently. Local documents do not constitute a live GitHub submission or permission to begin the next phase.
 
 **Technical evidence:** Git unavailable; username supplied; publication forbidden without permission.
 
@@ -240,7 +240,7 @@ The original author dataset is approved. These are measured audit findings and p
 
 **Assumptions and limitations:** Pinned hashes and versions preserve local reproduction; remote access and course submission are manual infrastructure steps. Additional risk: Live GitHub/Canvas rubric unmet.
 
-**Phase 2 verification:** User reviews report and separately authorizes remote/Phase 2.
+**Phase 2 verification:** Report review and separate authorization for remote publication and Phase 2.
 
 **Effect on the research question:** Keeps work reproducible and preserves the strict Phase 1/Phase 2 boundary.
 
@@ -258,25 +258,25 @@ N=1,373,798 raw source positions, P=7 total variables including Y, and six predi
 
 Three equipment conditions were physically introduced; shade came from buildings. Resistive loads emulate a degradation condition, not years of natural aging. Public annotations lack independently exported experiment logs.
 
-**Did you recover dates or measurement days?**
+**Were dates or measurement days recovered?**
 
 No. The files have no clocks/day/session IDs. Sixteen operating blocks come from observed low-irradiance separators; their resemblance to the documented day count does not establish dates or elapsed time.
 
 **Why is random splitting dangerous?**
 
-Training adjacent-position correlations exceed 0.9997. Random partitions can share nearly identical conditions and event fragments. We retain source order and complete measured blocks, with whole separator buffers.
+Training adjacent-position correlations exceed 0.9997. Random partitions can share nearly identical conditions and event fragments. The split strategy retains source order and complete measured blocks, with whole separator buffers.
 
 **What are the exact final split proportions?**
 
 Twelve/two/two of sixteen operating blocks, or 75/12.5/12.5% of blocks. After withholding two boundary separators, retained-row shares are 79.2498/9.2139/11.5363%; N values are 1,006,129, 116,977 and 146,461. These are not a reconstructed calendar split.
 
-**How did you prevent leakage?**
+**How does the proposed architecture prevent leakage?**
 
 The plan freezes groups first, fits every learned transformation and class weight on training only, chooses model settings on validation block 13 and alert threshold on block 14, then evaluates test blocks 15–16 once. This prevents fitted preprocessing leakage; absent logs still limit session independence.
 
 **Why not five-fold cross-validation?**
 
-Only late blocks contain substantial short-circuit examples. Earlier expanding folds lack the class; random row folds share event conditions. A small supported holdout is more honest than manufacturing independent replication.
+Only late blocks contain substantial short-circuit examples. Earlier expanding folds lack the class; random row folds share event conditions. A small supported holdout is more defensible than treating dependent readings as independent replication.
 
 **Why this imputation method?**
 
@@ -284,11 +284,11 @@ Baseline exports have no NaNs. Median plus flags is a contingency baseline becau
 
 **Is missingness MCAR?**
 
-We cannot determine it: all exported NaN indicators are zero. The 62 simultaneous irradiance/temperature zeros suggest acquisition issues but are not documented missing sentinels. Synthetic MCAR masks are test assumptions, not diagnoses of original data.
+MCAR cannot be established empirically because all exported NaN indicators are zero. The 62 simultaneous irradiance/temperature zeros suggest acquisition issues but are not documented missing sentinels. Synthetic MCAR masks are test assumptions, not diagnoses of original data.
 
 **Why retain outliers?**
 
-All six training IQR and z-score screens flag zero values; broad day/night-mixture fences are not evidence for capping. Genuine faults can produce unusual measurements. We preserve them and separately flag suspected sensor problems.
+All six training IQR and z-score screens flag zero values; broad day/night-mixture fences are not evidence for capping. Genuine faults can produce unusual measurements. The strategy preserves unusual measurements and separately flags suspected sensor problems.
 
 **Why F1/AP instead of accuracy?**
 
@@ -296,7 +296,7 @@ Normal is 84.6508% of raw rows and short circuit only 0.4367%. A normal-only cla
 
 **How does imbalance change training?**
 
-Weights, if used, are computed only from the relevant training partition and compared with unweighted models. Oversampling dependent readings does not create new independent faults. Report per-class supports and false alarms.
+Weights, if used, are computed only from the relevant training partition and compared with unweighted models. Oversampling dependent readings does not create new independent faults. Planned reporting includes per-class supports and false alarms.
 
 **Why keep correlated voltage/current channels?**
 
@@ -312,7 +312,7 @@ Two components built from six measurements still need those measurements. Temper
 
 **How does sensor ablation answer the question?**
 
-Compare full F6 and the predeclared E5/E4/C3/C2/S4/S2 configurations with identical partitions, labels, model budget and scoring rows. Delta_s uses five-class macro-F1; classwise losses, latency, artifact size and acquisition points determine whether a sparse configuration is useful.
+The planned comparison includes full F6 and the predeclared E5/E4/C3/C2/S4/S2 configurations with identical partitions, labels, model budget and scoring rows. Delta_s uses five-class macro-F1; classwise losses, latency, artifact size and acquisition points determine whether a sparse configuration is useful.
 
 **What does practically useful mean?**
 
@@ -328,9 +328,9 @@ Absent clocks/logs, provisional index alignment, one installation, scheduled ind
 
 **What if future labels are unavailable?**
 
-Report novelty/residual scores, proxy agreement and quality behavior, seek independent event review, and do not invent precision/recall/F1 against verified faults. Keep source annotations, proxy rules, synthetic masks and model scores separate.
+For unavailable future labels, the proposed approach reports novelty/residual scores, proxy agreement and quality behavior; seeks independent event review; excludes unsupported precision/recall/F1 claims against verified faults; and maintains separate source annotations, proxy rules, synthetic masks and model scores.
 
-**Have you found a useful minimal sensor set?**
+**Has a useful minimal sensor set been identified?**
 
 No. Phase 1 supplies the audit and plan only. Classifier training, final diagnostics and sensor ablation need separate explicit approval.
 

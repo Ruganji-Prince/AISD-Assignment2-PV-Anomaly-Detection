@@ -2,15 +2,15 @@
 
 Ruganji Prince · Assignment 2 AISD · 12 October 2026
 
-**Status: the student approved the original author dataset on 12 October 2026.** This selection evidence
+**Status: the original-source dataset was approved on 12 October 2026.** This selection evidence
 is retained alongside Phase1_Strategy_Report.pdf. Preliminary index split candidates below are feasibility
 evidence; the final plan uses ordered 12/2/2 measured operating blocks with full separator buffers.
 
 ## Recommendation
 
-Use the original author's Lazzaretti/Costa PV fault data as the primary experimental operating-state
-dataset, now approved with its limitations documented. Keep the supplied EddieOuyang mirror as verification
-evidence: both MAT files have identical SHA-256 hashes to the original. Prefer the original source for citation.
+The approved primary experimental operating-state dataset is the original-source Lazzaretti/Costa PV fault data,
+with documented limitations. The supplied EddieOuyang mirror is retained as verification
+evidence: both MAT files have identical SHA-256 hashes to the original. The original source is preferred for citation.
 Its six exported sensor channels support the central ablation question, and labels correspond to physically
 induced equipment conditions and natural building shade. It is computationally manageable: two files
 total 28,077,185 bytes. The complete consolidated numeric matrix requires approximately 77 MB at float64;
@@ -19,7 +19,7 @@ auditing copies and sorting can use more memory.
 There is no perfect candidate. The primary recommendation sacrifices exported timestamps and realistic
 fault prevalence to retain a defensible experimental target. A limited PVDAQ operational slice is a possible
 secondary *data-quality* study; without verified labels it cannot validate supervised fault recall or F1.
-Do not merge these datasets. Cross-dataset fault-performance claims require compatible sensors and independently
+Merging these datasets is excluded from the proposed strategy. Cross-dataset fault-performance claims require compatible sensors and independently
 supported labels, neither of which has yet been established for a second dataset.
 
 ## Evidence categories
@@ -89,13 +89,13 @@ be counted as a hardware fault. Numeric label codes have no meaningful order.
 No MAT variable contains timestamps, dates or system IDs. The paper describes one-second exported
 measurements, with electrical RMS aggregation and environmental averaging, but actual time intervals,
 missing intervals, timezone and drift cannot be independently recovered from these arrays.
-Preserve acquisition index as metadata. Do not fabricate calendar timestamps or claim verified frequency.
+The acquisition index is retained as metadata. Calendar timestamps are not fabricated, and verified frequency is not claimed.
 Index-based alignment is provisional, supported by the source description, not merely by equal lengths.
 
 The paper's daytime real-data counts total 515,958, whereas the public export totals 1,373,798.
 Normal and shade counts differ; equipment-fault counts agree exactly. The large low-irradiance fraction
 is consistent with additional low-light coverage, but the reason for the discrepancy remains unverified.
-Ask for original timestamps/day boundaries if available; any interpretation must state the discrepancy.
+Original timestamps/day boundaries would require source clarification if available; any interpretation must acknowledge the discrepancy.
 The source experiment used scheduled midday induced faults on clear days, so scheduled context and
 limited weather diversity constrain generalization. Neither Rwanda field reliability nor fault prognosis
 is demonstrated by this dataset.
@@ -110,7 +110,7 @@ five open-circuit examples. An 80/10/10 ordered split has all classes in each pa
 | Test | [1236418, 1373798) | 137,380 | 115,925 | 2,361 | 2,270 | 2,410 | 14,414 |
 
 These are feasibility checks, not a finalized evaluation split. Class-preserving proportions are subordinate
-to acquisition order; do not randomly shuffle adjacent measurements. Day/episode boundaries, purge widths,
+to acquisition order; random shuffling of adjacent measurements is excluded. Day/episode boundaries, purge widths,
 low-light eligibility and final target require Phase 1 decisions. Label runs can locate boundaries but do
 not establish independent episodes. All global exploratory findings must be marked descriptive; learned
 preprocessing and target-based feature selection will use training data only in Phase 2.
@@ -144,7 +144,7 @@ slots respectively. These are missing records, not NaNs. Repeated plant timestam
 expected; the entity-time key is the relevant duplicate check. Cumulative yields can reveal system identity
 and long-term information. Zero nighttime power is legitimate. No fault-label field exists.
 The API reports the license name as “Data files © Original Authors”; this is not an explicit open license
-grant, so verify intended academic reuse and redistribution with the original source. The archive downloaded
+grant, so intended academic reuse and redistribution require verification with the original source. The archive downloaded
 without login in this session; no manual login is currently required.
 
 The maintenance subset's 500 rows have scenario/action labels, not timestamps or measured voltage/current.
@@ -154,7 +154,7 @@ not observed per-channel missingness. Zenodo metadata identifies CC BY 4.0.
 PVDAQ metadata and the tiny sample verify anonymous HTTPS data-lake access. The 1-row operational
 sample is a schema and sentinel check only; no representative N, class distribution, cadence or missingness
 claim is made for a full site. Current access software is at NatLabRockies/pvdaq_access following the
-NREL URL redirect. Download a bounded site/window after checking file sizes; do not download the whole lake.
+NREL URL redirect. Any download is restricted to a bounded site/window following file-size checks; whole-lake downloading is excluded.
 
 Zenodo 18326501 provides a poster without a tabular download link. Obtaining usable data requires a
 separate authoritative release or asking the listed author for access. No contact has been sent.

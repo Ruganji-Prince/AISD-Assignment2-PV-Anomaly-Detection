@@ -10,13 +10,13 @@ This submission contains the raw-data audit and preprocessing/feature-engineerin
 
 ## Problem statement
 
-Investigate the minimum sensing and computational configuration that can provide practically useful PV anomaly detection under sparse-sensing and resource constraints. Fewer acquired measurements can reduce sensing and maintenance requirements, while lightweight models may reduce computing demands. The planned study compares predictive quality with physical sensing requirements and computational resources; it does not assume that the smallest feature set is adequate.
+The project investigates the minimum sensing and computational configuration that can provide practically useful PV anomaly detection under sparse-sensing and resource constraints. Fewer acquired measurements can reduce sensing and maintenance requirements, while lightweight models may reduce computing demands. The planned study compares predictive quality with physical sensing requirements and computational resources; it does not assume that the smallest feature set is adequate.
 
 SDG 7 reliable, affordable energy motivates the application. Evidence comes from one experimental Brazilian plant and does not establish Rwanda/Sub-Saharan African field generalization or maintenance effectiveness.
 
 ## Official Phase 1 report
 
-Read the [final approved strategy PDF](phase1_strategy/Phase1_Strategy_Report.pdf). It is copied byte-for-byte from AISD_Assignment2_Phase1.pdf; its scientific content has not been edited. [Report provenance](phase1_strategy/Approved_Report_Provenance.json) records its SHA-256. No corresponding finalized LaTeX source was available; older report drafts are not presented as the source of this PDF.
+The official report is the [final approved strategy PDF](phase1_strategy/Phase1_Strategy_Report.pdf). It is copied byte-for-byte from AISD_Assignment2_Phase1.pdf; its scientific content has not been edited. [Report provenance](phase1_strategy/Approved_Report_Provenance.json) records its SHA-256. No corresponding finalized LaTeX source was available; older report drafts are not presented as the source of this PDF.
 
 [Evidence index](phase1_strategy/Supporting_Evidence_Index.md), [rubric checklist](phase1_strategy/Requirements_Checklist.md), [decision log](phase1_strategy/Decision_Log.csv), and [Phase 1 rationale guide](phase1_strategy/Decision_Rationale_Guide.md) explain the design and its assumptions.
 
@@ -47,7 +47,7 @@ The contingency imputer will use training medians and retained-channel availabil
 
 Training IQR fences are Q1 - 1.5 IQR and Q3 + 1.5 IQR. A training-based |Z| > 3 is an additional distribution-qualified screen. Existing screens flag zero values; unusual fault readings are retained instead of automatically capped/deleted.
 
-Training Pearson |r| >= 0.85 flags five predictor pairs; five VIF values exceed 10. Preserve the six physical reference channels, use linear regularization, and test named physical removals later rather than equating correlation with engineering redundancy.
+Training Pearson |r| >= 0.85 flags five predictor pairs; five VIF values exceed 10. The strategy retains the six physical reference channels, uses linear regularization, and plans later tests of named physical removals rather than equating correlation with engineering redundancy.
 
 Continuous-predictor/nominal-target association will use training-only mutual information, with descriptive one-versus-rest point-biserial effects and explicit dependence limitations. No categorical predictor encoding is needed. The target codes remain nominal labels.
 
@@ -73,11 +73,11 @@ All learned medians, scaling, distribution bounds, selection/PCA and class weigh
 
 ## Planned sensor-ablation experiment
 
-Compare F6, E5, E4, C3, C2, S4 and S2 on identical partitions using engineering rules, Logistic Regression and a bounded Random Forest. A removed channel must not be reconstructed from another feature using that removed measurement. Compare macro-F1 degradation with absolute fault recall/false alarms, acquisition requirements, latency, footprint and availability. The official report records the proposed budgets and success criteria; this submission reports no implementation outcomes.
+F6, E5, E4, C3, C2, S4 and S2 are planned for comparison on identical partitions using engineering rules, Logistic Regression and a bounded Random Forest. A removed channel must not be reconstructed from another feature using that removed measurement. The planned comparison examines macro-F1 degradation alongside absolute fault recall/false alarms, acquisition requirements, latency, footprint and availability. The official report records the proposed budgets and success criteria; this submission reports no implementation outcomes.
 
 ## Setup and inspection from the repository root
 
-Verified package versions are pinned for Python 3.14.7. Use a working Python installation:
+Verified package versions are pinned for Python 3.14.7. Setup requires a working Python installation:
 
 ~~~powershell
 python -m venv .venv
@@ -95,7 +95,7 @@ To reproduce the original audit without overwriting the official PDF or stored e
 .venv\Scripts\python.exe -B -X utf8 phase1_strategy\reproduce_audit.py
 ~~~
 
-This creates an unused ignored .cache/phase1_audit_reproduction directory, downloads hash-pinned source MAT files there, and runs copies of the original Phase 1 audit scripts there. It compares key totals/group bounds against the stored audit. Network access is required for absent sources. No production classifier is fitted. Do not run report-generation scripts against the approved PDF; they are intentionally not included.
+This creates an unused ignored .cache/phase1_audit_reproduction directory, downloads hash-pinned source MAT files there, and runs copies of the original Phase 1 audit scripts there. It compares key totals/group bounds against the stored audit. Network access is required for absent sources. No production classifier is fitted. Report-generation scripts are intentionally excluded to prevent overwriting the approved PDF.
 
 ## Repository structure and publication status
 

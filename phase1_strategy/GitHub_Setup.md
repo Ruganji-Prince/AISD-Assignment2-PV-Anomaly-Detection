@@ -1,6 +1,6 @@
 # Phase 1 local submission status
 
-This professor-facing snapshot has independent clean Git history, prepared locally. It has no remote and has not been pushed. Creating/replacing a GitHub repository and Canvas submission require the user's next approval.
+This professor-facing snapshot has independent clean Git history, prepared locally. It has no remote and has not been pushed. Creating/replacing a GitHub repository and Canvas submission require separate explicit approval.
 
 The approved PDF contains the project URL Ruganji-Prince/AISD-Assignment2-PV-Anomaly-Detection. That existing public repository contains material outside this Phase 1 snapshot. It has not been changed. A publication decision is required before the PDF's referenced address can serve a strictly Phase-1-only repository.
 
