@@ -1,4 +1,4 @@
-# Approved unprocessed raw CSV
+#  raw data CSV
 
 [pv_fault_dataset.csv](pv_fault_dataset.csv) contains all 1,373,798 original source positions and seven columns, in source order. It is a CSV conversion of the paired original MAT inputs, not a cleaned/processed/model-generated dataset. No row, measurement or label was changed; no timestamp/index field was invented.
 
