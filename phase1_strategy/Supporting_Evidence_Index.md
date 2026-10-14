@@ -14,8 +14,8 @@ The [approved PDF](Phase1_Strategy_Report.pdf) is the official report. Its scien
 | Source commit/hashes/license | [primary_source_manifest.json](primary_source_manifest.json), [license](PRIMARY_SOURCE_LICENSE.txt), [source README](PRIMARY_SOURCE_README.md) |
 | Candidate research, not the primary split contract | [Dataset_Selection_Report.pdf](Dataset_Selection_Report.pdf), [selection Markdown](Dataset_Selection_Report.md), [candidate_audit.json](candidate_audit.json), [source_metadata.json](source_metadata.json), [download_manifest.json](download_manifest.json) |
 | Decisions / simple explanations | [Decision_Log.csv](Decision_Log.csv), [Decision_Rationale_Guide.md](Decision_Rationale_Guide.md) |
-| Submission checks | [Requirements_Checklist.md](Requirements_Checklist.md), [Submission_Verification.json](Submission_Verification.json), [Verification_Log.md](Verification_Log.md) |
+| Recorded verification checks | [Submission_Verification.json](Submission_Verification.json) |
 
-Candidate reports retain preliminary split alternatives as research evidence; the official PDF and frozen manifest govern the primary 12/2/2 plan. Decision D15 and parts of the original rationale record historical infrastructure circumstances. They are not current claims that Git is unavailable; see [current local submission status](GitHub_Setup.md).
+Candidate reports retain preliminary split alternatives as research evidence; the official PDF and frozen manifest govern the primary 12/2/2 plan. Decision D15 and parts of the original rationale record historical infrastructure circumstances. They are not current claims that Git is unavailable.
 
 

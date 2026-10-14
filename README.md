@@ -18,7 +18,7 @@ SDG 7 reliable, affordable energy motivates the application. Evidence comes from
 
 The official report is the [final approved strategy PDF](phase1_strategy/Phase1_Strategy_Report.pdf). It is copied byte-for-byte from AISD_Assignment2_Phase1.pdf; its scientific content has not been edited. [Report provenance](phase1_strategy/Approved_Report_Provenance.json) records its SHA-256. No corresponding finalized LaTeX source was available; older report drafts are not presented as the source of this PDF.
 
-[Evidence index](phase1_strategy/Supporting_Evidence_Index.md), [rubric checklist](phase1_strategy/Requirements_Checklist.md), [decision log](phase1_strategy/Decision_Log.csv), and [Phase 1 rationale guide](phase1_strategy/Decision_Rationale_Guide.md) explain the design and its assumptions.
+[Evidence index](phase1_strategy/Supporting_Evidence_Index.md), [decision log](phase1_strategy/Decision_Log.csv), and [Phase 1 rationale guide](phase1_strategy/Decision_Rationale_Guide.md) explain the design and its assumptions.
 
 ## Dataset overview
 
