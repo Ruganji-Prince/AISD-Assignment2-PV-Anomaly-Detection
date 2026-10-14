@@ -18,4 +18,4 @@ The [approved PDF](Phase1_Strategy_Report.pdf) is the official report. Its scien
 
 Candidate reports retain preliminary split alternatives as research evidence; the official PDF and frozen manifest govern the primary 12/2/2 plan. Decision D15 and parts of the original rationale record historical infrastructure circumstances. They are not current claims that Git is unavailable; see [current local submission status](GitHub_Setup.md).
 
-No finalized LaTeX source was supplied/found. Older Markdown templates and PDF-building scripts are excluded to avoid presenting a different draft as the source of the approved PDF or accidentally overwriting it. Original historical artifacts remain in the preserved completed project.
+
