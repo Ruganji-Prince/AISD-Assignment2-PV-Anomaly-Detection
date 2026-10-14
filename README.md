@@ -101,5 +101,5 @@ This creates an unused ignored .cache/phase1_audit_reproduction directory, downl
 
 The root contains README/dependencies/ignore rules; data/raw contains the approved uncleaned CSV and provenance; phase1_strategy contains the report and audit/design evidence. data/processed, phase2_implementation/notebooks and figures contain only .gitkeep. src contains three planning/docstring placeholders.
 
-[Phase 1 verification](phase1_strategy/Submission_Verification.json) and [preparation change log](phase1_strategy/Phase1_Change_Log.md) record local checks. The decision log and original rationale contain historical infrastructure statements; [submission status](phase1_strategy/GitHub_Setup.md) explains the current local snapshot state.
+
 
