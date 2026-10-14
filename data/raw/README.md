@@ -2,7 +2,7 @@
 
 [pv_fault_dataset.csv](pv_fault_dataset.csv) contains all 1,373,798 original source positions and seven columns, in source order. It is a CSV conversion of the paired original MAT inputs, not a cleaned/processed/model-generated dataset. No row, measurement or label was changed; no timestamp/index field was invented.
 
-Columns: vdc1/vdc2 (V), idc1/idc2 (A), irr (W/m?), pvt (?C), and nominal f_nv (0 normal, 1 short circuit, 2 resistive degradation, 3 open circuit, 4 building shade).
+Columns: vdc1/vdc2 (V), idc1/idc2 (A), irr (W/m2), pvt (C), and nominal f_nv (0 normal, 1 short circuit, 2 resistive degradation, 3 open circuit, 4 building shade).
 
 Original source: [clayton-h-costa/pv_fault_dataset](https://github.com/clayton-h-costa/pv_fault_dataset), commit e9ed8ad8072dcb3ffc643b0f3604219798708551. Cite [Lazzaretti et al. (2020)](https://doi.org/10.3390/s20174688) and retain the [original Apache-2.0 license](../../phase1_strategy/PRIMARY_SOURCE_LICENSE.txt) and [source README](../../phase1_strategy/PRIMARY_SOURCE_README.md).
 
