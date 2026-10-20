@@ -65,7 +65,7 @@ def main():
                 if b[2]>p.rect.width+1:overflow.append({'page':i+1,'note':'Existing approved content extends past right page boundary; PDF retained unchanged.'})
     assert all((ROOT/p).is_dir() for p in ['data/raw','data/processed','phase1_strategy','phase2_implementation/notebooks','src','figures'])
     for folder in ['data/processed','phase2_implementation','figures']:
-        assert not [p for p in (ROOT/folder).rglob('*') if p.is_file() and p.name!='.gitkeep'],folder
+        assert not [p for p in (ROOT/folder).rglob('*') if p.is_file() and p.name!='.gitkeep' and p!=ROOT/'figures/raw_dataset_preview.png'],folder
     assert not (ROOT/'results').exists() and not (ROOT/'notebooks').exists()
     for name in ['__init__.py','transformers.py','pipeline_builder.py']:
         nodes=ast.parse((ROOT/'src'/name).read_text()).body
@@ -75,7 +75,7 @@ def main():
     assert guide.count('**Simple explanation:**')==15
     readme=(ROOT/'README.md').read_text(encoding='utf-8')
     assert 'Task Type: Multiclass Classification' in readme
-    assert not any(p.suffix in {'.ipynb','.joblib','.npz','.png'} for p in ROOT.rglob('*') if submission_file(p))
+    assert not any(p.suffix in {'.ipynb','.joblib','.npz','.png'} for p in ROOT.rglob('*') if submission_file(p) and p!=ROOT/'figures/raw_dataset_preview.png')
     counts={k:0 for k in EXPECTED};rows=0;paired=0;neg_irr=0;neg_temp=0
     raw=ROOT/'data/raw/pv_fault_dataset.csv'
     assert sha(raw)=='717278fdc338bf6713293c0495421a8be9ea02a0b64144e86e957a531edecb8a'

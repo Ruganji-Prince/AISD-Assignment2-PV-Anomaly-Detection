@@ -31,9 +31,31 @@ Source: [original author PV Fault Dataset](https://github.com/clayton-h-costa/pv
 - Six measurements load as float64; the target loads as uint8, without ordinal/continuous interpretation.
 - No discrete-count, ordinal, datetime, text or categorical predictor fields are exported.
 
+| Variable | Type | Unit | Role | Description |
+| --- | --- | --- | --- | --- |
+| `vdc1` | Continuous | V | Predictor | DC voltage of string 1 |
+| `vdc2` | Continuous | V | Predictor | DC voltage of string 2 |
+| `idc1` | Continuous | A | Predictor | DC current of string 1 |
+| `idc2` | Continuous | A | Predictor | DC current of string 2 |
+| `irr` | Continuous | W/m² | Predictor | Plane-of-array irradiance |
+| `pvt` | Continuous | °C | Predictor | Reported module temperature, aggregated from four source probes |
+| `f_nv` | Nominal categorical | Unitless | Target | Five-class operating-state label |
+
 The two MAT files provide complementary columns at corresponding source positions. Equal lengths/source context support provisional alignment; no timestamps or verified day/session identifiers are recovered. Electrical equipment conditions were induced; shade occurred naturally. Temperature aggregates source probes, so numerical channel count does not directly equal device count.
 
 The intentionally published [raw CSV](data/raw/pv_fault_dataset.csv) contains every original measurement and label without cleaning or scaling. [CSV provenance](data/raw/README.md) identifies the format conversion and license. Original MAT/candidate files remain ignored and can be retrieved at the pinned source commit.
+
+## Raw data preview
+
+![First ten raw observations with the seven original dataset columns](figures/raw_dataset_preview.png)
+
+Preview of the raw photovoltaic monitoring dataset. First ten observations in exported source order.
+
+### Temporal data clarification
+
+Measurements were acquired at a nominal 1 Hz cadence according to the [associated study](https://doi.org/10.3390/s20174688), Sections 3, 3.2 and 4.1. Electrical RMS quantities were calculated every second; irradiance and module-temperature values were supplied as one-second averages. The study describes a 16-day experiment. The released MAT files and exported CSV, however, do not contain an explicit timestamp variable. The CSV preserves the original MAT-vector ordering, but absolute timestamps and uninterrupted one-second spacing across the complete exported sequence cannot be reconstructed from the released data. Consequently, this project treats row order as source-position order rather than assigning synthetic timestamps.
+
+The documented acquisition cadence and experiment duration do not establish that the 16 signal-defined operating blocks correspond to days, sessions or hours. The separator definition remains irradiance `irr < 100 W/m²` for at least 3,600 consecutive source positions; these positions are not interpreted as one hour.
 
 ## Phase 1 audit findings and strategy
 
@@ -99,7 +121,7 @@ This creates an unused ignored .cache/phase1_audit_reproduction directory, downl
 
 ## Repository structure and publication status
 
-The root contains README/dependencies/ignore rules; data/raw contains the approved uncleaned CSV and provenance; phase1_strategy contains the report and audit/design evidence. data/processed, phase2_implementation/notebooks and figures contain only .gitkeep. src contains three planning/docstring placeholders.
+The root contains README/dependencies/ignore rules; data/raw contains the approved uncleaned CSV and provenance; phase1_strategy contains the report and audit/design evidence. data/processed and phase2_implementation/notebooks contain only .gitkeep; figures contains the raw-data preview and .gitkeep. src contains three planning/docstring placeholders.
 
 
 
