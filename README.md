@@ -24,22 +24,41 @@ The official report is the [final approved strategy PDF](phase1_strategy/Phase1_
 
 Source: [original author PV Fault Dataset](https://github.com/clayton-h-costa/pv_fault_dataset), pinned commit e9ed8ad8072dcb3ffc643b0f3604219798708551. Associated study: Lazzaretti et al., Sensors 20(17), 4688 (2020), [DOI](https://doi.org/10.3390/s20174688).
 
-- N = 1,373,798 raw observations/source positions.
-- P = 7 total variables: six predictors plus target Y = f_nv.
-- Continuous predictors: vdc1/vdc2 (V), idc1/idc2 (A), irr (W/m²), pvt (°C).
-- Nominal target codes: 0 normal; 1 short circuit; 2 resistive degradation; 3 open circuit; 4 natural building shade.
-- Six measurements load as float64; the target loads as uint8, without ordinal/continuous interpretation.
-- No discrete-count, ordinal, datetime, text or categorical predictor fields are exported.
+| Property | Description |
+|----------|-------------|
+| Number of observations (N) | 1,373,798 raw observations/source positions |
+| Number of variables (P) | 7 total variables: 6 predictors + 1 target |
+| Predictors (X) | `vdc1`, `vdc2`, `idc1`, `idc2`, `irr`, `pvt` |
+| Target (Y) | `f_nv` |
+| Task | Multiclass classification with five operating states |
+| Predictor type | Six continuous numerical measurements |
+| Predictor storage type | `float64` |
+| Target type | Nominal categorical variable |
+| Target storage type | `uint8` |
+| Timestamp field | Not present in the released dataset |
+| Other feature types | No discrete-count, ordinal, datetime, text, or categorical predictor fields are exported |
 
-| Variable | Type | Unit | Role | Description |
-| --- | --- | --- | --- | --- |
-| `vdc1` | Continuous | V | Predictor | DC voltage of string 1 |
-| `vdc2` | Continuous | V | Predictor | DC voltage of string 2 |
-| `idc1` | Continuous | A | Predictor | DC current of string 1 |
-| `idc2` | Continuous | A | Predictor | DC current of string 2 |
-| `irr` | Continuous | W/m² | Predictor | Plane-of-array irradiance |
-| `pvt` | Continuous | °C | Predictor | Reported module temperature, aggregated from four source probes |
-| `f_nv` | Nominal categorical | Unitless | Target | Five-class operating-state label |
+| Variable | Role | Data type | Physical meaning | Unit |
+|----------|------|-----------|------------------|------|
+| `vdc1` | Predictor | Continuous (`float64`) | DC RMS voltage measured for PV string 1 | V |
+| `vdc2` | Predictor | Continuous (`float64`) | DC RMS voltage measured for PV string 2 | V |
+| `idc1` | Predictor | Continuous (`float64`) | DC RMS current measured for PV string 1 | A |
+| `idc2` | Predictor | Continuous (`float64`) | DC RMS current measured for PV string 2 | A |
+| `irr` | Predictor | Continuous (`float64`) | Plane-of-array solar irradiance | W/m² |
+| `pvt` | Predictor | Continuous (`float64`) | Reported PV module temperature, aggregated from four source probes | °C |
+| `f_nv` | Target | Nominal (`uint8`) | PV operating-state/fault label | Unitless |
+
+| `f_nv` code | Operating state | Interpretation |
+|------------:|-----------------|----------------|
+| 0 | Normal | Normal PV system operation |
+| 1 | Short circuit | Short-circuit fault condition |
+| 2 | Resistive degradation | Resistive-degradation fault condition |
+| 3 | Open circuit | Open-circuit fault condition |
+| 4 | Building shade | Natural building-shading condition |
+
+`f_nv` is numerically encoded for storage, but the values 0–4 represent nominal class labels rather than an ordinal or continuous scale.
+
+The ten observations shown in the raw-data preview have `f_nv = 0`; therefore, they are labeled as normal operating observations.
 
 The two MAT files provide complementary columns at corresponding source positions. Equal lengths/source context support provisional alignment; no timestamps or verified day/session identifiers are recovered. Electrical equipment conditions were induced; shade occurred naturally. Temperature aggregates source probes, so numerical channel count does not directly equal device count.
 
