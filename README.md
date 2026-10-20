@@ -70,7 +70,7 @@ The intentionally published [raw CSV](data/raw/pv_fault_dataset.csv) contains ev
 
 Preview of the raw photovoltaic monitoring dataset. First ten observations in exported source order.
 
-### Temporal data clarification
+### Data clarification
 
 Measurements were acquired at a nominal 1 Hz cadence according to the [associated study](https://doi.org/10.3390/s20174688), Sections 3, 3.2 and 4.1. Electrical RMS quantities were calculated every second; irradiance and module-temperature values were supplied as one-second averages. The study describes a 16-day experiment. The released MAT files and exported CSV, however, do not contain an explicit timestamp variable. The CSV preserves the original MAT-vector ordering, but absolute timestamps and uninterrupted one-second spacing across the complete exported sequence cannot be reconstructed from the released data. Consequently, this project treats row order as source-position order rather than assigning synthetic timestamps.
 
