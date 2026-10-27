@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-10-27T07:53:02.910808+00:00",
+  "threshold_sha256": "39e205c7dd2c377943949b50357ac890457215fc874045aeee4a02013d1b28c1",
+  "protocol_sha256": "1a7c2af568ecd76d54897c500d40ca84caf6747a690be851780a7b4ba964b65c",
+  "model_sha256": {
+    "LR__F6": "6460d8244e7c70d167a22beeb9f240b1127baa6c8a78635fed8ae2ad02e1680f",
+    "RF__E4": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+    "LightGBM__E4": "6c61bf1a475f3230c5b20d6d7217b6aaea8abb52df57a4363d26033e4ccbcf3c",
+    "RF__F6": "a23e8f42f75154b6fa2255720a0ba9a5aff96fb4b05e0470824e3b93a6ba9bcf",
+    "LightGBM__F6": "2e5583f035197fd3a40287e5d1587fdd14f7ddf12180735e11bae1d9df66a983"
+  },
+  "test_access_started": false
+}

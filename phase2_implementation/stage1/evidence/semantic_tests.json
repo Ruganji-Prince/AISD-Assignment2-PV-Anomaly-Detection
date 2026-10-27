@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "tests": 8,
+  "test_file": "phase2_implementation/stage1/tests/test_stage1.py",
+  "checks": [
+    "deterministic feature values and all channel-subset dependencies",
+    "physical quality and paired-zero preservation",
+    "metadata and non-training fit rejection; test-position prediction rejection",
+    "fitted statistics unchanged after validation transforms",
+    "prefix-only availability and boundary resets",
+    "five-class/abstention and separate normal/shade alert arithmetic",
+    "exact training-only balanced weights",
+    "all 40 Phase 1 file hashes"
+  ]
+}

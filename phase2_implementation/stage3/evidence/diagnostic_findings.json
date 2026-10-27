@@ -1,0 +1,21 @@
+{
+  "causal_interpretation": false,
+  "physical_channels": "vdc2 has the largest mean balanced-validation macro-F1 permutation loss for all three frozen candidates. idc1/idc2 also contribute; LR additionally relies on irradiance. Correlation disruption limits interpretation.",
+  "short_circuit": "LightGBM class-1 Tree SHAP emphasizes P1, V_diff and vdc2. Test class-1 recall is 1179/2361; 729 short-circuit observations are assigned to shade and 453 to degradation. Explanations identify model associations, not the causal reason for errors.",
+  "degradation": "vdc2 and current channels have substantial class-2 recall permutation losses. LightGBM class-2 Tree SHAP emphasizes vdc2, idc1, V_diff and P_total.",
+  "open_circuit": "RF class-3 recall is particularly sensitive to vdc2 and idc2 permutations. LightGBM class-3 Tree SHAP emphasizes V_diff and I_diff. LR assigns 357 open-circuit observations to short circuit; this is hardware-type confusion, not missed hardware-to-normal confusion.",
+  "RF_E4_environment_removal": "RF E4 retains strong performance and shade recall without irr/pvt. Electrical channels therefore contain useful predictive information in these data; environmental channels are not proved universally redundant. Normal-to-shade confusion remains 6604/124512 for RF E4.",
+  "aggressive_reduction": "Frozen Stage 2 block-13 E4-to-C2 macro-F1 changes are RF .956297 to .589946 and LightGBM .855657 to .629963; LR .588207 to .174463. Single-string S2 scores are also weak. These configuration comparisons are not causal attribution or a proof of globally minimal sensors.",
+  "shading": "Test shade classification recall: LR .750537, RF .991146, LightGBM .993695. Class 4 remains an environmental condition, not hardware failure.",
+  "alert_classification_distinction": "LightGBM aggregate hardware-alert recall is .996875 despite class-1 argmax recall .499365. A low frozen hardware-score threshold can preserve aggregate alerts while hardware subtype classification fails.",
+  "separate_FPRs": "All combined test FPRs satisfy 1%. LR shade-only test FPR is .0117387 and exceeds 1%; the declared requirement is combined FPR and separate rates remain reported.",
+  "delta_populations": "RF test Delta_s is -.0062913 versus validation -.0905044. LightGBM test Delta_s is -.0025488 versus validation +.0012374. Population-specific differences are preserved without reselection.",
+  "roles": {
+    "LR__F6": "Full-sensing reference; very small artifact, but open-circuit recall and p95 fail.",
+    "RF__E4": "Sparse predictive candidate among seven predeclared sets; strongest final macro-F1, but p95 and artifact size fail.",
+    "LightGBM__E4": "Sparse resource comparison; p95 and artifact targets pass, but short-circuit recall fails."
+  },
+  "engineering_conclusion": "No evaluated configuration satisfied all predeclared engineering criteria.",
+  "selection_after_test": false,
+  "final_phase2_report_generated": false
+}

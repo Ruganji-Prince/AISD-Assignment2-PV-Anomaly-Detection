@@ -144,3 +144,11 @@ The root contains README/dependencies/ignore rules; data/raw contains the approv
 
 
 
+
+## Phase 2 implementation and evaluation
+
+The completed [Phase 2 report](phase2_implementation/reports/Phase2_Final_Report.pdf) evaluates Logistic Regression, Random Forest and LightGBM across seven predeclared sensor configurations. LR F6 is the full-sensing lightweight reference; RF E4 is the sparse predictive-performance candidate; LightGBM E4 is the sparse resource-efficient candidate.
+
+RF E4 achieved test macro-F1 0.9505 using four electrical channels but exceeded latency and artifact-size limits. LightGBM E4 met those resource limits but failed the individual short-circuit classification-recall target. **No evaluated configuration satisfied all predeclared engineering criteria.** The reused test partition and timestamp limitations remain explicitly disclosed.
+
+[Phase 2 reproduction and evidence](phase2_implementation/README.md) provide the executed review notebook, frozen settings, sensor ablation, final results and verification instructions. From the repository root, with Phase 2 dependencies installed, run `python -B phase2_implementation/verify_submission.py` for evidence-only review. The Phase 1 sections above remain the approved historical planning record.

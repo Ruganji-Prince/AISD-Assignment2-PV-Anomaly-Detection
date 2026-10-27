@@ -1,0 +1,219 @@
+{
+  "purpose": "Portable public projection; no original provenance edited.",
+  "candidates": {
+    "LR__F6": {
+      "source": "phase2_implementation/stage2/evidence/checkpoints/LR__F6.json",
+      "source_sha256": "375dec635ca761b7b88c45601c6d551837b9fe2f386f49560ff20c6145a76491",
+      "projection": "Exact selected fields; original checkpoint remains unchanged locally.",
+      "model_sha256": "6460d8244e7c70d167a22beeb9f240b1127baa6c8a78635fed8ae2ad02e1680f",
+      "raw_channels": [
+        "vdc1",
+        "vdc2",
+        "idc1",
+        "idc2",
+        "irr",
+        "pvt"
+      ],
+      "feature_names": [
+        "numeric__vdc1",
+        "numeric__vdc2",
+        "numeric__idc1",
+        "numeric__idc2",
+        "numeric__irr",
+        "numeric__pvt",
+        "missing__missingindicator_vdc1",
+        "missing__missingindicator_vdc2",
+        "missing__missingindicator_idc1",
+        "missing__missingindicator_idc2",
+        "missing__missingindicator_irr",
+        "missing__missingindicator_pvt"
+      ],
+      "derived_features": [],
+      "estimator_parameters": {
+        "C": 1.0,
+        "class_weight": {
+          "0": 0.23819200880676605,
+          "1": 164.13197389885806,
+          "2": 35.3337664618086,
+          "3": 167.1310631229236,
+          "4": 1.3134929079171536
+        },
+        "dual": false,
+        "fit_intercept": true,
+        "intercept_scaling": 1,
+        "l1_ratio": 0.0,
+        "max_iter": 2000,
+        "n_jobs": null,
+        "penalty": "deprecated",
+        "random_state": 42,
+        "solver": "lbfgs",
+        "tol": 0.0001,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "class_weights": {
+        "0": 0.23819200880676605,
+        "1": 164.13197389885806,
+        "2": 35.3337664618086,
+        "3": 167.1310631229236,
+        "4": 1.3134929079171536
+      },
+      "training_medians": [
+        51.2504,
+        53.1038,
+        0.1105,
+        0.0432,
+        1.8733,
+        19.4501
+      ],
+      "fit_rows": 1006129,
+      "fit_index_digest": "86010f1f91f0653fd59a65ec55e3a3e3a7e905b6d292e7207099d8c4b58075f9"
+    },
+    "RF__E4": {
+      "source": "phase2_implementation/stage2/evidence/checkpoints/RF__E4.json",
+      "source_sha256": "26e314ebdf0cf2654ccf3cff8a986d649cf92e967833176c4f315502dedfa25a",
+      "projection": "Exact selected fields; original checkpoint remains unchanged locally.",
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "raw_channels": [
+        "vdc1",
+        "vdc2",
+        "idc1",
+        "idc2"
+      ],
+      "feature_names": [
+        "numeric__vdc1",
+        "numeric__vdc2",
+        "numeric__idc1",
+        "numeric__idc2",
+        "missing__missingindicator_vdc1",
+        "missing__missingindicator_vdc2",
+        "missing__missingindicator_idc1",
+        "missing__missingindicator_idc2"
+      ],
+      "derived_features": [],
+      "estimator_parameters": {
+        "bootstrap": true,
+        "ccp_alpha": 0.0,
+        "class_weight": {
+          "0": 0.23819200880676605,
+          "1": 164.13197389885806,
+          "2": 35.3337664618086,
+          "3": 167.1310631229236,
+          "4": 1.3134929079171536
+        },
+        "criterion": "gini",
+        "max_depth": 10,
+        "max_features": "sqrt",
+        "max_leaf_nodes": null,
+        "max_samples": null,
+        "min_impurity_decrease": 0.0,
+        "min_samples_leaf": 20,
+        "min_samples_split": 2,
+        "min_weight_fraction_leaf": 0.0,
+        "monotonic_cst": null,
+        "n_estimators": 100,
+        "n_jobs": 2,
+        "oob_score": false,
+        "random_state": 42,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "class_weights": {
+        "0": 0.23819200880676605,
+        "1": 164.13197389885806,
+        "2": 35.3337664618086,
+        "3": 167.1310631229236,
+        "4": 1.3134929079171536
+      },
+      "training_medians": [
+        51.2504,
+        53.1038,
+        0.1105,
+        0.0432
+      ],
+      "fit_rows": 1006129,
+      "fit_index_digest": "86010f1f91f0653fd59a65ec55e3a3e3a7e905b6d292e7207099d8c4b58075f9"
+    },
+    "LightGBM__E4": {
+      "source": "phase2_implementation/stage2/evidence/checkpoints/LightGBM__E4.json",
+      "source_sha256": "4a0898be416b37ba8fedaf3fc78adcc8861cbb5f3c89de4fb8f04c6e1c621857",
+      "projection": "Exact selected fields; original checkpoint remains unchanged locally.",
+      "model_sha256": "6c61bf1a475f3230c5b20d6d7217b6aaea8abb52df57a4363d26033e4ccbcf3c",
+      "raw_channels": [
+        "vdc1",
+        "vdc2",
+        "idc1",
+        "idc2"
+      ],
+      "feature_names": [
+        "numeric__vdc1",
+        "numeric__vdc2",
+        "numeric__idc1",
+        "numeric__idc2",
+        "numeric__P1",
+        "numeric__P2",
+        "numeric__P_total",
+        "numeric__V_diff",
+        "numeric__I_diff",
+        "missing__missingindicator_vdc1",
+        "missing__missingindicator_vdc2",
+        "missing__missingindicator_idc1",
+        "missing__missingindicator_idc2"
+      ],
+      "derived_features": [
+        "P1",
+        "P2",
+        "P_total",
+        "V_diff",
+        "I_diff"
+      ],
+      "estimator_parameters": {
+        "boosting_type": "gbdt",
+        "class_weight": {
+          "0": 0.23819200880676605,
+          "1": 164.13197389885806,
+          "2": 35.3337664618086,
+          "3": 167.1310631229236,
+          "4": 1.3134929079171536
+        },
+        "colsample_bytree": 1.0,
+        "importance_type": "split",
+        "learning_rate": 0.05,
+        "max_depth": 6,
+        "min_child_samples": 50,
+        "min_child_weight": 0.001,
+        "min_split_gain": 0.0,
+        "n_estimators": 150,
+        "n_jobs": 2,
+        "num_leaves": 31,
+        "objective": "multiclass",
+        "random_state": 42,
+        "reg_alpha": 0.0,
+        "reg_lambda": 1.0,
+        "subsample": 1.0,
+        "subsample_for_bin": 200000,
+        "subsample_freq": 0,
+        "num_class": 5,
+        "max_bin": 127,
+        "deterministic": true,
+        "force_col_wise": true,
+        "verbosity": -1
+      },
+      "class_weights": {
+        "0": 0.23819200880676605,
+        "1": 164.13197389885806,
+        "2": 35.3337664618086,
+        "3": 167.1310631229236,
+        "4": 1.3134929079171536
+      },
+      "training_medians": [
+        51.2504,
+        53.1038,
+        0.1105,
+        0.0432
+      ],
+      "fit_rows": 1006129,
+      "fit_index_digest": "86010f1f91f0653fd59a65ec55e3a3e3a7e905b6d292e7207099d8c4b58075f9"
+    }
+  }
+}

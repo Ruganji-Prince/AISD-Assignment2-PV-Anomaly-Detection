@@ -1,0 +1,81 @@
+{
+  "created_utc": "2026-10-27T07:52:59.182066+00:00",
+  "candidates": [
+    "LR__F6",
+    "RF__E4",
+    "LightGBM__E4"
+  ],
+  "diagnostic_F6_references": [
+    "RF__F6",
+    "LightGBM__F6"
+  ],
+  "reference_policy": "Only the frozen RF/LightGBM F6 models are scored on TEST to calculate same-family test Delta_s; not extra candidates or model selection.",
+  "model_sha256": {
+    "LR__F6": "6460d8244e7c70d167a22beeb9f240b1127baa6c8a78635fed8ae2ad02e1680f",
+    "RF__E4": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+    "LightGBM__E4": "6c61bf1a475f3230c5b20d6d7217b6aaea8abb52df57a4363d26033e4ccbcf3c",
+    "RF__F6": "a23e8f42f75154b6fa2255720a0ba9a5aff96fb4b05e0470824e3b93a6ba9bcf",
+    "LightGBM__F6": "2e5583f035197fd3a40287e5d1587fdd14f7ddf12180735e11bae1d9df66a983"
+  },
+  "threshold_partition": [
+    1140571,
+    1173967
+  ],
+  "test_partition": [
+    1227337,
+    1373798
+  ],
+  "explanation_partition": [
+    1056990,
+    1089790
+  ],
+  "threshold_rule": "Maximize hardware-alert recall subject to combined Y in {0,4} FPR <= .01; break equal-recall ties by lower FPR, then higher threshold.",
+  "threshold_sentinel": "Finite nextafter(max score,+infinity) included; zero-alert point is feasible, but zero recall must be disclosed.",
+  "engineering_criteria": {
+    "macro_f1_min": 0.8,
+    "each_hardware_classification_recall_min": 0.9,
+    "same_family_delta_max": 0.05,
+    "sparse_channels_max": 4,
+    "test_combined_alert_FPR_max": 0.01,
+    "validation_single_row_p95_ms_max": 10,
+    "artifact_MiB_max": 10,
+    "validation_isolated_dropout_macro_f1_loss_max": 0.05
+  },
+  "delta_policy": "Primary final Delta_s uses frozen same-family F6 TEST scores; Stage 2 validation Delta_s also retained separately. LR F6 is a reference: sparse-channel/Delta conditions not applicable.",
+  "resources": "Reuse corrected frozen Stage 2 block-13 100-warmup/2000 single-observation end-to-end measurements, including two-thread settings; do not combine with Stage 1 batch-average timings.",
+  "dropout": "Preserve existing LR F6/RF E4 block-13 outcomes; evaluate LightGBM E4 with identical 328 even-position, seed42 row mask and seed44 E4 channel mask.",
+  "explanation_sample": {
+    "partition": "validation block 13",
+    "seed": 42,
+    "per_class": 200,
+    "N": 1000,
+    "strategy": "Uniform without replacement within each class; class balanced, not representative of prevalence. Sorted source positions; 3 permutation repeats."
+  },
+  "explainability": "LR standardized coefficients, RF impurity importance, LightGBM gain and native exact Tree SHAP raw-score contributions. Raw-channel permutation regenerates dependent features. SHAP sample only; no causality.",
+  "prior_test_exposure": true,
+  "prior_test_disclosure": "The approved test partition was evaluated in an earlier legacy implementation and is not pristine or previously unseen. Revised settings were frozen from training/block13, and thresholds from block14. No legacy test metrics are read by revised selection code; earlier human exposure cannot be undone or independently disproved by software.",
+  "no_retraining": true,
+  "no_post_test_selection": true,
+  "seed": 42,
+  "runtime": {
+    "python": "3.14.7 (main, Sep 24 2026, 17:57:14) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26100-SP0",
+    "machine": "AMD64",
+    "processor": "Intel64 Family 6 Model 170 Stepping 4, GenuineIntel",
+    "physical_cores": 16,
+    "logical_cores": 22,
+    "RAM_bytes": 33785409536,
+    "dependencies": {
+      "numpy": "2.5.4",
+      "pandas": "3.0.6",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "lightgbm": "4.7.0",
+      "matplotlib": "3.11.2",
+      "joblib": "1.6.0",
+      "psutil": "7.2.2"
+    },
+    "seed": 42,
+    "threads": 2
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "change": "Replace ordinal indicator placeholders with exact fitted channel-based indicator names and include complete transformed feature names.",
+  "effect_on_estimator_inputs_or_parameters": "none",
+  "effect_on_fit_or_selection": "none",
+  "verification": "Final verifier compares every ledger name directly with each fitted pipeline.",
+  "active_model_and_fit_code_changed": false
+}

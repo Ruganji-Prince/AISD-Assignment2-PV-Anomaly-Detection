@@ -1,0 +1,866 @@
+{
+  "LR": {
+    "F6": {
+      "raw_channels": [
+        "vdc1",
+        "vdc2",
+        "idc1",
+        "idc2",
+        "irr",
+        "pvt"
+      ],
+      "physical_channel_count": 6,
+      "engineered_features": [],
+      "mathematical_feature_count": 12,
+      "numeric_features": [
+        "vdc1",
+        "vdc2",
+        "idc1",
+        "idc2",
+        "irr",
+        "pvt"
+      ],
+      "availability_indicators": [
+        "missingindicator_vdc1",
+        "missingindicator_vdc2",
+        "missingindicator_idc1",
+        "missingindicator_idc2",
+        "missingindicator_irr",
+        "missingindicator_pvt"
+      ],
+      "mathematical_feature_names": [
+        "numeric__vdc1",
+        "numeric__vdc2",
+        "numeric__idc1",
+        "numeric__idc2",
+        "numeric__irr",
+        "numeric__pvt",
+        "missing__missingindicator_vdc1",
+        "missing__missingindicator_vdc2",
+        "missing__missingindicator_idc1",
+        "missing__missingindicator_idc2",
+        "missing__missingindicator_irr",
+        "missing__missingindicator_pvt"
+      ],
+      "dependencies": {},
+      "all_dependencies_retained": true
+    },
+    "E5": {
+      "raw_channels": [
+        "vdc1",
+        "vdc2",
+        "idc1",
+        "idc2",
+        "irr"
+      ],
+      "physical_channel_count": 5,
+      "engineered_features": [],
+      "mathematical_feature_count": 10,
+      "numeric_features": [
+        "vdc1",
+        "vdc2",
+        "idc1",
+        "idc2",
+        "irr"
+      ],
+      "availability_indicators": [
+        "missingindicator_vdc1",
+        "missingindicator_vdc2",
+        "missingindicator_idc1",
+        "missingindicator_idc2",
+        "missingindicator_irr"
+      ],
+      "mathematical_feature_names": [
+        "numeric__vdc1",
+        "numeric__vdc2",
+        "numeric__idc1",
+        "numeric__idc2",
+        "numeric__irr",
+        "missing__missingindicator_vdc1",
+        "missing__missingindicator_vdc2",
+        "missing__missingindicator_idc1",
+        "missing__missingindicator_idc2",
+        "missing__missingindicator_irr"
+      ],
+      "dependencies": {},
+      "all_dependencies_retained": true
+    },
+    "E4": {
+      "raw_channels": [
+        "vdc1",
+        "vdc2",
+        "idc1",
+        "idc2"
+      ],
+      "physical_channel_count": 4,
+      "engineered_features": [],
+      "mathematical_feature_count": 8,
+      "numeric_features": [
+        "vdc1",
+        "vdc2",
+        "idc1",
+        "idc2"
+      ],
+      "availability_indicators": [
+        "missingindicator_vdc1",
+        "missingindicator_vdc2",
+        "missingindicator_idc1",
+        "missingindicator_idc2"
+      ],
+      "mathematical_feature_names": [
+        "numeric__vdc1",
+        "numeric__vdc2",
+        "numeric__idc1",
+        "numeric__idc2",
+        "missing__missingindicator_vdc1",
+        "missing__missingindicator_vdc2",
+        "missing__missingindicator_idc1",
+        "missing__missingindicator_idc2"
+      ],
+      "dependencies": {},
+      "all_dependencies_retained": true
+    },
+    "C3": {
+      "raw_channels": [
+        "idc1",
+        "idc2",
+        "irr"
+      ],
+      "physical_channel_count": 3,
+      "engineered_features": [],
+      "mathematical_feature_count": 6,
+      "numeric_features": [
+        "idc1",
+        "idc2",
+        "irr"
+      ],
+      "availability_indicators": [
+        "missingindicator_idc1",
+        "missingindicator_idc2",
+        "missingindicator_irr"
+      ],
+      "mathematical_feature_names": [
+        "numeric__idc1",
+        "numeric__idc2",
+        "numeric__irr",
+        "missing__missingindicator_idc1",
+        "missing__missingindicator_idc2",
+        "missing__missingindicator_irr"
+      ],
+      "dependencies": {},
+      "all_dependencies_retained": true
+    },
+    "C2": {
+      "raw_channels": [
+        "idc1",
+        "idc2"
+      ],
+      "physical_channel_count": 2,
+      "engineered_features": [],
+      "mathematical_feature_count": 4,
+      "numeric_features": [
+        "idc1",
+        "idc2"
+      ],
+      "availability_indicators": [
+        "missingindicator_idc1",
+        "missingindicator_idc2"
+      ],
+      "mathematical_feature_names": [
+        "numeric__idc1",
+        "numeric__idc2",
+        "missing__missingindicator_idc1",
+        "missing__missingindicator_idc2"
+      ],
+      "dependencies": {},
+      "all_dependencies_retained": true
+    },
+    "S4": {
+      "raw_channels": [
+        "vdc1",
+        "idc1",
+        "irr",
+        "pvt"
+      ],
+      "physical_channel_count": 4,
+      "engineered_features": [],
+      "mathematical_feature_count": 8,
+      "numeric_features": [
+        "vdc1",
+        "idc1",
+        "irr",
+        "pvt"
+      ],
+      "availability_indicators": [
+        "missingindicator_vdc1",
+        "missingindicator_idc1",
+        "missingindicator_irr",
+        "missingindicator_pvt"
+      ],
+      "mathematical_feature_names": [
+        "numeric__vdc1",
+        "numeric__idc1",
+        "numeric__irr",
+        "numeric__pvt",
+        "missing__missingindicator_vdc1",
+        "missing__missingindicator_idc1",
+        "missing__missingindicator_irr",
+        "missing__missingindicator_pvt"
+      ],
+      "dependencies": {},
+      "all_dependencies_retained": true
+    },
+    "S2": {
+      "raw_channels": [
+        "vdc1",
+        "idc1"
+      ],
+      "physical_channel_count": 2,
+      "engineered_features": [],
+      "mathematical_feature_count": 4,
+      "numeric_features": [
+        "vdc1",
+        "idc1"
+      ],
+      "availability_indicators": [
+        "missingindicator_vdc1",
+        "missingindicator_idc1"
+      ],
+      "mathematical_feature_names": [
+        "numeric__vdc1",
+        "numeric__idc1",
+        "missing__missingindicator_vdc1",
+        "missing__missingindicator_idc1"
+      ],
+      "dependencies": {},
+      "all_dependencies_retained": true
+    }
+  },
+  "RF": {
+    "F6": {
+      "raw_channels": [
+        "vdc1",
+        "vdc2",
+        "idc1",
+        "idc2",
+        "irr",
+        "pvt"
+      ],
+      "physical_channel_count": 6,
+      "engineered_features": [],
+      "mathematical_feature_count": 12,
+      "numeric_features": [
+        "vdc1",
+        "vdc2",
+        "idc1",
+        "idc2",
+        "irr",
+        "pvt"
+      ],
+      "availability_indicators": [
+        "missingindicator_vdc1",
+        "missingindicator_vdc2",
+        "missingindicator_idc1",
+        "missingindicator_idc2",
+        "missingindicator_irr",
+        "missingindicator_pvt"
+      ],
+      "mathematical_feature_names": [
+        "numeric__vdc1",
+        "numeric__vdc2",
+        "numeric__idc1",
+        "numeric__idc2",
+        "numeric__irr",
+        "numeric__pvt",
+        "missing__missingindicator_vdc1",
+        "missing__missingindicator_vdc2",
+        "missing__missingindicator_idc1",
+        "missing__missingindicator_idc2",
+        "missing__missingindicator_irr",
+        "missing__missingindicator_pvt"
+      ],
+      "dependencies": {},
+      "all_dependencies_retained": true
+    },
+    "E5": {
+      "raw_channels": [
+        "vdc1",
+        "vdc2",
+        "idc1",
+        "idc2",
+        "irr"
+      ],
+      "physical_channel_count": 5,
+      "engineered_features": [],
+      "mathematical_feature_count": 10,
+      "numeric_features": [
+        "vdc1",
+        "vdc2",
+        "idc1",
+        "idc2",
+        "irr"
+      ],
+      "availability_indicators": [
+        "missingindicator_vdc1",
+        "missingindicator_vdc2",
+        "missingindicator_idc1",
+        "missingindicator_idc2",
+        "missingindicator_irr"
+      ],
+      "mathematical_feature_names": [
+        "numeric__vdc1",
+        "numeric__vdc2",
+        "numeric__idc1",
+        "numeric__idc2",
+        "numeric__irr",
+        "missing__missingindicator_vdc1",
+        "missing__missingindicator_vdc2",
+        "missing__missingindicator_idc1",
+        "missing__missingindicator_idc2",
+        "missing__missingindicator_irr"
+      ],
+      "dependencies": {},
+      "all_dependencies_retained": true
+    },
+    "E4": {
+      "raw_channels": [
+        "vdc1",
+        "vdc2",
+        "idc1",
+        "idc2"
+      ],
+      "physical_channel_count": 4,
+      "engineered_features": [],
+      "mathematical_feature_count": 8,
+      "numeric_features": [
+        "vdc1",
+        "vdc2",
+        "idc1",
+        "idc2"
+      ],
+      "availability_indicators": [
+        "missingindicator_vdc1",
+        "missingindicator_vdc2",
+        "missingindicator_idc1",
+        "missingindicator_idc2"
+      ],
+      "mathematical_feature_names": [
+        "numeric__vdc1",
+        "numeric__vdc2",
+        "numeric__idc1",
+        "numeric__idc2",
+        "missing__missingindicator_vdc1",
+        "missing__missingindicator_vdc2",
+        "missing__missingindicator_idc1",
+        "missing__missingindicator_idc2"
+      ],
+      "dependencies": {},
+      "all_dependencies_retained": true
+    },
+    "C3": {
+      "raw_channels": [
+        "idc1",
+        "idc2",
+        "irr"
+      ],
+      "physical_channel_count": 3,
+      "engineered_features": [],
+      "mathematical_feature_count": 6,
+      "numeric_features": [
+        "idc1",
+        "idc2",
+        "irr"
+      ],
+      "availability_indicators": [
+        "missingindicator_idc1",
+        "missingindicator_idc2",
+        "missingindicator_irr"
+      ],
+      "mathematical_feature_names": [
+        "numeric__idc1",
+        "numeric__idc2",
+        "numeric__irr",
+        "missing__missingindicator_idc1",
+        "missing__missingindicator_idc2",
+        "missing__missingindicator_irr"
+      ],
+      "dependencies": {},
+      "all_dependencies_retained": true
+    },
+    "C2": {
+      "raw_channels": [
+        "idc1",
+        "idc2"
+      ],
+      "physical_channel_count": 2,
+      "engineered_features": [],
+      "mathematical_feature_count": 4,
+      "numeric_features": [
+        "idc1",
+        "idc2"
+      ],
+      "availability_indicators": [
+        "missingindicator_idc1",
+        "missingindicator_idc2"
+      ],
+      "mathematical_feature_names": [
+        "numeric__idc1",
+        "numeric__idc2",
+        "missing__missingindicator_idc1",
+        "missing__missingindicator_idc2"
+      ],
+      "dependencies": {},
+      "all_dependencies_retained": true
+    },
+    "S4": {
+      "raw_channels": [
+        "vdc1",
+        "idc1",
+        "irr",
+        "pvt"
+      ],
+      "physical_channel_count": 4,
+      "engineered_features": [],
+      "mathematical_feature_count": 8,
+      "numeric_features": [
+        "vdc1",
+        "idc1",
+        "irr",
+        "pvt"
+      ],
+      "availability_indicators": [
+        "missingindicator_vdc1",
+        "missingindicator_idc1",
+        "missingindicator_irr",
+        "missingindicator_pvt"
+      ],
+      "mathematical_feature_names": [
+        "numeric__vdc1",
+        "numeric__idc1",
+        "numeric__irr",
+        "numeric__pvt",
+        "missing__missingindicator_vdc1",
+        "missing__missingindicator_idc1",
+        "missing__missingindicator_irr",
+        "missing__missingindicator_pvt"
+      ],
+      "dependencies": {},
+      "all_dependencies_retained": true
+    },
+    "S2": {
+      "raw_channels": [
+        "vdc1",
+        "idc1"
+      ],
+      "physical_channel_count": 2,
+      "engineered_features": [],
+      "mathematical_feature_count": 4,
+      "numeric_features": [
+        "vdc1",
+        "idc1"
+      ],
+      "availability_indicators": [
+        "missingindicator_vdc1",
+        "missingindicator_idc1"
+      ],
+      "mathematical_feature_names": [
+        "numeric__vdc1",
+        "numeric__idc1",
+        "missing__missingindicator_vdc1",
+        "missing__missingindicator_idc1"
+      ],
+      "dependencies": {},
+      "all_dependencies_retained": true
+    }
+  },
+  "LightGBM": {
+    "F6": {
+      "raw_channels": [
+        "vdc1",
+        "vdc2",
+        "idc1",
+        "idc2",
+        "irr",
+        "pvt"
+      ],
+      "physical_channel_count": 6,
+      "engineered_features": [
+        "P1",
+        "P2",
+        "P_total",
+        "V_diff",
+        "I_diff"
+      ],
+      "mathematical_feature_count": 17,
+      "numeric_features": [
+        "vdc1",
+        "vdc2",
+        "idc1",
+        "idc2",
+        "irr",
+        "pvt",
+        "P1",
+        "P2",
+        "P_total",
+        "V_diff",
+        "I_diff"
+      ],
+      "availability_indicators": [
+        "missingindicator_vdc1",
+        "missingindicator_vdc2",
+        "missingindicator_idc1",
+        "missingindicator_idc2",
+        "missingindicator_irr",
+        "missingindicator_pvt"
+      ],
+      "mathematical_feature_names": [
+        "numeric__vdc1",
+        "numeric__vdc2",
+        "numeric__idc1",
+        "numeric__idc2",
+        "numeric__irr",
+        "numeric__pvt",
+        "numeric__P1",
+        "numeric__P2",
+        "numeric__P_total",
+        "numeric__V_diff",
+        "numeric__I_diff",
+        "missing__missingindicator_vdc1",
+        "missing__missingindicator_vdc2",
+        "missing__missingindicator_idc1",
+        "missing__missingindicator_idc2",
+        "missing__missingindicator_irr",
+        "missing__missingindicator_pvt"
+      ],
+      "dependencies": {
+        "P1": [
+          "vdc1",
+          "idc1"
+        ],
+        "P2": [
+          "vdc2",
+          "idc2"
+        ],
+        "P_total": [
+          "vdc1",
+          "idc1",
+          "vdc2",
+          "idc2"
+        ],
+        "V_diff": [
+          "vdc1",
+          "vdc2"
+        ],
+        "I_diff": [
+          "idc1",
+          "idc2"
+        ]
+      },
+      "all_dependencies_retained": true
+    },
+    "E5": {
+      "raw_channels": [
+        "vdc1",
+        "vdc2",
+        "idc1",
+        "idc2",
+        "irr"
+      ],
+      "physical_channel_count": 5,
+      "engineered_features": [
+        "P1",
+        "P2",
+        "P_total",
+        "V_diff",
+        "I_diff"
+      ],
+      "mathematical_feature_count": 15,
+      "numeric_features": [
+        "vdc1",
+        "vdc2",
+        "idc1",
+        "idc2",
+        "irr",
+        "P1",
+        "P2",
+        "P_total",
+        "V_diff",
+        "I_diff"
+      ],
+      "availability_indicators": [
+        "missingindicator_vdc1",
+        "missingindicator_vdc2",
+        "missingindicator_idc1",
+        "missingindicator_idc2",
+        "missingindicator_irr"
+      ],
+      "mathematical_feature_names": [
+        "numeric__vdc1",
+        "numeric__vdc2",
+        "numeric__idc1",
+        "numeric__idc2",
+        "numeric__irr",
+        "numeric__P1",
+        "numeric__P2",
+        "numeric__P_total",
+        "numeric__V_diff",
+        "numeric__I_diff",
+        "missing__missingindicator_vdc1",
+        "missing__missingindicator_vdc2",
+        "missing__missingindicator_idc1",
+        "missing__missingindicator_idc2",
+        "missing__missingindicator_irr"
+      ],
+      "dependencies": {
+        "P1": [
+          "vdc1",
+          "idc1"
+        ],
+        "P2": [
+          "vdc2",
+          "idc2"
+        ],
+        "P_total": [
+          "vdc1",
+          "idc1",
+          "vdc2",
+          "idc2"
+        ],
+        "V_diff": [
+          "vdc1",
+          "vdc2"
+        ],
+        "I_diff": [
+          "idc1",
+          "idc2"
+        ]
+      },
+      "all_dependencies_retained": true
+    },
+    "E4": {
+      "raw_channels": [
+        "vdc1",
+        "vdc2",
+        "idc1",
+        "idc2"
+      ],
+      "physical_channel_count": 4,
+      "engineered_features": [
+        "P1",
+        "P2",
+        "P_total",
+        "V_diff",
+        "I_diff"
+      ],
+      "mathematical_feature_count": 13,
+      "numeric_features": [
+        "vdc1",
+        "vdc2",
+        "idc1",
+        "idc2",
+        "P1",
+        "P2",
+        "P_total",
+        "V_diff",
+        "I_diff"
+      ],
+      "availability_indicators": [
+        "missingindicator_vdc1",
+        "missingindicator_vdc2",
+        "missingindicator_idc1",
+        "missingindicator_idc2"
+      ],
+      "mathematical_feature_names": [
+        "numeric__vdc1",
+        "numeric__vdc2",
+        "numeric__idc1",
+        "numeric__idc2",
+        "numeric__P1",
+        "numeric__P2",
+        "numeric__P_total",
+        "numeric__V_diff",
+        "numeric__I_diff",
+        "missing__missingindicator_vdc1",
+        "missing__missingindicator_vdc2",
+        "missing__missingindicator_idc1",
+        "missing__missingindicator_idc2"
+      ],
+      "dependencies": {
+        "P1": [
+          "vdc1",
+          "idc1"
+        ],
+        "P2": [
+          "vdc2",
+          "idc2"
+        ],
+        "P_total": [
+          "vdc1",
+          "idc1",
+          "vdc2",
+          "idc2"
+        ],
+        "V_diff": [
+          "vdc1",
+          "vdc2"
+        ],
+        "I_diff": [
+          "idc1",
+          "idc2"
+        ]
+      },
+      "all_dependencies_retained": true
+    },
+    "C3": {
+      "raw_channels": [
+        "idc1",
+        "idc2",
+        "irr"
+      ],
+      "physical_channel_count": 3,
+      "engineered_features": [
+        "I_diff"
+      ],
+      "mathematical_feature_count": 7,
+      "numeric_features": [
+        "idc1",
+        "idc2",
+        "irr",
+        "I_diff"
+      ],
+      "availability_indicators": [
+        "missingindicator_idc1",
+        "missingindicator_idc2",
+        "missingindicator_irr"
+      ],
+      "mathematical_feature_names": [
+        "numeric__idc1",
+        "numeric__idc2",
+        "numeric__irr",
+        "numeric__I_diff",
+        "missing__missingindicator_idc1",
+        "missing__missingindicator_idc2",
+        "missing__missingindicator_irr"
+      ],
+      "dependencies": {
+        "I_diff": [
+          "idc1",
+          "idc2"
+        ]
+      },
+      "all_dependencies_retained": true
+    },
+    "C2": {
+      "raw_channels": [
+        "idc1",
+        "idc2"
+      ],
+      "physical_channel_count": 2,
+      "engineered_features": [
+        "I_diff"
+      ],
+      "mathematical_feature_count": 5,
+      "numeric_features": [
+        "idc1",
+        "idc2",
+        "I_diff"
+      ],
+      "availability_indicators": [
+        "missingindicator_idc1",
+        "missingindicator_idc2"
+      ],
+      "mathematical_feature_names": [
+        "numeric__idc1",
+        "numeric__idc2",
+        "numeric__I_diff",
+        "missing__missingindicator_idc1",
+        "missing__missingindicator_idc2"
+      ],
+      "dependencies": {
+        "I_diff": [
+          "idc1",
+          "idc2"
+        ]
+      },
+      "all_dependencies_retained": true
+    },
+    "S4": {
+      "raw_channels": [
+        "vdc1",
+        "idc1",
+        "irr",
+        "pvt"
+      ],
+      "physical_channel_count": 4,
+      "engineered_features": [
+        "P1"
+      ],
+      "mathematical_feature_count": 9,
+      "numeric_features": [
+        "vdc1",
+        "idc1",
+        "irr",
+        "pvt",
+        "P1"
+      ],
+      "availability_indicators": [
+        "missingindicator_vdc1",
+        "missingindicator_idc1",
+        "missingindicator_irr",
+        "missingindicator_pvt"
+      ],
+      "mathematical_feature_names": [
+        "numeric__vdc1",
+        "numeric__idc1",
+        "numeric__irr",
+        "numeric__pvt",
+        "numeric__P1",
+        "missing__missingindicator_vdc1",
+        "missing__missingindicator_idc1",
+        "missing__missingindicator_irr",
+        "missing__missingindicator_pvt"
+      ],
+      "dependencies": {
+        "P1": [
+          "vdc1",
+          "idc1"
+        ]
+      },
+      "all_dependencies_retained": true
+    },
+    "S2": {
+      "raw_channels": [
+        "vdc1",
+        "idc1"
+      ],
+      "physical_channel_count": 2,
+      "engineered_features": [
+        "P1"
+      ],
+      "mathematical_feature_count": 5,
+      "numeric_features": [
+        "vdc1",
+        "idc1",
+        "P1"
+      ],
+      "availability_indicators": [
+        "missingindicator_vdc1",
+        "missingindicator_idc1"
+      ],
+      "mathematical_feature_names": [
+        "numeric__vdc1",
+        "numeric__idc1",
+        "numeric__P1",
+        "missing__missingindicator_vdc1",
+        "missing__missingindicator_idc1"
+      ],
+      "dependencies": {
+        "P1": [
+          "vdc1",
+          "idc1"
+        ]
+      },
+      "all_dependencies_retained": true
+    }
+  }
+}
