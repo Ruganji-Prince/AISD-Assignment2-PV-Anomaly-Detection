@@ -1,49 +1,80 @@
-﻿# Phase 2 reproduction and evidence inspection
+﻿# Phase 2 reproducibility: preprocessing, evidence review and full modelling
 
-## Frozen environment and data
+## Environment and immutable data
 
-The reference environment is Python 3.14.7 on Windows 11, using NumPy 2.5.4, pandas 3.0.6, SciPy 1.18.1, scikit-learn 1.9.1, LightGBM 4.7.0 and matplotlib 3.11.2. The complete dependency lock is `stage1/requirements-stage1-lock.txt`; `requirements.txt` includes that lock. No SHAP package is necessary for native LightGBM Tree SHAP.
+Use Python 3.14.7 and the frozen [dependency lock](stage1/requirements-stage1-lock.txt), included by [requirements.txt](requirements.txt). The reference versions include NumPy 2.5.4, pandas 3.0.6, SciPy 1.18.1, scikit-learn 1.9.1, LightGBM 4.7.0 and matplotlib 3.11.2. No separate SHAP dependency is needed for native LightGBM Tree SHAP.
 
-The original-author dataset is pinned at commit `e9ed8ad8072dcb3ffc643b0f3604219798708551`: https://github.com/clayton-h-costa/pv_fault_dataset. The associated study is https://doi.org/10.3390/s20174688. The unchanged CSV is `data/raw/pv_fault_dataset.csv`, SHA-256 `717278fdc338bf6713293c0495421a8be9ea02a0b64144e86e957a531edecb8a`. Phase 1 source/license/provenance remain unchanged. The CSV has 1,373,798 rows and seven columns, with six predictors and nominal `f_nv`.
+Data source: https://github.com/clayton-h-costa/pv_fault_dataset at commit `e9ed8ad8072dcb3ffc643b0f3604219798708551`; associated study https://doi.org/10.3390/s20174688. Expected location from the repository root: `data/raw/pv_fault_dataset.csv`. SHA-256: `717278fdc338bf6713293c0495421a8be9ea02a0b64144e86e957a531edecb8a`. The raw 1,373,798×7 export and original license/provenance are unchanged.
 
-## Scientific specification index
+From the repository root:
 
-| Contract | Authoritative repository-relative location |
+```powershell
+python -m venv .cache/phase2-review-env
+.cache\phase2-review-env\Scripts\Activate.ps1
+python -m pip install -r phase2_implementation/requirements.txt
+```
+
+On POSIX systems, use `source .cache/phase2-review-env/bin/activate`.
+
+## 1. Executable preprocessing — no classifier training
+
+```powershell
+python -B phase2_implementation/execute_preprocessing.py
+```
+
+Alternatively open [Phase2_Preprocessing_Implementation.ipynb](notebooks/Phase2_Preprocessing_Implementation.ipynb) in a Jupyter front end using the same environment and execute top-to-bottom. The Python entry point executes the same cells without requiring Jupyter. Learned medians/scalers/PCA fit only on TRAIN; validation/test receive transforms only. No classifier is fitted and no probability/test prediction is generated.
+
+The notebook imports the original Stage 2 preprocessing through `src.phase2_stage2.models.build_preprocessor`. This factory is an extraction of the original steps, also used by the existing AblationModel constructor; it is not a second cleaning/feature policy. Optional local fitted-preprocessor comparisons only transform TRAIN probes and are skipped when model caches are absent. Public execution does not require model binaries.
+
+Expected outputs:
+
+| Location | Output |
 | --- | --- |
-| Raw provenance/license | `data/raw/README.md`; `phase1_strategy/primary_source_manifest.json`; `phase1_strategy/PRIMARY_SOURCE_LICENSE.txt` |
-| Split intervals/blocks | `phase1_strategy/Phase1_Split_Manifest.json` |
-| Training-only class counts/weights | `stage1/evidence/class_weights.json` |
-| Bounded search/model selection | `stage1/evidence/experiment_configuration.json`; `stage1/evidence/validation_comparison.csv`; `stage1/evidence/stage1_selection.json` |
-| Feature definitions and dependencies | `stage1/Feature_Dependencies.json`; `src/phase2_stage1/features.py` |
-| Sensor configurations and fixed settings | `src/phase2_stage2/contracts.py`; `stage2/evidence/feature_availability_by_configuration.json`; `stage2/evidence/frozen_stage1_settings.json` |
-| Complete final fitted-model specifications | `stage4/evidence/final_model_specifications.json` |
-| Threshold selection/freeze chronology | `stage3/evidence/stage3_protocol.json`; `stage3/evidence/stage3_threshold_selection.json`; `stage3/evidence/threshold_freeze_receipt.json`; `stage3/evidence/test_access_started.json` |
-| Evaluation definitions | `src/phase2_stage1/evaluation.py`; `src/phase2_stage3/common.py` |
-| Corrected resource protocol/samples | `stage2/evidence/measurement_protocol.json`; `stage2/evidence/resource_benchmark_correction.json`; `stage4/evidence/resource_protocol_public.json` |
-| Dropout/explanation samples and seeds | `stage2/evidence/isolated_dropout_validation.json`; `stage3/evidence/dropout_validation.json`; `stage3/evidence/explainability_metadata.json` |
+| `phase2_implementation/notebooks/Phase2_Preprocessing_Implementation.ipynb` | Executed preprocessing notebook, 13 code cells |
+| `phase2_implementation/preprocessing_diagnostics/` | Eight 300-DPI diagnostic PNGs |
+| `phase2_implementation/compliance/Preprocessing_Evidence.json` | Raw audit, frozen split, training-only fit ledger, matrix shapes, MI/PCA/scaling diagnostics |
+| `phase2_implementation/compliance/Diagnostic_Inventory.json` | Figure captions, populations, dimensions and hashes |
+| `phase2_implementation/compliance/Notebook_Execution.json` | Execution/error status and notebook hash |
 
-Paths beginning `stage1/`, `stage2/`, `stage3/` or `stage4/` in this table are relative to `phase2_implementation/`; `src/`, `data/` and `phase1_strategy/` paths are relative to the repository root. Random seed is 42; E4 dropout channel seed is 44. Model weights/features/settings never change after selection. Block 13 selects models; block 14 selects hardware-score thresholds. Test is never used for revised tuning. Prior legacy exposure is disclosed in `stage3/Methodology_Disclosure.md`.
+TRAIN [0,1006129), VALIDATION [1056990,1173967), TEST [1227337,1373798) remain fixed. The selected LR F6/RF E4/LightGBM E4 matrices have 12/8/13 mathematical inputs, including retained-channel availability indicators. Large arrays remain in memory and are not committed. The newly completed MI/PCA/scaling diagnostics do not reopen frozen model/feature/sensor decisions.
 
-## Evidence-only review
-
-After installing the frozen dependencies as described in the [Phase 2 README](README.md), execute from the repository root:
+## 2. Evidence and assignment verification — no preprocessing rerun
 
 ```powershell
 python -B phase2_implementation/verify_submission.py
 ```
 
-This portable check validates approved public-file hashes, report/table consistency, confusion-derived class metrics, same-family degradation, engineering flags, training weights, threshold chronology, selected figure populations, raw-data integrity and relative Markdown links. It does not load trusted-local pickles, regenerate predictions or claim to recompute AP from ranking scores unavailable in the public bundle. Ranking/AP results remain protected by approved evidence hashes and the recorded earlier verifier. Host-dependent timings are not expected to reproduce byte-for-byte on different hardware.
+This reads frozen and compliance evidence, checks the new notebook/figures/table, verifies the unchanged scientific numbers and original report-page content, and runs the required semantic checks. It does not refit preprocessing, retrain classifiers, regenerate figures or predict. Any new verification output is small and explicitly scoped to the compliance review. Original historical verifiers remain unchanged and describe their earlier snapshot/package scope.
 
-The evidence-review notebook is already executed. Its cells only read the frozen CSV/JSON evidence and calculate descriptive checks; no estimator is fitted. The notebook can be rerun using any Jupyter front end with the pinned review environment. A Jupyter front end is optional and is not part of the model dependency lock; the standard Python notebook builder executes the same evidence-only cells without requiring Jupyter.
+The [evidence-review notebook](notebooks/Phase2_Evidence_Review.ipynb) is separate, executed and unchanged. It can be inspected without any model cache. AP/ranking scores are checked against frozen evidence and hashes, not claimed to be recomputed from omitted public prediction arrays.
 
-## Independent experimental reproduction
+## 3. Full modelling reproduction — separate fresh workspace required
 
-The modular experiment entry points are `run_stage1.py`, `run_stage2.py`, and `run_stage3.py freeze` followed by `run_stage3.py test`; corresponding analysis/diagnostic modules are retained. These are historical experiment entry points, **not** evidence-review commands. No experiment was rerun during report preparation.
+Full modelling reproduction is different from either command above. Completed official evidence must not be deleted or overwritten to bypass guards. No modelling experiment was rerun during compliance completion.
 
-A completed comparison/freeze refuses silent overwrite. Full independent training requires a separate, deliberately prepared fresh workspace, the raw CSV, the same source/dependencies, the Phase 1 baseline and stage-specific prerequisite manifests. Stage 1 produces selected family model caches; Stage 2 clones those estimators, produces all 21 ablation models and freezes candidates; Stage 3 freezes block-14 thresholds before test evaluation. Stage 2 foundation hashes refer to the particular preceding local execution, so a fresh run requires fresh-run provenance for newly generated outputs rather than presenting original execution hashes as new-run hashes. Timing checkpoints and original binaries are not supplied as public prerequisites.
+| Step | Existing root-based entry point | Prerequisites / expected outputs |
+| --- | --- | --- |
+| F6 selection | `python -B phase2_implementation/run_stage1.py` | Fresh output tree; raw CSV; Phase 1 baseline; static feature dependency/configuration and semantic/source-hash records. Produces bounded 16-trial evidence, selected LR/RF/LightGBM specifications and ignored `.cache/stage1/models/`. |
+| Fixed sensor ablation | `python -B phase2_implementation/run_stage2.py` | Selected Stage 1 estimators/cache and fresh-run foundation hashes. Produces 21-run validation/class/resource tables, selection evidence and ignored `.cache/stage2/models/`. |
+| Alert threshold freeze | `python -B phase2_implementation/run_stage3.py freeze` | Frozen approved final candidates and preceding evidence/models. Uses only block 14; produces threshold selection, protocol and freeze receipt. |
+| Final evaluation | `python -B phase2_implementation/run_stage3.py test` | Existing threshold freeze and unchanged candidates. Produces final test metrics and ignored prediction arrays; never retunes decisions. |
+| Explanations/assessment | `python -B -m src.phase2_stage3.analysis` | Frozen test/selection evidence and model caches; validation-only explanation sample. Produces explanations, dropout and engineering-criteria evidence. |
 
-This package provides the algorithmic source, full parameter/feature/weight/split specifications and authoritative outputs needed to understand and independently implement the protocol. It does not claim one-command full training reproduction from the compact public evidence bundle. The complete preserved local experiment retains original prerequisite manifests and caches. Historical verifiers that depend on those local caches remain separate from the portable public submission verifier. No existing scientific result or provenance record should be deleted or edited merely to bypass an overwrite/hash guard.
+Fresh training requires copying the source, raw CSV and Phase 1 scientific artifacts to a separate workspace **without completed-run output guards**, then generating new-run prerequisite/protection manifests from that workspace. The original manifests contain hashes of a particular historical execution, including its README/source versions and selected model files; they must remain preserved, not silently relabeled as hashes for another run. Stage 1 semantic/source-hash prerequisites must be prepared before the first runner; Stage 2 protection must be prepared after Stage 1 results/models exist. The Stage 3 protocol records the fixed approved candidates before threshold selection. Historical modelling verifiers may require caches and original source versions; the current public compliance verifier does not.
 
-## Publication boundaries
+This documentation identifies the complete settings and dependency order, but does **not claim one-command end-to-end training reproduction** from the compact public evidence bundle. Independently measured timing will depend on hardware and does not reproduce byte-for-byte. No model/cache binaries are required to understand or verify the public findings.
 
-Model binaries, prediction arrays, SHAP arrays, environments, machine-path-bearing historical checkpoints and temporary previews remain local/ignored. Compact, explicitly labeled projection files retain numeric settings/resource samples without editing original provenance. Publication recommendations are recorded separately in the Stage 4 review inventory. No GitHub publication is performed by any review/build command.
+## Scientific specification index
+
+- [Frozen split manifest](../phase1_strategy/Phase1_Split_Manifest.json).
+- [Training-only class weights](stage1/evidence/class_weights.json): `N_train/(5*n_k)`; no SMOTE; validation/test are not rebalanced.
+- [Feature parents](stage1/Feature_Dependencies.json), [sensor configurations](stage2/evidence/feature_availability_by_configuration.json), [full frozen model specifications](stage4/evidence/final_model_specifications.json).
+- [Bounded selection configuration](stage1/evidence/experiment_configuration.json), [validation ablation](stage2/evidence/sensor_ablation_validation.csv), [threshold protocol](stage3/evidence/stage3_protocol.json).
+- [Corrected resource protocol](stage2/evidence/measurement_protocol.json), [timing samples and host metadata](stage4/evidence/resource_protocol_public.json).
+- [Prior-test-exposure disclosure](stage3/Methodology_Disclosure.md). The split is not pristine or previously unseen. Source order is not a reconstructed timestamp.
+
+## Report and historical verification
+
+`python -B phase2_implementation/build_compliance_report.py` rebuilds only the strategy-versus-reality appendix, retaining and checking the first ten approved scientific pages. It does not regenerate scientific results/figures. The report may exceed ten pages because no assignment page limit was specified.
+
+`phase1_strategy/verify_phase1.py` checks the frozen Phase 1-only snapshot and intentionally rejects populated Phase 2 directories. It is not the current full-repository quick start. Historical Stage 4/5 report/package builders and verifiers describe the pre-compliance publication and retain their original hashes; current changes are recorded as explicit compliance exceptions. No original scientific evidence hash is silently rewritten.

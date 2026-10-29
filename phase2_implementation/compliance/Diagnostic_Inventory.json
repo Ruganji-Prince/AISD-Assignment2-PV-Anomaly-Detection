@@ -1,0 +1,114 @@
+[
+  {
+    "number": 1,
+    "file": "phase2_implementation/preprocessing_diagnostics/fig1_1_missingness_heatmap.png",
+    "title": "Missingness pattern",
+    "caption": "Seed-42 uniform TRAIN display. Full released-data audit: 0 conventional missing cells across all seven variables. The 62 paired zeros remain observations, not confirmed missing values.",
+    "population": "TRAINING ONLY",
+    "dpi": 300,
+    "dimensions_px": [
+      2193,
+      1171
+    ],
+    "bytes": 80904,
+    "sha256": "750f08543ac8dc8c808815b48eb1c4e080da1b6461ce6dbf2f02d49d1567a06a"
+  },
+  {
+    "number": 2,
+    "file": "phase2_implementation/preprocessing_diagnostics/fig1_2_target_distribution.png",
+    "title": "Target class distribution",
+    "caption": "All TRAIN labels, without rebalancing. Counts and percentages expose rare hardware states; accuracy alone is inadequate. Class 4 is natural building shade, not hardware failure.",
+    "population": "TRAINING ONLY",
+    "dpi": 300,
+    "dimensions_px": [
+      2465,
+      1177
+    ],
+    "bytes": 101194,
+    "sha256": "214623aaf32cd50ba0afb34850892ccf46ab240a4c5fd4304dec2c793d92fa46"
+  },
+  {
+    "number": 3,
+    "file": "phase2_implementation/preprocessing_diagnostics/fig2_1_outlier_boxplots.png",
+    "title": "Raw vs reference-cleaned boxplots",
+    "caption": "Full TRAIN IQR box statistics and fliers are shown. Reference cleaning is the existing RetainedQuality policy; unusual values remain. Nearly identical panels reflect intentional retention, not failed cleaning. Units are channel-specific.",
+    "population": "TRAINING ONLY",
+    "dpi": 300,
+    "dimensions_px": [
+      3185,
+      1899
+    ],
+    "bytes": 159891,
+    "sha256": "fd8bfe56843eff41725faa87e7936a6d0019e6eb803e3099780eca5058271f18"
+  },
+  {
+    "number": 4,
+    "file": "phase2_implementation/preprocessing_diagnostics/fig3_1_correlation_matrix.png",
+    "title": "Training predictor correlation",
+    "caption": "All six raw TRAIN predictors; f_nv is excluded. Asterisks mark |r| >= 0.85 (five pairs), matching Phase 1. Screening warns about redundancy; the frozen reference retains physical channels pending the predeclared ablation, rather than automatically dropping them.",
+    "population": "TRAINING ONLY",
+    "dpi": 300,
+    "dimensions_px": [
+      1933,
+      1585
+    ],
+    "bytes": 140554,
+    "sha256": "2ab1a435e6304b7fba5109e5050d97cda7ac89f3938abc2047c99cadfaef4644"
+  },
+  {
+    "number": 5,
+    "file": "phase2_implementation/preprocessing_diagnostics/fig3_2_collinear_scatterplots.png",
+    "title": "Collinear predictor pairs",
+    "caption": "All five Phase 1 high-correlation pairs. Points are a uniform seed-42 TRAIN sample; correlations and descriptive OLS lines use full TRAIN. Association is not causation; dependence precludes naive significance claims.",
+    "population": "TRAINING ONLY",
+    "dpi": 300,
+    "dimensions_px": [
+      3363,
+      1897
+    ],
+    "bytes": 1282131,
+    "sha256": "fcf3f8506d1fda8274eabf26f6fba97e2c15663145fe6abddeea1e9197524062"
+  },
+  {
+    "number": 6,
+    "file": "phase2_implementation/preprocessing_diagnostics/fig3_3_target_importance.png",
+    "title": "Feature-target mutual information",
+    "caption": "Seed-42 proportional stratified TRAIN sample, k=3 continuous-feature MI estimator; train-fitted standardization. Target codes remain nominal. This descriptive diagnostic does not alter frozen model/feature choices; imbalance, repeated readings and ties limit interpretation.",
+    "population": "TRAINING ONLY",
+    "dpi": 300,
+    "dimensions_px": [
+      2163,
+      1175
+    ],
+    "bytes": 74947,
+    "sha256": "0aaec31ffb3ea6f9357c967c34f509a2a48194c90ee45753e6b9cfc51e078281"
+  },
+  {
+    "number": 7,
+    "file": "phase2_implementation/preprocessing_diagnostics/fig4_1_transformation_grid.png",
+    "title": "Transformation/scaling comparison",
+    "caption": "All learned scaler parameters use full TRAIN. Scaling changes units, not the underlying skewed shape. StandardScaler aligns LR regularization; RF/LightGBM retain native scale. Robust/MinMax are diagnostic alternatives only. Optional log1p is not introduced into frozen pipelines.",
+    "population": "TRAINING ONLY",
+    "dpi": 300,
+    "dimensions_px": [
+      2673,
+      1780
+    ],
+    "bytes": 204534,
+    "sha256": "2df87a00137d3d2508857701c31e42610679506d6a79b2d44ed3adc45c72a2e6"
+  },
+  {
+    "number": 8,
+    "file": "phase2_implementation/preprocessing_diagnostics/fig5_1_pca_scree_plot.png",
+    "title": "PCA scree and cumulative variance",
+    "caption": "StandardScaler and full-SVD PCA are fitted to full TRAIN only. PCA is an exploratory mathematical diagnostic, not physical sensor reduction, a feature-selection rule, or a change to the frozen models. All six inputs are needed to compute the components.",
+    "population": "TRAINING ONLY",
+    "dpi": 300,
+    "dimensions_px": [
+      2161,
+      1175
+    ],
+    "bytes": 116322,
+    "sha256": "4a6dd1f627e87f34d35dd7c2e27379211f0344208b72397cde31ee90fd326514"
+  }
+]

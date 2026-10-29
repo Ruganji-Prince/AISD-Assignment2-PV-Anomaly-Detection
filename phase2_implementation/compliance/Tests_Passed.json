@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "test_count": 8,
+  "tests": [
+    "test_PCA_and_scalers_are_fit_on_training_only",
+    "test_all_eight_figures_and_retention_policy",
+    "test_correlation_and_MI_use_training_predictors",
+    "test_executed_notebook_has_all_diagnostics_without_model_calls",
+    "test_frozen_split_and_model_ready_shapes",
+    "test_nontraining_fit_is_rejected_before_factory",
+    "test_shared_factory_excludes_metadata_and_matches_frozen_policies",
+    "test_strategy_table_covers_every_required_category"
+  ],
+  "scope": "Required semantic compliance checks; no classifier training or new predictions."
+}

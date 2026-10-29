@@ -1,41 +1,40 @@
-# Phase 2: photovoltaic classification under sparse sensing
+﻿# Phase 2: implementation, preprocessing diagnostics and frozen evidence
 
-The completed experiment compares Logistic Regression, Random Forest and LightGBM across seven predeclared sensor configurations. Settings were selected with full sensing on validation block 13 and held fixed during ablation. Validation block 14 selected hardware-alert thresholds before the frozen test evaluation.
+The scientific experiment compares LR, RF and LightGBM across seven predeclared sensor configurations. Settings were selected on validation block 13; block 14 froze hardware-alert thresholds before final evaluation. **No evaluated configuration satisfied all predeclared engineering criteria.** The [final report](reports/Phase2_Final_Report.pdf) retains the original scientific pages and adds the assignment-required decision-table appendix.
 
-The [final report](reports/Phase2_Final_Report.pdf) presents the engineering trade-off. RF E4 achieved test macro-F1 0.9505 from four electrical channels but exceeded the latency and artifact-size targets. LightGBM E4 met both resource limits but failed the short-circuit classification-recall target. LR F6 remains a full-sensing lightweight reference. **No evaluated configuration satisfied all predeclared engineering criteria.**
+## Assignment deliverables
 
-[Prior test exposure](stage3/Methodology_Disclosure.md) remains an explicit limitation. Natural building shade is an environmental condition, not hardware failure. Strong aggregate hardware alerting does not imply reliable fault-type diagnosis.
+- [Complete executable preprocessing notebook](notebooks/Phase2_Preprocessing_Implementation.ipynb): reuses the actual shared Pipeline/ColumnTransformer steps; fits only TRAIN preprocessing; transforms frozen validation/test partitions without classifier fitting or predictions.
+- [Eight required preprocessing diagnostics](preprocessing_diagnostics/README.md): all included in the preprocessing notebook and saved at 300 DPI.
+- [Strategy versus reality](compliance/Strategy_vs_Reality.md): 21 categories covering the approved plan, actual implementation, status and rationale.
+- [Executed evidence-review notebook](notebooks/Phase2_Evidence_Review.ipynb): preserves the separate inspection-only workflow.
+- [Reproduction guide](Reproduction_Guide.md): dependencies, honest fresh-training prerequisites, commands and output locations.
 
-## Review from the repository root
+## Root-based execution
 
-Use Python 3.14.7 and the [frozen Phase 2 dependencies](requirements.txt). Installation in a separate environment preserves existing environments:
+Use Python 3.14.7 and the frozen dependency lock referenced by [requirements.txt](requirements.txt). In a separate environment:
 
 ```powershell
 python -m venv .cache/phase2-review-env
 .cache\phase2-review-env\Scripts\Activate.ps1
 python -m pip install -r phase2_implementation/requirements.txt
+python -B phase2_implementation/execute_preprocessing.py
 python -B phase2_implementation/verify_submission.py
 ```
 
-On POSIX systems, activate with `source .cache/phase2-review-env/bin/activate`. The verifier reads evidence and writes its new review output only under ignored `.cache/`. It does not fit models, select thresholds, access model binaries, or regenerate experimental predictions.
+On POSIX systems, use `source .cache/phase2-review-env/bin/activate`. The preprocessing notebook can also be run top-to-bottom in a Jupyter front end with the same environment. No Jupyter front end is required for the standard Python execution command. Figure links are relative; notebook outputs do not embed large arrays or models.
 
-The [executed evidence-review notebook](notebooks/Phase2_Evidence_Review.ipynb) displays the approved results without training. Evidence-only rendering commands are:
+MI, diagnostic scaling and PCA were completed after modelling decisions were frozen. These TRAIN-only diagnostic calculations did not change models, physical features, sensors, weights, thresholds, splits or results. The original evidence-review notebook remains unchanged. Historical Phase 1/stage verifiers describe their original scope; current full-project review uses `verify_submission.py`.
 
-```powershell
-python -B phase2_implementation/build_report.py
-python -B phase2_implementation/build_review_notebook.py
-```
+## Frozen scientific evidence
 
-The [reproduction guide](Reproduction_Guide.md) distinguishes evidence inspection from independent experiment reproduction, explains frozen-run overwrite guards, and indexes all scientific settings. Report regeneration changes only newly prepared report/presentation outputs, never approved experiment evidence.
+- [Final candidate comparison](stage3/evidence/final_candidate_comparison.csv), [all class metrics](stage3/evidence/final_test_class_metrics.csv), [confusions](stage3/evidence/final_test_details.json).
+- [Hardware alerts](stage3/evidence/final_hardware_alert_metrics.csv), [criteria](stage3/evidence/final_engineering_criteria.csv), [thresholds](stage3/evidence/stage3_threshold_selection.json), [freeze receipt](stage3/evidence/threshold_freeze_receipt.json).
+- [Validation ablation](stage2/evidence/sensor_ablation_validation.csv), [class metrics](stage2/evidence/sensor_ablation_class_metrics.csv), [resources](stage2/evidence/resource_metrics.csv).
+- [Complete frozen model specifications](stage4/evidence/final_model_specifications.json), [resource protocol and samples](stage4/evidence/resource_protocol_public.json), [training weights](stage1/evidence/class_weights.json), [feature dependencies](stage1/Feature_Dependencies.json).
+- [Explainability metadata](stage3/evidence/explainability_metadata.json), [physical permutation](stage3/evidence/physical_channel_permutation.csv), [Tree SHAP](stage3/evidence/shap_mean_absolute.csv), [dropout](stage3/evidence/dropout_validation.json).
+- [Prior-test-exposure disclosure](stage3/Methodology_Disclosure.md). Shade is environmental, not hardware failure; strong aggregate alerting does not establish reliable fault-type diagnosis.
 
-## Evidence index
+## Report preparation
 
-- [Final candidate comparison](stage3/evidence/final_candidate_comparison.csv), [all class metrics](stage3/evidence/final_test_class_metrics.csv), [test details/confusions](stage3/evidence/final_test_details.json).
-- [Hardware alerts](stage3/evidence/final_hardware_alert_metrics.csv), [engineering criteria](stage3/evidence/final_engineering_criteria.csv), [threshold freeze](stage3/evidence/stage3_threshold_selection.json), [chronology receipt](stage3/evidence/threshold_freeze_receipt.json).
-- [Validation ablation](stage2/evidence/sensor_ablation_validation.csv), [class metrics](stage2/evidence/sensor_ablation_class_metrics.csv), [resource results](stage2/evidence/resource_metrics.csv).
-- [Portable resource projection](stage4/evidence/resource_protocol_public.json) and [frozen model specification projection](stage4/evidence/final_model_specifications.json). Original machine-path-bearing records remain unedited locally; projections document their source hashes and selected fields.
-- [Training weights](stage1/evidence/class_weights.json), [row-count investigation](stage1/evidence/row_count_discrepancy.json), [experiment configuration](stage1/evidence/experiment_configuration.json), [feature dependencies](stage1/Feature_Dependencies.json).
-- [Explainability metadata](stage3/evidence/explainability_metadata.json), [raw-channel permutation](stage3/evidence/physical_channel_permutation.csv), [Tree SHAP summary](stage3/evidence/shap_mean_absolute.csv), [dropout](stage3/evidence/dropout_validation.json).
-- [Editable report source](reports/Phase2_Final_Report.md). Selected figure captions identify TRAIN-fitted quantities, VALIDATION analysis and TEST performance explicitly.
-
-The original Phase 1 README/report are retained as historical planning documentation. Statements describing planned implementation belong to that approved Phase 1 scope; completed Phase 2 evidence is indexed here. Historical stage records likewise describe the scope authorized at their creation.
+`build_compliance_report.py` appends/rebuilds only the strategy-versus-reality appendix while retaining the first ten scientific pages. It verifies identical text and rendering of those pages against the recorded approved baseline. It does not regenerate scientific figures or predictions. The historical Stage 4 report builder is retained as provenance and should not replace the current compliance-complete report.

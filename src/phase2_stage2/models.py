@@ -25,6 +25,16 @@ class RetainedQuality(TransformerMixin,BaseEstimator):
   return z
  def get_feature_names_out(self,input_features=None):return np.array(self.channels,dtype=object)
 
+def build_preprocessor(family,channels):
+ """The original ablation preprocessing, exposed without loading/fitting any classifier."""
+ if family not in FAMILIES or list(channels) not in list(CONFIGS.values()):raise ValueError('Unapproved family/channel configuration')
+ numeric=[('median',SimpleImputer(strategy='median',keep_empty_features=True))]
+ if family=='LightGBM':numeric.append(('physical',PhysicalFeatures(channels)))
+ if family=='LR':numeric.append(('scale',StandardScaler()))
+ columns=ColumnTransformer([('numeric',Pipeline(numeric),channels),
+  ('missing',MissingIndicator(features='all',error_on_new=False),channels)],remainder='drop',sparse_threshold=0)
+ return Pipeline([('quality',RetainedQuality(channels)),('columns',columns)])
+
 class AblationModel:
  def __init__(self,family,config):
   if family not in FAMILIES or config not in CONFIGS:raise ValueError('Unapproved family/configuration')
@@ -33,12 +43,7 @@ class AblationModel:
   self.frozen_estimator_params=source.pipeline.named_steps['model'].get_params()
   estimator=clone(source.pipeline.named_steps['model'])
   if estimator.get_params()['class_weight']!=frozen_weights():raise ValueError('Stage 1 class weights changed')
-  numeric=[('median',SimpleImputer(strategy='median',keep_empty_features=True))]
-  if family=='LightGBM':numeric.append(('physical',PhysicalFeatures(self.channels)))
-  if family=='LR':numeric.append(('scale',StandardScaler()))
-  columns=ColumnTransformer([('numeric',Pipeline(numeric),self.channels),
-   ('missing',MissingIndicator(features='all',error_on_new=False),self.channels)],remainder='drop',sparse_threshold=0)
-  self.pipeline=Pipeline([('quality',RetainedQuality(self.channels)),('columns',columns),('model',estimator)])
+  self.pipeline=Pipeline(build_preprocessor(family,self.channels).steps+[('model',estimator)])
   split=json.loads((ROOT/'phase1_strategy/Phase1_Split_Manifest.json').read_text())
   self.boundaries=tuple(sorted({v for b in split['operating_blocks'] for v in [b['start'],b['end_exclusive']]}))
  def fit(self,X,y):
