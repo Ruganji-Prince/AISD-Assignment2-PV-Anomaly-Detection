@@ -1,0 +1,61 @@
+model,true_class,true_state,predicted_class,predicted_state,count,row_fraction
+RF E4,0,Normal,0,Normal,117886,0.946784245695194
+RF E4,0,Normal,1,Short Circuit,1,8.031354407607299e-06
+RF E4,0,Normal,2,Resistive Degradation,21,0.00016865844255975327
+RF E4,0,Normal,3,Open Circuit,0,0.0
+RF E4,0,Normal,4,Building Shade,6604,0.0530390645078386
+RF E4,0,Normal,abstain,Abstain,0,0.0
+RF E4,1,Short Circuit,0,Normal,0,0.0
+RF E4,1,Short Circuit,1,Short Circuit,2360,0.9995764506565015
+RF E4,1,Short Circuit,2,Resistive Degradation,0,0.0
+RF E4,1,Short Circuit,3,Open Circuit,0,0.0
+RF E4,1,Short Circuit,4,Building Shade,1,0.00042354934349851756
+RF E4,1,Short Circuit,abstain,Abstain,0,0.0
+RF E4,2,Resistive Degradation,0,Normal,6,0.0026431718061674008
+RF E4,2,Resistive Degradation,1,Short Circuit,15,0.006607929515418502
+RF E4,2,Resistive Degradation,2,Resistive Degradation,2249,0.9907488986784141
+RF E4,2,Resistive Degradation,3,Open Circuit,0,0.0
+RF E4,2,Resistive Degradation,4,Building Shade,0,0.0
+RF E4,2,Resistive Degradation,abstain,Abstain,0,0.0
+RF E4,3,Open Circuit,0,Normal,0,0.0
+RF E4,3,Open Circuit,1,Short Circuit,0,0.0
+RF E4,3,Open Circuit,2,Resistive Degradation,0,0.0
+RF E4,3,Open Circuit,3,Open Circuit,2410,1.0
+RF E4,3,Open Circuit,4,Building Shade,0,0.0
+RF E4,3,Open Circuit,abstain,Abstain,0,0.0
+RF E4,4,Building Shade,0,Normal,29,0.0019452642876308024
+RF E4,4,Building Shade,1,Short Circuit,69,0.004628387442983633
+RF E4,4,Building Shade,2,Resistive Degradation,29,0.0019452642876308024
+RF E4,4,Building Shade,3,Open Circuit,5,0.00033539039441910385
+RF E4,4,Building Shade,4,Building Shade,14776,0.9911456935873356
+RF E4,4,Building Shade,abstain,Abstain,0,0.0
+LightGBM E4,0,Normal,0,Normal,124079,0.996522423541506
+LightGBM E4,0,Normal,1,Short Circuit,0,0.0
+LightGBM E4,0,Normal,2,Resistive Degradation,8,6.425083526085839e-05
+LightGBM E4,0,Normal,3,Open Circuit,0,0.0
+LightGBM E4,0,Normal,4,Building Shade,425,0.003413325623233102
+LightGBM E4,0,Normal,abstain,Abstain,0,0.0
+LightGBM E4,1,Short Circuit,0,Normal,0,0.0
+LightGBM E4,1,Short Circuit,1,Short Circuit,1179,0.4993646759847522
+LightGBM E4,1,Short Circuit,2,Resistive Degradation,453,0.19186785260482847
+LightGBM E4,1,Short Circuit,3,Open Circuit,0,0.0
+LightGBM E4,1,Short Circuit,4,Building Shade,729,0.3087674714104193
+LightGBM E4,1,Short Circuit,abstain,Abstain,0,0.0
+LightGBM E4,2,Resistive Degradation,0,Normal,0,0.0
+LightGBM E4,2,Resistive Degradation,1,Short Circuit,11,0.004845814977973568
+LightGBM E4,2,Resistive Degradation,2,Resistive Degradation,2254,0.9929515418502203
+LightGBM E4,2,Resistive Degradation,3,Open Circuit,0,0.0
+LightGBM E4,2,Resistive Degradation,4,Building Shade,5,0.0022026431718061676
+LightGBM E4,2,Resistive Degradation,abstain,Abstain,0,0.0
+LightGBM E4,3,Open Circuit,0,Normal,0,0.0
+LightGBM E4,3,Open Circuit,1,Short Circuit,0,0.0
+LightGBM E4,3,Open Circuit,2,Resistive Degradation,2,0.0008298755186721991
+LightGBM E4,3,Open Circuit,3,Open Circuit,2408,0.9991701244813278
+LightGBM E4,3,Open Circuit,4,Building Shade,0,0.0
+LightGBM E4,3,Open Circuit,abstain,Abstain,0,0.0
+LightGBM E4,4,Building Shade,0,Normal,15,0.0010061711832573116
+LightGBM E4,4,Building Shade,1,Short Circuit,43,0.002884357392004293
+LightGBM E4,4,Building Shade,2,Resistive Degradation,33,0.0022135766031660853
+LightGBM E4,4,Building Shade,3,Open Circuit,3,0.0002012342366514623
+LightGBM E4,4,Building Shade,4,Building Shade,14814,0.9936946605849208
+LightGBM E4,4,Building Shade,abstain,Abstain,0,0.0

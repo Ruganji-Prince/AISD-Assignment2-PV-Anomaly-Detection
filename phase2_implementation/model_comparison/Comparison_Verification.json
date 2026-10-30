@@ -1,0 +1,60 @@
+{
+  "commit": "34ab15ed18abb29defc0f30baa284f189fc05aef",
+  "test_rows": 146461,
+  "models": [
+    "RF E4",
+    "LightGBM E4"
+  ],
+  "evidence": {
+    "phase2_implementation/stage3/evidence/final_test_details.json": {
+      "sha256": "c6655919515d20414480b0483fdc2a4716e6da649a02b935d5230463d2a12fd4",
+      "git_blob": "d52813108b8297f8b0a53830d82fd07fd073e6cf"
+    },
+    "phase2_implementation/stage3/evidence/final_test_class_metrics.csv": {
+      "sha256": "28c67b6763a95a8d445eec016ad134281d8c3644914f1a5bf0318a2564b78814",
+      "git_blob": "12f210f4787da350d2307b47a8f88cdb24301155"
+    },
+    "phase2_implementation/stage3/evidence/final_candidate_comparison.csv": {
+      "sha256": "355aadc475680a0885a45bf6ab86677078d12ae022c277618896bbafa5556486",
+      "git_blob": "ad2ee5dc27dfa5ec30bc2c3e1f1d723442ea4510"
+    },
+    "phase2_implementation/stage3/evidence/final_hardware_alert_metrics.csv": {
+      "sha256": "7f9bc603ef8ebacd1a2eae3d464cba5ab48a42846f94ea6a13ba39e011563fdc",
+      "git_blob": "805bd8d4e3f3905d4fffd88e908951bbf448340a"
+    }
+  },
+  "class_metric_rows": 10,
+  "system_metric_rows": 15,
+  "confusion_cell_rows": 60,
+  "verified_short_circuit_LightGBM_destinations": {
+    "Building Shade": 729,
+    "Resistive Degradation": 453
+  },
+  "original_reports_unchanged": {
+    "phase2_implementation/reports/Phase2_Final_Report.md": "b3cf2ce6a9436700e9c5abae63cc677b79797d6ae2ef59ea99aa4862b458dcc0",
+    "phase2_implementation/reports/Phase2_Final_Report.pdf": "b01f3c9be836020d1626250fa8d80068d8e3aee558924a63827e6fee92c91dcf"
+  },
+  "predictions_generated": false,
+  "models_fit": false,
+  "thresholds_modified": false,
+  "scope": "Frozen TEST classification/alert evidence; frozen VALIDATION latency/dropout and TRAIN-fitted artifact evidence explicitly labeled. FP/FN and plots derive only from frozen counts/metrics.",
+  "figures": "Four figures, each PNG and vector PDF.",
+  "files_created": [
+    "Comparison_Verification.json",
+    "RF_vs_LightGBM_Class_Comparison.md",
+    "RF_vs_LightGBM_Class_Metrics.csv",
+    "RF_vs_LightGBM_Confusion_Counts.csv",
+    "RF_vs_LightGBM_System_Metrics.csv",
+    "build_comparison.py",
+    "figures/rf_vs_lgbm_class_f1.pdf",
+    "figures/rf_vs_lgbm_class_f1.png",
+    "figures/rf_vs_lgbm_class_recall.pdf",
+    "figures/rf_vs_lgbm_class_recall.png",
+    "figures/rf_vs_lgbm_confusion_normalized.pdf",
+    "figures/rf_vs_lgbm_confusion_normalized.png",
+    "figures/rf_vs_lgbm_resources.pdf",
+    "figures/rf_vs_lgbm_resources.png"
+  ],
+  "existing_files_modified": [],
+  "visual_review": "PASS: all four PNG plots inspected; labels/counts readable, no clipping; confusion normalization and zero abstentions verified; resource axes use separate units."
+}
