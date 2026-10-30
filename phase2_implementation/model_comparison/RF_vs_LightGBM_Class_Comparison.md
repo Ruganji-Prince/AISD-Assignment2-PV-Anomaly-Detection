@@ -136,4 +136,4 @@ The test partition had prior legacy exposure, contains dependent neighboring obs
 - **Correct identification of the specific PV state/fault type:** prefer RF E4, particularly for short-circuit sensitivity and consistently high hardware-class recall; account for its resource failures and weaker normal/shade separation.
 - **Resource-efficient hardware fault alerting:** prefer LightGBM E4, with competitive binary alert performance and passing resource targets; retain its explicit short-circuit diagnosis limitation. It is not accepted for the complete predeclared five-class engineering objective.
 
-No final report was changed. No training/retraining, new predictions, commit, push or publication occurred. Review this separate package before any report integration.
+
