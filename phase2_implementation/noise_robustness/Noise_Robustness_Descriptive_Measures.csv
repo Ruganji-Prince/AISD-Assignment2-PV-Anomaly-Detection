@@ -1,0 +1,3 @@
+model,maximum_mean_macro_f1_drop,maximum_observed_seed_macro_f1_drop,alpha_at_maximum_mean_drop,macro_f1_retention_at_10pct,relative_macro_f1_loss_at_10pct,combined_FPR_change_clean_to_10pct_percentage_points
+RF__E4,0.2438810633965046,0.2462268871286906,0.1,0.7434130457197766,0.2565869542802234,1.17587146750824
+LightGBM__E4,0.3328582138251136,0.3365561733826605,0.1,0.631033807754768,0.36896619224523197,2.76323339549562

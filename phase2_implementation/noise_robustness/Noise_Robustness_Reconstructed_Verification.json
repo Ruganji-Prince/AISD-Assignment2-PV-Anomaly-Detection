@@ -1,0 +1,535 @@
+{
+  "title": "Additional Post-Hoc Noise Robustness Analysis using behaviorally verified reconstructed models",
+  "source_commit": "34ab15ed18abb29defc0f30baa284f189fc05aef",
+  "reconstruction_gate": {
+    "RF__E4": "B",
+    "LightGBM__E4": "A"
+  },
+  "test_sample_count": 146461,
+  "reconstructed_model_hashes": {
+    "RF__E4": "8158761cd874d47ac193381f44ba1251b430d1855a39c678409e079b326b9070",
+    "LightGBM__E4": "2eda421c4d6eb372806df4e973123d3661ae8bd39bd3dca79bd72eba6122662e"
+  },
+  "historical_expected_hashes": {
+    "RF__E4": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+    "LightGBM__E4": "6c61bf1a475f3230c5b20d6d7217b6aaea8abb52df57a4363d26033e4ccbcf3c"
+  },
+  "binary_identity": "NOT ESTABLISHED",
+  "preprocessing_provenance": "Unchanged source-commit build_preprocessor and AblationModel.fit; TRAIN-only reconstruction, frozen transforms during noise analysis.",
+  "preprocessing_state_sha256": {
+    "RF__E4": "675016f16b45f2a1a08e4e7ff57e73d0139c0cb78756af5348d0aa2901eca122",
+    "LightGBM__E4": "a0376fba459b4fffb4e38c1b5f0a0567f6891e92d4dcf7acc97a699def9b7092"
+  },
+  "frozen_thresholds": {
+    "RF__E4": 0.5913558658757772,
+    "LightGBM__E4": 0.13860002397413157
+  },
+  "physical_channels": [
+    "vdc1",
+    "vdc2",
+    "idc1",
+    "idc2"
+  ],
+  "training_scales": [
+    {
+      "channel": "vdc1",
+      "unit": "V",
+      "TRAIN_N": 1006129,
+      "TRAIN_mean": 137.10837407916878,
+      "TRAIN_std_population_ddof0": 136.99575732204144,
+      "TRAIN_min": 0.3799,
+      "TRAIN_max": 363.974,
+      "noise_SD_1pct": 1.3699575732204143,
+      "noise_SD_2pct": 2.7399151464408287,
+      "noise_SD_5pct": 6.849787866102073,
+      "noise_SD_10pct": 13.699575732204146
+    },
+    {
+      "channel": "vdc2",
+      "unit": "V",
+      "TRAIN_N": 1006129,
+      "TRAIN_mean": 136.92353648528172,
+      "TRAIN_std_population_ddof0": 137.28317146177127,
+      "TRAIN_min": 0.3164,
+      "TRAIN_max": 368.749,
+      "noise_SD_1pct": 1.3728317146177127,
+      "noise_SD_2pct": 2.7456634292354254,
+      "noise_SD_5pct": 6.864158573088564,
+      "noise_SD_10pct": 13.728317146177128
+    },
+    {
+      "channel": "idc1",
+      "unit": "A",
+      "TRAIN_N": 1006129,
+      "TRAIN_mean": 2.248128546538267,
+      "TRAIN_std_population_ddof0": 3.1252498165259897,
+      "TRAIN_min": 0.0418,
+      "TRAIN_max": 9.6549,
+      "noise_SD_1pct": 0.0312524981652599,
+      "noise_SD_2pct": 0.0625049963305198,
+      "noise_SD_5pct": 0.1562624908262995,
+      "noise_SD_10pct": 0.312524981652599
+    },
+    {
+      "channel": "idc2",
+      "unit": "A",
+      "TRAIN_N": 1006129,
+      "TRAIN_mean": 1.9763158404141024,
+      "TRAIN_std_population_ddof0": 2.9887473808382725,
+      "TRAIN_min": 0.0046,
+      "TRAIN_max": 9.4987,
+      "noise_SD_1pct": 0.029887473808382727,
+      "noise_SD_2pct": 0.05977494761676545,
+      "noise_SD_5pct": 0.14943736904191363,
+      "noise_SD_10pct": 0.29887473808382725
+    }
+  ],
+  "std_definition": "Population SD ddof=0 of raw physical TRAIN channels; those TRAIN E4 readings are finite and nonnegative.",
+  "noise_equation": "x_noisy = x + N(0, (alpha * sigma_TRAIN)^2)",
+  "alpha_levels": [
+    0,
+    0.01,
+    0.02,
+    0.05,
+    0.1
+  ],
+  "seeds": [
+    101,
+    202,
+    303,
+    404,
+    505,
+    606,
+    707,
+    808,
+    909,
+    1010
+  ],
+  "repetitions_per_nonzero_level": 10,
+  "clean_repetitions": 1,
+  "noise_clipped": false,
+  "existing_quality_policy_applied": "Negative electrical readings converted to missing; frozen medians and existing availability/abstention logic retained.",
+  "paired_inputs": [
+    {
+      "alpha": 0.01,
+      "seed": 101,
+      "physical_input_sha256": "3a9094a9548d19f51392c478d3a0ab66564e31b294c89470d77c25b4a48cd1c4",
+      "identical_input_for_both_models": true,
+      "derived_features_verified": true
+    },
+    {
+      "alpha": 0.01,
+      "seed": 202,
+      "physical_input_sha256": "9737219a75f263c8d292a4281187e040733e523404158ebc5224b7022051a23e",
+      "identical_input_for_both_models": true,
+      "derived_features_verified": true
+    },
+    {
+      "alpha": 0.01,
+      "seed": 303,
+      "physical_input_sha256": "09a2b67bee14d04a1bd042fcbd7a4d2e75224f86e1d0bed7ba5a787be7a5628f",
+      "identical_input_for_both_models": true,
+      "derived_features_verified": true
+    },
+    {
+      "alpha": 0.01,
+      "seed": 404,
+      "physical_input_sha256": "dda073534bfc1d879cfafcd1d35a5f0072401172f6da3c196c26aa3f640bd126",
+      "identical_input_for_both_models": true,
+      "derived_features_verified": true
+    },
+    {
+      "alpha": 0.01,
+      "seed": 505,
+      "physical_input_sha256": "1d9f0174c90e10c19182136411f7fb8e4d50ef67bbf021b225c5d386157c8332",
+      "identical_input_for_both_models": true,
+      "derived_features_verified": true
+    },
+    {
+      "alpha": 0.01,
+      "seed": 606,
+      "physical_input_sha256": "952ffcd2f1c0a61c89e1c4f3cff4189f6fc4ed58f5817fbb0daaf282ae6b4e22",
+      "identical_input_for_both_models": true,
+      "derived_features_verified": true
+    },
+    {
+      "alpha": 0.01,
+      "seed": 707,
+      "physical_input_sha256": "b481ab4ddcf0a245db0124fe358630c316a1f37e2edc042635098e007cc07e56",
+      "identical_input_for_both_models": true,
+      "derived_features_verified": true
+    },
+    {
+      "alpha": 0.01,
+      "seed": 808,
+      "physical_input_sha256": "07bd0f8c9ceb92d7395b0cce0b8ab9d794ae7f3fa877545e3865d9b2963c6273",
+      "identical_input_for_both_models": true,
+      "derived_features_verified": true
+    },
+    {
+      "alpha": 0.01,
+      "seed": 909,
+      "physical_input_sha256": "9b0934be0277c124cfdf797b5eb1c1f72159533f66ddfc302f4270bee0abb78e",
+      "identical_input_for_both_models": true,
+      "derived_features_verified": true
+    },
+    {
+      "alpha": 0.01,
+      "seed": 1010,
+      "physical_input_sha256": "586acad5b71762e0ab4ff8fb69d3b0e4a5d97d464a849c04ec0a8ed120ea8f94",
+      "identical_input_for_both_models": true,
+      "derived_features_verified": true
+    },
+    {
+      "alpha": 0.02,
+      "seed": 101,
+      "physical_input_sha256": "6be3dbbd86a7d6b0a2f8630c6d2573e74583f92065a555ae77918a14befb5d2c",
+      "identical_input_for_both_models": true,
+      "derived_features_verified": true
+    },
+    {
+      "alpha": 0.02,
+      "seed": 202,
+      "physical_input_sha256": "06cb5c902040edcc6bbaff8ad21d5f9be4e67ab5dede080ae382db2d77a53c01",
+      "identical_input_for_both_models": true,
+      "derived_features_verified": true
+    },
+    {
+      "alpha": 0.02,
+      "seed": 303,
+      "physical_input_sha256": "d6db2691afe3f3a8234cc532d43f6e0bcbc090ff272cf9d27de01aa173577c7e",
+      "identical_input_for_both_models": true,
+      "derived_features_verified": true
+    },
+    {
+      "alpha": 0.02,
+      "seed": 404,
+      "physical_input_sha256": "fca864dc31be97aee1f09dcf82020a5c15b55e4c15e63158d5f307ee36f6de77",
+      "identical_input_for_both_models": true,
+      "derived_features_verified": true
+    },
+    {
+      "alpha": 0.02,
+      "seed": 505,
+      "physical_input_sha256": "8e7219ea1bcb7f1aa5809c33f3d05f40e2445d15ab6d84415ea8b53e7d79f3d4",
+      "identical_input_for_both_models": true,
+      "derived_features_verified": true
+    },
+    {
+      "alpha": 0.02,
+      "seed": 606,
+      "physical_input_sha256": "0909573088c5994f2bfb3a42d9bb08f61c97f5d37c8a535ae843fa890ca3a487",
+      "identical_input_for_both_models": true,
+      "derived_features_verified": true
+    },
+    {
+      "alpha": 0.02,
+      "seed": 707,
+      "physical_input_sha256": "9da86837032b733eff3b556123d256b5eab4eed75243d3fd43b42aee275a3124",
+      "identical_input_for_both_models": true,
+      "derived_features_verified": true
+    },
+    {
+      "alpha": 0.02,
+      "seed": 808,
+      "physical_input_sha256": "b8498f52312d7932a12362291fd5464ae41fa93fbb761cdaf3b90e02bda80079",
+      "identical_input_for_both_models": true,
+      "derived_features_verified": true
+    },
+    {
+      "alpha": 0.02,
+      "seed": 909,
+      "physical_input_sha256": "5efc777463d6a1e36cff708bccd9e1cdeaa2b8ea0db7d0f29f9671f0d88a5c29",
+      "identical_input_for_both_models": true,
+      "derived_features_verified": true
+    },
+    {
+      "alpha": 0.02,
+      "seed": 1010,
+      "physical_input_sha256": "cafad195c842f97c8b8b63daa05381b5e230085dbcab41603d079c57ce444431",
+      "identical_input_for_both_models": true,
+      "derived_features_verified": true
+    },
+    {
+      "alpha": 0.05,
+      "seed": 101,
+      "physical_input_sha256": "c4e0c3fcdcfa5a7d397f3cc2f8d211c1235677d801333b1f388f1884b481fd72",
+      "identical_input_for_both_models": true,
+      "derived_features_verified": true
+    },
+    {
+      "alpha": 0.05,
+      "seed": 202,
+      "physical_input_sha256": "4ef7f1eab0fc97fcff422d59f1570167b946869ad5c35dae44872f2f53b316e8",
+      "identical_input_for_both_models": true,
+      "derived_features_verified": true
+    },
+    {
+      "alpha": 0.05,
+      "seed": 303,
+      "physical_input_sha256": "b35d20d935ec09525164618947744aca1cef41fb87b0fb51ae1f9c34a3bf5ea6",
+      "identical_input_for_both_models": true,
+      "derived_features_verified": true
+    },
+    {
+      "alpha": 0.05,
+      "seed": 404,
+      "physical_input_sha256": "135aa4d8d25a3c57a008c77986c4f908b6f105aa511bf1b840ed4ee4fce2bc55",
+      "identical_input_for_both_models": true,
+      "derived_features_verified": true
+    },
+    {
+      "alpha": 0.05,
+      "seed": 505,
+      "physical_input_sha256": "5cf2a3f93d367443c8d4b7a93ad7137193b896b02e34a0286f1d4972ad9cddbc",
+      "identical_input_for_both_models": true,
+      "derived_features_verified": true
+    },
+    {
+      "alpha": 0.05,
+      "seed": 606,
+      "physical_input_sha256": "0b460be336d8daee9f72d4ebccae02f25cf76e0ea559b89634578635f087dd53",
+      "identical_input_for_both_models": true,
+      "derived_features_verified": true
+    },
+    {
+      "alpha": 0.05,
+      "seed": 707,
+      "physical_input_sha256": "7431cdd53e01cc420f5073867fe629ace7ccc5de4acdf6c27f0787c9ff49e77c",
+      "identical_input_for_both_models": true,
+      "derived_features_verified": true
+    },
+    {
+      "alpha": 0.05,
+      "seed": 808,
+      "physical_input_sha256": "51465412e9bfec3d72c453859dc5acd6b1544dc1b37c79065837d77d3126da0f",
+      "identical_input_for_both_models": true,
+      "derived_features_verified": true
+    },
+    {
+      "alpha": 0.05,
+      "seed": 909,
+      "physical_input_sha256": "eeb75d1ca5a847437ffa6c9105ebc814938bff5ecacf0b7aa5fe343915f02402",
+      "identical_input_for_both_models": true,
+      "derived_features_verified": true
+    },
+    {
+      "alpha": 0.05,
+      "seed": 1010,
+      "physical_input_sha256": "83f2b1c18711f57c842160e61820860db1c1ae8119540a1ed6d12c484e3b8c71",
+      "identical_input_for_both_models": true,
+      "derived_features_verified": true
+    },
+    {
+      "alpha": 0.1,
+      "seed": 101,
+      "physical_input_sha256": "ebb725613bbf6b89274531538d6807348fc66306c4f32437fda770d7b6aa0ffb",
+      "identical_input_for_both_models": true,
+      "derived_features_verified": true
+    },
+    {
+      "alpha": 0.1,
+      "seed": 202,
+      "physical_input_sha256": "9f193235b77a2b51211614e2ada96d02ec8b820c11c95595503b8e5e4ac8fb3d",
+      "identical_input_for_both_models": true,
+      "derived_features_verified": true
+    },
+    {
+      "alpha": 0.1,
+      "seed": 303,
+      "physical_input_sha256": "cbfa9ea8ab5c880422b23917851aae5c2b09c82fb193ad6ca795747a3ebb479e",
+      "identical_input_for_both_models": true,
+      "derived_features_verified": true
+    },
+    {
+      "alpha": 0.1,
+      "seed": 404,
+      "physical_input_sha256": "a34804f72474cdafb5779865be1979f7810d614cd78e16ef7c52b0b2fed5f4c8",
+      "identical_input_for_both_models": true,
+      "derived_features_verified": true
+    },
+    {
+      "alpha": 0.1,
+      "seed": 505,
+      "physical_input_sha256": "0345afeeaa9435b78ea1513ddef6ffe12ac8907e8b7e1e961b5f7c09e534fac9",
+      "identical_input_for_both_models": true,
+      "derived_features_verified": true
+    },
+    {
+      "alpha": 0.1,
+      "seed": 606,
+      "physical_input_sha256": "0aff61ec2c36c61eb9d89a835cb951b0a4ff93d451f8baae2680da9e757ca17d",
+      "identical_input_for_both_models": true,
+      "derived_features_verified": true
+    },
+    {
+      "alpha": 0.1,
+      "seed": 707,
+      "physical_input_sha256": "473b1d06ff072e6aad5ae48cd1a65b7115ce0b4b182804d89509cb74bb7792ad",
+      "identical_input_for_both_models": true,
+      "derived_features_verified": true
+    },
+    {
+      "alpha": 0.1,
+      "seed": 808,
+      "physical_input_sha256": "cd57488214bec236e772692c4f29f613b8c3034d04688c71771c86382ab425fe",
+      "identical_input_for_both_models": true,
+      "derived_features_verified": true
+    },
+    {
+      "alpha": 0.1,
+      "seed": 909,
+      "physical_input_sha256": "5f9dbd8c34919c912ebbeb0779ab26f47aec3161b77ab3cebb2cba89a308a6da",
+      "identical_input_for_both_models": true,
+      "derived_features_verified": true
+    },
+    {
+      "alpha": 0.1,
+      "seed": 1010,
+      "physical_input_sha256": "5ff300d32339c28c35c8ea6b443d7610f08d8e60df848649f34f1c00bee451b2",
+      "identical_input_for_both_models": true,
+      "derived_features_verified": true
+    }
+  ],
+  "prediction_rows": 82,
+  "clean_baseline_comparison_file": "Reconstruction_Baseline_Comparison.csv",
+  "models_fitted_for_reconstruction": true,
+  "models_refitted_during_noise": false,
+  "preprocessing_fitted_on_TRAIN_during_reconstruction": true,
+  "preprocessing_refitted_on_TEST_or_noisy_inputs": false,
+  "thresholds_changed": false,
+  "new_predictions_generated_for_reconstructed_clean_baseline_and_noisy_inputs": true,
+  "original_clean_predictions_replaced": false,
+  "historical_evidence_modified": false,
+  "protected_existing_files_verified": 514,
+  "std_across_repeats": "Sample SD ddof=1; alpha=0 has n=1 and std=0 by convention, not estimated uncertainty.",
+  "interpretation": "Synthetic noise seed variation is not independent-dataset sampling uncertainty. The original engineering conclusion remains unchanged.",
+  "files_created": [
+    "Noise_Confusion_Counts.json",
+    "Noise_Paired_Input_Verification.csv",
+    "Noise_Plot_Data_Verification.csv",
+    "Noise_Presentation_Tables.md",
+    "Noise_Range_Diagnostics.csv",
+    "Noise_Range_Diagnostics_Seed_Level.csv",
+    "Noise_Robustness_Alert_Metrics.csv",
+    "Noise_Robustness_Analysis.md",
+    "Noise_Robustness_Class_Metrics.csv",
+    "Noise_Robustness_Descriptive_Measures.csv",
+    "Noise_Robustness_Reconstructed_Verification.json",
+    "Noise_Robustness_Seed_Level.csv",
+    "Noise_Robustness_Summary.csv",
+    "Noise_Scale_Diagnostics.csv",
+    "Reconstruction_Baseline_Comparison.csv",
+    "Reconstruction_Provenance.md",
+    "Reconstruction_Verification.json",
+    "figures/noise_alert_table.pdf",
+    "figures/noise_alert_table.png",
+    "figures/noise_combined_fpr.pdf",
+    "figures/noise_combined_fpr.png",
+    "figures/noise_hardware_macro_recall.pdf",
+    "figures/noise_hardware_macro_recall.png",
+    "figures/noise_hardware_recall_table.pdf",
+    "figures/noise_hardware_recall_table.png",
+    "figures/noise_macro_f1.pdf",
+    "figures/noise_macro_f1.png",
+    "figures/noise_overall_table.pdf",
+    "figures/noise_overall_table.png",
+    "figures/noise_short_circuit_recall.pdf",
+    "figures/noise_short_circuit_recall.png",
+    "prepare_reconstruction_workspace.py",
+    "reconstruct_models.py",
+    "render_noise_results.py",
+    "run_noise_robustness.py"
+  ],
+  "existing_files_modified": [],
+  "committed": false,
+  "pushed": false,
+  "plot_values_and_error_bars_checked_against_seed_CSV": true,
+  "figure_files": [
+    "figures/noise_alert_table.pdf",
+    "figures/noise_alert_table.png",
+    "figures/noise_combined_fpr.pdf",
+    "figures/noise_combined_fpr.png",
+    "figures/noise_hardware_macro_recall.pdf",
+    "figures/noise_hardware_macro_recall.png",
+    "figures/noise_hardware_recall_table.pdf",
+    "figures/noise_hardware_recall_table.png",
+    "figures/noise_macro_f1.pdf",
+    "figures/noise_macro_f1.png",
+    "figures/noise_overall_table.pdf",
+    "figures/noise_overall_table.png",
+    "figures/noise_short_circuit_recall.pdf",
+    "figures/noise_short_circuit_recall.png"
+  ],
+  "visual_inspection": "PASS: all seven PNGs inspected; readable labels, correct units/reference lines, aligned tables, no clipping.",
+  "status": "COMPLETE_READY_FOR_HUMAN_REVIEW",
+  "reconstruction_comparison_rows": 168,
+  "posthoc_robustness_measures": [
+    {
+      "model": "RF__E4",
+      "maximum_mean_macro_f1_drop": 0.2438810633965046,
+      "maximum_observed_seed_macro_f1_drop": 0.2462268871286906,
+      "alpha_at_maximum_mean_drop": 0.1,
+      "macro_f1_retention_at_10pct": 0.7434130457197766,
+      "relative_macro_f1_loss_at_10pct": 0.2565869542802234,
+      "combined_FPR_change_clean_to_10pct_percentage_points": 1.17587146750824
+    },
+    {
+      "model": "LightGBM__E4",
+      "maximum_mean_macro_f1_drop": 0.3328582138251136,
+      "maximum_observed_seed_macro_f1_drop": 0.3365561733826605,
+      "alpha_at_maximum_mean_drop": 0.1,
+      "macro_f1_retention_at_10pct": 0.631033807754768,
+      "relative_macro_f1_loss_at_10pct": 0.36896619224523197,
+      "combined_FPR_change_clean_to_10pct_percentage_points": 2.76323339549562
+    }
+  ],
+  "reference_crossings": [
+    [
+      "Reconstructed RF E4",
+      "Short Circuit",
+      "10% (first tested level)"
+    ],
+    [
+      "Reconstructed RF E4",
+      "Resistive Degradation",
+      "5% (first tested level)"
+    ],
+    [
+      "Reconstructed RF E4",
+      "Open Circuit",
+      "5% (first tested level)"
+    ],
+    [
+      "Reconstructed LightGBM E4",
+      "Short Circuit",
+      "Already below at clean baseline"
+    ],
+    [
+      "Reconstructed LightGBM E4",
+      "Resistive Degradation",
+      "5% (first tested level)"
+    ],
+    [
+      "Reconstructed LightGBM E4",
+      "Open Circuit",
+      "5% (first tested level)"
+    ]
+  ],
+  "historical_resource_values_not_rebenchmarked": true,
+  "protected_files_final_verified": 514,
+  "noise_runner_has_no_fit_calls": true,
+  "git_HEAD_at_completion": "4d9db3251fe95fe7a7c7e7f75c5257b75bb86b66",
+  "analysis_report": "Noise_Robustness_Analysis.md",
+  "local_only_reconstruction_artifacts": {
+    "models": [
+      "models/RF__E4_reconstructed.pkl",
+      "models/LightGBM__E4_reconstructed.pkl"
+    ],
+    "clean_baselines": "Reconstructed_Clean_Baselines.json",
+    "environment": "env/",
+    "source_snapshot": "source/",
+    "protected_file_manifest": "Protected_Original_Files.json"
+  },
+  "presentation_coverage_annotation": "All seven presentation assets include shared coverage and the existing input-quality/abstention interpretation."
+}
