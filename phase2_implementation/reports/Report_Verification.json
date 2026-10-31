@@ -1,0 +1,13 @@
+{
+  "report": "Assignment3_Phase2.pdf",
+  "pages": 13,
+  "sha256": "fed89440fed8b01621a167421db3ae157b9b1977680218a3578fb9aadcc2e832",
+  "source_sha256": "095990fa7d1a8080e655ca9b93fdf0bc8cbead7a9c5620ca2cdc0d6889f930ca",
+  "class_sha256": "da751920a317ed318b7b5cd7fa585a6cc7d28502d457856382e9be24b10a3bd7",
+  "document_class": "IEEEtran",
+  "mode": "conference",
+  "diagnostic_figures": 8,
+  "unresolved_references": 0,
+  "overfull_boxes": 0,
+  "scope": "Preprocessing and feature engineering only; no downstream evaluation"
+}

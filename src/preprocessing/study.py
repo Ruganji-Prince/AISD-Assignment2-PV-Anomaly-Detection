@@ -1,7 +1,8 @@
 """Actual approved preprocessing and training-only assignment diagnostics."""
 import numpy as np
 import pandas as pd
-from sklearn.preprocessing import RobustScaler,MinMaxScaler
+from sklearn.preprocessing import RobustScaler,MinMaxScaler,StandardScaler
+from sklearn.pipeline import Pipeline
 from sklearn.decomposition import PCA
 from sklearn.feature_selection import mutual_info_classif
 from sklearn.model_selection import StratifiedShuffleSplit
@@ -71,8 +72,10 @@ class PreprocessingStudy:
   self.stats['mutual_information']={'population':'TRAIN','N':50000,'seed':SEED,'sampling':'Seeded proportional stratified sample without replacement; natural training prevalence approximately preserved. Not model resampling.','class_counts':{str(k):int(v) for k,v in train.f_nv.iloc[positions].value_counts().sort_index().items()},'index_digest':digest(train.index[positions]),'method':'mutual_info_classif; continuous X, nominal discrete target; k=3; standardized with TRAIN-fitted scaler. Dependent observations/ties limit interpretation; diagnostic associations, not significance or causal effects.','scores_nats':dict(zip(SENSORS,self.mi.tolist()))}
   print('Training |r| >= .85 pairs:',self.high_pairs);print('Training-sample mutual information (nats):',self.stats['mutual_information']['scores_nats'])
  def scaling_and_pca(self):
-  self.robust=RobustScaler().fit(self.training_numeric);self.minmax=MinMaxScaler().fit(self.training_numeric)
-  self.pca=PCA(n_components=6,svd_solver='full').fit(self.standardized);assert self.pca.n_samples_==TRAIN[1]
+  self.robust_pipeline=Pipeline([('scale',RobustScaler())]).fit(self.training_numeric);self.minmax_pipeline=Pipeline([('scale',MinMaxScaler())]).fit(self.training_numeric)
+  self.robust=self.robust_pipeline.named_steps['scale'];self.minmax=self.minmax_pipeline.named_steps['scale']
+  self.pca_pipeline=Pipeline([('scale',StandardScaler()),('pca',PCA(n_components=6,svd_solver='full'))]).fit(self.training_numeric)
+  self.pca=self.pca_pipeline.named_steps['pca'];assert self.pca.n_samples_==TRAIN[1]
   for component in ['RobustScaler alternative','MinMaxScaler alternative','Standard-scaled exploratory PCA']:
    self.stats['fit_ledger'].append({'component':component,'population':'TRAIN','N':TRAIN[1],'index_digest':digest(self.partitions['TRAIN'].index),'diagnostic_only':True})
   evr=self.pca.explained_variance_ratio_;cum=np.cumsum(evr)

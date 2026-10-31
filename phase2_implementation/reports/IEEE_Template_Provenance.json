@@ -1,0 +1,10 @@
+{
+  "official_template_guidance": "https://www.ieee.org/conferences/publishing/templates.html",
+  "distribution": "https://ctan.org/pkg/ieeetran",
+  "download": "https://mirrors.ctan.org/macros/latex/contrib/IEEEtran.zip",
+  "resolved_download": "https://ctan.mirror.norbert-ruehl.de/macros/latex/contrib/IEEEtran.zip",
+  "class_file": "IEEEtran.cls",
+  "class_sha256": "da751920a317ed318b7b5cd7fa585a6cc7d28502d457856382e9be24b10a3bd7",
+  "document_mode": "conference",
+  "class_unmodified": true
+}

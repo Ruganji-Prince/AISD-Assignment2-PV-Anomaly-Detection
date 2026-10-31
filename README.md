@@ -1,8 +1,8 @@
-# Resource-Efficient and Explainable AI for Photovoltaic Anomaly Detection Under Sparse Sensing Constraints
+# PV Anomaly Detection: Data Preprocessing and Feature Engineering
 
-Ruganji Prince · 04-652 Artificial Intelligence System Design
+Ruganji Prince
 
-**Current milestone: Data Preprocessing.** This repository currently presents the data-preprocessing stage of the PV anomaly-detection project. The objective is to prepare defensible photovoltaic measurements for later investigation of sensing and computational trade-offs. Downstream work is outside the current submission scope.
+**Current milestone: Data Preprocessing.** A reproducible workflow for auditing photovoltaic measurements and constructing leakage-controlled feature matrices. The objective is to prepare defensible photovoltaic measurements for later investigation of sensing and computational trade-offs. The current scope is data preparation, statistical diagnostics and feature engineering.
 
 **Task Type: Multiclass Classification.** The [original dataset](https://github.com/clayton-h-costa/pv_fault_dataset), pinned at `e9ed8ad8072dcb3ffc643b0f3604219798708551`, is associated with [Lazzaretti et al. (2020)](https://doi.org/10.3390/s20174688).
 
@@ -37,7 +37,7 @@ Five TRAIN predictor pairs have |r| ≥ 0.85; five VIF values exceed 10. Depende
 
 - [Approved Phase 1 report](phase1_strategy/Phase1_Strategy_Report.pdf) and [audit evidence](phase1_strategy/Supporting_Evidence_Index.md)
 - [Executed preprocessing notebook](phase2_implementation/notebooks/Phase2_Preprocessing_Implementation.ipynb)
-- [Preprocessing-stage report](phase2_implementation/reports/Phase2_Final_Report.pdf)
+- [Preprocessing-stage report](phase2_implementation/reports/Assignment3_Phase2.pdf)
 - [Eight diagnostics](phase2_implementation/preprocessing_diagnostics/README.md)
 - [Preprocessing strategy versus reality](phase2_implementation/compliance/Strategy_vs_Reality.md)
 - [Setup and reproduction](phase2_implementation/Reproduction_Guide.md)
@@ -60,7 +60,7 @@ src/preprocessing/                Preprocessing study and shared constants
 phase2_implementation/notebooks/   Executed preprocessing notebook
 phase2_implementation/reports/     Preprocessing report and text
 phase2_implementation/compliance/  Preprocessing evidence and reflection table
-phase2_implementation/preprocessing_diagnostics/  Eight original figures
+figures/                          Eight 300-DPI diagnostic figures
 ```
 
-Processed arrays, environments and local review material are excluded. The current report makes no deployment-performance, globally minimum-sensing or causal claims. Historical Phase 1 planning remains labeled as planning.
+Processed arrays, environments and local review material are excluded. The IEEE-format reflection report records measured stage dimensions, empirical justification and figure-linked decisions; its source and build instructions are included. The analysis makes no deployment-performance, globally minimum-sensing or causal claims. Historical Phase 1 planning remains labeled as planning.

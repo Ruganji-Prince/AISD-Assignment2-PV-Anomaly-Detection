@@ -1,0 +1,10 @@
+policy,partition,input_N,original_predictors,retained_physical_channels,post_quality_P,post_median_numeric_P,indicator_P,post_imputation_plus_indicators_P,post_feature_numeric_P,post_scaling_numeric_P,final_design_P,post_feature_plus_indicators_P,PCA_diagnostic_input_P,PCA_diagnostic_all_components_P,PCA_95pct_view_P,input_predictor_NxP,post_quality_NxP,post_imputation_indicators_NxP,post_feature_numeric_NxP,post_scaling_numeric_NxP,final_design_NxP
+six_standard,TRAIN,1006129,6,6,6,6,6,12,6,6,12,12,6.0,6.0,2.0,1006129 x 6,1006129 x 6,1006129 x 12,1006129 x 6,1006129 x 6,1006129 x 12
+six_standard,VALIDATION,116977,6,6,6,6,6,12,6,6,12,12,6.0,6.0,2.0,116977 x 6,116977 x 6,116977 x 12,116977 x 6,116977 x 6,116977 x 12
+six_standard,TEST,146461,6,6,6,6,6,12,6,6,12,12,6.0,6.0,2.0,146461 x 6,146461 x 6,146461 x 12,146461 x 6,146461 x 6,146461 x 12
+electrical_native,TRAIN,1006129,6,4,4,4,4,8,4,4,8,8,,,,1006129 x 6,1006129 x 4,1006129 x 8,1006129 x 4,1006129 x 4,1006129 x 8
+electrical_native,VALIDATION,116977,6,4,4,4,4,8,4,4,8,8,,,,116977 x 6,116977 x 4,116977 x 8,116977 x 4,116977 x 4,116977 x 8
+electrical_native,TEST,146461,6,4,4,4,4,8,4,4,8,8,,,,146461 x 6,146461 x 4,146461 x 8,146461 x 4,146461 x 4,146461 x 8
+electrical_derived,TRAIN,1006129,6,4,4,4,4,8,9,9,13,13,,,,1006129 x 6,1006129 x 4,1006129 x 8,1006129 x 9,1006129 x 9,1006129 x 13
+electrical_derived,VALIDATION,116977,6,4,4,4,4,8,9,9,13,13,,,,116977 x 6,116977 x 4,116977 x 8,116977 x 9,116977 x 9,116977 x 13
+electrical_derived,TEST,146461,6,4,4,4,4,8,9,9,13,13,,,,146461 x 6,146461 x 4,146461 x 8,146461 x 9,146461 x 9,146461 x 13

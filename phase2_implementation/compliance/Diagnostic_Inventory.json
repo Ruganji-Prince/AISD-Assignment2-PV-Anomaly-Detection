@@ -1,7 +1,7 @@
 [
   {
     "number": 1,
-    "file": "phase2_implementation/preprocessing_diagnostics/fig1_1_missingness_heatmap.png",
+    "file": "figures/fig1_1_missingness_heatmap.png",
     "title": "Missingness pattern",
     "caption": "Seed-42 uniform TRAIN display. Full released-data audit: 0 conventional missing cells across all seven variables. The 62 paired zeros remain observations, not confirmed missing values.",
     "population": "TRAINING ONLY",
@@ -15,7 +15,7 @@
   },
   {
     "number": 2,
-    "file": "phase2_implementation/preprocessing_diagnostics/fig1_2_target_distribution.png",
+    "file": "figures/fig1_2_target_distribution.png",
     "title": "Target class distribution",
     "caption": "All TRAIN labels, without rebalancing. Counts and percentages expose rare hardware states; accuracy alone is inadequate. Class 4 is natural building shade, not hardware failure.",
     "population": "TRAINING ONLY",
@@ -29,7 +29,7 @@
   },
   {
     "number": 3,
-    "file": "phase2_implementation/preprocessing_diagnostics/fig2_1_outlier_boxplots.png",
+    "file": "figures/fig2_1_outlier_boxplots.png",
     "title": "Raw vs reference-cleaned boxplots",
     "caption": "Full TRAIN IQR box statistics and fliers are shown. Reference cleaning is the existing RetainedQuality policy; unusual values remain. Nearly identical panels reflect intentional retention, not failed cleaning. Units are channel-specific.",
     "population": "TRAINING ONLY",
@@ -43,7 +43,7 @@
   },
   {
     "number": 4,
-    "file": "phase2_implementation/preprocessing_diagnostics/fig3_1_correlation_matrix.png",
+    "file": "figures/fig3_1_correlation_matrix.png",
     "title": "Training predictor correlation",
     "caption": "All six raw TRAIN predictors; f_nv is excluded. Asterisks mark |r| >= 0.85 (five pairs), matching Phase 1. Screening warns about redundancy; the preprocessing reference retains physical channels for possible later study, rather than automatically dropping them.",
     "population": "TRAINING ONLY",
@@ -57,7 +57,7 @@
   },
   {
     "number": 5,
-    "file": "phase2_implementation/preprocessing_diagnostics/fig3_2_collinear_scatterplots.png",
+    "file": "figures/fig3_2_collinear_scatterplots.png",
     "title": "Collinear predictor pairs",
     "caption": "All five Phase 1 high-correlation pairs. Points are a uniform seed-42 TRAIN sample; correlations and descriptive OLS lines use full TRAIN. Association is not causation; dependence precludes naive significance claims.",
     "population": "TRAINING ONLY",
@@ -71,9 +71,9 @@
   },
   {
     "number": 6,
-    "file": "phase2_implementation/preprocessing_diagnostics/fig3_3_target_importance.png",
-    "title": "Feature-target mutual information",
-    "caption": "Seed-42 proportional stratified TRAIN sample, k=3 continuous-feature MI estimator; train-fitted standardization. Target codes remain nominal. This descriptive diagnostic does not alter preprocessing choices; imbalance, repeated readings and ties limit interpretation.",
+    "file": "figures/fig3_3_target_importance.png",
+    "title": "Target Association / Mutual Information Feature Screening",
+    "caption": "TRAIN-only descriptive mutual information, continuous predictors versus nominal f_nv; proportional sample N=50,000, k=3, seed 42. This is preprocessing-stage relevance screening, not trained-model feature importance or a physical sensor selection result.",
     "population": "TRAINING ONLY",
     "dpi": 300,
     "dimensions_px": [
@@ -85,7 +85,7 @@
   },
   {
     "number": 7,
-    "file": "phase2_implementation/preprocessing_diagnostics/fig4_1_transformation_grid.png",
+    "file": "figures/fig4_1_transformation_grid.png",
     "title": "Transformation/scaling comparison",
     "caption": "All learned scaler parameters use full TRAIN. Scaling changes units, not the underlying skewed shape. StandardScaler aligns LR regularization; RF/LightGBM retain native scale. Robust/MinMax are diagnostic alternatives only. Optional log1p is not introduced into frozen pipelines.",
     "population": "TRAINING ONLY",
@@ -99,7 +99,7 @@
   },
   {
     "number": 8,
-    "file": "phase2_implementation/preprocessing_diagnostics/fig5_1_pca_scree_plot.png",
+    "file": "figures/fig5_1_pca_scree_plot.png",
     "title": "PCA scree and cumulative variance",
     "caption": "StandardScaler and full-SVD PCA are fitted to full TRAIN only. PCA is an exploratory mathematical diagnostic, not physical sensor reduction, a feature-selection rule, or a change to the preprocessing policies. All six inputs are needed to compute the components.",
     "population": "TRAINING ONLY",

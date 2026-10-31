@@ -2,7 +2,7 @@ from pathlib import Path
 import json,hashlib
 ROOT=Path(__file__).resolve().parents[2]
 OUT=ROOT/'phase2_implementation/compliance'
-FIGURES=ROOT/'phase2_implementation/preprocessing_diagnostics'
+FIGURES=ROOT/'figures'
 SENSORS=['vdc1','vdc2','idc1','idc2','irr','pvt']
 TRAIN=(0,1006129);VALIDATION=(1056990,1173967);TEST=(1227337,1373798)
 SEED=42

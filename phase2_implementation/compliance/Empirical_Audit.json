@@ -1,0 +1,28 @@
+{
+  "population": "TRAIN",
+  "N": 1006129,
+  "index_digest": "86010f1f91f0653fd59a65ec55e3a3e3a7e905b6d292e7207099d8c4b58075f9",
+  "raw_negative_irradiance": {
+    "count": 1,
+    "minimum": -0.0381,
+    "maximum": -0.0381
+  },
+  "verified_VIF": {
+    "vdc1": 52.16820182052731,
+    "vdc2": 56.34566192101691,
+    "idc1": 31.49561042934133,
+    "idc2": 15.780846723575968,
+    "irr": 39.29265063172812,
+    "pvt": 4.069797718228658
+  },
+  "VIF_method": "Diagonal of inverse centered TRAIN Pearson correlation; agrees with original intercept-OLS VIF",
+  "kurtosis_definition": "Unbiased Fisher excess kurtosis; pandas Series.kurt",
+  "IQR_rule": "Q1 - 1.5 IQR; Q3 + 1.5 IQR; strict outside comparison",
+  "standard_std_definition": "population standard deviation, ddof=0",
+  "heldout_fit_guard_passed": true,
+  "all_final_matrices_match_original": true,
+  "selected_preprocessing_policy": "six_standard, all six measured predictors; no physical-channel reduction selected",
+  "other_policies": "electrical_native and electrical_derived are existing alternative representations, not selected sensor adequacy results",
+  "PCA_role": "Exploratory only; six components available, two-component 95% view is not a selected pipeline or physical sensor reduction",
+  "diagnostic_scalers_and_PCA_encapsulated": true
+}
