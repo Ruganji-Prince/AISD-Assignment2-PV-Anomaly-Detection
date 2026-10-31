@@ -1,0 +1,468 @@
+{
+  "raw_audit": {
+    "N": 1373798,
+    "P": 7,
+    "columns": [
+      "vdc1",
+      "vdc2",
+      "idc1",
+      "idc2",
+      "irr",
+      "pvt",
+      "f_nv"
+    ],
+    "missing_counts": {
+      "vdc1": 0,
+      "vdc2": 0,
+      "idc1": 0,
+      "idc2": 0,
+      "irr": 0,
+      "pvt": 0,
+      "f_nv": 0
+    },
+    "overall_missing_pct": 0.0,
+    "paired_zero_observations": 62,
+    "negative_irradiance_observations": 1,
+    "negative_Celsius_observations": 24172,
+    "raw_sha256": "717278fdc338bf6713293c0495421a8be9ea02a0b64144e86e957a531edecb8a",
+    "target": "Five nominal f_nv labels; no ordinal/continuous interpretation."
+  },
+  "splits": {
+    "TRAIN": {
+      "interval": [
+        0,
+        1006129
+      ],
+      "N": 1006129,
+      "index_digest": "86010f1f91f0653fd59a65ec55e3a3e3a7e905b6d292e7207099d8c4b58075f9"
+    },
+    "VALIDATION": {
+      "interval": [
+        1056990,
+        1173967
+      ],
+      "N": 116977,
+      "index_digest": "8a7727a6679eb9bb52e6e40c689e4f4b054b9efe8f4cea32e4229af1b4be2328"
+    },
+    "TEST": {
+      "interval": [
+        1227337,
+        1373798
+      ],
+      "N": 146461,
+      "index_digest": "e5dabd8b8c3ee5220c9ef21da1dbdfdbdd9aad99dfcc4c4353e698eebc753866"
+    }
+  },
+  "excluded_separator_intervals": [
+    [
+      1006129,
+      1056990
+    ],
+    [
+      1173967,
+      1227337
+    ]
+  ],
+  "reference_cleaning": {
+    "population": "TRAIN",
+    "rows_before": 1006129,
+    "rows_after": 1006129,
+    "removed_rows": 0,
+    "winsorized_cells": 0,
+    "changed_cells": {
+      "vdc1": 0,
+      "vdc2": 0,
+      "idc1": 0,
+      "idc2": 0,
+      "irr": 1,
+      "pvt": 0
+    },
+    "policy": "Existing RetainedQuality only; paired zeros and negative Celsius retained; no automatic statistical capping/deletion."
+  },
+  "correlation": {
+    "population": "TRAIN",
+    "N": 1006129,
+    "columns": [
+      "vdc1",
+      "vdc2",
+      "idc1",
+      "idc2",
+      "irr",
+      "pvt"
+    ],
+    "target_excluded": true,
+    "matrix": [
+      [
+        1.0,
+        0.9891027602285769,
+        0.6811833191856872,
+        0.6409803889420963,
+        0.728634709370126,
+        0.6453845502420688
+      ],
+      [
+        0.9891027602285769,
+        1.0,
+        0.691902327993426,
+        0.6373231423431842,
+        0.739004812894692,
+        0.6504805250737179
+      ],
+      [
+        0.6811833191856872,
+        0.691902327993426,
+        1.0,
+        0.952832711587032,
+        0.9794723761665458,
+        0.8622889138042289
+      ],
+      [
+        0.6409803889420963,
+        0.6373231423431842,
+        0.952832711587032,
+        1.0,
+        0.9559821219702014,
+        0.8266323092986284
+      ],
+      [
+        0.728634709370126,
+        0.739004812894692,
+        0.9794723761665458,
+        0.9559821219702014,
+        1.0,
+        0.8421958606386122
+      ],
+      [
+        0.6453845502420688,
+        0.6504805250737179,
+        0.8622889138042289,
+        0.8266323092986284,
+        0.8421958606386122,
+        1.0
+      ]
+    ],
+    "high_pairs": [
+      [
+        "vdc1",
+        "vdc2",
+        0.9891027602285769
+      ],
+      [
+        "idc1",
+        "idc2",
+        0.952832711587032
+      ],
+      [
+        "idc1",
+        "irr",
+        0.9794723761665458
+      ],
+      [
+        "idc1",
+        "pvt",
+        0.8622889138042289
+      ],
+      [
+        "idc2",
+        "irr",
+        0.9559821219702014
+      ]
+    ],
+    "matches_Phase1": true
+  },
+  "scatter_sample": {
+    "population": "TRAIN",
+    "N": 20000,
+    "seed": 42,
+    "sampling": "Uniform without replacement from all training source positions; sorted for display.",
+    "index_digest": "ccc4559e7909958993ab2f8ed3cd3becd3837d9641058c2f64c94d53269c60ec"
+  },
+  "mutual_information": {
+    "population": "TRAIN",
+    "N": 50000,
+    "seed": 42,
+    "sampling": "Seeded proportional stratified sample without replacement; natural training prevalence approximately preserved. Not model resampling.",
+    "class_counts": {
+      "0": 41983,
+      "1": 61,
+      "2": 283,
+      "3": 60,
+      "4": 7613
+    },
+    "index_digest": "5871816aed20fc715a21ad6a6a0067fa55147296af8c4f14471da502b33d0d7b",
+    "method": "mutual_info_classif; continuous X, nominal discrete target; k=3; standardized with TRAIN-fitted scaler. Dependent observations/ties limit interpretation; diagnostic associations, not significance or causal effects.",
+    "scores_nats": {
+      "vdc1": 0.1786151235282165,
+      "vdc2": 0.22061103822354466,
+      "idc1": 0.276227212137653,
+      "idc2": 0.27698098738977794,
+      "irr": 0.300591903247168,
+      "pvt": 0.11237539740848446
+    }
+  },
+  "PCA": {
+    "population": "TRAIN",
+    "N": 1006129,
+    "input_columns": [
+      "vdc1",
+      "vdc2",
+      "idc1",
+      "idc2",
+      "irr",
+      "pvt"
+    ],
+    "scaled_with": "StandardScaler fitted on TRAIN only",
+    "explained_variance_ratio": [
+      0.8253007587514459,
+      0.12637590927419656,
+      0.03575663896863875,
+      0.008328722852125044,
+      0.002756421992577408,
+      0.0014815481610162677
+    ],
+    "cumulative_explained_variance": [
+      0.8253007587514459,
+      0.9516766680256425,
+      0.9874333069942813,
+      0.9957620298464064,
+      0.9985184518389838,
+      1.0
+    ],
+    "components_for_90pct": 2,
+    "components_for_95pct": 2,
+    "deployment_role": "Exploratory mathematical diagnostic; not physical sensor reduction."
+  },
+  "scaling": {
+    "population": "TRAIN",
+    "N": 1006129,
+    "standardized_policy": "StandardScaler; availability indicators unchanged.",
+    "native_policy": "Native numerical scale.",
+    "diagnostic_alternatives": [
+      "RobustScaler",
+      "MinMaxScaler"
+    ],
+    "log_transform": "Not applied; no new log transformation selected.",
+    "standard_mean": [
+      137.10837407916878,
+      136.92353648528172,
+      2.248128546538267,
+      1.9763158404141024,
+      257.9284813041867,
+      23.11647218477949
+    ],
+    "standard_scale": [
+      136.99575732204144,
+      137.28317146177127,
+      3.1252498165259897,
+      2.9887473808382725,
+      349.0183350358196,
+      14.349387057135386
+    ],
+    "robust_center": [
+      51.2504,
+      53.1038,
+      0.1105,
+      0.0432,
+      1.8733,
+      19.4501
+    ],
+    "robust_scale": [
+      273.4536,
+      271.3956,
+      4.9022,
+      3.9923,
+      585.0921,
+      21.478299999999997
+    ],
+    "minmax_data_min": [
+      0.3799,
+      0.3164,
+      0.0418,
+      0.0046,
+      0.0,
+      -1.6543
+    ],
+    "minmax_data_max": [
+      363.974,
+      368.749,
+      9.6549,
+      9.4987,
+      1085.92,
+      60.8215
+    ]
+  },
+  "model_ready": {
+    "six_standard": {
+      "raw_channels": [
+        "vdc1",
+        "vdc2",
+        "idc1",
+        "idc2",
+        "irr",
+        "pvt"
+      ],
+      "feature_names": [
+        "numeric__vdc1",
+        "numeric__vdc2",
+        "numeric__idc1",
+        "numeric__idc2",
+        "numeric__irr",
+        "numeric__pvt",
+        "missing__missingindicator_vdc1",
+        "missing__missingindicator_vdc2",
+        "missing__missingindicator_idc1",
+        "missing__missingindicator_idc2",
+        "missing__missingindicator_irr",
+        "missing__missingindicator_pvt"
+      ],
+      "medians": [
+        51.2504,
+        53.1038,
+        0.1105,
+        0.0432,
+        1.8733,
+        19.4501
+      ],
+      "partitions": {
+        "TRAIN": {
+          "shape": [
+            1006129,
+            12
+          ],
+          "eligible_rows": 1006129,
+          "target_rows": 1006129,
+          "fitted_again": false
+        },
+        "VALIDATION": {
+          "shape": [
+            116977,
+            12
+          ],
+          "eligible_rows": 116977,
+          "target_rows": 116977,
+          "fitted_again": false
+        },
+        "TEST": {
+          "shape": [
+            146461,
+            12
+          ],
+          "eligible_rows": 146461,
+          "target_rows": 146461,
+          "fitted_again": false
+        }
+      }
+    },
+    "electrical_native": {
+      "raw_channels": [
+        "vdc1",
+        "vdc2",
+        "idc1",
+        "idc2"
+      ],
+      "feature_names": [
+        "numeric__vdc1",
+        "numeric__vdc2",
+        "numeric__idc1",
+        "numeric__idc2",
+        "missing__missingindicator_vdc1",
+        "missing__missingindicator_vdc2",
+        "missing__missingindicator_idc1",
+        "missing__missingindicator_idc2"
+      ],
+      "medians": [
+        51.2504,
+        53.1038,
+        0.1105,
+        0.0432
+      ],
+      "partitions": {
+        "TRAIN": {
+          "shape": [
+            1006129,
+            8
+          ],
+          "eligible_rows": 1006129,
+          "target_rows": 1006129,
+          "fitted_again": false
+        },
+        "VALIDATION": {
+          "shape": [
+            116977,
+            8
+          ],
+          "eligible_rows": 116977,
+          "target_rows": 116977,
+          "fitted_again": false
+        },
+        "TEST": {
+          "shape": [
+            146461,
+            8
+          ],
+          "eligible_rows": 146461,
+          "target_rows": 146461,
+          "fitted_again": false
+        }
+      }
+    },
+    "electrical_derived": {
+      "raw_channels": [
+        "vdc1",
+        "vdc2",
+        "idc1",
+        "idc2"
+      ],
+      "feature_names": [
+        "numeric__vdc1",
+        "numeric__vdc2",
+        "numeric__idc1",
+        "numeric__idc2",
+        "numeric__P1",
+        "numeric__P2",
+        "numeric__P_total",
+        "numeric__V_diff",
+        "numeric__I_diff",
+        "missing__missingindicator_vdc1",
+        "missing__missingindicator_vdc2",
+        "missing__missingindicator_idc1",
+        "missing__missingindicator_idc2"
+      ],
+      "medians": [
+        51.2504,
+        53.1038,
+        0.1105,
+        0.0432
+      ],
+      "partitions": {
+        "TRAIN": {
+          "shape": [
+            1006129,
+            13
+          ],
+          "eligible_rows": 1006129,
+          "target_rows": 1006129,
+          "fitted_again": false
+        },
+        "VALIDATION": {
+          "shape": [
+            116977,
+            13
+          ],
+          "eligible_rows": 116977,
+          "target_rows": 116977,
+          "fitted_again": false
+        },
+        "TEST": {
+          "shape": [
+            146461,
+            13
+          ],
+          "eligible_rows": 146461,
+          "target_rows": 146461,
+          "fitted_again": false
+        }
+      }
+    }
+  }
+}

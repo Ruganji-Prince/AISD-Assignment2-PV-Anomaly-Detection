@@ -65,7 +65,7 @@
   ],
   "fit_ledger": [
     {
-      "component": "LR__F6 median/scaler/feature schema",
+      "component": "six_standard median/scaler/feature schema",
       "population": "TRAIN",
       "N": 1006129,
       "index_digest": "86010f1f91f0653fd59a65ec55e3a3e3a7e905b6d292e7207099d8c4b58075f9",
@@ -79,7 +79,7 @@
       ]
     },
     {
-      "component": "RF__E4 median/scaler/feature schema",
+      "component": "electrical_native median/scaler/feature schema",
       "population": "TRAIN",
       "N": 1006129,
       "index_digest": "86010f1f91f0653fd59a65ec55e3a3e3a7e905b6d292e7207099d8c4b58075f9",
@@ -91,7 +91,7 @@
       ]
     },
     {
-      "component": "LightGBM__E4 median/scaler/feature schema",
+      "component": "electrical_derived median/scaler/feature schema",
       "population": "TRAIN",
       "N": 1006129,
       "index_digest": "86010f1f91f0653fd59a65ec55e3a3e3a7e905b6d292e7207099d8c4b58075f9",
@@ -107,25 +107,25 @@
       "population": "TRAIN",
       "N": 1006129,
       "index_digest": "86010f1f91f0653fd59a65ec55e3a3e3a7e905b6d292e7207099d8c4b58075f9",
-      "used_in_frozen_classifiers": false
+      "diagnostic_only": true
     },
     {
       "component": "MinMaxScaler alternative",
       "population": "TRAIN",
       "N": 1006129,
       "index_digest": "86010f1f91f0653fd59a65ec55e3a3e3a7e905b6d292e7207099d8c4b58075f9",
-      "used_in_frozen_classifiers": false
+      "diagnostic_only": true
     },
     {
       "component": "Standard-scaled exploratory PCA",
       "population": "TRAIN",
       "N": 1006129,
       "index_digest": "86010f1f91f0653fd59a65ec55e3a3e3a7e905b6d292e7207099d8c4b58075f9",
-      "used_in_frozen_classifiers": false
+      "diagnostic_only": true
     }
   ],
   "model_ready": {
-    "LR__F6": {
+    "six_standard": {
       "raw_channels": [
         "vdc1",
         "vdc2",
@@ -186,7 +186,7 @@
         }
       }
     },
-    "RF__E4": {
+    "electrical_native": {
       "raw_channels": [
         "vdc1",
         "vdc2",
@@ -239,7 +239,7 @@
         }
       }
     },
-    "LightGBM__E4": {
+    "electrical_derived": {
       "raw_channels": [
         "vdc1",
         "vdc2",
@@ -298,26 +298,7 @@
       }
     }
   },
-  "cached_preprocessor_comparison": {
-    "LR__F6": {
-      "training_probe_rows": 4096,
-      "max_absolute_difference": 0.0,
-      "classifiers_fit": false,
-      "predictions_generated": false
-    },
-    "RF__E4": {
-      "training_probe_rows": 4096,
-      "max_absolute_difference": 0.0,
-      "classifiers_fit": false,
-      "predictions_generated": false
-    },
-    "LightGBM__E4": {
-      "training_probe_rows": 4096,
-      "max_absolute_difference": 0.0,
-      "classifiers_fit": false,
-      "predictions_generated": false
-    }
-  },
+  "preprocessing_only": true,
   "reference_cleaning": {
     "population": "TRAIN",
     "rows_before": 1006129,
@@ -466,7 +447,7 @@
       "irr",
       "pvt"
     ],
-    "scaled_with": "Existing LR StandardScaler fitted on TRAIN only",
+    "scaled_with": "Existing StandardScaler fitted on TRAIN only",
     "explained_variance_ratio": [
       0.8253007587514459,
       0.12637590927419656,
@@ -485,13 +466,13 @@
     ],
     "components_for_90pct": 2,
     "components_for_95pct": 2,
-    "deployment_role": "Exploratory diagnostic only; no physical sensor reduction and no change to frozen models."
+    "deployment_role": "Exploratory diagnostic only; no physical sensor reduction without selecting physical channels."
   },
   "scaling": {
     "population": "TRAIN",
     "N": 1006129,
-    "selected_LR": "StandardScaler on numerical channels; availability indicators unchanged.",
-    "selected_RF_LightGBM": "Native numerical scale.",
+    "standardized_policy": "StandardScaler on numerical channels; availability indicators unchanged.",
+    "native_policy": "Native numerical scale.",
     "diagnostic_alternatives": [
       "RobustScaler",
       "MinMaxScaler"

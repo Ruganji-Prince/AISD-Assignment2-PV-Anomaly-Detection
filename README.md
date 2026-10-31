@@ -1,111 +1,66 @@
-﻿# Resource-Efficient and Explainable AI for Photovoltaic Anomaly Detection Under Sparse Sensing Constraints
+# Resource-Efficient and Explainable AI for Photovoltaic Anomaly Detection Under Sparse Sensing Constraints
 
-Ruganji Prince · Carnegie Mellon University Africa  
-**Course:** 04-652 Artificial Intelligence System Design  
-**Assignment 2:** Phase 1 strategy and Phase 2 implementation  
-**Task Type: Multiclass Classification**
+Ruganji Prince · 04-652 Artificial Intelligence System Design
 
-## Research question
+**Current milestone: Data Preprocessing.** This repository currently presents the data-preprocessing stage of the PV anomaly-detection project. The objective is to prepare defensible photovoltaic measurements for later investigation of sensing and computational trade-offs. Downstream work is outside the current submission scope.
 
-What sensing and computational configuration can provide practically useful PV anomaly detection under resource-constrained deployment assumptions? The experiment compares prediction quality, hardware-fault sensitivity, physical channel count, false alarms, latency, artifact size and robustness among seven predeclared sensor sets.
+**Task Type: Multiclass Classification.** The [original dataset](https://github.com/clayton-h-costa/pv_fault_dataset), pinned at `e9ed8ad8072dcb3ffc643b0f3604219798708551`, is associated with [Lazzaretti et al. (2020)](https://doi.org/10.3390/s20174688).
 
-## Current project status
+| Property | Description |
+| --- | --- |
+| N × P | 1,373,798 × 7 |
+| Predictors | vdc1, vdc2 (V); idc1, idc2 (A); irr (W/m²); pvt (°C) |
+| Target | f_nv: 0 normal, 1 short circuit, 2 resistive degradation, 3 open circuit, 4 natural building shade |
+| Types | Six continuous measurements and one nominal target; integer labels are not ordinal or continuous |
 
-Phase 1 design and the Phase 2 modelling experiments are complete. Model settings, class weights, features, sensor configurations, thresholds, splits and final test results are frozen. The executable preprocessing notebook, eight preprocessing diagnostics and strategy-versus-reality appendix complete the assignment-specific deliverables without retraining classifiers.
+The [raw CSV](data/raw/pv_fault_dataset.csv), [conversion/source provenance](data/raw/README.md), [variable inventory](phase1_strategy/Variable_Inventory.csv) and [original license](phase1_strategy/PRIMARY_SOURCE_LICENSE.txt) are retained unchanged apart from navigation in the raw-data guide. Voltage/current are source-described DC RMS quantities; module temperature aggregates source probes.
 
-**No evaluated configuration satisfied all predeclared engineering criteria.**
+![First ten raw observations](figures/raw_dataset_preview.png)
 
-## Dataset and target
+Preview of the raw photovoltaic monitoring dataset. First ten observations in exported source order. All ten have f_nv = 0.
 
-Source: [original-author PV Fault Dataset](https://github.com/clayton-h-costa/pv_fault_dataset), pinned commit `e9ed8ad8072dcb3ffc643b0f3604219798708551`; [Lazzaretti et al., Sensors 20(17), 4688 (2020)](https://doi.org/10.3390/s20174688).
+## Data-quality findings
 
-The immutable export contains **N = 1,373,798 observations** and **P = 7 variables**: six continuous predictors and nominal target `f_nv`. [Raw CSV](data/raw/pv_fault_dataset.csv), [source/conversion provenance](data/raw/README.md), [variable inventory](phase1_strategy/Variable_Inventory.csv) and [class counts](phase1_strategy/Class_Distribution.csv) remain unchanged.
+The export has zero conventional missing cells and 1,373,798 complete rows. This does not diagnose MCAR/MAR/MNAR or prove uninterrupted monitoring. The 62 paired irr/pvt zeros remain suspicious observations, not confirmed missing values. One irradiance value is -0.0381 W/m²; the existing quality convention clamps -1 ≤ irr < 0 to zero. Valid negative Celsius observations remain unchanged. No automatic statistical outlier deletion or capping is used.
 
-| Variable | Physical meaning / role | Unit |
-| --- | --- | --- |
-| vdc1, vdc2 | DC RMS voltage for PV strings 1 and 2 | V |
-| idc1, idc2 | DC RMS current for PV strings 1 and 2 | A |
-| irr | Plane-of-array irradiance | W/m² |
-| pvt | Reported module temperature, aggregated from source probes | °C |
-| f_nv | Five nominal operating-state labels | Unitless |
+The irradiance-qualified subset irr ≥ 100 W/m² contains 515,958 observations and reproduces literature class counts exactly. This suggests a possible evaluation-population explanation, but the paper does not explicitly document that filtering operation. Low-irradiance rows are retained rather than deleted to force agreement.
 
-Labels are **0 normal; 1 short circuit; 2 resistive degradation; 3 open circuit; 4 natural building shade**. Integer codes are neither ordinal nor continuous. Classes 1–3 are hardware faults; class 4 is an environmental condition. Channel count is distinct from physical device count.
+## Preprocessing workflow
 
-![First ten observations with the seven original columns](figures/raw_dataset_preview.png)
+Immutable data → schema/quality audit → original ordered partitions → TRAIN-only median/scaling fit → transform validation/test → descriptive diagnostics and output-dimension checks. Paired zeros remain observed. Contingency median imputation and retained-channel indicators are preserved. StandardScaler, native-scale and physical-derived representations are demonstrated without fitting downstream predictors. Robust/MinMax scaling and PCA remain descriptive alternatives; no new transformation or sensor choice is selected.
 
-Preview of the raw photovoltaic monitoring dataset. First ten observations in exported source order. These ten observations have `f_nv = 0`.
+TRAIN [0,1006129), VALIDATION [1056990,1173967), TEST [1227337,1373798) are retained, with 104,231 separator positions. Sixteen signal-defined blocks are not verified days, sessions or hours. Nominal 1 Hz acquisition, per-second electrical RMS values, one-second environmental averages and the study's 16-day duration do not reconstruct timestamps or uninterrupted spacing. CSV order is source-position order only. The separator remains irr < 100 W/m² for at least 3,600 consecutive source positions, not a verified hour. The reserved partition is not claimed to be historically unseen.
 
-## Phase 1 — strategy and audit
+Five TRAIN predictor pairs have |r| ≥ 0.85; five VIF values exceed 10. Dependence does not justify automatic deletion. Nominal-target association uses a proportional 50,000-observation TRAIN MI sample; scatterplots use 20,000 TRAIN positions. Exploratory TRAIN-scaled PCA explains approximately 95.17% with two mathematical components; all six physical inputs are still required to calculate them.
 
-The [approved Phase 1 report](phase1_strategy/Phase1_Strategy_Report.pdf), [evidence index](phase1_strategy/Supporting_Evidence_Index.md) and [decision rationale](phase1_strategy/Decision_Rationale_Guide.md) preserve the original pre-implementation design. The audit found zero conventional missing values, 62 suspicious paired irradiance/temperature zeros, one slightly negative irradiance observation, strong predictor dependence and severe class imbalance. Unusual fault observations were retained; suspicious zeros were not falsely declared missing.
+## Deliverables and execution
 
-The fixed split uses exported source order and signal-defined blocks with separator buffers: TRAIN [0,1006129), VALIDATION [1056990,1173967), TEST [1227337,1373798). Validation block 13 selected settings; block 14 selected alert thresholds. [Exact split manifest](phase1_strategy/Phase1_Split_Manifest.json) and training-only median/scaling/weight definitions document leakage prevention.
+- [Approved Phase 1 report](phase1_strategy/Phase1_Strategy_Report.pdf) and [audit evidence](phase1_strategy/Supporting_Evidence_Index.md)
+- [Executed preprocessing notebook](phase2_implementation/notebooks/Phase2_Preprocessing_Implementation.ipynb)
+- [Preprocessing-stage report](phase2_implementation/reports/Phase2_Final_Report.pdf)
+- [Eight diagnostics](phase2_implementation/preprocessing_diagnostics/README.md)
+- [Preprocessing strategy versus reality](phase2_implementation/compliance/Strategy_vs_Reality.md)
+- [Setup and reproduction](phase2_implementation/Reproduction_Guide.md)
 
-## Phase 2 — implementation and diagnostics
+After environment setup, run from the root:
 
-[Phase 2 guide](phase2_implementation/README.md) and [reproduction guide](phase2_implementation/Reproduction_Guide.md) provide entry points and compact evidence.
-
-- [Executable preprocessing notebook](phase2_implementation/notebooks/Phase2_Preprocessing_Implementation.ipynb): actual approved Pipeline/ColumnTransformer preprocessing, training-only fitting and model-ready matrices.
-- [Eight preprocessing diagnostics](phase2_implementation/preprocessing_diagnostics/README.md): missingness, class balance, outlier comparison, predictor correlation, collinear pairs, nominal-target association, scaling alternatives and exploratory PCA.
-- [Executed evidence-review notebook](phase2_implementation/notebooks/Phase2_Evidence_Review.ipynb): frozen model results, without training or prediction.
-- [Strategy-versus-reality table](phase2_implementation/compliance/Strategy_vs_Reality.md): planned decisions, implementation, deviations and evidence; also included in the final report appendix.
-
-LR, RF and LightGBM settings were selected using full-sensing validation evidence, then held fixed across F6, E5, E4, C3, C2, S4 and S2. No sparse configuration received independent retuning. Additional MI/PCA/scaling diagnostics do not reopen model or sensor selection.
-
-## Final candidates and engineering conclusion
-
-| Candidate / role | Test macro-F1 | p95 (ms) | Artifact (MiB) | Unmet criteria |
-| --- | ---: | ---: | ---: | --- |
-| LR F6 — full-sensing lightweight reference | 0.8984 | 14.72 | 0.0037 | Open-circuit classification recall; latency |
-| RF E4 — sparse predictive-performance candidate | 0.9505 | 36.81 | 11.6654 | Latency; artifact size |
-| LightGBM E4 — sparse resource-efficient candidate | 0.9021 | 6.12 | 1.5692 | Short-circuit classification recall |
-
-RF E4 is the minimum-channel qualifying candidate among the seven predeclared configurations tested under the validation predictive/channel conditions; this is not a global minimum-sensing claim. Its final hardware-class recalls are 0.9996/0.9907/1.0000. LightGBM E4 hardware-alert recall is 0.9969, but short-circuit classification recall is 0.4994. Aggregate alert detection is distinct from five-class fault-type diagnosis.
-
-**No evaluated configuration satisfied all predeclared engineering criteria.** [Frozen candidate comparison](phase2_implementation/stage3/evidence/final_candidate_comparison.csv) and [PASS/FAIL evidence](phase2_implementation/stage3/evidence/final_engineering_criteria.csv) retain all results, including failed targets.
-
-## Reports
-
-- [Phase 1: approved strategy report](phase1_strategy/Phase1_Strategy_Report.pdf).
-- [Phase 2: final scientific report and strategy-versus-reality appendix](phase2_implementation/reports/Phase2_Final_Report.pdf).
-- [Phase 2 editable report text](phase2_implementation/reports/Phase2_Final_Report.md).
-
-## Reproducibility and verification
-
-Use Python 3.14.7 and the frozen Phase 2 dependencies, from the repository root:
-
-```powershell
-python -m venv .cache/phase2-review-env
-.cache\phase2-review-env\Scripts\Activate.ps1
-python -m pip install -r phase2_implementation/requirements.txt
+```text
 python -B phase2_implementation/execute_preprocessing.py
 python -B phase2_implementation/verify_submission.py
 ```
 
-On POSIX systems, activate with `source .cache/phase2-review-env/bin/activate`. Preprocessing execution fits only preprocessing/diagnostic estimators on TRAIN; it never retrains classifiers or regenerates predictions. For evidence-only review, run the verifier without rerunning the notebook. Full modelling reproduction has separate fresh-workspace prerequisites, listed honestly in the reproduction guide; it is not claimed to be one-command training reproduction.
-
-The preserved `phase1_strategy/verify_phase1.py` verifies the historical Phase 1-only snapshot. It was designed before Phase 2 population and intentionally rejects implementation artifacts. It is **not the verifier for this complete repository**. The current full-project entry point is `phase2_implementation/verify_submission.py`.
-
-## Repository structure
+## Structure
 
 ```text
 data/raw/                         Immutable CSV and provenance
-phase1_strategy/                  Approved report and audit/design evidence
-src/phase2_stage1–3/               Frozen experiment modules
-src/phase2_compliance/             Reused preprocessing, diagnostic and compliance helpers
-phase2_implementation/notebooks/   Preprocessing and frozen-evidence notebooks
-phase2_implementation/reports/     Final report/source
-phase2_implementation/stage1–5/    Compact scientific and publication evidence
-phase2_implementation/preprocessing_diagnostics/  Eight assignment figures
-phase2_implementation/compliance/  Decision table, diagnostic evidence and checks
+phase1_strategy/                  Original strategy and audit evidence
+src/transformers.py               Target-free quality and physical transformations
+src/pipeline_builder.py           Pipeline / ColumnTransformer definitions
+src/preprocessing/                Preprocessing study and shared constants
+phase2_implementation/notebooks/   Executed preprocessing notebook
+phase2_implementation/reports/     Preprocessing report and text
+phase2_implementation/compliance/  Preprocessing evidence and reflection table
+phase2_implementation/preprocessing_diagnostics/  Eight original figures
 ```
 
-Models, processed arrays, predictions, SHAP arrays, environments and temporary artifacts remain local/ignored. Their absence does not prevent public evidence inspection or execution of preprocessing.
-
-## Limitations and temporal interpretation
-
-The source describes nominal 1 Hz acquisition, per-second electrical RMS calculations, one-second irradiance/temperature averages and a 16-day experiment. Released MAT/CSV data contain no explicit timestamp. Source order is preserved, but absolute timestamps and continuous one-second spacing across the entire export are not verifiable. The 16 signal-defined blocks are not verified days/sessions/hours. The separator is `irr < 100 W/m²` for at least 3,600 consecutive source positions, without assigning those positions a verified hour.
-
-The test partition was evaluated in an earlier legacy implementation and is not pristine or previously unseen. Revised modelling and threshold decisions used training/validation evidence; prior human exposure remains a limitation. [Methodology disclosure](phase2_implementation/stage3/Methodology_Disclosure.md) documents this explicitly.
-
-The irradiance-qualified subset has 515,958 positions and exactly reproduces paper-reported class counts; explicit use of that filtering operation by the paper is unverified. The primary experiment retains the full approved population. One controlled Brazilian installation does not establish field generalization. Explanations are non-causal, PCA does not establish physical sensor reduction, and engineering criteria are project aspirations rather than certification thresholds.
+Processed arrays, environments and local review material are excluded. The current report makes no deployment-performance, globally minimum-sensing or causal claims. Historical Phase 1 planning remains labeled as planning.

@@ -8,4 +8,4 @@ Original source: [clayton-h-costa/pv_fault_dataset](https://github.com/clayton-h
 
 Size: 64,143,812 bytes (61.17 MiB). Its explicit publication was approved; downloading is appropriate for inspecting this large CSV. SHA-256: 717278fdc338bf6713293c0495421a8be9ea02a0b64144e86e957a531edecb8a.
 
-The 62 paired zeros, -0.0381 irradiance value and negative Celsius readings remain unmodified. Original MAT/candidate files remain ignored. The isolated Phase 1 audit reproduction route in the root README supports retrieval and auditing of pinned MAT sources without changing approved evidence.
+The 62 paired zeros, -0.0381 irradiance value and negative Celsius readings remain unmodified. Original MAT/candidate files remain ignored. The historical Phase 1 audit can be reproduced with `phase1_strategy/reproduce_audit.py`; it retrieves pinned MAT sources into an isolated ignored directory without changing approved evidence.

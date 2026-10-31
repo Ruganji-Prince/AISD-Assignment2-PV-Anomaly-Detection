@@ -3,12 +3,9 @@
   "code_cells": 13,
   "all_cells_executed": true,
   "error_outputs": 0,
-  "seed": 42,
-  "python": "3.14.7",
-  "classifiers_fit": 0,
-  "predictions_generated": false,
-  "new_notebook_sha256": "23a6eb5155ef320feec66f6c871ad4a6046a3ba625ad45f78865ddf87c1d1f1d",
-  "diagnostics": 8,
-  "elapsed_seconds": 90.09512189985253,
-  "notebook_bytes": 28937
+  "notebook_sha256": "a02ac75d167a4658d14722714364c3f97f006742124e3b8655f243663dd876a6",
+  "elapsed_seconds": 13.994793799938634,
+  "diagnostics_verified": 8,
+  "figure_regeneration": false,
+  "predictive_estimators_fitted": 0
 }

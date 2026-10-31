@@ -45,7 +45,7 @@
     "number": 4,
     "file": "phase2_implementation/preprocessing_diagnostics/fig3_1_correlation_matrix.png",
     "title": "Training predictor correlation",
-    "caption": "All six raw TRAIN predictors; f_nv is excluded. Asterisks mark |r| >= 0.85 (five pairs), matching Phase 1. Screening warns about redundancy; the frozen reference retains physical channels pending the predeclared ablation, rather than automatically dropping them.",
+    "caption": "All six raw TRAIN predictors; f_nv is excluded. Asterisks mark |r| >= 0.85 (five pairs), matching Phase 1. Screening warns about redundancy; the preprocessing reference retains physical channels for possible later study, rather than automatically dropping them.",
     "population": "TRAINING ONLY",
     "dpi": 300,
     "dimensions_px": [
@@ -73,7 +73,7 @@
     "number": 6,
     "file": "phase2_implementation/preprocessing_diagnostics/fig3_3_target_importance.png",
     "title": "Feature-target mutual information",
-    "caption": "Seed-42 proportional stratified TRAIN sample, k=3 continuous-feature MI estimator; train-fitted standardization. Target codes remain nominal. This descriptive diagnostic does not alter frozen model/feature choices; imbalance, repeated readings and ties limit interpretation.",
+    "caption": "Seed-42 proportional stratified TRAIN sample, k=3 continuous-feature MI estimator; train-fitted standardization. Target codes remain nominal. This descriptive diagnostic does not alter preprocessing choices; imbalance, repeated readings and ties limit interpretation.",
     "population": "TRAINING ONLY",
     "dpi": 300,
     "dimensions_px": [
@@ -101,7 +101,7 @@
     "number": 8,
     "file": "phase2_implementation/preprocessing_diagnostics/fig5_1_pca_scree_plot.png",
     "title": "PCA scree and cumulative variance",
-    "caption": "StandardScaler and full-SVD PCA are fitted to full TRAIN only. PCA is an exploratory mathematical diagnostic, not physical sensor reduction, a feature-selection rule, or a change to the frozen models. All six inputs are needed to compute the components.",
+    "caption": "StandardScaler and full-SVD PCA are fitted to full TRAIN only. PCA is an exploratory mathematical diagnostic, not physical sensor reduction, a feature-selection rule, or a change to the preprocessing policies. All six inputs are needed to compute the components.",
     "population": "TRAINING ONLY",
     "dpi": 300,
     "dimensions_px": [
