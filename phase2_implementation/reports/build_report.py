@@ -1,4 +1,4 @@
-"""Rebuild only the IEEE preprocessing report from compact evidence and source."""
+
 from pathlib import Path
 import argparse
 import hashlib
