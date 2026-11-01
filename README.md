@@ -1,6 +1,5 @@
 # PV Anomaly Detection: Data Preprocessing and Feature Engineering
 
-Ruganji Prince
 
 **Current milestone: Data Preprocessing.** A reproducible workflow for auditing photovoltaic measurements and constructing leakage-controlled feature matrices. The objective is to prepare defensible photovoltaic measurements for later investigation of sensing and computational trade-offs. The current scope is data preparation, statistical diagnostics and feature engineering.
 
