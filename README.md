@@ -63,4 +63,4 @@ phase2_implementation/compliance/  Preprocessing evidence and reflection table
 figures/                          Eight 300-DPI diagnostic figures
 ```
 
-Processed arrays, environments and local review material are excluded. The IEEE-format reflection report records measured stage dimensions, empirical justification and figure-linked decisions; its source and build instructions are included. The analysis makes no deployment-performance, globally minimum-sensing or causal claims. Historical Phase 1 planning remains labeled as planning.
+Processed arrays, environments and local review material are excluded. The reflection report records measured stage dimensions, empirical justification and figure-linked decisions; its source and build instructions are included. The analysis makes no deployment-performance, globally minimum-sensing or causal claims. 
