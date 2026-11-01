@@ -1,4 +1,4 @@
-"""Reference consistency checks; no fitted predictive estimator required."""
+
 import numpy as np
 from .common import load
 def validate_study(study):
