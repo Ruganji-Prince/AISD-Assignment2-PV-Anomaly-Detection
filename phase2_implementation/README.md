@@ -1,4 +1,4 @@
-# Assignment 2 data preprocessing
+# Assignment 3 data preprocessing
 
 The current milestone contains dataset audit, train-only preprocessing, eight diagnostics and a preprocessing reflection report. It presents no downstream modeling outcomes.
 
