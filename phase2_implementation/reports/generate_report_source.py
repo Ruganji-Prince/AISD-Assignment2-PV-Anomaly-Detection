@@ -1,4 +1,4 @@
-"""Generate the IEEE reflection source and decision log from preprocessing evidence.
+"""
 
 This command reads compact CSV/JSON only. It never executes preprocessing,
 fits an estimator, generates a diagnostic image, or accesses model artifacts.
