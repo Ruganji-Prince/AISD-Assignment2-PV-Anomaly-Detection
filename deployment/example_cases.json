@@ -1,0 +1,92 @@
+[
+  {
+    "case": 0,
+    "input": {
+      "vdc1": 300.031,
+      "vdc2": 329.544,
+      "idc1": 0.2247,
+      "idc2": 0.1272
+    },
+    "output": {
+      "predicted_class": 0,
+      "label": "normal",
+      "hardware_fault_class": false,
+      "environmental_shade": false,
+      "model_version": "archived-RF__E4-cf5d0ac4",
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "range_warnings": []
+    }
+  },
+  {
+    "case": 1,
+    "input": {
+      "vdc1": 256.461,
+      "vdc2": 208.699,
+      "idc1": 9.1373,
+      "idc2": 8.4463
+    },
+    "output": {
+      "predicted_class": 1,
+      "label": "short circuit",
+      "hardware_fault_class": true,
+      "environmental_shade": false,
+      "model_version": "archived-RF__E4-cf5d0ac4",
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "range_warnings": []
+    }
+  },
+  {
+    "case": 2,
+    "input": {
+      "vdc1": 259.212,
+      "vdc2": 246.611,
+      "idc1": 9.0792,
+      "idc2": 8.3303
+    },
+    "output": {
+      "predicted_class": 2,
+      "label": "resistive degradation",
+      "hardware_fault_class": true,
+      "environmental_shade": false,
+      "model_version": "archived-RF__E4-cf5d0ac4",
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "range_warnings": []
+    }
+  },
+  {
+    "case": 3,
+    "input": {
+      "vdc1": 262.91,
+      "vdc2": 0.8866,
+      "idc1": 8.9742,
+      "idc2": 0.0468
+    },
+    "output": {
+      "predicted_class": 3,
+      "label": "open circuit",
+      "hardware_fault_class": true,
+      "environmental_shade": false,
+      "model_version": "archived-RF__E4-cf5d0ac4",
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "range_warnings": []
+    }
+  },
+  {
+    "case": 4,
+    "input": {
+      "vdc1": 334.823,
+      "vdc2": 335.877,
+      "idc1": 0.4303,
+      "idc2": 0.2274
+    },
+    "output": {
+      "predicted_class": 4,
+      "label": "natural building shade",
+      "hardware_fault_class": false,
+      "environmental_shade": true,
+      "model_version": "archived-RF__E4-cf5d0ac4",
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "range_warnings": []
+    }
+  }
+]

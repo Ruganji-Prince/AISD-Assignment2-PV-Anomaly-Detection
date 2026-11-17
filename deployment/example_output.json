@@ -1,0 +1,9 @@
+{
+  "predicted_class": 0,
+  "label": "normal",
+  "hardware_fault_class": false,
+  "environmental_shade": false,
+  "model_version": "archived-RF__E4-cf5d0ac4",
+  "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+  "range_warnings": []
+}

@@ -1,7 +1,9 @@
-# PV Anomaly Detection: Data Preprocessing and Feature Engineering
+# Resource-Efficient and Explainable PV Anomaly Detection
 
 
-**Current milestone: Data Preprocessing.** A reproducible workflow for auditing photovoltaic measurements and constructing leakage-controlled feature matrices. The objective is to prepare defensible photovoltaic measurements for later investigation of sensing and computational trade-offs. The current scope is data preparation, statistical diagnostics and feature engineering.
+**Current milestone: Models and results; beginning of deployment.** The completed Assignment 3 preprocessing workflow is retained below. Original archived LR, Random Forest and LightGBM models have been recovered and evaluated without refitting. A local four-channel RF inference prototype is available.
+
+**Evaluation limitation:** the historical TEST partition was previously inspected. Results are retrospective, not pristine independent generalization estimates. No evaluated configuration met all engineering criteria; RF E4 was selected by the archived validation sensing/performance rule and exceeds separate latency and size targets.
 
 **Task Type: Multiclass Classification.** The [original dataset](https://github.com/clayton-h-costa/pv_fault_dataset), pinned at `e9ed8ad8072dcb3ffc643b0f3604219798708551`, is associated with [Lazzaretti et al. (2020)](https://doi.org/10.3390/s20174688).
 
@@ -63,3 +65,43 @@ figures/                          Eight 300-DPI diagnostic figures
 ```
 
 Processed arrays, environments and local review material are excluded. The reflection report records measured stage dimensions, empirical justification and figure-linked decisions; its source and build instructions are included. The analysis makes no deployment-performance, globally minimum-sensing or causal claims. 
+
+## Verified model selection and results
+
+Block-13 VALIDATION only (32,800 observations):
+
+| Model | Physical / mathematical inputs | Macro precision | Macro recall | Macro-F1 | Macro AP |
+| --- | --- | --- | --- | --- | --- |
+| LR__F6 | 6 / 12 | 0.872022940 | 0.927024112 | 0.893869804 | 0.942431868 |
+| RF__E4 | 4 / 8 | 0.955450596 | 0.962811690 | 0.956297122 | 0.989740014 |
+| LightGBM__E4 | 4 / 13 | 0.908327034 | 0.866445735 | 0.855657128 | 0.991518322 |
+
+Frozen TEST reporting only (146,461 observations; prior exposure disclosed):
+
+| Model | Physical / mathematical inputs | Macro precision | Macro recall | Macro-F1 | Macro AP |
+| --- | --- | --- | --- | --- | --- |
+| LR__F6 | 6 / 12 | 0.889885493 | 0.912349415 | 0.898389062 | 0.917422666 |
+| RF__E4 | 4 / 8 | 0.926440050 | 0.985651058 | 0.950481150 | 0.976218899 |
+| LightGBM__E4 | 4 / 13 | 0.940383125 | 0.896340685 | 0.902137434 | 0.993577665 |
+
+RF E4 is the only one of 21 evaluated channel/family configurations meeting the four archived validation sensing/performance constraints. It requires four electrical channels and eight mathematical inputs. This is not a globally minimum-sensor claim. RF's archived p95 latency is 36.808295 ms and its original artifact is 11.665363312 MiB; both exceed the separate engineering targets. LightGBM's TEST short-circuit recall is .499364676 despite high aggregate hardware-alert recall. Class 4 remains natural building shade, not hardware failure.
+
+[Model-selection report](reports/Model_Selection_and_Deployment.md) ? [Reproduction evidence](reports/model_verification.json) ? [All sensor comparisons](phase2_implementation/stage2/evidence/sensor_ablation_validation.csv) ? [RF confusion matrix](phase2_implementation/stage3/figures/test_confusion_RF__E4.png) ? [Resource comparisons](phase2_implementation/stage3/evidence/final_candidate_comparison.csv)
+
+Raw-channel permutation and native LightGBM Tree SHAP use a fixed balanced validation sample; vdc2 has the largest mean permutation loss for each frozen candidate. These model associations are not causal explanations. Simulated isolated dropout is separate from field reliability. Detailed provenance, class-specific errors, resource measurements and limitations are in the report. Reconstructed noise-study models are not substituted for originals.
+
+## Beginning of deployment ? local CLI
+
+The prototype loads the hash-verified original fitted RF E4 pipeline, validates four voltage/current inputs, and returns a class/label with explicit environmental-shade handling. No true label, timestamp or source index is required. Missing channels are rejected; no calibrated confidence or production readiness is claimed.
+
+Install the exact Python 3.14.7 environment described in [deployment instructions](deployment/README.md), then run from the repository root:
+
+```text
+python -B -m src.inference.cli --input deployment/example_input.json
+python -B -m unittest discover -s tests -v
+python -B -m src.evaluation.verify_recovery
+```
+
+[Model provenance](models/rf_e4/provenance.json) ? [Actual example output](deployment/example_output.json) ? [Recovery manifest](reports/Recovery_Manifest.json) ? [Acceptance matrix](reports/Acceptance_Matrix.md)
+
+The Phase 1 PDF, Assignment 3 IEEE report, executed preprocessing notebook, original diagnostic figures and raw data remain unchanged. Only the selected original model is published; other original models, saved arrays, environments and backups remain local. Cloud deployment, prospective external evaluation and production monitoring are not completed.

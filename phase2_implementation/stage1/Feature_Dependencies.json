@@ -1,0 +1,70 @@
+{
+  "physical_configuration": "F6",
+  "physical_channels": [
+    "vdc1",
+    "vdc2",
+    "idc1",
+    "idc2",
+    "irr",
+    "pvt"
+  ],
+  "physical_channel_count": 6,
+  "dependencies": {
+    "P1": [
+      "vdc1",
+      "idc1"
+    ],
+    "P2": [
+      "vdc2",
+      "idc2"
+    ],
+    "P_total": [
+      "vdc1",
+      "idc1",
+      "vdc2",
+      "idc2"
+    ],
+    "V_diff": [
+      "vdc1",
+      "vdc2"
+    ],
+    "I_diff": [
+      "idc1",
+      "idc2"
+    ]
+  },
+  "features": {
+    "P1": {
+      "formula": "vdc1 * idc1",
+      "unit": "W",
+      "meaning": "String-1 power proxy from exported DC RMS quantities"
+    },
+    "P2": {
+      "formula": "vdc2 * idc2",
+      "unit": "W",
+      "meaning": "String-2 power proxy from exported DC RMS quantities"
+    },
+    "P_total": {
+      "formula": "P1 + P2",
+      "unit": "W",
+      "meaning": "Combined string power proxy"
+    },
+    "V_diff": {
+      "formula": "abs(vdc1 - vdc2)",
+      "unit": "V",
+      "meaning": "Absolute voltage imbalance"
+    },
+    "I_diff": {
+      "formula": "abs(idc1 - idc2)",
+      "unit": "A",
+      "meaning": "Absolute current imbalance"
+    }
+  },
+  "ordering": "Quality checks -> training-fitted raw median imputation -> deterministic physical derivatives -> optional LR scaling; raw-channel indicators are separate.",
+  "mathematical_feature_increase": 5,
+  "sensor_reduction": false,
+  "target_free": true,
+  "ratio_features": false,
+  "nonfinite_policy": "Raise on overflow; no silent clipping or division.",
+  "derived_availability": "Enabled only when every parent raw channel is retained; no reconstruction using removed channels."
+}

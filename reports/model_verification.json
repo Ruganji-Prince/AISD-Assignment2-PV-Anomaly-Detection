@@ -1,0 +1,4110 @@
+{
+  "status": "REPRODUCED",
+  "original_models": {
+    "LightGBM__C2": {
+      "path": ".cache/stage2/models/LightGBM__C2.pkl",
+      "sha256": "56df959d79a6471d6a44cb31d6957394ff6116fd413f5d99f43d74057d6c3952",
+      "bytes": 1762159,
+      "provenance": "original pre-compliance hash record"
+    },
+    "LightGBM__C3": {
+      "path": ".cache/stage2/models/LightGBM__C3.pkl",
+      "sha256": "8d488e923901f1dfcf60e7237a027b8c7315cb9cf79b466ced7691fdb4aff25e",
+      "bytes": 1895890,
+      "provenance": "original pre-compliance hash record"
+    },
+    "LightGBM__E4": {
+      "path": ".cache/stage2/models/LightGBM__E4.pkl",
+      "sha256": "6c61bf1a475f3230c5b20d6d7217b6aaea8abb52df57a4363d26033e4ccbcf3c",
+      "bytes": 1645422,
+      "provenance": "original pre-compliance hash record"
+    },
+    "LightGBM__E5": {
+      "path": ".cache/stage2/models/LightGBM__E5.pkl",
+      "sha256": "96e624cf73c09b864f5696556d70c3dbc2edf97f07b7af62c4965e321edee402",
+      "bytes": 1683467,
+      "provenance": "original pre-compliance hash record"
+    },
+    "LightGBM__F6": {
+      "path": ".cache/stage2/models/LightGBM__F6.pkl",
+      "sha256": "2e5583f035197fd3a40287e5d1587fdd14f7ddf12180735e11bae1d9df66a983",
+      "bytes": 1662737,
+      "provenance": "original pre-compliance hash record"
+    },
+    "LightGBM__S2": {
+      "path": ".cache/stage2/models/LightGBM__S2.pkl",
+      "sha256": "cf4a91fb3a2a582f734ea1aa80ef315629aa75605fc07296fd803397286d4b3d",
+      "bytes": 1912974,
+      "provenance": "original pre-compliance hash record"
+    },
+    "LightGBM__S4": {
+      "path": ".cache/stage2/models/LightGBM__S4.pkl",
+      "sha256": "e2df6dd4fa5014152b5a4cfafb1e8119cd4d7030ad3f3adf736c4e1a6a8341e6",
+      "bytes": 1903468,
+      "provenance": "original pre-compliance hash record"
+    },
+    "LR__C2": {
+      "path": ".cache/stage2/models/LR__C2.pkl",
+      "sha256": "f592567cfa5cf600b8273b0b29045c0865785cb7bf1034de239eeeb0da57bc98",
+      "bytes": 3352,
+      "provenance": "original pre-compliance hash record"
+    },
+    "LR__C3": {
+      "path": ".cache/stage2/models/LR__C3.pkl",
+      "sha256": "56c02d031a296a454c4cfe395e8c1abc37f7048994510561a344db98a4b6e701",
+      "bytes": 3494,
+      "provenance": "original pre-compliance hash record"
+    },
+    "LR__E4": {
+      "path": ".cache/stage2/models/LR__E4.pkl",
+      "sha256": "297e855248e9f164b682399128b697e87cfe06c4c804c52871e78077240f1766",
+      "bytes": 3640,
+      "provenance": "original pre-compliance hash record"
+    },
+    "LR__E5": {
+      "path": ".cache/stage2/models/LR__E5.pkl",
+      "sha256": "40af0fe963c9b55aa26af42459a67a5c0f02fe1e741fdff1497fe3d90098c75f",
+      "bytes": 3782,
+      "provenance": "original pre-compliance hash record"
+    },
+    "LR__F6": {
+      "path": ".cache/stage2/models/LR__F6.pkl",
+      "sha256": "6460d8244e7c70d167a22beeb9f240b1127baa6c8a78635fed8ae2ad02e1680f",
+      "bytes": 3924,
+      "provenance": "original pre-compliance hash record"
+    },
+    "LR__S2": {
+      "path": ".cache/stage2/models/LR__S2.pkl",
+      "sha256": "b3c7c890492bff7b5953f03e5203605c51a2f7d554911684e028a6acd3361cf0",
+      "bytes": 3352,
+      "provenance": "original pre-compliance hash record"
+    },
+    "LR__S4": {
+      "path": ".cache/stage2/models/LR__S4.pkl",
+      "sha256": "067b0252c5a3aa24237e816c9a142e84f5c788bc7464af875c4bb89dc7064730",
+      "bytes": 3636,
+      "provenance": "original pre-compliance hash record"
+    },
+    "RF__C2": {
+      "path": ".cache/stage2/models/RF__C2.pkl",
+      "sha256": "9b474259d78f924336ac22a4b720422d3eac9cb482ba831633f816c8cd6f30fb",
+      "bytes": 13865321,
+      "provenance": "original pre-compliance hash record"
+    },
+    "RF__C3": {
+      "path": ".cache/stage2/models/RF__C3.pkl",
+      "sha256": "4941b13f44410ecceab4e269b6bb7c35ca90895c32912ac9851ef7361fe10a57",
+      "bytes": 13325970,
+      "provenance": "original pre-compliance hash record"
+    },
+    "RF__E4": {
+      "path": ".cache/stage2/models/RF__E4.pkl",
+      "sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "bytes": 12232020,
+      "provenance": "original pre-compliance hash record"
+    },
+    "RF__E5": {
+      "path": ".cache/stage2/models/RF__E5.pkl",
+      "sha256": "15a3fa912b60f4d6ce21cce8218d577feb9f95e587e910be260f7694749fb158",
+      "bytes": 12262212,
+      "provenance": "original pre-compliance hash record"
+    },
+    "RF__F6": {
+      "path": ".cache/stage2/models/RF__F6.pkl",
+      "sha256": "a23e8f42f75154b6fa2255720a0ba9a5aff96fb4b05e0470824e3b93a6ba9bcf",
+      "bytes": 12196332,
+      "provenance": "original pre-compliance hash record"
+    },
+    "RF__S2": {
+      "path": ".cache/stage2/models/RF__S2.pkl",
+      "sha256": "ea31c5cf11afdc3ea3fe90d5768756a7ff6100e42244c72ce31de858fe746adc",
+      "bytes": 16689589,
+      "provenance": "original pre-compliance hash record"
+    },
+    "RF__S4": {
+      "path": ".cache/stage2/models/RF__S4.pkl",
+      "sha256": "57c584eaa6bb09150d9dc502bb29fbf8c5d6272cd9378ebd93016d21a22db454",
+      "bytes": 14595757,
+      "provenance": "original pre-compliance hash record"
+    }
+  },
+  "original_model_count": 24,
+  "test_reproduction": {
+    "LR__F6": {
+      "maximum_probability_difference": 1.2212453270876722e-15,
+      "metrics": {
+        "macro_f1": 0.8983890619886468,
+        "weighted_f1": 0.9402797454914585,
+        "per_class": {
+          "0": {
+            "precision": 0.9712181192809397,
+            "recall": 0.9615458750963762,
+            "f1": 0.9663577954993059,
+            "support": 124512,
+            "AP": 0.9964092186384591
+          },
+          "1": {
+            "precision": 0.8532706902782797,
+            "recall": 1.0,
+            "f1": 0.9208268330733229,
+            "support": 2361,
+            "AP": 0.9689980357381687
+          },
+          "2": {
+            "precision": 0.9252450980392157,
+            "recall": 0.9977973568281938,
+            "f1": 0.96015260703688,
+            "support": 2270,
+            "AP": 0.9743867027706558
+          },
+          "3": {
+            "precision": 0.9966019417475728,
+            "recall": 0.8518672199170124,
+            "f1": 0.9185682326621923,
+            "support": 2410,
+            "AP": 0.9876906613680532
+          },
+          "4": {
+            "precision": 0.7030916174437603,
+            "recall": 0.7505366246310705,
+            "f1": 0.7260398416715333,
+            "support": 14908,
+            "AP": 0.6596287125421617
+          }
+        },
+        "macro_AP": 0.9174226662114997,
+        "AP_definition": "One-vs-rest average precision; unweighted mean across five classes; not trapezoidal PR integration.",
+        "confusion_matrix": [
+          [
+            119724,
+            0,
+            63,
+            0,
+            4725,
+            0
+          ],
+          [
+            0,
+            2361,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            5,
+            2265,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            357,
+            0,
+            2053,
+            0,
+            0
+          ],
+          [
+            3548,
+            44,
+            120,
+            7,
+            11189,
+            0
+          ]
+        ],
+        "row_normalized_confusion_matrix": [
+          [
+            0.9615458750963762,
+            0.0,
+            0.0005059753276792598,
+            0.0,
+            0.03794814957594449,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0022026431718061676,
+            0.9977973568281938,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.14813278008298755,
+            0.0,
+            0.8518672199170124,
+            0.0,
+            0.0
+          ],
+          [
+            0.2379930238797961,
+            0.0029514354708881137,
+            0.008049369466058493,
+            0.0004695465521867454,
+            0.7505366246310705,
+            0.0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "hardware_macro_recall": 0.9498881922484022,
+        "hardware_to_normal": {
+          "1": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "2": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "3": {
+            "count": 0,
+            "rate": 0.0
+          }
+        },
+        "hardware_AP": 0.9896383481126496,
+        "hardware_score_definition": "p1 + p2 + p3; class 4 is environmental shade, not hardware failure.",
+        "coverage": 1.0,
+        "abstention_policy": "All-row recall counts abstentions as misses; AP assigns zero score.",
+        "normal_classification_false_alarm_rate": 0.0005059753276792598,
+        "shade_classification_false_alarm_rate": 0.011470351489133352,
+        "hardware_alert_metrics": null,
+        "hardware_alert_status": "Deferred: block-14 threshold selection is not authorized in Stage 1."
+      }
+    },
+    "RF__E4": {
+      "maximum_probability_difference": 4.440892098500626e-16,
+      "metrics": {
+        "macro_f1": 0.9504811500671918,
+        "weighted_f1": 0.9571987425923132,
+        "per_class": {
+          "0": {
+            "precision": 0.9997031911194783,
+            "recall": 0.946784245695194,
+            "f1": 0.972524367557222,
+            "support": 124512,
+            "AP": 0.9986065957506499
+          },
+          "1": {
+            "precision": 0.9652351738241309,
+            "recall": 0.9995764506565015,
+            "f1": 0.9821057012068248,
+            "support": 2361,
+            "AP": 0.9811953304543655
+          },
+          "2": {
+            "precision": 0.9782514136581122,
+            "recall": 0.9907488986784141,
+            "f1": 0.9844604946377763,
+            "support": 2270,
+            "AP": 0.9953883600747537
+          },
+          "3": {
+            "precision": 0.9979296066252588,
+            "recall": 1.0,
+            "f1": 0.9989637305699481,
+            "support": 2410,
+            "AP": 1.0
+          },
+          "4": {
+            "precision": 0.6910808661896076,
+            "recall": 0.9911456935873356,
+            "f1": 0.8143514563641875,
+            "support": 14908,
+            "AP": 0.9059042106199535
+          }
+        },
+        "macro_AP": 0.9762188993799444,
+        "AP_definition": "One-vs-rest average precision; unweighted mean across five classes; not trapezoidal PR integration.",
+        "confusion_matrix": [
+          [
+            117886,
+            1,
+            21,
+            0,
+            6604,
+            0
+          ],
+          [
+            0,
+            2360,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            6,
+            15,
+            2249,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2410,
+            0,
+            0
+          ],
+          [
+            29,
+            69,
+            29,
+            5,
+            14776,
+            0
+          ]
+        ],
+        "row_normalized_confusion_matrix": [
+          [
+            0.946784245695194,
+            8.031354407607299e-06,
+            0.00016865844255975327,
+            0.0,
+            0.0530390645078386,
+            0.0
+          ],
+          [
+            0.0,
+            0.9995764506565015,
+            0.0,
+            0.0,
+            0.00042354934349851756,
+            0.0
+          ],
+          [
+            0.0026431718061674008,
+            0.006607929515418502,
+            0.9907488986784141,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0019452642876308024,
+            0.004628387442983633,
+            0.0019452642876308024,
+            0.00033539039441910385,
+            0.9911456935873356,
+            0.0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "hardware_macro_recall": 0.9967751164449719,
+        "hardware_to_normal": {
+          "1": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "2": {
+            "count": 6,
+            "rate": 0.0026431718061674008
+          },
+          "3": {
+            "count": 0,
+            "rate": 0.0
+          }
+        },
+        "hardware_AP": 0.9933538904829732,
+        "hardware_score_definition": "p1 + p2 + p3; class 4 is environmental shade, not hardware failure.",
+        "coverage": 1.0,
+        "abstention_policy": "All-row recall counts abstentions as misses; AP assigns zero score.",
+        "normal_classification_false_alarm_rate": 0.00017668979696736057,
+        "shade_classification_false_alarm_rate": 0.006909042125033539,
+        "hardware_alert_metrics": null,
+        "hardware_alert_status": "Deferred: block-14 threshold selection is not authorized in Stage 1."
+      }
+    },
+    "LightGBM__E4": {
+      "maximum_probability_difference": 0.0,
+      "metrics": {
+        "macro_f1": 0.9021374337838539,
+        "weighted_f1": 0.987196215733711,
+        "per_class": {
+          "0": {
+            "precision": 0.9998791238899544,
+            "recall": 0.996522423541506,
+            "f1": 0.9981979517791204,
+            "support": 124512,
+            "AP": 0.9999723194385903
+          },
+          "1": {
+            "precision": 0.9562043795620438,
+            "recall": 0.4993646759847522,
+            "f1": 0.656093489148581,
+            "support": 2361,
+            "AP": 0.9764405682511721
+          },
+          "2": {
+            "precision": 0.8196363636363636,
+            "recall": 0.9929515418502203,
+            "f1": 0.8980079681274901,
+            "support": 2270,
+            "AP": 0.9951904317417825
+          },
+          "3": {
+            "precision": 0.9987557030277893,
+            "recall": 0.9991701244813278,
+            "f1": 0.9989628707736984,
+            "support": 2410,
+            "AP": 0.9999982818312242
+          },
+          "4": {
+            "precision": 0.9274400550929693,
+            "recall": 0.9936946605849208,
+            "f1": 0.9594248890903792,
+            "support": 14908,
+            "AP": 0.9962867212496787
+          }
+        },
+        "macro_AP": 0.9935776645024894,
+        "AP_definition": "One-vs-rest average precision; unweighted mean across five classes; not trapezoidal PR integration.",
+        "confusion_matrix": [
+          [
+            124079,
+            0,
+            8,
+            0,
+            425,
+            0
+          ],
+          [
+            0,
+            1179,
+            453,
+            0,
+            729,
+            0
+          ],
+          [
+            0,
+            11,
+            2254,
+            0,
+            5,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            2408,
+            0,
+            0
+          ],
+          [
+            15,
+            43,
+            33,
+            3,
+            14814,
+            0
+          ]
+        ],
+        "row_normalized_confusion_matrix": [
+          [
+            0.996522423541506,
+            0.0,
+            6.425083526085839e-05,
+            0.0,
+            0.003413325623233102,
+            0.0
+          ],
+          [
+            0.0,
+            0.4993646759847522,
+            0.19186785260482847,
+            0.0,
+            0.3087674714104193,
+            0.0
+          ],
+          [
+            0.0,
+            0.004845814977973568,
+            0.9929515418502203,
+            0.0,
+            0.0022026431718061676,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0008298755186721991,
+            0.9991701244813278,
+            0.0,
+            0.0
+          ],
+          [
+            0.0010061711832573116,
+            0.002884357392004293,
+            0.0022135766031660853,
+            0.0002012342366514623,
+            0.9936946605849208,
+            0.0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "hardware_macro_recall": 0.8304954474387668,
+        "hardware_to_normal": {
+          "1": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "2": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "3": {
+            "count": 0,
+            "rate": 0.0
+          }
+        },
+        "hardware_AP": 0.9947751843791389,
+        "hardware_score_definition": "p1 + p2 + p3; class 4 is environmental shade, not hardware failure.",
+        "coverage": 1.0,
+        "abstention_policy": "All-row recall counts abstentions as misses; AP assigns zero score.",
+        "normal_classification_false_alarm_rate": 6.425083526085839e-05,
+        "shade_classification_false_alarm_rate": 0.00529916823182184,
+        "hardware_alert_metrics": null,
+        "hardware_alert_status": "Deferred: block-14 threshold selection is not authorized in Stage 1."
+      }
+    }
+  },
+  "validation_reproduction": {
+    "LR__F6": {
+      "metrics": {
+        "macro_f1": 0.8938698040831554,
+        "weighted_f1": 0.8576219700434736,
+        "per_class": {
+          "0": {
+            "precision": 0.8953998745938551,
+            "recall": 0.8488975356679637,
+            "f1": 0.8715288373512359,
+            "support": 18504,
+            "AP": 0.9456580484173304
+          },
+          "1": {
+            "precision": 1.0,
+            "recall": 0.976461038961039,
+            "f1": 0.9880903490759754,
+            "support": 1232,
+            "AP": 0.9991051600656058
+          },
+          "2": {
+            "precision": 0.6835227272727272,
+            "recall": 0.9844517184942717,
+            "f1": 0.806841046277666,
+            "support": 1222,
+            "AP": 0.9853385642001867
+          },
+          "3": {
+            "precision": 0.9885245901639345,
+            "recall": 1.0,
+            "f1": 0.9942291838417148,
+            "support": 1206,
+            "AP": 0.9884686542874221
+          },
+          "4": {
+            "precision": 0.7926675094816688,
+            "recall": 0.8253102670176758,
+            "f1": 0.8086596038691847,
+            "support": 10636,
+            "AP": 0.7935889127632697
+          }
+        },
+        "macro_AP": 0.942431867946763,
+        "AP_definition": "One-vs-rest average precision; unweighted mean across five classes; not trapezoidal PR integration.",
+        "confusion_matrix": [
+          [
+            15708,
+            0,
+            505,
+            0,
+            2291,
+            0
+          ],
+          [
+            0,
+            1203,
+            29,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1203,
+            14,
+            5,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1206,
+            0,
+            0
+          ],
+          [
+            1835,
+            0,
+            23,
+            0,
+            8778,
+            0
+          ]
+        ],
+        "row_normalized_confusion_matrix": [
+          [
+            0.8488975356679637,
+            0.0,
+            0.02729139645482058,
+            0.0,
+            0.12381106787721574,
+            0.0
+          ],
+          [
+            0.0,
+            0.976461038961039,
+            0.02353896103896104,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.9844517184942717,
+            0.011456628477905073,
+            0.004091653027823241,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.17252726588943212,
+            0.0,
+            0.0021624670928920646,
+            0.0,
+            0.8253102670176758,
+            0.0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "hardware_macro_recall": 0.9869709191517702,
+        "hardware_to_normal": {
+          "1": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "2": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "3": {
+            "count": 0,
+            "rate": 0.0
+          }
+        },
+        "hardware_AP": 0.9994832382309616,
+        "hardware_score_definition": "p1 + p2 + p3; class 4 is environmental shade, not hardware failure.",
+        "coverage": 1.0,
+        "abstention_policy": "All-row recall counts abstentions as misses; AP assigns zero score.",
+        "normal_classification_false_alarm_rate": 0.02729139645482058,
+        "shade_classification_false_alarm_rate": 0.0021624670928920646,
+        "hardware_alert_metrics": null,
+        "hardware_alert_status": "Deferred: block-14 threshold selection is not authorized in Stage 1."
+      },
+      "difference_from_archive": {
+        "macro_f1": 0.0,
+        "weighted_f1": 0.0,
+        "macro_AP": 0.0,
+        "hardware_macro_recall": 0.0
+      }
+    },
+    "LR__E5": {
+      "metrics": {
+        "macro_f1": 0.8713292965606202,
+        "weighted_f1": 0.8494047110711181,
+        "per_class": {
+          "0": {
+            "precision": 0.9000472869133467,
+            "recall": 0.8229031560743623,
+            "f1": 0.8597481790977358,
+            "support": 18504,
+            "AP": 0.9199524846354327
+          },
+          "1": {
+            "precision": 1.0,
+            "recall": 0.976461038961039,
+            "f1": 0.9880903490759754,
+            "support": 1232,
+            "AP": 0.9990981880076878
+          },
+          "2": {
+            "precision": 0.5400447427293065,
+            "recall": 0.9877250409165302,
+            "f1": 0.6982933179056986,
+            "support": 1222,
+            "AP": 0.9853676017810569
+          },
+          "3": {
+            "precision": 0.9885245901639345,
+            "recall": 1.0,
+            "f1": 0.9942291838417148,
+            "support": 1206,
+            "AP": 0.9821941033523447
+          },
+          "4": {
+            "precision": 0.794903777619387,
+            "recall": 0.8388491914253479,
+            "f1": 0.8162854528819762,
+            "support": 10636,
+            "AP": 0.7763411356445673
+          }
+        },
+        "macro_AP": 0.932590702684218,
+        "AP_definition": "One-vs-rest average precision; unweighted mean across five classes; not trapezoidal PR integration.",
+        "confusion_matrix": [
+          [
+            15227,
+            0,
+            976,
+            0,
+            2301,
+            0
+          ],
+          [
+            0,
+            1203,
+            29,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1207,
+            14,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1206,
+            0,
+            0
+          ],
+          [
+            1691,
+            0,
+            23,
+            0,
+            8922,
+            0
+          ]
+        ],
+        "row_normalized_confusion_matrix": [
+          [
+            0.8229031560743623,
+            0.0,
+            0.0527453523562473,
+            0.0,
+            0.1243514915693904,
+            0.0
+          ],
+          [
+            0.0,
+            0.976461038961039,
+            0.02353896103896104,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.9877250409165302,
+            0.011456628477905073,
+            0.0008183306055646482,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.15898834148176005,
+            0.0,
+            0.0021624670928920646,
+            0.0,
+            0.8388491914253479,
+            0.0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "hardware_macro_recall": 0.9880620266258564,
+        "hardware_to_normal": {
+          "1": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "2": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "3": {
+            "count": 0,
+            "rate": 0.0
+          }
+        },
+        "hardware_AP": 0.9994681976708482,
+        "hardware_score_definition": "p1 + p2 + p3; class 4 is environmental shade, not hardware failure.",
+        "coverage": 1.0,
+        "abstention_policy": "All-row recall counts abstentions as misses; AP assigns zero score.",
+        "normal_classification_false_alarm_rate": 0.0527453523562473,
+        "shade_classification_false_alarm_rate": 0.0021624670928920646,
+        "hardware_alert_metrics": null,
+        "hardware_alert_status": "Deferred: block-14 threshold selection is not authorized in Stage 1."
+      },
+      "difference_from_archive": {
+        "macro_f1": 0.0,
+        "weighted_f1": 0.0,
+        "macro_AP": 0.0,
+        "hardware_macro_recall": 0.0
+      }
+    },
+    "LR__E4": {
+      "metrics": {
+        "macro_f1": 0.5882073569164217,
+        "weighted_f1": 0.35295442186113923,
+        "per_class": {
+          "0": {
+            "precision": 0.5577380952380953,
+            "recall": 0.050637699956766105,
+            "f1": 0.09284581847007531,
+            "support": 18504,
+            "AP": 0.5161382871220261
+          },
+          "1": {
+            "precision": 0.9991728701406121,
+            "recall": 0.9805194805194806,
+            "f1": 0.9897582957804179,
+            "support": 1232,
+            "AP": 0.9853524695933864
+          },
+          "2": {
+            "precision": 0.10271516393442623,
+            "recall": 0.9844517184942717,
+            "f1": 0.18602133910623164,
+            "support": 1222,
+            "AP": 0.06216344501232023
+          },
+          "3": {
+            "precision": 0.9885245901639345,
+            "recall": 1.0,
+            "f1": 0.9942291838417148,
+            "support": 1206,
+            "AP": 0.9938520054144344
+          },
+          "4": {
+            "precision": 0.551504800047117,
+            "recall": 0.8804061677322301,
+            "f1": 0.6781821473836683,
+            "support": 10636,
+            "AP": 0.7111655382960048
+          }
+        },
+        "macro_AP": 0.6537343490876345,
+        "AP_definition": "One-vs-rest average precision; unweighted mean across five classes; not trapezoidal PR integration.",
+        "confusion_matrix": [
+          [
+            937,
+            0,
+            9964,
+            0,
+            7603,
+            0
+          ],
+          [
+            0,
+            1208,
+            17,
+            0,
+            7,
+            0
+          ],
+          [
+            0,
+            0,
+            1203,
+            14,
+            5,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1206,
+            0,
+            0
+          ],
+          [
+            743,
+            1,
+            528,
+            0,
+            9364,
+            0
+          ]
+        ],
+        "row_normalized_confusion_matrix": [
+          [
+            0.050637699956766105,
+            0.0,
+            0.5384781668828361,
+            0.0,
+            0.41088413316039774,
+            0.0
+          ],
+          [
+            0.0,
+            0.9805194805194806,
+            0.013798701298701298,
+            0.0,
+            0.005681818181818182,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.9844517184942717,
+            0.011456628477905073,
+            0.004091653027823241,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.06985708913125235,
+            9.40203083866115e-05,
+            0.04964272282813088,
+            0.0,
+            0.8804061677322301,
+            0.0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "hardware_macro_recall": 0.9883237330045841,
+        "hardware_to_normal": {
+          "1": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "2": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "3": {
+            "count": 0,
+            "rate": 0.0
+          }
+        },
+        "hardware_AP": 0.46835333257390915,
+        "hardware_score_definition": "p1 + p2 + p3; class 4 is environmental shade, not hardware failure.",
+        "coverage": 1.0,
+        "abstention_policy": "All-row recall counts abstentions as misses; AP assigns zero score.",
+        "normal_classification_false_alarm_rate": 0.5384781668828361,
+        "shade_classification_false_alarm_rate": 0.049736743136517485,
+        "hardware_alert_metrics": null,
+        "hardware_alert_status": "Deferred: block-14 threshold selection is not authorized in Stage 1."
+      },
+      "difference_from_archive": {
+        "macro_f1": 0.0,
+        "weighted_f1": 5.551115123125783e-17,
+        "macro_AP": 0.0,
+        "hardware_macro_recall": 1.1102230246251565e-16
+      }
+    },
+    "LR__C3": {
+      "metrics": {
+        "macro_f1": 0.517197723581569,
+        "weighted_f1": 0.5246630460565105,
+        "per_class": {
+          "0": {
+            "precision": 0.6587090163934426,
+            "recall": 0.3474383916990921,
+            "f1": 0.45492499292386074,
+            "support": 18504,
+            "AP": 0.601753269255292
+          },
+          "1": {
+            "precision": 0.21834473001650553,
+            "recall": 0.7516233766233766,
+            "f1": 0.3383884524027042,
+            "support": 1232,
+            "AP": 0.25293924865634293
+          },
+          "2": {
+            "precision": 0.08573428204829114,
+            "recall": 0.6014729950900164,
+            "f1": 0.15007656967840735,
+            "support": 1222,
+            "AP": 0.09060331217996603
+          },
+          "3": {
+            "precision": 0.9686746987951808,
+            "recall": 1.0,
+            "f1": 0.9840881272949816,
+            "support": 1206,
+            "AP": 0.9603129052115806
+          },
+          "4": {
+            "precision": 0.719184945997105,
+            "recall": 0.6072771718691238,
+            "f1": 0.6585104756078911,
+            "support": 10636,
+            "AP": 0.7856171116931239
+          }
+        },
+        "macro_AP": 0.538245169399261,
+        "AP_definition": "One-vs-rest average precision; unweighted mean across five classes; not trapezoidal PR integration.",
+        "confusion_matrix": [
+          [
+            6429,
+            2848,
+            6705,
+            0,
+            2522,
+            0
+          ],
+          [
+            0,
+            926,
+            298,
+            8,
+            0,
+            0
+          ],
+          [
+            0,
+            463,
+            735,
+            24,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1206,
+            0,
+            0
+          ],
+          [
+            3331,
+            4,
+            835,
+            7,
+            6459,
+            0
+          ]
+        ],
+        "row_normalized_confusion_matrix": [
+          [
+            0.3474383916990921,
+            0.15391266753134458,
+            0.36235408560311283,
+            0.0,
+            0.13629485516645048,
+            0.0
+          ],
+          [
+            0.0,
+            0.7516233766233766,
+            0.2418831168831169,
+            0.006493506493506494,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.3788870703764321,
+            0.6014729950900164,
+            0.019639934533551555,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.31318164723580294,
+            0.000376081233546446,
+            0.0785069575028206,
+            0.0006581421587062806,
+            0.6072771718691238,
+            0.0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "hardware_macro_recall": 0.7843654572377977,
+        "hardware_to_normal": {
+          "1": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "2": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "3": {
+            "count": 0,
+            "rate": 0.0
+          }
+        },
+        "hardware_AP": 0.5345075745475215,
+        "hardware_score_definition": "p1 + p2 + p3; class 4 is environmental shade, not hardware failure.",
+        "coverage": 1.0,
+        "abstention_policy": "All-row recall counts abstentions as misses; AP assigns zero score.",
+        "normal_classification_false_alarm_rate": 0.5162667531344575,
+        "shade_classification_false_alarm_rate": 0.07954118089507334,
+        "hardware_alert_metrics": null,
+        "hardware_alert_status": "Deferred: block-14 threshold selection is not authorized in Stage 1."
+      },
+      "difference_from_archive": {
+        "macro_f1": 0.0,
+        "weighted_f1": 0.0,
+        "macro_AP": 0.0,
+        "hardware_macro_recall": 0.0
+      }
+    },
+    "LR__C2": {
+      "metrics": {
+        "macro_f1": 0.17446285802224265,
+        "weighted_f1": 0.17156896654967502,
+        "per_class": {
+          "0": {
+            "precision": 0.25396211828372633,
+            "recall": 0.035505836575875485,
+            "f1": 0.06230145559717415,
+            "support": 18504,
+            "AP": 0.42978743864923113
+          },
+          "1": {
+            "precision": 0.13684649031451782,
+            "recall": 0.5332792207792207,
+            "f1": 0.21780208851317753,
+            "support": 1232,
+            "AP": 0.16818925696969417
+          },
+          "2": {
+            "precision": 0.1279386290522148,
+            "recall": 0.8461538461538461,
+            "f1": 0.2222699914015477,
+            "support": 1222,
+            "AP": 0.10366176268815032
+          },
+          "3": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1206,
+            "AP": 0.0463534492034238
+          },
+          "4": {
+            "precision": 0.5493609927764401,
+            "recall": 0.27886423467468974,
+            "f1": 0.369940754599314,
+            "support": 10636,
+            "AP": 0.6311475230376684
+          }
+        },
+        "macro_AP": 0.27582788610963355,
+        "AP_definition": "One-vs-rest average precision; unweighted mean across five classes; not trapezoidal PR integration.",
+        "confusion_matrix": [
+          [
+            657,
+            3983,
+            6182,
+            6481,
+            1201,
+            0
+          ],
+          [
+            0,
+            657,
+            564,
+            5,
+            6,
+            0
+          ],
+          [
+            0,
+            157,
+            1034,
+            11,
+            20,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1206,
+            0
+          ],
+          [
+            1930,
+            4,
+            302,
+            5434,
+            2966,
+            0
+          ]
+        ],
+        "row_normalized_confusion_matrix": [
+          [
+            0.035505836575875485,
+            0.21525075659316906,
+            0.33408992650237784,
+            0.3502485948984003,
+            0.06490488543017726,
+            0.0
+          ],
+          [
+            0.0,
+            0.5332792207792207,
+            0.4577922077922078,
+            0.004058441558441558,
+            0.00487012987012987,
+            0.0
+          ],
+          [
+            0.0,
+            0.12847790507364976,
+            0.8461538461538461,
+            0.00900163666121113,
+            0.016366612111292964,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.18145919518616022,
+            0.000376081233546446,
+            0.028394133132756676,
+            0.5109063557728469,
+            0.27886423467468974,
+            0.0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "hardware_macro_recall": 0.4598110223110223,
+        "hardware_to_normal": {
+          "1": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "2": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "3": {
+            "count": 0,
+            "rate": 0.0
+          }
+        },
+        "hardware_AP": 0.206937345235167,
+        "hardware_score_definition": "p1 + p2 + p3; class 4 is environmental shade, not hardware failure.",
+        "coverage": 1.0,
+        "abstention_policy": "All-row recall counts abstentions as misses; AP assigns zero score.",
+        "normal_classification_false_alarm_rate": 0.8995892779939473,
+        "shade_classification_false_alarm_rate": 0.53967657013915,
+        "hardware_alert_metrics": null,
+        "hardware_alert_status": "Deferred: block-14 threshold selection is not authorized in Stage 1."
+      },
+      "difference_from_archive": {
+        "macro_f1": 5.551115123125783e-17,
+        "weighted_f1": 2.7755575615628914e-17,
+        "macro_AP": 5.551115123125783e-17,
+        "hardware_macro_recall": 0.0
+      }
+    },
+    "LR__S4": {
+      "metrics": {
+        "macro_f1": 0.15912450352411783,
+        "weighted_f1": 0.2130299115064813,
+        "per_class": {
+          "0": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 18504,
+            "AP": 0.5472609408530332
+          },
+          "1": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1232,
+            "AP": 0.22988987062716518
+          },
+          "2": {
+            "precision": 0.08499095840867993,
+            "recall": 1.0,
+            "f1": 0.15666666666666668,
+            "support": 1222,
+            "AP": 0.09226232496845965
+          },
+          "3": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1206,
+            "AP": 0.05408566985473621
+          },
+          "4": {
+            "precision": 0.5041299858711009,
+            "recall": 0.872226400902595,
+            "f1": 0.6389558509539225,
+            "support": 10636,
+            "AP": 0.5676799790034415
+          }
+        },
+        "macro_AP": 0.2982357570613671,
+        "AP_definition": "One-vs-rest average precision; unweighted mean across five classes; not trapezoidal PR integration.",
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            9379,
+            0,
+            9125,
+            0
+          ],
+          [
+            0,
+            0,
+            1232,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1222,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1206,
+            0,
+            0,
+            0
+          ],
+          [
+            20,
+            0,
+            1339,
+            0,
+            9277,
+            0
+          ]
+        ],
+        "row_normalized_confusion_matrix": [
+          [
+            0.0,
+            0.0,
+            0.5068633808906182,
+            0.0,
+            0.4931366191093818,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.00188040616773223,
+            0.0,
+            0.1258931929296728,
+            0.0,
+            0.872226400902595,
+            0.0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "hardware_macro_recall": 0.3333333333333333,
+        "hardware_to_normal": {
+          "1": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "2": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "3": {
+            "count": 0,
+            "rate": 0.0
+          }
+        },
+        "hardware_AP": 0.5896535969373021,
+        "hardware_score_definition": "p1 + p2 + p3; class 4 is environmental shade, not hardware failure.",
+        "coverage": 1.0,
+        "abstention_policy": "All-row recall counts abstentions as misses; AP assigns zero score.",
+        "normal_classification_false_alarm_rate": 0.5068633808906182,
+        "shade_classification_false_alarm_rate": 0.1258931929296728,
+        "hardware_alert_metrics": null,
+        "hardware_alert_status": "Deferred: block-14 threshold selection is not authorized in Stage 1."
+      },
+      "difference_from_archive": {
+        "macro_f1": 2.7755575615628914e-17,
+        "weighted_f1": 0.0,
+        "macro_AP": 0.0,
+        "hardware_macro_recall": 0.0
+      }
+    },
+    "LR__S2": {
+      "metrics": {
+        "macro_f1": 0.16027054288001502,
+        "weighted_f1": 0.2148534173566111,
+        "per_class": {
+          "0": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 18504,
+            "AP": 0.5002163609984491
+          },
+          "1": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1232,
+            "AP": 0.10093314770728751
+          },
+          "2": {
+            "precision": 0.0850619518307114,
+            "recall": 1.0,
+            "f1": 0.15678727226071337,
+            "support": 1222,
+            "AP": 0.0833629625023954
+          },
+          "3": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1206,
+            "AP": 0.2082243855893336
+          },
+          "4": {
+            "precision": 0.5087585681645087,
+            "recall": 0.8792779240315908,
+            "f1": 0.6445654421393617,
+            "support": 10636,
+            "AP": 0.545762860883562
+          }
+        },
+        "macro_AP": 0.28769994353620554,
+        "AP_definition": "One-vs-rest average precision; unweighted mean across five classes; not trapezoidal PR integration.",
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            9474,
+            0,
+            9030,
+            0
+          ],
+          [
+            0,
+            0,
+            1232,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1222,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1206,
+            0,
+            0,
+            0
+          ],
+          [
+            52,
+            0,
+            1232,
+            0,
+            9352,
+            0
+          ]
+        ],
+        "row_normalized_confusion_matrix": [
+          [
+            0.0,
+            0.0,
+            0.5119974059662775,
+            0.0,
+            0.4880025940337224,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.004889056036103798,
+            0.0,
+            0.11583301993230538,
+            0.0,
+            0.8792779240315908,
+            0.0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "hardware_macro_recall": 0.3333333333333333,
+        "hardware_to_normal": {
+          "1": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "2": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "3": {
+            "count": 0,
+            "rate": 0.0
+          }
+        },
+        "hardware_AP": 0.5163569930633053,
+        "hardware_score_definition": "p1 + p2 + p3; class 4 is environmental shade, not hardware failure.",
+        "coverage": 1.0,
+        "abstention_policy": "All-row recall counts abstentions as misses; AP assigns zero score.",
+        "normal_classification_false_alarm_rate": 0.5119974059662775,
+        "shade_classification_false_alarm_rate": 0.11583301993230538,
+        "hardware_alert_metrics": null,
+        "hardware_alert_status": "Deferred: block-14 threshold selection is not authorized in Stage 1."
+      },
+      "difference_from_archive": {
+        "macro_f1": 2.7755575615628914e-17,
+        "weighted_f1": 0.0,
+        "macro_AP": 5.551115123125783e-17,
+        "hardware_macro_recall": 0.0
+      }
+    },
+    "RF__F6": {
+      "metrics": {
+        "macro_f1": 0.8657926885469361,
+        "weighted_f1": 0.9053336290831455,
+        "per_class": {
+          "0": {
+            "precision": 0.9985007496251874,
+            "recall": 0.8638132295719845,
+            "f1": 0.9262865090403338,
+            "support": 18504,
+            "AP": 0.9942095930119729
+          },
+          "1": {
+            "precision": 1.0,
+            "recall": 0.5657467532467533,
+            "f1": 0.7226542249870399,
+            "support": 1232,
+            "AP": 0.997648034473552
+          },
+          "2": {
+            "precision": 0.6793002915451894,
+            "recall": 0.953355155482815,
+            "f1": 0.7933265236636023,
+            "support": 1222,
+            "AP": 0.9692846866763735
+          },
+          "3": {
+            "precision": 0.9877149877149877,
+            "recall": 1.0,
+            "f1": 0.9938195302843016,
+            "support": 1206,
+            "AP": 0.9780361912021349
+          },
+          "4": {
+            "precision": 0.807280188464169,
+            "recall": 0.9987777359909741,
+            "f1": 0.8928766547594033,
+            "support": 10636,
+            "AP": 0.9812277415521744
+          }
+        },
+        "macro_AP": 0.9840812493832416,
+        "AP_definition": "One-vs-rest average precision; unweighted mean across five classes; not trapezoidal PR integration.",
+        "confusion_matrix": [
+          [
+            15984,
+            0,
+            14,
+            0,
+            2506,
+            0
+          ],
+          [
+            2,
+            697,
+            532,
+            1,
+            0,
+            0
+          ],
+          [
+            13,
+            0,
+            1165,
+            14,
+            30,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1206,
+            0,
+            0
+          ],
+          [
+            9,
+            0,
+            4,
+            0,
+            10623,
+            0
+          ]
+        ],
+        "row_normalized_confusion_matrix": [
+          [
+            0.8638132295719845,
+            0.0,
+            0.0007565931690445309,
+            0.0,
+            0.13543017725897102,
+            0.0
+          ],
+          [
+            0.0016233766233766235,
+            0.5657467532467533,
+            0.4318181818181818,
+            0.0008116883116883117,
+            0.0,
+            0.0
+          ],
+          [
+            0.010638297872340425,
+            0.0,
+            0.953355155482815,
+            0.011456628477905073,
+            0.024549918166939442,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0008461827754795035,
+            0.0,
+            0.000376081233546446,
+            0.0,
+            0.9987777359909741,
+            0.0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "hardware_macro_recall": 0.8397006362431894,
+        "hardware_to_normal": {
+          "1": {
+            "count": 2,
+            "rate": 0.0016233766233766235
+          },
+          "2": {
+            "count": 13,
+            "rate": 0.010638297872340425
+          },
+          "3": {
+            "count": 0,
+            "rate": 0.0
+          }
+        },
+        "hardware_AP": 0.9996725147000577,
+        "hardware_score_definition": "p1 + p2 + p3; class 4 is environmental shade, not hardware failure.",
+        "coverage": 1.0,
+        "abstention_policy": "All-row recall counts abstentions as misses; AP assigns zero score.",
+        "normal_classification_false_alarm_rate": 0.0007565931690445309,
+        "shade_classification_false_alarm_rate": 0.000376081233546446,
+        "hardware_alert_metrics": null,
+        "hardware_alert_status": "Deferred: block-14 threshold selection is not authorized in Stage 1."
+      },
+      "difference_from_archive": {
+        "macro_f1": 0.0,
+        "weighted_f1": -1.1102230246251565e-16,
+        "macro_AP": -3.076156840364774e-08,
+        "hardware_macro_recall": 0.0
+      }
+    },
+    "RF__E5": {
+      "metrics": {
+        "macro_f1": 0.9571142346454922,
+        "weighted_f1": 0.9255036296369413,
+        "per_class": {
+          "0": {
+            "precision": 0.9988206815219415,
+            "recall": 0.8696498054474708,
+            "f1": 0.9297703307814531,
+            "support": 18504,
+            "AP": 0.9973165258613662
+          },
+          "1": {
+            "precision": 0.99836867862969,
+            "recall": 0.9935064935064936,
+            "f1": 0.9959316517493898,
+            "support": 1232,
+            "AP": 0.9983060850353207
+          },
+          "2": {
+            "precision": 0.9720853858784894,
+            "recall": 0.9689034369885434,
+            "f1": 0.9704918032786886,
+            "support": 1222,
+            "AP": 0.9850513752688911
+          },
+          "3": {
+            "precision": 0.9844897959183674,
+            "recall": 1.0,
+            "f1": 0.9921842863019333,
+            "support": 1206,
+            "AP": 0.9820844127292139
+          },
+          "4": {
+            "precision": 0.8150537634408602,
+            "recall": 0.9977435125987213,
+            "f1": 0.8971931011159959,
+            "support": 10636,
+            "AP": 0.9909324776099361
+          }
+        },
+        "macro_AP": 0.9907381753009457,
+        "AP_definition": "One-vs-rest average precision; unweighted mean across five classes; not trapezoidal PR integration.",
+        "confusion_matrix": [
+          [
+            16092,
+            0,
+            16,
+            0,
+            2396,
+            0
+          ],
+          [
+            2,
+            1224,
+            5,
+            1,
+            0,
+            0
+          ],
+          [
+            7,
+            2,
+            1184,
+            17,
+            12,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1206,
+            0,
+            0
+          ],
+          [
+            10,
+            0,
+            13,
+            1,
+            10612,
+            0
+          ]
+        ],
+        "row_normalized_confusion_matrix": [
+          [
+            0.8696498054474708,
+            0.0,
+            0.0008646779074794639,
+            0.0,
+            0.12948551664504973,
+            0.0
+          ],
+          [
+            0.0016233766233766235,
+            0.9935064935064936,
+            0.004058441558441558,
+            0.0008116883116883117,
+            0.0,
+            0.0
+          ],
+          [
+            0.0057283142389525366,
+            0.0016366612111292963,
+            0.9689034369885434,
+            0.013911620294599018,
+            0.009819967266775777,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.000940203083866115,
+            0.0,
+            0.0012222640090259495,
+            9.40203083866115e-05,
+            0.9977435125987213,
+            0.0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "hardware_macro_recall": 0.987469976831679,
+        "hardware_to_normal": {
+          "1": {
+            "count": 2,
+            "rate": 0.0016233766233766235
+          },
+          "2": {
+            "count": 7,
+            "rate": 0.0057283142389525366
+          },
+          "3": {
+            "count": 0,
+            "rate": 0.0
+          }
+        },
+        "hardware_AP": 0.9998540664447135,
+        "hardware_score_definition": "p1 + p2 + p3; class 4 is environmental shade, not hardware failure.",
+        "coverage": 1.0,
+        "abstention_policy": "All-row recall counts abstentions as misses; AP assigns zero score.",
+        "normal_classification_false_alarm_rate": 0.0008646779074794639,
+        "shade_classification_false_alarm_rate": 0.0013162843174125611,
+        "hardware_alert_metrics": null,
+        "hardware_alert_status": "Deferred: block-14 threshold selection is not authorized in Stage 1."
+      },
+      "difference_from_archive": {
+        "macro_f1": 0.0,
+        "weighted_f1": 1.1102230246251565e-16,
+        "macro_AP": 1.1102230246251565e-16,
+        "hardware_macro_recall": 0.0
+      }
+    },
+    "RF__E4": {
+      "metrics": {
+        "macro_f1": 0.9562971220697507,
+        "weighted_f1": 0.9250406210221271,
+        "per_class": {
+          "0": {
+            "precision": 0.9988200956343538,
+            "recall": 0.8692174664937311,
+            "f1": 0.9295229288872193,
+            "support": 18504,
+            "AP": 0.99608613160438
+          },
+          "1": {
+            "precision": 0.9983646770237122,
+            "recall": 0.9910714285714286,
+            "f1": 0.994704684317719,
+            "support": 1232,
+            "AP": 0.9982057843088146
+          },
+          "2": {
+            "precision": 0.9782062028499581,
+            "recall": 0.9549918166939444,
+            "f1": 0.9664596273291925,
+            "support": 1222,
+            "AP": 0.9743215026985192
+          },
+          "3": {
+            "precision": 0.9885245901639345,
+            "recall": 1.0,
+            "f1": 0.9942291838417148,
+            "support": 1206,
+            "AP": 0.9937951112811461
+          },
+          "4": {
+            "precision": 0.8133374167368501,
+            "recall": 0.9987777359909741,
+            "f1": 0.8965691859729079,
+            "support": 10636,
+            "AP": 0.9862915412093347
+          }
+        },
+        "macro_AP": 0.989740014220439,
+        "AP_definition": "One-vs-rest average precision; unweighted mean across five classes; not trapezoidal PR integration.",
+        "confusion_matrix": [
+          [
+            16084,
+            1,
+            14,
+            0,
+            2405,
+            0
+          ],
+          [
+            2,
+            1221,
+            9,
+            0,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            1167,
+            14,
+            33,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1206,
+            0,
+            0
+          ],
+          [
+            9,
+            1,
+            3,
+            0,
+            10623,
+            0
+          ]
+        ],
+        "row_normalized_confusion_matrix": [
+          [
+            0.8692174664937311,
+            5.404236921746649e-05,
+            0.0007565931690445309,
+            0.0,
+            0.12997189796800693,
+            0.0
+          ],
+          [
+            0.0016233766233766235,
+            0.9910714285714286,
+            0.007305194805194805,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.006546644844517185,
+            0.0,
+            0.9549918166939444,
+            0.011456628477905073,
+            0.027004909983633387,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0008461827754795035,
+            9.40203083866115e-05,
+            0.00028206092515983453,
+            0.0,
+            0.9987777359909741,
+            0.0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "hardware_macro_recall": 0.9820210817551244,
+        "hardware_to_normal": {
+          "1": {
+            "count": 2,
+            "rate": 0.0016233766233766235
+          },
+          "2": {
+            "count": 8,
+            "rate": 0.006546644844517185
+          },
+          "3": {
+            "count": 0,
+            "rate": 0.0
+          }
+        },
+        "hardware_AP": 0.9997523660759631,
+        "hardware_score_definition": "p1 + p2 + p3; class 4 is environmental shade, not hardware failure.",
+        "coverage": 1.0,
+        "abstention_policy": "All-row recall counts abstentions as misses; AP assigns zero score.",
+        "normal_classification_false_alarm_rate": 0.0008106355382619975,
+        "shade_classification_false_alarm_rate": 0.000376081233546446,
+        "hardware_alert_metrics": null,
+        "hardware_alert_status": "Deferred: block-14 threshold selection is not authorized in Stage 1."
+      },
+      "difference_from_archive": {
+        "macro_f1": -1.1102230246251565e-16,
+        "weighted_f1": -1.1102230246251565e-16,
+        "macro_AP": 0.0,
+        "hardware_macro_recall": 0.0
+      }
+    },
+    "RF__C3": {
+      "metrics": {
+        "macro_f1": 0.5854455868113394,
+        "weighted_f1": 0.7340522167248515,
+        "per_class": {
+          "0": {
+            "precision": 0.923244848061474,
+            "recall": 0.5713899697362732,
+            "f1": 0.7059019895847243,
+            "support": 18504,
+            "AP": 0.9169071032108977
+          },
+          "1": {
+            "precision": 0.06091772151898734,
+            "recall": 0.0625,
+            "f1": 0.06169871794871795,
+            "support": 1232,
+            "AP": 0.14562407645589434
+          },
+          "2": {
+            "precision": 0.17577197149643706,
+            "recall": 0.7872340425531915,
+            "f1": 0.287378640776699,
+            "support": 1222,
+            "AP": 0.5797312726767481
+          },
+          "3": {
+            "precision": 0.9788789601949635,
+            "recall": 0.9991708126036484,
+            "f1": 0.988920804267542,
+            "support": 1206,
+            "AP": 0.9684493055191459
+          },
+          "4": {
+            "precision": 0.7927503736920777,
+            "recall": 0.9972734110567882,
+            "f1": 0.883327781479014,
+            "support": 10636,
+            "AP": 0.9860694357055679
+          }
+        },
+        "macro_AP": 0.7193562387136507,
+        "AP_definition": "One-vs-rest average precision; unweighted mean across five classes; not trapezoidal PR integration.",
+        "confusion_matrix": [
+          [
+            10573,
+            941,
+            4218,
+            0,
+            2772,
+            0
+          ],
+          [
+            868,
+            77,
+            282,
+            4,
+            1,
+            0
+          ],
+          [
+            3,
+            239,
+            962,
+            18,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            1205,
+            0,
+            0
+          ],
+          [
+            8,
+            7,
+            10,
+            4,
+            10607,
+            0
+          ]
+        ],
+        "row_normalized_confusion_matrix": [
+          [
+            0.5713899697362732,
+            0.05085386943363597,
+            0.22795071335927367,
+            0.0,
+            0.14980544747081712,
+            0.0
+          ],
+          [
+            0.7045454545454546,
+            0.0625,
+            0.2288961038961039,
+            0.003246753246753247,
+            0.0008116883116883117,
+            0.0
+          ],
+          [
+            0.0024549918166939444,
+            0.1955810147299509,
+            0.7872340425531915,
+            0.014729950900163666,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0008291873963515755,
+            0.9991708126036484,
+            0.0,
+            0.0
+          ],
+          [
+            0.000752162467092892,
+            0.0006581421587062806,
+            0.000940203083866115,
+            0.000376081233546446,
+            0.9972734110567882,
+            0.0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "hardware_macro_recall": 0.6163016183856133,
+        "hardware_to_normal": {
+          "1": {
+            "count": 868,
+            "rate": 0.7045454545454546
+          },
+          "2": {
+            "count": 3,
+            "rate": 0.0024549918166939444
+          },
+          "3": {
+            "count": 0,
+            "rate": 0.0
+          }
+        },
+        "hardware_AP": 0.682824142294485,
+        "hardware_score_definition": "p1 + p2 + p3; class 4 is environmental shade, not hardware failure.",
+        "coverage": 1.0,
+        "abstention_policy": "All-row recall counts abstentions as misses; AP assigns zero score.",
+        "normal_classification_false_alarm_rate": 0.27880458279290965,
+        "shade_classification_false_alarm_rate": 0.001974426476118842,
+        "hardware_alert_metrics": null,
+        "hardware_alert_status": "Deferred: block-14 threshold selection is not authorized in Stage 1."
+      },
+      "difference_from_archive": {
+        "macro_f1": 0.0,
+        "weighted_f1": 0.0,
+        "macro_AP": 0.0,
+        "hardware_macro_recall": 0.0
+      }
+    },
+    "RF__C2": {
+      "metrics": {
+        "macro_f1": 0.5899462514363986,
+        "weighted_f1": 0.664988512611709,
+        "per_class": {
+          "0": {
+            "precision": 0.9834699814863793,
+            "recall": 0.40191309987029833,
+            "f1": 0.5706284048185376,
+            "support": 18504,
+            "AP": 0.9039465778591123
+          },
+          "1": {
+            "precision": 0.1579787234042553,
+            "recall": 0.48214285714285715,
+            "f1": 0.23798076923076922,
+            "support": 1232,
+            "AP": 0.14278873410178272
+          },
+          "2": {
+            "precision": 0.15524395478609243,
+            "recall": 0.8878887070376432,
+            "f1": 0.26427962489343565,
+            "support": 1222,
+            "AP": 0.49497899014944235
+          },
+          "3": {
+            "precision": 0.9788789601949635,
+            "recall": 0.9991708126036484,
+            "f1": 0.988920804267542,
+            "support": 1206,
+            "AP": 0.9786452270333126
+          },
+          "4": {
+            "precision": 0.8001206818524664,
+            "recall": 0.9973674313651749,
+            "f1": 0.8879216539717084,
+            "support": 10636,
+            "AP": 0.9840625088337019
+          }
+        },
+        "macro_AP": 0.7008844075954703,
+        "AP_definition": "One-vs-rest average precision; unweighted mean across five classes; not trapezoidal PR integration.",
+        "confusion_matrix": [
+          [
+            7437,
+            3037,
+            5382,
+            0,
+            2648,
+            0
+          ],
+          [
+            120,
+            594,
+            512,
+            4,
+            2,
+            0
+          ],
+          [
+            0,
+            119,
+            1085,
+            18,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            1205,
+            0,
+            0
+          ],
+          [
+            5,
+            9,
+            10,
+            4,
+            10608,
+            0
+          ]
+        ],
+        "row_normalized_confusion_matrix": [
+          [
+            0.40191309987029833,
+            0.16412667531344574,
+            0.2908560311284047,
+            0.0,
+            0.14310419368785127,
+            0.0
+          ],
+          [
+            0.09740259740259741,
+            0.48214285714285715,
+            0.4155844155844156,
+            0.003246753246753247,
+            0.0016233766233766235,
+            0.0
+          ],
+          [
+            0.0,
+            0.09738134206219312,
+            0.8878887070376432,
+            0.014729950900163666,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0008291873963515755,
+            0.0,
+            0.9991708126036484,
+            0.0,
+            0.0
+          ],
+          [
+            0.0004701015419330575,
+            0.0008461827754795035,
+            0.000940203083866115,
+            0.000376081233546446,
+            0.9973674313651749,
+            0.0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "hardware_macro_recall": 0.7897341255947162,
+        "hardware_to_normal": {
+          "1": {
+            "count": 120,
+            "rate": 0.09740259740259741
+          },
+          "2": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "3": {
+            "count": 0,
+            "rate": 0.0
+          }
+        },
+        "hardware_AP": 0.7636672074737895,
+        "hardware_score_definition": "p1 + p2 + p3; class 4 is environmental shade, not hardware failure.",
+        "coverage": 1.0,
+        "abstention_policy": "All-row recall counts abstentions as misses; AP assigns zero score.",
+        "normal_classification_false_alarm_rate": 0.4549827064418504,
+        "shade_classification_false_alarm_rate": 0.0021624670928920646,
+        "hardware_alert_metrics": null,
+        "hardware_alert_status": "Deferred: block-14 threshold selection is not authorized in Stage 1."
+      },
+      "difference_from_archive": {
+        "macro_f1": 0.0,
+        "weighted_f1": 0.0,
+        "macro_AP": 0.0,
+        "hardware_macro_recall": 0.0
+      }
+    },
+    "RF__S4": {
+      "metrics": {
+        "macro_f1": 0.27480584801804575,
+        "weighted_f1": 0.5970187882443101,
+        "per_class": {
+          "0": {
+            "precision": 0.7549019607843137,
+            "recall": 0.5825767401642888,
+            "f1": 0.6576378721327477,
+            "support": 18504,
+            "AP": 0.836790477922404
+          },
+          "1": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1232,
+            "AP": 0.04730204136924318
+          },
+          "2": {
+            "precision": 0.016079632465543645,
+            "recall": 0.03436988543371522,
+            "f1": 0.02190923317683881,
+            "support": 1222,
+            "AP": 0.08707073172423822
+          },
+          "3": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1206,
+            "AP": 0.0647469898542255
+          },
+          "4": {
+            "precision": 0.579579768495219,
+            "recall": 0.8662091011658518,
+            "f1": 0.6944821347806422,
+            "support": 10636,
+            "AP": 0.8625938091432708
+          }
+        },
+        "macro_AP": 0.3797008100026763,
+        "AP_definition": "One-vs-rest average precision; unweighted mean across five classes; not trapezoidal PR integration.",
+        "confusion_matrix": [
+          [
+            10780,
+            0,
+            1032,
+            9,
+            6683,
+            0
+          ],
+          [
+            1146,
+            0,
+            86,
+            0,
+            0,
+            0
+          ],
+          [
+            1180,
+            0,
+            42,
+            0,
+            0,
+            0
+          ],
+          [
+            1054,
+            0,
+            152,
+            0,
+            0,
+            0
+          ],
+          [
+            120,
+            0,
+            1300,
+            3,
+            9213,
+            0
+          ]
+        ],
+        "row_normalized_confusion_matrix": [
+          [
+            0.5825767401642888,
+            0.0,
+            0.055771725032425425,
+            0.00048638132295719845,
+            0.36116515348032857,
+            0.0
+          ],
+          [
+            0.9301948051948052,
+            0.0,
+            0.0698051948051948,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.9656301145662848,
+            0.0,
+            0.03436988543371522,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.8739635157545605,
+            0.0,
+            0.12603648424543948,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.011282437006393382,
+            0.0,
+            0.12222640090259496,
+            0.00028206092515983453,
+            0.8662091011658518,
+            0.0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "hardware_macro_recall": 0.011456628477905073,
+        "hardware_to_normal": {
+          "1": {
+            "count": 1146,
+            "rate": 0.9301948051948052
+          },
+          "2": {
+            "count": 1180,
+            "rate": 0.9656301145662848
+          },
+          "3": {
+            "count": 1054,
+            "rate": 0.8739635157545605
+          }
+        },
+        "hardware_AP": 0.2752645303619614,
+        "hardware_score_definition": "p1 + p2 + p3; class 4 is environmental shade, not hardware failure.",
+        "coverage": 1.0,
+        "abstention_policy": "All-row recall counts abstentions as misses; AP assigns zero score.",
+        "normal_classification_false_alarm_rate": 0.05625810635538262,
+        "shade_classification_false_alarm_rate": 0.1225084618277548,
+        "hardware_alert_metrics": null,
+        "hardware_alert_status": "Deferred: block-14 threshold selection is not authorized in Stage 1."
+      },
+      "difference_from_archive": {
+        "macro_f1": 5.551115123125783e-17,
+        "weighted_f1": 0.0,
+        "macro_AP": 0.0,
+        "hardware_macro_recall": 7.28583859910259e-17
+      }
+    },
+    "RF__S2": {
+      "metrics": {
+        "macro_f1": 0.29162029628651426,
+        "weighted_f1": 0.49658295475942965,
+        "per_class": {
+          "0": {
+            "precision": 0.8696883852691218,
+            "recall": 0.31522913964548205,
+            "f1": 0.4627345206457499,
+            "support": 18504,
+            "AP": 0.8237979902471703
+          },
+          "1": {
+            "precision": 0.1223267750213858,
+            "recall": 0.11607142857142858,
+            "f1": 0.11911703456892961,
+            "support": 1232,
+            "AP": 0.09216351109442816
+          },
+          "2": {
+            "precision": 0.1043195638498637,
+            "recall": 0.8142389525368249,
+            "f1": 0.18494423791821563,
+            "support": 1222,
+            "AP": 0.10218517978777994
+          },
+          "3": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1206,
+            "AP": 0.06800454791342267
+          },
+          "4": {
+            "precision": 0.5857497387669801,
+            "recall": 0.8432681459195186,
+            "f1": 0.6913056882996763,
+            "support": 10636,
+            "AP": 0.8749660949793775
+          }
+        },
+        "macro_AP": 0.3922234648044357,
+        "AP_definition": "One-vs-rest average precision; unweighted mean across five classes; not trapezoidal PR integration.",
+        "confusion_matrix": [
+          [
+            5833,
+            954,
+            5318,
+            56,
+            6343,
+            0
+          ],
+          [
+            136,
+            143,
+            947,
+            6,
+            0,
+            0
+          ],
+          [
+            169,
+            48,
+            995,
+            10,
+            0,
+            0
+          ],
+          [
+            78,
+            24,
+            1104,
+            0,
+            0,
+            0
+          ],
+          [
+            491,
+            0,
+            1174,
+            2,
+            8969,
+            0
+          ]
+        ],
+        "row_normalized_confusion_matrix": [
+          [
+            0.31522913964548205,
+            0.05155642023346303,
+            0.2873973194984868,
+            0.0030263726761781237,
+            0.34279074794639,
+            0.0
+          ],
+          [
+            0.11038961038961038,
+            0.11607142857142858,
+            0.7686688311688312,
+            0.00487012987012987,
+            0.0,
+            0.0
+          ],
+          [
+            0.13829787234042554,
+            0.03927986906710311,
+            0.8142389525368249,
+            0.008183306055646482,
+            0.0,
+            0.0
+          ],
+          [
+            0.06467661691542288,
+            0.01990049751243781,
+            0.9154228855721394,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.04616397141782625,
+            0.0,
+            0.11037984204588192,
+            0.000188040616773223,
+            0.8432681459195186,
+            0.0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "hardware_macro_recall": 0.3101034603694178,
+        "hardware_to_normal": {
+          "1": {
+            "count": 136,
+            "rate": 0.11038961038961038
+          },
+          "2": {
+            "count": 169,
+            "rate": 0.13829787234042554
+          },
+          "3": {
+            "count": 78,
+            "rate": 0.06467661691542288
+          }
+        },
+        "hardware_AP": 0.28679691709524785,
+        "hardware_score_definition": "p1 + p2 + p3; class 4 is environmental shade, not hardware failure.",
+        "coverage": 1.0,
+        "abstention_policy": "All-row recall counts abstentions as misses; AP assigns zero score.",
+        "normal_classification_false_alarm_rate": 0.341980112408128,
+        "shade_classification_false_alarm_rate": 0.11056788266265513,
+        "hardware_alert_metrics": null,
+        "hardware_alert_status": "Deferred: block-14 threshold selection is not authorized in Stage 1."
+      },
+      "difference_from_archive": {
+        "macro_f1": 5.551115123125783e-17,
+        "weighted_f1": 5.551115123125783e-17,
+        "macro_AP": 0.0,
+        "hardware_macro_recall": 0.0
+      }
+    },
+    "LightGBM__F6": {
+      "metrics": {
+        "macro_f1": 0.8568945709280442,
+        "weighted_f1": 0.9612591650821105,
+        "per_class": {
+          "0": {
+            "precision": 0.9986217542312145,
+            "recall": 0.978923476005188,
+            "f1": 0.9886745080915864,
+            "support": 18504,
+            "AP": 0.9993597564515004
+          },
+          "1": {
+            "precision": 0.9920159680638723,
+            "recall": 0.4034090909090909,
+            "f1": 0.5735718407386036,
+            "support": 1232,
+            "AP": 0.9872476582375733
+          },
+          "2": {
+            "precision": 0.6134585289514867,
+            "recall": 0.9623567921440261,
+            "f1": 0.7492832112137623,
+            "support": 1222,
+            "AP": 0.9770148176086463
+          },
+          "3": {
+            "precision": 0.9893179950698439,
+            "recall": 0.9983416252072969,
+            "f1": 0.9938093272802311,
+            "support": 1206,
+            "AP": 0.9950103418036274
+          },
+          "4": {
+            "precision": 0.9618175222202068,
+            "recall": 0.997085370440015,
+            "f1": 0.9791339673160373,
+            "support": 10636,
+            "AP": 0.9980521755259356
+          }
+        },
+        "macro_AP": 0.9913369499254566,
+        "AP_definition": "One-vs-rest average precision; unweighted mean across five classes; not trapezoidal PR integration.",
+        "confusion_matrix": [
+          [
+            18114,
+            0,
+            6,
+            0,
+            384,
+            0
+          ],
+          [
+            1,
+            497,
+            726,
+            0,
+            8,
+            0
+          ],
+          [
+            0,
+            4,
+            1176,
+            13,
+            29,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            1204,
+            0,
+            0
+          ],
+          [
+            24,
+            0,
+            7,
+            0,
+            10605,
+            0
+          ]
+        ],
+        "row_normalized_confusion_matrix": [
+          [
+            0.978923476005188,
+            0.0,
+            0.00032425421530479895,
+            0.0,
+            0.020752269779507133,
+            0.0
+          ],
+          [
+            0.0008116883116883117,
+            0.4034090909090909,
+            0.5892857142857143,
+            0.0,
+            0.006493506493506494,
+            0.0
+          ],
+          [
+            0.0,
+            0.0032733224222585926,
+            0.9623567921440261,
+            0.010638297872340425,
+            0.023731587561374796,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.001658374792703151,
+            0.9983416252072969,
+            0.0,
+            0.0
+          ],
+          [
+            0.0022564874012786762,
+            0.0,
+            0.0006581421587062806,
+            0.0,
+            0.997085370440015,
+            0.0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "hardware_macro_recall": 0.7880358360868046,
+        "hardware_to_normal": {
+          "1": {
+            "count": 1,
+            "rate": 0.0008116883116883117
+          },
+          "2": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "3": {
+            "count": 0,
+            "rate": 0.0
+          }
+        },
+        "hardware_AP": 0.9985486624325822,
+        "hardware_score_definition": "p1 + p2 + p3; class 4 is environmental shade, not hardware failure.",
+        "coverage": 1.0,
+        "abstention_policy": "All-row recall counts abstentions as misses; AP assigns zero score.",
+        "normal_classification_false_alarm_rate": 0.00032425421530479895,
+        "shade_classification_false_alarm_rate": 0.0006581421587062806,
+        "hardware_alert_metrics": null,
+        "hardware_alert_status": "Deferred: block-14 threshold selection is not authorized in Stage 1."
+      },
+      "difference_from_archive": {
+        "macro_f1": 0.0,
+        "weighted_f1": 1.1102230246251565e-16,
+        "macro_AP": 0.0,
+        "hardware_macro_recall": 0.0
+      }
+    },
+    "LightGBM__E5": {
+      "metrics": {
+        "macro_f1": 0.8757948184445139,
+        "weighted_f1": 0.9566630144324478,
+        "per_class": {
+          "0": {
+            "precision": 0.9995033660743847,
+            "recall": 0.9788694336359706,
+            "f1": 0.9890787964833725,
+            "support": 18504,
+            "AP": 0.9993024514854304
+          },
+          "1": {
+            "precision": 0.9959919839679359,
+            "recall": 0.4034090909090909,
+            "f1": 0.5742345465049105,
+            "support": 1232,
+            "AP": 0.9930039646170586
+          },
+          "2": {
+            "precision": 0.8745387453874539,
+            "recall": 0.969721767594108,
+            "f1": 0.919674039580908,
+            "support": 1222,
+            "AP": 0.9809170881103491
+          },
+          "3": {
+            "precision": 0.988256549232159,
+            "recall": 0.9071310116086235,
+            "f1": 0.9459576307825335,
+            "support": 1206,
+            "AP": 0.9937510678384227
+          },
+          "4": {
+            "precision": 0.9062046598958778,
+            "recall": 0.998307634449041,
+            "f1": 0.9500290788708451,
+            "support": 10636,
+            "AP": 0.9979667755473323
+          }
+        },
+        "macro_AP": 0.9929882695197186,
+        "AP_definition": "One-vs-rest average precision; unweighted mean across five classes; not trapezoidal PR integration.",
+        "confusion_matrix": [
+          [
+            18113,
+            0,
+            6,
+            0,
+            385,
+            0
+          ],
+          [
+            1,
+            497,
+            42,
+            0,
+            692,
+            0
+          ],
+          [
+            0,
+            2,
+            1185,
+            13,
+            22,
+            0
+          ],
+          [
+            0,
+            0,
+            112,
+            1094,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            10,
+            0,
+            10618,
+            0
+          ]
+        ],
+        "row_normalized_confusion_matrix": [
+          [
+            0.9788694336359706,
+            0.0,
+            0.00032425421530479895,
+            0.0,
+            0.0208063121487246,
+            0.0
+          ],
+          [
+            0.0008116883116883117,
+            0.4034090909090909,
+            0.03409090909090909,
+            0.0,
+            0.5616883116883117,
+            0.0
+          ],
+          [
+            0.0,
+            0.0016366612111292963,
+            0.969721767594108,
+            0.010638297872340425,
+            0.01800327332242226,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.09286898839137644,
+            0.9071310116086235,
+            0.0,
+            0.0
+          ],
+          [
+            0.000752162467092892,
+            0.0,
+            0.000940203083866115,
+            0.0,
+            0.998307634449041,
+            0.0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "hardware_macro_recall": 0.7600872900372742,
+        "hardware_to_normal": {
+          "1": {
+            "count": 1,
+            "rate": 0.0008116883116883117
+          },
+          "2": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "3": {
+            "count": 0,
+            "rate": 0.0
+          }
+        },
+        "hardware_AP": 0.997431174843335,
+        "hardware_score_definition": "p1 + p2 + p3; class 4 is environmental shade, not hardware failure.",
+        "coverage": 1.0,
+        "abstention_policy": "All-row recall counts abstentions as misses; AP assigns zero score.",
+        "normal_classification_false_alarm_rate": 0.00032425421530479895,
+        "shade_classification_false_alarm_rate": 0.000940203083866115,
+        "hardware_alert_metrics": null,
+        "hardware_alert_status": "Deferred: block-14 threshold selection is not authorized in Stage 1."
+      },
+      "difference_from_archive": {
+        "macro_f1": 0.0,
+        "weighted_f1": 0.0,
+        "macro_AP": 0.0,
+        "hardware_macro_recall": 0.0
+      }
+    },
+    "LightGBM__E4": {
+      "metrics": {
+        "macro_f1": 0.855657128389233,
+        "weighted_f1": 0.9585703420213889,
+        "per_class": {
+          "0": {
+            "precision": 0.999279059449867,
+            "recall": 0.9737894509295287,
+            "f1": 0.986369608057806,
+            "support": 18504,
+            "AP": 0.9992410673672724
+          },
+          "1": {
+            "precision": 0.9841584158415841,
+            "recall": 0.4034090909090909,
+            "f1": 0.5722510074841681,
+            "support": 1232,
+            "AP": 0.9871024319891146
+          },
+          "2": {
+            "precision": 0.6181914331041777,
+            "recall": 0.9566284779050737,
+            "f1": 0.751044008994539,
+            "support": 1222,
+            "AP": 0.9764877718069609
+          },
+          "3": {
+            "precision": 0.9877149877149877,
+            "recall": 1.0,
+            "f1": 0.9938195302843016,
+            "support": 1206,
+            "AP": 0.9966780056523049
+          },
+          "4": {
+            "precision": 0.9522912743251726,
+            "recall": 0.9984016547574276,
+            "f1": 0.97480148712535,
+            "support": 10636,
+            "AP": 0.9980823309432345
+          }
+        },
+        "macro_AP": 0.9915183215517775,
+        "AP_definition": "One-vs-rest average precision; unweighted mean across five classes; not trapezoidal PR integration.",
+        "confusion_matrix": [
+          [
+            18019,
+            0,
+            5,
+            0,
+            480,
+            0
+          ],
+          [
+            2,
+            497,
+            712,
+            1,
+            20,
+            0
+          ],
+          [
+            0,
+            7,
+            1169,
+            14,
+            32,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1206,
+            0,
+            0
+          ],
+          [
+            11,
+            1,
+            5,
+            0,
+            10619,
+            0
+          ]
+        ],
+        "row_normalized_confusion_matrix": [
+          [
+            0.9737894509295287,
+            0.0,
+            0.0002702118460873325,
+            0.0,
+            0.02594033722438392,
+            0.0
+          ],
+          [
+            0.0016233766233766235,
+            0.4034090909090909,
+            0.577922077922078,
+            0.0008116883116883117,
+            0.016233766233766232,
+            0.0
+          ],
+          [
+            0.0,
+            0.0057283142389525366,
+            0.9566284779050737,
+            0.011456628477905073,
+            0.02618657937806874,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0010342233922527265,
+            9.40203083866115e-05,
+            0.0004701015419330575,
+            0.0,
+            0.9984016547574276,
+            0.0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "hardware_macro_recall": 0.7866791896047216,
+        "hardware_to_normal": {
+          "1": {
+            "count": 2,
+            "rate": 0.0016233766233766235
+          },
+          "2": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "3": {
+            "count": 0,
+            "rate": 0.0
+          }
+        },
+        "hardware_AP": 0.9983265467902523,
+        "hardware_score_definition": "p1 + p2 + p3; class 4 is environmental shade, not hardware failure.",
+        "coverage": 1.0,
+        "abstention_policy": "All-row recall counts abstentions as misses; AP assigns zero score.",
+        "normal_classification_false_alarm_rate": 0.0002702118460873325,
+        "shade_classification_false_alarm_rate": 0.0005641218503196691,
+        "hardware_alert_metrics": null,
+        "hardware_alert_status": "Deferred: block-14 threshold selection is not authorized in Stage 1."
+      },
+      "difference_from_archive": {
+        "macro_f1": 0.0,
+        "weighted_f1": 1.1102230246251565e-16,
+        "macro_AP": 0.0,
+        "hardware_macro_recall": 0.0
+      }
+    },
+    "LightGBM__C3": {
+      "metrics": {
+        "macro_f1": 0.6224640969632732,
+        "weighted_f1": 0.7744217354773762,
+        "per_class": {
+          "0": {
+            "precision": 0.9244371737945003,
+            "recall": 0.6413207955036749,
+            "f1": 0.7572827925082161,
+            "support": 18504,
+            "AP": 0.9428847528431417
+          },
+          "1": {
+            "precision": 0.20979591836734693,
+            "recall": 0.6258116883116883,
+            "f1": 0.3142449561850418,
+            "support": 1232,
+            "AP": 0.19287144094092543
+          },
+          "2": {
+            "precision": 0.2381843706130089,
+            "recall": 0.8330605564648118,
+            "f1": 0.37045123726346435,
+            "support": 1222,
+            "AP": 0.7574356143787335
+          },
+          "3": {
+            "precision": 0.9743589743589743,
+            "recall": 0.6301824212271974,
+            "f1": 0.7653575025176234,
+            "support": 1206,
+            "AP": 0.9667944805128351
+          },
+          "4": {
+            "precision": 0.880897276126046,
+            "recall": 0.9304249717939075,
+            "f1": 0.904983996342021,
+            "support": 10636,
+            "AP": 0.9824048127775379
+          }
+        },
+        "macro_AP": 0.7684782202906347,
+        "AP_definition": "One-vs-rest average precision; unweighted mean across five classes; not trapezoidal PR integration.",
+        "confusion_matrix": [
+          [
+            11867,
+            2602,
+            2714,
+            0,
+            1321,
+            0
+          ],
+          [
+            251,
+            771,
+            200,
+            6,
+            4,
+            0
+          ],
+          [
+            1,
+            178,
+            1018,
+            12,
+            13,
+            0
+          ],
+          [
+            0,
+            113,
+            333,
+            760,
+            0,
+            0
+          ],
+          [
+            718,
+            11,
+            9,
+            2,
+            9896,
+            0
+          ]
+        ],
+        "row_normalized_confusion_matrix": [
+          [
+            0.6413207955036749,
+            0.14061824470384782,
+            0.14667099005620407,
+            0.0,
+            0.07138996973627323,
+            0.0
+          ],
+          [
+            0.20373376623376624,
+            0.6258116883116883,
+            0.16233766233766234,
+            0.00487012987012987,
+            0.003246753246753247,
+            0.0
+          ],
+          [
+            0.0008183306055646482,
+            0.14566284779050737,
+            0.8330605564648118,
+            0.009819967266775777,
+            0.010638297872340425,
+            0.0
+          ],
+          [
+            0.0,
+            0.09369817578772803,
+            0.27611940298507465,
+            0.6301824212271974,
+            0.0,
+            0.0
+          ],
+          [
+            0.06750658142158707,
+            0.0010342233922527265,
+            0.0008461827754795035,
+            0.000188040616773223,
+            0.9304249717939075,
+            0.0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "hardware_macro_recall": 0.6963515553345658,
+        "hardware_to_normal": {
+          "1": {
+            "count": 251,
+            "rate": 0.20373376623376624
+          },
+          "2": {
+            "count": 1,
+            "rate": 0.0008183306055646482
+          },
+          "3": {
+            "count": 0,
+            "rate": 0.0
+          }
+        },
+        "hardware_AP": 0.8020761951898439,
+        "hardware_score_definition": "p1 + p2 + p3; class 4 is environmental shade, not hardware failure.",
+        "coverage": 1.0,
+        "abstention_policy": "All-row recall counts abstentions as misses; AP assigns zero score.",
+        "normal_classification_false_alarm_rate": 0.28728923476005186,
+        "shade_classification_false_alarm_rate": 0.002068446784505453,
+        "hardware_alert_metrics": null,
+        "hardware_alert_status": "Deferred: block-14 threshold selection is not authorized in Stage 1."
+      },
+      "difference_from_archive": {
+        "macro_f1": 0.0,
+        "weighted_f1": 0.0,
+        "macro_AP": 0.0,
+        "hardware_macro_recall": 0.0
+      }
+    },
+    "LightGBM__C2": {
+      "metrics": {
+        "macro_f1": 0.629963472902428,
+        "weighted_f1": 0.7452473775794078,
+        "per_class": {
+          "0": {
+            "precision": 0.9302390216787104,
+            "recall": 0.542639429312581,
+            "f1": 0.6854392791316813,
+            "support": 18504,
+            "AP": 0.9117281820984895
+          },
+          "1": {
+            "precision": 0.17236870777947266,
+            "recall": 0.6420454545454546,
+            "f1": 0.2717746091736815,
+            "support": 1232,
+            "AP": 0.15850988227398088
+          },
+          "2": {
+            "precision": 0.19745222929936307,
+            "recall": 0.8878887070376432,
+            "f1": 0.32306089027839807,
+            "support": 1222,
+            "AP": 0.5040359940606649
+          },
+          "3": {
+            "precision": 0.9767025089605734,
+            "recall": 0.9038142620232172,
+            "f1": 0.9388458225667528,
+            "support": 1206,
+            "AP": 0.9811032027491511
+          },
+          "4": {
+            "precision": 0.923375902276513,
+            "recall": 0.9381346370816096,
+            "f1": 0.9306967633616268,
+            "support": 10636,
+            "AP": 0.9854453157617475
+          }
+        },
+        "macro_AP": 0.7081645153888069,
+        "AP_definition": "One-vs-rest average precision; unweighted mean across five classes; not trapezoidal PR integration.",
+        "confusion_matrix": [
+          [
+            10041,
+            3554,
+            4082,
+            0,
+            827,
+            0
+          ],
+          [
+            119,
+            791,
+            318,
+            3,
+            1,
+            0
+          ],
+          [
+            0,
+            118,
+            1085,
+            19,
+            0,
+            0
+          ],
+          [
+            0,
+            114,
+            2,
+            1090,
+            0,
+            0
+          ],
+          [
+            634,
+            12,
+            8,
+            4,
+            9978,
+            0
+          ]
+        ],
+        "row_normalized_confusion_matrix": [
+          [
+            0.542639429312581,
+            0.19206658019887593,
+            0.22060095114569822,
+            0.0,
+            0.04469303934284479,
+            0.0
+          ],
+          [
+            0.09659090909090909,
+            0.6420454545454546,
+            0.25811688311688313,
+            0.002435064935064935,
+            0.0008116883116883117,
+            0.0
+          ],
+          [
+            0.0,
+            0.09656301145662848,
+            0.8878887070376432,
+            0.015548281505728314,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0945273631840796,
+            0.001658374792703151,
+            0.9038142620232172,
+            0.0,
+            0.0
+          ],
+          [
+            0.0596088755171117,
+            0.0011282437006393381,
+            0.000752162467092892,
+            0.000376081233546446,
+            0.9381346370816096,
+            0.0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "hardware_macro_recall": 0.8112494745354383,
+        "hardware_to_normal": {
+          "1": {
+            "count": 119,
+            "rate": 0.09659090909090909
+          },
+          "2": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "3": {
+            "count": 0,
+            "rate": 0.0
+          }
+        },
+        "hardware_AP": 0.7877163606611568,
+        "hardware_score_definition": "p1 + p2 + p3; class 4 is environmental shade, not hardware failure.",
+        "coverage": 1.0,
+        "abstention_policy": "All-row recall counts abstentions as misses; AP assigns zero score.",
+        "normal_classification_false_alarm_rate": 0.4126675313445741,
+        "shade_classification_false_alarm_rate": 0.0022564874012786762,
+        "hardware_alert_metrics": null,
+        "hardware_alert_status": "Deferred: block-14 threshold selection is not authorized in Stage 1."
+      },
+      "difference_from_archive": {
+        "macro_f1": 0.0,
+        "weighted_f1": 0.0,
+        "macro_AP": 0.0,
+        "hardware_macro_recall": 0.0
+      }
+    },
+    "LightGBM__S4": {
+      "metrics": {
+        "macro_f1": 0.3082391621446995,
+        "weighted_f1": 0.643520565011508,
+        "per_class": {
+          "0": {
+            "precision": 0.7836904381196035,
+            "recall": 0.6621811500216169,
+            "f1": 0.7178300477459797,
+            "support": 18504,
+            "AP": 0.741289546954714
+          },
+          "1": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1232,
+            "AP": 0.05648937345295539
+          },
+          "2": {
+            "precision": 0.0771689497716895,
+            "recall": 0.13829787234042554,
+            "f1": 0.09906213364595545,
+            "support": 1222,
+            "AP": 0.08284181858684775
+          },
+          "3": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1206,
+            "AP": 0.0477446971857722
+          },
+          "4": {
+            "precision": 0.6196109885702827,
+            "recall": 0.8715682587438887,
+            "f1": 0.7243036293315623,
+            "support": 10636,
+            "AP": 0.9024109766783117
+          }
+        },
+        "macro_AP": 0.3661552825717202,
+        "AP_definition": "One-vs-rest average precision; unweighted mean across five classes; not trapezoidal PR integration.",
+        "confusion_matrix": [
+          [
+            12253,
+            0,
+            547,
+            13,
+            5691,
+            0
+          ],
+          [
+            1231,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            1053,
+            0,
+            169,
+            0,
+            0,
+            0
+          ],
+          [
+            1049,
+            0,
+            157,
+            0,
+            0,
+            0
+          ],
+          [
+            49,
+            0,
+            1317,
+            0,
+            9270,
+            0
+          ]
+        ],
+        "row_normalized_confusion_matrix": [
+          [
+            0.6621811500216169,
+            0.0,
+            0.02956117596195417,
+            0.0007025507998270644,
+            0.30755512321660183,
+            0.0
+          ],
+          [
+            0.9991883116883117,
+            0.0,
+            0.0,
+            0.0008116883116883117,
+            0.0,
+            0.0
+          ],
+          [
+            0.8617021276595744,
+            0.0,
+            0.13829787234042554,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.8698175787728026,
+            0.0,
+            0.13018242122719734,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.004606995110943964,
+            0.0,
+            0.12382474614516735,
+            0.0,
+            0.8715682587438887,
+            0.0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "hardware_macro_recall": 0.04609929078014185,
+        "hardware_to_normal": {
+          "1": {
+            "count": 1231,
+            "rate": 0.9991883116883117
+          },
+          "2": {
+            "count": 1053,
+            "rate": 0.8617021276595744
+          },
+          "3": {
+            "count": 1049,
+            "rate": 0.8698175787728026
+          }
+        },
+        "hardware_AP": 0.21847744893774287,
+        "hardware_score_definition": "p1 + p2 + p3; class 4 is environmental shade, not hardware failure.",
+        "coverage": 1.0,
+        "abstention_policy": "All-row recall counts abstentions as misses; AP assigns zero score.",
+        "normal_classification_false_alarm_rate": 0.030263726761781237,
+        "shade_classification_false_alarm_rate": 0.12382474614516735,
+        "hardware_alert_metrics": null,
+        "hardware_alert_status": "Deferred: block-14 threshold selection is not authorized in Stage 1."
+      },
+      "difference_from_archive": {
+        "macro_f1": 0.0,
+        "weighted_f1": 0.0,
+        "macro_AP": 0.0,
+        "hardware_macro_recall": 4.85722573273506e-17
+      }
+    },
+    "LightGBM__S2": {
+      "metrics": {
+        "macro_f1": 0.294041591596948,
+        "weighted_f1": 0.49516393057516,
+        "per_class": {
+          "0": {
+            "precision": 0.8862603791320696,
+            "recall": 0.305717682663208,
+            "f1": 0.45461485916341865,
+            "support": 18504,
+            "AP": 0.8151362596281709
+          },
+          "1": {
+            "precision": 0.11943069306930693,
+            "recall": 0.15665584415584416,
+            "f1": 0.13553370786516855,
+            "support": 1232,
+            "AP": 0.08226627869730443
+          },
+          "2": {
+            "precision": 0.10131180625630676,
+            "recall": 0.8216039279869067,
+            "f1": 0.18038088393819618,
+            "support": 1222,
+            "AP": 0.12647872460382542
+          },
+          "3": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1206,
+            "AP": 0.05264048566967245
+          },
+          "4": {
+            "precision": 0.6000672494956287,
+            "recall": 0.8389432117337345,
+            "f1": 0.6996785070179565,
+            "support": 10636,
+            "AP": 0.8767339168698396
+          }
+        },
+        "macro_AP": 0.3906511330937626,
+        "AP_definition": "One-vs-rest average precision; unweighted mean across five classes; not trapezoidal PR integration.",
+        "confusion_matrix": [
+          [
+            5657,
+            1275,
+            5604,
+            21,
+            5947,
+            0
+          ],
+          [
+            62,
+            193,
+            977,
+            0,
+            0,
+            0
+          ],
+          [
+            153,
+            65,
+            1004,
+            0,
+            0,
+            0
+          ],
+          [
+            103,
+            83,
+            1020,
+            0,
+            0,
+            0
+          ],
+          [
+            408,
+            0,
+            1305,
+            0,
+            8923,
+            0
+          ]
+        ],
+        "row_normalized_confusion_matrix": [
+          [
+            0.305717682663208,
+            0.06890402075226978,
+            0.3028534370946822,
+            0.0011348897535667965,
+            0.32138996973627326,
+            0.0
+          ],
+          [
+            0.05032467532467533,
+            0.15665584415584416,
+            0.7930194805194806,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.12520458265139117,
+            0.05319148936170213,
+            0.8216039279869067,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.08540630182421227,
+            0.06882255389718077,
+            0.845771144278607,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0383602858217375,
+            0.0,
+            0.12269650244452802,
+            0.0,
+            0.8389432117337345,
+            0.0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "hardware_macro_recall": 0.3260865907142503,
+        "hardware_to_normal": {
+          "1": {
+            "count": 62,
+            "rate": 0.05032467532467533
+          },
+          "2": {
+            "count": 153,
+            "rate": 0.12520458265139117
+          },
+          "3": {
+            "count": 103,
+            "rate": 0.08540630182421227
+          }
+        },
+        "hardware_AP": 0.30240991149351215,
+        "hardware_score_definition": "p1 + p2 + p3; class 4 is environmental shade, not hardware failure.",
+        "coverage": 1.0,
+        "abstention_policy": "All-row recall counts abstentions as misses; AP assigns zero score.",
+        "normal_classification_false_alarm_rate": 0.3728923476005188,
+        "shade_classification_false_alarm_rate": 0.12269650244452802,
+        "hardware_alert_metrics": null,
+        "hardware_alert_status": "Deferred: block-14 threshold selection is not authorized in Stage 1."
+      },
+      "difference_from_archive": {
+        "macro_f1": 0.0,
+        "weighted_f1": 0.0,
+        "macro_AP": 0.0,
+        "hardware_macro_recall": 0.0
+      }
+    }
+  },
+  "notes": [
+    "No model was fitted or tuned during recovery.",
+    "Legacy TEST exposure prevents pristine-independent-test claims.",
+    "RF validation AP varies ~3.1e-8 with near-tied parallel sums; probabilities agree to floating-point precision."
+  ]
+}

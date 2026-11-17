@@ -1,0 +1,32 @@
+{
+  "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+  "original_artifact": "RF__E4.pkl",
+  "sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+  "bytes": 12232020,
+  "training_bounds": [
+    0,
+    1006129
+  ],
+  "selection_partition": [
+    1056990,
+    1089790
+  ],
+  "features": [
+    "vdc1",
+    "vdc2",
+    "idc1",
+    "idc2"
+  ],
+  "class_order": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "legacy_test_exposure": true,
+  "status": "original bytes; not reconstructed or refitted",
+  "dataset_license_reference": "phase1_strategy/PRIMARY_SOURCE_LICENSE.txt",
+  "training_code": "src/phase2_stage2/models.py",
+  "dependencies": "deployment/requirements.txt"
+}

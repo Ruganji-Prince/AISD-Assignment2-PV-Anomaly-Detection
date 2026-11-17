@@ -1,0 +1,15 @@
+{
+  "LR__F6": {
+    "permutation_rows_verified": 18,
+    "simulated_dropout_reproduced": true
+  },
+  "RF__E4": {
+    "permutation_rows_verified": 12,
+    "simulated_dropout_reproduced": true
+  },
+  "LightGBM__E4": {
+    "permutation_rows_verified": 12,
+    "SHAP_additivity_error": 6.128431095930864e-14,
+    "simulated_dropout_reproduced": true
+  }
+}

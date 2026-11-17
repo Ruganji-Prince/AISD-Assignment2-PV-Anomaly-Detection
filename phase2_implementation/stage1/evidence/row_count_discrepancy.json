@@ -1,0 +1,73 @@
+{
+  "raw_N": 1373798,
+  "paper_class_counts": {
+    "0": 309253,
+    "1": 5999,
+    "2": 10371,
+    "3": 6024,
+    "4": 184311
+  },
+  "paper_total": 515958,
+  "difference": 857840,
+  "raw_class_counts": {
+    "0": 1162931,
+    "1": 5999,
+    "2": 10371,
+    "3": 6024,
+    "4": 188473
+  },
+  "thresholds": {
+    "irr_le_0": {
+      "N": 63,
+      "class_counts": {
+        "0": 63,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    "irr_lt_10": {
+      "N": 733952,
+      "class_counts": {
+        "0": 733952,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    "irr_lt_50": {
+      "N": 837467,
+      "class_counts": {
+        "0": 835061,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 2406
+      }
+    },
+    "irr_lt_100": {
+      "N": 857840,
+      "class_counts": {
+        "0": 853678,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 4162
+      }
+    },
+    "irr_ge_100": {
+      "N": 515958,
+      "class_counts": {
+        "0": 309253,
+        "1": 5999,
+        "2": 10371,
+        "3": 6024,
+        "4": 184311
+      }
+    }
+  },
+  "population_policy": "Primary experiment retains all approved training/validation rows; no irradiance filtering.",
+  "interpretation": "Exact numerical agreement supports an irradiance-qualified interpretation; the source filtering procedure is not explicitly verified."
+}

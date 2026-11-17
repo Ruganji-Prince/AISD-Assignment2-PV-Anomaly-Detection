@@ -1,0 +1,660 @@
+[
+  {
+    "path": "src/phase2_stage1/contracts.py",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "8be88c538d23b5894ef3b2024fd9e71e856cf194a735a7d070bf17d4a67934e3",
+    "bytes": 4872,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "src/phase2_stage1/diagnostics.py",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "d728342da1a3f097fb2fe562322e182d17e0439b86c1d2cdfc1529581caeda36",
+    "bytes": 2705,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "src/phase2_stage1/evaluation.py",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "5cf4b8b6a0d856afb239e06e0fb9deb97261b693efecdf7cbece8848cb5c1ff2",
+    "bytes": 3184,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "src/phase2_stage1/explainability.py",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "a5aeccc7a82a2d56b26d276f5e7fd1141969c36a34abf32301bfe782e5435ad8",
+    "bytes": 1491,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "src/phase2_stage1/features.py",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "802abc887b40c4750e894119efb789a73330b6825758846b51db6f565f8ad555",
+    "bytes": 2743,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "src/phase2_stage1/models.py",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "e8d791f726879d214853bd9712fa594e33ec13adc709e417346c4e62311eec0f",
+    "bytes": 3847,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "src/phase2_stage1/run.py",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "c64ee183f1ad4300fd0c09fd43737bfe3c12a548b77a7d616fd6f7426149ecf5",
+    "bytes": 8635,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "src/phase2_stage1/verification.py",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "d1059389f0d2304fd365e2b86fc6162c1824be3922b76312901aee848eb70309",
+    "bytes": 6072,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "src/phase2_stage1/__init__.py",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "5505d76c04b333ae7a33da611ce28f21d2d007a3280189e400751a5c7b27f297",
+    "bytes": 89,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "src/phase2_stage2/contracts.py",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "375f2d36108e9747d038a9d132e32033dfa5e97d2e481f20db6e1d5f49e6a6c6",
+    "bytes": 3158,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "src/phase2_stage2/diagnostics.py",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "4472ba74f21aab8e8f10f45b542880f2e6667a8eef3e67cb267008e99932ec8f",
+    "bytes": 3942,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "src/phase2_stage2/models.py",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "06bc89f3168d6d14b13bdc0b559ec53f8854b41cd3e60bb352824bad14c3c8f4",
+    "bytes": 3859,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "src/phase2_stage2/remeasure.py",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "071c34b29240737420870ec16e8cb871fc42dfebdc3b41e05bec83326471ee6f",
+    "bytes": 4533,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "src/phase2_stage2/resources.py",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "487ab547c3a367eb92ea116a137e863d8f9b2ac37763e0545498bc1257c15238",
+    "bytes": 2255,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "src/phase2_stage2/run.py",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "04591bfef05b759ba60c75e23f0b1ec793ef3c13395fa8f19a2ca340521a40bb",
+    "bytes": 9903,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "src/phase2_stage2/selection.py",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "df82ff69e9ca44c03d062a94a582ae4374a981ae7ea4cd3051ca57b6998fbcd0",
+    "bytes": 2597,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "src/phase2_stage2/verification.py",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "908bf9d19a1f0b9da64aecc167a2a245e8297064cb2f1133d1b1da342af2b839",
+    "bytes": 6524,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "src/phase2_stage2/__init__.py",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "6036d9755ca5f6e1460ecd81f59ac5e64e0898b617510d5703d781ae0f4650f1",
+    "bytes": 79,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "src/phase2_stage3/analysis.py",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "9e6ee084dc8bf9760b36ba8878cf9db640f774c74389d09816a9ee0d679abd4a",
+    "bytes": 8047,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "src/phase2_stage3/common.py",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "847fa71244d8214e475c346ec45ff0c712d59f582d901430a766eb65f699d37d",
+    "bytes": 4501,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "src/phase2_stage3/diagnostics.py",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "436acb79317bb879760f9e552d05e001a633d77e6deec9a8151e19ebd7c48e3c",
+    "bytes": 8855,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "src/phase2_stage3/run.py",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "ba08d8d14b12e5f307b0e4a4ea4359220c9ae9e205ab8f3ff8aeac34f7866698",
+    "bytes": 6194,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "src/phase2_stage3/test_semantics.py",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "ee615383781269a8bec0c261c11776cd8be1a79ea63f369384bc5281e2523fb8",
+    "bytes": 1551,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "src/phase2_stage3/__init__.py",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "d242ad996d1570718eab1db45e1c251d9e25960acb6d88f19c740f307573fc9b",
+    "bytes": 82,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage1/Feature_Dependencies.json",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "5c7df47e0e289316daddbb6530453df9fd4cf424a494c212120e8b6a310d5acb",
+    "bytes": 1696,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage1/Phase1_Protected_Hashes.json",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "54c3bfdbcc7f2d690b7b33825e7dbd9cd4ef952a634b813f3cf97eee0e925303",
+    "bytes": 4446,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage1/requirements-stage1-lock.txt",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "487728c91ac2f6381d96a9ca39ec6ce460a15254113998654c5eed84c6d88631",
+    "bytes": 469,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage1/Row_Count_Discrepancy.md",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "3a07e548c81c412478328ed070706171b0ca2e1bea8a47685aac698597ba415a",
+    "bytes": 2104,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage1/evidence/class_weights.json",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "0a81587a57c409dce72a5acd844c552424b8aed443e276e02e3ba7334e934a8e",
+    "bytes": 480,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage1/evidence/dependency_smoke_test.json",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "4e2040f1362a2d5fdc89fde4684e37c53a02a84c566b7c9d4b2791c1cd9dd96c",
+    "bytes": 838,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage1/evidence/engineering_reference.json",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "14d1e74c62af125117703f49e0783bc5710c6d4caf1b63d84444e00f5b3715f8",
+    "bytes": 566,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage1/evidence/experiment_configuration.json",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "fe50134a7bb52e046af09dc5385e0c9d28604caccaa2895a9915fc4bae976ff1",
+    "bytes": 1803,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage1/evidence/row_count_discrepancy.json",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "50c99c0f27075dee90da5a8bfc9d0532f62296a1c5ba10b83c510c72e608d420",
+    "bytes": 1479,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage1/evidence/runtime.json",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "e06706a6dd8971e94dd2bad22818d9ae2ebd1075171c11d94f9e7b7a3a0ffe23",
+    "bytes": 912,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage1/evidence/semantic_tests.json",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "35cc731af3a155f0a934b167d62c0bd315ba51ca2a7a79361dbadc1ae9e17996",
+    "bytes": 613,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage1/evidence/stage1_selection.json",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "52a9d7e4704c8a981f9ec668e8e21ef249352c45b4dcba6ebc3bee17b28669ec",
+    "bytes": 3462,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage1/evidence/trial_details.json",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "3ade577cab8f9e31c8649c5b296c6d03eef4c895466d23ffe63df13de9519350",
+    "bytes": 93286,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage1/evidence/validation_comparison.csv",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "89bc215e967178651a5cee1143b597cbe3b8339d6cb502174de6459814c1e745",
+    "bytes": 4756,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage1/evidence/verification.json",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "1b1ce7b9a9b10e9bfcc5ac6fca3459c07ba59d0993dbc1be2136c766e01399ec",
+    "bytes": 679,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage1/tests/test_stage1.py",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "59e2403bcd0f8d31c3898e0b36107f578511236c0506b05309ccdba667de2713",
+    "bytes": 4189,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage2/evidence/feature_availability_by_configuration.json",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "188812bd560edcd2b9781b154b6b23d43ae48d76a41f6ea0fa212f059be7b0e5",
+    "bytes": 20986,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage2/evidence/feature_ledger_naming_check.json",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "b415bd7d5d0cd61d9b02f09923c4253aec5dd2d935234a77e487ecdc4cb19c6f",
+    "bytes": 399,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage2/evidence/frozen_stage1_settings.json",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "026d51f5eabe3c6c528b18c385d777703d855c6de8cca8842e04abd434767ece",
+    "bytes": 3422,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage2/evidence/isolated_dropout_validation.json",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "bbd429673653ebd82fc29b8dd333786aabc30f402a7158805e6962cd0e68adc6",
+    "bytes": 21943,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage2/evidence/measurement_protocol.json",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "60b1937323f958e0ac819451cf496722dfb5502e73362b276b187fadebf658be",
+    "bytes": 1803,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage2/evidence/resource_benchmark_correction.json",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "6eef4419ecfcbc93039c04d5eb9e7180674a930755e62232c39134f298f43bfd",
+    "bytes": 5159,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage2/evidence/resource_metrics.csv",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "a6eaeece07cb08585f9dc917250c9105f8bbb0caee8647ced4591e0a4dc3cb28",
+    "bytes": 3028,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage2/evidence/semantic_tests.json",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "2bc309eacedbfa1c86a9148ab127a70af0917163b33da3221084434feb764612",
+    "bytes": 549,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage2/evidence/sensor_ablation_class_metrics.csv",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "71c4cf35967127217b50ceecd2b9d9864f5d1fd77faf92db77f282aa22e3b15c",
+    "bytes": 9947,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage2/evidence/sensor_ablation_validation.csv",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "172da09e353234aca0d84642770e5299247a7978b3fe095caba5e841706fc151",
+    "bytes": 7184,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage2/evidence/stage2_selection.json",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "4f585dbc77ec12d0fa969c7353d33026529dc8e1533d3caaf92113ad129a5476",
+    "bytes": 4111,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage2/evidence/verification.json",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "333c178cc4186648d0176b23d75fbc734ac4c611bc1afde4ed9ef121cfdedb3a",
+    "bytes": 780,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage2/tests/test_stage2.py",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "008ebf9db8ca5dd0487b4e1628d27646ac8ab93519429b17ba6db8f2433610b4",
+    "bytes": 4341,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage3/Methodology_Disclosure.md",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "972a9e8a424fb6673143412ebe2081e851b5d2fc290a2cfae4b540f765194f9e",
+    "bytes": 3166,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage3/evidence/diagnostic_findings.json",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "62de119d034bc20aec22df0664185231b50d30712a20e9a2639b4aa4a7fc53f8",
+    "bytes": 2971,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage3/evidence/dropout_validation.json",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "5eca8cde8ecb95f1ad80adedd78a858ae976825ffe3c98ad8368d6662098b02c",
+    "bytes": 26079,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage3/evidence/explainability_metadata.json",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "8fde92e71a47b91956f5a502c4488d09957013016cc5cb5166f2ff678b967e37",
+    "bytes": 15723,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage3/evidence/figure_inventory.json",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "47c2ebb675c824b5994d2a9b989b9756c1290903d781cb2d11c806f1b6a0092f",
+    "bytes": 4474,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage3/evidence/final_candidate_comparison.csv",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "355aadc475680a0885a45bf6ab86677078d12ae022c277618896bbafa5556486",
+    "bytes": 1520,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage3/evidence/final_engineering_criteria.csv",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "17d6f14b11fec7c4b0c77f54e9e3ce9b25b96939f66b846348f537758a8df059",
+    "bytes": 1025,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage3/evidence/final_hardware_alert_metrics.csv",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "7f9bc603ef8ebacd1a2eae3d464cba5ab48a42846f94ea6a13ba39e011563fdc",
+    "bytes": 690,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage3/evidence/final_test_class_metrics.csv",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "28c67b6763a95a8d445eec016ad134281d8c3644914f1a5bf0318a2564b78814",
+    "bytes": 1399,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage3/evidence/final_test_details.json",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "c6655919515d20414480b0483fdc2a4716e6da649a02b935d5230463d2a12fd4",
+    "bytes": 22656,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage3/evidence/final_test_metrics.csv",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "c678525a56c9649b8b657a7dd3423cf8974d764a353da39ab4d2c89582991706",
+    "bytes": 341,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage3/evidence/lr_coefficients.csv",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "78db47b513570ecf2c6ecbaea6a2f17fb77642a197e56184b616e72b8e4dcf09",
+    "bytes": 2658,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage3/evidence/native_feature_importance.csv",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "17dac4aa72df5ecec5d0fc071d13ef8dfccce607a1f001aab55cee2a830c5b00",
+    "bytes": 4359,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage3/evidence/physical_channel_permutation.csv",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "2bd5175c2d86db34c3231f79a894b8ebf967e4192926821b57cf53d9f9edb248",
+    "bytes": 5424,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage3/evidence/shap_mean_absolute.csv",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "7ba662164f489397a9305951fbb82389949b7f07a5f5eeb785216012502cecc3",
+    "bytes": 3397,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage3/evidence/stage3_protocol.json",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "1a7c2af568ecd76d54897c500d40ca84caf6747a690be851780a7b4ba964b65c",
+    "bytes": 3856,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage3/evidence/stage3_threshold_selection.json",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "39e205c7dd2c377943949b50357ac890457215fc874045aeee4a02013d1b28c1",
+    "bytes": 4196,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage3/evidence/stage3_verification.json",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "4d87180ed7e98a7616863b3b6c66fe58671a0cc90a0d1c34282968b8d7f3757e",
+    "bytes": 1233,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage3/evidence/test_access_started.json",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "43105a806f1cd9a6ba5800902796dd060a15b873cdee876a82c203349a86a345",
+    "bytes": 699,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage3/evidence/threshold_curve_verification.json",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "8fa58422700844a3c3114947cb48cd7a11cd3bcd4f9ce0d08099e48957b7bc44",
+    "bytes": 1343,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage3/evidence/threshold_freeze_receipt.json",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "5372086a05ca153730c51ee7264434aa8ba93f6d7508b2bfe82838391df76d29",
+    "bytes": 726,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage4/evidence/final_model_specifications.json",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "9d16ee69f5f679a9c042cbd220c39e2c6c0980ce323afd65f6ed6f60dc9339b1",
+    "bytes": 6705,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage4/evidence/resource_protocol_public.json",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "16866e4e801d65aaccc99dcf560e7c674d0b12acf97c542baeaf79de51c7b830",
+    "bytes": 125207,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage4/figures/final_candidate_confusion_matrices.png",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "63486deccf5ba66980914bc8d44757856f02f681e8fddb7d779cadd3315bf688",
+    "bytes": 465177,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage4/figures/performance_resource_tradeoff.png",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "c121181d9cc921cb9eaf299b60b000fb88635ec090ba6ceaece823e12d8fd452",
+    "bytes": 78414,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage4/figures/test_hardware_alerts.png",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "c2b78147e429e5203e73b6387a0935148748d7d7fe8639384f37229d78cf655c",
+    "bytes": 84354,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage4/figures/test_per_class_metrics.png",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "9efa2b0ad4af195d62a58ef8b04f0c2bb10cdb66207fd1eb6813f23d7d228dfe",
+    "bytes": 156009,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage4/figures/validation_lightgbm_short_circuit_shap.png",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "f6b3298822f9bea4a0f7bf985ff4ec7b3e586ace93c003830f77d1a7a7804e7b",
+    "bytes": 52297,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage4/figures/validation_physical_channel_importance.png",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "31cb5cc8c238fde354a8063eeba9417e7b5e455909007466d7fdb8ab974e613a",
+    "bytes": 57731,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage4/figures/validation_sensor_ablation.png",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b",
+    "sha256": "3b8437eaf3554bce39e527c031650889faa5650c2024105c9757215367beaba2",
+    "bytes": 101455,
+    "purpose": "original model/evaluation code, compact evidence or scientific figure"
+  },
+  {
+    "path": "phase2_implementation/stage3/figures/test_confusion_LR__F6.png",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b (recorded figure inventory; original local bytes)",
+    "sha256": "d252529bcc23dfc8b0a10cc2d654dca9078ce41fa033a3bd79735c4928536d1b",
+    "bytes": 274772,
+    "purpose": "original archived scientific diagnostic, verified against archived inventory"
+  },
+  {
+    "path": "phase2_implementation/stage3/figures/test_confusion_RF__E4.png",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b (recorded figure inventory; original local bytes)",
+    "sha256": "703e0aa47a1c1a5909dc905bbf0066028ba99a98d0166944ed45b2e4006db6d3",
+    "bytes": 263031,
+    "purpose": "original archived scientific diagnostic, verified against archived inventory"
+  },
+  {
+    "path": "phase2_implementation/stage3/figures/test_confusion_LightGBM__E4.png",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b (recorded figure inventory; original local bytes)",
+    "sha256": "c44d5b26d47aab062e6635cff81b0d2339e02d8ca18b5df73c4f01ae12c5890a",
+    "bytes": 275744,
+    "purpose": "original archived scientific diagnostic, verified against archived inventory"
+  },
+  {
+    "path": "phase2_implementation/stage3/figures/test_per_class_metrics.png",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b (recorded figure inventory; original local bytes)",
+    "sha256": "6b7678b446eab560eda8a29eea722e757bc7b70637bca5c0b3492a6420f7b61c",
+    "bytes": 118669,
+    "purpose": "original archived scientific diagnostic, verified against archived inventory"
+  },
+  {
+    "path": "phase2_implementation/stage3/figures/test_hardware_alerts.png",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b (recorded figure inventory; original local bytes)",
+    "sha256": "2bf728e6ed26d46237a31f3be0b6b5281ba6094f07ba4f7aad66c45d3ff9fad1",
+    "bytes": 158833,
+    "purpose": "original archived scientific diagnostic, verified against archived inventory"
+  },
+  {
+    "path": "phase2_implementation/stage3/figures/test_precision_recall.png",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b (recorded figure inventory; original local bytes)",
+    "sha256": "0df5594fb2190e77b6e55e258a8420bf90e3473622aa69fb32aac598ad5b546a",
+    "bytes": 309659,
+    "purpose": "original archived scientific diagnostic, verified against archived inventory"
+  },
+  {
+    "path": "phase2_implementation/stage3/figures/validation_sensor_ablation.png",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b (recorded figure inventory; original local bytes)",
+    "sha256": "4851a7fb8d13d8610ae6ef39bbe7d30f2dae0b4dd1a93ea2c976f10c2422697f",
+    "bytes": 98704,
+    "purpose": "original archived scientific diagnostic, verified against archived inventory"
+  },
+  {
+    "path": "phase2_implementation/stage3/figures/performance_resource_tradeoff.png",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b (recorded figure inventory; original local bytes)",
+    "sha256": "f00517a808fb5b97029930c0284ce193a87bb7116824d8aa8f10d3a2db29fda3",
+    "bytes": 167939,
+    "purpose": "original archived scientific diagnostic, verified against archived inventory"
+  },
+  {
+    "path": "phase2_implementation/stage3/figures/validation_physical_channel_importance.png",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b (recorded figure inventory; original local bytes)",
+    "sha256": "d2cca41ce7919a3a10cc7cacbc6a26ee3e624a6e1072ac45beff3b7732edc54b",
+    "bytes": 114160,
+    "purpose": "original archived scientific diagnostic, verified against archived inventory"
+  },
+  {
+    "path": "phase2_implementation/stage3/figures/train_native_feature_importance.png",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b (recorded figure inventory; original local bytes)",
+    "sha256": "e62f50619e038052517d938741c862676e83189fe5a289a7441a98a3de1aec7a",
+    "bytes": 231240,
+    "purpose": "original archived scientific diagnostic, verified against archived inventory"
+  },
+  {
+    "path": "phase2_implementation/stage3/figures/validation_lightgbm_class_shap.png",
+    "source_revision": "cf5d0ac4b66a98ddbc2fc03653cb8b90f4a9980b (recorded figure inventory; original local bytes)",
+    "sha256": "318e0e6a093d4a51ba9db342d617f883eef7561899e6d244531440cbf4f2c7d2",
+    "bytes": 184907,
+    "purpose": "original archived scientific diagnostic, verified against archived inventory"
+  }
+]
