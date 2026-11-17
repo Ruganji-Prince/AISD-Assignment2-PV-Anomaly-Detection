@@ -122,6 +122,10 @@ The application runs on the Vercel Hobby plan. Hosting the research demonstratio
 
 ### Interactive dashboard
 
-The web application now presents measurements, synthetic/dataset scenarios, animated voltage/current comparisons and actual-class explanations in a single desktop screen. Synthetic inputs are clearly labeled, generated independently of the model, and separated from historical observations. Selected scenario intent can differ from the real model output; that difference is shown explicitly. No model probabilities or feature contributions are fabricated. See the [dashboard design and scenario methodology](web/README.md).
+The web application presents measurements, synthetic/dataset scenarios, animated voltage/current comparisons and actual-class explanations across four client-side steps, with only one main section visible at a time. Synthetic inputs are clearly labeled, generated independently of the model, and separated from historical observations. Selected scenario intent can differ from the real model output; that difference is shown explicitly. No model probabilities or feature contributions are fabricated. See the [dashboard design and scenario methodology](web/README.md).
 
 [Preview layout verification](web/Redesign_Preview_Verification.json) | [Current production browser verification](web/Browser_Verification.json)
+
+The guided workflow preserves measurements, source, scenario, chart selections and predictions across Previous/Next and direct navigation. Measurement changes clear stale assessments; reduced-motion and keyboard navigation are supported.
+
+[Four-step navigation and state verification](web/Workflow_Preview_Verification.json)

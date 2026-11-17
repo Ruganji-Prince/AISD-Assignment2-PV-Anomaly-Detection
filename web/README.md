@@ -4,7 +4,7 @@
 
 Production and preview API/browser checks passed without visitor authentication.
 
-A responsive single-reading dashboard backed by FastAPI and the original fitted Random Forest E4 pipeline. No model fitting, replacement, confidence percentage or probability calibration is performed. Natural building shade is an environmental condition, not a hardware-failure class.
+A responsive four-step application backed by FastAPI and the original fitted Random Forest E4 pipeline. No model fitting, replacement, confidence percentage or probability calibration is performed. Natural building shade is an environmental condition, not a hardware-failure class.
 
 ## Run locally
 
@@ -74,12 +74,24 @@ python -B -m web.verify_live --url https://pv-anomaly-detection-prince-r-k.verce
 
 Vercel used Python 3.14.8 at build time and 3.14.10 at function execution. Initial builds exposed this patch mismatch; it was resolved through independent full RF validation/TEST parity checks before adding exact allowed patches. The model was never retrained, replaced or reserialized. Future platform patches outside the allowlist require a new compatibility check rather than silently bypassing verification.
 
-## Single-screen dashboard redesign
+## Scenarios and visualizations
 
-The four connected areas contain physical inputs, scenario controls, interactive voltage/current comparisons and actual model assessment with three plain-language explanation sections. Desktop fit is verified at 1366 x 768 and 1920 x 1080; smaller displays use responsive scrolling. Teal/blue distinguish measurement channels; green/red/amber/purple/blue distinguish result classes. Chart tooltips, tab transitions, seeded sample regeneration and loading/reset/error states require no external chart service.
+Four client-side steps contain physical inputs, scenario controls, interactive voltage/current comparisons and actual model assessment with three plain-language explanation sections. Only one main section is visible at a time. Desktop fit is verified at 1366 x 768 and 1920 x 1080; smaller displays use responsive scrolling. Teal/blue distinguish measurement channels; green/red/amber/purple/blue distinguish result classes. Chart tooltips, tab transitions, seeded sample regeneration and loading/reset/error states require no external chart service.
 
 Synthetic Demonstration Data is generated independently of the model: five illustrative operating-pattern presets around 180-340 V and 0-8.2 A receive deterministic uniform variations of up to 1.5% in voltage and 4% in current (seed 42 initially, incremented on regeneration). Four-decimal rounding is used and the illustrative interrupted-current channel remains zero. These are plausible input examples, not calibrated PV circuit simulations, confirmed fault signatures or measured data. No timestamps or time-series values are generated. Exact fixture inputs are in [synthetic cases](synthetic_test_cases.json); generator source is [scenarios.js](static/scenarios.js).
 
 All five default synthetic inputs are classified as natural building shade by the unchanged model. Four selected intents therefore differ from the predictions. This is deliberately disclosed rather than changing inputs or outputs to force agreement. Historical dataset examples remain separately labeled and exercise all five actual classes. Synthetic inputs are not evidence of reliable physical-fault simulation or model generalization.
 
 The explanation sections use the actual returned class, never the selected intent. Possible physical causes are general context, not model attributions or a confirmed diagnosis. Guidance recommends qualified assessment rather than unsafe energized troubleshooting. [PNNL PV operations and maintenance guidance](https://www.pnnl.gov/projects/om-best-practices/solar-photovoltaic) and the [NABCEP certification study guide](https://www.nabcep.org/wp-content/uploads/2019/05/NABCEP-2019-PV-Certification-Study-Guide.pdf) support the inspection context. The application provides no calibrated confidence, invented probabilities, feature-contribution claims or certified safety-monitoring capability.
+
+## Four-step, single-page-at-a-time workflow
+
+The top navigation follows PV Measurements, PV Scenarios, Graphical Analysis and Model Assessment. Previous/Next and direct numbered navigation use sequential 125 ms exit and 125 ms entrance animations; the old panel is hidden before the next is shown. Reduced motion skips these animations. Inactive sections remain mounted and hidden rather than being destroyed or reloaded. Navigation focus moves to the visible section heading; navigation-arrow/Home/End keys retain focus in the step bar. Completed markers indicate previously visited steps, not validation or model-quality certification.
+
+Measurements, selected scenario, data source, seeded sample, voltage/current chart tab and the latest prediction/explanation remain in memory between steps. An edit, reset or scenario change clears the previous prediction until inference is rerun. Refreshing the browser starts a new session; no sensor values or predictions are persisted to browser storage.
+
+The measurements page retains its original inference button and offers View Model Assessment after success. The assessment page has a compact ready state with its own inference action. Missing inputs return focus to Measurements for validation. Model errors return to the visible measurement error message. Modify measurements and Try another scenario actions are available from Assessment. No scenario is automatically treated as a prediction.
+
+Browser checks cover forward/back/direct navigation, one visible panel throughout transitions, state retention, stale-output invalidation, keyboard access, reduced motion, all five dataset classes and all five synthetic inputs. Desktop fit is checked at 1366 x 768 and 1920 x 1080; tablet at 820 x 1180 and mobile at 390/320-pixel widths use responsive natural scrolling. The original model, backend, fitted preprocessing and deployment configuration are unchanged by this workflow update.
+
+[Verified workflow preview](https://pv-anomaly-detection-aokqgywq7-prince-r-k.vercel.app) | [Workflow preview test evidence](Workflow_Preview_Verification.json)

@@ -16,42 +16,74 @@
   "RF_validation_TEST_reproduction": "PASS; no refitting",
   "browser_checks": {
     "status": "PASS",
-    "desktop_viewports": [
+    "url": "https://pv-anomaly-detection-prince-r-k.vercel.app",
+    "one_visible_panel_during_all_transitions": true,
+    "forward_backward_direct_navigation": true,
+    "keyboard_navigation": true,
+    "reduced_motion": true,
+    "no_page_reload": true,
+    "shared_measurements_scenario_source_chart_preserved": true,
+    "prediction_and_explanations_preserved": true,
+    "stale_predictions_cleared": true,
+    "assessment_inference_and_invalid_input_redirect": true,
+    "viewports": [
       "1366x768",
-      "1920x1080"
+      "1920x1080",
+      "820x1180",
+      "390x844",
+      "320x844"
     ],
-    "desktop_single_screen": true,
-    "mobile_widths": [
-      390,
-      320
-    ],
-    "real_dataset_classes": [
+    "desktop_no_vertical_scroll": true,
+    "all_dataset_classes": [
       0,
       1,
       2,
       3,
       4
     ],
-    "synthetic_scenarios": 5,
+    "synthetic_predictions": [
+      {
+        "intent": 0,
+        "prediction": 4
+      },
+      {
+        "intent": 1,
+        "prediction": 4
+      },
+      {
+        "intent": 2,
+        "prediction": 4
+      },
+      {
+        "intent": 3,
+        "prediction": 4
+      },
+      {
+        "intent": 4,
+        "prediction": 4
+      }
+    ],
+    "generator_bounds_and_determinism": true,
+    "assessment_error_redirect": true,
     "actual_class_explanations": true,
-    "intent_prediction_mismatches_disclosed": true,
-    "chart_tooltips_and_tabs": true,
-    "loading_reset_errors": true,
-    "JavaScript_errors": 0
+    "chart_tooltips_and_updates": true,
+    "loading_errors": true,
+    "page_errors": []
   },
   "linux_runtime_and_model_estimated_uncompressed_bytes": 266209786,
   "cloud_build_size": "253.65 MB before automatic dependency optimization; build completed",
-  "preview": "PASS: https://pv-anomaly-detection-6jbj139or-prince-r-k.vercel.app",
+  "preview": "PASS: https://pv-anomaly-detection-aokqgywq7-prince-r-k.vercel.app",
   "production": "https://pv-anomaly-detection-prince-r-k.vercel.app",
   "new_commit": "See Git history: deployment code committed after live verification.",
   "GitHub_push": "See Git history and final publication verification.",
   "limitation": "Research demonstration; prior test exposure and unmet RF resource targets remain disclosed. Cold starts and future runtime patches remain operational limitations.",
-  "production_deployment_id": "dpl_4b5J9sFUAMejRwnzcqbkyVZ1Se7A",
+  "production_deployment_id": "dpl_FUB3MzDvaNG9osWQRCYfDVemdDY6",
   "plan": "hobby",
   "anonymous_public_access": true,
   "model_byte_identical": true,
   "CLI_change": "Interpreter allowlist only: 3.14.7, independently parity-verified 3.14.8 and 3.14.10. Prediction/preprocessing logic unchanged.",
   "cloud_function_python": "3.14.10",
-  "redesign": "Single-screen four-area dashboard; model, pipeline, backend and deployment configuration unchanged.",
-  "synthetic_limitations": "Seeded illustrative input patterns, not validated fault simulations. All five default synthetic inputs produce class 4; four intent mismatches are displayed. Historical examples separately exercise all five classes."
+  "redesign": "Four client-side steps; exactly one visible section with sequential 125 ms exit and 125 ms entrance transitions; reduced-motion supported.",
+  "synthetic_limitations": "Seeded illustrative input patterns, not validated fault simulations. All five default synthetic inputs produce class 4; four intent mismatches are displayed. Historical examples separately exercise all five classes.",
+  "workflow_state": "Measurements, selected scenario, source, chart and prediction/explanations are retained between steps. Edits/reset/scenario changes clear stale predictions. Refresh starts a new in-memory session."
 }
