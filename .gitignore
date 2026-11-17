@@ -42,3 +42,9 @@ data/processed/**
 results/
 *.joblib
 *.npz
+
+# Web deployment tooling and local test outputs
+.vercel/
+node_modules/
+playwright-report/
+test-results/

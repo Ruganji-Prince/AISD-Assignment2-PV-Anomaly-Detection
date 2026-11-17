@@ -32,8 +32,9 @@ def validate(record):
     return values
 
 def load_model(path=MODEL):
-    if sys.version_info[:3] != (3,14,7):
-        raise RuntimeError('Original artifact requires Python 3.14.7; use deployment/requirements.txt.')
+    # Vercel build/runtime patches are parity-verified; training used 3.14.7.
+    if sys.version_info[:3] not in {(3,14,7), (3,14,8), (3,14,10)}:
+        raise RuntimeError('Verified runtimes: Python 3.14.7, 3.14.8 and 3.14.10; use deployment/requirements.txt.')
     for package, expected in VERSIONS.items():
         if version(package) != expected:
             raise RuntimeError(f'{package}=={expected} required for the preserved pickle.')

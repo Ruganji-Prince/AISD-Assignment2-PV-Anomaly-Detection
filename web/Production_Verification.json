@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "url": "https://pv-anomaly-detection-prince-r-k.vercel.app",
+  "anonymous_public_access": true,
+  "health": {
+    "status": "ready",
+    "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+    "python_version": "3.14.10"
+  },
+  "original_model_CLI_parity": [
+    {
+      "fixture": 0,
+      "predicted_class": 0,
+      "CLI_parity": true
+    },
+    {
+      "fixture": 1,
+      "predicted_class": 1,
+      "CLI_parity": true
+    },
+    {
+      "fixture": 2,
+      "predicted_class": 2,
+      "CLI_parity": true
+    },
+    {
+      "fixture": 3,
+      "predicted_class": 3,
+      "CLI_parity": true
+    },
+    {
+      "fixture": 4,
+      "predicted_class": 4,
+      "CLI_parity": true
+    }
+  ],
+  "invalid_request_checks": 9,
+  "static_assets": "PASS",
+  "no_confidence_or_calibration_claims": true
+}

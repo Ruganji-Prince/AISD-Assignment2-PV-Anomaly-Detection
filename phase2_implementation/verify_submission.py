@@ -64,7 +64,7 @@ def main():
  links=0
  import os
  for base,dirs,files in os.walk(ROOT):
-  dirs[:]=[d for d in dirs if d not in {'.git','.cache','.venv','.review','__pycache__','.tools','.uv-cache'}]
+  dirs[:]=[d for d in dirs if d not in {'.git','.cache','.venv','.review','__pycache__','.tools','.uv-cache','node_modules','.vercel','playwright-report','test-results'}]
   for name in files:
    f=Path(base)/name
    if not f.is_file():continue

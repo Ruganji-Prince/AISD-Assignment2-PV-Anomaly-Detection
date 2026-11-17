@@ -1,7 +1,9 @@
 # Resource-Efficient and Explainable PV Anomaly Detection
 
+**[Open the PV Anomaly Detection application](https://pv-anomaly-detection-prince-r-k.vercel.app)** | [Web setup and verification](web/README.md)
 
-**Current milestone: Models and results; beginning of deployment.** The completed Assignment 3 preprocessing workflow is retained below. Original archived LR, Random Forest and LightGBM models have been recovered and evaluated without refitting. A local four-channel RF inference prototype is available.
+
+**Current milestone: Models, results and a public web inference application.** The completed Assignment 3 preprocessing workflow is retained below. Original archived LR, Random Forest and LightGBM models have been recovered and evaluated without refitting. The original four-channel RF pipeline is available through a public web application and the local CLI.
 
 **Evaluation limitation:** the historical TEST partition was previously inspected. Results are retrospective, not pristine independent generalization estimates. No evaluated configuration met all engineering criteria; RF E4 was selected by the archived validation sensing/performance rule and exceeds separate latency and size targets.
 
@@ -104,4 +106,16 @@ python -B -m src.evaluation.verify_recovery
 
 [Model provenance](models/rf_e4/provenance.json) ? [Actual example output](deployment/example_output.json) ? [Recovery manifest](reports/Recovery_Manifest.json) ? [Acceptance matrix](reports/Acceptance_Matrix.md)
 
-The Phase 1 PDF, Assignment 3 IEEE report, executed preprocessing notebook, original diagnostic figures and raw data remain unchanged. Only the selected original model is published; other original models, saved arrays, environments and backups remain local. Cloud deployment, prospective external evaluation and production monitoring are not completed.
+The Phase 1 PDF, Assignment 3 IEEE report, executed preprocessing notebook, original diagnostic figures and raw data remain unchanged. Only the selected original model is published; other original models, saved arrays, environments and backups remain local. The research application is hosted on Vercel. Prospective external evaluation and production monitoring are not completed.
+
+## Public web application
+
+The [PV Anomaly Detection dashboard](https://pv-anomaly-detection-prince-r-k.vercel.app) accepts four electrical measurements and calls the original fitted RF E4 pipeline through a Python FastAPI endpoint on Vercel. The responsive HTML/CSS/JavaScript interface includes dataset examples, five-class results, validation, loading and error states. Natural building shade is identified as an environmental condition. No confidence percentages or calibrated probabilities are presented.
+
+Anonymous live API and browser checks pass for all five existing examples, including desktop and 390/320-pixel mobile layouts. The original model SHA-256, fitted preprocessing, parameters and scientific results are unchanged. The interpreter allowlist now additionally accepts independently parity-verified Python 3.14.8 (Vercel build) and 3.14.10 (Vercel function); training used 3.14.7.
+
+- [Local execution, architecture and deployment](web/README.md)
+- [Production API verification](web/Production_Verification.json) and [browser verification](web/Browser_Verification.json)
+- [Runtime compatibility evidence](web/Python31410_Compatibility.json) and [deployment verification summary](web/Verification.json)
+
+The application runs on the Vercel Hobby plan. Hosting the research demonstration does not establish production protection-system reliability, calibration, prospective generalization or operational monitoring.

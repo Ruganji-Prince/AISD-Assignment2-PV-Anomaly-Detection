@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "training_python": "3.14.7",
+  "verified_deployment_python": "3.14.8",
+  "original_model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+  "dependencies": {
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1"
+  },
+  "results": {
+    "VALIDATION_BLOCK13": {
+      "rows": 32800,
+      "macro_f1": 0.9562971220697507,
+      "confusion_matrix_matches": true
+    },
+    "TEST": {
+      "rows": 146461,
+      "macro_f1": 0.9504811500671918,
+      "confusion_matrix_matches": true
+    }
+  },
+  "five_original_example_predictions_match": true,
+  "model_retrained_or_reserialized": false,
+  "purpose": "Independent read-only patch-version compatibility probe before updating the runtime allowlist."
+}

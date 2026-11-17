@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore photovoltaic operating conditions using four electrical measurements and an original trained Random Forest model.">
+  <meta name="theme-color" content="#173b35"><title>PV Anomaly Detection</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/style.css"><script src="/assets/app.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#workspace">Skip to measurements</a>
+<header class="site-header"><div class="container nav">
+  <a class="brand" href="/" aria-label="PV Anomaly Detection home"><span class="brand-icon" aria-hidden="true">&#9728;</span><span>PV<span class="brand-light"> / Intelligence</span></span></a>
+  <nav aria-label="Main navigation"><a href="#workspace">Analyze</a><a href="#conditions">Operating conditions</a><a class="repository" href="https://github.com/Ruganji-Prince/AISD-Assignment2-PV-Anomaly-Detection" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">&#8599;</span></a></nav>
+</div></header>
+<main class="container">
+<section class="hero" aria-labelledby="page-title">
+  <div class="eyebrow"><span class="small-sun" aria-hidden="true"></span> ELECTRICAL INSIGHTS, CLEARER DECISIONS</div>
+  <div class="hero-row"><div><h1 id="page-title">PV Anomaly Detection<span class="title-dot">.</span></h1><p class="subtitle">AI-Powered Photovoltaic System Monitoring</p><p class="intro">Turn four electrical measurements into a clearer view of photovoltaic operating conditions. Explore a trained model's assessment of normal operation, hardware faults and environmental shade.</p></div><div class="hero-seal" aria-hidden="true"><svg viewBox="0 0 160 140"><circle cx="119" cy="34" r="17"/><path d="M119 5v-5m0 68v-7m29-27h8m-73 0h8m7-21-5-5m48 53-5-5m0-43 5-5"/><path class="panel" d="m25 66 90-9 23 53-107 10Z"/><path d="m53 63 7 54m23-57 14 54m-69-31 96-10m-94 29 103-11M79 116v13m-25 0h52"/></svg><span>FOUR CHANNELS. ONE ASSESSMENT.</span></div></div>
+  <div class="hero-meta"><span><strong>4</strong> electrical inputs</span><span><strong>5</strong> operating classes</span><span><span class="verified-icon" aria-hidden="true">&#10003;</span> Original fitted model</span></div>
+</section>
+<section id="workspace" class="workspace" aria-label="Measurement analysis">
+  <article class="card input-card">
+    <div class="card-heading"><div><div class="section-label">01 / INPUT</div><h2>Electrical measurements</h2></div><span class="unit-badge">V &#183; A</span></div>
+    <p class="card-description">Enter the voltage and current for each measured channel.</p>
+    <form id="prediction-form">
+      <div class="channel-title"><span class="channel-number">1</span> Channel pair 1</div>
+      <div class="input-row"><div class="field"><label for="vdc1">DC Voltage 1</label><div class="input-wrap"><input id="vdc1" name="vdc1" type="number" inputmode="decimal" step="any" min="0" required placeholder="300.031" aria-describedby="units-note"><span>V</span></div></div><div class="field"><label for="idc1">DC Current 1</label><div class="input-wrap"><input id="idc1" name="idc1" type="number" inputmode="decimal" step="any" min="0" required placeholder="0.2247" aria-describedby="units-note"><span>A</span></div></div></div>
+      <div class="channel-title second"><span class="channel-number">2</span> Channel pair 2</div>
+      <div class="input-row"><div class="field"><label for="vdc2">DC Voltage 2</label><div class="input-wrap"><input id="vdc2" name="vdc2" type="number" inputmode="decimal" step="any" min="0" required placeholder="329.544" aria-describedby="units-note"><span>V</span></div></div><div class="field"><label for="idc2">DC Current 2</label><div class="input-wrap"><input id="idc2" name="idc2" type="number" inputmode="decimal" step="any" min="0" required placeholder="0.1272" aria-describedby="units-note"><span>A</span></div></div></div>
+      <p id="units-note" class="field-note">Use volts (V) and amperes (A). All four values are required.</p>
+      <div id="form-error" class="notice error" role="alert" hidden></div>
+      <div class="actions"><button type="submit" id="predict-button" class="primary"><span id="button-label">Predict operating condition</span><span id="button-icon" aria-hidden="true">&#8599;</span><span id="loading-spinner" class="spinner" aria-hidden="true" hidden></span></button><button type="reset" class="secondary" id="reset-button">Reset</button></div>
+    </form>
+    <div class="examples"><div><h3>Start with an example</h3><p>Real measurements from the released dataset.</p></div><div class="example-controls"><label class="sr-only" for="example-select">Choose a dataset example</label><select id="example-select"><option value="">Choose a condition...</option></select><button type="button" id="load-example" class="small-button" disabled>Load</button></div><p id="example-status" class="sr-only" role="status"></p></div>
+  </article>
+  <article id="result-card" class="card result-card" aria-labelledby="result-heading" aria-busy="false">
+    <div class="card-heading"><div><div class="section-label">02 / ASSESSMENT</div><h2 id="result-heading">Prediction result</h2></div><span id="service-status" class="status"><span aria-hidden="true"></span>Checking service</span></div>
+    <div id="result-empty" class="result-empty"><div class="empty-symbol" aria-hidden="true"><svg viewBox="0 0 80 80"><path d="M12 40h15l8-17 12 34 8-17h13"/><circle cx="40" cy="40" r="32"/></svg></div><h3>Ready for a reading</h3><p>Add the four measurements, then select<br> <strong>Predict operating condition</strong>.</p><div class="empty-divider"></div><p class="muted">A single assessment of the supplied values.<br>No continuous monitoring or automatic control.</p></div>
+    <div id="result-content" class="result-content" hidden><div id="category-badge" class="category-badge"></div><div id="result-symbol" class="result-symbol" aria-hidden="true"></div><p class="result-overline">PREDICTED OPERATING CONDITION</p><h3 id="predicted-label"></h3><p id="result-description"></p><div class="result-reading"><span>Class label</span><strong id="predicted-class"></strong></div><div id="result-warnings" class="notice warning" hidden></div><p class="result-caveat">Model predictions are research assessments, not a substitute for electrical inspection or a safety system.</p></div>
+    <div class="result-footnote"><span aria-hidden="true">&#9672;</span> Four physical inputs &#183; Random Forest E4</div>
+  </article>
+</section>
+<section id="conditions" class="conditions" aria-labelledby="conditions-heading"><div class="conditions-heading"><div><div class="section-label">UNDERSTANDING THE OUTPUT</div><h2 id="conditions-heading">Five conditions. Clear distinctions.</h2></div><p>Environmental shade is separate from hardware failure.</p></div><div class="condition-grid">
+  <article class="condition normal"><div><span class="condition-id">00</span><span class="condition-type">Normal</span></div><h3>Normal operation</h3><p>Measurements classified as the normal operating state.</p></article>
+  <article class="condition fault"><div><span class="condition-id">01</span><span class="condition-type">Hardware</span></div><h3>Short circuit</h3><p>A pattern associated with a short-circuit fault.</p></article>
+  <article class="condition fault"><div><span class="condition-id">02</span><span class="condition-type">Hardware</span></div><h3>Resistive degradation</h3><p>A pattern associated with resistive degradation.</p></article>
+  <article class="condition fault"><div><span class="condition-id">03</span><span class="condition-type">Hardware</span></div><h3>Open circuit</h3><p>A pattern associated with an open-circuit fault.</p></article>
+  <article class="condition shade"><div><span class="condition-id">04</span><span class="condition-type">Environment</span></div><h3>Natural building shade</h3><p>Environmental shading, not a hardware-failure class.</p></article>
+</div></section>
+<section class="research-note"><span class="note-icon" aria-hidden="true">i</span><div><h2>Built for exploration. Interpreted with care.</h2><p>This application uses the original fitted model from an academic PV anomaly-detection study. Evaluation is retrospective, with prior test-set exposure. Resource targets were not all met; predictions do not establish production reliability. No confidence percentages or calibrated probabilities are displayed.</p><a href="https://github.com/Ruganji-Prince/AISD-Assignment2-PV-Anomaly-Detection/blob/main/reports/Model_Selection_and_Deployment.md" target="_blank" rel="noopener noreferrer">Read the methodology and limitations <span aria-hidden="true">&#8599;</span></a></div></section>
+</main>
+<footer class="container footer"><span>PV / Intelligence <span class="footer-divider">&mdash;</span> An academic research application</span><a href="https://github.com/clayton-h-costa/pv_fault_dataset" target="_blank" rel="noopener noreferrer">Dataset: Lazzaretti et al. (2020) &#8599;</a></footer>
+</body></html>

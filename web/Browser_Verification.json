@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "url": "https://pv-anomaly-detection-prince-r-k.vercel.app",
+  "real_classes_tested": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "desktop": 1440,
+  "mobile_widths": [
+    390,
+    320
+  ],
+  "reset": true,
+  "loading": true,
+  "api_error_display": true,
+  "invalid_input_blocked": true,
+  "page_errors": []
+}

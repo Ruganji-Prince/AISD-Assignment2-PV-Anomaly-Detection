@@ -27,3 +27,7 @@ These are rounded observed ranges, not certified operating limits. Outside-range
 Output contains predicted class, human-readable label, hardware-fault classification flag, environmental-shade flag, model version/hash and range warnings. Class 4 is natural building shade, not hardware failure. The flag describes argmax class membership, not the separately thresholded research alert rule. No calibrated confidence is returned. The [example output](example_output.json) is an actual execution on [example input](example_input.json), selected from a released raw observation; the model is not required to agree with the true class. No target is passed to inference. Five additional [released-observation cases](example_cases.json), sampled across the true classes for coverage, record actual predictions without passing true labels into the model.
 
 [Scientific protocol and limitations](../reports/Model_Selection_and_Deployment.md) ? [Model provenance](../models/rf_e4/provenance.json)
+
+## Verified web runtime
+
+The Vercel application uses Python 3.14.10 with the same dependency pins and original model bytes. The CLI explicitly supports training/runtime Python 3.14.7 and independently parity-verified 3.14.8/3.14.10; no other versions are accepted. See [compatibility evidence](../web/Python31410_Compatibility.json) and [web setup](../web/README.md).
