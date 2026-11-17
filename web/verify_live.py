@@ -29,6 +29,12 @@ def check(base):
         assert actual['fault_category']==category
         assert 'confidence' not in actual and 'probabilities' not in actual
         checks.append({'fixture':case['case'],'predicted_class':actual['predicted_class'],'CLI_parity':True})
+    synthetic=[]
+    for case in json.loads((ROOT/'web/synthetic_test_cases.json').read_text()):
+        status,body,headers=request('/api/predict',case['input']);assert status==200,(status,body)
+        actual=json.loads(body);reference=predict(case['input'])
+        assert all(actual[k]==v for k,v in reference.items())
+        synthetic.append({'intent':case['intent'],'prediction':actual['predicted_class'],'CLI_parity':True})
     normal=cases[0]['input']
     invalid=[{},dict(normal,f_nv=0),dict(normal,idc1=True),dict(normal,idc2=-1),dict(normal,vdc1='300')]
     for record in invalid:
@@ -38,7 +44,7 @@ def check(base):
     status,body,headers=request('/api/predict',raw=b'x'*2049);assert status==413,status
     for asset in ['/assets/app.js','/assets/style.css','/assets/favicon.svg']:
         status,body,headers=request(asset);assert status==200,asset
-    return {'status':'PASS','url':base,'anonymous_public_access':True,'health':health,'original_model_CLI_parity':checks,'invalid_request_checks':9,'static_assets':'PASS','no_confidence_or_calibration_claims':True}
+    return {'status':'PASS','url':base,'anonymous_public_access':True,'health':health,'original_model_CLI_parity':checks,'synthetic_CLI_parity':synthetic,'invalid_request_checks':9,'static_assets':'PASS','no_confidence_or_calibration_claims':True}
 def main():
     parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--url',required=True);args=parser.parse_args()
     print(json.dumps(check(args.url),indent=2))

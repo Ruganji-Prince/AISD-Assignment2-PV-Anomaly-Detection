@@ -1,45 +1,18 @@
-const { chromium } = require('playwright');
-const assert = require('node:assert/strict');
-const fs = require('node:fs');
-const path = require('node:path');
-const base = (process.env.PV_APP_URL || 'http://127.0.0.1:8765').replace(/\/$/, '');
-const screenshots = process.env.PV_SCREENSHOT_DIR;
-(async () => {
- const browser = await chromium.launch({headless:true,args:base.startsWith('http://127.0.0.1')?['--no-proxy-server']:[]});
- const page = await browser.newPage({viewport:{width:1440,height:1100},deviceScaleFactor:1});
- const errors=[];page.on('pageerror',e=>errors.push(e.message));
- let response=await page.goto(base, {waitUntil:'domcontentloaded'});assert.equal(response.status(),200);
- await page.locator('#service-status').filter({hasText:'Model ready'}).waitFor({timeout:60000});
- assert.equal(await page.locator('h1').textContent(),'PV Anomaly Detection.');
- await page.locator('#example-select option').nth(5).waitFor({state:'attached'});
- const examples=await (await page.request.get(base+'/api/examples')).json();
- for (let k=0;k<5;k++) {
-  await page.selectOption('#example-select',String(k));await page.click('#load-example');
-  const example=examples.find(x=>x.id===k);
-  for (const [key,value] of Object.entries(example.measurements)) assert.equal(Number(await page.inputValue('#'+key)),value);
-  const pending=page.waitForResponse(r=>r.url().endsWith('/api/predict')&&r.request().method()==='POST');
-  await page.click('#predict-button');const prediction=await pending;
-  assert.equal(prediction.status(),200);const data=await prediction.json();assert.equal(data.predicted_class,k);
-  await page.waitForFunction(k=>document.getElementById('predicted-class').textContent===String(k)&&!document.getElementById('result-content').hidden,k);
-  assert.equal(await page.getAttribute('#result-card','data-category'), k===0?'normal':k===4?'environmental_condition':'hardware_fault');
- }
- assert.match(await page.locator('#category-badge').textContent(),/not hardware failure/);
- if(screenshots){fs.mkdirSync(screenshots,{recursive:true});await page.screenshot({path:path.join(screenshots,'desktop.png'),fullPage:true});}
- await page.click('#reset-button');
- assert.equal(await page.inputValue('#vdc1'),'');assert.equal(await page.locator('#result-content').isVisible(),false);
- let calls=0;const watch=r=>{if(r.url().endsWith('/api/predict')&&r.method()==='POST')calls++;};page.on('request',watch);
- await page.fill('#vdc1','-1');await page.fill('#vdc2','300');await page.fill('#idc1','1');await page.fill('#idc2','1');await page.click('#predict-button');
- assert.equal(await page.$eval('#vdc1',e=>e.validity.rangeUnderflow),true);assert.equal(calls,0);page.off('request',watch);
- await page.selectOption('#example-select','0');await page.click('#load-example');
- await page.route('**/api/predict',async route=>{await new Promise(resolve=>setTimeout(resolve,350));await route.fulfill({status:503,contentType:'application/json',body:JSON.stringify({detail:'The prediction service is unavailable. Please try again later.'})});});
- await page.click('#predict-button');await page.locator('#loading-spinner').waitFor({state:'visible'});assert.equal(await page.isDisabled('#predict-button'),true);
- await page.locator('#form-error').waitFor({state:'visible'});assert.match(await page.locator('#form-error').textContent(),/unavailable/);assert.equal(await page.locator('#result-content').isVisible(),false);await page.unroute('**/api/predict');
- for (const width of [390,320]) {
-  await page.setViewportSize({width,height:844});await page.reload({waitUntil:'domcontentloaded'});
-  await page.selectOption('#example-select','4');await page.click('#load-example');await page.click('#predict-button');await page.locator('#predicted-label').filter({hasText:'Natural Building Shade'}).waitFor({timeout:60000});
-  assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>window.innerWidth),false,'horizontal overflow at '+width);
-  if(screenshots)await page.screenshot({path:path.join(screenshots,'mobile-'+width+'.png'),fullPage:true});
- }
- assert.deepEqual(errors,[]);
- await browser.close();console.log(JSON.stringify({status:'PASS',url:base,real_classes_tested:[0,1,2,3,4],desktop:1440,mobile_widths:[390,320],reset:true,loading:true,api_error_display:true,invalid_input_blocked:true,page_errors:errors},null,2));
-})().catch(error=>{console.error(error);process.exit(1);});
+const {chromium}=require('playwright');const assert=require('node:assert/strict');const fs=require('node:fs');const path=require('node:path');
+const base=(process.env.PV_APP_URL||'http://127.0.0.1:8765').replace(/\/$/,'');const shots=process.env.PV_SCREENSHOT_DIR;
+(async()=>{const browser=await chromium.launch({headless:true,args:base.startsWith('http://127.0.0.1')?['--no-proxy-server']:[]});const page=await browser.newPage({viewport:{width:1366,height:768}});const errors=[];page.on('pageerror',e=>errors.push(e.message));
+let response=await page.goto(base,{waitUntil:'domcontentloaded'});assert.equal(response.status(),200);await page.locator('#service-status').filter({hasText:'Model ready'}).waitFor({timeout:90000});
+const content=await page.evaluate(async()=>{const e=await import('/assets/explanations.js');return {labels:e.labels,explanations:e.explanations};});
+const generatorChecks=await page.evaluate(async()=>{const {presets,generateScenario}=await import('/assets/scenarios.js');for(let k=0;k<5;k++){if(JSON.stringify(generateScenario(k,42))!==JSON.stringify(generateScenario(k,42)))return false;for(let seed=0;seed<50;seed++){const values=generateScenario(k,seed);for(const [key,value] of Object.entries(values)){const original=presets[k][key],limit=key.startsWith('v')?.015:.04;if(!Number.isFinite(value)||value<0||Math.abs(value-original)>original*limit+.0001)return false;}}}return generateScenario(3,42).idc1===0;});assert.equal(generatorChecks,true);
+let syntheticPredictions=[],mismatches=0;
+async function predict(){const pending=page.waitForResponse(r=>r.url().endsWith('/api/predict')&&r.request().method()==='POST');await page.click('#predict-button');const response=await pending;assert.equal(response.status(),200);const result=await response.json();await page.waitForFunction(k=>document.getElementById('predicted-label').textContent.length>0&&!document.getElementById('result-content').hidden,result.predicted_class);assert.equal(await page.textContent('#predicted-label'),content.labels[result.predicted_class]);assert.equal(await page.textContent('#meaning-text'),content.explanations[result.predicted_class].meaning);assert.equal(await page.textContent('#cause-text'),content.explanations[result.predicted_class].cause);assert.equal(await page.textContent('#check-text'),content.explanations[result.predicted_class].check);return result;}
+for(let k=0;k<5;k++){await page.selectOption('#example-select',String(k));assert.equal(await page.textContent('#source-badge'),'Synthetic Demonstration Data');const inputs=await page.evaluate(()=>Object.fromEntries(['vdc1','vdc2','idc1','idc2'].map(k=>[k,Number(document.getElementById(k).value)])));const result=await predict();syntheticPredictions.push({intent:k,input:inputs,predicted_class:result.predicted_class});const mismatch=result.predicted_class!==k;if(mismatch)mismatches++;assert.equal(await page.locator('#scenario-comparison').evaluate(e=>e.classList.contains('mismatch')),mismatch);}
+const before=await page.inputValue('#vdc1');await page.click('#load-example');assert.notEqual(await page.inputValue('#vdc1'),before);assert.equal(await page.locator('#result-content').isVisible(),false);
+await page.click('#current-tab');assert.equal(await page.textContent('#axis-label'),'Current (A)');await page.hover('#bar1');await page.locator('#chart-tooltip').waitFor({state:'visible'});assert.match(await page.textContent('#chart-tooltip'),/idc1/);await page.click('#voltage-tab');assert.equal(await page.textContent('#axis-label'),'Voltage (V)');
+await page.click('#dataset-tab');await page.waitForFunction(()=>!document.getElementById('dataset-tab').disabled);for(let k=0;k<5;k++){await page.selectOption('#example-select',String(k));assert.equal(await page.textContent('#source-badge'),'Historical Dataset Example');const result=await predict();assert.equal(result.predicted_class,k);}
+for(const size of [{width:1366,height:768},{width:1920,height:1080}]){await page.setViewportSize(size);for(let k=0;k<5;k++){await page.selectOption('#example-select',String(k));await predict();const overflow=await page.evaluate(()=>({height:document.documentElement.scrollHeight,width:document.documentElement.scrollWidth,viewportHeight:innerHeight,viewportWidth:innerWidth}));assert.ok(overflow.height<=size.height,JSON.stringify(overflow));assert.ok(overflow.width<=size.width,JSON.stringify(overflow));for(const id of ['predict-button','meaning-text','cause-text','check-text']){const bounds=await page.locator('#'+id).boundingBox();const container=await page.locator(id==='predict-button'?'.measurements':'#result-card').boundingBox();assert.ok(bounds.y+bounds.height<=container.y+container.height,`clipped ${id} at ${size.width}`);assert.ok(bounds.y+bounds.height<=size.height,`below viewport: ${id}`);}}
+if(shots){fs.mkdirSync(shots,{recursive:true});await page.screenshot({path:path.join(shots,'desktop-'+size.width+'.png'),fullPage:true});}}
+await page.click('#reset-button');assert.equal(await page.inputValue('#vdc1'),'');assert.equal(await page.locator('#result-content').isVisible(),false);await page.fill('#vdc1','-1');await page.fill('#vdc2','300');await page.fill('#idc1','1');await page.fill('#idc2','1');await page.click('#predict-button');assert.equal(await page.$eval('#vdc1',e=>e.validity.rangeUnderflow),true);
+await page.click('#synthetic-tab');await page.route('**/api/predict',async route=>{await new Promise(r=>setTimeout(r,400));await route.fulfill({status:503,contentType:'application/json',body:JSON.stringify({detail:'Prediction service unavailable.'})});});await page.click('#predict-button');await page.locator('#loading-spinner').waitFor({state:'visible'});assert.equal(await page.isDisabled('#example-select'),true);await page.locator('#form-error').waitFor({state:'visible'});assert.equal(await page.locator('#result-content').isVisible(),false);await page.unroute('**/api/predict');
+for(const width of [390,320]){await page.setViewportSize({width,height:844});await page.click('#dataset-tab');await page.selectOption('#example-select','4');await predict();assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);if(shots)await page.screenshot({path:path.join(shots,'mobile-'+width+'.png'),fullPage:true});}
+assert.deepEqual(errors,[]);await browser.close();console.log(JSON.stringify({status:'PASS',url:base,desktop_viewports:['1366x768','1920x1080'],desktop_single_screen:true,mobile_widths:[390,320],synthetic_predictions:syntheticPredictions,mismatch_count:mismatches,dataset_classes:[0,1,2,3,4],generator_bounds_and_determinism:true,actual_class_explanations:true,chart_tabs_and_tooltips:true,loading_reset_errors:true,page_errors:errors},null,2));})().catch(e=>{console.error(e);process.exit(1)});

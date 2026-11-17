@@ -1,21 +1,78 @@
 {
   "status": "PASS",
   "url": "https://pv-anomaly-detection-prince-r-k.vercel.app",
-  "real_classes_tested": [
+  "desktop_viewports": [
+    "1366x768",
+    "1920x1080"
+  ],
+  "desktop_single_screen": true,
+  "mobile_widths": [
+    390,
+    320
+  ],
+  "synthetic_predictions": [
+    {
+      "intent": 0,
+      "input": {
+        "vdc1": 327.5482,
+        "vdc2": 327.8977,
+        "idc1": 6.5402,
+        "idc2": 6.2579
+      },
+      "predicted_class": 4
+    },
+    {
+      "intent": 1,
+      "input": {
+        "vdc1": 178.6627,
+        "vdc2": 325.9224,
+        "idc1": 8.2507,
+        "idc2": 6.2579
+      },
+      "predicted_class": 4
+    },
+    {
+      "intent": 2,
+      "input": {
+        "vdc1": 302.734,
+        "vdc2": 325.9224,
+        "idc1": 4.4272,
+        "idc2": 6.2579
+      },
+      "predicted_class": 4
+    },
+    {
+      "intent": 3,
+      "input": {
+        "vdc1": 337.4739,
+        "vdc2": 327.8977,
+        "idc1": 0,
+        "idc2": 6.2579
+      },
+      "predicted_class": 4
+    },
+    {
+      "intent": 4,
+      "input": {
+        "vdc1": 312.6597,
+        "vdc2": 325.9224,
+        "idc1": 2.0124,
+        "idc2": 6.2579
+      },
+      "predicted_class": 4
+    }
+  ],
+  "mismatch_count": 4,
+  "dataset_classes": [
     0,
     1,
     2,
     3,
     4
   ],
-  "desktop": 1440,
-  "mobile_widths": [
-    390,
-    320
-  ],
-  "reset": true,
-  "loading": true,
-  "api_error_display": true,
-  "invalid_input_blocked": true,
+  "generator_bounds_and_determinism": true,
+  "actual_class_explanations": true,
+  "chart_tabs_and_tooltips": true,
+  "loading_reset_errors": true,
   "page_errors": []
 }

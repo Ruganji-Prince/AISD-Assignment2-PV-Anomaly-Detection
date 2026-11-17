@@ -23,6 +23,15 @@ class APITests(unittest.TestCase):
                 expected='normal' if case['case']==0 else 'environmental_condition' if case['case']==4 else 'hardware_fault'
                 self.assertEqual(actual['fault_category'],expected)
                 self.assertNotIn('confidence',actual);self.assertNotIn('probabilities',actual)
+    def test_synthetic_inputs_match_original_cli(self):
+        cases=json.loads((ROOT/'web/synthetic_test_cases.json').read_text())
+        self.assertEqual(len(cases),5)
+        for case in cases:
+            with self.subTest(intent=case['intent']):
+                response=self.client.post('/api/predict',json=case['input'])
+                self.assertEqual(response.status_code,200)
+                actual=response.json();reference=predict(case['input'])
+                for key,value in reference.items():self.assertEqual(actual[key],value)
     def test_health_verifies_model(self):
         response=self.client.get('/api/health');self.assertEqual(response.status_code,200)
         self.assertEqual(response.json()['model_sha256'],SHA256)

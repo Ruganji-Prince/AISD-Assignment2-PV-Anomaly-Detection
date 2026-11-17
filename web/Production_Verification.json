@@ -34,6 +34,33 @@
       "CLI_parity": true
     }
   ],
+  "synthetic_CLI_parity": [
+    {
+      "intent": 0,
+      "prediction": 4,
+      "CLI_parity": true
+    },
+    {
+      "intent": 1,
+      "prediction": 4,
+      "CLI_parity": true
+    },
+    {
+      "intent": 2,
+      "prediction": 4,
+      "CLI_parity": true
+    },
+    {
+      "intent": 3,
+      "prediction": 4,
+      "CLI_parity": true
+    },
+    {
+      "intent": 4,
+      "prediction": 4,
+      "CLI_parity": true
+    }
+  ],
   "invalid_request_checks": 9,
   "static_assets": "PASS",
   "no_confidence_or_calibration_claims": true

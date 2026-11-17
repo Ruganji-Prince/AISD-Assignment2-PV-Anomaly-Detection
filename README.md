@@ -119,3 +119,9 @@ Anonymous live API and browser checks pass for all five existing examples, inclu
 - [Runtime compatibility evidence](web/Python31410_Compatibility.json) and [deployment verification summary](web/Verification.json)
 
 The application runs on the Vercel Hobby plan. Hosting the research demonstration does not establish production protection-system reliability, calibration, prospective generalization or operational monitoring.
+
+### Interactive dashboard
+
+The web application now presents measurements, synthetic/dataset scenarios, animated voltage/current comparisons and actual-class explanations in a single desktop screen. Synthetic inputs are clearly labeled, generated independently of the model, and separated from historical observations. Selected scenario intent can differ from the real model output; that difference is shown explicitly. No model probabilities or feature contributions are fabricated. See the [dashboard design and scenario methodology](web/README.md).
+
+[Preview layout verification](web/Redesign_Preview_Verification.json) | [Current production browser verification](web/Browser_Verification.json)
