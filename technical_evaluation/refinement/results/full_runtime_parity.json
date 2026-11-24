@@ -1,0 +1,25 @@
+{
+  "status": "VERIFIED",
+  "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+  "results": [
+    {
+      "partition": "TRAIN",
+      "N": 1006129,
+      "class_mismatches": 0,
+      "maximum_absolute_probability_difference": 3.3306690738754696e-16
+    },
+    {
+      "partition": "VALIDATION",
+      "N": 116977,
+      "class_mismatches": 0,
+      "maximum_absolute_probability_difference": 3.3306690738754696e-16
+    },
+    {
+      "partition": "TEST",
+      "N": 146461,
+      "class_mismatches": 0,
+      "maximum_absolute_probability_difference": 3.3306690738754696e-16
+    }
+  ],
+  "scope": "Runtime equivalence after TRAIN-only optimization choice; no fit, new scientific score, calibration or threshold selection."
+}

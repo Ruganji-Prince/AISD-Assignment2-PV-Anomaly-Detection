@@ -1,0 +1,5 @@
+{
+  "scope": "After the TRAIN-only runtime backend choice, verify class/probability parity across complete frozen TRAIN/VALIDATION/TEST; no fitting or method/threshold reselection.",
+  "criterion": "All argmax classes identical and max absolute probability delta<=1e-12.",
+  "failure_policy": "Report mismatch and restore original execution backend, not tune scientific decisions."
+}

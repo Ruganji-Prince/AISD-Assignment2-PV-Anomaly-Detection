@@ -1,0 +1,7 @@
+{
+  "URL": "https://pv-anomaly-detection-nrsq3ew6t-prince-r-k.vercel.app",
+  "deployment_id": "dpl_2anjeNxxzLEUBoniKT69S9vCd7Te",
+  "status": "READY",
+  "environment": "preview",
+  "note": "CLI returned structured JSON; parsing corrected without redeploying."
+}

@@ -1,0 +1,24 @@
+{
+  "controlled_rerun": [
+    {
+      "candidate": "LR__E5",
+      "F1": 0.8713292965606202,
+      "archived_F1": 0.8713292965606202,
+      "delta": 0.0
+    },
+    {
+      "candidate": "LR__F6",
+      "F1": 0.8938698040831554,
+      "archived_F1": 0.8938698040831554,
+      "delta": 0.0
+    },
+    {
+      "candidate": "LR__S4",
+      "F1": 0.15912450352411783,
+      "archived_F1": 0.15912450352411783,
+      "delta": 0.0
+    }
+  ],
+  "reason": "Original archived fitting used threadpool_limits(2); initial public reconstruction entry point omitted this. Restored documented runtime control, no hyperparameter tuning.",
+  "first_pass_preserved": true
+}

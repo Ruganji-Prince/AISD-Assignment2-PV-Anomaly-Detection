@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "URL": "https://pv-anomaly-detection-prince-r-k.vercel.app",
+  "executed_after_promotion": true,
+  "viewports": [
+    "1366x768",
+    "1920x1080",
+    "820x1180",
+    "390x844",
+    "320x844"
+  ],
+  "checks": [
+    "One visible step",
+    "Forward/back/direct/keyboard/reduced-motion navigation",
+    "No reload; shared state preserved",
+    "All five historical class outputs",
+    "Unchanged five synthetic presets all4",
+    "No page errors; correct loading/validation/error paths"
+  ],
+  "source": "Actual existing smoke process exited0; screenshots kept outside Git."
+}

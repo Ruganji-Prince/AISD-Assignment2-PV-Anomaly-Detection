@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "protected_prior_files": 293,
+  "prior_hash_mismatches": [],
+  "original_model_SHA256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+  "near_duplicate_queries": 4,
+  "reconstructed_candidates": 21,
+  "empirical_scenarios": 250,
+  "relative_links": {
+    "relative_links_checked": 363,
+    "failures": []
+  },
+  "mandatory_checks": {
+    "repository_README": "Local files/links and public URLs documented; final publication independently checked.",
+    "leakage": "No identified unaddressed target/preprocessing overlap; close feature vectors and historical TEST remain disclosed.",
+    "cloud_and_secrets": "Use separately recorded live/secret receipts; this command makes no network calls."
+  },
+  "unit_tests": 30,
+  "all_tests_passed_in_final_clean_environment": true,
+  "clean_environment_code_SHA256": {
+    "web/app.py": "e58dc090b920c891c47527d46e0f02e36daf4ffdfb4e6047cff3f61710ffa266",
+    "src/inference/cli.py": "3e12eadc385d065032fd772dffd319c9e9c77f79107ece1b1b99bdb680a8bf68",
+    "pyproject.toml": "74acb8d749becc74f959c09d7d653a12d91edb1763369e589310f5f4d9375d5b",
+    "uv.lock": "050b12afbb047ae133df802c8183e1853ea33790544150c9b6557295157960ba",
+    "web/requirements.lock": "66df0e12b40bf584ba26c434c6e156514241620ee951131dcd76c04caf08521f",
+    "technical_evaluation/refinement/tests.py": "efb3c9b027e2e67a6f053e96113734b2c9d0d4a66194bac3dacdacb56fec59fd"
+  },
+  "final_preview_API": "PASS",
+  "final_preview_five_viewport_browser": "PASS",
+  "both_final_Linux_builds": "PASS",
+  "full_runtime_parity_N": 1269567,
+  "full_runtime_class_mismatches": 0,
+  "secret_scan": [],
+  "production_benchmark_successes": 42,
+  "unresolved": [
+    "HistoricalTEST/independent data limitations",
+    "Conditional calibration/uncertainty",
+    "10ms complete-path/10MiB artifact targets",
+    "Distributed rate limit not activated",
+    "Full platform cold startup/billedCPU not measured"
+  ]
+}

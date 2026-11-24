@@ -1,0 +1,92 @@
+{
+  "status": "VERIFIED",
+  "exact_query": true,
+  "TRAIN_scaler_only": true,
+  "results": [
+    {
+      "features": [
+        "vdc1",
+        "vdc2",
+        "idc1",
+        "idc2"
+      ],
+      "partition": "VALIDATION",
+      "TRAIN_reference_N": 1006129,
+      "query_N": 116977,
+      "criterion": "Euclidean TRAIN-standardized distance<=0.001",
+      "near_N": 37313,
+      "zero_distance_N": 0,
+      "min": 3.7217279137270433e-06,
+      "q01": 8.020903351190585e-05,
+      "median": 0.007023433803716056,
+      "max": 0.26862620400120707,
+      "seconds_since_tree_build": 0.15855829999782145,
+      "query_index_digest": "8a7727a6679eb9bb52e6e40c689e4f4b054b9efe8f4cea32e4229af1b4be2328"
+    },
+    {
+      "features": [
+        "vdc1",
+        "vdc2",
+        "idc1",
+        "idc2"
+      ],
+      "partition": "TEST",
+      "TRAIN_reference_N": 1006129,
+      "query_N": 146461,
+      "criterion": "Euclidean TRAIN-standardized distance<=0.001",
+      "near_N": 62917,
+      "zero_distance_N": 0,
+      "min": 7.284214003089318e-07,
+      "q01": 3.43100678453593e-05,
+      "median": 0.005000212125410982,
+      "max": 0.7910410004612634,
+      "seconds_since_tree_build": 0.37062250007875264,
+      "query_index_digest": "e5dabd8b8c3ee5220c9ef21da1dbdfdbdd9aad99dfcc4c4353e698eebc753866"
+    },
+    {
+      "features": [
+        "vdc1",
+        "vdc2",
+        "idc1",
+        "idc2",
+        "irr",
+        "pvt"
+      ],
+      "partition": "VALIDATION",
+      "TRAIN_reference_N": 1006129,
+      "query_N": 116977,
+      "criterion": "Euclidean TRAIN-standardized distance<=0.001",
+      "near_N": 1290,
+      "zero_distance_N": 0,
+      "min": 0.0002645874051348111,
+      "q01": 0.000968645924358674,
+      "median": 0.0382799099178784,
+      "max": 0.7589752580820782,
+      "seconds_since_tree_build": 0.9629410000052303,
+      "query_index_digest": "8a7727a6679eb9bb52e6e40c689e4f4b054b9efe8f4cea32e4229af1b4be2328"
+    },
+    {
+      "features": [
+        "vdc1",
+        "vdc2",
+        "idc1",
+        "idc2",
+        "irr",
+        "pvt"
+      ],
+      "partition": "TEST",
+      "TRAIN_reference_N": 1006129,
+      "query_N": 146461,
+      "criterion": "Euclidean TRAIN-standardized distance<=0.001",
+      "near_N": 1125,
+      "zero_distance_N": 0,
+      "min": 0.0001619756984569329,
+      "q01": 0.001106696702775874,
+      "median": 0.02858891143270827,
+      "max": 0.8321126042016319,
+      "seconds_since_tree_build": 2.740806399844587,
+      "query_index_digest": "e5dabd8b8c3ee5220c9ef21da1dbdfdbdd9aad99dfcc4c4353e698eebc753866"
+    }
+  ],
+  "interpretation": "Similarity is not proof of target leakage; naturally repeated operating regimes may resemble each other. No rows removed or settings selected. No independent-session claim."
+}

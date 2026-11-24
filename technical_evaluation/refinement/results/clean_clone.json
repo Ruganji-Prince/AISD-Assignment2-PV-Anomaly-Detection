@@ -1,0 +1,92 @@
+{
+  "status": "VERIFIED",
+  "method": "Fresh no-hardlinks baseline clone plus explicit reviewed changed/new file overlay, newly installed pinned environment. Notebook executes only in scratch.",
+  "baseline_commit": "c7f922133e4301f66a95612c46bc1bdea14f2ef2",
+  "overlay_files": {
+    ".github/workflows/container-verification.yml": "46a8f12fdcb3352ed8c2f5a95b1684a0d0e8dadd4f9353ecead58651240599c4",
+    ".vercelignore": "55b63e8ca089357f0a3bff58a94d498d0915f6364a6024b1bd4c96bcd9382a9f",
+    "Dockerfile": "7e901eb463d1b6b2abcef2a08ff1db352dd6384fda252b8e3e6d8b33a6f8c09f",
+    "README.md": "980a8de127766e3e97d3943de0ac326f8e9ea83c0ef4fcf380e202a3d260f71d",
+    "pyproject.toml": "74acb8d749becc74f959c09d7d653a12d91edb1763369e589310f5f4d9375d5b",
+    "src/inference/cli.py": "3e12eadc385d065032fd772dffd319c9e9c77f79107ece1b1b99bdb680a8bf68",
+    "technical_evaluation/audit.py": "f359a76008620226c53ef8782971524539634955c6a5a0aed1148f787ce426d1",
+    "technical_evaluation/defense/Expected_Questions_and_Answers.md": "2049ec354bb96b910738c536bca538db61593fa2dad3e2c1b34eaaa3f957ccbd",
+    "technical_evaluation/defense/Final_Verification_Checklist.md": "665dd8d77df06c8448893f699b1cce9be870d044e6ab5d95a6fa504d4fe8150a",
+    "technical_evaluation/defense/Live_Demo_Checklist.md": "7e1c2e44029ec568bdb16531111b161f2e9e0dbd9c2bb1007087a6efce7a7ef2",
+    "technical_evaluation/defense/Professor_Quick_Start.md": "d46a101fb3897b34896a7f6944f3791ddc65b8d7b0106434cda65f29a2f8f0d7",
+    "technical_evaluation/defense/Rubric_Evidence_Index.md": "c5c963832319b7a3e319ae9e8303e481bfb86983725a83c6b08f7b0277ddc187",
+    "technical_evaluation/defense/Technical_Defense_Guide.md": "8849391e6a59225c7896d39139af50256b127af0998d08ea0358cbc03f283511",
+    "technical_evaluation/reconstruct.py": "91bcc3dc10c22812bdaff2b063f12e762fa39f21d6e0168c97a5ee87bc4ea0ea",
+    "technical_evaluation/refinement/Baseline.json": "eab89a448eb26135b531e36177de6c9393727124dfd206b67386806cf45587f7",
+    "technical_evaluation/refinement/Final_Report.md": "3fb0e44529cd307960b08c1a5928f6b193242dc0a0ba47740871b043c64b7312",
+    "technical_evaluation/refinement/Protocol.json": "9b5b9fa86aeeb5eae45d677dfdc16f592f86db53fed15fa605beac3c848dd767",
+    "technical_evaluation/refinement/Protocol_Freeze.json": "47a3eeafee802da04bfaf82b751caed62dab637f8c9a54d26edaab661a9326cc",
+    "technical_evaluation/refinement/Rate_Limit_Review.json": "b613190f18a4eab7ef6ce5adfdbfb10804c634fb0fafe63e9ceb19296a066ccb",
+    "technical_evaluation/refinement/Runtime_Changes.json": "decfaad26a944e59610bd7d73632b8896af88628ea1a2689b1a5c2eed72d7002",
+    "technical_evaluation/refinement/Runtime_Compatibility_Protocol.json": "62e999b4514cdfb932abfd1891c463c7b95e314e0d247020d53408a2ca0c8819",
+    "technical_evaluation/refinement/__init__.py": "0c2c3f20bcb6ccae0674c09e9573f314f8935daac9f9a1aeb21a98ab7eb83d3c",
+    "technical_evaluation/refinement/cloud_benchmark.py": "0bfc4e6de51df3fa5c2d526a42276a8ffb9390e721776c5d1674be6f02246619",
+    "technical_evaluation/refinement/container_verify.py": "68fba90893a7ed8a2eb31bd3023d8aa261ce5eb7439bc3cf0c0ac67ed9f991ce",
+    "technical_evaluation/refinement/demo.py": "15ff0e4d36f1fa0dc157ba5bd5bf8d57efe5c34176a00dcbe0f6b32484da88c1",
+    "technical_evaluation/refinement/experiments.py": "c1222d6ab0a945feb4966fac7f6e063c238aedf71b732f5537276025487d7643",
+    "technical_evaluation/refinement/figures/reproduced_reliability.png": "3ff98fc7b80809fc7bb58a59d25e30dd4be017baf1a8c3935130b9a9aaac77be",
+    "technical_evaluation/refinement/fixtures/runtime_probability_reference.json": "ed85572201d2e5cbf2a90b9c234f797a8067879ddb6351a83176aa27793525ec",
+    "technical_evaluation/refinement/reproduce.py": "9528507f402fdd5c8c4d60b7808975770e6e161ea0165ce0be722560c4493245",
+    "technical_evaluation/refinement/runtime.py": "370432baa98fa12763c616c5755d9a0525e4cb2825e84a03563c12d2d25e482e",
+    "technical_evaluation/refinement/tests.py": "efb3c9b027e2e67a6f053e96113734b2c9d0d4a66194bac3dacdacb56fec59fd",
+    "technical_evaluation/refinement/verify.py": "d86068752c9ac6d07118493d0777f8d596451c0507c5d63edcfbaba69410fd99",
+    "uv.lock": "050b12afbb047ae133df802c8183e1853ea33790544150c9b6557295157960ba",
+    "vercel.json": "338c99c367bae2a089ccc15962a21f0c24b5140fb17505a6caad6b7f9831f79d",
+    "web/app.py": "06de8e48d31fc91c91e89b49d9ca6e76e336636a48b43c345303742084344289",
+    "web/requirements.lock": "66df0e12b40bf584ba26c434c6e156514241620ee951131dcd76c04caf08521f",
+    "web/tests/test_api.py": "d46aabaed49450ad4908cefec16c2d691e394878c7b84bc6425ced2be1c558d0"
+  },
+  "dependency_install_and_check": "PASS",
+  "checks": [
+    {
+      "command": "python -B phase2_implementation/execute_preprocessing.py",
+      "exit_code": 0,
+      "elapsed_seconds": 21.52891799993813,
+      "stdout_tail": "Executing preprocessing cell 1\nExecuting preprocessing cell 2\nExecuting preprocessing cell 3\nExecuting preprocessing cell 4\nExecuting preprocessing cell 5\nExecuting preprocessing cell 6\nExecuting preprocessing cell 7\nExecuting preprocessing cell 8\nExecuting preprocessing cell 9\nExecuting preprocessing cell 10\nExecuting preprocessing cell 11\nExecuting preprocessing cell 12\nExecuting preprocessing cell 13\nCompleted 13 cells; no execution errors.\n",
+      "stderr_tail": ""
+    },
+    {
+      "command": "python -B -m unittest technical_evaluation.tests technical_evaluation.refinement.tests -v",
+      "exit_code": 0,
+      "elapsed_seconds": 5.972347999922931,
+      "stdout_tail": "",
+      "stderr_tail": "<clean-environment>\\Lib\\site-packages\\fastapi\\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n  from starlette.testclient import TestClient as TestClient  # noqa\ntest_all_abstentions_are_misses (technical_evaluation.tests.AuditTests.test_all_abstentions_are_misses) ... ok\ntest_calibration_support_guard (technical_evaluation.tests.AuditTests.test_calibration_support_guard) ... ok\ntest_clipping_uses_fit_only (technical_evaluation.tests.AuditTests.test_clipping_uses_fit_only) ... ok\ntest_fit_evaluation_overlap_rejected (technical_evaluation.tests.AuditTests.test_fit_evaluation_overlap_rejected) ... ok\ntest_frozen_protocol_and_original_model (technical_evaluation.tests.AuditTests.test_frozen_protocol_and_original_model) ... ok\ntest_missing_class_metric_undefined (technical_evaluation.tests.AuditTests.test_missing_class_metric_undefined) ... ok\ntest_probability_definition (technical_evaluation.tests.AuditTests.test_probability_definition) ... ok\ntest_api_timings_do_not_expose_confidence (technical_evaluation.refinement.tests.RefinementTests.test_api_timings_do_not_expose_confidence) ... ok\ntest_body_deadline (technical_evaluation.refinement.tests.RefinementTests.test_body_deadline) ... ok\ntest_local_capacity_is_bounded (technical_evaluation.refinement.tests.RefinementTests.test_local_capacity_is_bounded) ... ok\ntest_model_verification_failure_is_unavailable (technical_evaluation.refinement.tests.RefinementTests.test_model_verification_failure_is_unavailable) ... Original model inference unavailable; no prediction returned.\nok\ntest_probability_maps_normalize (technical_evaluation.refinement.tests.RefinementTests.test_probability_maps_normalize) ... ok\ntest_response_deadline (technical_evaluation.refinement.tests.RefinementTests.test_response_deadline) ... ok\ntest_timing_and_sequential_preserve_original (technical_evaluation.refinement.tests.RefinementTests.test_timing_and_sequential_preserve_original) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 0.593s\n\nOK\n"
+    },
+    {
+      "command": "python -B -m unittest discover -s tests -v",
+      "exit_code": 0,
+      "elapsed_seconds": 4.6412402000278234,
+      "stdout_tail": "",
+      "stderr_tail": "test_actual_example_and_pipeline_parity (test_inference.InferenceTests.test_actual_example_and_pipeline_parity) ... ok\ntest_hash_rejection_before_pickle (test_inference.InferenceTests.test_hash_rejection_before_pickle) ... ok\ntest_order_independent_input (test_inference.InferenceTests.test_order_independent_input) ... ok\ntest_released_observation_examples (test_inference.InferenceTests.test_released_observation_examples) ... ok\ntest_schema_rejects_invalid_inputs (test_inference.InferenceTests.test_schema_rejects_invalid_inputs) ... ok\ntest_shade_is_not_hardware_failure (test_inference.InferenceTests.test_shade_is_not_hardware_failure) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 4.198s\n\nOK\n"
+    },
+    {
+      "command": "python -B -m unittest discover -s web/tests -v",
+      "exit_code": 0,
+      "elapsed_seconds": 5.939508999930695,
+      "stdout_tail": "",
+      "stderr_tail": "<clean-environment>\\Lib\\site-packages\\fastapi\\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n  from starlette.testclient import TestClient as TestClient  # noqa\ntest_health_verifies_model (test_api.APITests.test_health_verifies_model) ... ok\ntest_homepage_assets_and_security_headers (test_api.APITests.test_homepage_assets_and_security_headers) ... ok\ntest_model_failure_returns_no_prediction_or_private_details (test_api.APITests.test_model_failure_returns_no_prediction_or_private_details) ... Original fitted model failed readiness verification.\nOriginal model inference unavailable; no prediction returned.\nok\ntest_original_cli_parity_for_all_five_classes (test_api.APITests.test_original_cli_parity_for_all_five_classes) ... ok\ntest_outside_observed_range_is_warned_not_clipped (test_api.APITests.test_outside_observed_range_is_warned_not_clipped) ... ok\ntest_post_is_required (test_api.APITests.test_post_is_required) ... ok\ntest_rejects_malformed_nonfinite_duplicate_and_oversize (test_api.APITests.test_rejects_malformed_nonfinite_duplicate_and_oversize) ... ok\ntest_rejects_missing_extra_non_numeric_and_negative (test_api.APITests.test_rejects_missing_extra_non_numeric_and_negative) ... ok\ntest_synthetic_inputs_match_original_cli (test_api.APITests.test_synthetic_inputs_match_original_cli) ... ok\ntest_unverified_python_patch_is_rejected (test_api.APITests.test_unverified_python_patch_is_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 4.263s\n\nOK\n"
+    },
+    {
+      "command": "python -B -m src.evaluation.verify_recovery",
+      "exit_code": 0,
+      "elapsed_seconds": 8.68261030013673,
+      "stdout_tail": "{\n  \"status\": \"PASS\",\n  \"checked_models\": [\n    \"RF__E4\"\n  ],\n  \"no_fitting_or_threshold_search\": true,\n  \"legacy_test_exposure\": true,\n  \"RF_AP_rank_tie_tolerance\": 1e-07\n}\n",
+      "stderr_tail": ""
+    }
+  ],
+  "unit_tests": 30,
+  "preprocessing_cells": 13,
+  "local_API": {
+    "status": "VERIFIED",
+    "actual_uvicorn_process": true,
+    "five_cases_pass": true,
+    "timing_header": "body_validate;dur=0.1622, init;dur=0.0000, validation;dur=0.0048, frame;dur=0.1599, preprocessing;dur=2.8040, forest;dur=3.9423, server;dur=7.6841"
+  },
+  "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+  "source_raw_unchanged": true
+}

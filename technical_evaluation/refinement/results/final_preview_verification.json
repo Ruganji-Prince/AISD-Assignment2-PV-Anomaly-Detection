@@ -1,0 +1,34 @@
+{
+  "status": "VERIFIED",
+  "URL": "https://pv-anomaly-detection-j2kbkbftn-prince-r-k.vercel.app",
+  "health": {
+    "status": "ready",
+    "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+    "python_version": "3.14.2"
+  },
+  "five_original_cases": [
+    {
+      "case": 0,
+      "class": 0
+    },
+    {
+      "case": 1,
+      "class": 1
+    },
+    {
+      "case": 2,
+      "class": 2
+    },
+    {
+      "case": 3,
+      "class": 3
+    },
+    {
+      "case": 4,
+      "class": 4
+    }
+  ],
+  "invalid_missing": 422,
+  "timing_headers": true,
+  "scope": "Final telemetry snapshot code; full earlier42-request profile remains a separately dated measurement."
+}

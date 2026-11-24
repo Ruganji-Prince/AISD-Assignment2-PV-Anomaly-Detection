@@ -1,0 +1,18 @@
+{
+  "status": "VERIFIED",
+  "python": "3.14.2",
+  "trusted_model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+  "TRAIN_probability_parity_N": 200,
+  "max_difference": 2.220446049250313e-16,
+  "five_original_fixtures_match": true,
+  "packages": {
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "lightgbm": "4.7.0",
+    "matplotlib": "3.11.2",
+    "joblib": "1.6.0"
+  },
+  "scope": "Independent trusted-hash unpickle/pipeline test before extending CLI runtime allowance; no model fit or mutation."
+}

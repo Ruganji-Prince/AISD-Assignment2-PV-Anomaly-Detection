@@ -5,16 +5,16 @@
 
 ## Technical evaluation - professor quick start
 
-The [final technical evaluation](technical_evaluation/README.md) contains the [rubric matrix](technical_evaluation/Rubric_Compliance_Matrix.md), [measured report](technical_evaluation/Technical_Evaluation_Report.md), [reproduction guide](technical_evaluation/Reproduction_Guide.md) and [remaining limitations](technical_evaluation/Limitations_and_Risks.md). Engineering self-assessment: **76/100 before, 88/100 after**, not an official grade. Original model, raw data, reports and four-step application are preserved. Historical TEST is retrospective; experimental calibration is not deployed.
+Start with the [Professor Quick Start](technical_evaluation/defense/Professor_Quick_Start.md), [Technical Defense Guide](technical_evaluation/defense/Technical_Defense_Guide.md), [43-requirement evidence index](technical_evaluation/defense/Rubric_Evidence_Index.md) and [current refinement report](technical_evaluation/refinement/Final_Report.md). The independent engineering mock assessment is **91/100**, compared with the previous88/100; this is not an official grade. The original dataset, fitted RF model, academic reports and four-step design are preserved.
 
 ```powershell
 uv venv --python 3.14.10 .venv
 uv pip install --python .venv -r technical_evaluation/requirements.txt
-.\.venv\Scripts\python.exe -B -m technical_evaluation.audit
+.\.venv\Scripts\python.exe -B -m technical_evaluation.refinement.verify
 .\.venv\Scripts\python.exe -m uvicorn web.app:app --host 127.0.0.1 --port 8000
 ```
 
-The default audit runs23 tests and checks protected hashes, split/calibration ledgers, confusion-derived metrics, original CLI examples and documentation links. Expensive training and cloud checks require explicit flags; Docker execution remains unverified.
+Linux: use `.venv/bin/python`. Quick verification runs30 tests without training, cloud calls or tracked-receipt rewrites. Separate full-science, local API, container and live-cloud commands are in the guide. Actual Linux container runs, full near-neighbor checks,21 public model reconstructions, calibrated-probability reproduction and bounded server/network profiling are evidenced. Historical TEST is retrospective; experimental calibration is not deployed. Original10ms/10MiB targets remain unchanged. See the [demo checklist](technical_evaluation/defense/Live_Demo_Checklist.md) and [questions/answers](technical_evaluation/defense/Expected_Questions_and_Answers.md).
 
 **Current milestone: Models, results and a public web inference application.** The completed Assignment 3 preprocessing workflow is retained below. Original archived LR, Random Forest and LightGBM models have been recovered and evaluated without refitting. The original four-channel RF pipeline is available through a public web application and the local CLI.
 
@@ -24,8 +24,8 @@ The default audit runs23 tests and checks protected hashes, split/calibration le
 
 | Property | Description |
 | --- | --- |
-| N × P | 1,373,798 × 7 |
-| Predictors | vdc1, vdc2 (V); idc1, idc2 (A); irr (W/m²); pvt (°C) |
+| N Ã— P | 1,373,798 Ã— 7 |
+| Predictors | vdc1, vdc2 (V); idc1, idc2 (A); irr (W/mÂ²); pvt (Â°C) |
 | Target | f_nv: 0 normal, 1 short circuit, 2 resistive degradation, 3 open circuit, 4 natural building shade |
 | Types | Six continuous measurements and one nominal target; integer labels are not ordinal or continuous |
 
@@ -37,17 +37,17 @@ Preview of the raw photovoltaic monitoring dataset. First ten observations in ex
 
 ## Data-quality findings
 
-The export has zero conventional missing cells and 1,373,798 complete rows. This does not diagnose MCAR/MAR/MNAR or prove uninterrupted monitoring. The 62 paired irr/pvt zeros remain suspicious observations, not confirmed missing values. One irradiance value is -0.0381 W/m²; the existing quality convention clamps -1 ≤ irr < 0 to zero. Valid negative Celsius observations remain unchanged. No automatic statistical outlier deletion or capping is used.
+The export has zero conventional missing cells and 1,373,798 complete rows. This does not diagnose MCAR/MAR/MNAR or prove uninterrupted monitoring. The 62 paired irr/pvt zeros remain suspicious observations, not confirmed missing values. One irradiance value is -0.0381 W/mÂ²; the existing quality convention clamps -1 â‰¤ irr < 0 to zero. Valid negative Celsius observations remain unchanged. No automatic statistical outlier deletion or capping is used.
 
-The irradiance-qualified subset irr ≥ 100 W/m² contains 515,958 observations and reproduces literature class counts exactly. This suggests a possible evaluation-population explanation, but the paper does not explicitly document that filtering operation. Low-irradiance rows are retained rather than deleted to force agreement.
+The irradiance-qualified subset irr â‰¥ 100 W/mÂ² contains 515,958 observations and reproduces literature class counts exactly. This suggests a possible evaluation-population explanation, but the paper does not explicitly document that filtering operation. Low-irradiance rows are retained rather than deleted to force agreement.
 
 ## Preprocessing workflow
 
-Immutable data → schema/quality audit → original ordered partitions → TRAIN-only median/scaling fit → transform validation/test → descriptive diagnostics and output-dimension checks. Paired zeros remain observed. Contingency median imputation and retained-channel indicators are preserved. StandardScaler, native-scale and physical-derived representations are demonstrated without fitting downstream predictors. Robust/MinMax scaling and PCA remain descriptive alternatives; no new transformation or sensor choice is selected.
+Immutable data â†’ schema/quality audit â†’ original ordered partitions â†’ TRAIN-only median/scaling fit â†’ transform validation/test â†’ descriptive diagnostics and output-dimension checks. Paired zeros remain observed. Contingency median imputation and retained-channel indicators are preserved. StandardScaler, native-scale and physical-derived representations are demonstrated without fitting downstream predictors. Robust/MinMax scaling and PCA remain descriptive alternatives; no new transformation or sensor choice is selected.
 
-TRAIN [0,1006129), VALIDATION [1056990,1173967), TEST [1227337,1373798) are retained, with 104,231 separator positions. Sixteen signal-defined blocks are not verified days, sessions or hours. Nominal 1 Hz acquisition, per-second electrical RMS values, one-second environmental averages and the study's 16-day duration do not reconstruct timestamps or uninterrupted spacing. CSV order is source-position order only. The separator remains irr < 100 W/m² for at least 3,600 consecutive source positions, not a verified hour. The reserved partition is not claimed to be historically unseen.
+TRAIN [0,1006129), VALIDATION [1056990,1173967), TEST [1227337,1373798) are retained, with 104,231 separator positions. Sixteen signal-defined blocks are not verified days, sessions or hours. Nominal 1 Hz acquisition, per-second electrical RMS values, one-second environmental averages and the study's 16-day duration do not reconstruct timestamps or uninterrupted spacing. CSV order is source-position order only. The separator remains irr < 100 W/mÂ² for at least 3,600 consecutive source positions, not a verified hour. The reserved partition is not claimed to be historically unseen.
 
-Five TRAIN predictor pairs have |r| ≥ 0.85; five VIF values exceed 10. Dependence does not justify automatic deletion. Nominal-target association uses a proportional 50,000-observation TRAIN MI sample; scatterplots use 20,000 TRAIN positions. Exploratory TRAIN-scaled PCA explains approximately 95.17% with two mathematical components; all six physical inputs are still required to calculate them.
+Five TRAIN predictor pairs have |r| â‰¥ 0.85; five VIF values exceed 10. Dependence does not justify automatic deletion. Nominal-target association uses a proportional 50,000-observation TRAIN MI sample; scatterplots use 20,000 TRAIN positions. Exploratory TRAIN-scaled PCA explains approximately 95.17% with two mathematical components; all six physical inputs are still required to calculate them.
 
 ## Deliverables and execution
 

@@ -1,0 +1,46 @@
+{
+  "previous_scores": [
+    18,
+    17,
+    18,
+    18,
+    17
+  ],
+  "updated_scores": [
+    18,
+    18,
+    18,
+    19,
+    18
+  ],
+  "previous_total": 88,
+  "updated_total": 91,
+  "type": "Independent conservative engineering mock evaluation, not official course grade",
+  "deductions": [
+    {
+      "rubric": 1,
+      "points": 2,
+      "reason": "Single-study physical validity and hypothetical stakeholder costs not field-validated."
+    },
+    {
+      "rubric": 2,
+      "points": 2,
+      "reason": "HistoricalTEST exposure, no verified timestamps/external sites and singleton rare-fault TRAIN block limit independence despite pipeline isolation."
+    },
+    {
+      "rubric": 3,
+      "points": 2,
+      "reason": "One-block calibration and assumption-sensitive grouped-OOF uncertainty cannot establish independent deployed performance."
+    },
+    {
+      "rubric": 4,
+      "points": 1,
+      "reason": "Controlled simulations and TRAIN-derived demonstrations do not replace field failures or independent synthetic validation."
+    },
+    {
+      "rubric": 5,
+      "points": 2,
+      "reason": "Whole-path10ms and model-size targets unmet;full platform cold-start/billedCPU unmeasured;distributed operational rate limit not deployed."
+    }
+  ]
+}

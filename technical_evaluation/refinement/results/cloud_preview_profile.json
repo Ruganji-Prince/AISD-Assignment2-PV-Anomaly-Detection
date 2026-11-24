@@ -1,0 +1,961 @@
+{
+  "URL": "https://pv-anomaly-detection-rbjp5ywwr-prince-r-k.vercel.app",
+  "UTC": "2026-11-24T08:17:59.515962+00:00",
+  "total_benchmark_requests": 42,
+  "network": "Client timezone Africa/Johannesburg; physical egress not geolocated.",
+  "measurements": "All values are wall-clock. Server timing ends at response headers, excludes network transmission and initial module/platform startup; never billedCPU.",
+  "phases": {
+    "sequential": {
+      "requests": 30,
+      "successes": 30,
+      "failure_rate": 0.0,
+      "all_network": {
+        "N": 30,
+        "mean_ms": 523.2800766903287,
+        "std_ms": 774.7180629847333,
+        "min_ms": 370.0536999385804,
+        "max_ms": 4624.796999851242,
+        "p50_ms": 379.72070008981973,
+        "p95_ms": 407.6385599561035,
+        "p99_ms": 3403.225649881646
+      },
+      "warm_success_network": {
+        "N": 29,
+        "mean_ms": 381.8484586502971,
+        "std_ms": 10.2277467374531,
+        "min_ms": 370.0536999385804,
+        "max_ms": 412.4819999560714,
+        "p50_ms": 379.6052001416683,
+        "p95_ms": 400.9576399810612,
+        "p99_ms": 409.4683039560914
+      },
+      "warm_server_components": {
+        "validation": {
+          "N": 29,
+          "mean_ms": 0.0039758620689655175,
+          "std_ms": 0.0011211139780254896,
+          "min_ms": 0.003,
+          "max_ms": 0.0073,
+          "p50_ms": 0.0035,
+          "p95_ms": 0.0062,
+          "p99_ms": 0.006991999999999999
+        },
+        "frame": {
+          "N": 29,
+          "mean_ms": 0.412651724137931,
+          "std_ms": 0.0713519377086448,
+          "min_ms": 0.3218,
+          "max_ms": 0.5766,
+          "p50_ms": 0.3933,
+          "p95_ms": 0.5423599999999998,
+          "p99_ms": 0.57296
+        },
+        "preprocessing": {
+          "N": 29,
+          "mean_ms": 6.248541379310344,
+          "std_ms": 0.9436081581269546,
+          "min_ms": 4.8099,
+          "max_ms": 9.1919,
+          "p50_ms": 6.1482,
+          "p95_ms": 7.5626999999999995,
+          "p99_ms": 8.752187999999999
+        },
+        "forest": {
+          "N": 29,
+          "mean_ms": 6.0787689655172406,
+          "std_ms": 0.6409459783918992,
+          "min_ms": 5.2719,
+          "max_ms": 8.0411,
+          "p50_ms": 5.9894,
+          "p95_ms": 7.341399999999999,
+          "p99_ms": 7.882591999999999
+        },
+        "server": {
+          "N": 29,
+          "mean_ms": 14.147344827586206,
+          "std_ms": 1.4198960926737376,
+          "min_ms": 12.2788,
+          "max_ms": 18.8017,
+          "p50_ms": 14.0408,
+          "p95_ms": 16.50622,
+          "p99_ms": 18.232908
+        },
+        "body_validate": {
+          "N": 29,
+          "mean_ms": 0.4056931034482758,
+          "std_ms": 0.0786855538158711,
+          "min_ms": 0.2544,
+          "max_ms": 0.643,
+          "p50_ms": 0.3865,
+          "p95_ms": 0.51366,
+          "p99_ms": 0.6074679999999999
+        }
+      }
+    },
+    "concurrency2": {
+      "requests": 12,
+      "successes": 12,
+      "failure_rate": 0.0,
+      "all_network": {
+        "N": 12,
+        "mean_ms": 433.05953334008035,
+        "std_ms": 77.2189157851453,
+        "min_ms": 366.21959996409714,
+        "max_ms": 571.0531999357045,
+        "p50_ms": 393.71460012625903,
+        "p95_ms": 566.2075899192132,
+        "p99_ms": 570.0840779324062
+      },
+      "warm_success_network": {
+        "N": 12,
+        "mean_ms": 433.05953334008035,
+        "std_ms": 77.2189157851453,
+        "min_ms": 366.21959996409714,
+        "max_ms": 571.0531999357045,
+        "p50_ms": 393.71460012625903,
+        "p95_ms": 566.2075899192132,
+        "p99_ms": 570.0840779324062
+      },
+      "warm_server_components": {
+        "validation": {
+          "N": 12,
+          "mean_ms": 0.0036333333333333335,
+          "std_ms": 0.0007240458716424148,
+          "min_ms": 0.003,
+          "max_ms": 0.0052,
+          "p50_ms": 0.0033,
+          "p95_ms": 0.004869999999999999,
+          "p99_ms": 0.0051340000000000005
+        },
+        "frame": {
+          "N": 12,
+          "mean_ms": 0.37704166666666666,
+          "std_ms": 0.05183655183420871,
+          "min_ms": 0.3256,
+          "max_ms": 0.4818,
+          "p50_ms": 0.3458,
+          "p95_ms": 0.46331999999999995,
+          "p99_ms": 0.47810400000000003
+        },
+        "preprocessing": {
+          "N": 12,
+          "mean_ms": 5.742808333333333,
+          "std_ms": 0.7765548911797231,
+          "min_ms": 4.7367,
+          "max_ms": 7.6734,
+          "p50_ms": 5.58495,
+          "p95_ms": 6.884644999999999,
+          "p99_ms": 7.515649000000001
+        },
+        "forest": {
+          "N": 12,
+          "mean_ms": 6.120758333333334,
+          "std_ms": 1.184912246431112,
+          "min_ms": 5.0624,
+          "max_ms": 8.5244,
+          "p50_ms": 5.62125,
+          "p95_ms": 8.117014999999999,
+          "p99_ms": 8.442923
+        },
+        "server": {
+          "N": 12,
+          "mean_ms": 13.4995,
+          "std_ms": 1.7808891007277539,
+          "min_ms": 11.734,
+          "max_ms": 17.8707,
+          "p50_ms": 12.8424,
+          "p95_ms": 16.61835,
+          "p99_ms": 17.62023
+        },
+        "body_validate": {
+          "N": 12,
+          "mean_ms": 0.39758333333333334,
+          "std_ms": 0.17486890067774324,
+          "min_ms": 0.2531,
+          "max_ms": 0.8685,
+          "p50_ms": 0.35509999999999997,
+          "p95_ms": 0.7258849999999998,
+          "p99_ms": 0.8399770000000002
+        }
+      }
+    }
+  },
+  "model_initialization_events": [
+    {
+      "phase": "sequential",
+      "request": 0,
+      "HTTP": 200,
+      "network_ms": 4624.796999851242,
+      "server_timing_ms": {
+        "body_validate": 0.9266,
+        "init": 1225.2506,
+        "validation": 0.0117,
+        "frame": 0.509,
+        "preprocessing": 17.6854,
+        "forest": 7.2408,
+        "server": 1253.9886
+      },
+      "instance": "2facbe3de47e",
+      "model_initialized": true
+    }
+  ],
+  "cold_start": "X-PV-Initialized marks a verified model-cache load within a request, not full platform cold-start timing. Absence means no confirmed initialization in this run.",
+  "health": {
+    "status": "ready",
+    "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+    "python_version": "3.14.2"
+  },
+  "parity": [
+    {
+      "case": 0,
+      "class": 0
+    },
+    {
+      "case": 1,
+      "class": 1
+    },
+    {
+      "case": 2,
+      "class": 2
+    },
+    {
+      "case": 3,
+      "class": 3
+    },
+    {
+      "case": 4,
+      "class": 4
+    }
+  ],
+  "invalid": [
+    {
+      "kind": "missing",
+      "HTTP": 422
+    },
+    {
+      "kind": "extra",
+      "HTTP": 422
+    },
+    {
+      "kind": "negative",
+      "HTTP": 422
+    }
+  ],
+  "requests": [
+    {
+      "phase": "sequential",
+      "request": 0,
+      "HTTP": 200,
+      "network_ms": 4624.796999851242,
+      "server_timing_ms": {
+        "body_validate": 0.9266,
+        "init": 1225.2506,
+        "validation": 0.0117,
+        "frame": 0.509,
+        "preprocessing": 17.6854,
+        "forest": 7.2408,
+        "server": 1253.9886
+      },
+      "instance": "2facbe3de47e",
+      "model_initialized": true
+    },
+    {
+      "phase": "sequential",
+      "request": 1,
+      "HTTP": 200,
+      "network_ms": 399.8159000184387,
+      "server_timing_ms": {
+        "body_validate": 0.4177,
+        "init": 0.0,
+        "validation": 0.0037,
+        "frame": 0.3631,
+        "preprocessing": 6.3645,
+        "forest": 5.8649,
+        "server": 14.0661
+      },
+      "instance": "2facbe3de47e",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 2,
+      "HTTP": 200,
+      "network_ms": 376.2985998764634,
+      "server_timing_ms": {
+        "body_validate": 0.3646,
+        "init": 0.0,
+        "validation": 0.0032,
+        "frame": 0.3333,
+        "preprocessing": 6.2212,
+        "forest": 6.2904,
+        "server": 14.214
+      },
+      "instance": "2facbe3de47e",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 3,
+      "HTTP": 200,
+      "network_ms": 371.072200126946,
+      "server_timing_ms": {
+        "body_validate": 0.3572,
+        "init": 0.0,
+        "validation": 0.0031,
+        "frame": 0.439,
+        "preprocessing": 5.8539,
+        "forest": 6.523,
+        "server": 14.1142
+      },
+      "instance": "2facbe3de47e",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 4,
+      "HTTP": 200,
+      "network_ms": 379.6052001416683,
+      "server_timing_ms": {
+        "body_validate": 0.3339,
+        "init": 0.0,
+        "validation": 0.0032,
+        "frame": 0.3218,
+        "preprocessing": 4.851,
+        "forest": 6.0563,
+        "server": 12.4226
+      },
+      "instance": "2facbe3de47e",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 5,
+      "HTTP": 200,
+      "network_ms": 378.9065999444574,
+      "server_timing_ms": {
+        "body_validate": 0.4201,
+        "init": 0.0,
+        "validation": 0.0035,
+        "frame": 0.3444,
+        "preprocessing": 5.7957,
+        "forest": 5.5985,
+        "server": 13.1758
+      },
+      "instance": "2facbe3de47e",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 6,
+      "HTTP": 200,
+      "network_ms": 374.08750015310943,
+      "server_timing_ms": {
+        "body_validate": 0.4416,
+        "init": 0.0,
+        "validation": 0.0034,
+        "frame": 0.3537,
+        "preprocessing": 5.3882,
+        "forest": 5.6061,
+        "server": 12.7908
+      },
+      "instance": "2facbe3de47e",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 7,
+      "HTTP": 200,
+      "network_ms": 374.91559982299805,
+      "server_timing_ms": {
+        "body_validate": 0.3463,
+        "init": 0.0,
+        "validation": 0.003,
+        "frame": 0.3475,
+        "preprocessing": 5.9862,
+        "forest": 6.0794,
+        "server": 13.87
+      },
+      "instance": "2facbe3de47e",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 8,
+      "HTTP": 200,
+      "network_ms": 377.2138999775052,
+      "server_timing_ms": {
+        "body_validate": 0.4081,
+        "init": 0.0,
+        "validation": 0.0031,
+        "frame": 0.3873,
+        "preprocessing": 6.1482,
+        "forest": 5.6439,
+        "server": 13.57
+      },
+      "instance": "2facbe3de47e",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 9,
+      "HTTP": 200,
+      "network_ms": 381.58340007066727,
+      "server_timing_ms": {
+        "body_validate": 0.5002,
+        "init": 0.0,
+        "validation": 0.0053,
+        "frame": 0.4484,
+        "preprocessing": 9.1919,
+        "forest": 7.475,
+        "server": 18.8017
+      },
+      "instance": "2facbe3de47e",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 10,
+      "HTTP": 200,
+      "network_ms": 388.79310013726354,
+      "server_timing_ms": {
+        "body_validate": 0.643,
+        "init": 0.0,
+        "validation": 0.0034,
+        "frame": 0.3707,
+        "preprocessing": 5.2475,
+        "forest": 5.7987,
+        "server": 12.9245
+      },
+      "instance": "2facbe3de47e",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 11,
+      "HTTP": 200,
+      "network_ms": 384.4790000002831,
+      "server_timing_ms": {
+        "body_validate": 0.3877,
+        "init": 0.0,
+        "validation": 0.0062,
+        "frame": 0.4111,
+        "preprocessing": 7.3558,
+        "forest": 5.6726,
+        "server": 14.8873
+      },
+      "instance": "2facbe3de47e",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 12,
+      "HTTP": 200,
+      "network_ms": 371.60250009037554,
+      "server_timing_ms": {
+        "body_validate": 0.3671,
+        "init": 0.0,
+        "validation": 0.0037,
+        "frame": 0.5766,
+        "preprocessing": 5.3158,
+        "forest": 6.2472,
+        "server": 13.5398
+      },
+      "instance": "2facbe3de47e",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 13,
+      "HTTP": 200,
+      "network_ms": 382.8773000277579,
+      "server_timing_ms": {
+        "body_validate": 0.434,
+        "init": 0.0,
+        "validation": 0.0045,
+        "frame": 0.4759,
+        "preprocessing": 7.4745,
+        "forest": 6.5483,
+        "server": 16.1101
+      },
+      "instance": "2facbe3de47e",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 14,
+      "HTTP": 200,
+      "network_ms": 412.4819999560714,
+      "server_timing_ms": {
+        "body_validate": 0.3761,
+        "init": 0.0,
+        "validation": 0.0037,
+        "frame": 0.3791,
+        "preprocessing": 4.8099,
+        "forest": 6.5373,
+        "server": 13.0591
+      },
+      "instance": "2facbe3de47e",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 15,
+      "HTTP": 200,
+      "network_ms": 376.91279989667237,
+      "server_timing_ms": {
+        "body_validate": 0.4497,
+        "init": 0.0,
+        "validation": 0.0057,
+        "frame": 0.364,
+        "preprocessing": 5.9492,
+        "forest": 5.3614,
+        "server": 13.1592
+      },
+      "instance": "2facbe3de47e",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 16,
+      "HTTP": 200,
+      "network_ms": 381.87790010124445,
+      "server_timing_ms": {
+        "body_validate": 0.3397,
+        "init": 0.0,
+        "validation": 0.0032,
+        "frame": 0.3646,
+        "preprocessing": 6.7692,
+        "forest": 5.5653,
+        "server": 14.0408
+      },
+      "instance": "2facbe3de47e",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 17,
+      "HTTP": 200,
+      "network_ms": 377.48770019970834,
+      "server_timing_ms": {
+        "body_validate": 0.3746,
+        "init": 0.0,
+        "validation": 0.0073,
+        "frame": 0.3933,
+        "preprocessing": 6.3405,
+        "forest": 6.0732,
+        "server": 14.2075
+      },
+      "instance": "2facbe3de47e",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 18,
+      "HTTP": 200,
+      "network_ms": 373.46150004304945,
+      "server_timing_ms": {
+        "body_validate": 0.2961,
+        "init": 0.0,
+        "validation": 0.0035,
+        "frame": 0.3371,
+        "preprocessing": 5.5824,
+        "forest": 5.2921,
+        "server": 12.2788
+      },
+      "instance": "2facbe3de47e",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 19,
+      "HTTP": 200,
+      "network_ms": 379.87910001538694,
+      "server_timing_ms": {
+        "body_validate": 0.3817,
+        "init": 0.0,
+        "validation": 0.0049,
+        "frame": 0.5008,
+        "preprocessing": 6.7048,
+        "forest": 5.8621,
+        "server": 14.5276
+      },
+      "instance": "2facbe3de47e",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 20,
+      "HTTP": 200,
+      "network_ms": 379.83620003797114,
+      "server_timing_ms": {
+        "body_validate": 0.3636,
+        "init": 0.0,
+        "validation": 0.0035,
+        "frame": 0.4982,
+        "preprocessing": 7.0125,
+        "forest": 5.9894,
+        "server": 14.8378
+      },
+      "instance": "2facbe3de47e",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 21,
+      "HTTP": 200,
+      "network_ms": 374.0495000965893,
+      "server_timing_ms": {
+        "body_validate": 0.4878,
+        "init": 0.0,
+        "validation": 0.0035,
+        "frame": 0.5105,
+        "preprocessing": 5.7593,
+        "forest": 8.0411,
+        "server": 16.0224
+      },
+      "instance": "2facbe3de47e",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 22,
+      "HTTP": 200,
+      "network_ms": 370.0536999385804,
+      "server_timing_ms": {
+        "body_validate": 0.5018,
+        "init": 0.0,
+        "validation": 0.004,
+        "frame": 0.3582,
+        "preprocessing": 6.1113,
+        "forest": 6.1489,
+        "server": 14.1782
+      },
+      "instance": "2facbe3de47e",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 23,
+      "HTTP": 200,
+      "network_ms": 396.8734999652952,
+      "server_timing_ms": {
+        "body_validate": 0.5161,
+        "init": 0.0,
+        "validation": 0.0039,
+        "frame": 0.5636,
+        "preprocessing": 7.4081,
+        "forest": 7.141,
+        "server": 16.7703
+      },
+      "instance": "2facbe3de47e",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 24,
+      "HTTP": 200,
+      "network_ms": 374.2635000962764,
+      "server_timing_ms": {
+        "body_validate": 0.4066,
+        "init": 0.0,
+        "validation": 0.0033,
+        "frame": 0.4459,
+        "preprocessing": 7.6215,
+        "forest": 5.6591,
+        "server": 15.1539
+      },
+      "instance": "2facbe3de47e",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 25,
+      "HTTP": 200,
+      "network_ms": 374.5601000264287,
+      "server_timing_ms": {
+        "body_validate": 0.51,
+        "init": 0.0,
+        "validation": 0.0036,
+        "frame": 0.5077,
+        "preprocessing": 6.3957,
+        "forest": 5.2719,
+        "server": 13.7181
+      },
+      "instance": "2facbe3de47e",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 26,
+      "HTTP": 200,
+      "network_ms": 394.0713999327272,
+      "server_timing_ms": {
+        "body_validate": 0.351,
+        "init": 0.0,
+        "validation": 0.0034,
+        "frame": 0.4039,
+        "preprocessing": 6.3661,
+        "forest": 6.5893,
+        "server": 14.6336
+      },
+      "instance": "2facbe3de47e",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 27,
+      "HTTP": 200,
+      "network_ms": 384.98640013858676,
+      "server_timing_ms": {
+        "body_validate": 0.3479,
+        "init": 0.0,
+        "validation": 0.0032,
+        "frame": 0.3417,
+        "preprocessing": 5.2732,
+        "forest": 5.6395,
+        "server": 12.4819
+      },
+      "instance": "2facbe3de47e",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 28,
+      "HTTP": 200,
+      "network_ms": 401.7187999561429,
+      "server_timing_ms": {
+        "body_validate": 0.3865,
+        "init": 0.0,
+        "validation": 0.0062,
+        "frame": 0.3993,
+        "preprocessing": 5.6402,
+        "forest": 5.6289,
+        "server": 13.0384
+      },
+      "instance": "2facbe3de47e",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 29,
+      "HTTP": 200,
+      "network_ms": 379.840400069952,
+      "server_timing_ms": {
+        "body_validate": 0.2544,
+        "init": 0.0,
+        "validation": 0.0031,
+        "frame": 0.4262,
+        "preprocessing": 6.2694,
+        "forest": 6.0795,
+        "server": 13.6785
+      },
+      "instance": "2facbe3de47e",
+      "model_initialized": false
+    },
+    {
+      "phase": "concurrency2",
+      "request": 0,
+      "HTTP": 200,
+      "network_ms": 378.41610005125403,
+      "server_timing_ms": {
+        "body_validate": 0.3554,
+        "init": 0.0,
+        "validation": 0.0045,
+        "frame": 0.3987,
+        "preprocessing": 5.3654,
+        "forest": 5.183,
+        "server": 12.1913
+      },
+      "instance": "2facbe3de47e",
+      "model_initialized": false
+    },
+    {
+      "phase": "concurrency2",
+      "request": 1,
+      "HTTP": 200,
+      "network_ms": 571.0531999357045,
+      "server_timing_ms": {
+        "body_validate": 0.2531,
+        "init": 0.0,
+        "validation": 0.003,
+        "frame": 0.3765,
+        "preprocessing": 5.9263,
+        "forest": 5.813,
+        "server": 12.9597
+      },
+      "instance": "2facbe3de47e",
+      "model_initialized": false
+    },
+    {
+      "phase": "concurrency2",
+      "request": 3,
+      "HTTP": 200,
+      "network_ms": 416.0009999759495,
+      "server_timing_ms": {
+        "body_validate": 0.3142,
+        "init": 0.0,
+        "validation": 0.0033,
+        "frame": 0.3457,
+        "preprocessing": 5.1311,
+        "forest": 5.265,
+        "server": 11.734
+      },
+      "instance": "2facbe3de47e",
+      "model_initialized": false
+    },
+    {
+      "phase": "concurrency2",
+      "request": 2,
+      "HTTP": 200,
+      "network_ms": 562.2429999057204,
+      "server_timing_ms": {
+        "body_validate": 0.3548,
+        "init": 0.0,
+        "validation": 0.0031,
+        "frame": 0.3256,
+        "preprocessing": 5.2817,
+        "forest": 5.3993,
+        "server": 12.0067
+      },
+      "instance": "2facbe3de47e",
+      "model_initialized": false
+    },
+    {
+      "phase": "concurrency2",
+      "request": 4,
+      "HTTP": 200,
+      "network_ms": 370.6708000972867,
+      "server_timing_ms": {
+        "body_validate": 0.3754,
+        "init": 0.0,
+        "validation": 0.0031,
+        "frame": 0.345,
+        "preprocessing": 6.0968,
+        "forest": 7.5646,
+        "server": 15.5937
+      },
+      "instance": "2facbe3de47e",
+      "model_initialized": false
+    },
+    {
+      "phase": "concurrency2",
+      "request": 5,
+      "HTTP": 200,
+      "network_ms": 392.88670010864735,
+      "server_timing_ms": {
+        "body_validate": 0.8685,
+        "init": 0.0,
+        "validation": 0.0052,
+        "frame": 0.341,
+        "preprocessing": 5.1255,
+        "forest": 5.0624,
+        "server": 12.497
+      },
+      "instance": "2facbe3de47e",
+      "model_initialized": false
+    },
+    {
+      "phase": "concurrency2",
+      "request": 7,
+      "HTTP": 200,
+      "network_ms": 379.38119983300567,
+      "server_timing_ms": {
+        "body_validate": 0.6092,
+        "init": 0.0,
+        "validation": 0.0037,
+        "frame": 0.3459,
+        "preprocessing": 6.2393,
+        "forest": 6.4227,
+        "server": 14.6927
+      },
+      "instance": "2facbe3de47e",
+      "model_initialized": false
+    },
+    {
+      "phase": "concurrency2",
+      "request": 6,
+      "HTTP": 200,
+      "network_ms": 394.5425001438707,
+      "server_timing_ms": {
+        "body_validate": 0.3887,
+        "init": 0.0,
+        "validation": 0.0046,
+        "frame": 0.4355,
+        "preprocessing": 7.6734,
+        "forest": 8.5244,
+        "server": 17.8707
+      },
+      "instance": "2facbe3de47e",
+      "model_initialized": false
+    },
+    {
+      "phase": "concurrency2",
+      "request": 8,
+      "HTTP": 200,
+      "network_ms": 370.4830000642687,
+      "server_timing_ms": {
+        "body_validate": 0.335,
+        "init": 0.0,
+        "validation": 0.0033,
+        "frame": 0.3382,
+        "preprocessing": 5.3345,
+        "forest": 5.693,
+        "server": 12.5645
+      },
+      "instance": "2facbe3de47e",
+      "model_initialized": false
+    },
+    {
+      "phase": "concurrency2",
+      "request": 9,
+      "HTTP": 200,
+      "network_ms": 492.57649993523955,
+      "server_timing_ms": {
+        "body_validate": 0.2743,
+        "init": 0.0,
+        "validation": 0.0032,
+        "frame": 0.4482,
+        "preprocessing": 5.8045,
+        "forest": 5.5495,
+        "server": 12.7251
+      },
+      "instance": "2facbe3de47e",
+      "model_initialized": false
+    },
+    {
+      "phase": "concurrency2",
+      "request": 10,
+      "HTTP": 200,
+      "network_ms": 366.21959996409714,
+      "server_timing_ms": {
+        "body_validate": 0.3805,
+        "init": 0.0,
+        "validation": 0.0034,
+        "frame": 0.4818,
+        "preprocessing": 6.1985,
+        "forest": 5.1885,
+        "server": 13.3238
+      },
+      "instance": "2facbe3de47e",
+      "model_initialized": false
+    },
+    {
+      "phase": "concurrency2",
+      "request": 11,
+      "HTTP": 200,
+      "network_ms": 502.24080006591976,
+      "server_timing_ms": {
+        "body_validate": 0.2619,
+        "init": 0.0,
+        "validation": 0.0032,
+        "frame": 0.3424,
+        "preprocessing": 4.7367,
+        "forest": 7.7837,
+        "server": 13.8348
+      },
+      "instance": "2facbe3de47e",
+      "model_initialized": false
+    }
+  ],
+  "engineering_target_ms": 10
+}

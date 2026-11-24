@@ -1,0 +1,18 @@
+{
+  "id": "dpl_F5QCt2n6mYMbtHYMM13K1mtL8Xrb",
+  "url": "https://pv-anomaly-detection-j2kbkbftn-prince-r-k.vercel.app",
+  "productionUrl": null,
+  "inspectorUrl": "https://vercel.com/prince-r-k/pv-anomaly-detection/F5QCt2n6mYMbtHYMM13K1mtL8Xrb",
+  "readyState": "READY",
+  "target": null,
+  "environment": "preview",
+  "deploymentApiUrl": "https://api.vercel.com/v13/deployments/dpl_F5QCt2n6mYMbtHYMM13K1mtL8Xrb",
+  "buildMachine": {
+    "cores": 2,
+    "memory": 8192,
+    "machine": "basic",
+    "selectionType": "fixed",
+    "selectionSource": "plan-default"
+  },
+  "deploymentProtection": []
+}

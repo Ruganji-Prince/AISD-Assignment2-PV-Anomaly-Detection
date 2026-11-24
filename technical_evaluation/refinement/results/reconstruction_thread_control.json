@@ -1,0 +1,371 @@
+{
+  "models": [
+    {
+      "candidate": "LR__E5",
+      "new_sha256": "ca5db40933bd8160ad448aa225696734cb43d9944bfac36686d07270b962b5cc",
+      "original_reference_sha256": "40af0fe963c9b55aa26af42459a67a5c0f02fe1e741fdff1497fe3d90098c75f",
+      "fit_seconds": 31.6786661001388,
+      "fit_index_digest": "86010f1f91f0653fd59a65ec55e3a3e3a7e905b6d292e7207099d8c4b58075f9",
+      "validation": {
+        "N": 32800,
+        "macro_f1_present_classes": 0.8713292965606202,
+        "macro_f1_fixed_five": 0.8713292965606202,
+        "weighted_f1": 0.8494047110711181,
+        "balanced_accuracy_present_classes": 0.9251876854754559,
+        "macro_precision_present_classes": 0.8447040794851949,
+        "per_class": {
+          "0": {
+            "N": 18504,
+            "base_rate": 0.5641463414634146,
+            "precision": 0.9000472869133467,
+            "recall": 0.8229031560743623,
+            "f1": 0.8597481790977358,
+            "AP": 0.9199524846354327
+          },
+          "1": {
+            "N": 1232,
+            "base_rate": 0.037560975609756096,
+            "precision": 1.0,
+            "recall": 0.976461038961039,
+            "f1": 0.9880903490759754,
+            "AP": 0.9990981880076878
+          },
+          "2": {
+            "N": 1222,
+            "base_rate": 0.03725609756097561,
+            "precision": 0.5400447427293065,
+            "recall": 0.9877250409165302,
+            "f1": 0.6982933179056986,
+            "AP": 0.9853676017810569
+          },
+          "3": {
+            "N": 1206,
+            "base_rate": 0.03676829268292683,
+            "precision": 0.9885245901639345,
+            "recall": 1.0,
+            "f1": 0.9942291838417148,
+            "AP": 0.9821941033523447
+          },
+          "4": {
+            "N": 10636,
+            "base_rate": 0.32426829268292684,
+            "precision": 0.794903777619387,
+            "recall": 0.8388491914253479,
+            "f1": 0.8162854528819762,
+            "AP": 0.7763411356445673
+          }
+        },
+        "coverage": 1.0,
+        "confusion_matrix": [
+          [
+            15227,
+            0,
+            976,
+            0,
+            2301,
+            0
+          ],
+          [
+            0,
+            1203,
+            29,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1207,
+            14,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1206,
+            0,
+            0
+          ],
+          [
+            1691,
+            0,
+            23,
+            0,
+            8922,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "macro_AP": 0.932590702684218,
+        "hardware_AP": 0.9994681976708482,
+        "hardware_precision_at_top_1pct": 1.0,
+        "top_1pct_N": 328,
+        "hardware_alert_recall": 0.9997267759562841,
+        "normal_FPR": 0.0527453523562473,
+        "shade_FPR": 0.0021624670928920646,
+        "combined_nonhardware_FPR": 0.03428277282086479,
+        "alert_rule": "argmax class in {1,2,3}; not a tuned alert threshold",
+        "threshold": null,
+        "absent_true_classes": [],
+        "AP_definition": "one-vs-rest average precision; not trapezoidal PR-AUC",
+        "hardware_definition": "classes1/2/3 only; shade environmental"
+      },
+      "provenance": "NEW reconstruction; no byte-identical claim; no TEST used."
+    },
+    {
+      "candidate": "LR__F6",
+      "new_sha256": "482036644bf82ac3bd7c4e9d5eca852db90dc969bcdb09f86ba7d4c24266be5f",
+      "original_reference_sha256": "6460d8244e7c70d167a22beeb9f240b1127baa6c8a78635fed8ae2ad02e1680f",
+      "fit_seconds": 48.79256600001827,
+      "fit_index_digest": "86010f1f91f0653fd59a65ec55e3a3e3a7e905b6d292e7207099d8c4b58075f9",
+      "validation": {
+        "N": 32800,
+        "macro_f1_present_classes": 0.8938698040831554,
+        "macro_f1_fixed_five": 0.8938698040831554,
+        "weighted_f1": 0.8576219700434736,
+        "balanced_accuracy_present_classes": 0.92702411202819,
+        "macro_precision_present_classes": 0.8720229403024371,
+        "per_class": {
+          "0": {
+            "N": 18504,
+            "base_rate": 0.5641463414634146,
+            "precision": 0.8953998745938551,
+            "recall": 0.8488975356679637,
+            "f1": 0.8715288373512359,
+            "AP": 0.9456580484173304
+          },
+          "1": {
+            "N": 1232,
+            "base_rate": 0.037560975609756096,
+            "precision": 1.0,
+            "recall": 0.976461038961039,
+            "f1": 0.9880903490759754,
+            "AP": 0.9991051600656058
+          },
+          "2": {
+            "N": 1222,
+            "base_rate": 0.03725609756097561,
+            "precision": 0.6835227272727272,
+            "recall": 0.9844517184942717,
+            "f1": 0.806841046277666,
+            "AP": 0.9853385642001867
+          },
+          "3": {
+            "N": 1206,
+            "base_rate": 0.03676829268292683,
+            "precision": 0.9885245901639345,
+            "recall": 1.0,
+            "f1": 0.9942291838417148,
+            "AP": 0.9884686542874221
+          },
+          "4": {
+            "N": 10636,
+            "base_rate": 0.32426829268292684,
+            "precision": 0.7926675094816688,
+            "recall": 0.8253102670176758,
+            "f1": 0.8086596038691847,
+            "AP": 0.7935889127632697
+          }
+        },
+        "coverage": 1.0,
+        "confusion_matrix": [
+          [
+            15708,
+            0,
+            505,
+            0,
+            2291,
+            0
+          ],
+          [
+            0,
+            1203,
+            29,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1203,
+            14,
+            5,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1206,
+            0,
+            0
+          ],
+          [
+            1835,
+            0,
+            23,
+            0,
+            8778,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "macro_AP": 0.942431867946763,
+        "hardware_AP": 0.9994832382309616,
+        "hardware_precision_at_top_1pct": 1.0,
+        "top_1pct_N": 328,
+        "hardware_alert_recall": 0.9986338797814208,
+        "normal_FPR": 0.02729139645482058,
+        "shade_FPR": 0.0021624670928920646,
+        "combined_nonhardware_FPR": 0.018119423472889497,
+        "alert_rule": "argmax class in {1,2,3}; not a tuned alert threshold",
+        "threshold": null,
+        "absent_true_classes": [],
+        "AP_definition": "one-vs-rest average precision; not trapezoidal PR-AUC",
+        "hardware_definition": "classes1/2/3 only; shade environmental"
+      },
+      "provenance": "NEW reconstruction; no byte-identical claim; no TEST used."
+    },
+    {
+      "candidate": "LR__S4",
+      "new_sha256": "0063fdf81b655b7260421698e73ed297bf416c1063759d4b1b16a2cff4b9100c",
+      "original_reference_sha256": "067b0252c5a3aa24237e816c9a142e84f5c788bc7464af875c4bb89dc7064730",
+      "fit_seconds": 66.87572690006346,
+      "fit_index_digest": "86010f1f91f0653fd59a65ec55e3a3e3a7e905b6d292e7207099d8c4b58075f9",
+      "validation": {
+        "N": 32800,
+        "macro_f1_present_classes": 0.15912450352411783,
+        "macro_f1_fixed_five": 0.15912450352411783,
+        "weighted_f1": 0.2130299115064813,
+        "balanced_accuracy_present_classes": 0.37444528018051904,
+        "macro_precision_present_classes": 0.11782418885595618,
+        "per_class": {
+          "0": {
+            "N": 18504,
+            "base_rate": 0.5641463414634146,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "AP": 0.5472609408530332
+          },
+          "1": {
+            "N": 1232,
+            "base_rate": 0.037560975609756096,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "AP": 0.22988987062716518
+          },
+          "2": {
+            "N": 1222,
+            "base_rate": 0.03725609756097561,
+            "precision": 0.08499095840867993,
+            "recall": 1.0,
+            "f1": 0.15666666666666668,
+            "AP": 0.09226232496845965
+          },
+          "3": {
+            "N": 1206,
+            "base_rate": 0.03676829268292683,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "AP": 0.05408566985473621
+          },
+          "4": {
+            "N": 10636,
+            "base_rate": 0.32426829268292684,
+            "precision": 0.5041299858711009,
+            "recall": 0.872226400902595,
+            "f1": 0.6389558509539225,
+            "AP": 0.5676799790034415
+          }
+        },
+        "coverage": 1.0,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            9379,
+            0,
+            9125,
+            0
+          ],
+          [
+            0,
+            0,
+            1232,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1222,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1206,
+            0,
+            0,
+            0
+          ],
+          [
+            20,
+            0,
+            1339,
+            0,
+            9277,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "macro_AP": 0.2982357570613671,
+        "hardware_AP": 0.5896535969373021,
+        "hardware_precision_at_top_1pct": 0.7439024390243902,
+        "top_1pct_N": 328,
+        "hardware_alert_recall": 1.0,
+        "normal_FPR": 0.5068633808906182,
+        "shade_FPR": 0.1258931929296728,
+        "combined_nonhardware_FPR": 0.3678105696636925,
+        "alert_rule": "argmax class in {1,2,3}; not a tuned alert threshold",
+        "threshold": null,
+        "absent_true_classes": [],
+        "AP_definition": "one-vs-rest average precision; not trapezoidal PR-AUC",
+        "hardware_definition": "classes1/2/3 only; shade environmental"
+      },
+      "provenance": "NEW reconstruction; no byte-identical claim; no TEST used."
+    }
+  ],
+  "original_deployed_model_changed": false
+}

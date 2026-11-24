@@ -1,0 +1,27 @@
+{
+  "status": "PARTIALLY VERIFIED",
+  "implemented": [
+    "Strict four-field schema and finite/nonnegative check",
+    "2KB streamed body cap plus Content-Length rejection",
+    "5s request-body deadline",
+    "15s inference response deadline",
+    "Per-process two-active-inference capacity guard with503/Retry-After",
+    "Worker retains its capacity slot until completion even after response timeout",
+    "CSP/no-store/nosniff/safe generic logging and hash-before-unpickle"
+  ],
+  "not_distributed": "The local capacity guard is not an IP/user rate limiter and does not coordinate serverless instances.",
+  "official_sources": [
+    "https://vercel.com/docs/vercel-firewall/vercel-waf/rate-limiting",
+    "https://vercel.com/docs/vercel-firewall/vercel-waf/usage-and-pricing"
+  ],
+  "provider_option": "Hobby documents one fixed-window rate-limit rule/project and1000000 included allowed requests; pricing review is part of activation. No provider firewall rule or billing setting was changed.",
+  "proposed_policy_for_separate_account_review": {
+    "path": "/api/predict",
+    "key": "IP",
+    "algorithm": "fixed_window",
+    "requests": 180,
+    "window_seconds": 60,
+    "exceeded_action": "HTTP429"
+  },
+  "limitations": "No robust distributed rate limit is claimed. Shared IPs, bypass, platform quota and metered pricing require operational review; no paid resource activated."
+}

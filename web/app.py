@@ -2,6 +2,11 @@
 import json
 import logging
 import sys
+import time
+import asyncio
+import threading
+import uuid
+from joblib import parallel_backend
 from functools import lru_cache
 from pathlib import Path
 from fastapi import FastAPI, HTTPException, Request
@@ -14,21 +19,61 @@ STATIC = Path(__file__).parent / 'static'
 app = FastAPI(title='PV Anomaly Detection', docs_url=None, redoc_url=None, openapi_url=None)
 app.mount('/assets', StaticFiles(directory=STATIC), name='assets')
 logger = logging.getLogger(__name__)
+_INSTANCE = uuid.uuid4().hex[:12]
+_MODEL_LOCK = threading.Lock()
+_INFERENCE_CAPACITY = threading.BoundedSemaphore(2)
+INFERENCE_TIMEOUT_SECONDS = 15
+BODY_TIMEOUT_SECONDS = 5
+
+class ModelUnavailableError(RuntimeError):
+    pass
+
+class BusyError(RuntimeError):
+    pass
+
+def model_with_timing(timing):
+    with _MODEL_LOCK:
+        initializing = fitted_model.cache_info().currsize == 0
+        start = time.perf_counter()
+        model = fitted_model()
+        timing['init'] = (time.perf_counter()-start)*1000 if initializing else 0.0
+        return model
 
 @lru_cache(maxsize=1)
 def fitted_model():
     return load_model()
 
-def inference(record):
-    result = predict(record, fitted_model())
+def inference(record, timing=None):
+    timing = {} if timing is None else timing
+    try:
+        model = model_with_timing(timing)
+    except Exception:
+        raise ModelUnavailableError('Verified model unavailable.') from None
+    with parallel_backend('sequential'):
+        result = predict(record, model, timings=timing)
     category = 'environmental_condition' if result['environmental_shade'] else ('hardware_fault' if result['hardware_fault_class'] else 'normal')
     result['fault_category'] = category
     result['warnings'] = [f'{name} is outside the observed training range. This is not a certified operating limit.' for name in result['range_warnings']]
     return result
 
+def guarded_inference(record, timing):
+    if not _INFERENCE_CAPACITY.acquire(blocking=False):
+        raise BusyError('Process inference capacity reached.')
+    try:
+        return inference(record, timing)
+    finally:
+        _INFERENCE_CAPACITY.release()
+
 @app.middleware('http')
 async def security_headers(request, call_next):
+    started = time.perf_counter()
+    request.state.timing = {}
     response = await call_next(request)
+    timing = dict(request.state.timing)
+    timing['server'] = (time.perf_counter()-started)*1000
+    response.headers['Server-Timing'] = ', '.join(f'{k};dur={v:.4f}' for k,v in timing.items())
+    response.headers['X-PV-Instance'] = _INSTANCE
+    response.headers['X-PV-Initialized'] = '1' if timing.get('init',0)>0 else '0'
     response.headers['X-Content-Type-Options'] = 'nosniff'
     response.headers['Referrer-Policy'] = 'strict-origin-when-cross-origin'
     response.headers['X-Frame-Options'] = 'DENY'
@@ -42,9 +87,9 @@ def homepage():
     return FileResponse(STATIC / 'index.html')
 
 @app.get('/api/health')
-async def health():
+async def health(request: Request):
     try:
-        await run_in_threadpool(fitted_model)
+        await run_in_threadpool(model_with_timing, request.state.timing)
     except Exception:
         logger.error('Original fitted model failed readiness verification.')
         return JSONResponse({'status': 'unavailable', 'message': 'Model verification failed. Predictions are unavailable.'}, status_code=503)
@@ -69,22 +114,33 @@ def unique_object(pairs):
 async def predict_measurements(request: Request):
     if request.headers.get('content-type','').split(';')[0].strip().lower() != 'application/json':
         raise HTTPException(415, 'Send the four measurements as application/json.')
+    content_length = request.headers.get('content-length')
+    if content_length is not None:
+        try:
+            if int(content_length)>2048: raise HTTPException(413, 'Input is too large.')
+        except ValueError:
+            raise HTTPException(422, 'Invalid content length.')
     body=bytearray()
-    async for chunk in request.stream():
-        body.extend(chunk)
-        if len(body)>2048: raise HTTPException(413, 'Input is too large. Send one set of four measurements.')
+    body_started = time.perf_counter()
+    try:
+        async with asyncio.timeout(BODY_TIMEOUT_SECONDS):
+            async for chunk in request.stream():
+                body.extend(chunk)
+                if len(body)>2048: raise HTTPException(413, 'Input is too large. Send one set of four measurements.')
+    except TimeoutError:
+        raise HTTPException(408, 'Request body timed out.')
     try:
         record=json.loads(body, parse_constant=reject_constant, object_pairs_hook=unique_object)
         validate(record)
     except (ValueError, TypeError, UnicodeDecodeError, RecursionError) as exc:
         raise HTTPException(422, 'Enter exactly four finite, nonnegative numbers: vdc1, vdc2 (V), idc1, idc2 (A). No additional fields are accepted.') from exc
+    request.state.timing['body_validate'] = (time.perf_counter()-body_started)*1000
     try:
-        await run_in_threadpool(fitted_model)
-    except Exception:
-        logger.error('Original model verification unavailable; no prediction returned.')
-        raise HTTPException(503, 'The prediction service is unavailable. Please try again later.')
-    try:
-        return await run_in_threadpool(inference, record)
+        return await asyncio.wait_for(run_in_threadpool(guarded_inference, record, request.state.timing), timeout=INFERENCE_TIMEOUT_SECONDS)
+    except BusyError:
+        raise HTTPException(503, 'Inference capacity is busy. Retry later.', headers={'Retry-After':'1'})
+    except TimeoutError:
+        raise HTTPException(504, 'Inference response timed out.')
     except (ValueError, OverflowError):
         raise HTTPException(422, 'These measurements exceed the supported numeric range. Check the values and units.')
     except Exception:

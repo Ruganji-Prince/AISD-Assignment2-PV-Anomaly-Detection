@@ -1,0 +1,24 @@
+{
+  "status": "VERIFIED",
+  "command": "python -B -m technical_evaluation.refinement.verify",
+  "receipt": {
+    "status": "PASS",
+    "protected_prior_files": 293,
+    "prior_hash_mismatches": [],
+    "original_model_SHA256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+    "near_duplicate_queries": 4,
+    "reconstructed_candidates": 21,
+    "empirical_scenarios": 250,
+    "relative_links": {
+      "relative_links_checked": 362,
+      "failures": []
+    },
+    "mandatory_checks": {
+      "repository_README": "Local files/links and public URLs documented; final publication independently checked.",
+      "leakage": "No identified unaddressed target/preprocessing overlap; close feature vectors and historical TEST remain disclosed.",
+      "cloud_and_secrets": "Use separately recorded live/secret receipts; this command makes no network calls."
+    }
+  },
+  "unit_tests": 30,
+  "method": "Actual newly installed clean environment; complete final reviewed tracked/unignored overlay; scratch preprocessing execution preserved separately."
+}

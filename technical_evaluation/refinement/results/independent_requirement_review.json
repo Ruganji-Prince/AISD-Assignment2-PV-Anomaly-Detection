@@ -1,0 +1,432 @@
+[
+  {
+    "id": "R1.1",
+    "requirement": "Prediction unit, cost, target, units and class imbalance",
+    "implementation": "metrics.py",
+    "evidence": "evidence/rubric1/hypothetical_costs.json",
+    "status": "VERIFIED",
+    "measured_result": "Hypothetical weights2/5/10/20; nominal5-class observation prediction",
+    "limitation": "Costs are relative severity assumptions, not field-elicited money.",
+    "verification_command": "python -B -m technical_evaluation.refinement.verify"
+  },
+  {
+    "id": "R1.2",
+    "requirement": "Conventional NaN/infinite/missingness and paired-zero audit",
+    "implementation": "data_audit.py",
+    "evidence": "evidence/rubric1/missingness.json",
+    "status": "VERIFIED",
+    "measured_result": "N1373798,P7;NaN/inf0;pairedzeros62",
+    "limitation": "Zeros are not confirmed missingness.",
+    "verification_command": "python -B -m technical_evaluation.refinement.verify"
+  },
+  {
+    "id": "R1.3",
+    "requirement": "Little MCAR and missingness Cramer V applicability",
+    "implementation": "data_audit.py",
+    "evidence": "evidence/rubric1/missingness.json",
+    "status": "NOT APPLICABLE",
+    "measured_result": "Constant-zero missingness indicator; no estimable test",
+    "limitation": "Little MCAR and missingness CramerV cannot be manufactured.",
+    "verification_command": "python -B -m technical_evaluation.refinement.verify"
+  },
+  {
+    "id": "R1.4",
+    "requirement": "MCAR/MAR/MNAR interpretation",
+    "implementation": "data_audit.py",
+    "evidence": "evidence/rubric1/missingness.json",
+    "status": "VERIFIED",
+    "measured_result": "Mechanism not identifiable from zero exported NaNs",
+    "limitation": "No claim that absent NaNs implies MCAR.",
+    "verification_command": "python -B -m technical_evaluation.refinement.verify"
+  },
+  {
+    "id": "R1.5",
+    "requirement": "TRAIN IQR, Z-score and robust diagnostics",
+    "implementation": "data_audit.py",
+    "evidence": "evidence/rubric1/training_outliers.csv",
+    "status": "VERIFIED",
+    "measured_result": "TRAIN IQR1.5,Z3,MADmodifiedZ3.5;skewness recorded",
+    "limitation": "Dependent-row normality p-values are diagnostic only.",
+    "verification_command": "python -B -m technical_evaluation.refinement.verify"
+  },
+  {
+    "id": "R1.6",
+    "requirement": "Train-fitted clipping versus no-clipping experiment",
+    "implementation": "experiments.py",
+    "evidence": "evidence/rubric1/clipping_comparison.json",
+    "status": "VERIFIED",
+    "measured_result": "Block13 F1 none=.956297122;IQR=.956297122;quantile=.956041296",
+    "limitation": "New experimental fits only; no clipping policy change.",
+    "verification_command": "python -B -m technical_evaluation.refinement.verify"
+  },
+  {
+    "id": "R1.7",
+    "requirement": "Pearson/Spearman |r|>=.85 and VIF>10",
+    "implementation": "data_audit.py",
+    "evidence": "evidence/rubric1/feature_screening.json",
+    "status": "VERIFIED",
+    "measured_result": "VIF vdc1=52.168,vdc2=56.346,idc1=31.496;threshold10",
+    "limitation": "High correlation is not causal or sufficient deletion evidence.",
+    "verification_command": "python -B -m technical_evaluation.refinement.verify"
+  },
+  {
+    "id": "R1.8",
+    "requirement": "MI and PCA with TRAIN-only fitting",
+    "implementation": "data_audit.py",
+    "evidence": "evidence/rubric1/feature_screening.json",
+    "status": "VERIFIED",
+    "measured_result": "MI50000 TRAIN sample;PCA6 TRAIN-standardized components",
+    "limitation": "PCA requires physical parents; no sensor-reduction equivalence.",
+    "verification_command": "python -B -m technical_evaluation.refinement.verify"
+  },
+  {
+    "id": "R1.9",
+    "requirement": "Target/metadata/sensor dependencies and shortcuts",
+    "implementation": "audit.py",
+    "evidence": "evidence/rubric2/leakage.json",
+    "status": "VERIFIED",
+    "measured_result": "Features4 physical electrical;target/metadata absent",
+    "limitation": "Hidden acquisition shortcuts cannot be fully excluded.",
+    "verification_command": "python -B -m technical_evaluation.refinement.verify"
+  },
+  {
+    "id": "R2.1",
+    "requirement": "Exact ordered bounds, separator gaps and block disjointness",
+    "implementation": "data_audit.py",
+    "evidence": "evidence/rubric2/leakage.json",
+    "status": "VERIFIED",
+    "measured_result": "TRAIN1006129,VAL116977,TEST146461,gaps104231;no source/block overlap",
+    "limitation": "Blocks are not independent verified sessions.",
+    "verification_command": "python -B -m technical_evaluation.refinement.verify"
+  },
+  {
+    "id": "R2.2",
+    "requirement": "Feature-vector hash overlap and conflicting duplicate labels",
+    "implementation": "data_audit.py",
+    "evidence": "evidence/rubric2/leakage.json",
+    "status": "VERIFIED",
+    "measured_result": "Cross-split exact overlaps0 for6/4channels;conflictinglabels0",
+    "limitation": "Within-split repeated readings need not be leakage.",
+    "verification_command": "python -B -m technical_evaluation.refinement.verify"
+  },
+  {
+    "id": "R2.3",
+    "requirement": "Near-duplicate diagnostics",
+    "implementation": "data_audit.py",
+    "evidence": "refinement/results/full_near_duplicates.json",
+    "status": "VERIFIED",
+    "measured_result": "All1006129 TRAIN references and every116977VAL/146461TEST query, both4/6features; exact neighbor search criterion.001.",
+    "limitation": "Similarity is not independent support; no rows removed.",
+    "verification_command": "python -B -m technical_evaluation.refinement.verify"
+  },
+  {
+    "id": "R2.4",
+    "requirement": "TRAIN-only imputation/scaling/weights/feature/PCA/clipping",
+    "implementation": "experiments.py",
+    "evidence": "evidence/rubric2/grouped_validation.json",
+    "status": "VERIFIED",
+    "measured_result": "Nine fold-specific fit ledgers;TRAIN-derived weights/statistics",
+    "limitation": "Original preprocessing additionally verified in clean-clone execution.",
+    "verification_command": "python -B -m technical_evaluation.refinement.verify"
+  },
+  {
+    "id": "R2.5",
+    "requirement": "Additional blocked/group-aware validation with class support",
+    "implementation": "experiments.py",
+    "evidence": "evidence/rubric2/grouped_validation.json",
+    "status": "BLOCKED BY DATASET LIMITATIONS",
+    "measured_result": "Three full independent fold fits/family exist; class1 occurs only in TRAIN block12.",
+    "limitation": "No full-support independent fold can be manufactured.",
+    "verification_command": "python -B -m technical_evaluation.refinement.verify"
+  },
+  {
+    "id": "R2.6",
+    "requirement": "Historical TEST exposure and no new TEST tuning",
+    "implementation": "experiments.py",
+    "evidence": "refinement/Protocol.json",
+    "status": "BLOCKED BY DATASET LIMITATIONS",
+    "measured_result": "New protocol frozen; no new TEST selection. HistoricalTEST exposure remains.",
+    "limitation": "No independent external/site/time-stamped TEST.",
+    "verification_command": "python -B -m technical_evaluation.refinement.verify"
+  },
+  {
+    "id": "R2.7",
+    "requirement": "Calibration/selection/evaluation population isolation",
+    "implementation": "experiments.py",
+    "evidence": "refinement/results/probability_normalization.json",
+    "status": "PARTIALLY VERIFIED",
+    "measured_result": "Disjoint purged tile folds and supported classwise normalized maps verified.",
+    "limitation": "Single calibration block is not independent-session validation.",
+    "verification_command": "python -B -m technical_evaluation.refinement.verify"
+  },
+  {
+    "id": "R3.1",
+    "requirement": "LR/RF/LightGBM and 21 sensor configurations",
+    "implementation": "experiments.py",
+    "evidence": "refinement/results/reconstruction_comparison.json",
+    "status": "VERIFIED",
+    "measured_result": "All21 public fits executed;18 first-pass F1 matches;3 match after restoring original2thread control.",
+    "limitation": "New model bytes, not recovered originals; first differences retained.",
+    "verification_command": "python -B -m technical_evaluation.refinement.verify"
+  },
+  {
+    "id": "R3.2",
+    "requirement": "Most-frequent and class-prior baselines",
+    "implementation": "experiments.py",
+    "evidence": "refinement/results/baseline_reverification.json",
+    "status": "VERIFIED",
+    "measured_result": "BothDummy metrics recomputed and match archived references.",
+    "limitation": "Baselines reflect TRAIN prevalence; not causal physical diagnosis.",
+    "verification_command": "python -B -m technical_evaluation.refinement.verify"
+  },
+  {
+    "id": "R3.3",
+    "requirement": "Physical-rule baseline",
+    "implementation": "experiments.py",
+    "evidence": "evidence/rubric3/model_comparison.json",
+    "status": "VERIFIED",
+    "measured_result": "TRAIN-q99 normalized current-imbalance binary baseline measured",
+    "limitation": "Not a five-class diagnosis or validated protection rule.",
+    "verification_command": "python -B -m technical_evaluation.refinement.verify"
+  },
+  {
+    "id": "R3.4",
+    "requirement": "Per-class/macro/weighted/base-rate/AP/PR metrics",
+    "implementation": "metrics.py",
+    "evidence": "evidence/rubric3/model_comparison.json",
+    "status": "VERIFIED",
+    "measured_result": "RF TEST F1=.950481150;hardware AP=.993354;full perclass/AP/FPR supplied",
+    "limitation": "AP is not trapezoidal PR-AUC; undefined class metrics are null.",
+    "verification_command": "python -B -m technical_evaluation.refinement.verify"
+  },
+  {
+    "id": "R3.5",
+    "requirement": "Multiclass Brier/log loss/ECE/reliability",
+    "implementation": "metrics.py",
+    "evidence": "refinement/results/calibration/calibration_TEST_retrospective.json",
+    "status": "VERIFIED",
+    "measured_result": "Brier/logloss/ECE reproduced within1e-12; new reliability figure generated.",
+    "limitation": "Retrospective historicalTEST; no confidence deployment.",
+    "verification_command": "python -B -m technical_evaluation.refinement.verify"
+  },
+  {
+    "id": "R3.6",
+    "requirement": "Calibration support and no deployment confidence overclaim",
+    "implementation": "experiments.py",
+    "evidence": "refinement/results/probability_normalization.json",
+    "status": "PARTIALLY VERIFIED",
+    "measured_result": "Full B14/TEST map normalization and positive/negative support verified.",
+    "limitation": "No independent multi-block calibration validation.",
+    "verification_command": "python -B -m technical_evaluation.refinement.verify"
+  },
+  {
+    "id": "R3.7",
+    "requirement": "Validation-only frozen hardware thresholds and curves",
+    "implementation": "plots.py",
+    "evidence": "evidence/rubric3/threshold_curve_block14.csv",
+    "status": "VERIFIED",
+    "measured_result": "Original tau=.5913558658757772;151-point display grid",
+    "limitation": "Display grid does not replace original distinct-score enumeration.",
+    "verification_command": "python -B -m technical_evaluation.refinement.verify"
+  },
+  {
+    "id": "R3.8",
+    "requirement": "Group-aware uncertainty intervals",
+    "implementation": "experiments.py",
+    "evidence": "refinement/results/bootstrap_sensitivity.json",
+    "status": "BLOCKED BY DATASET LIMITATIONS",
+    "measured_result": "1000 block-resamples compare3 conventions;671 all-five-support draws.",
+    "limitation": "Intervals conditional on grouped-OOF data, not deployedTEST coverage.",
+    "verification_command": "python -B -m technical_evaluation.refinement.verify"
+  },
+  {
+    "id": "R3.9",
+    "requirement": "MAE applicability for nominal target",
+    "implementation": "metrics.py",
+    "evidence": "evidence/rubric3/model_comparison.json",
+    "status": "NOT APPLICABLE",
+    "measured_result": "MAE undefined as a meaningful nominal-code distance",
+    "limitation": "Integer class labels are not ordinal quantities.",
+    "verification_command": "python -B -m technical_evaluation.refinement.verify"
+  },
+  {
+    "id": "R4.1",
+    "requirement": "Class-specific confusion and normal-versus-shade analysis",
+    "implementation": "robustness.py",
+    "evidence": "evidence/rubric4/normal_shade_errors.json",
+    "status": "VERIFIED",
+    "measured_result": "6604 normal-to-shade;shade precision=.691080866",
+    "limitation": "Sensor conditional differences are descriptive, not causal.",
+    "verification_command": "python -B -m technical_evaluation.refinement.verify"
+  },
+  {
+    "id": "R4.2",
+    "requirement": "Subgroup supports/recall/FPR and regime boundaries",
+    "implementation": "robustness.py",
+    "evidence": "evidence/rubric4/subgroups.json",
+    "status": "VERIFIED",
+    "measured_result": "TRAIN-quartile/physical irradiance regimes;supports/FPR and absentclass flags",
+    "limitation": "Small cohorts and changing class support limit comparisons.",
+    "verification_command": "python -B -m technical_evaluation.refinement.verify"
+  },
+  {
+    "id": "R4.3",
+    "requirement": "Cohort shift PSI/KS/Wasserstein/prevalence",
+    "implementation": "robustness.py",
+    "evidence": "evidence/rubric4/shift.json",
+    "status": "VERIFIED",
+    "measured_result": "TEST idc1 PSI4.627,KS.431;TRAIN bins only",
+    "limitation": "Cohort/source-position shift, not verified temporal drift.",
+    "verification_command": "python -B -m technical_evaluation.refinement.verify"
+  },
+  {
+    "id": "R4.4",
+    "requirement": "Sensor ablation and physical-versus-mathematical features",
+    "implementation": "experiments.py",
+    "evidence": "evidence/rubric3/original_model_reverification.json",
+    "status": "VERIFIED",
+    "measured_result": "21 ablation metrics reproduced;4 physical vs8 mathematical RF inputs",
+    "limitation": "Minimum only among evaluated configurations and constraints.",
+    "verification_command": "python -B -m technical_evaluation.refinement.verify"
+  },
+  {
+    "id": "R4.5",
+    "requirement": "Permutation/SHAP and RF-specific explanations",
+    "implementation": "archived_explanations.py",
+    "evidence": "evidence/rubric4/archived_explanations_reverification.json",
+    "status": "VERIFIED",
+    "measured_result": "Archived permutation/dropout/GB SHAP reproduced;additional RF1000sample3repeats",
+    "limitation": "Associations not causes;balanced importance not prevalence score.",
+    "verification_command": "python -B -m technical_evaluation.refinement.verify"
+  },
+  {
+    "id": "R4.6",
+    "requirement": "Original-model noise/bias/dropout/saturation/OOD stress",
+    "implementation": "robustness.py",
+    "evidence": "evidence/rubric4/stress.json",
+    "status": "VERIFIED",
+    "measured_result": "Noise5% F1=.796863-.798149;10%=.645450-.655924",
+    "limitation": "Simulated label-preserving interventions;continuous dropout separately measured.",
+    "verification_command": "python -B -m technical_evaluation.refinement.verify"
+  },
+  {
+    "id": "R4.7",
+    "requirement": "Synthetic scenario mismatch investigation",
+    "implementation": "robustness.py",
+    "evidence": "refinement/results/empirical_scenarios.json",
+    "status": "VERIFIED",
+    "measured_result": "Once-frozen balancedTRAIN-derived250inputs,249conditioning agreements.",
+    "limitation": "Parents used in model fitting; not independent accuracy/physical simulation.",
+    "verification_command": "python -B -m technical_evaluation.refinement.verify"
+  },
+  {
+    "id": "R4.8",
+    "requirement": "Concrete dataset/deployment limitations",
+    "implementation": "Limitations_and_Risks.md",
+    "evidence": "evidence/final_assessment.json",
+    "status": "VERIFIED",
+    "measured_result": "Concrete data/calibration/dropout/latency/cloud/security limitations listed",
+    "limitation": "No production-readiness or safety certification.",
+    "verification_command": "python -B -m technical_evaluation.refinement.verify"
+  },
+  {
+    "id": "R5.1",
+    "requirement": "Runnable repo, modular entrypoints, pins, seeds, relative paths",
+    "implementation": "audit.py",
+    "evidence": "../uv.lock",
+    "status": "VERIFIED",
+    "measured_result": "Complete runtime closure locked; quick verification no longer rewrites tracked receipts.",
+    "limitation": "Provider patch selection still requires explicit parity checks.",
+    "verification_command": "python -B -m technical_evaluation.refinement.verify"
+  },
+  {
+    "id": "R5.2",
+    "requirement": "Clean-clone installation/preprocessing/API/tests",
+    "implementation": "audit.py",
+    "evidence": "refinement/results/clean_clone.json",
+    "status": "VERIFIED",
+    "measured_result": "New isolated installation, preprocessing and30tests plus actual localhost API execution.",
+    "limitation": "Windows full audit; Linux containers independently execute inference.",
+    "verification_command": "python -B -m technical_evaluation.refinement.verify"
+  },
+  {
+    "id": "R5.3",
+    "requirement": "Public versus private cache reproduction",
+    "implementation": "reconstruct.py",
+    "evidence": "refinement/results/LR_thread_sensitivity.json",
+    "status": "VERIFIED",
+    "measured_result": "All21 public reconstructions executed; original2thread control restored.",
+    "limitation": "No byte-identical claim or new TEST-based winner.",
+    "verification_command": "python -B -m technical_evaluation.refinement.verify"
+  },
+  {
+    "id": "R5.4",
+    "requirement": "Dockerfile/container execution",
+    "implementation": "../Dockerfile",
+    "evidence": "refinement/results/container_matrix.json",
+    "status": "VERIFIED",
+    "measured_result": "Actual two-runtime Linux image build/start/nonroot/read-only/5case and200TRAIN probability parity.",
+    "limitation": "Image is an inference prototype, not production certification.",
+    "verification_command": "python -B -m technical_evaluation.refinement.verify"
+  },
+  {
+    "id": "R5.5",
+    "requirement": "Live public model API/schema/error/CLI parity",
+    "implementation": "cloud.py",
+    "evidence": "refinement/results/cloud_preview_profile.json",
+    "status": "VERIFIED",
+    "measured_result": "Preview API/CLIparity, validation, timeout/capacity tests and five-viewports pass.",
+    "limitation": "Final production parity independently checked after publication.",
+    "verification_command": "python -B -m technical_evaluation.refinement.verify"
+  },
+  {
+    "id": "R5.6",
+    "requirement": "Cloud first/warm network latency and concurrency",
+    "implementation": "cloud.py",
+    "evidence": "refinement/results/cloud_preview_profile.json",
+    "status": "PARTIALLY VERIFIED",
+    "measured_result": "42/42;separate forest/preprocess/server/network timings plus one modelinit event.",
+    "limitation": "Full platform cold start and billedCPU remain unmeasured.",
+    "verification_command": "python -B -m technical_evaluation.refinement.verify"
+  },
+  {
+    "id": "R5.7",
+    "requirement": "Official current plan/allowances/cost assumptions",
+    "implementation": "cloud.py",
+    "evidence": "evidence/rubric5/cost.json",
+    "status": "PARTIALLY VERIFIED",
+    "measured_result": "Hobby4CPUh/360GBh/1M invocations;transparent40msCPU scenarios",
+    "limitation": "Plan verified separately;actual invoice/aggregate quota not inspected.",
+    "verification_command": "python -B -m technical_evaluation.refinement.verify"
+  },
+  {
+    "id": "R5.8",
+    "requirement": "Tracked/history secret and dependency security audit",
+    "implementation": "security.py",
+    "evidence": "refinement/results/security.json",
+    "status": "PARTIALLY VERIFIED",
+    "measured_result": "History/newfiles scanned;locked production closure advisory check;local guard/deadlines tested.",
+    "limitation": "No distributed IP/user limiter; advisory/regex scans not security guarantees.",
+    "verification_command": "python -B -m technical_evaluation.refinement.verify"
+  },
+  {
+    "id": "R5.9",
+    "requirement": "Trusted model deserialization and preserved artifact hashes",
+    "implementation": "audit.py",
+    "evidence": "evidence/rubric5/audit_verification.json",
+    "status": "VERIFIED",
+    "measured_result": "220 protected files and original RF55b0e94d... verified",
+    "limitation": "Only trusted fixed-hash pickle accepted;no arbitrary model upload.",
+    "verification_command": "python -B -m technical_evaluation.refinement.verify"
+  },
+  {
+    "id": "R5.10",
+    "requirement": "Documentation links and independent tests",
+    "implementation": "tests.py",
+    "evidence": "refinement/results/clean_clone.json",
+    "status": "VERIFIED",
+    "measured_result": "30 meaningful tests, documentation links, preserved bytes and responsive preview verified.",
+    "limitation": "Future platform/package changes require parity rechecking.",
+    "verification_command": "python -B -m technical_evaluation.refinement.verify"
+  }
+]

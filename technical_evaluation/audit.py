@@ -14,7 +14,7 @@ def links():
    if not (p.parent/target).exists():failures.append({'file':p.relative_to(ROOT).as_posix(),'target':target})
  return {'relative_links_checked':count,'failures':failures}
 def verify(write_receipt=True):
- freeze_check();baseline=load('Protected_Baseline.json');allowed=baseline.get('allowed_existing_file_updates',['README.md','.vercelignore']);bad=[p for p,h in baseline['sha256'].items() if p not in allowed and (not (ROOT/p).exists() or sha(ROOT/p)!=h)];assert not bad,bad
+ freeze_check();baseline=load('Protected_Baseline.json');allowed=list(baseline.get('allowed_existing_file_updates',['README.md','.vercelignore']));approved=OUT/'refinement/Baseline.json';allowed+=json.loads(approved.read_text())['allowed_modified_files'] if approved.exists() else [];runtime=OUT/'refinement/Runtime_Changes.json';allowed+=json.loads(runtime.read_text())['allowed_modified_files'] if runtime.exists() else [];allowed=list(set(allowed));bad=[p for p,h in baseline['sha256'].items() if p not in allowed and (not (ROOT/p).exists() or sha(ROOT/p)!=h)];assert not bad,bad
  leakage=load('evidence/rubric2/leakage.json');assert leakage['source_index_disjoint'] and leakage['operating_blocks_disjoint'];assert leakage['excluded_N']==104231
  for group in leakage['feature_vectors'].values():assert all(r['shared_distinct_feature_vectors']==0 for r in group['cross_partition_overlap'])
  cal=load('evidence/rubric3/calibration_selection_freeze.json');assert not cal['new_calibrated_threshold_search'];assert all(r['fit_eval_overlap']==0 and r['source_tile_overlap']==0 for r in cal['folds'])
@@ -33,8 +33,9 @@ def verify(write_receipt=True):
   elif isinstance(x,list):
    for v in x:walk(v)
  for p in (OUT/'evidence').rglob('*.json'):walk(json.loads(p.read_text()))
- receipt={'status':'PASS','recorded_UTC':datetime.datetime.now(datetime.timezone.utc).isoformat(),'protected_files_checked':len(baseline['sha256'])-len(allowed),'protected_hash_mismatches':bad,'original_RF_sha256':SHA,'protocol_sha256':sha(OUT/'Protocol.json'),'metric_tables_recomputed_from_confusions':count,'CLI_cases':len(cases),'links':checks,'runtime':version_info(),'scope':'Lightweight integrity/metric/schema verification; does not refit models, repeat cloud requests, or imply Docker execution.'}
- if write_receipt:write('evidence/rubric5/audit_verification.json',receipt)
+ receipt={'status':'PASS','recorded_UTC':datetime.datetime.now(datetime.timezone.utc).isoformat(),'protected_files_checked':sum(p not in allowed for p in baseline['sha256']),'protected_hash_mismatches':bad,'original_RF_sha256':SHA,'protocol_sha256':sha(OUT/'Protocol.json'),'metric_tables_recomputed_from_confusions':count,'CLI_cases':len(cases),'links':checks,'runtime':version_info(),'scope':'Lightweight integrity/metric/schema verification; does not refit models, repeat cloud requests, or imply Docker execution.'}
+ if write_receipt:
+  CACHE.mkdir(parents=True,exist_ok=True);(CACHE/'latest_verification.json').write_text(json.dumps(receipt,indent=2)+'\n')
  print(json.dumps(receipt,indent=2));return receipt
 def main():
  p=argparse.ArgumentParser();p.add_argument('--run',action='store_true',help='Re-run data, calibration and robustness diagnostics (minutes).');p.add_argument('--train',action='store_true',help='Refit separate clipping and grouped-CV experimental models (expensive).');p.add_argument('--cloud',action='store_true',help='Explicitly permit bounded live API calls.');p.add_argument('--private-cache',type=Path);args=p.parse_args()

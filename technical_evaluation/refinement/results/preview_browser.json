@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "URL": "https://pv-anomaly-detection-rbjp5ywwr-prince-r-k.vercel.app",
+  "observed_process_exit": 0,
+  "viewports": [
+    "1366x768",
+    "1920x1080",
+    "820x1180",
+    "390x844",
+    "320x844"
+  ],
+  "checks": [
+    "Four-step state/navigation/keyboard/reduced-motion",
+    "Original five dataset class predictions",
+    "Original synthetic presets preserved",
+    "Input and loading errors",
+    "No page errors"
+  ],
+  "source": "Executed existing browser smoke; screenshots remain local."
+}

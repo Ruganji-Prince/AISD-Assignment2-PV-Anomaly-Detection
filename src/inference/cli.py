@@ -3,6 +3,7 @@ import argparse
 import hashlib
 import json
 import math
+import time
 import pickle
 import sys
 from pathlib import Path
@@ -33,8 +34,8 @@ def validate(record):
 
 def load_model(path=MODEL):
     # Vercel build/runtime patches are parity-verified; training used 3.14.7.
-    if sys.version_info[:3] not in {(3,14,7), (3,14,8), (3,14,10)}:
-        raise RuntimeError('Verified runtimes: Python 3.14.7, 3.14.8 and 3.14.10; use deployment/requirements.txt.')
+    if sys.version_info[:3] not in {(3,14,2), (3,14,7), (3,14,8), (3,14,10)}:
+        raise RuntimeError('Verified runtimes: Python 3.14.2, 3.14.7, 3.14.8 and 3.14.10; use deployment/requirements.txt.')
     for package, expected in VERSIONS.items():
         if version(package) != expected:
             raise RuntimeError(f'{package}=={expected} required for the preserved pickle.')
@@ -47,14 +48,24 @@ def load_model(path=MODEL):
         raise ValueError('Model schema/class order mismatch.')
     return model
 
-def predict(record, model=None):
+def predict(record, model=None, timings=None):
     import numpy as np
     import pandas as pd
+    started = time.perf_counter()
     values = validate(record)
+    validation_end = time.perf_counter()
     model = load_model() if model is None else model
     frame = pd.DataFrame([values], columns=CHANNELS)
     # Same fitted quality/median/indicator/forest pipeline; no fit or target required.
-    probabilities = model.pipeline.predict_proba(frame)
+    frame_end = time.perf_counter()
+    if timings is None:
+        probabilities = model.pipeline.predict_proba(frame)
+    else:
+        transformed = model.pipeline[:-1].transform(frame)
+        preprocessing_end = time.perf_counter()
+        probabilities = model.pipeline[-1].predict_proba(transformed)
+        forest_end = time.perf_counter()
+        timings.update(validation=(validation_end-started)*1000, frame=(frame_end-validation_end)*1000, preprocessing=(preprocessing_end-frame_end)*1000, forest=(forest_end-preprocessing_end)*1000)
     if probabilities.shape != (1,5) or not np.isfinite(probabilities).all():
         raise ValueError('Invalid model output.')
     label = int(probabilities[0].argmax())

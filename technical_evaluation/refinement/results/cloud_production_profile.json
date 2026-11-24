@@ -1,0 +1,961 @@
+{
+  "URL": "https://pv-anomaly-detection-prince-r-k.vercel.app",
+  "UTC": "2026-11-24T08:36:14.150949+00:00",
+  "total_benchmark_requests": 42,
+  "network": "Client timezone Africa/Johannesburg; physical egress not geolocated.",
+  "measurements": "All values are wall-clock. Server timing ends at response headers, excludes network transmission and initial module/platform startup; never billedCPU.",
+  "phases": {
+    "sequential": {
+      "requests": 30,
+      "successes": 30,
+      "failure_rate": 0.0,
+      "all_network": {
+        "N": 30,
+        "mean_ms": 440.54734668073553,
+        "std_ms": 216.67885539825315,
+        "min_ms": 351.3599999714643,
+        "max_ms": 1455.6459998711944,
+        "p50_ms": 360.2119500283152,
+        "p95_ms": 638.9367051073349,
+        "p99_ms": 1221.761753959582
+      },
+      "warm_success_network": {
+        "N": 30,
+        "mean_ms": 440.54734668073553,
+        "std_ms": 216.67885539825315,
+        "min_ms": 351.3599999714643,
+        "max_ms": 1455.6459998711944,
+        "p50_ms": 360.2119500283152,
+        "p95_ms": 638.9367051073349,
+        "p99_ms": 1221.761753959582
+      },
+      "warm_server_components": {
+        "validation": {
+          "N": 30,
+          "mean_ms": 0.015580000000000002,
+          "std_ms": 0.004689268746756827,
+          "min_ms": 0.0036,
+          "max_ms": 0.0221,
+          "p50_ms": 0.017099999999999997,
+          "p95_ms": 0.020919999999999998,
+          "p99_ms": 0.021810000000000003
+        },
+        "frame": {
+          "N": 30,
+          "mean_ms": 0.5069266666666666,
+          "std_ms": 0.06114504481760666,
+          "min_ms": 0.4543,
+          "max_ms": 0.7483,
+          "p50_ms": 0.48419999999999996,
+          "p95_ms": 0.6321849999999999,
+          "p99_ms": 0.719677
+        },
+        "preprocessing": {
+          "N": 30,
+          "mean_ms": 5.950546666666665,
+          "std_ms": 4.3826709498089,
+          "min_ms": 4.844,
+          "max_ms": 29.1144,
+          "p50_ms": 5.09275,
+          "p95_ms": 5.868345,
+          "p99_ms": 22.40069700000002
+        },
+        "forest": {
+          "N": 30,
+          "mean_ms": 6.336786666666667,
+          "std_ms": 1.6565748626844972,
+          "min_ms": 5.8074,
+          "max_ms": 15.0173,
+          "p50_ms": 5.9741,
+          "p95_ms": 6.742754999999998,
+          "p99_ms": 12.703042000000007
+        },
+        "server": {
+          "N": 30,
+          "mean_ms": 14.540033333333335,
+          "std_ms": 6.231945270295145,
+          "min_ms": 12.5595,
+          "max_ms": 47.0603,
+          "p50_ms": 13.02755,
+          "p95_ms": 16.98789,
+          "p99_ms": 38.37946900000002
+        },
+        "body_validate": {
+          "N": 30,
+          "mean_ms": 0.3453433333333333,
+          "std_ms": 0.05926360564480522,
+          "min_ms": 0.2987,
+          "max_ms": 0.5794,
+          "p50_ms": 0.31775,
+          "p95_ms": 0.42221,
+          "p99_ms": 0.5361900000000002
+        }
+      }
+    },
+    "concurrency2": {
+      "requests": 12,
+      "successes": 12,
+      "failure_rate": 0.0,
+      "all_network": {
+        "N": 12,
+        "mean_ms": 562.4525333211446,
+        "std_ms": 604.4288898296027,
+        "min_ms": 349.77880003862083,
+        "max_ms": 2472.0566999167204,
+        "p50_ms": 367.9072499508038,
+        "p95_ms": 1419.2809649859541,
+        "p99_ms": 2261.5015529305683
+      },
+      "warm_success_network": {
+        "N": 11,
+        "mean_ms": 388.8521545397287,
+        "std_ms": 63.70324304488694,
+        "min_ms": 349.77880003862083,
+        "max_ms": 557.9190000426024,
+        "p50_ms": 366.5670999325812,
+        "p95_ms": 507.9286500113085,
+        "p99_ms": 547.9209300363436
+      },
+      "warm_server_components": {
+        "validation": {
+          "N": 11,
+          "mean_ms": 0.016,
+          "std_ms": 0.004829285661461745,
+          "min_ms": 0.0096,
+          "max_ms": 0.0211,
+          "p50_ms": 0.0186,
+          "p95_ms": 0.0207,
+          "p99_ms": 0.02102
+        },
+        "frame": {
+          "N": 11,
+          "mean_ms": 0.48900000000000005,
+          "std_ms": 0.04981586092802172,
+          "min_ms": 0.4353,
+          "max_ms": 0.6057,
+          "p50_ms": 0.4823,
+          "p95_ms": 0.5687500000000001,
+          "p99_ms": 0.59831
+        },
+        "preprocessing": {
+          "N": 11,
+          "mean_ms": 5.572609090909091,
+          "std_ms": 0.7451632833876686,
+          "min_ms": 4.953,
+          "max_ms": 7.1041,
+          "p50_ms": 5.3339,
+          "p95_ms": 6.854699999999999,
+          "p99_ms": 7.05422
+        },
+        "forest": {
+          "N": 11,
+          "mean_ms": 7.598281818181818,
+          "std_ms": 1.9391277182373428,
+          "min_ms": 5.9432,
+          "max_ms": 11.0861,
+          "p50_ms": 6.3807,
+          "p95_ms": 10.70345,
+          "p99_ms": 11.00957
+        },
+        "server": {
+          "N": 11,
+          "mean_ms": 15.129990909090907,
+          "std_ms": 2.305159367789804,
+          "min_ms": 12.8323,
+          "max_ms": 18.0365,
+          "p50_ms": 13.768,
+          "p95_ms": 17.953850000000003,
+          "p99_ms": 18.01997
+        },
+        "body_validate": {
+          "N": 11,
+          "mean_ms": 0.3454363636363636,
+          "std_ms": 0.03484675803363271,
+          "min_ms": 0.304,
+          "max_ms": 0.389,
+          "p50_ms": 0.3417,
+          "p95_ms": 0.38785000000000003,
+          "p99_ms": 0.38877
+        }
+      }
+    }
+  },
+  "model_initialization_events": [
+    {
+      "phase": "concurrency2",
+      "request": 4,
+      "HTTP": 200,
+      "network_ms": 2472.0566999167204,
+      "server_timing_ms": {
+        "body_validate": 0.3933,
+        "init": 2079.5246,
+        "validation": 0.0145,
+        "frame": 0.6822,
+        "preprocessing": 27.1632,
+        "forest": 11.7907,
+        "server": 2122.0611
+      },
+      "instance": "bf2be01ccd31",
+      "model_initialized": true
+    }
+  ],
+  "cold_start": "X-PV-Initialized marks a verified model-cache load within a request, not full platform cold-start timing. Absence means no confirmed initialization in this run.",
+  "health": {
+    "status": "ready",
+    "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+    "python_version": "3.14.10"
+  },
+  "parity": [
+    {
+      "case": 0,
+      "class": 0
+    },
+    {
+      "case": 1,
+      "class": 1
+    },
+    {
+      "case": 2,
+      "class": 2
+    },
+    {
+      "case": 3,
+      "class": 3
+    },
+    {
+      "case": 4,
+      "class": 4
+    }
+  ],
+  "invalid": [
+    {
+      "kind": "missing",
+      "HTTP": 422
+    },
+    {
+      "kind": "extra",
+      "HTTP": 422
+    },
+    {
+      "kind": "negative",
+      "HTTP": 422
+    }
+  ],
+  "requests": [
+    {
+      "phase": "sequential",
+      "request": 0,
+      "HTTP": 200,
+      "network_ms": 1455.6459998711944,
+      "server_timing_ms": {
+        "body_validate": 0.4122,
+        "init": 0.0,
+        "validation": 0.0211,
+        "frame": 0.6496,
+        "preprocessing": 29.1144,
+        "forest": 15.0173,
+        "server": 47.0603
+      },
+      "instance": "2f3a2ddf1d9a",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 1,
+      "HTTP": 200,
+      "network_ms": 626.2153000570834,
+      "server_timing_ms": {
+        "body_validate": 0.3927,
+        "init": 0.0,
+        "validation": 0.0162,
+        "frame": 0.5318,
+        "preprocessing": 5.1328,
+        "forest": 6.0498,
+        "server": 13.2532
+      },
+      "instance": "2f3a2ddf1d9a",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 2,
+      "HTTP": 200,
+      "network_ms": 368.32310003228486,
+      "server_timing_ms": {
+        "body_validate": 0.3747,
+        "init": 0.0,
+        "validation": 0.0207,
+        "frame": 0.5187,
+        "preprocessing": 5.1285,
+        "forest": 6.031,
+        "server": 13.098
+      },
+      "instance": "2f3a2ddf1d9a",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 3,
+      "HTTP": 200,
+      "network_ms": 366.87149992212653,
+      "server_timing_ms": {
+        "body_validate": 0.3073,
+        "init": 0.0,
+        "validation": 0.0119,
+        "frame": 0.4718,
+        "preprocessing": 5.2596,
+        "forest": 6.1607,
+        "server": 13.1928
+      },
+      "instance": "2f3a2ddf1d9a",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 4,
+      "HTTP": 200,
+      "network_ms": 626.4555000234395,
+      "server_timing_ms": {
+        "body_validate": 0.3078,
+        "init": 0.0,
+        "validation": 0.019,
+        "frame": 0.4943,
+        "preprocessing": 5.0777,
+        "forest": 5.8074,
+        "server": 12.7223
+      },
+      "instance": "2f3a2ddf1d9a",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 5,
+      "HTTP": 200,
+      "network_ms": 352.55190008319914,
+      "server_timing_ms": {
+        "body_validate": 0.4304,
+        "init": 0.0,
+        "validation": 0.0125,
+        "frame": 0.472,
+        "preprocessing": 4.9837,
+        "forest": 6.0129,
+        "server": 12.8791
+      },
+      "instance": "2f3a2ddf1d9a",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 6,
+      "HTTP": 200,
+      "network_ms": 353.1061999965459,
+      "server_timing_ms": {
+        "body_validate": 0.3151,
+        "init": 0.0,
+        "validation": 0.0183,
+        "frame": 0.4763,
+        "preprocessing": 5.0011,
+        "forest": 5.9687,
+        "server": 12.8565
+      },
+      "instance": "2f3a2ddf1d9a",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 7,
+      "HTTP": 200,
+      "network_ms": 354.5398998539895,
+      "server_timing_ms": {
+        "body_validate": 0.3163,
+        "init": 0.0,
+        "validation": 0.0122,
+        "frame": 0.4704,
+        "preprocessing": 5.7518,
+        "forest": 5.9444,
+        "server": 13.565
+      },
+      "instance": "2f3a2ddf1d9a",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 8,
+      "HTTP": 200,
+      "network_ms": 607.5416998937726,
+      "server_timing_ms": {
+        "body_validate": 0.309,
+        "init": 0.0,
+        "validation": 0.0199,
+        "frame": 0.5098,
+        "preprocessing": 4.9888,
+        "forest": 5.932,
+        "server": 12.798
+      },
+      "instance": "2f3a2ddf1d9a",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 9,
+      "HTTP": 200,
+      "network_ms": 351.3599999714643,
+      "server_timing_ms": {
+        "body_validate": 0.2987,
+        "init": 0.0,
+        "validation": 0.0194,
+        "frame": 0.5032,
+        "preprocessing": 4.8647,
+        "forest": 5.888,
+        "server": 12.5595
+      },
+      "instance": "2f3a2ddf1d9a",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 10,
+      "HTTP": 200,
+      "network_ms": 351.831000065431,
+      "server_timing_ms": {
+        "body_validate": 0.3988,
+        "init": 0.0,
+        "validation": 0.0196,
+        "frame": 0.4755,
+        "preprocessing": 4.844,
+        "forest": 6.1841,
+        "server": 12.9337
+      },
+      "instance": "2f3a2ddf1d9a",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 11,
+      "HTTP": 200,
+      "network_ms": 649.1486001759768,
+      "server_timing_ms": {
+        "body_validate": 0.3236,
+        "init": 0.0,
+        "validation": 0.0187,
+        "frame": 0.4839,
+        "preprocessing": 5.1284,
+        "forest": 6.0184,
+        "server": 12.9975
+      },
+      "instance": "2f3a2ddf1d9a",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 12,
+      "HTTP": 200,
+      "network_ms": 356.0097999870777,
+      "server_timing_ms": {
+        "body_validate": 0.3012,
+        "init": 0.0,
+        "validation": 0.0119,
+        "frame": 0.482,
+        "preprocessing": 5.0013,
+        "forest": 5.9253,
+        "server": 13.0055
+      },
+      "instance": "2f3a2ddf1d9a",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 13,
+      "HTTP": 200,
+      "network_ms": 361.5142002236098,
+      "server_timing_ms": {
+        "body_validate": 0.3325,
+        "init": 0.0,
+        "validation": 0.0119,
+        "frame": 0.4729,
+        "preprocessing": 5.0802,
+        "forest": 5.8858,
+        "server": 12.9365
+      },
+      "instance": "2f3a2ddf1d9a",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 14,
+      "HTTP": 200,
+      "network_ms": 620.6358000636101,
+      "server_timing_ms": {
+        "body_validate": 0.3112,
+        "init": 0.0,
+        "validation": 0.0198,
+        "frame": 0.4809,
+        "preprocessing": 4.9513,
+        "forest": 5.8465,
+        "server": 12.6407
+      },
+      "instance": "2f3a2ddf1d9a",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 15,
+      "HTTP": 200,
+      "network_ms": 375.3474000841379,
+      "server_timing_ms": {
+        "body_validate": 0.3081,
+        "init": 0.0,
+        "validation": 0.011,
+        "frame": 0.5079,
+        "preprocessing": 4.9974,
+        "forest": 6.0478,
+        "server": 12.9346
+      },
+      "instance": "2f3a2ddf1d9a",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 16,
+      "HTTP": 200,
+      "network_ms": 359.21659995801747,
+      "server_timing_ms": {
+        "body_validate": 0.3292,
+        "init": 0.0,
+        "validation": 0.0124,
+        "frame": 0.4845,
+        "preprocessing": 4.9635,
+        "forest": 5.8588,
+        "server": 12.7851
+      },
+      "instance": "2f3a2ddf1d9a",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 17,
+      "HTTP": 200,
+      "network_ms": 359.9368000868708,
+      "server_timing_ms": {
+        "body_validate": 0.3145,
+        "init": 0.0,
+        "validation": 0.0115,
+        "frame": 0.5295,
+        "preprocessing": 4.8954,
+        "forest": 5.9086,
+        "server": 16.8186
+      },
+      "instance": "2f3a2ddf1d9a",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 18,
+      "HTTP": 200,
+      "network_ms": 360.4870999697596,
+      "server_timing_ms": {
+        "body_validate": 0.3009,
+        "init": 0.0,
+        "validation": 0.0198,
+        "frame": 0.4764,
+        "preprocessing": 5.0954,
+        "forest": 5.9565,
+        "server": 12.8862
+      },
+      "instance": "2f3a2ddf1d9a",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 19,
+      "HTTP": 200,
+      "network_ms": 359.06080016866326,
+      "server_timing_ms": {
+        "body_validate": 0.3929,
+        "init": 0.0,
+        "validation": 0.0189,
+        "frame": 0.487,
+        "preprocessing": 5.2286,
+        "forest": 6.2905,
+        "server": 13.7604
+      },
+      "instance": "2f3a2ddf1d9a",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 20,
+      "HTTP": 200,
+      "network_ms": 352.05330001190305,
+      "server_timing_ms": {
+        "body_validate": 0.3082,
+        "init": 0.0,
+        "validation": 0.0189,
+        "frame": 0.5228,
+        "preprocessing": 4.991,
+        "forest": 5.8994,
+        "server": 12.7829
+      },
+      "instance": "2f3a2ddf1d9a",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 21,
+      "HTTP": 200,
+      "network_ms": 357.8075999394059,
+      "server_timing_ms": {
+        "body_validate": 0.3195,
+        "init": 0.0,
+        "validation": 0.0146,
+        "frame": 0.7483,
+        "preprocessing": 5.1358,
+        "forest": 6.3536,
+        "server": 13.828
+      },
+      "instance": "2f3a2ddf1d9a",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 22,
+      "HTTP": 200,
+      "network_ms": 355.5403999052942,
+      "server_timing_ms": {
+        "body_validate": 0.3553,
+        "init": 0.0,
+        "validation": 0.0036,
+        "frame": 0.4543,
+        "preprocessing": 5.262,
+        "forest": 7.0371,
+        "server": 14.0728
+      },
+      "instance": "2f3a2ddf1d9a",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 23,
+      "HTTP": 200,
+      "network_ms": 355.65479984506965,
+      "server_timing_ms": {
+        "body_validate": 0.3086,
+        "init": 0.0,
+        "validation": 0.0125,
+        "frame": 0.6109,
+        "preprocessing": 5.2726,
+        "forest": 5.8711,
+        "server": 13.2848
+      },
+      "instance": "2f3a2ddf1d9a",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 24,
+      "HTTP": 200,
+      "network_ms": 366.50360003113747,
+      "server_timing_ms": {
+        "body_validate": 0.3192,
+        "init": 0.0,
+        "validation": 0.0054,
+        "frame": 0.4765,
+        "preprocessing": 5.5895,
+        "forest": 6.383,
+        "server": 13.9354
+      },
+      "instance": "2f3a2ddf1d9a",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 25,
+      "HTTP": 200,
+      "network_ms": 370.5504999961704,
+      "server_timing_ms": {
+        "body_validate": 0.5794,
+        "init": 0.0,
+        "validation": 0.0196,
+        "frame": 0.4943,
+        "preprocessing": 5.5975,
+        "forest": 5.942,
+        "server": 13.6471
+      },
+      "instance": "2f3a2ddf1d9a",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 26,
+      "HTTP": 200,
+      "network_ms": 357.0668001193553,
+      "server_timing_ms": {
+        "body_validate": 0.3149,
+        "init": 0.0,
+        "validation": 0.018,
+        "frame": 0.4827,
+        "preprocessing": 5.0901,
+        "forest": 5.8834,
+        "server": 12.8542
+      },
+      "instance": "2f3a2ddf1d9a",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 27,
+      "HTTP": 200,
+      "network_ms": 361.14030005410314,
+      "server_timing_ms": {
+        "body_validate": 0.3019,
+        "init": 0.0,
+        "validation": 0.013,
+        "frame": 0.4761,
+        "preprocessing": 5.0999,
+        "forest": 6.0362,
+        "server": 13.0496
+      },
+      "instance": "2f3a2ddf1d9a",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 28,
+      "HTTP": 200,
+      "network_ms": 354.1353000327945,
+      "server_timing_ms": {
+        "body_validate": 0.3829,
+        "init": 0.0,
+        "validation": 0.0221,
+        "frame": 0.4889,
+        "preprocessing": 5.9637,
+        "forest": 5.9838,
+        "server": 13.9363
+      },
+      "instance": "2f3a2ddf1d9a",
+      "model_initialized": false
+    },
+    {
+      "phase": "sequential",
+      "request": 29,
+      "HTTP": 200,
+      "network_ms": 370.16859999857843,
+      "server_timing_ms": {
+        "body_validate": 0.3933,
+        "init": 0.0,
+        "validation": 0.013,
+        "frame": 0.4746,
+        "preprocessing": 5.0257,
+        "forest": 5.9795,
+        "server": 17.1264
+      },
+      "instance": "2f3a2ddf1d9a",
+      "model_initialized": false
+    },
+    {
+      "phase": "concurrency2",
+      "request": 0,
+      "HTTP": 200,
+      "network_ms": 374.2842001374811,
+      "server_timing_ms": {
+        "body_validate": 0.3079,
+        "init": 0.0,
+        "validation": 0.0211,
+        "frame": 0.4823,
+        "preprocessing": 5.0439,
+        "forest": 5.9432,
+        "server": 13.0027
+      },
+      "instance": "2f3a2ddf1d9a",
+      "model_initialized": false
+    },
+    {
+      "phase": "concurrency2",
+      "request": 1,
+      "HTTP": 200,
+      "network_ms": 557.9190000426024,
+      "server_timing_ms": {
+        "body_validate": 0.3417,
+        "init": 0.0,
+        "validation": 0.0179,
+        "frame": 0.508,
+        "preprocessing": 5.0299,
+        "forest": 5.971,
+        "server": 13.0478
+      },
+      "instance": "2f3a2ddf1d9a",
+      "model_initialized": false
+    },
+    {
+      "phase": "concurrency2",
+      "request": 3,
+      "HTTP": 200,
+      "network_ms": 350.5311000626534,
+      "server_timing_ms": {
+        "body_validate": 0.309,
+        "init": 0.0,
+        "validation": 0.0186,
+        "frame": 0.4695,
+        "preprocessing": 4.953,
+        "forest": 5.9712,
+        "server": 12.8323
+      },
+      "instance": "2f3a2ddf1d9a",
+      "model_initialized": false
+    },
+    {
+      "phase": "concurrency2",
+      "request": 2,
+      "HTTP": 200,
+      "network_ms": 457.93829998001456,
+      "server_timing_ms": {
+        "body_validate": 0.328,
+        "init": 0.0,
+        "validation": 0.0191,
+        "frame": 0.5318,
+        "preprocessing": 5.3639,
+        "forest": 5.9978,
+        "server": 13.2831
+      },
+      "instance": "2f3a2ddf1d9a",
+      "model_initialized": false
+    },
+    {
+      "phase": "concurrency2",
+      "request": 5,
+      "HTTP": 200,
+      "network_ms": 354.2120000347495,
+      "server_timing_ms": {
+        "body_validate": 0.3612,
+        "init": 0.0,
+        "validation": 0.0195,
+        "frame": 0.4813,
+        "preprocessing": 5.3339,
+        "forest": 10.3208,
+        "server": 17.8712
+      },
+      "instance": "2f3a2ddf1d9a",
+      "model_initialized": false
+    },
+    {
+      "phase": "concurrency2",
+      "request": 4,
+      "HTTP": 200,
+      "network_ms": 2472.0566999167204,
+      "server_timing_ms": {
+        "body_validate": 0.3933,
+        "init": 2079.5246,
+        "validation": 0.0145,
+        "frame": 0.6822,
+        "preprocessing": 27.1632,
+        "forest": 11.7907,
+        "server": 2122.0611
+      },
+      "instance": "bf2be01ccd31",
+      "model_initialized": true
+    },
+    {
+      "phase": "concurrency2",
+      "request": 7,
+      "HTTP": 200,
+      "network_ms": 354.87229982391,
+      "server_timing_ms": {
+        "body_validate": 0.389,
+        "init": 0.0,
+        "validation": 0.0102,
+        "frame": 0.4885,
+        "preprocessing": 6.6053,
+        "forest": 8.5672,
+        "server": 17.1009
+      },
+      "instance": "bf2be01ccd31",
+      "model_initialized": false
+    },
+    {
+      "phase": "concurrency2",
+      "request": 6,
+      "HTTP": 200,
+      "network_ms": 379.52589988708496,
+      "server_timing_ms": {
+        "body_validate": 0.3121,
+        "init": 0.0,
+        "validation": 0.0203,
+        "frame": 0.6057,
+        "preprocessing": 5.3932,
+        "forest": 6.3807,
+        "server": 13.768
+      },
+      "instance": "2f3a2ddf1d9a",
+      "model_initialized": false
+    },
+    {
+      "phase": "concurrency2",
+      "request": 9,
+      "HTTP": 200,
+      "network_ms": 366.5670999325812,
+      "server_timing_ms": {
+        "body_validate": 0.3867,
+        "init": 0.0,
+        "validation": 0.0195,
+        "frame": 0.5029,
+        "preprocessing": 5.0313,
+        "forest": 5.9735,
+        "server": 12.9727
+      },
+      "instance": "2f3a2ddf1d9a",
+      "model_initialized": false
+    },
+    {
+      "phase": "concurrency2",
+      "request": 8,
+      "HTTP": 200,
+      "network_ms": 369.24739996902645,
+      "server_timing_ms": {
+        "body_validate": 0.3781,
+        "init": 0.0,
+        "validation": 0.0096,
+        "frame": 0.4355,
+        "preprocessing": 7.1041,
+        "forest": 8.6272,
+        "server": 17.557
+      },
+      "instance": "bf2be01ccd31",
+      "model_initialized": false
+    },
+    {
+      "phase": "concurrency2",
+      "request": 11,
+      "HTTP": 200,
+      "network_ms": 349.77880003862083,
+      "server_timing_ms": {
+        "body_validate": 0.3821,
+        "init": 0.0,
+        "validation": 0.01,
+        "frame": 0.4382,
+        "preprocessing": 6.3174,
+        "forest": 8.7424,
+        "server": 16.9577
+      },
+      "instance": "bf2be01ccd31",
+      "model_initialized": false
+    },
+    {
+      "phase": "concurrency2",
+      "request": 10,
+      "HTTP": 200,
+      "network_ms": 362.49760002829134,
+      "server_timing_ms": {
+        "body_validate": 0.304,
+        "init": 0.0,
+        "validation": 0.0102,
+        "frame": 0.4353,
+        "preprocessing": 5.1228,
+        "forest": 11.0861,
+        "server": 18.0365
+      },
+      "instance": "2f3a2ddf1d9a",
+      "model_initialized": false
+    }
+  ],
+  "engineering_target_ms": 10
+}

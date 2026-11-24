@@ -4,7 +4,7 @@
   "functions": {
     "web/app.py": {
       "maxDuration": 60,
-      "excludeFiles": "{data/**,figures/**,reports/**,phase1_strategy/**,phase2_implementation/**,tests/**,web/tests/**,src/preprocessing/**,src/evaluation/**,.git/**,.cache/**,.review/**,.venv/**,**/__pycache__/**}"
+      "excludeFiles": "{data/**,figures/**,reports/**,phase1_strategy/**,phase2_implementation/**,tests/**,web/tests/**,src/preprocessing/**,src/evaluation/**,.git/**,.cache/**,.review/**,.venv/**,**/__pycache__/**,technical_evaluation/**,.github/**,Dockerfile,.dockerignore}"
     }
   },
   "regions": [

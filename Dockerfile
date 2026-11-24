@@ -1,7 +1,8 @@
-FROM python:3.14.10-slim
+ARG PYTHON_VERSION=3.14.10
+FROM python:${PYTHON_VERSION}-slim
 WORKDIR /app
-COPY web/requirements.txt /app/web/requirements.txt
-RUN pip install --no-cache-dir -r web/requirements.txt && useradd --create-home appuser
+COPY web/requirements.lock /app/web/requirements.lock
+RUN pip install --no-cache-dir --require-hashes -r web/requirements.lock && useradd --create-home appuser
 COPY src /app/src
 COPY web /app/web
 COPY models/rf_e4 /app/models/rf_e4

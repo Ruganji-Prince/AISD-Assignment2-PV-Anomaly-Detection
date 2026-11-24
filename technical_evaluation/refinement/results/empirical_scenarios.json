@@ -1,0 +1,3620 @@
+{
+  "generation_procedure_frozen": true,
+  "samples_generated_once": 250,
+  "no_prediction_rejection": true,
+  "no_TEST_used": true,
+  "results": [
+    {
+      "seed": 42,
+      "source_conditioning_class": 0,
+      "N": 10,
+      "agreement_N": 9,
+      "agreement_rate": 0.9,
+      "actual_predictions": [
+        9,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "seed": 42,
+      "source_conditioning_class": 1,
+      "N": 10,
+      "agreement_N": 10,
+      "agreement_rate": 1.0,
+      "actual_predictions": [
+        0,
+        10,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "seed": 42,
+      "source_conditioning_class": 2,
+      "N": 10,
+      "agreement_N": 10,
+      "agreement_rate": 1.0,
+      "actual_predictions": [
+        0,
+        0,
+        10,
+        0,
+        0
+      ]
+    },
+    {
+      "seed": 42,
+      "source_conditioning_class": 3,
+      "N": 10,
+      "agreement_N": 10,
+      "agreement_rate": 1.0,
+      "actual_predictions": [
+        0,
+        0,
+        0,
+        10,
+        0
+      ]
+    },
+    {
+      "seed": 42,
+      "source_conditioning_class": 4,
+      "N": 10,
+      "agreement_N": 10,
+      "agreement_rate": 1.0,
+      "actual_predictions": [
+        0,
+        0,
+        0,
+        0,
+        10
+      ]
+    },
+    {
+      "seed": 43,
+      "source_conditioning_class": 0,
+      "N": 10,
+      "agreement_N": 10,
+      "agreement_rate": 1.0,
+      "actual_predictions": [
+        10,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "seed": 43,
+      "source_conditioning_class": 1,
+      "N": 10,
+      "agreement_N": 10,
+      "agreement_rate": 1.0,
+      "actual_predictions": [
+        0,
+        10,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "seed": 43,
+      "source_conditioning_class": 2,
+      "N": 10,
+      "agreement_N": 10,
+      "agreement_rate": 1.0,
+      "actual_predictions": [
+        0,
+        0,
+        10,
+        0,
+        0
+      ]
+    },
+    {
+      "seed": 43,
+      "source_conditioning_class": 3,
+      "N": 10,
+      "agreement_N": 10,
+      "agreement_rate": 1.0,
+      "actual_predictions": [
+        0,
+        0,
+        0,
+        10,
+        0
+      ]
+    },
+    {
+      "seed": 43,
+      "source_conditioning_class": 4,
+      "N": 10,
+      "agreement_N": 10,
+      "agreement_rate": 1.0,
+      "actual_predictions": [
+        0,
+        0,
+        0,
+        0,
+        10
+      ]
+    },
+    {
+      "seed": 44,
+      "source_conditioning_class": 0,
+      "N": 10,
+      "agreement_N": 10,
+      "agreement_rate": 1.0,
+      "actual_predictions": [
+        10,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "seed": 44,
+      "source_conditioning_class": 1,
+      "N": 10,
+      "agreement_N": 10,
+      "agreement_rate": 1.0,
+      "actual_predictions": [
+        0,
+        10,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "seed": 44,
+      "source_conditioning_class": 2,
+      "N": 10,
+      "agreement_N": 10,
+      "agreement_rate": 1.0,
+      "actual_predictions": [
+        0,
+        0,
+        10,
+        0,
+        0
+      ]
+    },
+    {
+      "seed": 44,
+      "source_conditioning_class": 3,
+      "N": 10,
+      "agreement_N": 10,
+      "agreement_rate": 1.0,
+      "actual_predictions": [
+        0,
+        0,
+        0,
+        10,
+        0
+      ]
+    },
+    {
+      "seed": 44,
+      "source_conditioning_class": 4,
+      "N": 10,
+      "agreement_N": 10,
+      "agreement_rate": 1.0,
+      "actual_predictions": [
+        0,
+        0,
+        0,
+        0,
+        10
+      ]
+    },
+    {
+      "seed": 45,
+      "source_conditioning_class": 0,
+      "N": 10,
+      "agreement_N": 10,
+      "agreement_rate": 1.0,
+      "actual_predictions": [
+        10,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "seed": 45,
+      "source_conditioning_class": 1,
+      "N": 10,
+      "agreement_N": 10,
+      "agreement_rate": 1.0,
+      "actual_predictions": [
+        0,
+        10,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "seed": 45,
+      "source_conditioning_class": 2,
+      "N": 10,
+      "agreement_N": 10,
+      "agreement_rate": 1.0,
+      "actual_predictions": [
+        0,
+        0,
+        10,
+        0,
+        0
+      ]
+    },
+    {
+      "seed": 45,
+      "source_conditioning_class": 3,
+      "N": 10,
+      "agreement_N": 10,
+      "agreement_rate": 1.0,
+      "actual_predictions": [
+        0,
+        0,
+        0,
+        10,
+        0
+      ]
+    },
+    {
+      "seed": 45,
+      "source_conditioning_class": 4,
+      "N": 10,
+      "agreement_N": 10,
+      "agreement_rate": 1.0,
+      "actual_predictions": [
+        0,
+        0,
+        0,
+        0,
+        10
+      ]
+    },
+    {
+      "seed": 46,
+      "source_conditioning_class": 0,
+      "N": 10,
+      "agreement_N": 10,
+      "agreement_rate": 1.0,
+      "actual_predictions": [
+        10,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "seed": 46,
+      "source_conditioning_class": 1,
+      "N": 10,
+      "agreement_N": 10,
+      "agreement_rate": 1.0,
+      "actual_predictions": [
+        0,
+        10,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "seed": 46,
+      "source_conditioning_class": 2,
+      "N": 10,
+      "agreement_N": 10,
+      "agreement_rate": 1.0,
+      "actual_predictions": [
+        0,
+        0,
+        10,
+        0,
+        0
+      ]
+    },
+    {
+      "seed": 46,
+      "source_conditioning_class": 3,
+      "N": 10,
+      "agreement_N": 10,
+      "agreement_rate": 1.0,
+      "actual_predictions": [
+        0,
+        0,
+        0,
+        10,
+        0
+      ]
+    },
+    {
+      "seed": 46,
+      "source_conditioning_class": 4,
+      "N": 10,
+      "agreement_N": 10,
+      "agreement_rate": 1.0,
+      "actual_predictions": [
+        0,
+        0,
+        0,
+        0,
+        10
+      ]
+    }
+  ],
+  "overall_agreement": 0.996,
+  "seed_agreement": {
+    "42": 0.98,
+    "43": 1.0,
+    "44": 1.0,
+    "45": 1.0,
+    "46": 1.0
+  },
+  "samples": [
+    {
+      "seed": 42,
+      "source_position": 87808,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 0.48004355662364284,
+        "vdc2": 0.39549498362899455,
+        "idc1": 0.06058789219981911,
+        "idc2": 0.006687625662912489
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 90599,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 0.45350491651295455,
+        "vdc2": 0.3657685413218441,
+        "idc1": 0.059493508733098305,
+        "idc2": 0.007349782381050542
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 94762,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 0.4291566712866093,
+        "vdc2": 0.3445454981548285,
+        "idc1": 0.060940487043198724,
+        "idc2": 0.0065799529199467065
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 200736,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 286.43303085226273,
+        "vdc2": 302.58039379283684,
+        "idc1": 0.280566107487655,
+        "idc2": 0.1416808920017731
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 437175,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 1.4867895262692408,
+        "vdc2": 1.5292291896015524,
+        "idc1": 0.04898971339102337,
+        "idc2": 0.008065379643644092
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 442128,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 0.5728147228533254,
+        "vdc2": 0.5086251329623026,
+        "idc1": 0.0503224852848669,
+        "idc2": 0.008071527342721225
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 656147,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 275.82634737000757,
+        "vdc2": 263.18903076512174,
+        "idc1": 5.298931760096866,
+        "idc2": 5.135564451336195
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 696595,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 2.0155309760772924,
+        "vdc2": 2.7844549455583,
+        "idc1": 0.10468185546823208,
+        "idc2": 0.03884168558600749
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 773459,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 1.3054916053372683,
+        "vdc2": 1.7318399994682852,
+        "idc1": 0.10432971536115433,
+        "idc2": 0.044282391216813335
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 861479,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 0.6900310956978241,
+        "vdc2": 0.8006200526376579,
+        "idc1": 0.10565420139013319,
+        "idc2": 0.045796878169107165
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 990662,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 264.6741662467308,
+        "vdc2": 203.90614719725534,
+        "idc1": 9.302684543894932,
+        "idc2": 9.086238320965146
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 990967,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 260.4268390778843,
+        "vdc2": 198.6620934754756,
+        "idc1": 9.408061246968591,
+        "idc2": 9.239073375856629
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 991016,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 260.7871414806811,
+        "vdc2": 202.79918286865038,
+        "idc1": 9.456509796115803,
+        "idc2": 9.133980117531667
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 991022,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 259.47640192356255,
+        "vdc2": 204.41274152198196,
+        "idc1": 9.29319228490631,
+        "idc2": 8.86763866347777
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 991071,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 264.6738655427768,
+        "vdc2": 205.70849294029117,
+        "idc1": 9.224564539302138,
+        "idc2": 8.914058725231335
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 991117,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 262.7293064095405,
+        "vdc2": 203.59150693584112,
+        "idc1": 9.255064163969058,
+        "idc2": 8.97448703084046
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 994165,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 262.6368462493153,
+        "vdc2": 206.33022440198835,
+        "idc1": 8.937418029930246,
+        "idc2": 8.549305532293776
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 994366,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 265.6646123261321,
+        "vdc2": 203.84496331944942,
+        "idc1": 8.782502351603828,
+        "idc2": 8.58394940689079
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 994381,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 264.2401394205467,
+        "vdc2": 203.9611892370452,
+        "idc1": 8.971216938957744,
+        "idc2": 8.71115812770182
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 994439,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 264.7141921951981,
+        "vdc2": 206.63638608928258,
+        "idc1": 8.75556248016944,
+        "idc2": 8.410265152152975
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 726395,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 256.9286780571896,
+        "vdc2": 251.68668407316497,
+        "idc1": 7.998319166858361,
+        "idc2": 7.123928252965793
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 816565,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 246.11426906355837,
+        "vdc2": 232.23871597008392,
+        "idc1": 9.13533278150932,
+        "idc2": 8.446995798555166
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 817038,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 245.04595518386336,
+        "vdc2": 233.3016048183563,
+        "idc1": 9.078805698279387,
+        "idc2": 8.335641213496116
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 817101,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 246.1040218249073,
+        "vdc2": 230.79020837472044,
+        "idc1": 9.103589000947876,
+        "idc2": 8.45445000830091
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 817105,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 250.59104422446913,
+        "vdc2": 233.14270358695435,
+        "idc1": 8.986429831774299,
+        "idc2": 8.390907510756797
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 817156,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 248.51978114397994,
+        "vdc2": 229.6894180512107,
+        "idc1": 8.973348961366701,
+        "idc2": 8.429195230840824
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 817499,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 250.49068155089776,
+        "vdc2": 227.4498848457683,
+        "idc1": 9.14793965641602,
+        "idc2": 8.68539265538913
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 817607,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 247.9730151879088,
+        "vdc2": 228.78042236906583,
+        "idc1": 9.082267408811651,
+        "idc2": 8.504884030855308
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 818239,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 249.42107374296918,
+        "vdc2": 231.1042667818174,
+        "idc1": 9.279259289249655,
+        "idc2": 8.626977797516581
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 988859,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 266.6854630730214,
+        "vdc2": 243.15103566293493,
+        "idc1": 9.341802624149002,
+        "idc2": 8.930731154477133
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 989564,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 1.6435135435211192,
+        "vdc2": 270.3830979859153,
+        "idc1": 0.10336494485228122,
+        "idc2": 9.017759476610285
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 989621,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 1.6642833219052782,
+        "vdc2": 270.72428546184847,
+        "idc1": 0.09995839993867592,
+        "idc2": 8.69431675690796
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 989651,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 1.654548150348379,
+        "vdc2": 270.6542199874451,
+        "idc1": 0.1041514772703231,
+        "idc2": 8.904700218191048
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 989727,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 1.6591055174018354,
+        "vdc2": 270.66038631059024,
+        "idc1": 0.10504944330152784,
+        "idc2": 9.031244983378869
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 989822,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 1.6354342921189593,
+        "vdc2": 267.809110526629,
+        "idc1": 0.10089872579898547,
+        "idc2": 9.04360746754946
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 989899,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 1.6585446015543517,
+        "vdc2": 270.58082092697174,
+        "idc1": 0.10043706994633386,
+        "idc2": 8.906570119293981
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 989958,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 1.6444266000178966,
+        "vdc2": 271.6333228257787,
+        "idc1": 0.10667691779210058,
+        "idc2": 8.981576030730597
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 989959,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 1.6505217023662497,
+        "vdc2": 270.4178691978193,
+        "idc1": 0.10225712001840262,
+        "idc2": 8.978831652199526
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 992888,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 263.52281903769517,
+        "vdc2": 2.164683096722091,
+        "idc1": 9.106764642854946,
+        "idc2": 0.04510482620063316
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 992898,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 265.31603716920864,
+        "vdc2": 2.1822198088347884,
+        "idc1": 9.047476851807723,
+        "idc2": 0.04691024977610769
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 40990,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 320.0732032430704,
+        "vdc2": 300.0907871695584,
+        "idc1": 0.32308720214326087,
+        "idc2": 6.938162493767974
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 60161,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 296.4082013107642,
+        "vdc2": 257.35963133292756,
+        "idc1": 3.901133486747307,
+        "idc2": 3.778923847287566
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 61731,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 307.51815933359177,
+        "vdc2": 294.8890091057593,
+        "idc1": 2.729889511095803,
+        "idc2": 0.3094798599719438
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 123551,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 309.9733519183578,
+        "vdc2": 270.99382495671716,
+        "idc1": 0.3261565355573896,
+        "idc2": 4.253996125425661
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 394340,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 273.63638012631105,
+        "vdc2": 300.1230047745088,
+        "idc1": 6.849693437036773,
+        "idc2": 5.0665197036101395
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 570709,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 269.6071477130306,
+        "vdc2": 279.1549033138969,
+        "idc1": 5.189674773761217,
+        "idc2": 4.16162625072374
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 629532,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 288.0085431398822,
+        "vdc2": 278.40782630804523,
+        "idc1": 1.010551329962912,
+        "idc2": 0.41372296793043845
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 634639,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 277.45287660702274,
+        "vdc2": 282.87585049524745,
+        "idc1": 4.062192299987639,
+        "idc2": 3.3070354219800815
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 747472,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 270.814755125507,
+        "vdc2": 292.37526992788395,
+        "idc1": 4.292047944150577,
+        "idc2": 1.79269333013718
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 42,
+      "source_position": 804356,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 307.39584162045315,
+        "vdc2": 237.24935685000887,
+        "idc1": 2.7172716348167465,
+        "idc2": 3.200990123628342
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 16921,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 0.4660783820474486,
+        "vdc2": 0.42139416915124006,
+        "idc1": 0.05473498080993704,
+        "idc2": 0.005991398641532996
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 44433,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 284.97855715260016,
+        "vdc2": 288.4287164265948,
+        "idc1": 7.580883930773357,
+        "idc2": 7.436535307322323
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 276709,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 0.5451935566115332,
+        "vdc2": 0.4973467787410818,
+        "idc1": 0.058771254217755295,
+        "idc2": 0.005906658715352291
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 410386,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 208.09349672173954,
+        "vdc2": 182.88948324551615,
+        "idc1": 0.0613241677001154,
+        "idc2": 0.010237422431115828
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 467072,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 284.57010689550384,
+        "vdc2": 283.527773094613,
+        "idc1": 5.695712451133554,
+        "idc2": 5.74448834920699
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 509181,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 1.5368816497380422,
+        "vdc2": 1.435876283637351,
+        "idc1": 0.05434348280598608,
+        "idc2": 0.009926208114008529
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 583451,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 156.47405261608324,
+        "vdc2": 147.23943977171712,
+        "idc1": 0.07543695645213554,
+        "idc2": 0.015955875661897476
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 591894,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 0.8368794834030809,
+        "vdc2": 0.7226457843286803,
+        "idc1": 0.06934860675464179,
+        "idc2": 0.013409398708689752
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 651673,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 263.64238954118963,
+        "vdc2": 265.2462360617543,
+        "idc1": 6.995348793709381,
+        "idc2": 6.835033925075756
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 845104,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 0.9695134247599608,
+        "vdc2": 1.0986219946208007,
+        "idc1": 0.1010073511140813,
+        "idc2": 0.0488871660581247
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 990630,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 264.56122633547074,
+        "vdc2": 199.5489141452355,
+        "idc1": 9.22599491706551,
+        "idc2": 9.15400771685907
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 990740,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 264.5124679363584,
+        "vdc2": 201.75582538358796,
+        "idc1": 9.175974162618083,
+        "idc2": 9.035723500620344
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 990934,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 263.71901575577823,
+        "vdc2": 200.75244169615567,
+        "idc1": 9.287805828961812,
+        "idc2": 9.165726309315817
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 991117,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 263.11110790519615,
+        "vdc2": 203.88736864580096,
+        "idc1": 9.241489677830376,
+        "idc2": 8.961324069715221
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 991121,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 261.6748271042663,
+        "vdc2": 200.95193297160412,
+        "idc1": 9.334011574085343,
+        "idc2": 9.128622582801603
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 993930,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 262.87515596552055,
+        "vdc2": 204.59734039602182,
+        "idc1": 8.92790955844944,
+        "idc2": 8.587214479114257
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 993994,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 262.2900732292747,
+        "vdc2": 200.87218250988707,
+        "idc1": 8.886237945920323,
+        "idc2": 8.655213545636082
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 994086,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 265.85740063530807,
+        "vdc2": 203.731340916479,
+        "idc1": 8.954417879963113,
+        "idc2": 8.728545584286632
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 994117,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 262.8216136254516,
+        "vdc2": 206.94797307388768,
+        "idc1": 8.87571890276555,
+        "idc2": 8.44550187245432
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 994287,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 264.87132711475056,
+        "vdc2": 208.31257786678037,
+        "idc1": 8.891389578494062,
+        "idc2": 8.52182964099299
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 726017,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 259.4895361704118,
+        "vdc2": 268.8848400372651,
+        "idc1": 7.764670880411518,
+        "idc2": 6.095033254127713
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 726668,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 255.6060988890076,
+        "vdc2": 237.66081545783786,
+        "idc1": 8.30438197951772,
+        "idc2": 7.877602564822275
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 726821,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 257.4620409271413,
+        "vdc2": 241.8932198633281,
+        "idc1": 8.100625615967926,
+        "idc2": 7.58649070621828
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 726883,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 258.26908508296793,
+        "vdc2": 240.7204440299707,
+        "idc1": 8.148098899939507,
+        "idc2": 7.697991453625567
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 727048,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 259.58551128572515,
+        "vdc2": 241.4864078214306,
+        "idc1": 7.969103556210528,
+        "idc2": 7.55654819703664
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 815718,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 253.781124312154,
+        "vdc2": 237.91867581007403,
+        "idc1": 8.402351532612785,
+        "idc2": 7.843981016214722
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 816240,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 245.01019397039386,
+        "vdc2": 225.45027111322906,
+        "idc1": 9.02785336534175,
+        "idc2": 8.542244386881489
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 817624,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 248.97057351373996,
+        "vdc2": 229.43223760867494,
+        "idc1": 9.235848204612932,
+        "idc2": 8.662695454727071
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 818226,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 254.24726483616644,
+        "vdc2": 230.62116707938077,
+        "idc1": 9.037352714479514,
+        "idc2": 8.56504756062227
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 988899,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 265.4696685575141,
+        "vdc2": 241.61532745598387,
+        "idc1": 9.039958221178377,
+        "idc2": 8.653675128385883
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 989634,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 1.6471395960629704,
+        "vdc2": 267.82469830288744,
+        "idc1": 0.1043248518357072,
+        "idc2": 9.071602941566292
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 989711,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 1.6515942905564958,
+        "vdc2": 266.61194757138105,
+        "idc1": 0.10591593363189995,
+        "idc2": 8.989726750035993
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 989794,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 1.6406916006396732,
+        "vdc2": 272.0597129767478,
+        "idc1": 0.10133432258110844,
+        "idc2": 8.945574356564018
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 989800,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 1.6465938635567012,
+        "vdc2": 267.351155717269,
+        "idc1": 0.10660269459277817,
+        "idc2": 9.282376177592939
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 992832,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 261.12874255930006,
+        "vdc2": 2.1699510958923107,
+        "idc1": 9.164208271463101,
+        "idc2": 0.04448304350591572
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 992855,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 264.58355521029347,
+        "vdc2": 2.1624665471707227,
+        "idc1": 8.982289484077787,
+        "idc2": 0.04617069337881325
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 992913,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 265.0259912822629,
+        "vdc2": 2.1726661790193718,
+        "idc1": 8.900832848065123,
+        "idc2": 0.044217388494546137
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 993054,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 263.78518702780667,
+        "vdc2": 2.163165784568142,
+        "idc1": 9.111225392645126,
+        "idc2": 0.04561614821087151
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 993069,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 263.16193212773703,
+        "vdc2": 2.1587896409040543,
+        "idc1": 9.095620651778459,
+        "idc2": 0.045560531852704755
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 993174,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 265.92516310609335,
+        "vdc2": 2.1494086291009937,
+        "idc1": 8.867011008376776,
+        "idc2": 0.04332885177531269
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 41026,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 323.00004046846533,
+        "vdc2": 302.4708565617619,
+        "idc1": 0.3200136699587747,
+        "idc2": 6.802151031216747
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 62035,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 286.2569240504777,
+        "vdc2": 289.8544221327479,
+        "idc1": 1.7645000328027274,
+        "idc2": 0.11573299107719681
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 141354,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 288.1947284894683,
+        "vdc2": 266.35873194387204,
+        "idc1": 4.544101991636343,
+        "idc2": 4.370499236878471
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 402562,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 288.09835247210356,
+        "vdc2": 253.49962696238921,
+        "idc1": 3.348742859560141,
+        "idc2": 3.138566505912072
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 545089,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 311.81262390230376,
+        "vdc2": 249.6532506805187,
+        "idc1": 1.9416165929843845,
+        "idc2": 2.087470423298735
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 574223,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 274.98086856280617,
+        "vdc2": 290.0736140198119,
+        "idc1": 3.0493296008542643,
+        "idc2": 0.9917881319247344
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 657571,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 276.23381867626836,
+        "vdc2": 298.37559011074626,
+        "idc1": 4.622851101237851,
+        "idc2": 2.63174062862953
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 746855,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 262.79418329238575,
+        "vdc2": 271.43996589259655,
+        "idc1": 4.870956487303307,
+        "idc2": 3.5012206806909845
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 917305,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 264.1256546972755,
+        "vdc2": 246.5976635830782,
+        "idc1": 5.703965687001728,
+        "idc2": 5.450417679411411
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 43,
+      "source_position": 996591,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 269.3186167789454,
+        "vdc2": 303.45248415758573,
+        "idc1": 7.994395251236443,
+        "idc2": 5.961399365317285
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 89925,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 0.4519471146114603,
+        "vdc2": 0.3615977579227331,
+        "idc1": 0.06375870178914662,
+        "idc2": 0.007252174611087768
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 126225,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 278.12848693860474,
+        "vdc2": 281.44688869671984,
+        "idc1": 7.43377463515332,
+        "idc2": 7.279086005987884
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 167660,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 0.52771281070378,
+        "vdc2": 0.3934131455388634,
+        "idc1": 0.0632842040404264,
+        "idc2": 0.006766235652121061
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 261111,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 1.7863562493578171,
+        "vdc2": 1.793259944955761,
+        "idc1": 0.06619976874181509,
+        "idc2": 0.006438883281878672
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 414159,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 0.9914051736262409,
+        "vdc2": 0.8153556488550358,
+        "idc1": 0.05092802509247918,
+        "idc2": 0.009438398472737452
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 534054,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 0.88631462149439,
+        "vdc2": 0.8767112125030286,
+        "idc1": 0.07004227866680089,
+        "idc2": 0.010078025707453364
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 669988,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 161.38720894009165,
+        "vdc2": 159.89654386370242,
+        "idc1": 0.06891902423945427,
+        "idc2": 0.013387148593275288
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 670809,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 5.131891781880949,
+        "vdc2": 4.928084881005734,
+        "idc1": 0.06870958768045837,
+        "idc2": 0.014140233986413174
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 820665,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 248.86963034268993,
+        "vdc2": 257.4397472513753,
+        "idc1": 9.257355470748248,
+        "idc2": 8.920021564535023
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 966587,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 0.5053323919039757,
+        "vdc2": 0.5858650466296044,
+        "idc1": 0.10793038092975277,
+        "idc2": 0.03807543993910723
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 990747,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 259.8673079775209,
+        "vdc2": 204.8425817328405,
+        "idc1": 9.318071066922787,
+        "idc2": 8.90333220915009
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 990920,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 262.0729091219444,
+        "vdc2": 205.87781149115304,
+        "idc1": 9.23432353447511,
+        "idc2": 8.842476642327659
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 990989,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 263.41525862982184,
+        "vdc2": 202.03651948625344,
+        "idc1": 9.350544364206485,
+        "idc2": 9.155921935861446
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 991057,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 265.729343770283,
+        "vdc2": 200.66139076886682,
+        "idc1": 9.136927926315972,
+        "idc2": 9.083852308918438
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 991124,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 265.7197598457643,
+        "vdc2": 200.22191726089554,
+        "idc1": 9.16623180625346,
+        "idc2": 9.11699984729887
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 993976,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 263.0401312372438,
+        "vdc2": 202.7566100353628,
+        "idc1": 8.938830083482094,
+        "idc2": 8.656121633531267
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 994008,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 261.40762293567434,
+        "vdc2": 199.96056841275544,
+        "idc1": 9.0226519385268,
+        "idc2": 8.786318093380565
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 994056,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 264.7118835802697,
+        "vdc2": 203.89180952971944,
+        "idc1": 8.953823011836247,
+        "idc2": 8.66592486123728
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 994202,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 265.9376089491452,
+        "vdc2": 208.19023884419244,
+        "idc1": 8.666249318934206,
+        "idc2": 8.301139322107868
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 994281,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 270.22406016040367,
+        "vdc2": 208.6195185380104,
+        "idc1": 8.761830685420637,
+        "idc2": 8.554280251626968
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 726971,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 255.8057163566139,
+        "vdc2": 239.03054141572338,
+        "idc1": 8.147831348204024,
+        "idc2": 7.675116143022297
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 727230,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 260.83715282683534,
+        "vdc2": 242.887812715104,
+        "idc1": 8.15925141829615,
+        "idc2": 7.707829646587293
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 816295,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 248.50674167815922,
+        "vdc2": 229.22908751661677,
+        "idc1": 8.829226243077258,
+        "idc2": 8.339911359329736
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 816375,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 247.67980344351568,
+        "vdc2": 227.84787780833292,
+        "idc1": 9.027244432374438,
+        "idc2": 8.539116625642484
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 817555,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 246.5096870765035,
+        "vdc2": 229.7967255843324,
+        "idc1": 9.090565945555957,
+        "idc2": 8.437076689300158
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 817634,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 247.7601499799153,
+        "vdc2": 230.17382202607192,
+        "idc1": 9.033805971167958,
+        "idc2": 8.428919559766337
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 817833,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 249.76053743105388,
+        "vdc2": 236.51072646399635,
+        "idc1": 8.429500886575058,
+        "idc2": 7.724317595048083
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 818030,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 246.1995277138623,
+        "vdc2": 229.59165525371955,
+        "idc1": 9.148869098478352,
+        "idc2": 8.48276016994468
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 992300,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 263.0239299369186,
+        "vdc2": 246.97155074308642,
+        "idc1": 9.245050801545716,
+        "idc2": 8.672216025325673
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 992353,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 261.92773411241177,
+        "vdc2": 243.63290416927683,
+        "idc1": 9.096617800821228,
+        "idc2": 8.610779859718734
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 989462,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 1.6486738507364225,
+        "vdc2": 275.6865662750908,
+        "idc1": 0.10156558724349729,
+        "idc2": 8.682241670563457
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 989584,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 1.637889749635805,
+        "vdc2": 268.30037177684324,
+        "idc1": 0.1087219729729338,
+        "idc2": 9.164905019359724
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 989906,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 1.6416333366369396,
+        "vdc2": 272.17984643285666,
+        "idc1": 0.10187925339017628,
+        "idc2": 8.901786565693738
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 992711,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 266.8568425208535,
+        "vdc2": 2.165771477978038,
+        "idc1": 9.115914465123698,
+        "idc2": 0.0466854400153531
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 992731,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 263.4669541565231,
+        "vdc2": 2.165204384559344,
+        "idc1": 9.064171354793947,
+        "idc2": 0.04785666425328268
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 992739,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 265.0586355191258,
+        "vdc2": 2.1774839393593197,
+        "idc1": 9.02188026688327,
+        "idc2": 0.04363064135515322
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 992783,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 264.543409957452,
+        "vdc2": 2.1602689237015142,
+        "idc1": 8.86588106760033,
+        "idc2": 0.043571574676861215
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 992923,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 260.6338050184659,
+        "vdc2": 2.1687065867228053,
+        "idc1": 9.310570160958301,
+        "idc2": 0.04677762641222687
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 993012,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 265.53149465494823,
+        "vdc2": 2.1550191223283535,
+        "idc1": 9.020546970644535,
+        "idc2": 0.04244072505626626
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 993030,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 265.5771795665262,
+        "vdc2": 2.159565707702707,
+        "idc1": 9.160411669902416,
+        "idc2": 0.04543865079560983
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 60146,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 292.9805815032196,
+        "vdc2": 258.0386492982489,
+        "idc1": 3.882007932504182,
+        "idc2": 3.719117265954121
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 117701,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 321.1047704636563,
+        "vdc2": 352.6213864920587,
+        "idc1": 0.7637603896658343,
+        "idc2": 0.11828462918721837
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 203448,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 303.27234618200373,
+        "vdc2": 313.08726384410403,
+        "idc1": 1.2577842712344207,
+        "idc2": 0.9393104160431064
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 317917,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 324.53007746166884,
+        "vdc2": 281.60172860761,
+        "idc1": 0.30560878543940706,
+        "idc2": 0.10870169011625222
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 460327,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 301.74859912271046,
+        "vdc2": 326.25708250514043,
+        "idc1": 1.5972298538178467,
+        "idc2": 0.18395371666428875
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 461007,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 304.37317870729,
+        "vdc2": 324.8108693773853,
+        "idc1": 2.410553107425951,
+        "idc2": 0.22213565601306154
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 487166,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 282.9511491655444,
+        "vdc2": 262.68626515584833,
+        "idc1": 4.354865946753759,
+        "idc2": 4.129123470729172
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 548898,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 278.0493673125173,
+        "vdc2": 283.50632607952895,
+        "idc1": 4.686041822222601,
+        "idc2": 3.8594934585984277
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 634340,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 282.45180607688644,
+        "vdc2": 257.86909111889105,
+        "idc1": 3.9641712371451474,
+        "idc2": 3.830019582838073
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 44,
+      "source_position": 830228,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 262.61369863403513,
+        "vdc2": 282.58546457545583,
+        "idc1": 5.930096964400875,
+        "idc2": 4.335573472749648
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 513329,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 1.5303455565952646,
+        "vdc2": 1.4118497721882215,
+        "idc1": 0.054083252424177705,
+        "idc2": 0.010159284985757138
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 528754,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 1.082497124730965,
+        "vdc2": 1.1051698362380629,
+        "idc1": 0.06564334993550415,
+        "idc2": 0.008712842827035243
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 531576,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 0.9822678592891522,
+        "vdc2": 0.9887590560005993,
+        "idc1": 0.0652984037192068,
+        "idc2": 0.008765547407254005
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 562392,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 261.97592305300566,
+        "vdc2": 263.6001847709367,
+        "idc1": 7.815430183465859,
+        "idc2": 7.658522513851871
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 580052,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 265.6615761660742,
+        "vdc2": 259.30122744934414,
+        "idc1": 0.3949989388704167,
+        "idc2": 0.28196816108936246
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 703895,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 0.975848505565724,
+        "vdc2": 1.3246293446858735,
+        "idc1": 0.10745430387131576,
+        "idc2": 0.03990874795592043
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 730637,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 255.26754830666385,
+        "vdc2": 255.08752535254234,
+        "idc1": 8.742648799201893,
+        "idc2": 8.620880785284962
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 764756,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 0.8691452948218631,
+        "vdc2": 0.9404556716267912,
+        "idc1": 0.10929860883900643,
+        "idc2": 0.0411994756099457
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 811732,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 259.1379970843183,
+        "vdc2": 252.94998205730323,
+        "idc1": 7.478905728704698,
+        "idc2": 7.272804742374432
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 928859,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 167.02002244533966,
+        "vdc2": 78.99773757447905,
+        "idc1": 0.11176806102266792,
+        "idc2": 0.044985898114199376
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 990806,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 257.8900926605692,
+        "vdc2": 200.55055362028338,
+        "idc1": 9.505053754242038,
+        "idc2": 9.196069054691815
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 990890,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 262.091761941963,
+        "vdc2": 203.76025739395473,
+        "idc1": 9.196133530313807,
+        "idc2": 8.90526259492285
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 991103,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 258.77916975683104,
+        "vdc2": 203.272791188062,
+        "idc1": 9.508292224372092,
+        "idc2": 9.10683861249885
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 993897,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 266.0324561265663,
+        "vdc2": 200.9591490986505,
+        "idc1": 8.864997155586924,
+        "idc2": 8.770690803011245
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 994074,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 262.9939402536018,
+        "vdc2": 201.11395473742195,
+        "idc1": 9.063599654419228,
+        "idc2": 8.828786140312003
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 994114,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 263.7695954169386,
+        "vdc2": 203.20072371239706,
+        "idc1": 8.90042908121114,
+        "idc2": 8.638818897739116
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 994123,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 263.170991966722,
+        "vdc2": 205.3661660333184,
+        "idc1": 8.98345356190119,
+        "idc2": 8.6061246662373
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 994165,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 262.09246639311874,
+        "vdc2": 205.90255395325656,
+        "idc1": 8.988200911262126,
+        "idc2": 8.59788313791349
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 994328,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 263.69961456875023,
+        "vdc2": 206.599473743856,
+        "idc1": 8.852953451991016,
+        "idc2": 8.517842556486974
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 994434,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 264.44368643879636,
+        "vdc2": 207.87247296714892,
+        "idc1": 8.976512831328991,
+        "idc2": 8.549383685693977
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 726203,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 262.295179311451,
+        "vdc2": 256.79019896543576,
+        "idc1": 7.86054366863194,
+        "idc2": 6.785799583458666
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 726594,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 258.6248288250479,
+        "vdc2": 239.34418879532817,
+        "idc1": 8.059566900282842,
+        "idc2": 7.69341010965282
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 815886,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 256.28037339114877,
+        "vdc2": 236.2991171186168,
+        "idc1": 8.606330218905937,
+        "idc2": 8.20270199738887
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 816524,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 250.12615837187758,
+        "vdc2": 235.6430504986115,
+        "idc1": 8.959082216341104,
+        "idc2": 8.285824679913405
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 816549,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 251.26337552452864,
+        "vdc2": 233.7044110686885,
+        "idc1": 8.915731731339742,
+        "idc2": 8.35287717374698
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 816740,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 251.45024584800052,
+        "vdc2": 232.88157547133764,
+        "idc1": 8.8169377425827,
+        "idc2": 8.293675590597891
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 817736,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 254.42487767190116,
+        "vdc2": 230.90422829079307,
+        "idc1": 8.949775531537478,
+        "idc2": 8.51439231431764
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 988569,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 270.0630533488235,
+        "vdc2": 241.19024631479903,
+        "idc1": 9.057556040193562,
+        "idc2": 8.8420005309553
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 988614,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 269.14137266112846,
+        "vdc2": 246.98900816670798,
+        "idc1": 9.19231608514612,
+        "idc2": 8.737045861926726
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 992096,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 265.9360221460038,
+        "vdc2": 242.5274891607324,
+        "idc1": 9.331132840718091,
+        "idc2": 8.956990722228346
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 725933,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 258.67226070074776,
+        "vdc2": 0.78808232550335,
+        "idc1": 7.869767799937953,
+        "idc2": 0.042779271350027674
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 989498,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 1.6643777760685676,
+        "vdc2": 273.4060647163439,
+        "idc1": 0.10734952913259213,
+        "idc2": 8.930382363533564
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 989643,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 1.6514916839215483,
+        "vdc2": 269.0995994294121,
+        "idc1": 0.10197992466581612,
+        "idc2": 8.906014378017518
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 989645,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 1.6468213792097828,
+        "vdc2": 270.2106205583805,
+        "idc1": 0.109673405505869,
+        "idc2": 9.164005230036363
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 989651,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 1.6513436463457078,
+        "vdc2": 270.1300209599904,
+        "idc1": 0.10387755638327204,
+        "idc2": 8.881280642716762
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 989718,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 1.636073714949245,
+        "vdc2": 267.8781543567434,
+        "idc1": 0.10435742212371467,
+        "idc2": 8.932995333789975
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 989842,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 1.6685547250730852,
+        "vdc2": 273.1160101654303,
+        "idc1": 0.10262515334361698,
+        "idc2": 8.840721100827977
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 989920,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 1.653045170338762,
+        "vdc2": 266.93655272697777,
+        "idc1": 0.1097222157171317,
+        "idc2": 9.217880757313422
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 992822,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 263.88776358392676,
+        "vdc2": 2.1677549047512743,
+        "idc1": 8.98893229885384,
+        "idc2": 0.04435947291188253
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 993177,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 263.73668541033555,
+        "vdc2": 2.158608001738323,
+        "idc1": 9.108719837664777,
+        "idc2": 0.04579287080211367
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 206773,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 314.3024220991845,
+        "vdc2": 298.0928084708487,
+        "idc1": 1.7087202748636046,
+        "idc2": 1.3530205363710812
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 208116,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 310.46486174872973,
+        "vdc2": 312.90235644236174,
+        "idc1": 0.655237014339737,
+        "idc2": 0.4170888251576169
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 210160,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 312.60562709071166,
+        "vdc2": 292.3358198450918,
+        "idc1": 0.5288926497302064,
+        "idc2": 6.519181210020004
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 231061,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 296.5256087404724,
+        "vdc2": 255.82070336730413,
+        "idc1": 1.8617075066395399,
+        "idc2": 0.36264368526250756
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 401735,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 287.69013758319574,
+        "vdc2": 297.3056078246959,
+        "idc1": 3.878776378792311,
+        "idc2": 1.397994124281362
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 486204,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 276.54229007004204,
+        "vdc2": 254.93581357714646,
+        "idc1": 4.930683992496286,
+        "idc2": 4.6709940494413
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 571837,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 272.9385794790132,
+        "vdc2": 307.6138090709001,
+        "idc1": 4.541331507933392,
+        "idc2": 1.1082637879683912
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 719950,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 305.7536258164465,
+        "vdc2": 290.43493442040426,
+        "idc1": 5.310529547416689,
+        "idc2": 3.169458584387734
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 894319,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 274.9508624659371,
+        "vdc2": 286.85185960306137,
+        "idc1": 5.989022622554403,
+        "idc2": 4.85905180052018
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 45,
+      "source_position": 973572,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 318.4257984021039,
+        "vdc2": 343.4127704124024,
+        "idc1": 1.7039816602702118,
+        "idc2": 0.18506501999522332
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 80442,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 0.8481899596109477,
+        "vdc2": 0.6238397143978162,
+        "idc1": 0.06199176700051858,
+        "idc2": 0.008185708363997624
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 146909,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 293.6703654861792,
+        "vdc2": 308.8272808461312,
+        "idc1": 0.2122786782735011,
+        "idc2": 0.06269579196871684
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 221808,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 283.66732305896505,
+        "vdc2": 262.790125335244,
+        "idc1": 6.638499315056878,
+        "idc2": 6.812134090446551
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 253388,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 1.0935168199685825,
+        "vdc2": 0.8847663276982389,
+        "idc1": 0.06004356927970052,
+        "idc2": 0.007307934418910918
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 273325,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 2.4398637725514085,
+        "vdc2": 2.472802532367395,
+        "idc1": 0.06540739360017776,
+        "idc2": 0.006200700922341012
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 506902,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 1.5702900274683584,
+        "vdc2": 1.388573063816866,
+        "idc1": 0.05258591028668586,
+        "idc2": 0.011361774115478972
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 551088,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 272.25643767145203,
+        "vdc2": 264.4057340819358,
+        "idc1": 5.863842159312463,
+        "idc2": 5.664074814773468
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 621214,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 0.8129891431993923,
+        "vdc2": 0.7937230464955806,
+        "idc1": 0.06547698928772996,
+        "idc2": 0.01166431395993992
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 904471,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 252.33602332848665,
+        "vdc2": 258.12695501599933,
+        "idc1": 9.288382436315525,
+        "idc2": 8.99091279681136
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 936889,
+      "source_conditioning_class": 0,
+      "measurements": {
+        "vdc1": 2.545323266538056,
+        "vdc2": 3.4920630094026066,
+        "idc1": 0.1117641562707383,
+        "idc2": 0.03929836789735493
+      },
+      "predicted_class": 0,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 990764,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 258.6115740644002,
+        "vdc2": 201.45572048546512,
+        "idc1": 9.4250753977206,
+        "idc2": 9.102387498057334
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 991177,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 261.3897074415527,
+        "vdc2": 224.08466877445605,
+        "idc1": 9.444015167202982,
+        "idc2": 9.59492118071378
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 993899,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 261.19624451566597,
+        "vdc2": 200.605908896329,
+        "idc1": 8.82309175878971,
+        "idc2": 8.595050218527893
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 994016,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 261.6194921929671,
+        "vdc2": 202.4362378486642,
+        "idc1": 8.990581286985234,
+        "idc2": 8.661299173092004
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 994140,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 264.3312011297718,
+        "vdc2": 203.23036713839423,
+        "idc1": 8.906620542100747,
+        "idc2": 8.658423804385945
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 994168,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 266.72662428419454,
+        "vdc2": 209.02903564529242,
+        "idc1": 8.819704869797413,
+        "idc2": 8.435155326523034
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 994252,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 268.1022597749301,
+        "vdc2": 205.68615594215532,
+        "idc1": 8.648724190264215,
+        "idc2": 8.466376298986924
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 994289,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 265.0493351949435,
+        "vdc2": 209.40179626322853,
+        "idc1": 8.858154625398633,
+        "idc2": 8.445486295665694
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 994439,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 263.76523793146464,
+        "vdc2": 205.89563064282996,
+        "idc1": 8.807524198961795,
+        "idc2": 8.460177631653305
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 994468,
+      "source_conditioning_class": 1,
+      "measurements": {
+        "vdc1": 263.0970632400096,
+        "vdc2": 204.65410914351517,
+        "idc1": 8.759327507953794,
+        "idc2": 8.42821788873693
+      },
+      "predicted_class": 1,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 726805,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 257.1523017238105,
+        "vdc2": 238.49613868094397,
+        "idc1": 7.92263174122227,
+        "idc2": 7.513980439804658
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 815947,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 251.75729362498544,
+        "vdc2": 234.30864936479884,
+        "idc1": 8.639609748048922,
+        "idc2": 8.141559094432251
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 816078,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 248.54441743212683,
+        "vdc2": 235.62333799551539,
+        "idc1": 8.953743006269859,
+        "idc2": 8.262009066337784
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 817580,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 247.47223591654168,
+        "vdc2": 232.199059380931,
+        "idc1": 9.171365826940887,
+        "idc2": 8.448284620794393
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 817669,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 246.5210038082045,
+        "vdc2": 226.78719563198504,
+        "idc1": 9.199036114501025,
+        "idc2": 8.62605142322047
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 817794,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 248.79148136289564,
+        "vdc2": 231.4458912470924,
+        "idc1": 8.980183596974772,
+        "idc2": 8.31673473782193
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 988607,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 265.24397416849035,
+        "vdc2": 248.79893182137084,
+        "idc1": 9.518745874680848,
+        "idc2": 8.891950853518965
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 988971,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 265.5613568017542,
+        "vdc2": 241.88762613926428,
+        "idc1": 9.307588641274952,
+        "idc2": 8.91026397339309
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 992203,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 267.0533482229877,
+        "vdc2": 245.60891012669623,
+        "idc1": 9.083959895559008,
+        "idc2": 8.677871597101412
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 992314,
+      "source_conditioning_class": 2,
+      "measurements": {
+        "vdc1": 264.27353903775065,
+        "vdc2": 245.31705703368166,
+        "idc1": 9.220724010521083,
+        "idc2": 8.740747742916227
+      },
+      "predicted_class": 2,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 989382,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 1.6640611428295145,
+        "vdc2": 272.2048544782392,
+        "idc1": 0.10703735439103304,
+        "idc2": 9.132370421710558
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 989512,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 1.643649285439081,
+        "vdc2": 270.41799209519365,
+        "idc1": 0.10259686932927954,
+        "idc2": 8.953400016326533
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 989575,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 1.6585863562653935,
+        "vdc2": 270.85948774537746,
+        "idc1": 0.1089506813950714,
+        "idc2": 8.89733884097933
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 989685,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 1.6443416698652589,
+        "vdc2": 269.04610194430535,
+        "idc1": 0.10420182727747782,
+        "idc2": 8.878273291192754
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 989765,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 1.6358274318750523,
+        "vdc2": 272.41593640086234,
+        "idc1": 0.10596025849160834,
+        "idc2": 8.97633333185939
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 989783,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 1.6516221605786712,
+        "vdc2": 268.83539067632563,
+        "idc1": 0.1034129059319148,
+        "idc2": 9.021085639289526
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 992689,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 267.8502374583418,
+        "vdc2": 2.160597528544074,
+        "idc1": 8.915302376472294,
+        "idc2": 0.04538461568344997
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 992692,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 267.63221626373155,
+        "vdc2": 2.166286795187886,
+        "idc1": 8.943363473557415,
+        "idc2": 0.04437137578449836
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 992850,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 264.1719370568683,
+        "vdc2": 2.179864362065949,
+        "idc1": 9.167994791410145,
+        "idc2": 0.04518793330863749
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 992997,
+      "source_conditioning_class": 3,
+      "measurements": {
+        "vdc1": 264.8502304045015,
+        "vdc2": 2.154090327199077,
+        "idc1": 9.193358316908034,
+        "idc2": 0.04687138919277574
+      },
+      "predicted_class": 3,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 61981,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 301.9840651501891,
+        "vdc2": 301.2768378298302,
+        "idc1": 2.241279668629631,
+        "idc2": 0.11787109247398775
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 208048,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 308.821771229893,
+        "vdc2": 312.6010726123889,
+        "idc1": 0.6700675808879445,
+        "idc2": 0.4210951818522598
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 294444,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 320.6181334849292,
+        "vdc2": 308.1092082264516,
+        "idc1": 0.346896957566675,
+        "idc2": 0.16326945856860733
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 313016,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 288.9913151459969,
+        "vdc2": 319.4663920758469,
+        "idc1": 5.265099559566155,
+        "idc2": 0.9298240321177187
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 486085,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 280.2711927304397,
+        "vdc2": 315.60640057157275,
+        "idc1": 4.85367727151332,
+        "idc2": 0.6687336970009908
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 489404,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 284.404272124447,
+        "vdc2": 249.66800990501534,
+        "idc1": 3.0745388564689007,
+        "idc2": 2.880334272691684
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 571005,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 272.06293118619914,
+        "vdc2": 290.25551304511987,
+        "idc1": 5.128526195668447,
+        "idc2": 3.368110398039414
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 659806,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 278.72778570637615,
+        "vdc2": 279.45677115278824,
+        "idc1": 3.529764116170531,
+        "idc2": 2.52875361139895
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 805799,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 305.56030524842623,
+        "vdc2": 284.18190015731807,
+        "idc1": 3.41480655903085,
+        "idc2": 2.1053366808659173
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    },
+    {
+      "seed": 46,
+      "source_position": 831149,
+      "source_conditioning_class": 4,
+      "measurements": {
+        "vdc1": 262.0669845406191,
+        "vdc2": 249.70112113966965,
+        "idc1": 5.425313946852949,
+        "idc2": 5.128870068943158
+      },
+      "predicted_class": 4,
+      "description": "TRAIN-derived joint empirical perturbation, not a validated physical fault simulation"
+    }
+  ],
+  "original_five_presets": "Unchanged, still illustrative and separate from these empirical perturbations",
+  "limitations": "Conditioning labels refer to source observations, not independently validated new fault labels. Shared gains preserve voltage/current channel ratios within each pair, not all photovoltaic physics. Parent observations were used to train the model; balanced50/class agreement is not independent generalization accuracy."
+}

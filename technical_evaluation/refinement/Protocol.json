@@ -1,0 +1,50 @@
+{
+  "frozen_UTC": "2026-11-24T07:49:01.201648+00:00",
+  "baseline_commit": "c7f922133e4301f66a95612c46bc1bdea14f2ef2",
+  "near_duplicates": {
+    "reference": "Every TRAIN row, TRAIN-fitted StandardScaler, exact scipy cKDTree nearest neighbor",
+    "query": "Every VALIDATION/TEST row, four and six physical features",
+    "criterion": "Euclidean distance <=0.001; no removal or tuning"
+  },
+  "synthetic": {
+    "source": "TRAIN only, empirical class-conditional whole-row sampling",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "per_class_per_seed": 10,
+    "procedure": "Ten rows/class/seed without replacement; common voltage gain exp(N(0,.002)); common current gain exp(N(0,.01)); no rejection/search",
+    "labels": "Source conditioning labels, not validated physical ground truth",
+    "evaluation": "All250 cases; preserve original presets"
+  },
+  "runtime": {
+    "inputs": "TRAIN200 seed42 and five fixtures, no TEST choice",
+    "variants": [
+      "Original joblib backend",
+      "Thread-local sequential joblib backend, fitted objects/parameters unchanged"
+    ],
+    "protocol": "50calls/variant after3warmups; class parity and probability tolerance1e-12 required"
+  },
+  "bootstrap": {
+    "seed": 42,
+    "repetitions": 1000,
+    "unit": "Twelve preserved TRAIN grouped-OOF confusion matrices",
+    "variants": [
+      "Unconditional fixed-five with absent true support explicitly zero",
+      "Conditional all-five support",
+      "Supported-class macro-F1"
+    ],
+    "scope": "Assumption sensitivity, not external/deployedTEST coverage"
+  },
+  "cloud": {
+    "sequential_requests": 30,
+    "concurrent_requests": 12,
+    "max_concurrency": 2,
+    "cold": "Mark process-first initialization only, no synthetic cold-start claim"
+  },
+  "reconstruction": "All21 public configurations, newly fitted objects and separate receipt",
+  "container": "Standard free ubuntu runner only; actual build/start/health/5fixtures/nonroot/invalid/hash/CLI/liveparity/image/startup evidence"
+}

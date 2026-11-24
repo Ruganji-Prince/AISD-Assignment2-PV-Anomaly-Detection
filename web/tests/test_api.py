@@ -35,7 +35,7 @@ class APITests(unittest.TestCase):
     def test_health_verifies_model(self):
         response=self.client.get('/api/health');self.assertEqual(response.status_code,200)
         self.assertEqual(response.json()['model_sha256'],SHA256)
-        self.assertIn(response.json()['python_version'],['3.14.7','3.14.8','3.14.10'])
+        self.assertIn(response.json()['python_version'],['3.14.2','3.14.7','3.14.8','3.14.10'])
     def test_rejects_missing_extra_non_numeric_and_negative(self):
         normal=self.cases[0]['input']
         for record in [None,[],{},dict(normal,f_nv=0),dict(normal,vdc1='300'),dict(normal,idc1=True),dict(normal,vdc2=None),dict(normal,idc2=-.1)]:

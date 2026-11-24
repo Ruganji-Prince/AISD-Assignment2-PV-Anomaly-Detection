@@ -27,3 +27,5 @@ web/requirements-test.txt
 technical_evaluation
 Dockerfile
 .dockerignore
+
+.github

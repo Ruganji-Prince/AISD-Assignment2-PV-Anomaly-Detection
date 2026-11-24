@@ -1,0 +1,2567 @@
+{
+  "models": [
+    {
+      "candidate": "LightGBM__C2",
+      "new_sha256": "0521ea1327faf48dcb06e65a67b96f03ae6bd55231cad3fc70051a4fb3f51817",
+      "original_reference_sha256": "56df959d79a6471d6a44cb31d6957394ff6116fd413f5d99f43d74057d6c3952",
+      "fit_seconds": 8.603657400002703,
+      "fit_index_digest": "86010f1f91f0653fd59a65ec55e3a3e3a7e905b6d292e7207099d8c4b58075f9",
+      "validation": {
+        "N": 32800,
+        "macro_f1_present_classes": 0.629963472902428,
+        "macro_f1_fixed_five": 0.629963472902428,
+        "weighted_f1": 0.7452473775794078,
+        "balanced_accuracy_present_classes": 0.7829044980001012,
+        "macro_precision_present_classes": 0.6400276739989266,
+        "per_class": {
+          "0": {
+            "N": 18504,
+            "base_rate": 0.5641463414634146,
+            "precision": 0.9302390216787104,
+            "recall": 0.542639429312581,
+            "f1": 0.6854392791316813,
+            "AP": 0.9117281820984895
+          },
+          "1": {
+            "N": 1232,
+            "base_rate": 0.037560975609756096,
+            "precision": 0.17236870777947266,
+            "recall": 0.6420454545454546,
+            "f1": 0.2717746091736815,
+            "AP": 0.15850988227398088
+          },
+          "2": {
+            "N": 1222,
+            "base_rate": 0.03725609756097561,
+            "precision": 0.19745222929936307,
+            "recall": 0.8878887070376432,
+            "f1": 0.32306089027839807,
+            "AP": 0.5040359940606649
+          },
+          "3": {
+            "N": 1206,
+            "base_rate": 0.03676829268292683,
+            "precision": 0.9767025089605734,
+            "recall": 0.9038142620232172,
+            "f1": 0.9388458225667528,
+            "AP": 0.9811032027491511
+          },
+          "4": {
+            "N": 10636,
+            "base_rate": 0.32426829268292684,
+            "precision": 0.923375902276513,
+            "recall": 0.9381346370816096,
+            "f1": 0.9306967633616268,
+            "AP": 0.9854453157617475
+          }
+        },
+        "coverage": 1.0,
+        "confusion_matrix": [
+          [
+            10041,
+            3554,
+            4082,
+            0,
+            827,
+            0
+          ],
+          [
+            119,
+            791,
+            318,
+            3,
+            1,
+            0
+          ],
+          [
+            0,
+            118,
+            1085,
+            19,
+            0,
+            0
+          ],
+          [
+            0,
+            114,
+            2,
+            1090,
+            0,
+            0
+          ],
+          [
+            634,
+            12,
+            8,
+            4,
+            9978,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "macro_AP": 0.7081645153888069,
+        "hardware_AP": 0.7877163606611568,
+        "hardware_precision_at_top_1pct": 1.0,
+        "top_1pct_N": 328,
+        "hardware_alert_recall": 0.9672131147540983,
+        "normal_FPR": 0.4126675313445741,
+        "shade_FPR": 0.0022564874012786762,
+        "combined_nonhardware_FPR": 0.26286890871654084,
+        "alert_rule": "argmax class in {1,2,3}; not a tuned alert threshold",
+        "threshold": null,
+        "absent_true_classes": [],
+        "AP_definition": "one-vs-rest average precision; not trapezoidal PR-AUC",
+        "hardware_definition": "classes1/2/3 only; shade environmental"
+      },
+      "provenance": "NEW reconstruction; no byte-identical claim; no TEST used."
+    },
+    {
+      "candidate": "LightGBM__C3",
+      "new_sha256": "942f98e354e2dc84657c130fa11f8ab34bd9ef9ff7e1d0fd02be544eed7b5c76",
+      "original_reference_sha256": "8d488e923901f1dfcf60e7237a027b8c7315cb9cf79b466ced7691fdb4aff25e",
+      "fit_seconds": 9.170321800047532,
+      "fit_index_digest": "86010f1f91f0653fd59a65ec55e3a3e3a7e905b6d292e7207099d8c4b58075f9",
+      "validation": {
+        "N": 32800,
+        "macro_f1_present_classes": 0.6224640969632732,
+        "macro_f1_fixed_five": 0.6224640969632732,
+        "weighted_f1": 0.7744217354773762,
+        "balanced_accuracy_present_classes": 0.732160086660256,
+        "macro_precision_present_classes": 0.6455347426519753,
+        "per_class": {
+          "0": {
+            "N": 18504,
+            "base_rate": 0.5641463414634146,
+            "precision": 0.9244371737945003,
+            "recall": 0.6413207955036749,
+            "f1": 0.7572827925082161,
+            "AP": 0.9428847528431417
+          },
+          "1": {
+            "N": 1232,
+            "base_rate": 0.037560975609756096,
+            "precision": 0.20979591836734693,
+            "recall": 0.6258116883116883,
+            "f1": 0.3142449561850418,
+            "AP": 0.19287144094092543
+          },
+          "2": {
+            "N": 1222,
+            "base_rate": 0.03725609756097561,
+            "precision": 0.2381843706130089,
+            "recall": 0.8330605564648118,
+            "f1": 0.37045123726346435,
+            "AP": 0.7574356143787335
+          },
+          "3": {
+            "N": 1206,
+            "base_rate": 0.03676829268292683,
+            "precision": 0.9743589743589743,
+            "recall": 0.6301824212271974,
+            "f1": 0.7653575025176234,
+            "AP": 0.9667944805128351
+          },
+          "4": {
+            "N": 10636,
+            "base_rate": 0.32426829268292684,
+            "precision": 0.880897276126046,
+            "recall": 0.9304249717939075,
+            "f1": 0.904983996342021,
+            "AP": 0.9824048127775379
+          }
+        },
+        "coverage": 1.0,
+        "confusion_matrix": [
+          [
+            11867,
+            2602,
+            2714,
+            0,
+            1321,
+            0
+          ],
+          [
+            251,
+            771,
+            200,
+            6,
+            4,
+            0
+          ],
+          [
+            1,
+            178,
+            1018,
+            12,
+            13,
+            0
+          ],
+          [
+            0,
+            113,
+            333,
+            760,
+            0,
+            0
+          ],
+          [
+            718,
+            11,
+            9,
+            2,
+            9896,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "macro_AP": 0.7684782202906347,
+        "hardware_AP": 0.8020761951898439,
+        "hardware_precision_at_top_1pct": 1.0,
+        "top_1pct_N": 328,
+        "hardware_alert_recall": 0.9265027322404371,
+        "normal_FPR": 0.28728923476005186,
+        "shade_FPR": 0.002068446784505453,
+        "combined_nonhardware_FPR": 0.18318462594371998,
+        "alert_rule": "argmax class in {1,2,3}; not a tuned alert threshold",
+        "threshold": null,
+        "absent_true_classes": [],
+        "AP_definition": "one-vs-rest average precision; not trapezoidal PR-AUC",
+        "hardware_definition": "classes1/2/3 only; shade environmental"
+      },
+      "provenance": "NEW reconstruction; no byte-identical claim; no TEST used."
+    },
+    {
+      "candidate": "LightGBM__E4",
+      "new_sha256": "6b815cf3fb729e4c69c56f774c9826f682806c23da0950f30d3b807d9304f9d7",
+      "original_reference_sha256": "6c61bf1a475f3230c5b20d6d7217b6aaea8abb52df57a4363d26033e4ccbcf3c",
+      "fit_seconds": 14.060240200022236,
+      "fit_index_digest": "86010f1f91f0653fd59a65ec55e3a3e3a7e905b6d292e7207099d8c4b58075f9",
+      "validation": {
+        "N": 32800,
+        "macro_f1_present_classes": 0.855657128389233,
+        "macro_f1_fixed_five": 0.855657128389233,
+        "weighted_f1": 0.9585703420213889,
+        "balanced_accuracy_present_classes": 0.8664457349002241,
+        "macro_precision_present_classes": 0.9083270340871579,
+        "per_class": {
+          "0": {
+            "N": 18504,
+            "base_rate": 0.5641463414634146,
+            "precision": 0.999279059449867,
+            "recall": 0.9737894509295287,
+            "f1": 0.986369608057806,
+            "AP": 0.9992410673672724
+          },
+          "1": {
+            "N": 1232,
+            "base_rate": 0.037560975609756096,
+            "precision": 0.9841584158415841,
+            "recall": 0.4034090909090909,
+            "f1": 0.5722510074841681,
+            "AP": 0.9871024319891146
+          },
+          "2": {
+            "N": 1222,
+            "base_rate": 0.03725609756097561,
+            "precision": 0.6181914331041777,
+            "recall": 0.9566284779050737,
+            "f1": 0.751044008994539,
+            "AP": 0.9764877718069609
+          },
+          "3": {
+            "N": 1206,
+            "base_rate": 0.03676829268292683,
+            "precision": 0.9877149877149877,
+            "recall": 1.0,
+            "f1": 0.9938195302843016,
+            "AP": 0.9966780056523049
+          },
+          "4": {
+            "N": 10636,
+            "base_rate": 0.32426829268292684,
+            "precision": 0.9522912743251726,
+            "recall": 0.9984016547574276,
+            "f1": 0.97480148712535,
+            "AP": 0.9980823309432345
+          }
+        },
+        "coverage": 1.0,
+        "confusion_matrix": [
+          [
+            18019,
+            0,
+            5,
+            0,
+            480,
+            0
+          ],
+          [
+            2,
+            497,
+            712,
+            1,
+            20,
+            0
+          ],
+          [
+            0,
+            7,
+            1169,
+            14,
+            32,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1206,
+            0,
+            0
+          ],
+          [
+            11,
+            1,
+            5,
+            0,
+            10619,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "macro_AP": 0.9915183215517775,
+        "hardware_AP": 0.9983265467902523,
+        "hardware_precision_at_top_1pct": 1.0,
+        "top_1pct_N": 328,
+        "hardware_alert_recall": 0.9852459016393442,
+        "normal_FPR": 0.0002702118460873325,
+        "shade_FPR": 0.0005641218503196691,
+        "combined_nonhardware_FPR": 0.0003774879890185312,
+        "alert_rule": "argmax class in {1,2,3}; not a tuned alert threshold",
+        "threshold": null,
+        "absent_true_classes": [],
+        "AP_definition": "one-vs-rest average precision; not trapezoidal PR-AUC",
+        "hardware_definition": "classes1/2/3 only; shade environmental"
+      },
+      "provenance": "NEW reconstruction; no byte-identical claim; no TEST used."
+    },
+    {
+      "candidate": "LightGBM__E5",
+      "new_sha256": "a613376f7adb44baab9aadae82b169263100c94ca3571a97e4c497a34197e677",
+      "original_reference_sha256": "96e624cf73c09b864f5696556d70c3dbc2edf97f07b7af62c4965e321edee402",
+      "fit_seconds": 14.43262269999832,
+      "fit_index_digest": "86010f1f91f0653fd59a65ec55e3a3e3a7e905b6d292e7207099d8c4b58075f9",
+      "validation": {
+        "N": 32800,
+        "macro_f1_present_classes": 0.8757948184445139,
+        "macro_f1_fixed_five": 0.8757948184445139,
+        "weighted_f1": 0.9566630144324478,
+        "balanced_accuracy_present_classes": 0.8514877876393669,
+        "macro_precision_present_classes": 0.9528990609115622,
+        "per_class": {
+          "0": {
+            "N": 18504,
+            "base_rate": 0.5641463414634146,
+            "precision": 0.9995033660743847,
+            "recall": 0.9788694336359706,
+            "f1": 0.9890787964833725,
+            "AP": 0.9993024514854304
+          },
+          "1": {
+            "N": 1232,
+            "base_rate": 0.037560975609756096,
+            "precision": 0.9959919839679359,
+            "recall": 0.4034090909090909,
+            "f1": 0.5742345465049105,
+            "AP": 0.9930039646170586
+          },
+          "2": {
+            "N": 1222,
+            "base_rate": 0.03725609756097561,
+            "precision": 0.8745387453874539,
+            "recall": 0.969721767594108,
+            "f1": 0.919674039580908,
+            "AP": 0.9809170881103491
+          },
+          "3": {
+            "N": 1206,
+            "base_rate": 0.03676829268292683,
+            "precision": 0.988256549232159,
+            "recall": 0.9071310116086235,
+            "f1": 0.9459576307825335,
+            "AP": 0.9937510678384227
+          },
+          "4": {
+            "N": 10636,
+            "base_rate": 0.32426829268292684,
+            "precision": 0.9062046598958778,
+            "recall": 0.998307634449041,
+            "f1": 0.9500290788708451,
+            "AP": 0.9979667755473323
+          }
+        },
+        "coverage": 1.0,
+        "confusion_matrix": [
+          [
+            18113,
+            0,
+            6,
+            0,
+            385,
+            0
+          ],
+          [
+            1,
+            497,
+            42,
+            0,
+            692,
+            0
+          ],
+          [
+            0,
+            2,
+            1185,
+            13,
+            22,
+            0
+          ],
+          [
+            0,
+            0,
+            112,
+            1094,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            10,
+            0,
+            10618,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "macro_AP": 0.9929882695197186,
+        "hardware_AP": 0.997431174843335,
+        "hardware_precision_at_top_1pct": 1.0,
+        "top_1pct_N": 328,
+        "hardware_alert_recall": 0.8046448087431693,
+        "normal_FPR": 0.00032425421530479895,
+        "shade_FPR": 0.000940203083866115,
+        "combined_nonhardware_FPR": 0.000549073438572409,
+        "alert_rule": "argmax class in {1,2,3}; not a tuned alert threshold",
+        "threshold": null,
+        "absent_true_classes": [],
+        "AP_definition": "one-vs-rest average precision; not trapezoidal PR-AUC",
+        "hardware_definition": "classes1/2/3 only; shade environmental"
+      },
+      "provenance": "NEW reconstruction; no byte-identical claim; no TEST used."
+    },
+    {
+      "candidate": "LightGBM__F6",
+      "new_sha256": "a3e4404ccbfeb477fe6b30d2f1b500fbef01a69dab84287d067e5ed432d81532",
+      "original_reference_sha256": "2e5583f035197fd3a40287e5d1587fdd14f7ddf12180735e11bae1d9df66a983",
+      "fit_seconds": 15.720151100074872,
+      "fit_index_digest": "86010f1f91f0653fd59a65ec55e3a3e3a7e905b6d292e7207099d8c4b58075f9",
+      "validation": {
+        "N": 32800,
+        "macro_f1_present_classes": 0.8568945709280442,
+        "macro_f1_fixed_five": 0.8568945709280442,
+        "weighted_f1": 0.9612591650821105,
+        "balanced_accuracy_present_classes": 0.8680232709411234,
+        "macro_precision_present_classes": 0.9110463537073248,
+        "per_class": {
+          "0": {
+            "N": 18504,
+            "base_rate": 0.5641463414634146,
+            "precision": 0.9986217542312145,
+            "recall": 0.978923476005188,
+            "f1": 0.9886745080915864,
+            "AP": 0.9993597564515004
+          },
+          "1": {
+            "N": 1232,
+            "base_rate": 0.037560975609756096,
+            "precision": 0.9920159680638723,
+            "recall": 0.4034090909090909,
+            "f1": 0.5735718407386036,
+            "AP": 0.9872476582375733
+          },
+          "2": {
+            "N": 1222,
+            "base_rate": 0.03725609756097561,
+            "precision": 0.6134585289514867,
+            "recall": 0.9623567921440261,
+            "f1": 0.7492832112137623,
+            "AP": 0.9770148176086463
+          },
+          "3": {
+            "N": 1206,
+            "base_rate": 0.03676829268292683,
+            "precision": 0.9893179950698439,
+            "recall": 0.9983416252072969,
+            "f1": 0.9938093272802311,
+            "AP": 0.9950103418036274
+          },
+          "4": {
+            "N": 10636,
+            "base_rate": 0.32426829268292684,
+            "precision": 0.9618175222202068,
+            "recall": 0.997085370440015,
+            "f1": 0.9791339673160373,
+            "AP": 0.9980521755259356
+          }
+        },
+        "coverage": 1.0,
+        "confusion_matrix": [
+          [
+            18114,
+            0,
+            6,
+            0,
+            384,
+            0
+          ],
+          [
+            1,
+            497,
+            726,
+            0,
+            8,
+            0
+          ],
+          [
+            0,
+            4,
+            1176,
+            13,
+            29,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            1204,
+            0,
+            0
+          ],
+          [
+            24,
+            0,
+            7,
+            0,
+            10605,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "macro_AP": 0.9913369499254566,
+        "hardware_AP": 0.9985486624325822,
+        "hardware_precision_at_top_1pct": 1.0,
+        "top_1pct_N": 328,
+        "hardware_alert_recall": 0.9896174863387979,
+        "normal_FPR": 0.00032425421530479895,
+        "shade_FPR": 0.0006581421587062806,
+        "combined_nonhardware_FPR": 0.00044612216884008235,
+        "alert_rule": "argmax class in {1,2,3}; not a tuned alert threshold",
+        "threshold": null,
+        "absent_true_classes": [],
+        "AP_definition": "one-vs-rest average precision; not trapezoidal PR-AUC",
+        "hardware_definition": "classes1/2/3 only; shade environmental"
+      },
+      "provenance": "NEW reconstruction; no byte-identical claim; no TEST used."
+    },
+    {
+      "candidate": "LightGBM__S2",
+      "new_sha256": "3c42e80e1afdf7b5724bc5acf174a5cdbfcf86685d76f516067d9fec402ca541",
+      "original_reference_sha256": "cf4a91fb3a2a582f734ea1aa80ef315629aa75605fc07296fd803397286d4b3d",
+      "fit_seconds": 9.774399399990216,
+      "fit_index_digest": "86010f1f91f0653fd59a65ec55e3a3e3a7e905b6d292e7207099d8c4b58075f9",
+      "validation": {
+        "N": 32800,
+        "macro_f1_present_classes": 0.294041591596948,
+        "macro_f1_fixed_five": 0.294041591596948,
+        "weighted_f1": 0.49516393057516,
+        "balanced_accuracy_present_classes": 0.42458413330793865,
+        "macro_precision_present_classes": 0.3414140255906624,
+        "per_class": {
+          "0": {
+            "N": 18504,
+            "base_rate": 0.5641463414634146,
+            "precision": 0.8862603791320696,
+            "recall": 0.305717682663208,
+            "f1": 0.45461485916341865,
+            "AP": 0.8151362596281709
+          },
+          "1": {
+            "N": 1232,
+            "base_rate": 0.037560975609756096,
+            "precision": 0.11943069306930693,
+            "recall": 0.15665584415584416,
+            "f1": 0.13553370786516855,
+            "AP": 0.08226627869730443
+          },
+          "2": {
+            "N": 1222,
+            "base_rate": 0.03725609756097561,
+            "precision": 0.10131180625630676,
+            "recall": 0.8216039279869067,
+            "f1": 0.18038088393819618,
+            "AP": 0.12647872460382542
+          },
+          "3": {
+            "N": 1206,
+            "base_rate": 0.03676829268292683,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "AP": 0.05264048566967245
+          },
+          "4": {
+            "N": 10636,
+            "base_rate": 0.32426829268292684,
+            "precision": 0.6000672494956287,
+            "recall": 0.8389432117337345,
+            "f1": 0.6996785070179565,
+            "AP": 0.8767339168698396
+          }
+        },
+        "coverage": 1.0,
+        "confusion_matrix": [
+          [
+            5657,
+            1275,
+            5604,
+            21,
+            5947,
+            0
+          ],
+          [
+            62,
+            193,
+            977,
+            0,
+            0,
+            0
+          ],
+          [
+            153,
+            65,
+            1004,
+            0,
+            0,
+            0
+          ],
+          [
+            103,
+            83,
+            1020,
+            0,
+            0,
+            0
+          ],
+          [
+            408,
+            0,
+            1305,
+            0,
+            8923,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "macro_AP": 0.3906511330937626,
+        "hardware_AP": 0.30240991149351215,
+        "hardware_precision_at_top_1pct": 0.11890243902439024,
+        "top_1pct_N": 328,
+        "hardware_alert_recall": 0.9131147540983606,
+        "normal_FPR": 0.3728923476005188,
+        "shade_FPR": 0.12269650244452802,
+        "combined_nonhardware_FPR": 0.28157172271791353,
+        "alert_rule": "argmax class in {1,2,3}; not a tuned alert threshold",
+        "threshold": null,
+        "absent_true_classes": [],
+        "AP_definition": "one-vs-rest average precision; not trapezoidal PR-AUC",
+        "hardware_definition": "classes1/2/3 only; shade environmental"
+      },
+      "provenance": "NEW reconstruction; no byte-identical claim; no TEST used."
+    },
+    {
+      "candidate": "LightGBM__S4",
+      "new_sha256": "8da5cfc87fba2b43cb9346581243c3b7facfb48f46f1ac2f55848bc578985835",
+      "original_reference_sha256": "e2df6dd4fa5014152b5a4cfafb1e8119cd4d7030ad3f3adf736c4e1a6a8341e6",
+      "fit_seconds": 12.246797800064087,
+      "fit_index_digest": "86010f1f91f0653fd59a65ec55e3a3e3a7e905b6d292e7207099d8c4b58075f9",
+      "validation": {
+        "N": 32800,
+        "macro_f1_present_classes": 0.3082391621446995,
+        "macro_f1_fixed_five": 0.3082391621446995,
+        "weighted_f1": 0.643520565011508,
+        "balanced_accuracy_present_classes": 0.33440945622118623,
+        "macro_precision_present_classes": 0.29609407529231513,
+        "per_class": {
+          "0": {
+            "N": 18504,
+            "base_rate": 0.5641463414634146,
+            "precision": 0.7836904381196035,
+            "recall": 0.6621811500216169,
+            "f1": 0.7178300477459797,
+            "AP": 0.741289546954714
+          },
+          "1": {
+            "N": 1232,
+            "base_rate": 0.037560975609756096,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "AP": 0.05648937345295539
+          },
+          "2": {
+            "N": 1222,
+            "base_rate": 0.03725609756097561,
+            "precision": 0.0771689497716895,
+            "recall": 0.13829787234042554,
+            "f1": 0.09906213364595545,
+            "AP": 0.08284181858684775
+          },
+          "3": {
+            "N": 1206,
+            "base_rate": 0.03676829268292683,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "AP": 0.0477446971857722
+          },
+          "4": {
+            "N": 10636,
+            "base_rate": 0.32426829268292684,
+            "precision": 0.6196109885702827,
+            "recall": 0.8715682587438887,
+            "f1": 0.7243036293315623,
+            "AP": 0.9024109766783117
+          }
+        },
+        "coverage": 1.0,
+        "confusion_matrix": [
+          [
+            12253,
+            0,
+            547,
+            13,
+            5691,
+            0
+          ],
+          [
+            1231,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            1053,
+            0,
+            169,
+            0,
+            0,
+            0
+          ],
+          [
+            1049,
+            0,
+            157,
+            0,
+            0,
+            0
+          ],
+          [
+            49,
+            0,
+            1317,
+            0,
+            9270,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "macro_AP": 0.3661552825717202,
+        "hardware_AP": 0.21847744893774287,
+        "hardware_precision_at_top_1pct": 0.0,
+        "top_1pct_N": 328,
+        "hardware_alert_recall": 0.08934426229508197,
+        "normal_FPR": 0.030263726761781237,
+        "shade_FPR": 0.12382474614516735,
+        "combined_nonhardware_FPR": 0.06441317776252574,
+        "alert_rule": "argmax class in {1,2,3}; not a tuned alert threshold",
+        "threshold": null,
+        "absent_true_classes": [],
+        "AP_definition": "one-vs-rest average precision; not trapezoidal PR-AUC",
+        "hardware_definition": "classes1/2/3 only; shade environmental"
+      },
+      "provenance": "NEW reconstruction; no byte-identical claim; no TEST used."
+    },
+    {
+      "candidate": "LR__C2",
+      "new_sha256": "34da382299974717dd78d2a591581b8706ffad3f21c75d38311965ff9c1aaee2",
+      "original_reference_sha256": "f592567cfa5cf600b8273b0b29045c0865785cb7bf1034de239eeeb0da57bc98",
+      "fit_seconds": 6.965947299962863,
+      "fit_index_digest": "86010f1f91f0653fd59a65ec55e3a3e3a7e905b6d292e7207099d8c4b58075f9",
+      "validation": {
+        "N": 32800,
+        "macro_f1_present_classes": 0.17446285802224265,
+        "macro_f1_fixed_five": 0.17446285802224265,
+        "weighted_f1": 0.17156896654967502,
+        "balanced_accuracy_present_classes": 0.33876062763672643,
+        "macro_precision_present_classes": 0.21362164608537978,
+        "per_class": {
+          "0": {
+            "N": 18504,
+            "base_rate": 0.5641463414634146,
+            "precision": 0.25396211828372633,
+            "recall": 0.035505836575875485,
+            "f1": 0.06230145559717415,
+            "AP": 0.42978743864923113
+          },
+          "1": {
+            "N": 1232,
+            "base_rate": 0.037560975609756096,
+            "precision": 0.13684649031451782,
+            "recall": 0.5332792207792207,
+            "f1": 0.21780208851317753,
+            "AP": 0.16818925696969417
+          },
+          "2": {
+            "N": 1222,
+            "base_rate": 0.03725609756097561,
+            "precision": 0.1279386290522148,
+            "recall": 0.8461538461538461,
+            "f1": 0.2222699914015477,
+            "AP": 0.10366176268815032
+          },
+          "3": {
+            "N": 1206,
+            "base_rate": 0.03676829268292683,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "AP": 0.0463534492034238
+          },
+          "4": {
+            "N": 10636,
+            "base_rate": 0.32426829268292684,
+            "precision": 0.5493609927764401,
+            "recall": 0.27886423467468974,
+            "f1": 0.369940754599314,
+            "AP": 0.6311475230376684
+          }
+        },
+        "coverage": 1.0,
+        "confusion_matrix": [
+          [
+            657,
+            3983,
+            6182,
+            6481,
+            1201,
+            0
+          ],
+          [
+            0,
+            657,
+            564,
+            5,
+            6,
+            0
+          ],
+          [
+            0,
+            157,
+            1034,
+            11,
+            20,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1206,
+            0
+          ],
+          [
+            1930,
+            4,
+            302,
+            5434,
+            2966,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "macro_AP": 0.27582788610963355,
+        "hardware_AP": 0.206937345235167,
+        "hardware_precision_at_top_1pct": 0.14939024390243902,
+        "top_1pct_N": 328,
+        "hardware_alert_recall": 0.6633879781420765,
+        "normal_FPR": 0.8995892779939473,
+        "shade_FPR": 0.53967657013915,
+        "combined_nonhardware_FPR": 0.7682223747426218,
+        "alert_rule": "argmax class in {1,2,3}; not a tuned alert threshold",
+        "threshold": null,
+        "absent_true_classes": [],
+        "AP_definition": "one-vs-rest average precision; not trapezoidal PR-AUC",
+        "hardware_definition": "classes1/2/3 only; shade environmental"
+      },
+      "provenance": "NEW reconstruction; no byte-identical claim; no TEST used."
+    },
+    {
+      "candidate": "LR__C3",
+      "new_sha256": "cabafad89b1e290b82b4a2e3ac1cc4bb8f9fc2849b9771f1b6edb5a984990da4",
+      "original_reference_sha256": "56c02d031a296a454c4cfe395e8c1abc37f7048994510561a344db98a4b6e701",
+      "fit_seconds": 23.752721099881455,
+      "fit_index_digest": "86010f1f91f0653fd59a65ec55e3a3e3a7e905b6d292e7207099d8c4b58075f9",
+      "validation": {
+        "N": 32800,
+        "macro_f1_present_classes": 0.517197723581569,
+        "macro_f1_fixed_five": 0.517197723581569,
+        "weighted_f1": 0.5246630460565105,
+        "balanced_accuracy_present_classes": 0.6615623870563218,
+        "macro_precision_present_classes": 0.5301295346501049,
+        "per_class": {
+          "0": {
+            "N": 18504,
+            "base_rate": 0.5641463414634146,
+            "precision": 0.6587090163934426,
+            "recall": 0.3474383916990921,
+            "f1": 0.45492499292386074,
+            "AP": 0.601753269255292
+          },
+          "1": {
+            "N": 1232,
+            "base_rate": 0.037560975609756096,
+            "precision": 0.21834473001650553,
+            "recall": 0.7516233766233766,
+            "f1": 0.3383884524027042,
+            "AP": 0.25293924865634293
+          },
+          "2": {
+            "N": 1222,
+            "base_rate": 0.03725609756097561,
+            "precision": 0.08573428204829114,
+            "recall": 0.6014729950900164,
+            "f1": 0.15007656967840735,
+            "AP": 0.09060331217996603
+          },
+          "3": {
+            "N": 1206,
+            "base_rate": 0.03676829268292683,
+            "precision": 0.9686746987951808,
+            "recall": 1.0,
+            "f1": 0.9840881272949816,
+            "AP": 0.9603129052115806
+          },
+          "4": {
+            "N": 10636,
+            "base_rate": 0.32426829268292684,
+            "precision": 0.719184945997105,
+            "recall": 0.6072771718691238,
+            "f1": 0.6585104756078911,
+            "AP": 0.7856171116931239
+          }
+        },
+        "coverage": 1.0,
+        "confusion_matrix": [
+          [
+            6429,
+            2848,
+            6705,
+            0,
+            2522,
+            0
+          ],
+          [
+            0,
+            926,
+            298,
+            8,
+            0,
+            0
+          ],
+          [
+            0,
+            463,
+            735,
+            24,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1206,
+            0,
+            0
+          ],
+          [
+            3331,
+            4,
+            835,
+            7,
+            6459,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "macro_AP": 0.538245169399261,
+        "hardware_AP": 0.5345075745475215,
+        "hardware_precision_at_top_1pct": 0.6280487804878049,
+        "top_1pct_N": 328,
+        "hardware_alert_recall": 1.0,
+        "normal_FPR": 0.5162667531344575,
+        "shade_FPR": 0.07954118089507334,
+        "combined_nonhardware_FPR": 0.3568634179821551,
+        "alert_rule": "argmax class in {1,2,3}; not a tuned alert threshold",
+        "threshold": null,
+        "absent_true_classes": [],
+        "AP_definition": "one-vs-rest average precision; not trapezoidal PR-AUC",
+        "hardware_definition": "classes1/2/3 only; shade environmental"
+      },
+      "provenance": "NEW reconstruction; no byte-identical claim; no TEST used."
+    },
+    {
+      "candidate": "LR__E4",
+      "new_sha256": "839f783eb0eaa2bbf2eeff60e21ab66ee1a4595354ef49b02f8862d9bf04becd",
+      "original_reference_sha256": "297e855248e9f164b682399128b697e87cfe06c4c804c52871e78077240f1766",
+      "fit_seconds": 23.560853499919176,
+      "fit_index_digest": "86010f1f91f0653fd59a65ec55e3a3e3a7e905b6d292e7207099d8c4b58075f9",
+      "validation": {
+        "N": 32800,
+        "macro_f1_present_classes": 0.5882073569164217,
+        "macro_f1_fixed_five": 0.5882073569164217,
+        "weighted_f1": 0.35295442186113923,
+        "balanced_accuracy_present_classes": 0.7792030133405496,
+        "macro_precision_present_classes": 0.639931103904837,
+        "per_class": {
+          "0": {
+            "N": 18504,
+            "base_rate": 0.5641463414634146,
+            "precision": 0.5577380952380953,
+            "recall": 0.050637699956766105,
+            "f1": 0.09284581847007531,
+            "AP": 0.5161417301150018
+          },
+          "1": {
+            "N": 1232,
+            "base_rate": 0.037560975609756096,
+            "precision": 0.9991728701406121,
+            "recall": 0.9805194805194806,
+            "f1": 0.9897582957804179,
+            "AP": 0.985352483320243
+          },
+          "2": {
+            "N": 1222,
+            "base_rate": 0.03725609756097561,
+            "precision": 0.10271516393442623,
+            "recall": 0.9844517184942717,
+            "f1": 0.18602133910623164,
+            "AP": 0.06216305529791561
+          },
+          "3": {
+            "N": 1206,
+            "base_rate": 0.03676829268292683,
+            "precision": 0.9885245901639345,
+            "recall": 1.0,
+            "f1": 0.9942291838417148,
+            "AP": 0.9938520054144344
+          },
+          "4": {
+            "N": 10636,
+            "base_rate": 0.32426829268292684,
+            "precision": 0.551504800047117,
+            "recall": 0.8804061677322301,
+            "f1": 0.6781821473836683,
+            "AP": 0.7111646106872079
+          }
+        },
+        "coverage": 1.0,
+        "confusion_matrix": [
+          [
+            937,
+            0,
+            9964,
+            0,
+            7603,
+            0
+          ],
+          [
+            0,
+            1208,
+            17,
+            0,
+            7,
+            0
+          ],
+          [
+            0,
+            0,
+            1203,
+            14,
+            5,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1206,
+            0,
+            0
+          ],
+          [
+            743,
+            1,
+            528,
+            0,
+            9364,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "macro_AP": 0.6537347769669606,
+        "hardware_AP": 0.46834802157546107,
+        "hardware_precision_at_top_1pct": 0.9603658536585366,
+        "top_1pct_N": 328,
+        "hardware_alert_recall": 0.9967213114754099,
+        "normal_FPR": 0.5384781668828361,
+        "shade_FPR": 0.049736743136517485,
+        "combined_nonhardware_FPR": 0.360089224433768,
+        "alert_rule": "argmax class in {1,2,3}; not a tuned alert threshold",
+        "threshold": null,
+        "absent_true_classes": [],
+        "AP_definition": "one-vs-rest average precision; not trapezoidal PR-AUC",
+        "hardware_definition": "classes1/2/3 only; shade environmental"
+      },
+      "provenance": "NEW reconstruction; no byte-identical claim; no TEST used."
+    },
+    {
+      "candidate": "LR__E5",
+      "new_sha256": "64ff42c0727ac215b0e42c1123b4c0c9d9f3f18d293ab13711be21ef7a5ec355",
+      "original_reference_sha256": "40af0fe963c9b55aa26af42459a67a5c0f02fe1e741fdff1497fe3d90098c75f",
+      "fit_seconds": 36.66642929986119,
+      "fit_index_digest": "86010f1f91f0653fd59a65ec55e3a3e3a7e905b6d292e7207099d8c4b58075f9",
+      "validation": {
+        "N": 32800,
+        "macro_f1_present_classes": 0.8700976814051268,
+        "macro_f1_fixed_five": 0.8700976814051268,
+        "weighted_f1": 0.8488359425710797,
+        "balanced_accuracy_present_classes": 0.9248102196932877,
+        "macro_precision_present_classes": 0.8434341394737987,
+        "per_class": {
+          "0": {
+            "N": 18504,
+            "base_rate": 0.5641463414634146,
+            "precision": 0.9000592066311427,
+            "recall": 0.8215520968439256,
+            "f1": 0.8590156523704583,
+            "AP": 0.9203432644948424
+          },
+          "1": {
+            "N": 1232,
+            "base_rate": 0.037560975609756096,
+            "precision": 1.0,
+            "recall": 0.976461038961039,
+            "f1": 0.9880903490759754,
+            "AP": 0.9990841400018255
+          },
+          "2": {
+            "N": 1222,
+            "base_rate": 0.03725609756097561,
+            "precision": 0.5336283185840708,
+            "recall": 0.9869067103109657,
+            "f1": 0.6927053417576106,
+            "AP": 0.9849026827528594
+          },
+          "3": {
+            "N": 1206,
+            "base_rate": 0.03676829268292683,
+            "precision": 0.9885245901639345,
+            "recall": 1.0,
+            "f1": 0.9942291838417148,
+            "AP": 0.9812158777804454
+          },
+          "4": {
+            "N": 10636,
+            "base_rate": 0.32426829268292684,
+            "precision": 0.7949585819898459,
+            "recall": 0.8391312523505077,
+            "f1": 0.8164478799798747,
+            "AP": 0.7787329499761398
+          }
+        },
+        "coverage": 1.0,
+        "confusion_matrix": [
+          [
+            15202,
+            0,
+            1002,
+            0,
+            2300,
+            0
+          ],
+          [
+            0,
+            1203,
+            29,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1206,
+            14,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1206,
+            0,
+            0
+          ],
+          [
+            1688,
+            0,
+            23,
+            0,
+            8925,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "macro_AP": 0.9328557830012226,
+        "hardware_AP": 0.9993774892479166,
+        "hardware_precision_at_top_1pct": 1.0,
+        "top_1pct_N": 328,
+        "hardware_alert_recall": 0.9994535519125683,
+        "normal_FPR": 0.05415045395590143,
+        "shade_FPR": 0.0021624670928920646,
+        "combined_nonhardware_FPR": 0.03517501715854496,
+        "alert_rule": "argmax class in {1,2,3}; not a tuned alert threshold",
+        "threshold": null,
+        "absent_true_classes": [],
+        "AP_definition": "one-vs-rest average precision; not trapezoidal PR-AUC",
+        "hardware_definition": "classes1/2/3 only; shade environmental"
+      },
+      "provenance": "NEW reconstruction; no byte-identical claim; no TEST used."
+    },
+    {
+      "candidate": "LR__F6",
+      "new_sha256": "70039fe400c97b5c0431e6ade1edccbb146bbe0309925eae3155777f6aabf55f",
+      "original_reference_sha256": "6460d8244e7c70d167a22beeb9f240b1127baa6c8a78635fed8ae2ad02e1680f",
+      "fit_seconds": 45.93655430013314,
+      "fit_index_digest": "86010f1f91f0653fd59a65ec55e3a3e3a7e905b6d292e7207099d8c4b58075f9",
+      "validation": {
+        "N": 32800,
+        "macro_f1_present_classes": 0.8916493438348784,
+        "macro_f1_fixed_five": 0.8916493438348784,
+        "weighted_f1": 0.8563666610774715,
+        "balanced_accuracy_present_classes": 0.9263077300656348,
+        "macro_precision_present_classes": 0.8692783212478948,
+        "per_class": {
+          "0": {
+            "N": 18504,
+            "base_rate": 0.5641463414634146,
+            "precision": 0.8946467298253624,
+            "recall": 0.8471681798530047,
+            "f1": 0.8702603675123521,
+            "AP": 0.9453729906207673
+          },
+          "1": {
+            "N": 1232,
+            "base_rate": 0.037560975609756096,
+            "precision": 1.0,
+            "recall": 0.976461038961039,
+            "f1": 0.9880903490759754,
+            "AP": 0.9991021303693001
+          },
+          "2": {
+            "N": 1222,
+            "base_rate": 0.03725609756097561,
+            "precision": 0.6707589285714286,
+            "recall": 0.983633387888707,
+            "f1": 0.7976111479761114,
+            "AP": 0.9851547585559982
+          },
+          "3": {
+            "N": 1206,
+            "base_rate": 0.03676829268292683,
+            "precision": 0.9885245901639345,
+            "recall": 1.0,
+            "f1": 0.9942291838417148,
+            "AP": 0.9886413146150328
+          },
+          "4": {
+            "N": 10636,
+            "base_rate": 0.32426829268292684,
+            "precision": 0.792461357678749,
+            "recall": 0.8242760436254231,
+            "f1": 0.8080556707682381,
+            "AP": 0.7944483123645302
+          }
+        },
+        "coverage": 1.0,
+        "confusion_matrix": [
+          [
+            15676,
+            0,
+            538,
+            0,
+            2290,
+            0
+          ],
+          [
+            0,
+            1203,
+            29,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1202,
+            14,
+            6,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1206,
+            0,
+            0
+          ],
+          [
+            1846,
+            0,
+            23,
+            0,
+            8767,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "macro_AP": 0.9425439013051257,
+        "hardware_AP": 0.9994112429010729,
+        "hardware_precision_at_top_1pct": 1.0,
+        "top_1pct_N": 328,
+        "hardware_alert_recall": 0.9983606557377049,
+        "normal_FPR": 0.029074794638996974,
+        "shade_FPR": 0.0021624670928920646,
+        "combined_nonhardware_FPR": 0.019251887439945093,
+        "alert_rule": "argmax class in {1,2,3}; not a tuned alert threshold",
+        "threshold": null,
+        "absent_true_classes": [],
+        "AP_definition": "one-vs-rest average precision; not trapezoidal PR-AUC",
+        "hardware_definition": "classes1/2/3 only; shade environmental"
+      },
+      "provenance": "NEW reconstruction; no byte-identical claim; no TEST used."
+    },
+    {
+      "candidate": "LR__S2",
+      "new_sha256": "7609c41e29431729938eb51375c58b25202cb4cd3126306883b20d6bc7381f60",
+      "original_reference_sha256": "b3c7c890492bff7b5953f03e5203605c51a2f7d554911684e028a6acd3361cf0",
+      "fit_seconds": 10.064642299897969,
+      "fit_index_digest": "86010f1f91f0653fd59a65ec55e3a3e3a7e905b6d292e7207099d8c4b58075f9",
+      "validation": {
+        "N": 32800,
+        "macro_f1_present_classes": 0.16027054288001502,
+        "macro_f1_fixed_five": 0.16027054288001502,
+        "weighted_f1": 0.2148534173566111,
+        "balanced_accuracy_present_classes": 0.3758555848063182,
+        "macro_precision_present_classes": 0.11876410399904402,
+        "per_class": {
+          "0": {
+            "N": 18504,
+            "base_rate": 0.5641463414634146,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "AP": 0.5002163609984491
+          },
+          "1": {
+            "N": 1232,
+            "base_rate": 0.037560975609756096,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "AP": 0.10093314770728751
+          },
+          "2": {
+            "N": 1222,
+            "base_rate": 0.03725609756097561,
+            "precision": 0.0850619518307114,
+            "recall": 1.0,
+            "f1": 0.15678727226071337,
+            "AP": 0.0833629625023954
+          },
+          "3": {
+            "N": 1206,
+            "base_rate": 0.03676829268292683,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "AP": 0.2082243855893336
+          },
+          "4": {
+            "N": 10636,
+            "base_rate": 0.32426829268292684,
+            "precision": 0.5087585681645087,
+            "recall": 0.8792779240315908,
+            "f1": 0.6445654421393617,
+            "AP": 0.545762860883562
+          }
+        },
+        "coverage": 1.0,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            9474,
+            0,
+            9030,
+            0
+          ],
+          [
+            0,
+            0,
+            1232,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1222,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1206,
+            0,
+            0,
+            0
+          ],
+          [
+            52,
+            0,
+            1232,
+            0,
+            9352,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "macro_AP": 0.28769994353620554,
+        "hardware_AP": 0.5163569930633053,
+        "hardware_precision_at_top_1pct": 0.6615853658536586,
+        "top_1pct_N": 328,
+        "hardware_alert_recall": 1.0,
+        "normal_FPR": 0.5119974059662775,
+        "shade_FPR": 0.11583301993230538,
+        "combined_nonhardware_FPR": 0.3673987645847632,
+        "alert_rule": "argmax class in {1,2,3}; not a tuned alert threshold",
+        "threshold": null,
+        "absent_true_classes": [],
+        "AP_definition": "one-vs-rest average precision; not trapezoidal PR-AUC",
+        "hardware_definition": "classes1/2/3 only; shade environmental"
+      },
+      "provenance": "NEW reconstruction; no byte-identical claim; no TEST used."
+    },
+    {
+      "candidate": "LR__S4",
+      "new_sha256": "0f7beb7797fd0feb64c1cd7a4633854ed4d006c4832dc065b0d4b1454e39062d",
+      "original_reference_sha256": "067b0252c5a3aa24237e816c9a142e84f5c788bc7464af875c4bb89dc7064730",
+      "fit_seconds": 45.649210799951106,
+      "fit_index_digest": "86010f1f91f0653fd59a65ec55e3a3e3a7e905b6d292e7207099d8c4b58075f9",
+      "validation": {
+        "N": 32800,
+        "macro_f1_present_classes": 0.15910772113523827,
+        "macro_f1_fixed_five": 0.15910772113523827,
+        "weighted_f1": 0.21304877247015708,
+        "balanced_accuracy_present_classes": 0.37437006393380967,
+        "macro_precision_present_classes": 0.11784952427617046,
+        "per_class": {
+          "0": {
+            "N": 18504,
+            "base_rate": 0.5641463414634146,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "AP": 0.5476264681023246
+          },
+          "1": {
+            "N": 1232,
+            "base_rate": 0.037560975609756096,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "AP": 0.2314864007910694
+          },
+          "2": {
+            "N": 1222,
+            "base_rate": 0.03725609756097561,
+            "precision": 0.08489648464638043,
+            "recall": 1.0,
+            "f1": 0.1565061475409836,
+            "AP": 0.09210882029691334
+          },
+          "3": {
+            "N": 1206,
+            "base_rate": 0.03676829268292683,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "AP": 0.05460245585768309
+          },
+          "4": {
+            "N": 10636,
+            "base_rate": 0.32426829268292684,
+            "precision": 0.5043511367344718,
+            "recall": 0.8718503196690485,
+            "f1": 0.6390324581352078,
+            "AP": 0.5681045543380313
+          }
+        },
+        "coverage": 1.0,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            9391,
+            0,
+            9113,
+            0
+          ],
+          [
+            0,
+            0,
+            1232,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1222,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1206,
+            0,
+            0,
+            0
+          ],
+          [
+            20,
+            0,
+            1343,
+            0,
+            9273,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "macro_AP": 0.29878573987720436,
+        "hardware_AP": 0.5882532552998283,
+        "hardware_precision_at_top_1pct": 0.7408536585365854,
+        "top_1pct_N": 328,
+        "hardware_alert_recall": 1.0,
+        "normal_FPR": 0.5075118893212278,
+        "shade_FPR": 0.12626927416321926,
+        "combined_nonhardware_FPR": 0.36835964310226493,
+        "alert_rule": "argmax class in {1,2,3}; not a tuned alert threshold",
+        "threshold": null,
+        "absent_true_classes": [],
+        "AP_definition": "one-vs-rest average precision; not trapezoidal PR-AUC",
+        "hardware_definition": "classes1/2/3 only; shade environmental"
+      },
+      "provenance": "NEW reconstruction; no byte-identical claim; no TEST used."
+    },
+    {
+      "candidate": "RF__C2",
+      "new_sha256": "97dc2716323413ae504386175d776152bf4b8be0ecf8729d95b19b67c2874555",
+      "original_reference_sha256": "9b474259d78f924336ac22a4b720422d3eac9cb482ba831633f816c8cd6f30fb",
+      "fit_seconds": 28.595318800071254,
+      "fit_index_digest": "86010f1f91f0653fd59a65ec55e3a3e3a7e905b6d292e7207099d8c4b58075f9",
+      "validation": {
+        "N": 32800,
+        "macro_f1_present_classes": 0.5899462514363986,
+        "macro_f1_fixed_five": 0.5899462514363986,
+        "weighted_f1": 0.664988512611709,
+        "balanced_accuracy_present_classes": 0.7536965816039244,
+        "macro_precision_present_classes": 0.6151384603448313,
+        "per_class": {
+          "0": {
+            "N": 18504,
+            "base_rate": 0.5641463414634146,
+            "precision": 0.9834699814863793,
+            "recall": 0.40191309987029833,
+            "f1": 0.5706284048185376,
+            "AP": 0.9039465778591123
+          },
+          "1": {
+            "N": 1232,
+            "base_rate": 0.037560975609756096,
+            "precision": 0.1579787234042553,
+            "recall": 0.48214285714285715,
+            "f1": 0.23798076923076922,
+            "AP": 0.14278873410178272
+          },
+          "2": {
+            "N": 1222,
+            "base_rate": 0.03725609756097561,
+            "precision": 0.15524395478609243,
+            "recall": 0.8878887070376432,
+            "f1": 0.26427962489343565,
+            "AP": 0.49497899014944235
+          },
+          "3": {
+            "N": 1206,
+            "base_rate": 0.03676829268292683,
+            "precision": 0.9788789601949635,
+            "recall": 0.9991708126036484,
+            "f1": 0.988920804267542,
+            "AP": 0.9786452270333126
+          },
+          "4": {
+            "N": 10636,
+            "base_rate": 0.32426829268292684,
+            "precision": 0.8001206818524664,
+            "recall": 0.9973674313651749,
+            "f1": 0.8879216539717084,
+            "AP": 0.9840625088337019
+          }
+        },
+        "coverage": 1.0,
+        "confusion_matrix": [
+          [
+            7437,
+            3037,
+            5382,
+            0,
+            2648,
+            0
+          ],
+          [
+            120,
+            594,
+            512,
+            4,
+            2,
+            0
+          ],
+          [
+            0,
+            119,
+            1085,
+            18,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            1205,
+            0,
+            0
+          ],
+          [
+            5,
+            9,
+            10,
+            4,
+            10608,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "macro_AP": 0.7008844075954703,
+        "hardware_AP": 0.763670806784001,
+        "hardware_precision_at_top_1pct": 1.0,
+        "top_1pct_N": 328,
+        "hardware_alert_recall": 0.9666666666666667,
+        "normal_FPR": 0.4549827064418504,
+        "shade_FPR": 0.0021624670928920646,
+        "combined_nonhardware_FPR": 0.28970487302676734,
+        "alert_rule": "argmax class in {1,2,3}; not a tuned alert threshold",
+        "threshold": null,
+        "absent_true_classes": [],
+        "AP_definition": "one-vs-rest average precision; not trapezoidal PR-AUC",
+        "hardware_definition": "classes1/2/3 only; shade environmental"
+      },
+      "provenance": "NEW reconstruction; no byte-identical claim; no TEST used."
+    },
+    {
+      "candidate": "RF__C3",
+      "new_sha256": "19c71449e6e483f2b01c2c0071230b764ccbbe913107d8482985e12fd3026c71",
+      "original_reference_sha256": "4941b13f44410ecceab4e269b6bb7c35ca90895c32912ac9851ef7361fe10a57",
+      "fit_seconds": 33.58192339981906,
+      "fit_index_digest": "86010f1f91f0653fd59a65ec55e3a3e3a7e905b6d292e7207099d8c4b58075f9",
+      "validation": {
+        "N": 32800,
+        "macro_f1_present_classes": 0.5854455868113394,
+        "macro_f1_fixed_five": 0.5854455868113394,
+        "weighted_f1": 0.7340522167248515,
+        "balanced_accuracy_present_classes": 0.6835136471899803,
+        "macro_precision_present_classes": 0.5863127749927879,
+        "per_class": {
+          "0": {
+            "N": 18504,
+            "base_rate": 0.5641463414634146,
+            "precision": 0.923244848061474,
+            "recall": 0.5713899697362732,
+            "f1": 0.7059019895847243,
+            "AP": 0.9169071032108977
+          },
+          "1": {
+            "N": 1232,
+            "base_rate": 0.037560975609756096,
+            "precision": 0.06091772151898734,
+            "recall": 0.0625,
+            "f1": 0.06169871794871795,
+            "AP": 0.14562407645589434
+          },
+          "2": {
+            "N": 1222,
+            "base_rate": 0.03725609756097561,
+            "precision": 0.17577197149643706,
+            "recall": 0.7872340425531915,
+            "f1": 0.287378640776699,
+            "AP": 0.5797312726767481
+          },
+          "3": {
+            "N": 1206,
+            "base_rate": 0.03676829268292683,
+            "precision": 0.9788789601949635,
+            "recall": 0.9991708126036484,
+            "f1": 0.988920804267542,
+            "AP": 0.9684493055191459
+          },
+          "4": {
+            "N": 10636,
+            "base_rate": 0.32426829268292684,
+            "precision": 0.7927503736920777,
+            "recall": 0.9972734110567882,
+            "f1": 0.883327781479014,
+            "AP": 0.9860694357055679
+          }
+        },
+        "coverage": 1.0,
+        "confusion_matrix": [
+          [
+            10573,
+            941,
+            4218,
+            0,
+            2772,
+            0
+          ],
+          [
+            868,
+            77,
+            282,
+            4,
+            1,
+            0
+          ],
+          [
+            3,
+            239,
+            962,
+            18,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            1205,
+            0,
+            0
+          ],
+          [
+            8,
+            7,
+            10,
+            4,
+            10607,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "macro_AP": 0.7193562387136507,
+        "hardware_AP": 0.6828241368738556,
+        "hardware_precision_at_top_1pct": 1.0,
+        "top_1pct_N": 328,
+        "hardware_alert_recall": 0.7617486338797814,
+        "normal_FPR": 0.27880458279290965,
+        "shade_FPR": 0.001974426476118842,
+        "combined_nonhardware_FPR": 0.17776252573781742,
+        "alert_rule": "argmax class in {1,2,3}; not a tuned alert threshold",
+        "threshold": null,
+        "absent_true_classes": [],
+        "AP_definition": "one-vs-rest average precision; not trapezoidal PR-AUC",
+        "hardware_definition": "classes1/2/3 only; shade environmental"
+      },
+      "provenance": "NEW reconstruction; no byte-identical claim; no TEST used."
+    },
+    {
+      "candidate": "RF__E4",
+      "new_sha256": "05331fd56bff263418e81de96cc5e924c592a80523cda61e367a3c270f588230",
+      "original_reference_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "fit_seconds": 32.95694279996678,
+      "fit_index_digest": "86010f1f91f0653fd59a65ec55e3a3e3a7e905b6d292e7207099d8c4b58075f9",
+      "validation": {
+        "N": 32800,
+        "macro_f1_present_classes": 0.9562971220697507,
+        "macro_f1_fixed_five": 0.9562971220697507,
+        "weighted_f1": 0.9250406210221271,
+        "balanced_accuracy_present_classes": 0.9628116895500156,
+        "macro_precision_present_classes": 0.9554505964817619,
+        "per_class": {
+          "0": {
+            "N": 18504,
+            "base_rate": 0.5641463414634146,
+            "precision": 0.9988200956343538,
+            "recall": 0.8692174664937311,
+            "f1": 0.9295229288872193,
+            "AP": 0.99608613160438
+          },
+          "1": {
+            "N": 1232,
+            "base_rate": 0.037560975609756096,
+            "precision": 0.9983646770237122,
+            "recall": 0.9910714285714286,
+            "f1": 0.994704684317719,
+            "AP": 0.9982057843088146
+          },
+          "2": {
+            "N": 1222,
+            "base_rate": 0.03725609756097561,
+            "precision": 0.9782062028499581,
+            "recall": 0.9549918166939444,
+            "f1": 0.9664596273291925,
+            "AP": 0.9743215026985194
+          },
+          "3": {
+            "N": 1206,
+            "base_rate": 0.03676829268292683,
+            "precision": 0.9885245901639345,
+            "recall": 1.0,
+            "f1": 0.9942291838417148,
+            "AP": 0.9937951112811461
+          },
+          "4": {
+            "N": 10636,
+            "base_rate": 0.32426829268292684,
+            "precision": 0.8133374167368501,
+            "recall": 0.9987777359909741,
+            "f1": 0.8965691859729079,
+            "AP": 0.9862915412093347
+          }
+        },
+        "coverage": 1.0,
+        "confusion_matrix": [
+          [
+            16084,
+            1,
+            14,
+            0,
+            2405,
+            0
+          ],
+          [
+            2,
+            1221,
+            9,
+            0,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            1167,
+            14,
+            33,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1206,
+            0,
+            0
+          ],
+          [
+            9,
+            1,
+            3,
+            0,
+            10623,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "macro_AP": 0.989740014220439,
+        "hardware_AP": 0.9997523660759631,
+        "hardware_precision_at_top_1pct": 1.0,
+        "top_1pct_N": 328,
+        "hardware_alert_recall": 0.9882513661202186,
+        "normal_FPR": 0.0008106355382619975,
+        "shade_FPR": 0.000376081233546446,
+        "combined_nonhardware_FPR": 0.0006520247083047358,
+        "alert_rule": "argmax class in {1,2,3}; not a tuned alert threshold",
+        "threshold": null,
+        "absent_true_classes": [],
+        "AP_definition": "one-vs-rest average precision; not trapezoidal PR-AUC",
+        "hardware_definition": "classes1/2/3 only; shade environmental"
+      },
+      "provenance": "NEW reconstruction; no byte-identical claim; no TEST used."
+    },
+    {
+      "candidate": "RF__E5",
+      "new_sha256": "48fb32bfa18dfbdeb89cc0ec1e17a80e1018db747c500290388181227123a5b7",
+      "original_reference_sha256": "15a3fa912b60f4d6ce21cce8218d577feb9f95e587e910be260f7694749fb158",
+      "fit_seconds": 39.50849619996734,
+      "fit_index_digest": "86010f1f91f0653fd59a65ec55e3a3e3a7e905b6d292e7207099d8c4b58075f9",
+      "validation": {
+        "N": 32800,
+        "macro_f1_present_classes": 0.9571142346454922,
+        "macro_f1_fixed_five": 0.9571142346454922,
+        "weighted_f1": 0.9255036296369413,
+        "balanced_accuracy_present_classes": 0.9659606497082459,
+        "macro_precision_present_classes": 0.9537636610778698,
+        "per_class": {
+          "0": {
+            "N": 18504,
+            "base_rate": 0.5641463414634146,
+            "precision": 0.9988206815219415,
+            "recall": 0.8696498054474708,
+            "f1": 0.9297703307814531,
+            "AP": 0.9973165258613662
+          },
+          "1": {
+            "N": 1232,
+            "base_rate": 0.037560975609756096,
+            "precision": 0.99836867862969,
+            "recall": 0.9935064935064936,
+            "f1": 0.9959316517493898,
+            "AP": 0.9983060850353207
+          },
+          "2": {
+            "N": 1222,
+            "base_rate": 0.03725609756097561,
+            "precision": 0.9720853858784894,
+            "recall": 0.9689034369885434,
+            "f1": 0.9704918032786886,
+            "AP": 0.9850513752688911
+          },
+          "3": {
+            "N": 1206,
+            "base_rate": 0.03676829268292683,
+            "precision": 0.9844897959183674,
+            "recall": 1.0,
+            "f1": 0.9921842863019333,
+            "AP": 0.9820844127292139
+          },
+          "4": {
+            "N": 10636,
+            "base_rate": 0.32426829268292684,
+            "precision": 0.8150537634408602,
+            "recall": 0.9977435125987213,
+            "f1": 0.8971931011159959,
+            "AP": 0.9909324776099361
+          }
+        },
+        "coverage": 1.0,
+        "confusion_matrix": [
+          [
+            16092,
+            0,
+            16,
+            0,
+            2396,
+            0
+          ],
+          [
+            2,
+            1224,
+            5,
+            1,
+            0,
+            0
+          ],
+          [
+            7,
+            2,
+            1184,
+            17,
+            12,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1206,
+            0,
+            0
+          ],
+          [
+            10,
+            0,
+            13,
+            1,
+            10612,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "macro_AP": 0.9907381753009457,
+        "hardware_AP": 0.9998540664447134,
+        "hardware_precision_at_top_1pct": 1.0,
+        "top_1pct_N": 328,
+        "hardware_alert_recall": 0.9942622950819672,
+        "normal_FPR": 0.0008646779074794639,
+        "shade_FPR": 0.0013162843174125611,
+        "combined_nonhardware_FPR": 0.001029512697323267,
+        "alert_rule": "argmax class in {1,2,3}; not a tuned alert threshold",
+        "threshold": null,
+        "absent_true_classes": [],
+        "AP_definition": "one-vs-rest average precision; not trapezoidal PR-AUC",
+        "hardware_definition": "classes1/2/3 only; shade environmental"
+      },
+      "provenance": "NEW reconstruction; no byte-identical claim; no TEST used."
+    },
+    {
+      "candidate": "RF__F6",
+      "new_sha256": "146f79d0114e1be291b2383333dd9804535b09f55e67082f5bbf027cf910368a",
+      "original_reference_sha256": "a23e8f42f75154b6fa2255720a0ba9a5aff96fb4b05e0470824e3b93a6ba9bcf",
+      "fit_seconds": 53.02162560005672,
+      "fit_index_digest": "86010f1f91f0653fd59a65ec55e3a3e3a7e905b6d292e7207099d8c4b58075f9",
+      "validation": {
+        "N": 32800,
+        "macro_f1_present_classes": 0.8657926885469361,
+        "macro_f1_fixed_five": 0.8657926885469361,
+        "weighted_f1": 0.9053336290831455,
+        "balanced_accuracy_present_classes": 0.8763385748585055,
+        "macro_precision_present_classes": 0.8945592434699068,
+        "per_class": {
+          "0": {
+            "N": 18504,
+            "base_rate": 0.5641463414634146,
+            "precision": 0.9985007496251874,
+            "recall": 0.8638132295719845,
+            "f1": 0.9262865090403338,
+            "AP": 0.9942095930119729
+          },
+          "1": {
+            "N": 1232,
+            "base_rate": 0.037560975609756096,
+            "precision": 1.0,
+            "recall": 0.5657467532467533,
+            "f1": 0.7226542249870399,
+            "AP": 0.997648034473552
+          },
+          "2": {
+            "N": 1222,
+            "base_rate": 0.03725609756097561,
+            "precision": 0.6793002915451894,
+            "recall": 0.953355155482815,
+            "f1": 0.7933265236636023,
+            "AP": 0.9692846866763735
+          },
+          "3": {
+            "N": 1206,
+            "base_rate": 0.03676829268292683,
+            "precision": 0.9877149877149877,
+            "recall": 1.0,
+            "f1": 0.9938195302843016,
+            "AP": 0.9780363450099767
+          },
+          "4": {
+            "N": 10636,
+            "base_rate": 0.32426829268292684,
+            "precision": 0.807280188464169,
+            "recall": 0.9987777359909741,
+            "f1": 0.8928766547594033,
+            "AP": 0.9812277415521744
+          }
+        },
+        "coverage": 1.0,
+        "confusion_matrix": [
+          [
+            15984,
+            0,
+            14,
+            0,
+            2506,
+            0
+          ],
+          [
+            2,
+            697,
+            532,
+            1,
+            0,
+            0
+          ],
+          [
+            13,
+            0,
+            1165,
+            14,
+            30,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1206,
+            0,
+            0
+          ],
+          [
+            9,
+            0,
+            4,
+            0,
+            10623,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "macro_AP": 0.9840812801448099,
+        "hardware_AP": 0.9996725147000577,
+        "hardware_precision_at_top_1pct": 1.0,
+        "top_1pct_N": 328,
+        "hardware_alert_recall": 0.9877049180327869,
+        "normal_FPR": 0.0007565931690445309,
+        "shade_FPR": 0.000376081233546446,
+        "combined_nonhardware_FPR": 0.0006177076183939602,
+        "alert_rule": "argmax class in {1,2,3}; not a tuned alert threshold",
+        "threshold": null,
+        "absent_true_classes": [],
+        "AP_definition": "one-vs-rest average precision; not trapezoidal PR-AUC",
+        "hardware_definition": "classes1/2/3 only; shade environmental"
+      },
+      "provenance": "NEW reconstruction; no byte-identical claim; no TEST used."
+    },
+    {
+      "candidate": "RF__S2",
+      "new_sha256": "85a40765d799af62278cd954af7428ea0cbed690bd5a6e78b771a569f4c6975b",
+      "original_reference_sha256": "ea31c5cf11afdc3ea3fe90d5768756a7ff6100e42244c72ce31de858fe746adc",
+      "fit_seconds": 329.39699240005575,
+      "fit_index_digest": "86010f1f91f0653fd59a65ec55e3a3e3a7e905b6d292e7207099d8c4b58075f9",
+      "validation": {
+        "N": 32800,
+        "macro_f1_present_classes": 0.29162029628651426,
+        "macro_f1_fixed_five": 0.29162029628651426,
+        "weighted_f1": 0.49658295475942965,
+        "balanced_accuracy_present_classes": 0.4177615333346509,
+        "macro_precision_present_classes": 0.3364168925814703,
+        "per_class": {
+          "0": {
+            "N": 18504,
+            "base_rate": 0.5641463414634146,
+            "precision": 0.8696883852691218,
+            "recall": 0.31522913964548205,
+            "f1": 0.4627345206457499,
+            "AP": 0.8237979902471703
+          },
+          "1": {
+            "N": 1232,
+            "base_rate": 0.037560975609756096,
+            "precision": 0.1223267750213858,
+            "recall": 0.11607142857142858,
+            "f1": 0.11911703456892961,
+            "AP": 0.09216351109442816
+          },
+          "2": {
+            "N": 1222,
+            "base_rate": 0.03725609756097561,
+            "precision": 0.1043195638498637,
+            "recall": 0.8142389525368249,
+            "f1": 0.18494423791821563,
+            "AP": 0.10218517978777994
+          },
+          "3": {
+            "N": 1206,
+            "base_rate": 0.03676829268292683,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "AP": 0.06800454791342267
+          },
+          "4": {
+            "N": 10636,
+            "base_rate": 0.32426829268292684,
+            "precision": 0.5857497387669801,
+            "recall": 0.8432681459195186,
+            "f1": 0.6913056882996763,
+            "AP": 0.8749660949793775
+          }
+        },
+        "coverage": 1.0,
+        "confusion_matrix": [
+          [
+            5833,
+            954,
+            5318,
+            56,
+            6343,
+            0
+          ],
+          [
+            136,
+            143,
+            947,
+            6,
+            0,
+            0
+          ],
+          [
+            169,
+            48,
+            995,
+            10,
+            0,
+            0
+          ],
+          [
+            78,
+            24,
+            1104,
+            0,
+            0,
+            0
+          ],
+          [
+            491,
+            0,
+            1174,
+            2,
+            8969,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "macro_AP": 0.3922234648044357,
+        "hardware_AP": 0.28679691709524785,
+        "hardware_precision_at_top_1pct": 0.042682926829268296,
+        "top_1pct_N": 328,
+        "hardware_alert_recall": 0.8953551912568306,
+        "normal_FPR": 0.341980112408128,
+        "shade_FPR": 0.11056788266265513,
+        "combined_nonhardware_FPR": 0.25751544269045984,
+        "alert_rule": "argmax class in {1,2,3}; not a tuned alert threshold",
+        "threshold": null,
+        "absent_true_classes": [],
+        "AP_definition": "one-vs-rest average precision; not trapezoidal PR-AUC",
+        "hardware_definition": "classes1/2/3 only; shade environmental"
+      },
+      "provenance": "NEW reconstruction; no byte-identical claim; no TEST used."
+    },
+    {
+      "candidate": "RF__S4",
+      "new_sha256": "958d7509758a2f18862792ab0ac46bc42ebaa47b7b05d106942906d5ab8ed80c",
+      "original_reference_sha256": "57c584eaa6bb09150d9dc502bb29fbf8c5d6272cd9378ebd93016d21a22db454",
+      "fit_seconds": 40.475090000079945,
+      "fit_index_digest": "86010f1f91f0653fd59a65ec55e3a3e3a7e905b6d292e7207099d8c4b58075f9",
+      "validation": {
+        "N": 32800,
+        "macro_f1_present_classes": 0.27480584801804575,
+        "macro_f1_fixed_five": 0.27480584801804575,
+        "weighted_f1": 0.5970187882443101,
+        "balanced_accuracy_present_classes": 0.29663114535277113,
+        "macro_precision_present_classes": 0.2701122723490153,
+        "per_class": {
+          "0": {
+            "N": 18504,
+            "base_rate": 0.5641463414634146,
+            "precision": 0.7549019607843137,
+            "recall": 0.5825767401642888,
+            "f1": 0.6576378721327477,
+            "AP": 0.836790477922404
+          },
+          "1": {
+            "N": 1232,
+            "base_rate": 0.037560975609756096,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "AP": 0.04730204136924318
+          },
+          "2": {
+            "N": 1222,
+            "base_rate": 0.03725609756097561,
+            "precision": 0.016079632465543645,
+            "recall": 0.03436988543371522,
+            "f1": 0.02190923317683881,
+            "AP": 0.08707073172423822
+          },
+          "3": {
+            "N": 1206,
+            "base_rate": 0.03676829268292683,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "AP": 0.0647469898542255
+          },
+          "4": {
+            "N": 10636,
+            "base_rate": 0.32426829268292684,
+            "precision": 0.579579768495219,
+            "recall": 0.8662091011658518,
+            "f1": 0.6944821347806422,
+            "AP": 0.8625938091432708
+          }
+        },
+        "coverage": 1.0,
+        "confusion_matrix": [
+          [
+            10780,
+            0,
+            1032,
+            9,
+            6683,
+            0
+          ],
+          [
+            1146,
+            0,
+            86,
+            0,
+            0,
+            0
+          ],
+          [
+            1180,
+            0,
+            42,
+            0,
+            0,
+            0
+          ],
+          [
+            1054,
+            0,
+            152,
+            0,
+            0,
+            0
+          ],
+          [
+            120,
+            0,
+            1300,
+            3,
+            9213,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "macro_AP": 0.3797008100026763,
+        "hardware_AP": 0.2752645303619614,
+        "hardware_precision_at_top_1pct": 0.0,
+        "top_1pct_N": 328,
+        "hardware_alert_recall": 0.07650273224043716,
+        "normal_FPR": 0.05625810635538262,
+        "shade_FPR": 0.1225084618277548,
+        "combined_nonhardware_FPR": 0.08043925875085793,
+        "alert_rule": "argmax class in {1,2,3}; not a tuned alert threshold",
+        "threshold": null,
+        "absent_true_classes": [],
+        "AP_definition": "one-vs-rest average precision; not trapezoidal PR-AUC",
+        "hardware_definition": "classes1/2/3 only; shade environmental"
+      },
+      "provenance": "NEW reconstruction; no byte-identical claim; no TEST used."
+    }
+  ],
+  "original_deployed_model_changed": false
+}

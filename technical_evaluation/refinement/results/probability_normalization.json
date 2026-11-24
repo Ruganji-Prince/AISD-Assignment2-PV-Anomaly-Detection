@@ -1,0 +1,123 @@
+{
+  "status": "VERIFIED",
+  "rows": [
+    {
+      "method": "sigmoid",
+      "population": "BLOCK14",
+      "N": 33396,
+      "maximum_row_sum_error": 5.551115123125783e-16,
+      "minimum_probability": 3.5082349592935445e-05,
+      "positive_negative_fit_support": {
+        "0": {
+          "positive": 21147,
+          "negative": 12249
+        },
+        "1": {
+          "positive": 1180,
+          "negative": 32216
+        },
+        "2": {
+          "positive": 1184,
+          "negative": 32212
+        },
+        "3": {
+          "positive": 1204,
+          "negative": 32192
+        },
+        "4": {
+          "positive": 8681,
+          "negative": 24715
+        }
+      }
+    },
+    {
+      "method": "sigmoid",
+      "population": "TEST",
+      "N": 146461,
+      "maximum_row_sum_error": 4.440892098500626e-16,
+      "minimum_probability": 3.470350107713307e-05,
+      "positive_negative_fit_support": {
+        "0": {
+          "positive": 21147,
+          "negative": 12249
+        },
+        "1": {
+          "positive": 1180,
+          "negative": 32216
+        },
+        "2": {
+          "positive": 1184,
+          "negative": 32212
+        },
+        "3": {
+          "positive": 1204,
+          "negative": 32192
+        },
+        "4": {
+          "positive": 8681,
+          "negative": 24715
+        }
+      }
+    },
+    {
+      "method": "isotonic",
+      "population": "BLOCK14",
+      "N": 33396,
+      "maximum_row_sum_error": 4.440892098500626e-16,
+      "minimum_probability": 7.464810443994048e-13,
+      "positive_negative_fit_support": {
+        "0": {
+          "positive": 21147,
+          "negative": 12249
+        },
+        "1": {
+          "positive": 1180,
+          "negative": 32216
+        },
+        "2": {
+          "positive": 1184,
+          "negative": 32212
+        },
+        "3": {
+          "positive": 1204,
+          "negative": 32192
+        },
+        "4": {
+          "positive": 8681,
+          "negative": 24715
+        }
+      }
+    },
+    {
+      "method": "isotonic",
+      "population": "TEST",
+      "N": 146461,
+      "maximum_row_sum_error": 4.440892098500626e-16,
+      "minimum_probability": 5.659424530063803e-13,
+      "positive_negative_fit_support": {
+        "0": {
+          "positive": 21147,
+          "negative": 12249
+        },
+        "1": {
+          "positive": 1180,
+          "negative": 32216
+        },
+        "2": {
+          "positive": 1184,
+          "negative": 32212
+        },
+        "3": {
+          "positive": 1204,
+          "negative": 32192
+        },
+        "4": {
+          "positive": 8681,
+          "negative": 24715
+        }
+      }
+    }
+  ],
+  "no_calibrated_threshold_selected": true,
+  "no_production_calibration": true
+}

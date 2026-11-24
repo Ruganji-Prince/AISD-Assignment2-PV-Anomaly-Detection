@@ -48,3 +48,11 @@ results/
 node_modules/
 playwright-report/
 test-results/
+
+# Publish only curated refinement JSON evidence; keep generated arrays/models excluded.
+!technical_evaluation/refinement/results/
+technical_evaluation/refinement/results/*
+!technical_evaluation/refinement/results/*.json
+!technical_evaluation/refinement/results/calibration/
+technical_evaluation/refinement/results/calibration/*
+!technical_evaluation/refinement/results/calibration/*.json

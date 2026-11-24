@@ -1,0 +1,46 @@
+{
+  "preserved_historical_results": true,
+  "resolved_failures": [
+    {
+      "stage": "Freeze receipt",
+      "failure": "LF-string hash differed from stored CRLF bytes",
+      "resolution": "Corrected receipt to actual bytes before any successful new experiment; protocol unchanged."
+    },
+    {
+      "stage": "API availability error",
+      "failure": "Initial refactor classified model-load ValueError as422",
+      "resolution": "Added separate model-unavailable exception; old failure test now passes503."
+    },
+    {
+      "stage": "Local cold first request",
+      "failure": "One new-test run returned504 during initial load; later isolated diagnosis and reruns passed",
+      "resolution": "Retained deadline, added explicit init telemetry and documented retry/prewarm limits; no cause inferred from timing alone."
+    },
+    {
+      "stage": "Initial Vercel preview",
+      "failure": "Provider selected3.14.2, excluded by existing requires-python; function installation failed before application startup",
+      "resolution": "Separate exact-pin3.14.2 parity verification, strict patch allowance extension, Linux matrix and compatible preview; old production untouched during diagnosis."
+    },
+    {
+      "stage": "Preview benchmark",
+      "failure": "One attempt encountered httpx.ReadError before completion",
+      "resolution": "Benchmark now records transport failures rather than silently retrying; complete subsequent42-request run preserved separately."
+    },
+    {
+      "stage": "Linux matrix script",
+      "failure": "New argument parser initialization was missing, causing NameError before Docker build",
+      "resolution": "Parser help verified locally; both-version matrix rerun; failed run remains in GitHub history."
+    },
+    {
+      "stage": "Public LR reconstruction",
+      "failure": "Three LR F1 scores differed when original two-thread BLAS limit was omitted",
+      "resolution": "Restored original documented threadpool_limits(2); all3 reruns exactly match validation references; first-pass metrics/models preserved."
+    },
+    {
+      "stage": "Fresh-clone quick audit",
+      "failure": "Top-level JSON ignore exception did not include the two nested calibration receipts; local existing files hid missing public packaging.",
+      "resolution": "Added a calibration-directory JSON-only exception, reviewed inclusion and reran the clean-clone quick audit. No model/result values changed."
+    }
+  ],
+  "existing_warning": "Starlette TestClient httpx deprecation remains; tests pass."
+}

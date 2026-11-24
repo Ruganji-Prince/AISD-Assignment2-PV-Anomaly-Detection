@@ -1,0 +1,2954 @@
+{
+  "status": "REPRODUCED",
+  "results": {
+    "most_frequent": {
+      "VALIDATION_BLOCK13": {
+        "metrics": {
+          "N": 32800,
+          "macro_f1_present_classes": 0.14426945267425542,
+          "macro_f1_fixed_five": 0.14426945267425542,
+          "weighted_f1": 0.4069454195555522,
+          "balanced_accuracy_present_classes": 0.2,
+          "macro_precision_present_classes": 0.11282926829268292,
+          "per_class": {
+            "0": {
+              "N": 18504,
+              "base_rate": 0.5641463414634146,
+              "precision": 0.5641463414634146,
+              "recall": 1.0,
+              "f1": 0.7213472633712771,
+              "AP": 0.5641463414634146
+            },
+            "1": {
+              "N": 1232,
+              "base_rate": 0.037560975609756096,
+              "precision": null,
+              "recall": 0.0,
+              "f1": 0.0,
+              "AP": 0.037560975609756096
+            },
+            "2": {
+              "N": 1222,
+              "base_rate": 0.03725609756097561,
+              "precision": null,
+              "recall": 0.0,
+              "f1": 0.0,
+              "AP": 0.03725609756097561
+            },
+            "3": {
+              "N": 1206,
+              "base_rate": 0.03676829268292683,
+              "precision": null,
+              "recall": 0.0,
+              "f1": 0.0,
+              "AP": 0.03676829268292683
+            },
+            "4": {
+              "N": 10636,
+              "base_rate": 0.32426829268292684,
+              "precision": null,
+              "recall": 0.0,
+              "f1": 0.0,
+              "AP": 0.32426829268292684
+            }
+          },
+          "coverage": 1.0,
+          "confusion_matrix": [
+            [
+              18504,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1232,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1222,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1206,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              10636,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "confusion_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            "abstain"
+          ],
+          "macro_AP": 0.2,
+          "hardware_AP": 0.11158536585365854,
+          "hardware_precision_at_top_1pct": 0.0,
+          "top_1pct_N": 328,
+          "hardware_alert_recall": 0.0,
+          "normal_FPR": 0.0,
+          "shade_FPR": 0.0,
+          "combined_nonhardware_FPR": 0.0,
+          "alert_rule": "argmax class in {1,2,3}; not a tuned alert threshold",
+          "threshold": null,
+          "absent_true_classes": [],
+          "AP_definition": "one-vs-rest average precision; not trapezoidal PR-AUC",
+          "hardware_definition": "classes1/2/3 only; shade environmental"
+        },
+        "probability_quality": {
+          "status": "VERIFIED",
+          "N": 32800,
+          "multiclass_Brier": 0.8717073170688119,
+          "Brier_definition": "mean_i sum_k (p_ik - 1[y_i=k])^2; range [0,2], not divided by classes",
+          "log_loss": 12.043081642483099,
+          "top_label_reliability": {
+            "N": 32800,
+            "ECE": 0.43585365853258495,
+            "binning": "10 fixed equal-width bins; weighted absolute probability-frequency gap",
+            "bins": [
+              {
+                "bin": 0,
+                "lower": 0.0,
+                "upper": 0.1,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 1,
+                "lower": 0.1,
+                "upper": 0.2,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 2,
+                "lower": 0.2,
+                "upper": 0.3,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 3,
+                "lower": 0.3,
+                "upper": 0.4,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 4,
+                "lower": 0.4,
+                "upper": 0.5,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 5,
+                "lower": 0.5,
+                "upper": 0.6,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 6,
+                "lower": 0.6,
+                "upper": 0.7,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 7,
+                "lower": 0.7,
+                "upper": 0.8,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 8,
+                "lower": 0.8,
+                "upper": 0.9,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 9,
+                "lower": 0.9,
+                "upper": 1.0,
+                "N": 32800,
+                "mean_probability": 0.9999999999959995,
+                "observed_frequency": 0.5641463414634146
+              }
+            ]
+          },
+          "class_reliability": {
+            "0": {
+              "N": 32800,
+              "ECE": 0.43585365853258495,
+              "binning": "10 fixed equal-width bins; weighted absolute probability-frequency gap",
+              "bins": [
+                {
+                  "bin": 0,
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 1,
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 2,
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 3,
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 4,
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 5,
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 6,
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 7,
+                  "lower": 0.7,
+                  "upper": 0.8,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 8,
+                  "lower": 0.8,
+                  "upper": 0.9,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 9,
+                  "lower": 0.9,
+                  "upper": 1.0,
+                  "N": 32800,
+                  "mean_probability": 0.9999999999959995,
+                  "observed_frequency": 0.5641463414634146
+                }
+              ]
+            },
+            "1": {
+              "N": 32800,
+              "ECE": 0.0375609756087561,
+              "binning": "10 fixed equal-width bins; weighted absolute probability-frequency gap",
+              "bins": [
+                {
+                  "bin": 0,
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "N": 32800,
+                  "mean_probability": 9.999999999959996e-13,
+                  "observed_frequency": 0.037560975609756096
+                },
+                {
+                  "bin": 1,
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 2,
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 3,
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 4,
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 5,
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 6,
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 7,
+                  "lower": 0.7,
+                  "upper": 0.8,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 8,
+                  "lower": 0.8,
+                  "upper": 0.9,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 9,
+                  "lower": 0.9,
+                  "upper": 1.0,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                }
+              ]
+            },
+            "2": {
+              "N": 32800,
+              "ECE": 0.03725609755997561,
+              "binning": "10 fixed equal-width bins; weighted absolute probability-frequency gap",
+              "bins": [
+                {
+                  "bin": 0,
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "N": 32800,
+                  "mean_probability": 9.999999999959996e-13,
+                  "observed_frequency": 0.03725609756097561
+                },
+                {
+                  "bin": 1,
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 2,
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 3,
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 4,
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 5,
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 6,
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 7,
+                  "lower": 0.7,
+                  "upper": 0.8,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 8,
+                  "lower": 0.8,
+                  "upper": 0.9,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 9,
+                  "lower": 0.9,
+                  "upper": 1.0,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                }
+              ]
+            },
+            "3": {
+              "N": 32800,
+              "ECE": 0.03676829268192683,
+              "binning": "10 fixed equal-width bins; weighted absolute probability-frequency gap",
+              "bins": [
+                {
+                  "bin": 0,
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "N": 32800,
+                  "mean_probability": 9.999999999959996e-13,
+                  "observed_frequency": 0.03676829268292683
+                },
+                {
+                  "bin": 1,
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 2,
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 3,
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 4,
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 5,
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 6,
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 7,
+                  "lower": 0.7,
+                  "upper": 0.8,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 8,
+                  "lower": 0.8,
+                  "upper": 0.9,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 9,
+                  "lower": 0.9,
+                  "upper": 1.0,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                }
+              ]
+            },
+            "4": {
+              "N": 32800,
+              "ECE": 0.32426829268192686,
+              "binning": "10 fixed equal-width bins; weighted absolute probability-frequency gap",
+              "bins": [
+                {
+                  "bin": 0,
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "N": 32800,
+                  "mean_probability": 9.999999999959996e-13,
+                  "observed_frequency": 0.32426829268292684
+                },
+                {
+                  "bin": 1,
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 2,
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 3,
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 4,
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 5,
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 6,
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 7,
+                  "lower": 0.7,
+                  "upper": 0.8,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 8,
+                  "lower": 0.8,
+                  "upper": 0.9,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 9,
+                  "lower": 0.9,
+                  "upper": 1.0,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                }
+              ]
+            }
+          },
+          "hardware_reliability": {
+            "N": 32800,
+            "ECE": 0.11158536585065854,
+            "binning": "10 fixed equal-width bins; weighted absolute probability-frequency gap",
+            "bins": [
+              {
+                "bin": 0,
+                "lower": 0.0,
+                "upper": 0.1,
+                "N": 32800,
+                "mean_probability": 2.999999999987998e-12,
+                "observed_frequency": 0.11158536585365854
+              },
+              {
+                "bin": 1,
+                "lower": 0.1,
+                "upper": 0.2,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 2,
+                "lower": 0.2,
+                "upper": 0.3,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 3,
+                "lower": 0.3,
+                "upper": 0.4,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 4,
+                "lower": 0.4,
+                "upper": 0.5,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 5,
+                "lower": 0.5,
+                "upper": 0.6,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 6,
+                "lower": 0.6,
+                "upper": 0.7,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 7,
+                "lower": 0.7,
+                "upper": 0.8,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 8,
+                "lower": 0.8,
+                "upper": 0.9,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 9,
+                "lower": 0.9,
+                "upper": 1.0,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              }
+            ]
+          }
+        }
+      },
+      "TEST": {
+        "metrics": {
+          "N": 146461,
+          "macro_f1_present_classes": 0.18379986197886874,
+          "macro_f1_fixed_five": 0.18379986197886874,
+          "weighted_f1": 0.7812758486802939,
+          "balanced_accuracy_present_classes": 0.2,
+          "macro_precision_present_classes": 0.17002751585746376,
+          "per_class": {
+            "0": {
+              "N": 124512,
+              "base_rate": 0.8501375792873188,
+              "precision": 0.8501375792873188,
+              "recall": 1.0,
+              "f1": 0.9189993098943438,
+              "AP": 0.8501375792873188
+            },
+            "1": {
+              "N": 2361,
+              "base_rate": 0.016120332375171548,
+              "precision": null,
+              "recall": 0.0,
+              "f1": 0.0,
+              "AP": 0.016120332375171548
+            },
+            "2": {
+              "N": 2270,
+              "base_rate": 0.015499006561473704,
+              "precision": null,
+              "recall": 0.0,
+              "f1": 0.0,
+              "AP": 0.015499006561473704
+            },
+            "3": {
+              "N": 2410,
+              "base_rate": 0.016454892428701157,
+              "precision": null,
+              "recall": 0.0,
+              "f1": 0.0,
+              "AP": 0.016454892428701157
+            },
+            "4": {
+              "N": 14908,
+              "base_rate": 0.10178818934733479,
+              "precision": null,
+              "recall": 0.0,
+              "f1": 0.0,
+              "AP": 0.10178818934733479
+            }
+          },
+          "coverage": 1.0,
+          "confusion_matrix": [
+            [
+              124512,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              2361,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              2270,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              2410,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              14908,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "confusion_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            "abstain"
+          ],
+          "macro_AP": 0.2,
+          "hardware_AP": 0.04807423136534641,
+          "hardware_precision_at_top_1pct": 0.0,
+          "top_1pct_N": 1465,
+          "hardware_alert_recall": 0.0,
+          "normal_FPR": 0.0,
+          "shade_FPR": 0.0,
+          "combined_nonhardware_FPR": 0.0,
+          "alert_rule": "argmax class in {1,2,3}; not a tuned alert threshold",
+          "threshold": null,
+          "absent_true_classes": [],
+          "AP_definition": "one-vs-rest average precision; not trapezoidal PR-AUC",
+          "hardware_definition": "classes1/2/3 only; shade environmental"
+        },
+        "probability_quality": {
+          "status": "VERIFIED",
+          "N": 146461,
+          "multiclass_Brier": 0.2997248414238637,
+          "Brier_definition": "mean_i sum_k (p_ik - 1[y_i=k])^2; range [0,2], not divided by classes",
+          "log_loss": 4.140851711200263,
+          "top_label_reliability": {
+            "N": 146461,
+            "ECE": 0.14986242070868072,
+            "binning": "10 fixed equal-width bins; weighted absolute probability-frequency gap",
+            "bins": [
+              {
+                "bin": 0,
+                "lower": 0.0,
+                "upper": 0.1,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 1,
+                "lower": 0.1,
+                "upper": 0.2,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 2,
+                "lower": 0.2,
+                "upper": 0.3,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 3,
+                "lower": 0.3,
+                "upper": 0.4,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 4,
+                "lower": 0.4,
+                "upper": 0.5,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 5,
+                "lower": 0.5,
+                "upper": 0.6,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 6,
+                "lower": 0.6,
+                "upper": 0.7,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 7,
+                "lower": 0.7,
+                "upper": 0.8,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 8,
+                "lower": 0.8,
+                "upper": 0.9,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 9,
+                "lower": 0.9,
+                "upper": 1.0,
+                "N": 146461,
+                "mean_probability": 0.9999999999959995,
+                "observed_frequency": 0.8501375792873188
+              }
+            ]
+          },
+          "class_reliability": {
+            "0": {
+              "N": 146461,
+              "ECE": 0.14986242070868072,
+              "binning": "10 fixed equal-width bins; weighted absolute probability-frequency gap",
+              "bins": [
+                {
+                  "bin": 0,
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 1,
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 2,
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 3,
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 4,
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 5,
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 6,
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 7,
+                  "lower": 0.7,
+                  "upper": 0.8,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 8,
+                  "lower": 0.8,
+                  "upper": 0.9,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 9,
+                  "lower": 0.9,
+                  "upper": 1.0,
+                  "N": 146461,
+                  "mean_probability": 0.9999999999959995,
+                  "observed_frequency": 0.8501375792873188
+                }
+              ]
+            },
+            "1": {
+              "N": 146461,
+              "ECE": 0.01612033237417155,
+              "binning": "10 fixed equal-width bins; weighted absolute probability-frequency gap",
+              "bins": [
+                {
+                  "bin": 0,
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "N": 146461,
+                  "mean_probability": 9.999999999959996e-13,
+                  "observed_frequency": 0.016120332375171548
+                },
+                {
+                  "bin": 1,
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 2,
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 3,
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 4,
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 5,
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 6,
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 7,
+                  "lower": 0.7,
+                  "upper": 0.8,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 8,
+                  "lower": 0.8,
+                  "upper": 0.9,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 9,
+                  "lower": 0.9,
+                  "upper": 1.0,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                }
+              ]
+            },
+            "2": {
+              "N": 146461,
+              "ECE": 0.015499006560473703,
+              "binning": "10 fixed equal-width bins; weighted absolute probability-frequency gap",
+              "bins": [
+                {
+                  "bin": 0,
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "N": 146461,
+                  "mean_probability": 9.999999999959996e-13,
+                  "observed_frequency": 0.015499006561473704
+                },
+                {
+                  "bin": 1,
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 2,
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 3,
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 4,
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 5,
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 6,
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 7,
+                  "lower": 0.7,
+                  "upper": 0.8,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 8,
+                  "lower": 0.8,
+                  "upper": 0.9,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 9,
+                  "lower": 0.9,
+                  "upper": 1.0,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                }
+              ]
+            },
+            "3": {
+              "N": 146461,
+              "ECE": 0.016454892427701158,
+              "binning": "10 fixed equal-width bins; weighted absolute probability-frequency gap",
+              "bins": [
+                {
+                  "bin": 0,
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "N": 146461,
+                  "mean_probability": 9.999999999959996e-13,
+                  "observed_frequency": 0.016454892428701157
+                },
+                {
+                  "bin": 1,
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 2,
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 3,
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 4,
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 5,
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 6,
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 7,
+                  "lower": 0.7,
+                  "upper": 0.8,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 8,
+                  "lower": 0.8,
+                  "upper": 0.9,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 9,
+                  "lower": 0.9,
+                  "upper": 1.0,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                }
+              ]
+            },
+            "4": {
+              "N": 146461,
+              "ECE": 0.10178818934633478,
+              "binning": "10 fixed equal-width bins; weighted absolute probability-frequency gap",
+              "bins": [
+                {
+                  "bin": 0,
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "N": 146461,
+                  "mean_probability": 9.999999999959996e-13,
+                  "observed_frequency": 0.10178818934733479
+                },
+                {
+                  "bin": 1,
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 2,
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 3,
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 4,
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 5,
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 6,
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 7,
+                  "lower": 0.7,
+                  "upper": 0.8,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 8,
+                  "lower": 0.8,
+                  "upper": 0.9,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 9,
+                  "lower": 0.9,
+                  "upper": 1.0,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                }
+              ]
+            }
+          },
+          "hardware_reliability": {
+            "N": 146461,
+            "ECE": 0.048074231362346405,
+            "binning": "10 fixed equal-width bins; weighted absolute probability-frequency gap",
+            "bins": [
+              {
+                "bin": 0,
+                "lower": 0.0,
+                "upper": 0.1,
+                "N": 146461,
+                "mean_probability": 2.9999999999879983e-12,
+                "observed_frequency": 0.04807423136534641
+              },
+              {
+                "bin": 1,
+                "lower": 0.1,
+                "upper": 0.2,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 2,
+                "lower": 0.2,
+                "upper": 0.3,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 3,
+                "lower": 0.3,
+                "upper": 0.4,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 4,
+                "lower": 0.4,
+                "upper": 0.5,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 5,
+                "lower": 0.5,
+                "upper": 0.6,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 6,
+                "lower": 0.6,
+                "upper": 0.7,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 7,
+                "lower": 0.7,
+                "upper": 0.8,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 8,
+                "lower": 0.8,
+                "upper": 0.9,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 9,
+                "lower": 0.9,
+                "upper": 1.0,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    "prior": {
+      "VALIDATION_BLOCK13": {
+        "metrics": {
+          "N": 32800,
+          "macro_f1_present_classes": 0.14426945267425542,
+          "macro_f1_fixed_five": 0.14426945267425542,
+          "weighted_f1": 0.4069454195555522,
+          "balanced_accuracy_present_classes": 0.2,
+          "macro_precision_present_classes": 0.11282926829268292,
+          "per_class": {
+            "0": {
+              "N": 18504,
+              "base_rate": 0.5641463414634146,
+              "precision": 0.5641463414634146,
+              "recall": 1.0,
+              "f1": 0.7213472633712771,
+              "AP": 0.5641463414634146
+            },
+            "1": {
+              "N": 1232,
+              "base_rate": 0.037560975609756096,
+              "precision": null,
+              "recall": 0.0,
+              "f1": 0.0,
+              "AP": 0.037560975609756096
+            },
+            "2": {
+              "N": 1222,
+              "base_rate": 0.03725609756097561,
+              "precision": null,
+              "recall": 0.0,
+              "f1": 0.0,
+              "AP": 0.03725609756097561
+            },
+            "3": {
+              "N": 1206,
+              "base_rate": 0.03676829268292683,
+              "precision": null,
+              "recall": 0.0,
+              "f1": 0.0,
+              "AP": 0.03676829268292683
+            },
+            "4": {
+              "N": 10636,
+              "base_rate": 0.32426829268292684,
+              "precision": null,
+              "recall": 0.0,
+              "f1": 0.0,
+              "AP": 0.32426829268292684
+            }
+          },
+          "coverage": 1.0,
+          "confusion_matrix": [
+            [
+              18504,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1232,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1222,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1206,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              10636,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "confusion_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            "abstain"
+          ],
+          "macro_AP": 0.2,
+          "hardware_AP": 0.11158536585365854,
+          "hardware_precision_at_top_1pct": 0.0,
+          "top_1pct_N": 328,
+          "hardware_alert_recall": 0.0,
+          "normal_FPR": 0.0,
+          "shade_FPR": 0.0,
+          "combined_nonhardware_FPR": 0.0,
+          "alert_rule": "argmax class in {1,2,3}; not a tuned alert threshold",
+          "threshold": null,
+          "absent_true_classes": [],
+          "AP_definition": "one-vs-rest average precision; not trapezoidal PR-AUC",
+          "hardware_definition": "classes1/2/3 only; shade environmental"
+        },
+        "probability_quality": {
+          "status": "VERIFIED",
+          "N": 32800,
+          "multiclass_Brier": 0.681514583845888,
+          "Brier_definition": "mean_i sum_k (p_ik - 1[y_i=k])^2; range [0,2], not divided by classes",
+          "log_loss": 1.4011010729802595,
+          "top_label_reliability": {
+            "N": 32800,
+            "ECE": 0.2755123901704021,
+            "binning": "10 fixed equal-width bins; weighted absolute probability-frequency gap",
+            "bins": [
+              {
+                "bin": 0,
+                "lower": 0.0,
+                "upper": 0.1,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 1,
+                "lower": 0.1,
+                "upper": 0.2,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 2,
+                "lower": 0.2,
+                "upper": 0.3,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 3,
+                "lower": 0.3,
+                "upper": 0.4,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 4,
+                "lower": 0.4,
+                "upper": 0.5,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 5,
+                "lower": 0.5,
+                "upper": 0.6,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 6,
+                "lower": 0.6,
+                "upper": 0.7,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 7,
+                "lower": 0.7,
+                "upper": 0.8,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 8,
+                "lower": 0.8,
+                "upper": 0.9,
+                "N": 32800,
+                "mean_probability": 0.8396587316338167,
+                "observed_frequency": 0.5641463414634146
+              },
+              {
+                "bin": 9,
+                "lower": 0.9,
+                "upper": 1.0,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              }
+            ]
+          },
+          "class_reliability": {
+            "0": {
+              "N": 32800,
+              "ECE": 0.2755123901704021,
+              "binning": "10 fixed equal-width bins; weighted absolute probability-frequency gap",
+              "bins": [
+                {
+                  "bin": 0,
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 1,
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 2,
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 3,
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 4,
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 5,
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 6,
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 7,
+                  "lower": 0.7,
+                  "upper": 0.8,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 8,
+                  "lower": 0.8,
+                  "upper": 0.9,
+                  "N": 32800,
+                  "mean_probability": 0.8396587316338167,
+                  "observed_frequency": 0.5641463414634146
+                },
+                {
+                  "bin": 9,
+                  "lower": 0.9,
+                  "upper": 1.0,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                }
+              ]
+            },
+            "1": {
+              "N": 32800,
+              "ECE": 0.03634244399005326,
+              "binning": "10 fixed equal-width bins; weighted absolute probability-frequency gap",
+              "bins": [
+                {
+                  "bin": 0,
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "N": 32800,
+                  "mean_probability": 0.0012185316197028408,
+                  "observed_frequency": 0.037560975609756096
+                },
+                {
+                  "bin": 1,
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 2,
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 3,
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 4,
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 5,
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 6,
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 7,
+                  "lower": 0.7,
+                  "upper": 0.8,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 8,
+                  "lower": 0.8,
+                  "upper": 0.9,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 9,
+                  "lower": 0.9,
+                  "upper": 1.0,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                }
+              ]
+            },
+            "2": {
+              "N": 32800,
+              "ECE": 0.031595789588538675,
+              "binning": "10 fixed equal-width bins; weighted absolute probability-frequency gap",
+              "bins": [
+                {
+                  "bin": 0,
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "N": 32800,
+                  "mean_probability": 0.0056603079724369355,
+                  "observed_frequency": 0.03725609756097561
+                },
+                {
+                  "bin": 1,
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 2,
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 3,
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 4,
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 5,
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 6,
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 7,
+                  "lower": 0.7,
+                  "upper": 0.8,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 8,
+                  "lower": 0.8,
+                  "upper": 0.9,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 9,
+                  "lower": 0.9,
+                  "upper": 1.0,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                }
+              ]
+            },
+            "3": {
+              "N": 32800,
+              "ECE": 0.0355716270466118,
+              "binning": "10 fixed equal-width bins; weighted absolute probability-frequency gap",
+              "bins": [
+                {
+                  "bin": 0,
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "N": 32800,
+                  "mean_probability": 0.0011966656363150252,
+                  "observed_frequency": 0.03676829268292683
+                },
+                {
+                  "bin": 1,
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 2,
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 3,
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 4,
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 5,
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 6,
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 7,
+                  "lower": 0.7,
+                  "upper": 0.8,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 8,
+                  "lower": 0.8,
+                  "upper": 0.9,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 9,
+                  "lower": 0.9,
+                  "upper": 1.0,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                }
+              ]
+            },
+            "4": {
+              "N": 32800,
+              "ECE": 0.172002529545198,
+              "binning": "10 fixed equal-width bins; weighted absolute probability-frequency gap",
+              "bins": [
+                {
+                  "bin": 0,
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 1,
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "N": 32800,
+                  "mean_probability": 0.15226576313772883,
+                  "observed_frequency": 0.32426829268292684
+                },
+                {
+                  "bin": 2,
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 3,
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 4,
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 5,
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 6,
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 7,
+                  "lower": 0.7,
+                  "upper": 0.8,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 8,
+                  "lower": 0.8,
+                  "upper": 0.9,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 9,
+                  "lower": 0.9,
+                  "upper": 1.0,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                }
+              ]
+            }
+          },
+          "hardware_reliability": {
+            "N": 32800,
+            "ECE": 0.10350986062520375,
+            "binning": "10 fixed equal-width bins; weighted absolute probability-frequency gap",
+            "bins": [
+              {
+                "bin": 0,
+                "lower": 0.0,
+                "upper": 0.1,
+                "N": 32800,
+                "mean_probability": 0.008075505228454797,
+                "observed_frequency": 0.11158536585365854
+              },
+              {
+                "bin": 1,
+                "lower": 0.1,
+                "upper": 0.2,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 2,
+                "lower": 0.2,
+                "upper": 0.3,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 3,
+                "lower": 0.3,
+                "upper": 0.4,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 4,
+                "lower": 0.4,
+                "upper": 0.5,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 5,
+                "lower": 0.5,
+                "upper": 0.6,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 6,
+                "lower": 0.6,
+                "upper": 0.7,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 7,
+                "lower": 0.7,
+                "upper": 0.8,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 8,
+                "lower": 0.8,
+                "upper": 0.9,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 9,
+                "lower": 0.9,
+                "upper": 1.0,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              }
+            ]
+          }
+        }
+      },
+      "TEST": {
+        "metrics": {
+          "N": 146461,
+          "macro_f1_present_classes": 0.18379986197886874,
+          "macro_f1_fixed_five": 0.18379986197886874,
+          "weighted_f1": 0.7812758486802939,
+          "balanced_accuracy_present_classes": 0.2,
+          "macro_precision_present_classes": 0.17002751585746376,
+          "per_class": {
+            "0": {
+              "N": 124512,
+              "base_rate": 0.8501375792873188,
+              "precision": 0.8501375792873188,
+              "recall": 1.0,
+              "f1": 0.9189993098943438,
+              "AP": 0.8501375792873188
+            },
+            "1": {
+              "N": 2361,
+              "base_rate": 0.016120332375171548,
+              "precision": null,
+              "recall": 0.0,
+              "f1": 0.0,
+              "AP": 0.016120332375171548
+            },
+            "2": {
+              "N": 2270,
+              "base_rate": 0.015499006561473704,
+              "precision": null,
+              "recall": 0.0,
+              "f1": 0.0,
+              "AP": 0.015499006561473704
+            },
+            "3": {
+              "N": 2410,
+              "base_rate": 0.016454892428701157,
+              "precision": null,
+              "recall": 0.0,
+              "f1": 0.0,
+              "AP": 0.016454892428701157
+            },
+            "4": {
+              "N": 14908,
+              "base_rate": 0.10178818934733479,
+              "precision": null,
+              "recall": 0.0,
+              "f1": 0.0,
+              "AP": 0.10178818934733479
+            }
+          },
+          "coverage": 1.0,
+          "confusion_matrix": [
+            [
+              124512,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              2361,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              2270,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              2410,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              14908,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "confusion_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            "abstain"
+          ],
+          "macro_AP": 0.2,
+          "hardware_AP": 0.04807423136534641,
+          "hardware_precision_at_top_1pct": 0.0,
+          "top_1pct_N": 1465,
+          "hardware_alert_recall": 0.0,
+          "normal_FPR": 0.0,
+          "shade_FPR": 0.0,
+          "combined_nonhardware_FPR": 0.0,
+          "alert_rule": "argmax class in {1,2,3}; not a tuned alert threshold",
+          "threshold": null,
+          "absent_true_classes": [],
+          "AP_definition": "one-vs-rest average precision; not trapezoidal PR-AUC",
+          "hardware_definition": "classes1/2/3 only; shade environmental"
+        },
+        "probability_quality": {
+          "status": "VERIFIED",
+          "N": 146461,
+          "multiclass_Brier": 0.2693438818322096,
+          "Brier_definition": "mean_i sum_k (p_ik - 1[y_i=k])^2; range [0,2], not divided by classes",
+          "log_loss": 0.6392256190581925,
+          "top_label_reliability": {
+            "N": 146461,
+            "ECE": 0.010478847653502377,
+            "binning": "10 fixed equal-width bins; weighted absolute probability-frequency gap",
+            "bins": [
+              {
+                "bin": 0,
+                "lower": 0.0,
+                "upper": 0.1,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 1,
+                "lower": 0.1,
+                "upper": 0.2,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 2,
+                "lower": 0.2,
+                "upper": 0.3,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 3,
+                "lower": 0.3,
+                "upper": 0.4,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 4,
+                "lower": 0.4,
+                "upper": 0.5,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 5,
+                "lower": 0.5,
+                "upper": 0.6,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 6,
+                "lower": 0.6,
+                "upper": 0.7,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 7,
+                "lower": 0.7,
+                "upper": 0.8,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 8,
+                "lower": 0.8,
+                "upper": 0.9,
+                "N": 146461,
+                "mean_probability": 0.8396587316338164,
+                "observed_frequency": 0.8501375792873188
+              },
+              {
+                "bin": 9,
+                "lower": 0.9,
+                "upper": 1.0,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              }
+            ]
+          },
+          "class_reliability": {
+            "0": {
+              "N": 146461,
+              "ECE": 0.010478847653502377,
+              "binning": "10 fixed equal-width bins; weighted absolute probability-frequency gap",
+              "bins": [
+                {
+                  "bin": 0,
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 1,
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 2,
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 3,
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 4,
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 5,
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 6,
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 7,
+                  "lower": 0.7,
+                  "upper": 0.8,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 8,
+                  "lower": 0.8,
+                  "upper": 0.9,
+                  "N": 146461,
+                  "mean_probability": 0.8396587316338164,
+                  "observed_frequency": 0.8501375792873188
+                },
+                {
+                  "bin": 9,
+                  "lower": 0.9,
+                  "upper": 1.0,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                }
+              ]
+            },
+            "1": {
+              "N": 146461,
+              "ECE": 0.014901800755468706,
+              "binning": "10 fixed equal-width bins; weighted absolute probability-frequency gap",
+              "bins": [
+                {
+                  "bin": 0,
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "N": 146461,
+                  "mean_probability": 0.0012185316197028413,
+                  "observed_frequency": 0.016120332375171548
+                },
+                {
+                  "bin": 1,
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 2,
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 3,
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 4,
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 5,
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 6,
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 7,
+                  "lower": 0.7,
+                  "upper": 0.8,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 8,
+                  "lower": 0.8,
+                  "upper": 0.9,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 9,
+                  "lower": 0.9,
+                  "upper": 1.0,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                }
+              ]
+            },
+            "2": {
+              "N": 146461,
+              "ECE": 0.00983869858903677,
+              "binning": "10 fixed equal-width bins; weighted absolute probability-frequency gap",
+              "bins": [
+                {
+                  "bin": 0,
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "N": 146461,
+                  "mean_probability": 0.005660307972436934,
+                  "observed_frequency": 0.015499006561473704
+                },
+                {
+                  "bin": 1,
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 2,
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 3,
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 4,
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 5,
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 6,
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 7,
+                  "lower": 0.7,
+                  "upper": 0.8,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 8,
+                  "lower": 0.8,
+                  "upper": 0.9,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 9,
+                  "lower": 0.9,
+                  "upper": 1.0,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                }
+              ]
+            },
+            "3": {
+              "N": 146461,
+              "ECE": 0.015258226792386132,
+              "binning": "10 fixed equal-width bins; weighted absolute probability-frequency gap",
+              "bins": [
+                {
+                  "bin": 0,
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "N": 146461,
+                  "mean_probability": 0.0011966656363150252,
+                  "observed_frequency": 0.016454892428701157
+                },
+                {
+                  "bin": 1,
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 2,
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 3,
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 4,
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 5,
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 6,
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 7,
+                  "lower": 0.7,
+                  "upper": 0.8,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 8,
+                  "lower": 0.8,
+                  "upper": 0.9,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 9,
+                  "lower": 0.9,
+                  "upper": 1.0,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                }
+              ]
+            },
+            "4": {
+              "N": 146461,
+              "ECE": 0.05047757379039404,
+              "binning": "10 fixed equal-width bins; weighted absolute probability-frequency gap",
+              "bins": [
+                {
+                  "bin": 0,
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 1,
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "N": 146461,
+                  "mean_probability": 0.15226576313772883,
+                  "observed_frequency": 0.10178818934733479
+                },
+                {
+                  "bin": 2,
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 3,
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 4,
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 5,
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 6,
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 7,
+                  "lower": 0.7,
+                  "upper": 0.8,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 8,
+                  "lower": 0.8,
+                  "upper": 0.9,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                },
+                {
+                  "bin": 9,
+                  "lower": 0.9,
+                  "upper": 1.0,
+                  "N": 0,
+                  "mean_probability": null,
+                  "observed_frequency": null
+                }
+              ]
+            }
+          },
+          "hardware_reliability": {
+            "N": 146461,
+            "ECE": 0.03999872613689161,
+            "binning": "10 fixed equal-width bins; weighted absolute probability-frequency gap",
+            "bins": [
+              {
+                "bin": 0,
+                "lower": 0.0,
+                "upper": 0.1,
+                "N": 146461,
+                "mean_probability": 0.008075505228454797,
+                "observed_frequency": 0.04807423136534641
+              },
+              {
+                "bin": 1,
+                "lower": 0.1,
+                "upper": 0.2,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 2,
+                "lower": 0.2,
+                "upper": 0.3,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 3,
+                "lower": 0.3,
+                "upper": 0.4,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 4,
+                "lower": 0.4,
+                "upper": 0.5,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 5,
+                "lower": 0.5,
+                "upper": 0.6,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 6,
+                "lower": 0.6,
+                "upper": 0.7,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 7,
+                "lower": 0.7,
+                "upper": 0.8,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 8,
+                "lower": 0.8,
+                "upper": 0.9,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "bin": 9,
+                "lower": 0.9,
+                "upper": 1.0,
+                "N": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "class_order": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "calibration_metrics_match_previous_within": 1e-12,
+  "probability_normalization": "All250 synthetic/calibration output class distributions normalized; calibration transform clips and renormalizes; support guards execute per class/fold."
+}

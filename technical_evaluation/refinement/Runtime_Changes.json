@@ -1,0 +1,10 @@
+{
+  "allowed_modified_files": [
+    "pyproject.toml",
+    "Dockerfile",
+    "web/tests/test_api.py",
+    "vercel.json",
+    ".gitignore"
+  ],
+  "reason": "Actual new preview uses Python3.14.2. Explicit isolated model parity verified before adding that exact patch allowance; all scientific dependencies and other runtime exclusions retained. Docker defaults3.14.10 and CI also tests3.14.2. Runtime bundle excludes offline audit/CI/container material; no route, region, timeout or model change. Narrow JSON-only exception publishes curated refinement receipts; binary/intermediate exclusions unchanged."
+}
