@@ -69,7 +69,7 @@ async def security_headers(request, call_next):
     started = time.perf_counter()
     request.state.timing = {}
     response = await call_next(request)
-    timing = request.state.timing
+    timing = dict(request.state.timing)
     timing['server'] = (time.perf_counter()-started)*1000
     response.headers['Server-Timing'] = ', '.join(f'{k};dur={v:.4f}' for k,v in timing.items())
     response.headers['X-PV-Instance'] = _INSTANCE

@@ -5,6 +5,9 @@ on:
     branches: [main, "verification/technical-refinement-*"]
     paths:
       - Dockerfile
+      - pyproject.toml
+      - uv.lock
+      - technical_evaluation/refinement/fixtures/**
       - web/**
       - src/inference/**
       - .github/workflows/container-verification.yml
