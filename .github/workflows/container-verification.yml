@@ -1,0 +1,23 @@
+name: Verify original RF container
+on:
+  workflow_dispatch:
+  push:
+    branches: [main, "verification/technical-refinement-*"]
+    paths:
+      - Dockerfile
+      - web/**
+      - src/inference/**
+      - .github/workflows/container-verification.yml
+      - technical_evaluation/refinement/container_verify.py
+permissions:
+  contents: read
+jobs:
+  container:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Build and run nonroot original-model container
+        run: python3 technical_evaluation/refinement/container_verify.py
