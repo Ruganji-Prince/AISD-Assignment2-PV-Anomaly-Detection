@@ -23,3 +23,7 @@ test-results
 web/package.json
 web/package-lock.json
 web/requirements-test.txt
+
+technical_evaluation
+Dockerfile
+.dockerignore

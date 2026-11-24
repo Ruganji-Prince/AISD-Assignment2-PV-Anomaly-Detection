@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-24",
+  "resolved_execution_failures": [
+    {
+      "stage": "Initial missingness check",
+      "failure": "pandas3 requires keyword axis for DataFrame.any/all",
+      "correction": "New audit-only calls changed to axis=1; rerun passed."
+    },
+    {
+      "stage": "Original cache lookup",
+      "failure": "Initial path named the cache root rather than stage2/models",
+      "correction": "Cache discovery accepts the root or model directory; all21 original hashes and validation metrics subsequently matched."
+    },
+    {
+      "stage": "Shell command invocation",
+      "failure": "PowerShell quoting removed a literal path delimiter in a Python -c argument",
+      "correction": "Used a literal stdin script; no scientific results were produced by the failed invocation."
+    }
+  ],
+  "unfavorable_results_preserved": [
+    "Quantile-clipping degradation",
+    "Grouped-fold unseen short-circuit class",
+    "Stress-test degradation",
+    "Five synthetic presets classify as shade"
+  ],
+  "warnings": [
+    "Existing FastAPI TestClient emits a Starlette httpx deprecation warning; all API assertions pass. No protected dependency was upgraded."
+  ],
+  "Docker": {
+    "status": "NOT VERIFIED",
+    "blocker": "docker executable unavailable and Docker Desktop not found at common installation locations; no virtualization or paid service installed."
+  }
+}

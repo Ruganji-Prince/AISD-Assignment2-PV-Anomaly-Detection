@@ -1,0 +1,709 @@
+{
+  "policy": "Illustrative unitless sensitivity, not stakeholder-elicited monetary costs; no threshold/model chosen from TEST cost.",
+  "results": [
+    {
+      "model": "Dummy_most_frequent",
+      "partition": "VALIDATION_BLOCK13",
+      "matrix": [
+        [
+          0.0,
+          2.0,
+          2.0,
+          2.0,
+          1.0
+        ],
+        [
+          2.0,
+          0.0,
+          3.0,
+          3.0,
+          1.6
+        ],
+        [
+          2.0,
+          3.0,
+          0.0,
+          3.0,
+          1.6
+        ],
+        [
+          2.0,
+          3.0,
+          3.0,
+          0.0,
+          1.6
+        ],
+        [
+          1.0,
+          3.0,
+          3.0,
+          3.0,
+          0.0
+        ]
+      ],
+      "relative_loss_per_1000_observations": 547.439024390244,
+      "units": "Explicitly hypothetical relative severity units, not monetary cost",
+      "hardware_miss_weight": 2
+    },
+    {
+      "model": "Dummy_most_frequent",
+      "partition": "VALIDATION_BLOCK13",
+      "matrix": [
+        [
+          0.0,
+          2.0,
+          2.0,
+          2.0,
+          1.0
+        ],
+        [
+          5.0,
+          0.0,
+          3.0,
+          3.0,
+          4.0
+        ],
+        [
+          5.0,
+          3.0,
+          0.0,
+          3.0,
+          4.0
+        ],
+        [
+          5.0,
+          3.0,
+          3.0,
+          0.0,
+          4.0
+        ],
+        [
+          1.0,
+          3.0,
+          3.0,
+          3.0,
+          0.0
+        ]
+      ],
+      "relative_loss_per_1000_observations": 882.1951219512196,
+      "units": "Explicitly hypothetical relative severity units, not monetary cost",
+      "hardware_miss_weight": 5
+    },
+    {
+      "model": "Dummy_most_frequent",
+      "partition": "VALIDATION_BLOCK13",
+      "matrix": [
+        [
+          0.0,
+          2.0,
+          2.0,
+          2.0,
+          1.0
+        ],
+        [
+          10.0,
+          0.0,
+          3.0,
+          3.0,
+          8.0
+        ],
+        [
+          10.0,
+          3.0,
+          0.0,
+          3.0,
+          8.0
+        ],
+        [
+          10.0,
+          3.0,
+          3.0,
+          0.0,
+          8.0
+        ],
+        [
+          1.0,
+          3.0,
+          3.0,
+          3.0,
+          0.0
+        ]
+      ],
+      "relative_loss_per_1000_observations": 1440.1219512195123,
+      "units": "Explicitly hypothetical relative severity units, not monetary cost",
+      "hardware_miss_weight": 10
+    },
+    {
+      "model": "Dummy_most_frequent",
+      "partition": "VALIDATION_BLOCK13",
+      "matrix": [
+        [
+          0.0,
+          2.0,
+          2.0,
+          2.0,
+          1.0
+        ],
+        [
+          20.0,
+          0.0,
+          3.0,
+          3.0,
+          16.0
+        ],
+        [
+          20.0,
+          3.0,
+          0.0,
+          3.0,
+          16.0
+        ],
+        [
+          20.0,
+          3.0,
+          3.0,
+          0.0,
+          16.0
+        ],
+        [
+          1.0,
+          3.0,
+          3.0,
+          3.0,
+          0.0
+        ]
+      ],
+      "relative_loss_per_1000_observations": 2555.9756097560976,
+      "units": "Explicitly hypothetical relative severity units, not monetary cost",
+      "hardware_miss_weight": 20
+    },
+    {
+      "model": "Dummy_most_frequent",
+      "partition": "TEST",
+      "matrix": [
+        [
+          0.0,
+          2.0,
+          2.0,
+          2.0,
+          1.0
+        ],
+        [
+          2.0,
+          0.0,
+          3.0,
+          3.0,
+          1.6
+        ],
+        [
+          2.0,
+          3.0,
+          0.0,
+          3.0,
+          1.6
+        ],
+        [
+          2.0,
+          3.0,
+          3.0,
+          0.0,
+          1.6
+        ],
+        [
+          1.0,
+          3.0,
+          3.0,
+          3.0,
+          0.0
+        ]
+      ],
+      "relative_loss_per_1000_observations": 197.9366520780276,
+      "units": "Explicitly hypothetical relative severity units, not monetary cost",
+      "hardware_miss_weight": 2
+    },
+    {
+      "model": "Dummy_most_frequent",
+      "partition": "TEST",
+      "matrix": [
+        [
+          0.0,
+          2.0,
+          2.0,
+          2.0,
+          1.0
+        ],
+        [
+          5.0,
+          0.0,
+          3.0,
+          3.0,
+          4.0
+        ],
+        [
+          5.0,
+          3.0,
+          0.0,
+          3.0,
+          4.0
+        ],
+        [
+          5.0,
+          3.0,
+          3.0,
+          0.0,
+          4.0
+        ],
+        [
+          1.0,
+          3.0,
+          3.0,
+          3.0,
+          0.0
+        ]
+      ],
+      "relative_loss_per_1000_observations": 342.1593461740668,
+      "units": "Explicitly hypothetical relative severity units, not monetary cost",
+      "hardware_miss_weight": 5
+    },
+    {
+      "model": "Dummy_most_frequent",
+      "partition": "TEST",
+      "matrix": [
+        [
+          0.0,
+          2.0,
+          2.0,
+          2.0,
+          1.0
+        ],
+        [
+          10.0,
+          0.0,
+          3.0,
+          3.0,
+          8.0
+        ],
+        [
+          10.0,
+          3.0,
+          0.0,
+          3.0,
+          8.0
+        ],
+        [
+          10.0,
+          3.0,
+          3.0,
+          0.0,
+          8.0
+        ],
+        [
+          1.0,
+          3.0,
+          3.0,
+          3.0,
+          0.0
+        ]
+      ],
+      "relative_loss_per_1000_observations": 582.530503000799,
+      "units": "Explicitly hypothetical relative severity units, not monetary cost",
+      "hardware_miss_weight": 10
+    },
+    {
+      "model": "Dummy_most_frequent",
+      "partition": "TEST",
+      "matrix": [
+        [
+          0.0,
+          2.0,
+          2.0,
+          2.0,
+          1.0
+        ],
+        [
+          20.0,
+          0.0,
+          3.0,
+          3.0,
+          16.0
+        ],
+        [
+          20.0,
+          3.0,
+          0.0,
+          3.0,
+          16.0
+        ],
+        [
+          20.0,
+          3.0,
+          3.0,
+          0.0,
+          16.0
+        ],
+        [
+          1.0,
+          3.0,
+          3.0,
+          3.0,
+          0.0
+        ]
+      ],
+      "relative_loss_per_1000_observations": 1063.272816654263,
+      "units": "Explicitly hypothetical relative severity units, not monetary cost",
+      "hardware_miss_weight": 20
+    },
+    {
+      "model": "original_RF_E4",
+      "partition": "VALIDATION_BLOCK13",
+      "matrix": [
+        [
+          0.0,
+          2.0,
+          2.0,
+          2.0,
+          1.0
+        ],
+        [
+          2.0,
+          0.0,
+          3.0,
+          3.0,
+          1.6
+        ],
+        [
+          2.0,
+          3.0,
+          0.0,
+          3.0,
+          1.6
+        ],
+        [
+          2.0,
+          3.0,
+          3.0,
+          0.0,
+          1.6
+        ],
+        [
+          1.0,
+          3.0,
+          3.0,
+          3.0,
+          0.0
+        ]
+      ],
+      "relative_loss_per_1000_observations": 79.20121951219511,
+      "units": "Explicitly hypothetical relative severity units, not monetary cost",
+      "hardware_miss_weight": 2
+    },
+    {
+      "model": "original_RF_E4",
+      "partition": "VALIDATION_BLOCK13",
+      "matrix": [
+        [
+          0.0,
+          2.0,
+          2.0,
+          2.0,
+          1.0
+        ],
+        [
+          5.0,
+          0.0,
+          3.0,
+          3.0,
+          4.0
+        ],
+        [
+          5.0,
+          3.0,
+          0.0,
+          3.0,
+          4.0
+        ],
+        [
+          5.0,
+          3.0,
+          3.0,
+          0.0,
+          4.0
+        ],
+        [
+          1.0,
+          3.0,
+          3.0,
+          3.0,
+          0.0
+        ]
+      ],
+      "relative_loss_per_1000_observations": 82.53048780487805,
+      "units": "Explicitly hypothetical relative severity units, not monetary cost",
+      "hardware_miss_weight": 5
+    },
+    {
+      "model": "original_RF_E4",
+      "partition": "VALIDATION_BLOCK13",
+      "matrix": [
+        [
+          0.0,
+          2.0,
+          2.0,
+          2.0,
+          1.0
+        ],
+        [
+          10.0,
+          0.0,
+          3.0,
+          3.0,
+          8.0
+        ],
+        [
+          10.0,
+          3.0,
+          0.0,
+          3.0,
+          8.0
+        ],
+        [
+          10.0,
+          3.0,
+          3.0,
+          0.0,
+          8.0
+        ],
+        [
+          1.0,
+          3.0,
+          3.0,
+          3.0,
+          0.0
+        ]
+      ],
+      "relative_loss_per_1000_observations": 88.07926829268293,
+      "units": "Explicitly hypothetical relative severity units, not monetary cost",
+      "hardware_miss_weight": 10
+    },
+    {
+      "model": "original_RF_E4",
+      "partition": "VALIDATION_BLOCK13",
+      "matrix": [
+        [
+          0.0,
+          2.0,
+          2.0,
+          2.0,
+          1.0
+        ],
+        [
+          20.0,
+          0.0,
+          3.0,
+          3.0,
+          16.0
+        ],
+        [
+          20.0,
+          3.0,
+          0.0,
+          3.0,
+          16.0
+        ],
+        [
+          20.0,
+          3.0,
+          3.0,
+          0.0,
+          16.0
+        ],
+        [
+          1.0,
+          3.0,
+          3.0,
+          3.0,
+          0.0
+        ]
+      ],
+      "relative_loss_per_1000_observations": 99.17682926829269,
+      "units": "Explicitly hypothetical relative severity units, not monetary cost",
+      "hardware_miss_weight": 20
+    },
+    {
+      "model": "original_RF_E4",
+      "partition": "TEST",
+      "matrix": [
+        [
+          0.0,
+          2.0,
+          2.0,
+          2.0,
+          1.0
+        ],
+        [
+          2.0,
+          0.0,
+          3.0,
+          3.0,
+          1.6
+        ],
+        [
+          2.0,
+          3.0,
+          0.0,
+          3.0,
+          1.6
+        ],
+        [
+          2.0,
+          3.0,
+          3.0,
+          0.0,
+          1.6
+        ],
+        [
+          1.0,
+          3.0,
+          3.0,
+          3.0,
+          0.0
+        ]
+      ],
+      "relative_loss_per_1000_observations": 48.09881128764654,
+      "units": "Explicitly hypothetical relative severity units, not monetary cost",
+      "hardware_miss_weight": 2
+    },
+    {
+      "model": "original_RF_E4",
+      "partition": "TEST",
+      "matrix": [
+        [
+          0.0,
+          2.0,
+          2.0,
+          2.0,
+          1.0
+        ],
+        [
+          5.0,
+          0.0,
+          3.0,
+          3.0,
+          4.0
+        ],
+        [
+          5.0,
+          3.0,
+          0.0,
+          3.0,
+          4.0
+        ],
+        [
+          5.0,
+          3.0,
+          3.0,
+          0.0,
+          4.0
+        ],
+        [
+          1.0,
+          3.0,
+          3.0,
+          3.0,
+          0.0
+        ]
+      ],
+      "relative_loss_per_1000_observations": 48.23809751401397,
+      "units": "Explicitly hypothetical relative severity units, not monetary cost",
+      "hardware_miss_weight": 5
+    },
+    {
+      "model": "original_RF_E4",
+      "partition": "TEST",
+      "matrix": [
+        [
+          0.0,
+          2.0,
+          2.0,
+          2.0,
+          1.0
+        ],
+        [
+          10.0,
+          0.0,
+          3.0,
+          3.0,
+          8.0
+        ],
+        [
+          10.0,
+          3.0,
+          0.0,
+          3.0,
+          8.0
+        ],
+        [
+          10.0,
+          3.0,
+          3.0,
+          0.0,
+          8.0
+        ],
+        [
+          1.0,
+          3.0,
+          3.0,
+          3.0,
+          0.0
+        ]
+      ],
+      "relative_loss_per_1000_observations": 48.47024122462635,
+      "units": "Explicitly hypothetical relative severity units, not monetary cost",
+      "hardware_miss_weight": 10
+    },
+    {
+      "model": "original_RF_E4",
+      "partition": "TEST",
+      "matrix": [
+        [
+          0.0,
+          2.0,
+          2.0,
+          2.0,
+          1.0
+        ],
+        [
+          20.0,
+          0.0,
+          3.0,
+          3.0,
+          16.0
+        ],
+        [
+          20.0,
+          3.0,
+          0.0,
+          3.0,
+          16.0
+        ],
+        [
+          20.0,
+          3.0,
+          3.0,
+          0.0,
+          16.0
+        ],
+        [
+          1.0,
+          3.0,
+          3.0,
+          3.0,
+          0.0
+        ]
+      ],
+      "relative_loss_per_1000_observations": 48.93452864585112,
+      "units": "Explicitly hypothetical relative severity units, not monetary cost",
+      "hardware_miss_weight": 20
+    }
+  ]
+}

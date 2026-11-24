@@ -1,0 +1,15 @@
+**/__pycache__
+**/*.pyc
+.git
+.venv
+.env*
+.vercel
+node_modules
+.cache
+.review
+data
+technical_evaluation
+reports
+figures
+phase1_strategy
+phase2_implementation

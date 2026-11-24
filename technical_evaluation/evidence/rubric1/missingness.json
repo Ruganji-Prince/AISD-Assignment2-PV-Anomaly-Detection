@@ -1,0 +1,82 @@
+{
+  "N": 1373798,
+  "P": 7,
+  "overall_missing_pct": 0.0,
+  "complete_rows": 1373798,
+  "incomplete_rows": 0,
+  "paired_irr_pvt_zero_N": 62,
+  "Little_MCAR": {
+    "status": "NOT APPLICABLE",
+    "reason": "All exported missingness indicators are constant zero; no incomplete missing-data patterns or estimable missingness mechanism."
+  },
+  "Cramer_V_missingness_target": {
+    "status": "NOT APPLICABLE",
+    "reason": "Missingness-versus-target table has one constant missingness category; denominator min(r-1,c-1)=0."
+  },
+  "MCAR_MAR_MNAR": "Not identifiable from zero exported NaNs. Suspicious paired zeros remain observations, not confirmed missingness.",
+  "columns": [
+    {
+      "column": "vdc1",
+      "type": "continuous float64",
+      "missing_N": 0,
+      "missing_pct": 0.0,
+      "infinite_N": 0,
+      "zero_N": 0,
+      "negative_N": 0
+    },
+    {
+      "column": "vdc2",
+      "type": "continuous float64",
+      "missing_N": 0,
+      "missing_pct": 0.0,
+      "infinite_N": 0,
+      "zero_N": 0,
+      "negative_N": 0
+    },
+    {
+      "column": "idc1",
+      "type": "continuous float64",
+      "missing_N": 0,
+      "missing_pct": 0.0,
+      "infinite_N": 0,
+      "zero_N": 0,
+      "negative_N": 0
+    },
+    {
+      "column": "idc2",
+      "type": "continuous float64",
+      "missing_N": 0,
+      "missing_pct": 0.0,
+      "infinite_N": 0,
+      "zero_N": 0,
+      "negative_N": 0
+    },
+    {
+      "column": "irr",
+      "type": "continuous float64",
+      "missing_N": 0,
+      "missing_pct": 0.0,
+      "infinite_N": 0,
+      "zero_N": 62,
+      "negative_N": 1
+    },
+    {
+      "column": "pvt",
+      "type": "continuous float64",
+      "missing_N": 0,
+      "missing_pct": 0.0,
+      "infinite_N": 0,
+      "zero_N": 62,
+      "negative_N": 24172
+    },
+    {
+      "column": "f_nv",
+      "type": "nominal integer target",
+      "missing_N": 0,
+      "missing_pct": 0.0,
+      "infinite_N": 0,
+      "zero_N": 1162931,
+      "negative_N": 0
+    }
+  ]
+}

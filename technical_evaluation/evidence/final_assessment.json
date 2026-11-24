@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-24",
+  "initial": [
+    16,
+    15,
+    14,
+    15,
+    16
+  ],
+  "final": [
+    18,
+    17,
+    18,
+    18,
+    17
+  ],
+  "initial_total": 76,
+  "final_total": 88,
+  "assessment": "Engineering self-assessment against official grid, not an official course grade.",
+  "deductions": [
+    "Single-study costs and physical validity not externally validated",
+    "Historical TEST and singleton rare-fault block",
+    "Single-block calibration and conditional bootstrap coverage",
+    "Simulation-only stress evidence and synthetic mismatch",
+    "Docker/cold-start/billedCPU unverified; no per-user operational rate limit"
+  ]
+}

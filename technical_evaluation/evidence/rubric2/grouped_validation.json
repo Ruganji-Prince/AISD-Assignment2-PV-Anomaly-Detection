@@ -1,0 +1,1674 @@
+{
+  "method": "3 nonshuffled GroupKFold folds over TRAIN operating blocks only",
+  "population_N": 401326,
+  "excluded_background_rows": 604803,
+  "folds": [
+    {
+      "fold": 0,
+      "family": "LR",
+      "fit_blocks": [
+        1,
+        2,
+        3,
+        5,
+        7,
+        8,
+        9,
+        11
+      ],
+      "eval_blocks": [
+        4,
+        6,
+        10,
+        12
+      ],
+      "fit_class_support": {
+        "0": 164417,
+        "2": 1779,
+        "3": 4,
+        "4": 100863
+      },
+      "eval_class_support": {
+        "0": 77977,
+        "1": 1226,
+        "2": 3916,
+        "3": 1200,
+        "4": 49944
+      },
+      "unseen_true_classes": [
+        1
+      ],
+      "ledger": {
+        "fit_N": 267063,
+        "fit_index_digest": "ce33f094cad22da089ad71cbd077556aeb37c64ec5bd316a9bf938670642e2de",
+        "eval_index_digest": "a4023f0801bae572fa44bc7207aa8c9b020b852f37cf981aebdfdf1dc68659e5",
+        "fit_eval_index_overlap": 0,
+        "full_pipeline_fitted_per_fold": true,
+        "seconds": 9.01352549996227,
+        "classes_seen": [
+          0,
+          2,
+          3,
+          4
+        ],
+        "weights": {
+          "0": 0.40607570993267117,
+          "4": 0.6619449153802683,
+          "2": 37.52993254637437,
+          "3": 16691.4375
+        },
+        "warnings": [],
+        "columns_remainder": "drop",
+        "feature_names": [
+          "numeric__vdc1",
+          "numeric__vdc2",
+          "numeric__idc1",
+          "numeric__idc2",
+          "missing__missingindicator_vdc1",
+          "missing__missingindicator_vdc2",
+          "missing__missingindicator_idc1",
+          "missing__missingindicator_idc2"
+        ]
+      },
+      "metrics": {
+        "N": 134263,
+        "macro_f1_present_classes": 0.5826943594278584,
+        "macro_f1_fixed_five": 0.5826943594278584,
+        "weighted_f1": 0.8130162127335638,
+        "balanced_accuracy_present_classes": 0.6227324255709648,
+        "macro_precision_present_classes": 0.6000854017091546,
+        "per_class": {
+          "0": {
+            "N": 77977,
+            "base_rate": 0.5807780252191594,
+            "precision": 0.863543999068118,
+            "recall": 0.8556369185785552,
+            "f1": 0.8595722751868076,
+            "AP": 0.8774247525009091
+          },
+          "1": {
+            "N": 1226,
+            "base_rate": 0.009131331789100496,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "AP": 0.009131331789100496
+          },
+          "2": {
+            "N": 3916,
+            "base_rate": 0.029166635633048568,
+            "precision": 0.47305825242718447,
+            "recall": 0.9954034729315628,
+            "f1": 0.6413293846660085,
+            "AP": 0.5920245082245637
+          },
+          "3": {
+            "N": 1200,
+            "base_rate": 0.008937682012170144,
+            "precision": 0.8706395348837209,
+            "recall": 0.49916666666666665,
+            "f1": 0.6345338983050848,
+            "AP": 0.4873635069608491
+          },
+          "4": {
+            "N": 49944,
+            "base_rate": 0.3719863253465214,
+            "precision": 0.7931852221667499,
+            "recall": 0.7634550696780394,
+            "f1": 0.7780362389813908,
+            "AP": 0.8541676214786227
+          }
+        },
+        "coverage": 1.0,
+        "confusion_matrix": [
+          [
+            66720,
+            0,
+            1319,
+            0,
+            9938,
+            0
+          ],
+          [
+            0,
+            0,
+            1226,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            3898,
+            10,
+            4,
+            0
+          ],
+          [
+            601,
+            0,
+            0,
+            599,
+            0,
+            0
+          ],
+          [
+            9938,
+            0,
+            1797,
+            79,
+            38130,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "macro_AP": 0.564022344190809,
+        "hardware_AP": 0.8159974729688684,
+        "hardware_precision_at_top_1pct": 0.9776619508562919,
+        "top_1pct_N": 1343,
+        "hardware_alert_recall": 0.9039735099337748,
+        "normal_FPR": 0.016915244238685765,
+        "shade_FPR": 0.03756206951786,
+        "combined_nonhardware_FPR": 0.024976352592615755,
+        "alert_rule": "argmax class in {1,2,3}; not a tuned alert threshold",
+        "threshold": null,
+        "absent_true_classes": [],
+        "AP_definition": "one-vs-rest average precision; not trapezoidal PR-AUC",
+        "hardware_definition": "classes1/2/3 only; shade environmental"
+      }
+    },
+    {
+      "fold": 0,
+      "family": "RF",
+      "fit_blocks": [
+        1,
+        2,
+        3,
+        5,
+        7,
+        8,
+        9,
+        11
+      ],
+      "eval_blocks": [
+        4,
+        6,
+        10,
+        12
+      ],
+      "fit_class_support": {
+        "0": 164417,
+        "2": 1779,
+        "3": 4,
+        "4": 100863
+      },
+      "eval_class_support": {
+        "0": 77977,
+        "1": 1226,
+        "2": 3916,
+        "3": 1200,
+        "4": 49944
+      },
+      "unseen_true_classes": [
+        1
+      ],
+      "ledger": {
+        "fit_N": 267063,
+        "fit_index_digest": "ce33f094cad22da089ad71cbd077556aeb37c64ec5bd316a9bf938670642e2de",
+        "eval_index_digest": "a4023f0801bae572fa44bc7207aa8c9b020b852f37cf981aebdfdf1dc68659e5",
+        "fit_eval_index_overlap": 0,
+        "full_pipeline_fitted_per_fold": true,
+        "seconds": 30.548626099945977,
+        "classes_seen": [
+          0,
+          2,
+          3,
+          4
+        ],
+        "weights": {
+          "0": 0.40607570993267117,
+          "4": 0.6619449153802683,
+          "2": 37.52993254637437,
+          "3": 16691.4375
+        },
+        "warnings": [],
+        "columns_remainder": "drop",
+        "feature_names": [
+          "numeric__vdc1",
+          "numeric__vdc2",
+          "numeric__idc1",
+          "numeric__idc2",
+          "missing__missingindicator_vdc1",
+          "missing__missingindicator_vdc2",
+          "missing__missingindicator_idc1",
+          "missing__missingindicator_idc2"
+        ]
+      },
+      "metrics": {
+        "N": 134263,
+        "macro_f1_present_classes": 0.512135179004656,
+        "macro_f1_fixed_five": 0.512135179004656,
+        "weighted_f1": 0.8688627792186009,
+        "balanced_accuracy_present_classes": 0.47761724852385046,
+        "macro_precision_present_classes": 0.6950594793689195,
+        "per_class": {
+          "0": {
+            "N": 77977,
+            "base_rate": 0.5807780252191594,
+            "precision": 0.8773157926498099,
+            "recall": 0.9321979558074817,
+            "f1": 0.903924592120971,
+            "AP": 0.9794427329445025
+          },
+          "1": {
+            "N": 1226,
+            "base_rate": 0.009131331789100496,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "AP": 0.009131331789100496
+          },
+          "2": {
+            "N": 3916,
+            "base_rate": 0.029166635633048568,
+            "precision": 0.7216117216117216,
+            "recall": 0.05030643513789581,
+            "f1": 0.09405586058725232,
+            "AP": 0.4895878027314503
+          },
+          "3": {
+            "N": 1200,
+            "base_rate": 0.008937682012170144,
+            "precision": 0.9803600654664485,
+            "recall": 0.49916666666666665,
+            "f1": 0.6615129762562121,
+            "AP": 0.49650005652598583
+          },
+          "4": {
+            "N": 49944,
+            "base_rate": 0.3719863253465214,
+            "precision": 0.8960098171166179,
+            "recall": 0.9064151850072081,
+            "f1": 0.9011824660588446,
+            "AP": 0.9601038604493104
+          }
+        },
+        "coverage": 1.0,
+        "confusion_matrix": [
+          [
+            72690,
+            0,
+            72,
+            0,
+            5215,
+            0
+          ],
+          [
+            1216,
+            0,
+            3,
+            0,
+            7,
+            0
+          ],
+          [
+            3676,
+            0,
+            197,
+            11,
+            32,
+            0
+          ],
+          [
+            601,
+            0,
+            0,
+            599,
+            0,
+            0
+          ],
+          [
+            4672,
+            0,
+            1,
+            1,
+            45270,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "macro_AP": 0.5869531568880699,
+        "hardware_AP": 0.726337669893818,
+        "hardware_precision_at_top_1pct": 0.874162323157111,
+        "top_1pct_N": 1343,
+        "hardware_alert_recall": 0.12771996215704826,
+        "normal_FPR": 0.0009233491927106711,
+        "shade_FPR": 4.004485023226013e-05,
+        "combined_nonhardware_FPR": 0.0005784820318790504,
+        "alert_rule": "argmax class in {1,2,3}; not a tuned alert threshold",
+        "threshold": null,
+        "absent_true_classes": [],
+        "AP_definition": "one-vs-rest average precision; not trapezoidal PR-AUC",
+        "hardware_definition": "classes1/2/3 only; shade environmental"
+      }
+    },
+    {
+      "fold": 0,
+      "family": "LightGBM",
+      "fit_blocks": [
+        1,
+        2,
+        3,
+        5,
+        7,
+        8,
+        9,
+        11
+      ],
+      "eval_blocks": [
+        4,
+        6,
+        10,
+        12
+      ],
+      "fit_class_support": {
+        "0": 164417,
+        "2": 1779,
+        "3": 4,
+        "4": 100863
+      },
+      "eval_class_support": {
+        "0": 77977,
+        "1": 1226,
+        "2": 3916,
+        "3": 1200,
+        "4": 49944
+      },
+      "unseen_true_classes": [
+        1
+      ],
+      "ledger": {
+        "fit_N": 267063,
+        "fit_index_digest": "ce33f094cad22da089ad71cbd077556aeb37c64ec5bd316a9bf938670642e2de",
+        "eval_index_digest": "a4023f0801bae572fa44bc7207aa8c9b020b852f37cf981aebdfdf1dc68659e5",
+        "fit_eval_index_overlap": 0,
+        "full_pipeline_fitted_per_fold": true,
+        "seconds": 10.725848600035533,
+        "classes_seen": [
+          0,
+          2,
+          3,
+          4
+        ],
+        "weights": {
+          "0": 0.40607570993267117,
+          "4": 0.6619449153802683,
+          "2": 37.52993254637437,
+          "3": 16691.4375
+        },
+        "warnings": [],
+        "columns_remainder": "drop",
+        "feature_names": [
+          "numeric__vdc1",
+          "numeric__vdc2",
+          "numeric__idc1",
+          "numeric__idc2",
+          "numeric__P1",
+          "numeric__P2",
+          "numeric__P_total",
+          "numeric__V_diff",
+          "numeric__I_diff",
+          "missing__missingindicator_vdc1",
+          "missing__missingindicator_vdc2",
+          "missing__missingindicator_idc1",
+          "missing__missingindicator_idc2"
+        ]
+      },
+      "metrics": {
+        "N": 134263,
+        "macro_f1_present_classes": 0.5334847040118723,
+        "macro_f1_fixed_five": 0.5334847040118723,
+        "weighted_f1": 0.9227323467097233,
+        "balanced_accuracy_present_classes": 0.501780223309037,
+        "macro_precision_present_classes": 0.6050980586283552,
+        "per_class": {
+          "0": {
+            "N": 77977,
+            "base_rate": 0.5807780252191594,
+            "precision": 0.9379029979980594,
+            "recall": 0.9793272375187555,
+            "f1": 0.9581676056161307,
+            "AP": 0.9952907260807901
+          },
+          "1": {
+            "N": 1226,
+            "base_rate": 0.009131331789100496,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "AP": 0.009131331789100496
+          },
+          "2": {
+            "N": 3916,
+            "base_rate": 0.029166635633048568,
+            "precision": 0.16446911866759195,
+            "recall": 0.06052093973442288,
+            "f1": 0.08848235952958745,
+            "AP": 0.5685477396828088
+          },
+          "3": {
+            "N": 1200,
+            "base_rate": 0.008937682012170144,
+            "precision": 0.9692556634304207,
+            "recall": 0.49916666666666665,
+            "f1": 0.658965896589659,
+            "AP": 0.8437311931408451
+          },
+          "4": {
+            "N": 49944,
+            "base_rate": 0.3719863253465214,
+            "precision": 0.9538625130457042,
+            "recall": 0.9698862726253403,
+            "f1": 0.9618076583239846,
+            "AP": 0.9947320274866704
+          }
+        },
+        "coverage": 1.0,
+        "confusion_matrix": [
+          [
+            76365,
+            0,
+            2,
+            0,
+            1610,
+            0
+          ],
+          [
+            11,
+            0,
+            1196,
+            6,
+            13,
+            0
+          ],
+          [
+            3549,
+            0,
+            237,
+            11,
+            119,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            599,
+            601,
+            0
+          ],
+          [
+            1496,
+            0,
+            6,
+            2,
+            48440,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "macro_AP": 0.6822866036360431,
+        "hardware_AP": 0.9746089437066544,
+        "hardware_precision_at_top_1pct": 0.9977661950856291,
+        "top_1pct_N": 1343,
+        "hardware_alert_recall": 0.32308420056764425,
+        "normal_FPR": 2.564858868640753e-05,
+        "shade_FPR": 0.00016017940092904052,
+        "combined_nonhardware_FPR": 7.817324755122302e-05,
+        "alert_rule": "argmax class in {1,2,3}; not a tuned alert threshold",
+        "threshold": null,
+        "absent_true_classes": [],
+        "AP_definition": "one-vs-rest average precision; not trapezoidal PR-AUC",
+        "hardware_definition": "classes1/2/3 only; shade environmental"
+      }
+    },
+    {
+      "fold": 1,
+      "family": "LR",
+      "fit_blocks": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12
+      ],
+      "eval_blocks": [
+        1,
+        5,
+        8,
+        11
+      ],
+      "fit_class_support": {
+        "0": 158415,
+        "1": 1226,
+        "2": 5695,
+        "3": 1204,
+        "4": 100524
+      },
+      "eval_class_support": {
+        "0": 83979,
+        "4": 50283
+      },
+      "unseen_true_classes": [],
+      "ledger": {
+        "fit_N": 267064,
+        "fit_index_digest": "acbe1415f543c7d71b237d25d5d966bcc5205ebf86925966365e47c5eda85904",
+        "eval_index_digest": "17748ff273b4d4dff49a8e259223a8f40dd08a04520d9031743653babf832368",
+        "fit_eval_index_overlap": 0,
+        "full_pipeline_fitted_per_fold": true,
+        "seconds": 15.050216799834743,
+        "classes_seen": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "weights": {
+          "0": 0.3371700912161096,
+          "4": 0.531343758704389,
+          "2": 9.37889376646181,
+          "1": 43.56672104404568,
+          "3": 44.36279069767442
+        },
+        "warnings": [],
+        "columns_remainder": "drop",
+        "feature_names": [
+          "numeric__vdc1",
+          "numeric__vdc2",
+          "numeric__idc1",
+          "numeric__idc2",
+          "missing__missingindicator_vdc1",
+          "missing__missingindicator_vdc2",
+          "missing__missingindicator_idc1",
+          "missing__missingindicator_idc2"
+        ]
+      },
+      "metrics": {
+        "N": 134262,
+        "macro_f1_present_classes": 0.8292179633081758,
+        "macro_f1_fixed_five": 0.3316871853232703,
+        "weighted_f1": 0.8367034977680474,
+        "balanced_accuracy_present_classes": 0.8360314986483118,
+        "macro_precision_present_classes": 0.8286247850458517,
+        "per_class": {
+          "0": {
+            "N": 83979,
+            "base_rate": 0.6254859900790991,
+            "precision": 0.9084740811557255,
+            "recall": 0.8147155836578193,
+            "f1": 0.8590441393424613,
+            "AP": 0.8721294846380453
+          },
+          "1": {
+            "N": 0,
+            "base_rate": 0.0,
+            "precision": null,
+            "recall": null,
+            "f1": null,
+            "AP": null
+          },
+          "2": {
+            "N": 0,
+            "base_rate": 0.0,
+            "precision": 0.0,
+            "recall": null,
+            "f1": null,
+            "AP": null
+          },
+          "3": {
+            "N": 0,
+            "base_rate": 0.0,
+            "precision": null,
+            "recall": null,
+            "f1": null,
+            "AP": null
+          },
+          "4": {
+            "N": 50283,
+            "base_rate": 0.37451400992090095,
+            "precision": 0.748775488935978,
+            "recall": 0.8573474136388044,
+            "f1": 0.7993917872738904,
+            "AP": 0.7968908197806144
+          }
+        },
+        "coverage": 1.0,
+        "confusion_matrix": [
+          [
+            68419,
+            0,
+            1096,
+            0,
+            14464,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            6893,
+            0,
+            280,
+            0,
+            43110,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "macro_AP": null,
+        "hardware_AP": null,
+        "hardware_precision_at_top_1pct": 0.0,
+        "top_1pct_N": 1343,
+        "hardware_alert_recall": null,
+        "normal_FPR": 0.013050881768061063,
+        "shade_FPR": 0.0055684823896744425,
+        "combined_nonhardware_FPR": 0.010248618373031834,
+        "alert_rule": "argmax class in {1,2,3}; not a tuned alert threshold",
+        "threshold": null,
+        "absent_true_classes": [
+          1,
+          2,
+          3
+        ],
+        "AP_definition": "one-vs-rest average precision; not trapezoidal PR-AUC",
+        "hardware_definition": "classes1/2/3 only; shade environmental"
+      }
+    },
+    {
+      "fold": 1,
+      "family": "RF",
+      "fit_blocks": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12
+      ],
+      "eval_blocks": [
+        1,
+        5,
+        8,
+        11
+      ],
+      "fit_class_support": {
+        "0": 158415,
+        "1": 1226,
+        "2": 5695,
+        "3": 1204,
+        "4": 100524
+      },
+      "eval_class_support": {
+        "0": 83979,
+        "4": 50283
+      },
+      "unseen_true_classes": [],
+      "ledger": {
+        "fit_N": 267064,
+        "fit_index_digest": "acbe1415f543c7d71b237d25d5d966bcc5205ebf86925966365e47c5eda85904",
+        "eval_index_digest": "17748ff273b4d4dff49a8e259223a8f40dd08a04520d9031743653babf832368",
+        "fit_eval_index_overlap": 0,
+        "full_pipeline_fitted_per_fold": true,
+        "seconds": 26.74630289990455,
+        "classes_seen": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "weights": {
+          "0": 0.3371700912161096,
+          "4": 0.531343758704389,
+          "2": 9.37889376646181,
+          "1": 43.56672104404568,
+          "3": 44.36279069767442
+        },
+        "warnings": [],
+        "columns_remainder": "drop",
+        "feature_names": [
+          "numeric__vdc1",
+          "numeric__vdc2",
+          "numeric__idc1",
+          "numeric__idc2",
+          "missing__missingindicator_vdc1",
+          "missing__missingindicator_vdc2",
+          "missing__missingindicator_idc1",
+          "missing__missingindicator_idc2"
+        ]
+      },
+      "metrics": {
+        "N": 134262,
+        "macro_f1_present_classes": 0.913322002399089,
+        "macro_f1_fixed_five": 0.3653288009596356,
+        "weighted_f1": 0.9173829873186315,
+        "balanced_accuracy_present_classes": 0.9279393348042961,
+        "macro_precision_present_classes": 0.9070823188388709,
+        "per_class": {
+          "0": {
+            "N": 83979,
+            "base_rate": 0.6254859900790991,
+            "precision": 0.9827464928928823,
+            "recall": 0.8817323378463664,
+            "f1": 0.9295030315202791,
+            "AP": 0.9936760485605952
+          },
+          "1": {
+            "N": 0,
+            "base_rate": 0.0,
+            "precision": null,
+            "recall": null,
+            "f1": null,
+            "AP": null
+          },
+          "2": {
+            "N": 0,
+            "base_rate": 0.0,
+            "precision": null,
+            "recall": null,
+            "f1": null,
+            "AP": null
+          },
+          "3": {
+            "N": 0,
+            "base_rate": 0.0,
+            "precision": null,
+            "recall": null,
+            "f1": null,
+            "AP": null
+          },
+          "4": {
+            "N": 50283,
+            "base_rate": 0.37451400992090095,
+            "precision": 0.8314181447848595,
+            "recall": 0.9741463317622258,
+            "f1": 0.8971409732778989,
+            "AP": 0.982530943987554
+          }
+        },
+        "coverage": 1.0,
+        "confusion_matrix": [
+          [
+            74047,
+            0,
+            0,
+            0,
+            9932,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1300,
+            0,
+            0,
+            0,
+            48983,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "macro_AP": null,
+        "hardware_AP": null,
+        "hardware_precision_at_top_1pct": 0.0,
+        "top_1pct_N": 1343,
+        "hardware_alert_recall": null,
+        "normal_FPR": 0.0,
+        "shade_FPR": 0.0,
+        "combined_nonhardware_FPR": 0.0,
+        "alert_rule": "argmax class in {1,2,3}; not a tuned alert threshold",
+        "threshold": null,
+        "absent_true_classes": [
+          1,
+          2,
+          3
+        ],
+        "AP_definition": "one-vs-rest average precision; not trapezoidal PR-AUC",
+        "hardware_definition": "classes1/2/3 only; shade environmental"
+      }
+    },
+    {
+      "fold": 1,
+      "family": "LightGBM",
+      "fit_blocks": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12
+      ],
+      "eval_blocks": [
+        1,
+        5,
+        8,
+        11
+      ],
+      "fit_class_support": {
+        "0": 158415,
+        "1": 1226,
+        "2": 5695,
+        "3": 1204,
+        "4": 100524
+      },
+      "eval_class_support": {
+        "0": 83979,
+        "4": 50283
+      },
+      "unseen_true_classes": [],
+      "ledger": {
+        "fit_N": 267064,
+        "fit_index_digest": "acbe1415f543c7d71b237d25d5d966bcc5205ebf86925966365e47c5eda85904",
+        "eval_index_digest": "17748ff273b4d4dff49a8e259223a8f40dd08a04520d9031743653babf832368",
+        "fit_eval_index_overlap": 0,
+        "full_pipeline_fitted_per_fold": true,
+        "seconds": 12.022831100039184,
+        "classes_seen": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "weights": {
+          "0": 0.3371700912161096,
+          "4": 0.531343758704389,
+          "2": 9.37889376646181,
+          "1": 43.56672104404568,
+          "3": 44.36279069767442
+        },
+        "warnings": [],
+        "columns_remainder": "drop",
+        "feature_names": [
+          "numeric__vdc1",
+          "numeric__vdc2",
+          "numeric__idc1",
+          "numeric__idc2",
+          "numeric__P1",
+          "numeric__P2",
+          "numeric__P_total",
+          "numeric__V_diff",
+          "numeric__I_diff",
+          "missing__missingindicator_vdc1",
+          "missing__missingindicator_vdc2",
+          "missing__missingindicator_idc1",
+          "missing__missingindicator_idc2"
+        ]
+      },
+      "metrics": {
+        "N": 134262,
+        "macro_f1_present_classes": 0.9821184900357953,
+        "macro_f1_fixed_five": 0.3928473960143181,
+        "weighted_f1": 0.9831936841370742,
+        "balanced_accuracy_present_classes": 0.9850621188712334,
+        "macro_precision_present_classes": 0.9794774891000476,
+        "per_class": {
+          "0": {
+            "N": 83979,
+            "base_rate": 0.6254859900790991,
+            "precision": 0.9955488174651304,
+            "recall": 0.9774229271603615,
+            "f1": 0.986402610122034,
+            "AP": 0.9993953269887197
+          },
+          "1": {
+            "N": 0,
+            "base_rate": 0.0,
+            "precision": null,
+            "recall": null,
+            "f1": null,
+            "AP": null
+          },
+          "2": {
+            "N": 0,
+            "base_rate": 0.0,
+            "precision": null,
+            "recall": null,
+            "f1": null,
+            "AP": null
+          },
+          "3": {
+            "N": 0,
+            "base_rate": 0.0,
+            "precision": null,
+            "recall": null,
+            "f1": null,
+            "AP": null
+          },
+          "4": {
+            "N": 50283,
+            "base_rate": 0.37451400992090095,
+            "precision": 0.9634061607349649,
+            "recall": 0.9927013105821053,
+            "f1": 0.9778343699495567,
+            "AP": 0.9983111994711107
+          }
+        },
+        "coverage": 1.0,
+        "confusion_matrix": [
+          [
+            82083,
+            0,
+            0,
+            0,
+            1896,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            367,
+            0,
+            0,
+            0,
+            49916,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "macro_AP": null,
+        "hardware_AP": null,
+        "hardware_precision_at_top_1pct": 0.0,
+        "top_1pct_N": 1343,
+        "hardware_alert_recall": null,
+        "normal_FPR": 0.0,
+        "shade_FPR": 0.0,
+        "combined_nonhardware_FPR": 0.0,
+        "alert_rule": "argmax class in {1,2,3}; not a tuned alert threshold",
+        "threshold": null,
+        "absent_true_classes": [
+          1,
+          2,
+          3
+        ],
+        "AP_definition": "one-vs-rest average precision; not trapezoidal PR-AUC",
+        "hardware_definition": "classes1/2/3 only; shade environmental"
+      }
+    },
+    {
+      "fold": 2,
+      "family": "LR",
+      "fit_blocks": [
+        1,
+        4,
+        5,
+        6,
+        8,
+        10,
+        11,
+        12
+      ],
+      "eval_blocks": [
+        2,
+        3,
+        7,
+        9
+      ],
+      "fit_class_support": {
+        "0": 161956,
+        "1": 1226,
+        "2": 3916,
+        "3": 1200,
+        "4": 100227
+      },
+      "eval_class_support": {
+        "0": 80438,
+        "2": 1779,
+        "3": 4,
+        "4": 50580
+      },
+      "unseen_true_classes": [],
+      "ledger": {
+        "fit_N": 268525,
+        "fit_index_digest": "87d3e47dde1c9949f5fae350b1fd5a6aeadbbc4866d41b61fdf8ca14980168e9",
+        "eval_index_digest": "7988a5c90a7652ad4b8e9d0aebe832cf99b649186223e660e4711eabdc43c7ed",
+        "fit_eval_index_overlap": 0,
+        "full_pipeline_fitted_per_fold": true,
+        "seconds": 22.015680799959227,
+        "classes_seen": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "weights": {
+          "0": 0.3316024105312554,
+          "4": 0.5358336575972542,
+          "2": 13.714249233912156,
+          "1": 43.805057096247964,
+          "3": 44.75416666666667
+        },
+        "warnings": [],
+        "columns_remainder": "drop",
+        "feature_names": [
+          "numeric__vdc1",
+          "numeric__vdc2",
+          "numeric__idc1",
+          "numeric__idc2",
+          "missing__missingindicator_vdc1",
+          "missing__missingindicator_vdc2",
+          "missing__missingindicator_idc1",
+          "missing__missingindicator_idc2"
+        ]
+      },
+      "metrics": {
+        "N": 132801,
+        "macro_f1_present_classes": 0.7725010562233308,
+        "macro_f1_fixed_five": 0.6180008449786646,
+        "weighted_f1": 0.7933626789631161,
+        "balanced_accuracy_present_classes": 0.7392336066655847,
+        "macro_precision_present_classes": 0.8754842012105417,
+        "per_class": {
+          "0": {
+            "N": 80438,
+            "base_rate": 0.6057032703066995,
+            "precision": 0.867745149594531,
+            "recall": 0.7795444938959198,
+            "f1": 0.8212835625409299,
+            "AP": 0.8439241967716647
+          },
+          "1": {
+            "N": 0,
+            "base_rate": 0.0,
+            "precision": 0.0,
+            "recall": null,
+            "f1": null,
+            "AP": null
+          },
+          "2": {
+            "N": 1779,
+            "base_rate": 0.01339598346397994,
+            "precision": 0.9327354260089686,
+            "recall": 0.35075885328836426,
+            "f1": 0.5098039215686274,
+            "AP": 0.5304386182865953
+          },
+          "3": {
+            "N": 4,
+            "base_rate": 3.0120255118560856e-05,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "AP": 1.0
+          },
+          "4": {
+            "N": 50580,
+            "base_rate": 0.380870625974202,
+            "precision": 0.7014562292386672,
+            "recall": 0.8266310794780546,
+            "f1": 0.7589167407837656,
+            "AP": 0.8169163619503437
+          }
+        },
+        "coverage": 1.0,
+        "confusion_matrix": [
+          [
+            62705,
+            0,
+            12,
+            0,
+            17721,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1081,
+            0,
+            624,
+            0,
+            74,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            8476,
+            260,
+            33,
+            0,
+            41811,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "macro_AP": null,
+        "hardware_AP": 0.3584203640423154,
+        "hardware_precision_at_top_1pct": 0.5733634311512416,
+        "top_1pct_N": 1329,
+        "hardware_alert_recall": 0.35221536735838477,
+        "normal_FPR": 0.00014918322186031479,
+        "shade_FPR": 0.00579280347963622,
+        "combined_nonhardware_FPR": 0.0023279244073333436,
+        "alert_rule": "argmax class in {1,2,3}; not a tuned alert threshold",
+        "threshold": null,
+        "absent_true_classes": [
+          1
+        ],
+        "AP_definition": "one-vs-rest average precision; not trapezoidal PR-AUC",
+        "hardware_definition": "classes1/2/3 only; shade environmental"
+      }
+    },
+    {
+      "fold": 2,
+      "family": "RF",
+      "fit_blocks": [
+        1,
+        4,
+        5,
+        6,
+        8,
+        10,
+        11,
+        12
+      ],
+      "eval_blocks": [
+        2,
+        3,
+        7,
+        9
+      ],
+      "fit_class_support": {
+        "0": 161956,
+        "1": 1226,
+        "2": 3916,
+        "3": 1200,
+        "4": 100227
+      },
+      "eval_class_support": {
+        "0": 80438,
+        "2": 1779,
+        "3": 4,
+        "4": 50580
+      },
+      "unseen_true_classes": [],
+      "ledger": {
+        "fit_N": 268525,
+        "fit_index_digest": "87d3e47dde1c9949f5fae350b1fd5a6aeadbbc4866d41b61fdf8ca14980168e9",
+        "eval_index_digest": "7988a5c90a7652ad4b8e9d0aebe832cf99b649186223e660e4711eabdc43c7ed",
+        "fit_eval_index_overlap": 0,
+        "full_pipeline_fitted_per_fold": true,
+        "seconds": 27.024720099987462,
+        "classes_seen": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "weights": {
+          "0": 0.3316024105312554,
+          "4": 0.5358336575972542,
+          "2": 13.714249233912156,
+          "1": 43.805057096247964,
+          "3": 44.75416666666667
+        },
+        "warnings": [],
+        "columns_remainder": "drop",
+        "feature_names": [
+          "numeric__vdc1",
+          "numeric__vdc2",
+          "numeric__idc1",
+          "numeric__idc2",
+          "missing__missingindicator_vdc1",
+          "missing__missingindicator_vdc2",
+          "missing__missingindicator_idc1",
+          "missing__missingindicator_idc2"
+        ]
+      },
+      "metrics": {
+        "N": 132801,
+        "macro_f1_present_classes": 0.8974638013487067,
+        "macro_f1_fixed_five": 0.7179710410789654,
+        "weighted_f1": 0.9087078437702405,
+        "balanced_accuracy_present_classes": 0.8690304934549944,
+        "macro_precision_present_classes": 0.9500634101874195,
+        "per_class": {
+          "0": {
+            "N": 80438,
+            "base_rate": 0.6057032703066995,
+            "precision": 0.9669060811273001,
+            "recall": 0.8786394490166339,
+            "f1": 0.9206620075162995,
+            "AP": 0.9874718429775245
+          },
+          "1": {
+            "N": 0,
+            "base_rate": 0.0,
+            "precision": null,
+            "recall": null,
+            "f1": null,
+            "AP": null
+          },
+          "2": {
+            "N": 1779,
+            "base_rate": 0.01339598346397994,
+            "precision": 1.0,
+            "recall": 0.6323777403035413,
+            "f1": 0.7747933884297521,
+            "AP": 0.7656640607428924
+          },
+          "3": {
+            "N": 4,
+            "base_rate": 3.0120255118560856e-05,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "AP": 1.0
+          },
+          "4": {
+            "N": 50580,
+            "base_rate": 0.380870625974202,
+            "precision": 0.8333475596223774,
+            "recall": 0.9651047844998023,
+            "f1": 0.8943998094487756,
+            "AP": 0.9733261195082109
+          }
+        },
+        "coverage": 1.0,
+        "confusion_matrix": [
+          [
+            70676,
+            0,
+            0,
+            0,
+            9762,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            654,
+            0,
+            1125,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            1765,
+            0,
+            0,
+            0,
+            48815,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "macro_AP": null,
+        "hardware_AP": 0.7816008635835976,
+        "hardware_precision_at_top_1pct": 0.9729119638826185,
+        "top_1pct_N": 1329,
+        "hardware_alert_recall": 0.6332024677509815,
+        "normal_FPR": 0.0,
+        "shade_FPR": 0.0,
+        "combined_nonhardware_FPR": 0.0,
+        "alert_rule": "argmax class in {1,2,3}; not a tuned alert threshold",
+        "threshold": null,
+        "absent_true_classes": [
+          1
+        ],
+        "AP_definition": "one-vs-rest average precision; not trapezoidal PR-AUC",
+        "hardware_definition": "classes1/2/3 only; shade environmental"
+      }
+    },
+    {
+      "fold": 2,
+      "family": "LightGBM",
+      "fit_blocks": [
+        1,
+        4,
+        5,
+        6,
+        8,
+        10,
+        11,
+        12
+      ],
+      "eval_blocks": [
+        2,
+        3,
+        7,
+        9
+      ],
+      "fit_class_support": {
+        "0": 161956,
+        "1": 1226,
+        "2": 3916,
+        "3": 1200,
+        "4": 100227
+      },
+      "eval_class_support": {
+        "0": 80438,
+        "2": 1779,
+        "3": 4,
+        "4": 50580
+      },
+      "unseen_true_classes": [],
+      "ledger": {
+        "fit_N": 268525,
+        "fit_index_digest": "87d3e47dde1c9949f5fae350b1fd5a6aeadbbc4866d41b61fdf8ca14980168e9",
+        "eval_index_digest": "7988a5c90a7652ad4b8e9d0aebe832cf99b649186223e660e4711eabdc43c7ed",
+        "fit_eval_index_overlap": 0,
+        "full_pipeline_fitted_per_fold": true,
+        "seconds": 12.481857400154695,
+        "classes_seen": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "weights": {
+          "0": 0.3316024105312554,
+          "4": 0.5358336575972542,
+          "2": 13.714249233912156,
+          "1": 43.805057096247964,
+          "3": 44.75416666666667
+        },
+        "warnings": [],
+        "columns_remainder": "drop",
+        "feature_names": [
+          "numeric__vdc1",
+          "numeric__vdc2",
+          "numeric__idc1",
+          "numeric__idc2",
+          "numeric__P1",
+          "numeric__P2",
+          "numeric__P_total",
+          "numeric__V_diff",
+          "numeric__I_diff",
+          "missing__missingindicator_vdc1",
+          "missing__missingindicator_vdc2",
+          "missing__missingindicator_idc1",
+          "missing__missingindicator_idc2"
+        ]
+      },
+      "metrics": {
+        "N": 132801,
+        "macro_f1_present_classes": 0.9245769254926827,
+        "macro_f1_fixed_five": 0.7396615403941461,
+        "weighted_f1": 0.9686790521333771,
+        "balanced_accuracy_present_classes": 0.8894780991473332,
+        "macro_precision_present_classes": 0.9831899192497703,
+        "per_class": {
+          "0": {
+            "N": 80438,
+            "base_rate": 0.6057032703066995,
+            "precision": 0.9781010986820797,
+            "recall": 0.9761555483726597,
+            "f1": 0.9771273550859902,
+            "AP": 0.9983712263107221
+          },
+          "1": {
+            "N": 0,
+            "base_rate": 0.0,
+            "precision": null,
+            "recall": null,
+            "f1": null,
+            "AP": null
+          },
+          "2": {
+            "N": 1779,
+            "base_rate": 0.01339598346397994,
+            "precision": 1.0,
+            "recall": 0.6110174255199551,
+            "f1": 0.7585484996510816,
+            "AP": 0.8423284656038359
+          },
+          "3": {
+            "N": 4,
+            "base_rate": 3.0120255118560856e-05,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "AP": 1.0
+          },
+          "4": {
+            "N": 50580,
+            "base_rate": 0.380870625974202,
+            "precision": 0.9546585783170011,
+            "recall": 0.9707394226967181,
+            "f1": 0.9626318472336588,
+            "AP": 0.9930261891330951
+          }
+        },
+        "coverage": 1.0,
+        "confusion_matrix": [
+          [
+            78520,
+            0,
+            0,
+            0,
+            1918,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            278,
+            0,
+            1087,
+            0,
+            414,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            1480,
+            0,
+            0,
+            0,
+            49100,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          "abstain"
+        ],
+        "macro_AP": null,
+        "hardware_AP": 0.8438416910921192,
+        "hardware_precision_at_top_1pct": 0.9954853273137697,
+        "top_1pct_N": 1329,
+        "hardware_alert_recall": 0.6118900729108244,
+        "normal_FPR": 0.0,
+        "shade_FPR": 0.0,
+        "combined_nonhardware_FPR": 0.0,
+        "alert_rule": "argmax class in {1,2,3}; not a tuned alert threshold",
+        "threshold": null,
+        "absent_true_classes": [
+          1
+        ],
+        "AP_definition": "one-vs-rest average precision; not trapezoidal PR-AUC",
+        "hardware_definition": "classes1/2/3 only; shade environmental"
+      }
+    }
+  ],
+  "singleton_fault_block": "TRAIN class1 exists only in block12; folds lacking it cannot learn it. Fixed-five and supported-class metrics are both explicit.",
+  "selection": "No model or deployment changed from these retrospective development diagnostics."
+}

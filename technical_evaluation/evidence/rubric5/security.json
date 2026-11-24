@@ -1,0 +1,20 @@
+{
+  "method": "High-specificity heuristic credential signatures, no values printed; not proof of absence of every possible secret.",
+  "reachable_commit_N": 40,
+  "history_blobs_scanned": 417,
+  "history_blobs_over_2MB_scanned": 4,
+  "history_findings": [],
+  "tracked_environment_candidates": [],
+  "new_work_findings": [],
+  "new_absolute_local_path_files": [],
+  "safety_review": {
+    "model_deserialization": "Only fixed trusted SHA256-checked original artifact; no upload or arbitrary pickle loading endpoint.",
+    "API_body_limit_bytes": 2048,
+    "unexpected_fields": "Rejected",
+    "nonfinite_and_missing": "Rejected",
+    "production_confidence": "Not displayed",
+    "application_rate_limiting": "No authenticated per-user application limit; public free-tier denial-of-service/quota risk remains.",
+    "headers": "CSP self, DENY frames, nosniff; no secrets supplied to frontend.",
+    "secret_rotation": "No high-specificity match found"
+  }
+}

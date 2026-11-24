@@ -1,0 +1,32 @@
+{
+  "normal_to_shade_N": 6604,
+  "correct_normal_N": 117886,
+  "shade_precision": 0.6910808661896076,
+  "medians": {
+    "vdc1": {
+      "misclassified_normal": 280.266,
+      "correct_normal": 0.9139
+    },
+    "vdc2": {
+      "misclassified_normal": 276.557,
+      "correct_normal": 1.06535
+    },
+    "idc1": {
+      "misclassified_normal": 4.47095,
+      "correct_normal": 0.1165
+    },
+    "idc2": {
+      "misclassified_normal": 4.34345,
+      "correct_normal": 0.041
+    },
+    "irr": {
+      "misclassified_normal": 512.5174999999999,
+      "correct_normal": 1.5116
+    },
+    "pvt": {
+      "misclassified_normal": 26.3502,
+      "correct_normal": 14.10345
+    }
+  },
+  "interpretation": "Measured conditional sensor differences are predictive associations; no causal attribution is established."
+}

@@ -1,0 +1,132 @@
+{
+  "candidates": [
+    {
+      "candidate": "LR__F6",
+      "sha256": "6460d8244e7c70d167a22beeb9f240b1127baa6c8a78635fed8ae2ad02e1680f",
+      "validation_macro_f1": 0.8938698040831554,
+      "matches_archived": true
+    },
+    {
+      "candidate": "LR__E5",
+      "sha256": "40af0fe963c9b55aa26af42459a67a5c0f02fe1e741fdff1497fe3d90098c75f",
+      "validation_macro_f1": 0.8713292965606202,
+      "matches_archived": true
+    },
+    {
+      "candidate": "LR__E4",
+      "sha256": "297e855248e9f164b682399128b697e87cfe06c4c804c52871e78077240f1766",
+      "validation_macro_f1": 0.5882073569164217,
+      "matches_archived": true
+    },
+    {
+      "candidate": "LR__C3",
+      "sha256": "56c02d031a296a454c4cfe395e8c1abc37f7048994510561a344db98a4b6e701",
+      "validation_macro_f1": 0.517197723581569,
+      "matches_archived": true
+    },
+    {
+      "candidate": "LR__C2",
+      "sha256": "f592567cfa5cf600b8273b0b29045c0865785cb7bf1034de239eeeb0da57bc98",
+      "validation_macro_f1": 0.17446285802224265,
+      "matches_archived": true
+    },
+    {
+      "candidate": "LR__S4",
+      "sha256": "067b0252c5a3aa24237e816c9a142e84f5c788bc7464af875c4bb89dc7064730",
+      "validation_macro_f1": 0.15912450352411783,
+      "matches_archived": true
+    },
+    {
+      "candidate": "LR__S2",
+      "sha256": "b3c7c890492bff7b5953f03e5203605c51a2f7d554911684e028a6acd3361cf0",
+      "validation_macro_f1": 0.16027054288001502,
+      "matches_archived": true
+    },
+    {
+      "candidate": "RF__F6",
+      "sha256": "a23e8f42f75154b6fa2255720a0ba9a5aff96fb4b05e0470824e3b93a6ba9bcf",
+      "validation_macro_f1": 0.8657926885469361,
+      "matches_archived": true
+    },
+    {
+      "candidate": "RF__E5",
+      "sha256": "15a3fa912b60f4d6ce21cce8218d577feb9f95e587e910be260f7694749fb158",
+      "validation_macro_f1": 0.9571142346454922,
+      "matches_archived": true
+    },
+    {
+      "candidate": "RF__E4",
+      "sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "validation_macro_f1": 0.9562971220697507,
+      "matches_archived": true
+    },
+    {
+      "candidate": "RF__C3",
+      "sha256": "4941b13f44410ecceab4e269b6bb7c35ca90895c32912ac9851ef7361fe10a57",
+      "validation_macro_f1": 0.5854455868113394,
+      "matches_archived": true
+    },
+    {
+      "candidate": "RF__C2",
+      "sha256": "9b474259d78f924336ac22a4b720422d3eac9cb482ba831633f816c8cd6f30fb",
+      "validation_macro_f1": 0.5899462514363986,
+      "matches_archived": true
+    },
+    {
+      "candidate": "RF__S4",
+      "sha256": "57c584eaa6bb09150d9dc502bb29fbf8c5d6272cd9378ebd93016d21a22db454",
+      "validation_macro_f1": 0.27480584801804575,
+      "matches_archived": true
+    },
+    {
+      "candidate": "RF__S2",
+      "sha256": "ea31c5cf11afdc3ea3fe90d5768756a7ff6100e42244c72ce31de858fe746adc",
+      "validation_macro_f1": 0.29162029628651426,
+      "matches_archived": true
+    },
+    {
+      "candidate": "LightGBM__F6",
+      "sha256": "2e5583f035197fd3a40287e5d1587fdd14f7ddf12180735e11bae1d9df66a983",
+      "validation_macro_f1": 0.8568945709280442,
+      "matches_archived": true
+    },
+    {
+      "candidate": "LightGBM__E5",
+      "sha256": "96e624cf73c09b864f5696556d70c3dbc2edf97f07b7af62c4965e321edee402",
+      "validation_macro_f1": 0.8757948184445139,
+      "matches_archived": true
+    },
+    {
+      "candidate": "LightGBM__E4",
+      "sha256": "6c61bf1a475f3230c5b20d6d7217b6aaea8abb52df57a4363d26033e4ccbcf3c",
+      "validation_macro_f1": 0.855657128389233,
+      "matches_archived": true
+    },
+    {
+      "candidate": "LightGBM__C3",
+      "sha256": "8d488e923901f1dfcf60e7237a027b8c7315cb9cf79b466ced7691fdb4aff25e",
+      "validation_macro_f1": 0.6224640969632732,
+      "matches_archived": true
+    },
+    {
+      "candidate": "LightGBM__C2",
+      "sha256": "56df959d79a6471d6a44cb31d6957394ff6116fd413f5d99f43d74057d6c3952",
+      "validation_macro_f1": 0.629963472902428,
+      "matches_archived": true
+    },
+    {
+      "candidate": "LightGBM__S4",
+      "sha256": "e2df6dd4fa5014152b5a4cfafb1e8119cd4d7030ad3f3adf736c4e1a6a8341e6",
+      "validation_macro_f1": 0.3082391621446995,
+      "matches_archived": true
+    },
+    {
+      "candidate": "LightGBM__S2",
+      "sha256": "cf4a91fb3a2a582f734ea1aa80ef315629aa75605fc07296fd803397286d4b3d",
+      "validation_macro_f1": 0.294041591596948,
+      "matches_archived": true
+    }
+  ],
+  "private_cache_required": true,
+  "no_original_model_refitted": true
+}

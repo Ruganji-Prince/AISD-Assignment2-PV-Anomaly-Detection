@@ -1,0 +1,8 @@
+column,type,missing_N,missing_pct,infinite_N,zero_N,negative_N
+vdc1,continuous float64,0,0.0,0,0,0
+vdc2,continuous float64,0,0.0,0,0,0
+idc1,continuous float64,0,0.0,0,0,0
+idc2,continuous float64,0,0.0,0,0,0
+irr,continuous float64,0,0.0,0,62,1
+pvt,continuous float64,0,0.0,0,62,24172
+f_nv,nominal integer target,0,0.0,0,1162931,0

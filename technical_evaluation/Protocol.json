@@ -1,0 +1,119 @@
+{
+  "version": 1,
+  "frozen_utc": "2026-11-24T06:37:07.522553+00:00",
+  "seed": 42,
+  "baseline_commit": "7d4199785d41d5753917f06a23e8fe0252052388",
+  "original_model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+  "partition_bounds": {
+    "TRAIN": [
+      0,
+      1006129
+    ],
+    "VALIDATION": [
+      1056990,
+      1173967
+    ],
+    "TEST": [
+      1227337,
+      1373798
+    ]
+  },
+  "excluded_rows": 104231,
+  "new_test_tuning": false,
+  "historical_test_exposure": true,
+  "deployment_change": false,
+  "new_models": "Experimental reconstructions only, original frozen settings; no original model overwrite.",
+  "blocked_validation": {
+    "method": "3-fold nonshuffled GroupKFold over 12 TRAIN operating blocks",
+    "full_preprocessing_refit_per_fold": true,
+    "families": [
+      "LR",
+      "RF",
+      "LightGBM"
+    ],
+    "channels": [
+      "vdc1",
+      "vdc2",
+      "idc1",
+      "idc2"
+    ],
+    "weights": "Fold-fit population only; balanced across observed fit classes",
+    "missing_class_policy": "Report support and observed-class macro metrics; absent-class AP/recall null; zero probability for unseen fit classes."
+  },
+  "clipping": {
+    "population": "Complete frozen TRAIN; validation block13 comparisons",
+    "alternatives": [
+      "none",
+      "TRAIN IQR 1.5 fences",
+      "TRAIN quantiles .005/.995"
+    ],
+    "settings": "Original RF E4 estimator parameters, seed42, n_jobs2; class weights recomputed from TRAIN only"
+  },
+  "calibration": {
+    "base_model": "Original frozen RF E4",
+    "population": "validation block14 only",
+    "OOF": "4 deterministic source-position tile folds; tile256 positions, 64-position purge around held-out tiles",
+    "methods": [
+      "uncalibrated",
+      "sigmoid OVR on raw probabilities, C=1e6",
+      "isotonic OVR"
+    ],
+    "normalization": "Independent class mappings clipped to [1e-12,1] and row-normalized",
+    "support_gate": {
+      "sigmoid_min_positive": 50,
+      "isotonic_min_positive": 100,
+      "minimum_negative": 100
+    },
+    "selection": "Lowest OOF multiclass log loss, then Brier; freeze before new TEST diagnostics",
+    "final_fit": "All block14 for each predeclared method; TEST comparisons descriptive, no retrospective winner selection",
+    "threshold_policy": "No calibrated threshold is fitted. Original archived threshold .5913558658757772 applies only to original RF probabilities; historical block14 threshold exposure is disclosed.",
+    "limitations": "One operating block; artificial source tiles are not verified independent sessions. Historical model selection/threshold/test exposure persists."
+  },
+  "uncertainty": {
+    "unit": "12 TRAIN operating blocks with grouped-OOF RF predictions",
+    "bootstrap_seed": 42,
+    "repetitions": 500,
+    "interval": "2.5/97.5 percentiles; conditional on all five true classes supported; rejected replicates recorded",
+    "limitations": "Exploratory conditional interval, not guaranteed population coverage; class1 comes from only block12; two TEST blocks cannot establish reliable external-generalization confidence intervals."
+  },
+  "stress": {
+    "population": "Fixed natural-prevalence 12000-row sample from block13",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "scale": "Per-channel TRAIN IQR",
+    "gaussian_noise_fractions": [
+      0.01,
+      0.02,
+      0.05,
+      0.1
+    ],
+    "bias_fractions": [
+      -0.1,
+      -0.05,
+      0.05,
+      0.1
+    ],
+    "other": [
+      "each-channel dropout",
+      "two-channel dropout",
+      "TRAIN q05/q95 saturation",
+      "TRAIN max + IQR out-of-distribution"
+    ],
+    "constraints": "Clamp perturbed electrical values to >=0; missing-channel offline adapter keeps eligibility/abstention policy; API rejects missing inputs."
+  },
+  "subgroups": "TRAIN quartiles for temperature/output/imbalance; irradiance physical regimes <100,100-400,400-800,>=800; fixed before TEST metrics",
+  "shift": "TRAIN decile reference bins, PSI epsilon1e-6; KS statistic and Wasserstein/IQR; do not interpret dependent-row iid p-values",
+  "physical_baseline": "Binary current-imbalance score, threshold TRAIN unlabeled q99; no physical subtype diagnosis",
+  "cloud_benchmark": {
+    "sequential_requests": 20,
+    "concurrency": 1,
+    "no_forced_cold_start": true,
+    "first_request_is_not_confirmed_cold": true,
+    "no_paid_actions": true
+  },
+  "RF_permutation": "200 block13 rows per class, seed42, 3 repeats per physical channel; descriptive not causal",
+  "synthetic_investigation": "Unchanged existing presets; TRAIN-only nearest-neighbor reference and class distributions; no scenario tuning against TEST"
+}

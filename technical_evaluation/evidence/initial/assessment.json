@@ -1,0 +1,26 @@
+{
+  "scores": {
+    "Data Hygiene, Features & Collinearity": 16,
+    "Split Integrity & Leakage-Free Pipeline": 15,
+    "Modeling Strategy & Evaluation Rigor": 14,
+    "Error Analysis & Robustness Audit": 15,
+    "Code Reproducibility & Cloud Deployment": 16
+  },
+  "total": 76,
+  "scoring_status": "Independent preliminary estimate, not professor-awarded marks",
+  "Docker": "Executable not found on PATH or standard installation paths",
+  "critical_findings": [
+    "Class 1 in TRAIN occurs only in signal-defined block12. Grouped folds must disclose missing fit/evaluation classes.",
+    "Previously inspected TEST is retrospective, not pristine independent generalization.",
+    "Current deployment loads the original expected model SHA.",
+    "No conventional NaNs/infinities; paired irr/pvt zeros=62."
+  ],
+  "priorities": [
+    "Freeze protocol and protected hashes",
+    "Executable leakage/data audit",
+    "Group-aware experiments, baselines, clipping and calibration",
+    "Regime/shift/stress/uncertainty evidence",
+    "Clean-clone reproduction, cloud benchmark/cost/security, Docker definition",
+    "Independent final grading and normal publication"
+  ]
+}

@@ -1,0 +1,20 @@
+# Limitations and risks
+
+- Historical TEST has been inspected before this audit. No pristine-test or external-site generalization claim is valid. New methods were selected using development data, but historical design exposure cannot be undone.
+- No released timestamp/day/session identifiers exist. Source positions, signal blocks and calibration tiles are not verified time units or independent experimental sessions.
+- TRAIN class1 occurs only in block12; class3 is heavily concentrated there. Block-aware folds expose unlearnable classes. Twelve TRAIN blocks and two TEST blocks do not establish robust population uncertainty. Conditional bootstrap intervals are not independent deployed-TEST confidence bounds.
+- Exact cross-partition vector matches were absent; near-duplicate screening is sampled, not exhaustive. No target/index/block metadata enters inference. Hidden experimental acquisition shortcuts cannot be excluded using one study alone.
+- Induced faults, one source PV study and absence of external sites limit transfer. Hardware failure and environmental shade remain distinct.
+- Block14 calibration uses artificial purged tiles within one historical operating block. Original threshold selection used that block historically; no new calibrated threshold was fitted/evaluated. Sigmoid/isotonic maps are experimental and not deployed.
+- Normal-versus-shade confusion persists:6,604 TEST normal positions become shade, with shade precision0.69108. Sensor differences are associations, not causal explanations.
+- All five illustrative synthetic presets predictshade; four intended labels disagree. TRAIN-neighbor/range analysis does not validate a physical simulator. Presets were not retuned against TEST. Historical examples are a separate source mode.
+- Four physical electrical inputs are required in the public API. Offline imputation does not imply sustained missing-channel support. A contiguous outage causes abstention after two source positions. Sparse-sample dropout percentages must not be read as uninterrupted outage tolerance.
+- Noise/bias/saturation/OOD evidence is simulated and retains source labels as an assumption. Some perturbations violate physical joint relationships. No measured sensor-failure field reliability or causal robustness guarantee is available.
+- Archived RF p95 latency36.808295ms exceeds10ms; original11.665MiB exceeds10MiB. Targets remain unchanged. Network latency does not equal model-only timing.
+- Live benchmark uses20 sequential requests; it does not identify cold starts, concurrency capacity, runtime CPU utilization or server-model-only latency. Network egress location is unverified. No production monitoring/SLA/safety certification exists.
+- Hobby plan and published allowances are verified; actual invoices/remaining aggregate quota are not. Hypothetical cost scenarios are not an account bill. Quota exhaustion can interrupt the public service. No paid plan or purchase is authorized by this audit.
+- Docker recipe exists, but Docker is unavailable locally. Image build/run, Linux dependency resolution and container equivalence are NOT VERIFIED.
+- Only the original RF binary is public. Other originals require trusted private caches. Public reconstructions are newly fitted models, not recovered original bytes. All21 original validation comparisons were reproduced privately; only the RF public reconstruction was additionally executed.
+- Heuristic history/working-file secret scans and a clean dependency advisory result are bounded checks, not guarantees. The API has a2KB body cap and strict schema but no per-user application rate limit. Serialized objects must remain trusted and hash-checked; never accept user pickles.
+- Existing TestClient dependencies emit a deprecation warning. No protected package pin was upgraded; migration is a future maintenance task requiring parity checks.
+- Optional technical-evidence UI was omitted to preserve the verified four-step workflow. The repository report provides the evidence. No original scientific figure/report/model result was overwritten.

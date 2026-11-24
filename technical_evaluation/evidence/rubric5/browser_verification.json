@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "date": "2026-11-24",
+  "command": "node web/tests-browser/smoke.cjs",
+  "PV_APP_URL": "https://pv-anomaly-detection-prince-r-k.vercel.app",
+  "receipt_source": "Observed successful process output, transcribed as compact evidence; screenshots retained privately.",
+  "viewports": [
+    "1366x768",
+    "1920x1080",
+    "820x1180",
+    "390x844",
+    "320x844"
+  ],
+  "checks": [
+    "One visible panel during transitions",
+    "Forward/back/direct and keyboard navigation",
+    "Reduced motion",
+    "No page reload",
+    "Measurements/scenario/chart state preserved",
+    "Historical examples cover all five classes",
+    "All five illustrative synthetic predictions remain4",
+    "Input errors and loading paths",
+    "No page errors"
+  ],
+  "application_source_changed": false
+}

@@ -1,0 +1,67 @@
+{
+  "checked_date": "2026-11-24",
+  "official_sources": [
+    "https://vercel.com/docs/plans/hobby",
+    "https://vercel.com/docs/functions/usage-and-pricing"
+  ],
+  "Hobby_allowances": {
+    "CPU_hours": 4,
+    "GB_hours": 360,
+    "invocations": 1000000,
+    "CDN_requests": 1000000,
+    "transfer_GB": 100
+  },
+  "pricing_reference": {
+    "cpt1_CPU_USD_per_hour": 0.2,
+    "cpt1_memory_USD_per_GB_hour": 0.0166,
+    "Pro_invocations_USD_per_million": 0.6
+  },
+  "actual_charges": "NOT VERIFIED: no invoice/charge ledger inspected. No plan upgrade or purchase performed.",
+  "scenarios": [
+    {
+      "requests": 1000,
+      "assumed_active_CPU_seconds_per_request": 0.04,
+      "assumed_allocated_GB": 1,
+      "assumed_in_flight_seconds_per_request": 0.2,
+      "CPU_hours": 0.011111111111111112,
+      "GB_hours": 0.05555555555555555,
+      "within_isolated_Hobby_allowances": true,
+      "Hobby_charge": "No pay-as-you-go overage assumed; exceeding quotas can pause service.",
+      "illustrative_cpt1_Pro_gross_compute_USD_excluding_subscription_credits_taxes_transfer": 0.0037444444444444443
+    },
+    {
+      "requests": 10000,
+      "assumed_active_CPU_seconds_per_request": 0.04,
+      "assumed_allocated_GB": 1,
+      "assumed_in_flight_seconds_per_request": 0.2,
+      "CPU_hours": 0.1111111111111111,
+      "GB_hours": 0.5555555555555556,
+      "within_isolated_Hobby_allowances": true,
+      "Hobby_charge": "No pay-as-you-go overage assumed; exceeding quotas can pause service.",
+      "illustrative_cpt1_Pro_gross_compute_USD_excluding_subscription_credits_taxes_transfer": 0.03744444444444444
+    },
+    {
+      "requests": 100000,
+      "assumed_active_CPU_seconds_per_request": 0.04,
+      "assumed_allocated_GB": 1,
+      "assumed_in_flight_seconds_per_request": 0.2,
+      "CPU_hours": 1.1111111111111112,
+      "GB_hours": 5.555555555555555,
+      "within_isolated_Hobby_allowances": true,
+      "Hobby_charge": "No pay-as-you-go overage assumed; exceeding quotas can pause service.",
+      "illustrative_cpt1_Pro_gross_compute_USD_excluding_subscription_credits_taxes_transfer": 0.37444444444444447
+    },
+    {
+      "requests": 1000000,
+      "assumed_active_CPU_seconds_per_request": 0.04,
+      "assumed_allocated_GB": 1,
+      "assumed_in_flight_seconds_per_request": 0.2,
+      "CPU_hours": 11.11111111111111,
+      "GB_hours": 55.55555555555556,
+      "within_isolated_Hobby_allowances": false,
+      "Hobby_charge": "No pay-as-you-go overage assumed; exceeding quotas can pause service.",
+      "illustrative_cpt1_Pro_gross_compute_USD_excluding_subscription_credits_taxes_transfer": 3.744444444444445
+    }
+  ],
+  "limitations": "Illustrative isolated workload, not actual billed resource consumption. Compute duration, allocation, sharing, current usage, region, network transfer and other projects affect real quotas/costs; subscription and taxes omitted. Network latency is not active CPU time."
+}

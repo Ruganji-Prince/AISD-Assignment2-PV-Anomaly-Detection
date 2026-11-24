@@ -1,0 +1,153 @@
+{
+  "partitions": {
+    "TRAIN": {
+      "bounds": [
+        0,
+        1006129
+      ],
+      "N": 1006129,
+      "index_digest": "86010f1f91f0653fd59a65ec55e3a3e3a7e905b6d292e7207099d8c4b58075f9",
+      "operating_blocks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "VALIDATION": {
+      "bounds": [
+        1056990,
+        1173967
+      ],
+      "N": 116977,
+      "index_digest": "8a7727a6679eb9bb52e6e40c689e4f4b054b9efe8f4cea32e4229af1b4be2328",
+      "operating_blocks": [
+        13,
+        14
+      ]
+    },
+    "TEST": {
+      "bounds": [
+        1227337,
+        1373798
+      ],
+      "N": 146461,
+      "index_digest": "e5dabd8b8c3ee5220c9ef21da1dbdfdbdd9aad99dfcc4c4353e698eebc753866",
+      "operating_blocks": [
+        15,
+        16
+      ]
+    }
+  },
+  "separator_intervals": [
+    [
+      1006129,
+      1056990
+    ],
+    [
+      1173967,
+      1227337
+    ]
+  ],
+  "excluded_N": 104231,
+  "source_index_disjoint": true,
+  "operating_blocks_disjoint": true,
+  "background_rows": "Block 0 means positions outside signal-defined operating intervals; it is not a shared acquisition-session identifier.",
+  "timestamps": "Absent; blocks and resampling tiles are not verified days/sessions/hours.",
+  "feature_vectors": {
+    "six_physical": {
+      "hash": "BLAKE2b-128 over canonical float64 values; cross-split matches independently checked by exact vector equality",
+      "features": [
+        "vdc1",
+        "vdc2",
+        "idc1",
+        "idc2",
+        "irr",
+        "pvt"
+      ],
+      "duplicate_distinct_vectors": 0,
+      "rows_in_duplicates": 0,
+      "conflicting_label_vectors": 0,
+      "cross_partition_overlap": [
+        {
+          "first": "TRAIN",
+          "second": "VALIDATION",
+          "shared_distinct_feature_vectors": 0
+        },
+        {
+          "first": "TRAIN",
+          "second": "TEST",
+          "shared_distinct_feature_vectors": 0
+        },
+        {
+          "first": "VALIDATION",
+          "second": "TEST",
+          "shared_distinct_feature_vectors": 0
+        }
+      ],
+      "conflict_examples": []
+    },
+    "four_deployed": {
+      "hash": "BLAKE2b-128 over canonical float64 values; cross-split matches independently checked by exact vector equality",
+      "features": [
+        "vdc1",
+        "vdc2",
+        "idc1",
+        "idc2"
+      ],
+      "duplicate_distinct_vectors": 6,
+      "rows_in_duplicates": 12,
+      "conflicting_label_vectors": 0,
+      "cross_partition_overlap": [
+        {
+          "first": "TRAIN",
+          "second": "VALIDATION",
+          "shared_distinct_feature_vectors": 0
+        },
+        {
+          "first": "TRAIN",
+          "second": "TEST",
+          "shared_distinct_feature_vectors": 0
+        },
+        {
+          "first": "VALIDATION",
+          "second": "TEST",
+          "shared_distinct_feature_vectors": 0
+        }
+      ],
+      "conflict_examples": []
+    }
+  },
+  "near_duplicate_diagnostics": [
+    {
+      "partition": "VALIDATION",
+      "query_N": 5000,
+      "TRAIN_reference_N": 100000,
+      "distance": "Euclidean in TRAIN-standardized physical E4 coordinates",
+      "min": 3.6834000824300345e-05,
+      "median": 0.01141751041398421,
+      "q01": 0.00014396964830870823,
+      "within_1e_3": 1563,
+      "limitation": "Bounded diagnostic, not an exhaustive near-duplicate proof or automatic leakage declaration."
+    },
+    {
+      "partition": "TEST",
+      "query_N": 5000,
+      "TRAIN_reference_N": 100000,
+      "distance": "Euclidean in TRAIN-standardized physical E4 coordinates",
+      "min": 2.252569519794999e-05,
+      "median": 0.009049767676939859,
+      "q01": 5.6857687390484934e-05,
+      "within_1e_3": 2050,
+      "limitation": "Bounded diagnostic, not an exhaustive near-duplicate proof or automatic leakage declaration."
+    }
+  ]
+}

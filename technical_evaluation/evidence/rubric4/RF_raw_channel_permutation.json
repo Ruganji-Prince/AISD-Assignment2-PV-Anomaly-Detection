@@ -1,0 +1,91 @@
+{
+  "population": "VALIDATION block13 balanced200/class=1000; seed42; three repeats; not natural-prevalence performance",
+  "sample_index_digest": "f99a4fd1dd1a3c9e3a123a3400e40fc89b6a16818c38cffa1131da8540564864",
+  "results": [
+    {
+      "channel": "vdc1",
+      "repeat": 0,
+      "baseline_macro_f1": 0.9430856464200034,
+      "permuted_macro_f1": 0.9347552423095238,
+      "decrease": 0.008330404110479583
+    },
+    {
+      "channel": "vdc1",
+      "repeat": 1,
+      "baseline_macro_f1": 0.9430856464200034,
+      "permuted_macro_f1": 0.9294967578633629,
+      "decrease": 0.013588888556640422
+    },
+    {
+      "channel": "vdc1",
+      "repeat": 2,
+      "baseline_macro_f1": 0.9430856464200034,
+      "permuted_macro_f1": 0.9347200180792197,
+      "decrease": 0.008365628340783693
+    },
+    {
+      "channel": "vdc2",
+      "repeat": 0,
+      "baseline_macro_f1": 0.9430856464200034,
+      "permuted_macro_f1": 0.4413429983044109,
+      "decrease": 0.5017426481155924
+    },
+    {
+      "channel": "vdc2",
+      "repeat": 1,
+      "baseline_macro_f1": 0.9430856464200034,
+      "permuted_macro_f1": 0.44093823975850277,
+      "decrease": 0.5021474066615006
+    },
+    {
+      "channel": "vdc2",
+      "repeat": 2,
+      "baseline_macro_f1": 0.9430856464200034,
+      "permuted_macro_f1": 0.4587865828939888,
+      "decrease": 0.48429906352601454
+    },
+    {
+      "channel": "idc1",
+      "repeat": 0,
+      "baseline_macro_f1": 0.9430856464200034,
+      "permuted_macro_f1": 0.7013785341921464,
+      "decrease": 0.241707112227857
+    },
+    {
+      "channel": "idc1",
+      "repeat": 1,
+      "baseline_macro_f1": 0.9430856464200034,
+      "permuted_macro_f1": 0.7058844825863062,
+      "decrease": 0.23720116383369716
+    },
+    {
+      "channel": "idc1",
+      "repeat": 2,
+      "baseline_macro_f1": 0.9430856464200034,
+      "permuted_macro_f1": 0.7123522807648894,
+      "decrease": 0.23073336565511393
+    },
+    {
+      "channel": "idc2",
+      "repeat": 0,
+      "baseline_macro_f1": 0.9430856464200034,
+      "permuted_macro_f1": 0.6551697874305215,
+      "decrease": 0.2879158589894819
+    },
+    {
+      "channel": "idc2",
+      "repeat": 1,
+      "baseline_macro_f1": 0.9430856464200034,
+      "permuted_macro_f1": 0.6449046282236106,
+      "decrease": 0.29818101819639276
+    },
+    {
+      "channel": "idc2",
+      "repeat": 2,
+      "baseline_macro_f1": 0.9430856464200034,
+      "permuted_macro_f1": 0.6529800219550133,
+      "decrease": 0.2901056244649901
+    }
+  ],
+  "causality": "Not causal; correlated channels can redistribute importance."
+}

@@ -1,0 +1,44 @@
+{
+  "method": "Fresh no-hardlinks Git clone at baseline commit plus isolated new audit package; separate newly installed pinned environment. Protected notebook executed only in scratch clone.",
+  "baseline_commit": "7d4199785d41d5753917f06a23e8fe0252052388",
+  "environment_installation": "PASS",
+  "checks": [
+    {
+      "command": "python -B phase2_implementation/execute_preprocessing.py",
+      "exit_code": 0,
+      "elapsed_seconds": 42.367154699983075,
+      "output": "Executing preprocessing cell 1\nExecuting preprocessing cell 2\nExecuting preprocessing cell 3\nExecuting preprocessing cell 4\nExecuting preprocessing cell 5\nExecuting preprocessing cell 6\nExecuting preprocessing cell 7\nExecuting preprocessing cell 8\nExecuting preprocessing cell 9\nExecuting preprocessing cell 10\nExecuting preprocessing cell 11\nExecuting preprocessing cell 12\nExecuting preprocessing cell 13\nCompleted 13 cells; no execution errors.\n",
+      "errors": ""
+    },
+    {
+      "command": "python -B -m unittest discover -s tests -v",
+      "exit_code": 0,
+      "elapsed_seconds": 8.34684000001289,
+      "output": "",
+      "errors": "test_actual_example_and_pipeline_parity (test_inference.InferenceTests.test_actual_example_and_pipeline_parity) ... ok\ntest_hash_rejection_before_pickle (test_inference.InferenceTests.test_hash_rejection_before_pickle) ... ok\ntest_order_independent_input (test_inference.InferenceTests.test_order_independent_input) ... ok\ntest_released_observation_examples (test_inference.InferenceTests.test_released_observation_examples) ... ok\ntest_schema_rejects_invalid_inputs (test_inference.InferenceTests.test_schema_rejects_invalid_inputs) ... ok\ntest_shade_is_not_hardware_failure (test_inference.InferenceTests.test_shade_is_not_hardware_failure) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 6.935s\n\nOK\n"
+    },
+    {
+      "command": "python -B -m unittest discover -s web/tests -v",
+      "exit_code": 0,
+      "elapsed_seconds": 17.475571300135925,
+      "output": "",
+      "errors": "<clean-environment>\\Lib\\site-packages\\fastapi\\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n  from starlette.testclient import TestClient as TestClient  # noqa\ntest_health_verifies_model (test_api.APITests.test_health_verifies_model) ... ok\ntest_homepage_assets_and_security_headers (test_api.APITests.test_homepage_assets_and_security_headers) ... ok\ntest_model_failure_returns_no_prediction_or_private_details (test_api.APITests.test_model_failure_returns_no_prediction_or_private_details) ... Original fitted model failed readiness verification.\nOriginal model verification unavailable; no prediction returned.\nok\ntest_original_cli_parity_for_all_five_classes (test_api.APITests.test_original_cli_parity_for_all_five_classes) ... ok\ntest_outside_observed_range_is_warned_not_clipped (test_api.APITests.test_outside_observed_range_is_warned_not_clipped) ... ok\ntest_post_is_required (test_api.APITests.test_post_is_required) ... ok\ntest_rejects_malformed_nonfinite_duplicate_and_oversize (test_api.APITests.test_rejects_malformed_nonfinite_duplicate_and_oversize) ... ok\ntest_rejects_missing_extra_non_numeric_and_negative (test_api.APITests.test_rejects_missing_extra_non_numeric_and_negative) ... ok\ntest_synthetic_inputs_match_original_cli (test_api.APITests.test_synthetic_inputs_match_original_cli) ... ok\ntest_unverified_python_patch_is_rejected (test_api.APITests.test_unverified_python_patch_is_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 9.928s\n\nOK\n"
+    },
+    {
+      "command": "python -B -m unittest technical_evaluation.tests -v",
+      "exit_code": 0,
+      "elapsed_seconds": 7.2550028001423925,
+      "output": "",
+      "errors": "test_all_abstentions_are_misses (technical_evaluation.tests.AuditTests.test_all_abstentions_are_misses) ... ok\ntest_calibration_support_guard (technical_evaluation.tests.AuditTests.test_calibration_support_guard) ... ok\ntest_clipping_uses_fit_only (technical_evaluation.tests.AuditTests.test_clipping_uses_fit_only) ... ok\ntest_fit_evaluation_overlap_rejected (technical_evaluation.tests.AuditTests.test_fit_evaluation_overlap_rejected) ... ok\ntest_frozen_protocol_and_original_model (technical_evaluation.tests.AuditTests.test_frozen_protocol_and_original_model) ... ok\ntest_missing_class_metric_undefined (technical_evaluation.tests.AuditTests.test_missing_class_metric_undefined) ... ok\ntest_probability_definition (technical_evaluation.tests.AuditTests.test_probability_definition) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.099s\n\nOK\n"
+    },
+    {
+      "command": "python -B -m src.evaluation.verify_recovery",
+      "exit_code": 0,
+      "elapsed_seconds": 18.582600599853322,
+      "output": "{\n  \"status\": \"PASS\",\n  \"checked_models\": [\n    \"RF__E4\"\n  ],\n  \"no_fitting_or_threshold_search\": true,\n  \"legacy_test_exposure\": true,\n  \"RF_AP_rank_tie_tolerance\": 1e-07\n}\n",
+      "errors": ""
+    }
+  ],
+  "preprocessing_original_active_tree_unchanged": true,
+  "Docker_execution": "NOT VERIFIED: docker executable and Docker Desktop installation not found."
+}

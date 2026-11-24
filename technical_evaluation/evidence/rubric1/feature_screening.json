@@ -1,0 +1,90 @@
+{
+  "population": "TRAIN only",
+  "N": 1006129,
+  "Pearson_abs_ge_085": [
+    [
+      "vdc1",
+      "vdc2",
+      0.9891027602285769
+    ],
+    [
+      "idc1",
+      "idc2",
+      0.952832711587032
+    ],
+    [
+      "idc1",
+      "irr",
+      0.9794723761665458
+    ],
+    [
+      "idc1",
+      "pvt",
+      0.8622889138042289
+    ],
+    [
+      "idc2",
+      "irr",
+      0.9559821219702014
+    ]
+  ],
+  "Spearman_abs_ge_085": [
+    [
+      "vdc1",
+      "vdc2",
+      0.9325591437751537
+    ],
+    [
+      "idc1",
+      "idc2",
+      0.9548318247537749
+    ],
+    [
+      "idc2",
+      "pvt",
+      0.8679953288768125
+    ]
+  ],
+  "VIF": {
+    "vdc1": 52.168201820449575,
+    "vdc2": 56.34566192094718,
+    "idc1": 31.495610429338576,
+    "idc2": 15.78084672357669,
+    "irr": 39.29265063172763,
+    "pvt": 4.069797718227394
+  },
+  "VIF_threshold": 10,
+  "MI_nats": {
+    "vdc1": 0.1748975435426139,
+    "vdc2": 0.21814640182740108,
+    "idc1": 0.27706131445129456,
+    "idc2": 0.27286318932981746,
+    "irr": 0.3001077584235676,
+    "pvt": 0.11015807376234266
+  },
+  "MI_population": "Seed42 natural-prevalence TRAIN sample 50000; diagnostic not significance or causal evidence.",
+  "PCA_explained_variance_ratio": [
+    0.825300758761853,
+    0.12637590927162023,
+    0.035756638960595506,
+    0.008328722851267192,
+    0.00275642199365093,
+    0.0014815481610132178
+  ],
+  "PCA_cumulative": [
+    0.825300758761853,
+    0.9516766680334733,
+    0.9874333069940688,
+    0.995762029845336,
+    0.9985184518389869,
+    1.0000000000000002
+  ],
+  "decision": "No deployed feature or transformation change. Correlated channel groups retained pending sensor-ablation evidence; PCA requires physical parent inputs and is not sensor reduction.",
+  "inference_features": [
+    "vdc1",
+    "vdc2",
+    "idc1",
+    "idc2"
+  ],
+  "target_or_metadata_features": []
+}

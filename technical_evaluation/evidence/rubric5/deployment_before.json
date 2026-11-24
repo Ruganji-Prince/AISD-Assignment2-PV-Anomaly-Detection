@@ -1,0 +1,11 @@
+{
+  "deployments": [
+    {
+      "uid": "dpl_GYE4vQKa3eLcmTsnAjcqb8kujyDG",
+      "state": "READY",
+      "url": "pv-anomaly-detection-mvrzhgf9j-prince-r-k.vercel.app",
+      "target": "production",
+      "gitCommit": "7d4199785d41d5753917f06a23e8fe0252052388"
+    }
+  ]
+}

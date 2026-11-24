@@ -1,0 +1,7 @@
+sensor,N,q1,q3,IQR,IQR_lower,IQR_upper,IQR_flagged,zscore_abs_gt3,MAD,modified_z_abs_gt3_5,skewness,normaltest_stat_sample10000,normaltest_p_diagnostic_only,normality_test_limitation
+vdc1,1006129,1.0184,274.472,273.4536,-409.162,684.6524,0,0,50.8303,20064,0.06828671187581832,36007.40282145802,0.0,"Dependent readings; diagnostic distribution shape, not independent evidence of fault validity."
+vdc2,1006129,0.9824,272.378,271.3956,-406.111,679.4713999999999,0,0,52.765,22192,0.09091948077396493,36628.44026949888,0.0,"Dependent readings; diagnostic distribution shape, not independent evidence of fault validity."
+idc1,1006129,0.0648,4.967,4.9022,-7.288499999999999,12.3203,0,0,0.0584,388802,1.0045564958713222,1561.9932234506462,0.0,"Dependent readings; diagnostic distribution shape, not independent evidence of fault validity."
+idc2,1006129,0.0088,4.0011,3.9923,-5.97965,9.989550000000001,0,0,0.036500000000000005,380049,1.1450410207781299,1550.1333120894412,0.0,"Dependent readings; diagnostic distribution shape, not independent evidence of fault validity."
+irr,1006129,1.2889,586.381,585.0921,-876.34925,1464.01915,0,0,0.8825,479966,0.8744611570230434,2722.3276982909656,0.0,"Dependent readings; diagnostic distribution shape, not independent evidence of fault validity."
+pvt,1006129,12.5516,34.0299,21.478299999999997,-19.66585,66.24735,0,0,8.4129,0,0.5157220001806203,774.8413046043329,5.56350560362495e-169,"Dependent readings; diagnostic distribution shape, not independent evidence of fault validity."

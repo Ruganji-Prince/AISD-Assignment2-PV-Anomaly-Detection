@@ -1,0 +1,12 @@
+{
+  "reason": "Sparse stress sample has source-position gaps that reset missing-run eligibility; additionally test uninterrupted entire-block channel unavailability.",
+  "frozen_before_execution": true,
+  "population": "VALIDATION block13 only, complete source-position sequence",
+  "channels": [
+    "vdc1",
+    "vdc2",
+    "idc1",
+    "idc2"
+  ],
+  "selection_or_retraining": false
+}

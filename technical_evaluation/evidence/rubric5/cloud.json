@@ -1,0 +1,192 @@
+{
+  "recorded_UTC": "2026-11-24T06:50:58.671273+00:00",
+  "URL": "https://pv-anomaly-detection-prince-r-k.vercel.app",
+  "health": {
+    "status": "ready",
+    "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+    "python_version": "3.14.10"
+  },
+  "public_frontend_HTTP": 200,
+  "checks": [
+    {
+      "case": 0,
+      "predicted_class": 0,
+      "matches_original_CLI": true
+    },
+    {
+      "case": 1,
+      "predicted_class": 1,
+      "matches_original_CLI": true
+    },
+    {
+      "case": 2,
+      "predicted_class": 2,
+      "matches_original_CLI": true
+    },
+    {
+      "case": 3,
+      "predicted_class": 3,
+      "matches_original_CLI": true
+    },
+    {
+      "case": 4,
+      "predicted_class": 4,
+      "matches_original_CLI": true
+    },
+    {
+      "case": "missing",
+      "status": 422
+    },
+    {
+      "case": "extra",
+      "status": 422
+    },
+    {
+      "case": "negative",
+      "status": 422
+    },
+    {
+      "case": "null",
+      "status": 422
+    },
+    {
+      "case": "string",
+      "status": 422
+    },
+    {
+      "case": "nonfinite",
+      "status": 422
+    },
+    {
+      "case": "oversized",
+      "status": 413
+    }
+  ],
+  "benchmark_requests": 20,
+  "successful": 20,
+  "failed": 0,
+  "concurrency": 1,
+  "environment": "3.14.10 httpx sequential persistent client",
+  "network_location": "Client configured for Africa/Johannesburg; physical host/egress location not independently geolocated.",
+  "first_request_ms": 349.5933001395315,
+  "cold_start": "NOT VERIFIED: first benchmark request is not an identifiable cold start; health/parity requests preceded it.",
+  "model_only_cloud_latency": "NOT INSTRUMENTED; network round-trip timing must not be called model-only inference.",
+  "summary_ms": {
+    "min": 349.5933001395315,
+    "max": 456.67850016616285,
+    "mean": 375.40715500945225,
+    "p50": 362.7528501674533,
+    "p95": 413.85668013244873,
+    "p99": 448.11413615941996
+  },
+  "subsequent_19_ms": {
+    "mean": 376.7657789499744,
+    "p50": 362.82440018840134,
+    "p95": 416.110460134223,
+    "p99": 448.5648921597749
+  },
+  "timings": [
+    {
+      "sequence": 1,
+      "milliseconds": 349.5933001395315,
+      "status": 200
+    },
+    {
+      "sequence": 2,
+      "milliseconds": 354.302000021562,
+      "status": 200
+    },
+    {
+      "sequence": 3,
+      "milliseconds": 355.9556999243796,
+      "status": 200
+    },
+    {
+      "sequence": 4,
+      "milliseconds": 355.7217000052333,
+      "status": 200
+    },
+    {
+      "sequence": 5,
+      "milliseconds": 363.9742999803275,
+      "status": 200
+    },
+    {
+      "sequence": 6,
+      "milliseconds": 378.9358998183161,
+      "status": 200
+    },
+    {
+      "sequence": 7,
+      "milliseconds": 362.68130014650524,
+      "status": 200
+    },
+    {
+      "sequence": 8,
+      "milliseconds": 362.4309999868274,
+      "status": 200
+    },
+    {
+      "sequence": 9,
+      "milliseconds": 367.2344000078738,
+      "status": 200
+    },
+    {
+      "sequence": 10,
+      "milliseconds": 367.0687999110669,
+      "status": 200
+    },
+    {
+      "sequence": 11,
+      "milliseconds": 362.82440018840134,
+      "status": 200
+    },
+    {
+      "sequence": 12,
+      "milliseconds": 456.67850016616285,
+      "status": 200
+    },
+    {
+      "sequence": 13,
+      "milliseconds": 410.41869996115565,
+      "status": 200
+    },
+    {
+      "sequence": 14,
+      "milliseconds": 408.41869986616075,
+      "status": 200
+    },
+    {
+      "sequence": 15,
+      "milliseconds": 356.1724000610411,
+      "status": 200
+    },
+    {
+      "sequence": 16,
+      "milliseconds": 360.3163999505341,
+      "status": 200
+    },
+    {
+      "sequence": 17,
+      "milliseconds": 411.60290013067424,
+      "status": 200
+    },
+    {
+      "sequence": 18,
+      "milliseconds": 358.0516001675278,
+      "status": 200
+    },
+    {
+      "sequence": 19,
+      "milliseconds": 360.52669980563223,
+      "status": 200
+    },
+    {
+      "sequence": 20,
+      "milliseconds": 405.2343999501318,
+      "status": 200
+    }
+  ],
+  "baseline_repository_commit": "7d4199785d41d5753917f06a23e8fe0252052388",
+  "deployment_commit": "See separate authenticated Vercel project receipt; health does not expose Git commit."
+}

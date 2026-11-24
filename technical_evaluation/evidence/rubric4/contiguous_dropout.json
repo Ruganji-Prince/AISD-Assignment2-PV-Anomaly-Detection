@@ -1,0 +1,466 @@
+{
+  "population": "Full uninterrupted VALIDATION block13 source positions",
+  "results": [
+    {
+      "channel": "vdc1",
+      "N": 32800,
+      "macro_f1_present_classes": 4.322922295471739e-05,
+      "macro_f1_fixed_five": 4.322922295471739e-05,
+      "weighted_f1": 0.00012193803987105039,
+      "balanced_accuracy_present_classes": 2.1616947686986595e-05,
+      "macro_precision_present_classes": 0.2,
+      "per_class": {
+        "0": {
+          "N": 18504,
+          "base_rate": 0.5641463414634146,
+          "precision": 1.0,
+          "recall": 0.00010808473843493298,
+          "f1": 0.00021614611477358694,
+          "AP": 0.5641934505920935
+        },
+        "1": {
+          "N": 1232,
+          "base_rate": 0.037560975609756096,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0,
+          "AP": 0.037560975609756096
+        },
+        "2": {
+          "N": 1222,
+          "base_rate": 0.03725609756097561,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0,
+          "AP": 0.03725609756097561
+        },
+        "3": {
+          "N": 1206,
+          "base_rate": 0.03676829268292683,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0,
+          "AP": 0.03676829268292683
+        },
+        "4": {
+          "N": 10636,
+          "base_rate": 0.32426829268292684,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0,
+          "AP": 0.32426829268292684
+        }
+      },
+      "coverage": 6.097560975609756e-05,
+      "confusion_matrix": [
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          18502
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1232
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1222
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1206
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10636
+        ]
+      ],
+      "confusion_columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        "abstain"
+      ],
+      "macro_AP": 0.20000942182573578,
+      "hardware_AP": 0.11158536585365854,
+      "hardware_precision_at_top_1pct": 0.0,
+      "top_1pct_N": 328,
+      "hardware_alert_recall": 0.0,
+      "normal_FPR": 0.0,
+      "shade_FPR": 0.0,
+      "combined_nonhardware_FPR": 0.0,
+      "alert_rule": "p1+p2+p3 >= frozen threshold",
+      "threshold": 0.5913558658757772,
+      "absent_true_classes": [],
+      "AP_definition": "one-vs-rest average precision; not trapezoidal PR-AUC",
+      "hardware_definition": "classes1/2/3 only; shade environmental"
+    },
+    {
+      "channel": "vdc2",
+      "N": 32800,
+      "macro_f1_present_classes": 4.322922295471739e-05,
+      "macro_f1_fixed_five": 4.322922295471739e-05,
+      "weighted_f1": 0.00012193803987105039,
+      "balanced_accuracy_present_classes": 2.1616947686986595e-05,
+      "macro_precision_present_classes": 0.2,
+      "per_class": {
+        "0": {
+          "N": 18504,
+          "base_rate": 0.5641463414634146,
+          "precision": 1.0,
+          "recall": 0.00010808473843493298,
+          "f1": 0.00021614611477358694,
+          "AP": 0.5641934505920935
+        },
+        "1": {
+          "N": 1232,
+          "base_rate": 0.037560975609756096,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0,
+          "AP": 0.037560975609756096
+        },
+        "2": {
+          "N": 1222,
+          "base_rate": 0.03725609756097561,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0,
+          "AP": 0.03725609756097561
+        },
+        "3": {
+          "N": 1206,
+          "base_rate": 0.03676829268292683,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0,
+          "AP": 0.03676829268292683
+        },
+        "4": {
+          "N": 10636,
+          "base_rate": 0.32426829268292684,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0,
+          "AP": 0.32426829268292684
+        }
+      },
+      "coverage": 6.097560975609756e-05,
+      "confusion_matrix": [
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          18502
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1232
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1222
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1206
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10636
+        ]
+      ],
+      "confusion_columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        "abstain"
+      ],
+      "macro_AP": 0.20000942182573578,
+      "hardware_AP": 0.11158536585365854,
+      "hardware_precision_at_top_1pct": 0.0,
+      "top_1pct_N": 328,
+      "hardware_alert_recall": 0.0,
+      "normal_FPR": 0.0,
+      "shade_FPR": 0.0,
+      "combined_nonhardware_FPR": 0.0,
+      "alert_rule": "p1+p2+p3 >= frozen threshold",
+      "threshold": 0.5913558658757772,
+      "absent_true_classes": [],
+      "AP_definition": "one-vs-rest average precision; not trapezoidal PR-AUC",
+      "hardware_definition": "classes1/2/3 only; shade environmental"
+    },
+    {
+      "channel": "idc1",
+      "N": 32800,
+      "macro_f1_present_classes": 4.322922295471739e-05,
+      "macro_f1_fixed_five": 4.322922295471739e-05,
+      "weighted_f1": 0.00012193803987105039,
+      "balanced_accuracy_present_classes": 2.1616947686986595e-05,
+      "macro_precision_present_classes": 0.2,
+      "per_class": {
+        "0": {
+          "N": 18504,
+          "base_rate": 0.5641463414634146,
+          "precision": 1.0,
+          "recall": 0.00010808473843493298,
+          "f1": 0.00021614611477358694,
+          "AP": 0.5641934505920935
+        },
+        "1": {
+          "N": 1232,
+          "base_rate": 0.037560975609756096,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0,
+          "AP": 0.037560975609756096
+        },
+        "2": {
+          "N": 1222,
+          "base_rate": 0.03725609756097561,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0,
+          "AP": 0.03725609756097561
+        },
+        "3": {
+          "N": 1206,
+          "base_rate": 0.03676829268292683,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0,
+          "AP": 0.03676829268292683
+        },
+        "4": {
+          "N": 10636,
+          "base_rate": 0.32426829268292684,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0,
+          "AP": 0.32426829268292684
+        }
+      },
+      "coverage": 6.097560975609756e-05,
+      "confusion_matrix": [
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          18502
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1232
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1222
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1206
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10636
+        ]
+      ],
+      "confusion_columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        "abstain"
+      ],
+      "macro_AP": 0.20000942182573578,
+      "hardware_AP": 0.11158536585365854,
+      "hardware_precision_at_top_1pct": 0.0,
+      "top_1pct_N": 328,
+      "hardware_alert_recall": 0.0,
+      "normal_FPR": 0.0,
+      "shade_FPR": 0.0,
+      "combined_nonhardware_FPR": 0.0,
+      "alert_rule": "p1+p2+p3 >= frozen threshold",
+      "threshold": 0.5913558658757772,
+      "absent_true_classes": [],
+      "AP_definition": "one-vs-rest average precision; not trapezoidal PR-AUC",
+      "hardware_definition": "classes1/2/3 only; shade environmental"
+    },
+    {
+      "channel": "idc2",
+      "N": 32800,
+      "macro_f1_present_classes": 4.322922295471739e-05,
+      "macro_f1_fixed_five": 4.322922295471739e-05,
+      "weighted_f1": 0.00012193803987105039,
+      "balanced_accuracy_present_classes": 2.1616947686986595e-05,
+      "macro_precision_present_classes": 0.2,
+      "per_class": {
+        "0": {
+          "N": 18504,
+          "base_rate": 0.5641463414634146,
+          "precision": 1.0,
+          "recall": 0.00010808473843493298,
+          "f1": 0.00021614611477358694,
+          "AP": 0.5641934505920935
+        },
+        "1": {
+          "N": 1232,
+          "base_rate": 0.037560975609756096,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0,
+          "AP": 0.037560975609756096
+        },
+        "2": {
+          "N": 1222,
+          "base_rate": 0.03725609756097561,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0,
+          "AP": 0.03725609756097561
+        },
+        "3": {
+          "N": 1206,
+          "base_rate": 0.03676829268292683,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0,
+          "AP": 0.03676829268292683
+        },
+        "4": {
+          "N": 10636,
+          "base_rate": 0.32426829268292684,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0,
+          "AP": 0.32426829268292684
+        }
+      },
+      "coverage": 6.097560975609756e-05,
+      "confusion_matrix": [
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          18502
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1232
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1222
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1206
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10636
+        ]
+      ],
+      "confusion_columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        "abstain"
+      ],
+      "macro_AP": 0.20000942182573578,
+      "hardware_AP": 0.11158536585365854,
+      "hardware_precision_at_top_1pct": 0.0,
+      "top_1pct_N": 328,
+      "hardware_alert_recall": 0.0,
+      "normal_FPR": 0.0,
+      "shade_FPR": 0.0,
+      "combined_nonhardware_FPR": 0.0,
+      "alert_rule": "p1+p2+p3 >= frozen threshold",
+      "threshold": 0.5913558658757772,
+      "absent_true_classes": [],
+      "AP_definition": "one-vs-rest average precision; not trapezoidal PR-AUC",
+      "hardware_definition": "classes1/2/3 only; shade environmental"
+    }
+  ],
+  "interpretation": "Persistent missingness is not equivalent to isolated missing samples. The eligibility rule abstains after two consecutive unavailable source positions. API rejects missing values."
+}

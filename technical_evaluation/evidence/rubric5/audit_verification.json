@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "recorded_UTC": "2026-11-24T07:07:48.118033+00:00",
+  "protected_files_checked": 220,
+  "protected_hash_mismatches": [],
+  "original_RF_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+  "protocol_sha256": "b7589283af54ae2699b67eb9362a1f26e3e3780dd8e791de530b457779f5ec6d",
+  "metric_tables_recomputed_from_confusions": 146,
+  "CLI_cases": 5,
+  "links": {
+    "relative_links_checked": 242,
+    "failures": []
+  },
+  "runtime": {
+    "python": "3.14.10",
+    "platform": "Windows-11-10.0.26100-SP0",
+    "seed": 42,
+    "threads": 2,
+    "packages": {
+      "numpy": "2.5.4",
+      "pandas": "3.0.6",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "lightgbm": "4.7.0",
+      "matplotlib": "3.11.2",
+      "joblib": "1.6.0"
+    }
+  },
+  "scope": "Lightweight integrity/metric/schema verification; does not refit models, repeat cloud requests, or imply Docker execution."
+}

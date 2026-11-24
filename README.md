@@ -3,6 +3,19 @@
 **[Open the PV Anomaly Detection application](https://pv-anomaly-detection-prince-r-k.vercel.app)** | [Web setup and verification](web/README.md)
 
 
+## Technical evaluation - professor quick start
+
+The [final technical evaluation](technical_evaluation/README.md) contains the [rubric matrix](technical_evaluation/Rubric_Compliance_Matrix.md), [measured report](technical_evaluation/Technical_Evaluation_Report.md), [reproduction guide](technical_evaluation/Reproduction_Guide.md) and [remaining limitations](technical_evaluation/Limitations_and_Risks.md). Engineering self-assessment: **76/100 before, 88/100 after**, not an official grade. Original model, raw data, reports and four-step application are preserved. Historical TEST is retrospective; experimental calibration is not deployed.
+
+```powershell
+uv venv --python 3.14.10 .venv
+uv pip install --python .venv -r technical_evaluation/requirements.txt
+.\.venv\Scripts\python.exe -B -m technical_evaluation.audit
+.\.venv\Scripts\python.exe -m uvicorn web.app:app --host 127.0.0.1 --port 8000
+```
+
+The default audit runs23 tests and checks protected hashes, split/calibration ledgers, confusion-derived metrics, original CLI examples and documentation links. Expensive training and cloud checks require explicit flags; Docker execution remains unverified.
+
 **Current milestone: Models, results and a public web inference application.** The completed Assignment 3 preprocessing workflow is retained below. Original archived LR, Random Forest and LightGBM models have been recovered and evaluated without refitting. The original four-channel RF pipeline is available through a public web application and the local CLI.
 
 **Evaluation limitation:** the historical TEST partition was previously inspected. Results are retrospective, not pristine independent generalization estimates. No evaluated configuration met all engineering criteria; RF E4 was selected by the archived validation sensing/performance rule and exceeds separate latency and size targets.

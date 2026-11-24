@@ -1,0 +1,505 @@
+{
+  "baseline_commit": "7d4199785d41d5753917f06a23e8fe0252052388",
+  "files": [
+    {
+      "path": ".dockerignore",
+      "bytes": 172,
+      "sha256": "0d5c4a898bba79f3956a1ed63e681b7527d5f018a26a33544f856dc51d7b8dd5",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": ".vercelignore",
+      "bytes": 390,
+      "sha256": "60b961343000d9c66460763ce68d500516ae79560a47fd226b99db3ac8bb04f2",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "Dockerfile",
+      "bytes": 442,
+      "sha256": "19a1da0b176fc37a3738b61f7e193ce7d76c3f94e6707df3b03eaf95e71d63e0",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "README.md",
+      "bytes": 13651,
+      "sha256": "06ca07ffa96e5a776b68fde72f6569313f149772d9c93643b2b655477d88fe32",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/__init__.py",
+      "bytes": 90,
+      "sha256": "74921f5f125b03386177695b636abd82f63b4ab3b4f9cadbd1891a2d3ba6c2aa",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/archived_explanations.py",
+      "bytes": 1438,
+      "sha256": "fe7bec8fd9a13314955886ea59be3c2cb48d704625eeb57737d4a1ce3ddc8ee9",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/audit.py",
+      "bytes": 4525,
+      "sha256": "57b4e3b7ae2c7615ffd787f89ca037f1ea7ee4caf077b74e6b73d19d7bab3e5b",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/cloud.py",
+      "bytes": 4485,
+      "sha256": "d95433912c4226a82a91d6a3728cb39d921e0d553afc76a88b6405465986f710",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/common.py",
+      "bytes": 2599,
+      "sha256": "f6c28c8a0a24749d9579704cdb3f8d447bc5e25c60c4de6f7d08e447b5dfe8ba",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/data_audit.py",
+      "bytes": 8163,
+      "sha256": "27ee1cd37dcee51fa73b4e285790f855086a11338956ebe61ae331682b51b8fb",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/evidence/acceptance_matrix.json",
+      "bytes": 22864,
+      "sha256": "7dd9f049ee9b34587e4478e991600e431ed7e4cbfee54a56aa390b8396a36764",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/evidence/final_assessment.json",
+      "bytes": 674,
+      "sha256": "2a2eb8ec5a202ea76569686535adf81609ced031c378d5ba70d7c65fa6bcf1c5",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/evidence/initial/assessment.json",
+      "bytes": 1197,
+      "sha256": "cdaf32ad6c5bb5e37b4ce1344bd6335acc538586164b5214ffa5a61d5a86e29a",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/evidence/initial/rubric_requirements.json",
+      "bytes": 32423,
+      "sha256": "4e7f0767f19a94e20040a59b82f01f084d240a1d87565f4519fbd62088a6ab53",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/evidence/rubric1/clipping_comparison.json",
+      "bytes": 13844,
+      "sha256": "d327692d3501ad707589fcae3719e44dcfbfd8873714706ae7bb3cc29b4be94b",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/evidence/rubric1/feature_screening.json",
+      "bytes": 1948,
+      "sha256": "c1d547652b83efeeb87413a77b82ffd3b15b3fe68b7cc8ca2ab7800088fdf1f6",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/evidence/rubric1/hypothetical_costs.json",
+      "bytes": 13140,
+      "sha256": "f99b31254dd35611fa5d344f3adc58b0740af7ec1a3709209a2ab6c414b7fcf0",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/evidence/rubric1/missingness.csv",
+      "bytes": 337,
+      "sha256": "bfd16e1857e5ec304cc4931932cfd4a89485fa06957e64045c44d177d64f68b2",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/evidence/rubric1/missingness.json",
+      "bytes": 2074,
+      "sha256": "4eb270732236bf7a95af086254f6ed8fe61f1766979470b1b64ecf6045f77e84",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/evidence/rubric1/Pearson.csv",
+      "bytes": 650,
+      "sha256": "501b711f24015b1f3e988192a2403a989f8d1dc846ff844e21ed84648a01a33d",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/evidence/rubric1/Spearman.csv",
+      "bytes": 652,
+      "sha256": "ef8d04ad106009219871d44e630a96ad7cf98dda60577ef79028554f1bbf93a5",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/evidence/rubric1/training_outliers.csv",
+      "bytes": 1521,
+      "sha256": "fe849c8b2fddeb7bd1c38daa737294fc5ca4e3846edc0a82bf87b6bdc12cd679",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/evidence/rubric2/grouped_validation.json",
+      "bytes": 43146,
+      "sha256": "21fc8815a0a5baf5ea3f5b714e0215f04be2d5130ac91e4f38251fef6b1bbbda",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/evidence/rubric2/leakage.json",
+      "bytes": 4066,
+      "sha256": "2f88d312da83d0ae06df168721a6cc293fc7a4c0ceb4dc04503821a840fedc5f",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/evidence/rubric2/TRAIN_block_support.json",
+      "bytes": 1411,
+      "sha256": "fe687887f6803cb72d5eb3e9fb50f7cf9f29bcc545cb9ebe7240b8b75b62e2ae",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/evidence/rubric3/calibration_selection_freeze.json",
+      "bytes": 63034,
+      "sha256": "0a356b8a9f4cee6add6aa145cb54ec96c9b00b496108f462deb0c687800f4f67",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/evidence/rubric3/calibration_TEST_retrospective.json",
+      "bytes": 69952,
+      "sha256": "679205240204f864bbd6575988378a7628c9cc59dac53f2ab92faf716a8daaf3",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/evidence/rubric3/model_comparison.json",
+      "bytes": 51776,
+      "sha256": "45e86bfa66dc021406a267be3d540fe13542075aed145ec828ad527c8460b9d9",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/evidence/rubric3/original_model_parameters.json",
+      "bytes": 24215,
+      "sha256": "eb6679ce72aeb260e9bbe3a8e1a3c86e6a20b58af57139c14dd5cacfdce9ee4a",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/evidence/rubric3/original_model_reverification.json",
+      "bytes": 4598,
+      "sha256": "ad43e28486075f8558f4bb4ad7d3814be2c65946b21e86afe7ec301bf68b34fb",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/evidence/rubric3/public_reconstruction_run.json",
+      "bytes": 3726,
+      "sha256": "4a77935520a20d78a38f5851de81f2e4cf7572ff1a0cd43b2ff0e4b90336862c",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/evidence/rubric3/threshold_curve_block14.csv",
+      "bytes": 10223,
+      "sha256": "c04646be1d610d7d08dfb122c601cc31d39e8c33e571e8f94391fdd4a876cd0b",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/evidence/rubric3/uncertainty.json",
+      "bytes": 6109,
+      "sha256": "b22a811d5af054a6ff3b42219a18e762153d46335742ab13eea0c176314432fe",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/evidence/rubric4/archived_explanations_reverification.json",
+      "bytes": 589,
+      "sha256": "b946babd559aa60025acabc823f05a2345c3273125484917ed00a9f4508d87fd",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/evidence/rubric4/contiguous_dropout.json",
+      "bytes": 11345,
+      "sha256": "f57f018baa23dbafc25e8f0a32c03eb7b58d88d9c280f4bec4836f31913d2731",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/evidence/rubric4/normal_shade_errors.json",
+      "bytes": 840,
+      "sha256": "a2ce44199a1995f83fa47fc5c5b95d2ab3e25c00c2acfa43e27f9f33f23e6710",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/evidence/rubric4/RF_raw_channel_permutation.json",
+      "bytes": 2671,
+      "sha256": "196c6bf52186bdf931baa5cd2ce0c07e54d37b3370f0fd5b5f5e718fa6a3264c",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/evidence/rubric4/shift.json",
+      "bytes": 15765,
+      "sha256": "03bf7139224aa06ad14ad21bc2bc2318d8403a024c84bfa8785f720c7757d38f",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/evidence/rubric4/stress.json",
+      "bytes": 95215,
+      "sha256": "5c74c3b127d5d13798c45a2d2add59e1527a75fc244fb1c699fdea99e1097dd6",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/evidence/rubric4/subgroups.json",
+      "bytes": 237897,
+      "sha256": "b1215d934dcc5377a4b7e1a7103403fa2b85339caab565bfb2a5f23b90f57f52",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/evidence/rubric4/synthetic_investigation.json",
+      "bytes": 6483,
+      "sha256": "ef6e5ed122c78600a590eb132f2f7cc3614d8ad460d001bc56274cdf1ce2f241",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/evidence/rubric5/account.json",
+      "bytes": 91,
+      "sha256": "11adb14885406489f77eebce9b4bb89fba02916c7c1025e325d06d7038bf4c83",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/evidence/rubric5/audit_verification.json",
+      "bytes": 969,
+      "sha256": "a3789018f3b492a64216387a45d506e193407ab0728061618b4b9e1d32e8aecb",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/evidence/rubric5/browser_verification.json",
+      "bytes": 832,
+      "sha256": "cd4a88e6bb2b2b7f002eb1fcbd5a92b81b4ce4a8c1333e115d5f4ebcc09a32d7",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/evidence/rubric5/clean_clone.json",
+      "bytes": 5400,
+      "sha256": "8ee55276b775e1cb5d9648e44055561f0f8c275e470c3939697592e5ce1cc619",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/evidence/rubric5/clean_clone_audit.json",
+      "bytes": 1349,
+      "sha256": "eb4a6c38748972cf5401455446e5605b82ee1916fa4795321665e92319184a7a",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/evidence/rubric5/cloud.json",
+      "bytes": 4434,
+      "sha256": "25154c65691507c26ac10790d400e737d71d311be41a8fc417dccfb146e1dd88",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/evidence/rubric5/cost.json",
+      "bytes": 3004,
+      "sha256": "27cb69d3cd5ffdb3d2ef1818d4c95b782fd4bb0efd42c1495bf1199fc2a03b2a",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/evidence/rubric5/dependency_audit.json",
+      "bytes": 2349,
+      "sha256": "4bd10ef2e82934e0bcf785186ebebfa24ae3b1592e21043ae7b7943bbe348ec9",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/evidence/rubric5/deployment_before.json",
+      "bytes": 284,
+      "sha256": "c5d756a007b1e86991a2f953b71778fed3bf573c14294432a44242182724a24e",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/evidence/rubric5/experiment_run_notes.json",
+      "bytes": 1415,
+      "sha256": "0f4f245df3539f5b1f1dd53d20d91ad03076532af65a5e24338cecb6b8871f93",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/evidence/rubric5/local_server.json",
+      "bytes": 635,
+      "sha256": "45d7aa6a17b594f25bf992e10501417ca9ed96098fce26858193847923c892e6",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/evidence/rubric5/security.json",
+      "bytes": 978,
+      "sha256": "56fb9d48bdf0349127e20ce4486dea35cfd21ffc53e7ebdafd4e24b80671f54d",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/experiments.py",
+      "bytes": 16458,
+      "sha256": "4fb6174a7e30b9a2776c4c2aabdfcbe92f8e5b359223a6f9969700ebb711e8aa",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/figures/archived_threshold_curve.png",
+      "bytes": 73022,
+      "sha256": "939f86b5e2bddfd7c66a9cb830a821cf8ad2ea84232e25083375299bd101d037",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/figures/block_performance.png",
+      "bytes": 73808,
+      "sha256": "3fe6ecbe3a378b18b912e8caab75c21e1ccf770f94d3093744af4af98168e79f",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/figures/calibration_reliability_TEST.png",
+      "bytes": 364746,
+      "sha256": "22751dbb482865866d49a0bdd35bbb3946b9a83a4c22aaed12e2517b0f918c02",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/figures/calibration_selection_OOF.png",
+      "bytes": 57940,
+      "sha256": "9a068e0cf738c522d44d86685ce884b735e20a61b267276d1b892310ba65f124",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/figures/dropout_coverage.png",
+      "bytes": 47249,
+      "sha256": "170f1305d87f9213eaa5e70171bc20ad8f11aa9c947fcdb3ad32c47f7d7fb5cb",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/figures/grouped_validation.png",
+      "bytes": 82267,
+      "sha256": "5056945a93599af2c27b02c9ca50cd19c111979b8b6c4f3fb0fac0953bc809c6",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/figures/simulated_noise.png",
+      "bytes": 69586,
+      "sha256": "40c768a9c3ca63159630259e013c53a47cdf1816cd4269ac1392135ff1e2c26e",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/figures/source_cohort_shift.png",
+      "bytes": 95591,
+      "sha256": "945375bd34955718b352600c8fa7c50f2ff5b1a07f157a6c2d90f1f90e9cea4a",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/figures/TEST_PR.png",
+      "bytes": 49853,
+      "sha256": "579bb8b37396cf854dbf1b6d67fdaba7c79e9d625fff72a2357b16475aac3d5c",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/figures/TRAIN_correlation.png",
+      "bytes": 81155,
+      "sha256": "5702db806f14c011888c4f4f6e183f276bcabbd52d0dc85772b2784a00d87d9c",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/figures/TRAIN_VIF_PCA.png",
+      "bytes": 48171,
+      "sha256": "7fbfcc1c79e3e65a59d580db370d511d8516c3275d02f20a09376b38587c84d8",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/figures/VALIDATION_PR.png",
+      "bytes": 53368,
+      "sha256": "41ce1558ca9c14231ec7d10ba4d8766d7f123aed8e8b87fa0cd7880d9c13f5b3",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/Initial_Rubric_Compliance_Matrix.md",
+      "bytes": 10135,
+      "sha256": "c8fcda2889e2bfa7f2270ab01df81245dee84623f6694216fa9a15fec06b5f68",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/Limitations_and_Risks.md",
+      "bytes": 4087,
+      "sha256": "5c169584e5d1c73d154f7442140b7da500f0ec3b43bbbc0cb04e67207b5b0124",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/metrics.py",
+      "bytes": 4207,
+      "sha256": "ba975636ee0bedbeed8630b897fcaf461e59b56b1099332de404d6c0f5ae3f93",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/plots.py",
+      "bytes": 6720,
+      "sha256": "41c21cc81583c74edd1e35c6c95ae11b25d94ddd159f66eee8cab7d6dd88247a",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/Protected_Baseline.json",
+      "bytes": 27166,
+      "sha256": "f72f818b9b251898ea7314a146ce3172eb88395a6cb665afc0abb1e5e0e97289",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/Protocol.json",
+      "bytes": 4791,
+      "sha256": "b7589283af54ae2699b67eb9362a1f26e3e3780dd8e791de530b457779f5ec6d",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/Protocol_Freeze.json",
+      "bytes": 202,
+      "sha256": "7cafa3276772f586ae98f4bc39463856f690a428fae8030dc18e146de438188e",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/README.md",
+      "bytes": 2375,
+      "sha256": "a35a317e503cc5d9bcc91e0c6d15916634fade37f530414b81f7c44c74054d79",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/reconstruct.py",
+      "bytes": 2154,
+      "sha256": "bbb7fede5da1ca2f5f53c3982f1691f5509e0c151cdc97b0c84b5005b3f9cb05",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/Reproduction_Guide.md",
+      "bytes": 6930,
+      "sha256": "6b84c19af6d2dfc028bc5aa7ded73f1cae6f56b306a50da8afe4aaae497ac3b0",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/requirements.txt",
+      "bytes": 758,
+      "sha256": "22058e756f15707523f0ec139363580da3140a9db55aa1cc698479a099d8b1a8",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/robustness.py",
+      "bytes": 8471,
+      "sha256": "6173dd3321385102b6b3a1124f7098fe2b0678be13a0e83766874f446636c48d",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/Rubric_Compliance_Matrix.md",
+      "bytes": 14764,
+      "sha256": "904592b153f490264aff79134e7dddc36e51bb6f42ef00dceaec8d85683dfd72",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/security.py",
+      "bytes": 3092,
+      "sha256": "e34f45f8e1589282d9469125df2a436fac9d9a2693193ec6806ac4faffe895a7",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/Supplemental_Dropout_Protocol.json",
+      "bytes": 398,
+      "sha256": "cf80fdf44586c61f0253560a1a2df71d794369c89131cbf2affdb6047c547291",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/Technical_Evaluation_Report.md",
+      "bytes": 21428,
+      "sha256": "efacf420c5b94f43383e65121d7c565b45744317433b59d38d5f05d407a1345b",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    },
+    {
+      "path": "technical_evaluation/tests.py",
+      "bytes": 1533,
+      "sha256": "c3aead1db2267c05125d6d930e8759f39ed1092094fdc815853750682e2eb15b",
+      "purpose": "Measured technical-evaluation evidence, reproducible source/documentation, or offline packaging; original scientific artifacts preserved."
+    }
+  ],
+  "manifest_self_excluded": true,
+  "note": "Precommit content manifest. Audit receipt may update when the same deterministic checks are repeated; Git provides final committed bytes."
+}
