@@ -1,5 +1,5 @@
 """Standard-library-only actual Docker verifier for a local host or free Linux CI."""
-import json,subprocess,time,urllib.request,urllib.error,os,platform
+import json,subprocess,time,urllib.request,urllib.error,os,platform,argparse
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[2]
 def command(*args):return subprocess.check_output(args,cwd=ROOT,text=True).strip()
@@ -10,7 +10,7 @@ def request(url,payload=None,body=None):
  except urllib.error.HTTPError as e:return e.code,None
 
 def main():
- started=time.perf_counter();subprocess.run(['docker','build','-t','pv-rf-e4-verification','.'],cwd=ROOT,check=True);build_seconds=time.perf_counter()-started;image=json.loads(command('docker','image','inspect','pv-rf-e4-verification'))[0];name='pv-rf-e4-verification-'+str(os.getpid());startup=time.perf_counter()
+ started=time.perf_counter();subprocess.run(['docker','build','--build-arg','PYTHON_VERSION='+args.python_version,'-t','pv-rf-e4-verification','.'],cwd=ROOT,check=True);build_seconds=time.perf_counter()-started;image=json.loads(command('docker','image','inspect','pv-rf-e4-verification'))[0];name='pv-rf-e4-verification-'+str(os.getpid());startup=time.perf_counter()
  command('docker','run','-d','--read-only','--tmpfs','/tmp:rw,size=64m','-e','PYTHONDONTWRITEBYTECODE=1','-p','127.0.0.1:8768:8000','--name',name,'pv-rf-e4-verification')
  try:
   for _ in range(60):
