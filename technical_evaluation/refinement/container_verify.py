@@ -31,8 +31,11 @@ def main():
    code,_=request('http://127.0.0.1:8768/api/predict',value);assert code==422;checks.append({'case':label,'status':code})
   for label,body,status in [('duplicate',b'{"vdc1":1,"vdc1":2}',422),('oversize',b'x'*2049,413)]:
    code,_=request('http://127.0.0.1:8768/api/predict',body=body);assert code==status;checks.append({'case':label,'status':code})
+  reference=json.loads((ROOT/'technical_evaluation/refinement/fixtures/runtime_probability_reference.json').read_text())
+  code="import json,sys,numpy as np,pandas as pd;from src.inference.cli import load_model,CHANNELS;d=json.load(sys.stdin);m=load_model();p=m.pipeline.predict_proba(pd.DataFrame(d['X'],columns=CHANNELS));q=np.array(d['probabilities']);np.testing.assert_allclose(p,q,rtol=0,atol=1e-12);print(json.dumps({'N':len(p),'max_probability_difference':float(abs(p-q).max())}))"
+  probability=json.loads(subprocess.check_output(['docker','exec','-i',name,'python','-c',code],input=json.dumps(reference),text=True))
   runtime=json.loads(command('docker','exec',name,'python','-c','import json,platform;from importlib.metadata import version;print(json.dumps({"python":platform.python_version(),"platform":platform.platform(),"packages":{k:version(k) for k in ["numpy","pandas","scipy","scikit-learn","fastapi"]}}))'))
-  report={'status':'VERIFIED','git_commit':os.environ.get('GITHUB_SHA','local'),'runner':'Standard ubuntu-latest public-repository runner' if os.environ.get('GITHUB_ACTIONS') else platform.platform(),'image_id':image['Id'],'image_bytes':image['Size'],'build_seconds':build_seconds,'startup_to_ready_seconds':startup_seconds,'nonroot_uid':uid,'read_only_root':True,'health':health,'runtime':runtime,'reference_cases':results,'invalid_checks':checks,'model_artifact_unchanged':True}
+  report={'status':'VERIFIED','git_commit':os.environ.get('GITHUB_SHA','local'),'runner':'Standard ubuntu-latest public-repository runner' if os.environ.get('GITHUB_ACTIONS') else platform.platform(),'image_id':image['Id'],'image_bytes':image['Size'],'build_seconds':build_seconds,'startup_to_ready_seconds':startup_seconds,'nonroot_uid':uid,'read_only_root':True,'health':health,'runtime':runtime,'reference_cases':results,'TRAIN_probability_parity':probability,'invalid_checks':checks,'model_artifact_unchanged':True}
   print('PV_CONTAINER_BEGIN');print(json.dumps(report,indent=2));print('PV_CONTAINER_END')
  finally:subprocess.run(['docker','rm','-f',name],check=False)
 if __name__=='__main__':main()
