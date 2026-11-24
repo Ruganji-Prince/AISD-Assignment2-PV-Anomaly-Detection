@@ -1,0 +1,346 @@
+[
+  {
+    "id": "R1.1",
+    "source": "technical_evaluation/metrics.py",
+    "symbol": "hypothetical_cost",
+    "evidence": "evidence/rubric1/hypothetical_costs.json",
+    "command": "python -B -m technical_evaluation.refinement.verify",
+    "status": "VERIFIED"
+  },
+  {
+    "id": "R1.2",
+    "source": "technical_evaluation/data_audit.py",
+    "symbol": "main",
+    "evidence": "evidence/rubric1/missingness.json",
+    "command": "python -B -c \"from technical_evaluation.data_audit import main; main()\"",
+    "status": "VERIFIED"
+  },
+  {
+    "id": "R1.3",
+    "source": "technical_evaluation/data_audit.py",
+    "symbol": "main",
+    "evidence": "evidence/rubric1/missingness.json",
+    "command": "python -B -c \"from technical_evaluation.data_audit import main; main()\"",
+    "status": "NOT APPLICABLE"
+  },
+  {
+    "id": "R1.4",
+    "source": "technical_evaluation/data_audit.py",
+    "symbol": "main",
+    "evidence": "evidence/rubric1/missingness.json",
+    "command": "python -B -c \"from technical_evaluation.data_audit import main; main()\"",
+    "status": "VERIFIED"
+  },
+  {
+    "id": "R1.5",
+    "source": "technical_evaluation/data_audit.py",
+    "symbol": "main",
+    "evidence": "evidence/rubric1/training_outliers.csv",
+    "command": "python -B -c \"from technical_evaluation.data_audit import main; main()\"",
+    "status": "VERIFIED"
+  },
+  {
+    "id": "R1.6",
+    "source": "technical_evaluation/experiments.py",
+    "symbol": "training_experiments",
+    "evidence": "evidence/rubric1/clipping_comparison.json",
+    "command": "python -B -m technical_evaluation.audit --train",
+    "status": "VERIFIED"
+  },
+  {
+    "id": "R1.7",
+    "source": "technical_evaluation/data_audit.py",
+    "symbol": "main",
+    "evidence": "evidence/rubric1/feature_screening.json",
+    "command": "python -B -c \"from technical_evaluation.data_audit import main; main()\"",
+    "status": "VERIFIED"
+  },
+  {
+    "id": "R1.8",
+    "source": "technical_evaluation/data_audit.py",
+    "symbol": "main",
+    "evidence": "evidence/rubric1/feature_screening.json",
+    "command": "python -B -c \"from technical_evaluation.data_audit import main; main()\"",
+    "status": "VERIFIED"
+  },
+  {
+    "id": "R1.9",
+    "source": "src/inference/cli.py",
+    "symbol": "validate",
+    "evidence": "evidence/rubric2/leakage.json",
+    "command": "python -B -m technical_evaluation.refinement.verify",
+    "status": "VERIFIED"
+  },
+  {
+    "id": "R2.1",
+    "source": "src/preprocessing/study.py",
+    "symbol": "split_data",
+    "evidence": "evidence/rubric2/leakage.json",
+    "command": "python -B -m technical_evaluation.refinement.verify",
+    "status": "VERIFIED"
+  },
+  {
+    "id": "R2.2",
+    "source": "technical_evaluation/data_audit.py",
+    "symbol": "vector_hash",
+    "evidence": "evidence/rubric2/leakage.json",
+    "command": "python -B -m technical_evaluation.refinement.verify",
+    "status": "VERIFIED"
+  },
+  {
+    "id": "R2.3",
+    "source": "technical_evaluation/refinement/experiments.py",
+    "symbol": "near",
+    "evidence": "refinement/results/full_near_duplicates.json",
+    "command": "python -B -m technical_evaluation.refinement.experiments near",
+    "status": "VERIFIED"
+  },
+  {
+    "id": "R2.4",
+    "source": "technical_evaluation/experiments.py",
+    "symbol": "fit_one",
+    "evidence": "evidence/rubric2/grouped_validation.json",
+    "command": "python -B -m technical_evaluation.refinement.verify",
+    "status": "VERIFIED"
+  },
+  {
+    "id": "R2.5",
+    "source": "technical_evaluation/experiments.py",
+    "symbol": "training_experiments",
+    "evidence": "evidence/rubric2/grouped_validation.json",
+    "command": "python -B -m technical_evaluation.audit --train",
+    "status": "BLOCKED BY DATASET LIMITATIONS"
+  },
+  {
+    "id": "R2.6",
+    "source": "technical_evaluation/refinement/experiments.py",
+    "symbol": "freeze",
+    "evidence": "refinement/Protocol.json",
+    "command": "python -B -m technical_evaluation.refinement.verify",
+    "status": "BLOCKED BY DATASET LIMITATIONS"
+  },
+  {
+    "id": "R2.7",
+    "source": "technical_evaluation/refinement/experiments.py",
+    "symbol": "calibration",
+    "evidence": "refinement/results/probability_normalization.json",
+    "command": "python -B -m technical_evaluation.refinement.experiments calibration",
+    "status": "PARTIALLY VERIFIED"
+  },
+  {
+    "id": "R3.1",
+    "source": "technical_evaluation/reconstruct.py",
+    "symbol": "main",
+    "evidence": "refinement/results/reconstruction_comparison.json",
+    "command": "python -B -m technical_evaluation.reconstruct --candidate all",
+    "status": "VERIFIED"
+  },
+  {
+    "id": "R3.2",
+    "source": "technical_evaluation/experiments.py",
+    "symbol": "model_metrics",
+    "evidence": "refinement/results/baseline_reverification.json",
+    "command": "python -B -m technical_evaluation.refinement.experiments calibration",
+    "status": "VERIFIED"
+  },
+  {
+    "id": "R3.3",
+    "source": "technical_evaluation/experiments.py",
+    "symbol": "model_metrics",
+    "evidence": "evidence/rubric3/model_comparison.json",
+    "command": "python -B -m technical_evaluation.refinement.verify",
+    "status": "VERIFIED"
+  },
+  {
+    "id": "R3.4",
+    "source": "technical_evaluation/metrics.py",
+    "symbol": "evaluate",
+    "evidence": "evidence/rubric3/model_comparison.json",
+    "command": "python -B -m technical_evaluation.refinement.verify",
+    "status": "VERIFIED"
+  },
+  {
+    "id": "R3.5",
+    "source": "technical_evaluation/refinement/experiments.py",
+    "symbol": "calibration",
+    "evidence": "refinement/results/calibration/calibration_TEST_retrospective.json",
+    "command": "python -B -m technical_evaluation.refinement.experiments calibration",
+    "status": "VERIFIED"
+  },
+  {
+    "id": "R3.6",
+    "source": "technical_evaluation/refinement/experiments.py",
+    "symbol": "calibration",
+    "evidence": "refinement/results/probability_normalization.json",
+    "command": "python -B -m technical_evaluation.refinement.experiments calibration",
+    "status": "PARTIALLY VERIFIED"
+  },
+  {
+    "id": "R3.7",
+    "source": "src/phase2_stage3/common.py",
+    "symbol": "select_threshold",
+    "evidence": "evidence/rubric3/threshold_curve_block14.csv",
+    "command": "python -B -m technical_evaluation.refinement.verify",
+    "status": "VERIFIED"
+  },
+  {
+    "id": "R3.8",
+    "source": "technical_evaluation/refinement/experiments.py",
+    "symbol": "uncertainty",
+    "evidence": "refinement/results/bootstrap_sensitivity.json",
+    "command": "python -B -m technical_evaluation.refinement.experiments uncertainty",
+    "status": "BLOCKED BY DATASET LIMITATIONS"
+  },
+  {
+    "id": "R3.9",
+    "source": "technical_evaluation/metrics.py",
+    "symbol": "evaluate",
+    "evidence": "evidence/rubric3/model_comparison.json",
+    "command": "python -B -m technical_evaluation.refinement.verify",
+    "status": "NOT APPLICABLE"
+  },
+  {
+    "id": "R4.1",
+    "source": "technical_evaluation/robustness.py",
+    "symbol": "main",
+    "evidence": "evidence/rubric4/normal_shade_errors.json",
+    "command": "python -B -c \"from technical_evaluation.robustness import main; main()\"",
+    "status": "VERIFIED"
+  },
+  {
+    "id": "R4.2",
+    "source": "technical_evaluation/robustness.py",
+    "symbol": "main",
+    "evidence": "evidence/rubric4/subgroups.json",
+    "command": "python -B -c \"from technical_evaluation.robustness import main; main()\"",
+    "status": "VERIFIED"
+  },
+  {
+    "id": "R4.3",
+    "source": "technical_evaluation/robustness.py",
+    "symbol": "main",
+    "evidence": "evidence/rubric4/shift.json",
+    "command": "python -B -c \"from technical_evaluation.robustness import main; main()\"",
+    "status": "VERIFIED"
+  },
+  {
+    "id": "R4.4",
+    "source": "src/phase2_stage2/selection.py",
+    "symbol": "select",
+    "evidence": "evidence/rubric3/original_model_reverification.json",
+    "command": "python -B -m technical_evaluation.refinement.verify",
+    "status": "VERIFIED"
+  },
+  {
+    "id": "R4.5",
+    "source": "src/evaluation/verify_explanations.py",
+    "symbol": "main",
+    "evidence": "evidence/rubric4/archived_explanations_reverification.json",
+    "command": "python -B -m technical_evaluation.audit --private-cache PATH_TO_TRUSTED_CACHE",
+    "status": "VERIFIED"
+  },
+  {
+    "id": "R4.6",
+    "source": "technical_evaluation/robustness.py",
+    "symbol": "main",
+    "evidence": "evidence/rubric4/stress.json",
+    "command": "python -B -c \"from technical_evaluation.robustness import main; main()\"",
+    "status": "VERIFIED"
+  },
+  {
+    "id": "R4.7",
+    "source": "technical_evaluation/refinement/experiments.py",
+    "symbol": "synthetic",
+    "evidence": "refinement/results/empirical_scenarios.json",
+    "command": "python -B -m technical_evaluation.refinement.experiments synthetic",
+    "status": "VERIFIED"
+  },
+  {
+    "id": "R4.8",
+    "source": "technical_evaluation/refinement/Final_Report.md",
+    "symbol": "",
+    "evidence": "evidence/final_assessment.json",
+    "command": "python -B -m technical_evaluation.refinement.verify",
+    "status": "VERIFIED"
+  },
+  {
+    "id": "R5.1",
+    "source": "technical_evaluation/refinement/verify.py",
+    "symbol": "main",
+    "evidence": "../uv.lock",
+    "command": "python -B -m technical_evaluation.refinement.verify",
+    "status": "VERIFIED"
+  },
+  {
+    "id": "R5.2",
+    "source": "technical_evaluation/refinement/verify.py",
+    "symbol": "main",
+    "evidence": "refinement/results/clean_clone.json",
+    "command": "python -B -m technical_evaluation.refinement.verify",
+    "status": "VERIFIED"
+  },
+  {
+    "id": "R5.3",
+    "source": "technical_evaluation/reconstruct.py",
+    "symbol": "main",
+    "evidence": "refinement/results/LR_thread_sensitivity.json",
+    "command": "python -B -m technical_evaluation.reconstruct --candidate all",
+    "status": "VERIFIED"
+  },
+  {
+    "id": "R5.4",
+    "source": "technical_evaluation/refinement/container_verify.py",
+    "symbol": "main",
+    "evidence": "refinement/results/container_matrix.json",
+    "command": "python technical_evaluation/refinement/container_verify.py",
+    "status": "VERIFIED"
+  },
+  {
+    "id": "R5.5",
+    "source": "web/app.py",
+    "symbol": "predict_measurements",
+    "evidence": "refinement/results/cloud_preview_profile.json",
+    "command": "python -B -m technical_evaluation.defense.run_demo --url http://127.0.0.1:8000",
+    "status": "VERIFIED"
+  },
+  {
+    "id": "R5.6",
+    "source": "technical_evaluation/refinement/cloud_benchmark.py",
+    "symbol": "benchmark",
+    "evidence": "refinement/results/cloud_preview_profile.json",
+    "command": "python -B -m technical_evaluation.refinement.cloud_benchmark --url https://pv-anomaly-detection-prince-r-k.vercel.app --receipt results/cloud_practice.json",
+    "status": "PARTIALLY VERIFIED"
+  },
+  {
+    "id": "R5.7",
+    "source": "technical_evaluation/cloud.py",
+    "symbol": "main",
+    "evidence": "evidence/rubric5/cost.json",
+    "command": "python -B -m technical_evaluation.refinement.verify",
+    "status": "PARTIALLY VERIFIED"
+  },
+  {
+    "id": "R5.8",
+    "source": "technical_evaluation/refinement/security.py",
+    "symbol": "main",
+    "evidence": "refinement/results/security.json",
+    "command": "python -B -m technical_evaluation.refinement.security",
+    "status": "PARTIALLY VERIFIED"
+  },
+  {
+    "id": "R5.9",
+    "source": "src/inference/cli.py",
+    "symbol": "load_model",
+    "evidence": "evidence/rubric5/audit_verification.json",
+    "command": "python -B -m technical_evaluation.refinement.verify",
+    "status": "VERIFIED"
+  },
+  {
+    "id": "R5.10",
+    "source": "technical_evaluation/refinement/verify.py",
+    "symbol": "main",
+    "evidence": "refinement/results/clean_clone.json",
+    "command": "python -B -m technical_evaluation.refinement.verify",
+    "status": "VERIFIED"
+  }
+]

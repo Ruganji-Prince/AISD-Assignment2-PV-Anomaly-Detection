@@ -1,0 +1,392 @@
+{
+  "status": "PASS",
+  "checked_UTC": "2026-11-24T09:39:46.001098+00:00",
+  "verified_application_base_commit": "869a0a5fbb3036a7a909746d87298ed5676bfffe",
+  "submission_tag": "submission-ready-20261124",
+  "publication_note": "Final commit is resolved by the immutable annotated submission tag; remote/tag/clean-tree checks are completed after publication.",
+  "score_retained": 91,
+  "no_training_no_model_or_app_changes": true,
+  "static_checks": {
+    "protected_prior_files": 366,
+    "protected_mismatches": [],
+    "traceability_rows": 43,
+    "source_symbols_verified": true,
+    "mock_questions": 66,
+    "walkthrough_stages": 14,
+    "planned_duration_seconds": [
+      600,
+      1200
+    ],
+    "README_UTF8_units_and_symbols": "PASS",
+    "Markdown_table_columns": "PASS",
+    "relative_links": {
+      "relative_links_checked": 711,
+      "failures": []
+    },
+    "README_tables_contiguous": "PASS"
+  },
+  "fresh_environment_execution": {
+    "status": "PASS",
+    "fresh_environment": true,
+    "tests_passed": 30,
+    "demos": [
+      {
+        "status": "PASS",
+        "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+        "cases": [
+          {
+            "reference_case": 0,
+            "source": "Predetermined historical TEST reference; parity demonstration, not independent generalization evidence",
+            "measurements": {
+              "vdc1": 300.031,
+              "vdc2": 329.544,
+              "idc1": 0.2247,
+              "idc2": 0.1272
+            },
+            "CLI_class": 0,
+            "label": "normal"
+          },
+          {
+            "reference_case": 1,
+            "source": "Predetermined historical TEST reference; parity demonstration, not independent generalization evidence",
+            "measurements": {
+              "vdc1": 256.461,
+              "vdc2": 208.699,
+              "idc1": 9.1373,
+              "idc2": 8.4463
+            },
+            "CLI_class": 1,
+            "label": "short circuit"
+          },
+          {
+            "reference_case": 2,
+            "source": "Predetermined historical TEST reference; parity demonstration, not independent generalization evidence",
+            "measurements": {
+              "vdc1": 259.212,
+              "vdc2": 246.611,
+              "idc1": 9.0792,
+              "idc2": 8.3303
+            },
+            "CLI_class": 2,
+            "label": "resistive degradation"
+          },
+          {
+            "reference_case": 3,
+            "source": "Predetermined historical TEST reference; parity demonstration, not independent generalization evidence",
+            "measurements": {
+              "vdc1": 262.91,
+              "vdc2": 0.8866,
+              "idc1": 8.9742,
+              "idc2": 0.0468
+            },
+            "CLI_class": 3,
+            "label": "open circuit"
+          },
+          {
+            "reference_case": 4,
+            "source": "Predetermined historical TEST reference; parity demonstration, not independent generalization evidence",
+            "measurements": {
+              "vdc1": 334.823,
+              "vdc2": 335.877,
+              "idc1": 0.4303,
+              "idc2": 0.2274
+            },
+            "CLI_class": 4,
+            "label": "natural building shade"
+          }
+        ],
+        "invalid_inputs_rejected": [
+          "missing",
+          "negative",
+          "unexpected_target"
+        ],
+        "mode": "Offline CLI; no network requests"
+      },
+      {
+        "status": "PASS",
+        "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+        "cases": [
+          {
+            "reference_case": 0,
+            "source": "Predetermined historical TEST reference; parity demonstration, not independent generalization evidence",
+            "measurements": {
+              "vdc1": 300.031,
+              "vdc2": 329.544,
+              "idc1": 0.2247,
+              "idc2": 0.1272
+            },
+            "CLI_class": 0,
+            "label": "normal",
+            "API_class": 0,
+            "server_timing": "body_validate;dur=0.3892, init;dur=0.0000, validation;dur=0.0103, frame;dur=0.4626, preprocessing;dur=6.7067, forest;dur=8.4983, server;dur=16.9795"
+          },
+          {
+            "reference_case": 1,
+            "source": "Predetermined historical TEST reference; parity demonstration, not independent generalization evidence",
+            "measurements": {
+              "vdc1": 256.461,
+              "vdc2": 208.699,
+              "idc1": 9.1373,
+              "idc2": 8.4463
+            },
+            "CLI_class": 1,
+            "label": "short circuit",
+            "API_class": 1,
+            "server_timing": "body_validate;dur=0.3436, init;dur=0.0000, validation;dur=0.0107, frame;dur=0.4829, preprocessing;dur=6.3206, forest;dur=8.4433, server;dur=16.8114"
+          },
+          {
+            "reference_case": 2,
+            "source": "Predetermined historical TEST reference; parity demonstration, not independent generalization evidence",
+            "measurements": {
+              "vdc1": 259.212,
+              "vdc2": 246.611,
+              "idc1": 9.0792,
+              "idc2": 8.3303
+            },
+            "CLI_class": 2,
+            "label": "resistive degradation",
+            "API_class": 2,
+            "server_timing": "body_validate;dur=0.3369, init;dur=0.0000, validation;dur=0.0099, frame;dur=0.4405, preprocessing;dur=6.2881, forest;dur=8.4502, server;dur=16.5459"
+          },
+          {
+            "reference_case": 3,
+            "source": "Predetermined historical TEST reference; parity demonstration, not independent generalization evidence",
+            "measurements": {
+              "vdc1": 262.91,
+              "vdc2": 0.8866,
+              "idc1": 8.9742,
+              "idc2": 0.0468
+            },
+            "CLI_class": 3,
+            "label": "open circuit",
+            "API_class": 3,
+            "server_timing": "body_validate;dur=0.3469, init;dur=0.0000, validation;dur=0.0101, frame;dur=0.4280, preprocessing;dur=6.3921, forest;dur=8.4169, server;dur=16.5406"
+          },
+          {
+            "reference_case": 4,
+            "source": "Predetermined historical TEST reference; parity demonstration, not independent generalization evidence",
+            "measurements": {
+              "vdc1": 334.823,
+              "vdc2": 335.877,
+              "idc1": 0.4303,
+              "idc2": 0.2274
+            },
+            "CLI_class": 4,
+            "label": "natural building shade",
+            "API_class": 4,
+            "server_timing": "body_validate;dur=0.4383, init;dur=0.0000, validation;dur=0.0105, frame;dur=0.4378, preprocessing;dur=6.4277, forest;dur=8.5452, server;dur=16.7826"
+          }
+        ],
+        "invalid_inputs_rejected": [
+          "missing",
+          "negative",
+          "unexpected_target"
+        ],
+        "mode": "CLI/API parity"
+      },
+      {
+        "status": "PASS",
+        "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+        "cases": [
+          {
+            "reference_case": 0,
+            "source": "Predetermined historical TEST reference; parity demonstration, not independent generalization evidence",
+            "measurements": {
+              "vdc1": 300.031,
+              "vdc2": 329.544,
+              "idc1": 0.2247,
+              "idc2": 0.1272
+            },
+            "CLI_class": 0,
+            "label": "normal",
+            "API_class": 0,
+            "server_timing": "body_validate;dur=1.0784, init;dur=0.0000, validation;dur=0.0187, frame;dur=1.6320, preprocessing;dur=206.5861, forest;dur=33.5868, server;dur=247.4063"
+          },
+          {
+            "reference_case": 1,
+            "source": "Predetermined historical TEST reference; parity demonstration, not independent generalization evidence",
+            "measurements": {
+              "vdc1": 256.461,
+              "vdc2": 208.699,
+              "idc1": 9.1373,
+              "idc2": 8.4463
+            },
+            "CLI_class": 1,
+            "label": "short circuit",
+            "API_class": 1,
+            "server_timing": "body_validate;dur=0.9068, init;dur=0.0000, validation;dur=0.0102, frame;dur=1.0791, preprocessing;dur=15.2033, forest;dur=18.1917, server;dur=38.5428"
+          },
+          {
+            "reference_case": 2,
+            "source": "Predetermined historical TEST reference; parity demonstration, not independent generalization evidence",
+            "measurements": {
+              "vdc1": 259.212,
+              "vdc2": 246.611,
+              "idc1": 9.0792,
+              "idc2": 8.3303
+            },
+            "CLI_class": 2,
+            "label": "resistive degradation",
+            "API_class": 2,
+            "server_timing": "body_validate;dur=0.6743, init;dur=0.0000, validation;dur=0.0138, frame;dur=0.7630, preprocessing;dur=12.0886, forest;dur=19.0827, server;dur=34.8672"
+          },
+          {
+            "reference_case": 3,
+            "source": "Predetermined historical TEST reference; parity demonstration, not independent generalization evidence",
+            "measurements": {
+              "vdc1": 262.91,
+              "vdc2": 0.8866,
+              "idc1": 8.9742,
+              "idc2": 0.0468
+            },
+            "CLI_class": 3,
+            "label": "open circuit",
+            "API_class": 3,
+            "server_timing": "body_validate;dur=0.7048, init;dur=0.0000, validation;dur=0.0136, frame;dur=1.2698, preprocessing;dur=15.3289, forest;dur=17.2698, server;dur=36.7144"
+          },
+          {
+            "reference_case": 4,
+            "source": "Predetermined historical TEST reference; parity demonstration, not independent generalization evidence",
+            "measurements": {
+              "vdc1": 334.823,
+              "vdc2": 335.877,
+              "idc1": 0.4303,
+              "idc2": 0.2274
+            },
+            "CLI_class": 4,
+            "label": "natural building shade",
+            "API_class": 4,
+            "server_timing": "body_validate;dur=0.7453, init;dur=0.0000, validation;dur=0.0100, frame;dur=0.8705, preprocessing;dur=13.3820, forest;dur=15.5253, server;dur=32.8807"
+          }
+        ],
+        "invalid_inputs_rejected": [
+          "missing",
+          "negative",
+          "unexpected_target"
+        ],
+        "mode": "CLI/API parity"
+      }
+    ],
+    "clean_audit_receipt": {
+      "status": "PASS",
+      "protected_prior_files": 293,
+      "prior_hash_mismatches": [],
+      "original_model_SHA256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "near_duplicate_queries": 4,
+      "reconstructed_candidates": 21,
+      "empirical_scenarios": 250,
+      "relative_links": {
+        "relative_links_checked": 705,
+        "failures": []
+      },
+      "mandatory_checks": {
+        "repository_README": "Local files/links and public URLs documented; final publication independently checked.",
+        "leakage": "No identified unaddressed target/preprocessing overlap; close feature vectors and historical TEST remain disclosed.",
+        "cloud_and_secrets": "Use separately recorded live/secret receipts; this command makes no network calls."
+      }
+    },
+    "no_training_or_notebook_rewrite": true
+  },
+  "fixed_reference_provenance": [
+    {
+      "case": 0,
+      "source_positions": [
+        1227337
+      ],
+      "source_labels": [
+        0
+      ],
+      "matching": "Exact equality of all four predetermined electrical values; no prediction-based search or new example selection."
+    },
+    {
+      "case": 1,
+      "source_positions": [
+        1244416
+      ],
+      "source_labels": [
+        1
+      ],
+      "matching": "Exact equality of all four predetermined electrical values; no prediction-based search or new example selection."
+    },
+    {
+      "case": 2,
+      "source_positions": [
+        1242691
+      ],
+      "source_labels": [
+        2
+      ],
+      "matching": "Exact equality of all four predetermined electrical values; no prediction-based search or new example selection."
+    },
+    {
+      "case": 3,
+      "source_positions": [
+        1242672
+      ],
+      "source_labels": [
+        3
+      ],
+      "matching": "Exact equality of all four predetermined electrical values; no prediction-based search or new example selection."
+    },
+    {
+      "case": 4,
+      "source_positions": [
+        1230229
+      ],
+      "source_labels": [
+        4
+      ],
+      "matching": "Exact equality of all four predetermined electrical values; no prediction-based search or new example selection."
+    }
+  ],
+  "source_scope": "Five fixed historical TEST cases; parity/reproducibility only, not independent accuracy.",
+  "security": {
+    "method": "High-specificity heuristic credential signatures, no values printed; not proof of absence of every possible secret.",
+    "reachable_commit_N": 48,
+    "history_blobs_scanned": 582,
+    "history_blobs_over_2MB_scanned": 4,
+    "history_findings": [],
+    "tracked_environment_candidates": [],
+    "new_work_findings": [],
+    "new_absolute_local_path_files": [],
+    "safety_review": {
+      "model_deserialization": "Only fixed trusted SHA256-checked original artifact; no upload or arbitrary pickle loading endpoint.",
+      "API_body_limit_bytes": 2048,
+      "unexpected_fields": "Rejected",
+      "nonfinite_and_missing": "Rejected",
+      "production_confidence": "Not displayed",
+      "application_rate_limiting": "No authenticated per-user application limit; public free-tier denial-of-service/quota risk remains.",
+      "headers": "CSP self, DENY frames, nosniff; no secrets supplied to frontend.",
+      "secret_rotation": "No high-specificity match found"
+    },
+    "all_changed_new_files_checked": 10,
+    "changed_new_secret_findings": [],
+    "changed_new_private_paths": [],
+    "locked_production_advisory_receipt": "runtime_dependency_audit.json",
+    "runtime_policy": "Only explicit independently verified CPython patches; scientific dependency pins unchanged. Provider patch selection is outside application control.",
+    "rate_limit_review": "../Rate_Limit_Review.json",
+    "scope_note": "All reachable Git refs plus every changed/new unignored file; high-specificity heuristics are not a proof against arbitrary secret formats."
+  },
+  "existing_unchanged_runtime_CI": {
+    "status": "success",
+    "commit": "869a0a5fbb3036a7a909746d87298ed5676bfffe",
+    "URL": "https://github.com/Ruganji-Prince/AISD-Assignment2-PV-Anomaly-Detection/actions/runs/45359434733"
+  },
+  "manual_redeployment_performed": false,
+  "limits": [
+    "Historical TEST exposure and absent timestamps/external sites",
+    "Singleton rare-fault TRAIN block",
+    "Conditional calibration/uncertainty",
+    "Simulated stress and TRAIN-derived demonstration limitations",
+    "Original10ms/10MiB constraints unmet for full system/model",
+    "No distributed rate limit or safety certification; platform cold/billedCPU not measured"
+  ],
+  "changes_reviewed": {
+    "existing_modified": [
+      "README.md",
+      "technical_evaluation/defense/Rubric_Evidence_Index.md"
+    ],
+    "new_material": "Four requested preparation documents, deterministic demo and compact verification/traceability records",
+    "application_source_changes": 0
+  }
+}

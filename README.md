@@ -3,9 +3,13 @@
 **[Open the PV Anomaly Detection application](https://pv-anomaly-detection-prince-r-k.vercel.app)** | [Web setup and verification](web/README.md)
 
 
+The project compares photovoltaic operating-state classifiers under reduced measurement availability, balancing class-specific detection, physical input requirements, interpretability and resource constraints. The public demonstration uses the preserved four-electrical-channel Random Forest pipeline; retrospective scientific results and unmet engineering targets are reported explicitly.
+
 ## Technical evaluation - professor quick start
 
-Start with the [Professor Quick Start](technical_evaluation/defense/Professor_Quick_Start.md), [Technical Defense Guide](technical_evaluation/defense/Technical_Defense_Guide.md), [43-requirement evidence index](technical_evaluation/defense/Rubric_Evidence_Index.md) and [current refinement report](technical_evaluation/refinement/Final_Report.md). The independent engineering mock assessment is **91/100**, compared with the previous88/100; this is not an official grade. The original dataset, fitted RF model, academic reports and four-step design are preserved.
+For evaluation preparation, follow the [10/20-minute walkthrough](technical_evaluation/defense/Evaluation_Walkthrough.md), [learning guide](technical_evaluation/defense/Student_Learning_Guide.md), [mock examination](technical_evaluation/defense/Mock_Technical_Examination.md) and [submission/offline checklist](technical_evaluation/defense/Submission_Readiness.md). These are preparation documents; historical reports and measured results remain in their original locations.
+
+Start with the [Professor Quick Start](technical_evaluation/defense/Professor_Quick_Start.md), [Technical Defense Guide](technical_evaluation/defense/Technical_Defense_Guide.md), [43-requirement evidence index](technical_evaluation/defense/Rubric_Evidence_Index.md) and [current refinement report](technical_evaluation/refinement/Final_Report.md). The independent engineering mock assessment is **91/100**, compared with the previous 88/100; this is not an official grade. The original dataset, fitted RF model, academic reports and four-step design are preserved.
 
 ```powershell
 uv venv --python 3.14.10 .venv
@@ -14,7 +18,7 @@ uv pip install --python .venv -r technical_evaluation/requirements.txt
 .\.venv\Scripts\python.exe -m uvicorn web.app:app --host 127.0.0.1 --port 8000
 ```
 
-Linux: use `.venv/bin/python`. Quick verification runs30 tests without training, cloud calls or tracked-receipt rewrites. Separate full-science, local API, container and live-cloud commands are in the guide. Actual Linux container runs, full near-neighbor checks,21 public model reconstructions, calibrated-probability reproduction and bounded server/network profiling are evidenced. Historical TEST is retrospective; experimental calibration is not deployed. Original10ms/10MiB targets remain unchanged. See the [demo checklist](technical_evaluation/defense/Live_Demo_Checklist.md) and [questions/answers](technical_evaluation/defense/Expected_Questions_and_Answers.md).
+Linux: use `.venv/bin/python`. Quick verification runs 30 tests without training, cloud calls or tracked-receipt rewrites. Separate full-science, local API, container and live-cloud commands are in the guide. Actual Linux container runs, full near-neighbor checks, 21 public model reconstructions, calibrated-probability reproduction and bounded server/network profiling are evidenced. Historical TEST is retrospective; experimental calibration is not deployed. Original 10 ms/10 MiB targets remain unchanged. See the [demo checklist](technical_evaluation/defense/Live_Demo_Checklist.md) and [questions/answers](technical_evaluation/defense/Expected_Questions_and_Answers.md).
 
 **Current milestone: Models, results and a public web inference application.** The completed Assignment 3 preprocessing workflow is retained below. Original archived LR, Random Forest and LightGBM models have been recovered and evaluated without refitting. The original four-channel RF pipeline is available through a public web application and the local CLI.
 
@@ -24,8 +28,8 @@ Linux: use `.venv/bin/python`. Quick verification runs30 tests without training,
 
 | Property | Description |
 | --- | --- |
-| N Ã— P | 1,373,798 Ã— 7 |
-| Predictors | vdc1, vdc2 (V); idc1, idc2 (A); irr (W/mÂ²); pvt (Â°C) |
+| N × P | 1,373,798 × 7 |
+| Predictors | vdc1, vdc2 (V); idc1, idc2 (A); irr (W/m²); pvt (°C) |
 | Target | f_nv: 0 normal, 1 short circuit, 2 resistive degradation, 3 open circuit, 4 natural building shade |
 | Types | Six continuous measurements and one nominal target; integer labels are not ordinal or continuous |
 
@@ -37,17 +41,17 @@ Preview of the raw photovoltaic monitoring dataset. First ten observations in ex
 
 ## Data-quality findings
 
-The export has zero conventional missing cells and 1,373,798 complete rows. This does not diagnose MCAR/MAR/MNAR or prove uninterrupted monitoring. The 62 paired irr/pvt zeros remain suspicious observations, not confirmed missing values. One irradiance value is -0.0381 W/mÂ²; the existing quality convention clamps -1 â‰¤ irr < 0 to zero. Valid negative Celsius observations remain unchanged. No automatic statistical outlier deletion or capping is used.
+The export has zero conventional missing cells and 1,373,798 complete rows. This does not diagnose MCAR/MAR/MNAR or prove uninterrupted monitoring. The 62 paired irr/pvt zeros remain suspicious observations, not confirmed missing values. One irradiance value is -0.0381 W/m²; the existing quality convention clamps -1 ≤ irr < 0 to zero. Valid negative Celsius observations remain unchanged. No automatic statistical outlier deletion or capping is used.
 
-The irradiance-qualified subset irr â‰¥ 100 W/mÂ² contains 515,958 observations and reproduces literature class counts exactly. This suggests a possible evaluation-population explanation, but the paper does not explicitly document that filtering operation. Low-irradiance rows are retained rather than deleted to force agreement.
+The irradiance-qualified subset irr ≥ 100 W/m² contains 515,958 observations and reproduces literature class counts exactly. This suggests a possible evaluation-population explanation, but the paper does not explicitly document that filtering operation. Low-irradiance rows are retained rather than deleted to force agreement.
 
 ## Preprocessing workflow
 
-Immutable data â†’ schema/quality audit â†’ original ordered partitions â†’ TRAIN-only median/scaling fit â†’ transform validation/test â†’ descriptive diagnostics and output-dimension checks. Paired zeros remain observed. Contingency median imputation and retained-channel indicators are preserved. StandardScaler, native-scale and physical-derived representations are demonstrated without fitting downstream predictors. Robust/MinMax scaling and PCA remain descriptive alternatives; no new transformation or sensor choice is selected.
+Immutable data → schema/quality audit → original ordered partitions → TRAIN-only median/scaling fit → transform validation/test → descriptive diagnostics and output-dimension checks. Paired zeros remain observed. Contingency median imputation and retained-channel indicators are preserved. StandardScaler, native-scale and physical-derived representations are demonstrated without fitting downstream predictors. Robust/MinMax scaling and PCA remain descriptive alternatives; no new transformation or sensor choice is selected.
 
-TRAIN [0,1006129), VALIDATION [1056990,1173967), TEST [1227337,1373798) are retained, with 104,231 separator positions. Sixteen signal-defined blocks are not verified days, sessions or hours. Nominal 1 Hz acquisition, per-second electrical RMS values, one-second environmental averages and the study's 16-day duration do not reconstruct timestamps or uninterrupted spacing. CSV order is source-position order only. The separator remains irr < 100 W/mÂ² for at least 3,600 consecutive source positions, not a verified hour. The reserved partition is not claimed to be historically unseen.
+TRAIN [0,1006129), VALIDATION [1056990,1173967), TEST [1227337,1373798) are retained, with 104,231 separator positions. Sixteen signal-defined blocks are not verified days, sessions or hours. Nominal 1 Hz acquisition, per-second electrical RMS values, one-second environmental averages and the study's 16-day duration do not reconstruct timestamps or uninterrupted spacing. CSV order is source-position order only. The separator remains irr < 100 W/m² for at least 3,600 consecutive source positions, not a verified hour. The reserved partition is not claimed to be historically unseen.
 
-Five TRAIN predictor pairs have |r| â‰¥ 0.85; five VIF values exceed 10. Dependence does not justify automatic deletion. Nominal-target association uses a proportional 50,000-observation TRAIN MI sample; scatterplots use 20,000 TRAIN positions. Exploratory TRAIN-scaled PCA explains approximately 95.17% with two mathematical components; all six physical inputs are still required to calculate them.
+Five TRAIN predictor pairs have |r| ≥ 0.85; five VIF values exceed 10. Dependence does not justify automatic deletion. Nominal-target association uses a proportional 50,000-observation TRAIN MI sample; scatterplots use 20,000 TRAIN positions. Exploratory TRAIN-scaled PCA explains approximately 95.17% with two mathematical components; all six physical inputs are still required to calculate them.
 
 ## Deliverables and execution
 
@@ -58,7 +62,7 @@ Five TRAIN predictor pairs have |r| â‰¥ 0.85; five VIF values exceed 10. Dep
 - [Preprocessing strategy versus reality](phase2_implementation/compliance/Strategy_vs_Reality.md)
 - [Setup and reproduction](phase2_implementation/Reproduction_Guide.md)
 
-After environment setup, run from the root:
+The following legacy preprocessing execution updates notebook outputs and its execution receipt. Run it only in a disposable clone to preserve the approved notebook bytes. The quick verification command above does not rewrite tracked evidence:
 
 ```text
 python -B phase2_implementation/execute_preprocessing.py
@@ -76,12 +80,20 @@ src/preprocessing/                Preprocessing study and shared constants
 phase2_implementation/notebooks/   Executed preprocessing notebook
 phase2_implementation/reports/     Preprocessing report and text
 phase2_implementation/compliance/  Preprocessing evidence and reflection table
-figures/                          Eight 300-DPI diagnostic figures
+figures/                          Preprocessing diagnostics and raw preview
+models/rf_e4/                     Original hash-verified production artifact
+src/inference/                    Input contract and unchanged fitted inference
+web/                              Four-step frontend and FastAPI adapter
+deployment/                       Predetermined reference inputs and outputs
+technical_evaluation/refinement/   Verified experiments and readiness evidence
+technical_evaluation/defense/      Walkthrough, learning guide and examination
 ```
 
 Processed arrays, environments and local review material are excluded. The reflection report records measured stage dimensions, empirical justification and figure-linked decisions; its source and build instructions are included. The analysis makes no deployment-performance, globally minimum-sensing or causal claims. 
 
-## Verified model selection and results
+## Archived model selection and reproduced results
+
+The following tables report the recovered original models. Separate public reconstructions and runtime refinements are documented in the current technical report; neither replaces the production model.
 
 Block-13 VALIDATION only (32,800 observations):
 
@@ -101,15 +113,15 @@ Frozen TEST reporting only (146,461 observations; prior exposure disclosed):
 
 RF E4 is the only one of 21 evaluated channel/family configurations meeting the four archived validation sensing/performance constraints. It requires four electrical channels and eight mathematical inputs. This is not a globally minimum-sensor claim. RF's archived p95 latency is 36.808295 ms and its original artifact is 11.665363312 MiB; both exceed the separate engineering targets. LightGBM's TEST short-circuit recall is .499364676 despite high aggregate hardware-alert recall. Class 4 remains natural building shade, not hardware failure.
 
-[Model-selection report](reports/Model_Selection_and_Deployment.md) ? [Reproduction evidence](reports/model_verification.json) ? [All sensor comparisons](phase2_implementation/stage2/evidence/sensor_ablation_validation.csv) ? [RF confusion matrix](phase2_implementation/stage3/figures/test_confusion_RF__E4.png) ? [Resource comparisons](phase2_implementation/stage3/evidence/final_candidate_comparison.csv)
+[Model-selection report](reports/Model_Selection_and_Deployment.md) | [Reproduction evidence](reports/model_verification.json) | [All sensor comparisons](phase2_implementation/stage2/evidence/sensor_ablation_validation.csv) | [RF confusion matrix](phase2_implementation/stage3/figures/test_confusion_RF__E4.png) | [Resource comparisons](phase2_implementation/stage3/evidence/final_candidate_comparison.csv)
 
 Raw-channel permutation and native LightGBM Tree SHAP use a fixed balanced validation sample; vdc2 has the largest mean permutation loss for each frozen candidate. These model associations are not causal explanations. Simulated isolated dropout is separate from field reliability. Detailed provenance, class-specific errors, resource measurements and limitations are in the report. Reconstructed noise-study models are not substituted for originals.
 
-## Beginning of deployment ? local CLI
+## Local inference CLI
 
 The prototype loads the hash-verified original fitted RF E4 pipeline, validates four voltage/current inputs, and returns a class/label with explicit environmental-shade handling. No true label, timestamp or source index is required. Missing channels are rejected; no calibrated confidence or production readiness is claimed.
 
-Install the exact Python 3.14.7 environment described in [deployment instructions](deployment/README.md), then run from the repository root:
+Use the currently verified Python 3.14.10 environment from the quick start (the original model was trained with Python 3.14.7), then run from the repository root:
 
 ```text
 python -B -m src.inference.cli --input deployment/example_input.json
@@ -117,7 +129,7 @@ python -B -m unittest discover -s tests -v
 python -B -m src.evaluation.verify_recovery
 ```
 
-[Model provenance](models/rf_e4/provenance.json) ? [Actual example output](deployment/example_output.json) ? [Recovery manifest](reports/Recovery_Manifest.json) ? [Acceptance matrix](reports/Acceptance_Matrix.md)
+[Model provenance](models/rf_e4/provenance.json) | [Actual example output](deployment/example_output.json) | [Recovery manifest](reports/Recovery_Manifest.json) | [Acceptance matrix](reports/Acceptance_Matrix.md)
 
 The Phase 1 PDF, Assignment 3 IEEE report, executed preprocessing notebook, original diagnostic figures and raw data remain unchanged. Only the selected original model is published; other original models, saved arrays, environments and backups remain local. The research application is hosted on Vercel. Prospective external evaluation and production monitoring are not completed.
 
@@ -125,10 +137,11 @@ The Phase 1 PDF, Assignment 3 IEEE report, executed preprocessing notebook, orig
 
 The [PV Anomaly Detection dashboard](https://pv-anomaly-detection-prince-r-k.vercel.app) accepts four electrical measurements and calls the original fitted RF E4 pipeline through a Python FastAPI endpoint on Vercel. The responsive HTML/CSS/JavaScript interface includes dataset examples, five-class results, validation, loading and error states. Natural building shade is identified as an environmental condition. No confidence percentages or calibrated probabilities are presented.
 
-Anonymous live API and browser checks pass for all five existing examples, including desktop and 390/320-pixel mobile layouts. The original model SHA-256, fitted preprocessing, parameters and scientific results are unchanged. The interpreter allowlist now additionally accepts independently parity-verified Python 3.14.8 (Vercel build) and 3.14.10 (Vercel function); training used 3.14.7.
+Anonymous live API and browser checks pass for all five existing examples, including desktop and 390/320-pixel mobile layouts. The original model SHA-256, fitted preprocessing, parameters and scientific results are unchanged. Explicitly verified runtimes include Python 3.14.2, 3.14.7, 3.14.8 and 3.14.10; training used 3.14.7. Current compatibility and Linux evidence are recorded in the technical evaluation package.
 
 - [Local execution, architecture and deployment](web/README.md)
-- [Production API verification](web/Production_Verification.json) and [browser verification](web/Browser_Verification.json)
+- [Current API/timing evidence](technical_evaluation/refinement/results/cloud_production_profile.json), [browser evidence](technical_evaluation/refinement/results/production_browser.json) and [passing Linux verification](https://github.com/Ruganji-Prince/AISD-Assignment2-PV-Anomaly-Detection/actions/runs/45359434733)
+- [Historical deployment verification](web/Production_Verification.json) and [historical browser verification](web/Browser_Verification.json)
 - [Runtime compatibility evidence](web/Python31410_Compatibility.json) and [deployment verification summary](web/Verification.json)
 
 The application runs on the Vercel Hobby plan. Hosting the research demonstration does not establish production protection-system reliability, calibration, prospective generalization or operational monitoring.
@@ -137,7 +150,7 @@ The application runs on the Vercel Hobby plan. Hosting the research demonstratio
 
 The web application presents measurements, synthetic/dataset scenarios, animated voltage/current comparisons and actual-class explanations across four client-side steps, with only one main section visible at a time. Synthetic inputs are clearly labeled, generated independently of the model, and separated from historical observations. Selected scenario intent can differ from the real model output; that difference is shown explicitly. No model probabilities or feature contributions are fabricated. See the [dashboard design and scenario methodology](web/README.md).
 
-[Preview layout verification](web/Redesign_Preview_Verification.json) | [Current production browser verification](web/Browser_Verification.json)
+[Preview layout verification](web/Redesign_Preview_Verification.json) | [Production browser evidence](technical_evaluation/refinement/results/production_browser.json)
 
 The guided workflow preserves measurements, source, scenario, chart selections and predictions across Previous/Next and direct navigation. Measurement changes clear stale assessments; reduced-motion and keyboard navigation are supported.
 
