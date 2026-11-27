@@ -1,0 +1,114 @@
+{
+  "status": "VERIFIED",
+  "source_commit": "f2fed2eef63b24ccb126fb102861393aeb5fcef9",
+  "image_id": "sha256:5ec4b2b969b97d8b72df34e1a1bfd048552523391d7039e06e623c43ae1a95fb",
+  "image_uncompressed_bytes": 157863620,
+  "platform": "linux/amd64",
+  "resource_test": {
+    "cpus": 0.5,
+    "memory_GiB": 1,
+    "read_only_root": true,
+    "startup_to_ready_seconds": 2.794901113999998,
+    "snapshot": {
+      "BlockIO": "0B / 0B",
+      "CPUPerc": "0.13%",
+      "Container": "pv-azure-prepublication-1795765805",
+      "ID": "000695b3842d",
+      "MemPerc": "14.77%",
+      "MemUsage": "151.2MiB / 1GiB",
+      "Name": "pv-azure-prepublication-1795765805",
+      "NetIO": "15.7kB / 81.9kB",
+      "PIDs": "9"
+    }
+  },
+  "health": {
+    "status": "ready",
+    "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+    "python_version": "3.14.10"
+  },
+  "reference_cases": [
+    {
+      "case": 0,
+      "class": 0,
+      "all_original_output_fields_match": true
+    },
+    {
+      "case": 1,
+      "class": 1,
+      "all_original_output_fields_match": true
+    },
+    {
+      "case": 2,
+      "class": 2,
+      "all_original_output_fields_match": true
+    },
+    {
+      "case": 3,
+      "class": 3,
+      "all_original_output_fields_match": true
+    },
+    {
+      "case": 4,
+      "class": 4,
+      "all_original_output_fields_match": true
+    }
+  ],
+  "invalid_cases": [
+    "missing",
+    "target",
+    "negative",
+    "nonfinite",
+    "boolean",
+    "text",
+    "duplicate",
+    "oversize"
+  ],
+  "TRAIN_probability_parity": {
+    "N": 200,
+    "max_probability_difference": 2.220446049250313e-16
+  },
+  "runtime": {
+    "python": "3.14.10",
+    "packages": {
+      "pip": "26.2.2",
+      "anyio": "4.16.0",
+      "six": "1.17.0",
+      "opentelemetry-api": "1.45.2",
+      "annotated-types": "0.8.0",
+      "pandas": "3.0.6",
+      "tzdata": "2026.5",
+      "python-dateutil": "3.0.0",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "uvicorn": "0.54.0",
+      "narwhals": "2.27.1",
+      "fastapi": "0.163.1",
+      "annotated-doc": "0.0.7",
+      "typing_extensions": "4.16.0",
+      "threadpoolctl": "3.7.0",
+      "scipy": "1.18.1",
+      "pydantic_core": "2.50.5",
+      "pydantic": "2.14.4",
+      "typing-inspection": "0.4.5",
+      "click": "8.5.1",
+      "scikit-learn": "1.9.1",
+      "cloudpickle": "3.1.2",
+      "starlette": "1.10.0",
+      "packaging": "26.3",
+      "joblib": "1.6.0",
+      "h11": "0.16.0"
+    }
+  },
+  "layer_audit": {
+    "all_layers_inspected": true,
+    "application_files": 22,
+    "all_application_files_match_committed_blob_hashes": true,
+    "unapproved_application_files": [],
+    "private_directory_findings": [],
+    "limitation": "Allowlist/hash checks and heuristic secret checks are not a complete security certification."
+  },
+  "scope": "Prepublication Linux container tests, not Azure execution, latency benchmarking or a comprehensive vulnerability scan.",
+  "workflow_url": "https://github.com/Ruganji-Prince/AISD-Assignment2-PV-Anomaly-Detection/actions/runs/45961106075",
+  "workflow_status": "Container verification passed; later OCI index size-reporting step failed after successful image push.",
+  "size_field_note": "image_uncompressed_bytes is the original script field name; its value is Docker image-inspect Size, not an independently verified uncompressed size. Subsequent scripts label this docker_reported_image_bytes."
+}

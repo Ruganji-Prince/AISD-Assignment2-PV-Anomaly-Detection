@@ -1,0 +1,86 @@
+{
+  "recorded_UTC": "2026-11-27T07:55:22.325294+00:00",
+  "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20%27Azure%20Container%20Apps%27%20and%20armRegionName%20eq%20%27francecentral%27",
+  "currency": "USD",
+  "region": "francecentral",
+  "rates": [
+    {
+      "armRegionName": "francecentral",
+      "productName": "Azure Container Apps",
+      "skuName": "Standard",
+      "meterName": "Standard Requests",
+      "retailPrice": 0.4,
+      "unitOfMeasure": "1M",
+      "currencyCode": "USD",
+      "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "type": "Consumption"
+    },
+    {
+      "armRegionName": "francecentral",
+      "productName": "Azure Container Apps",
+      "skuName": "Standard",
+      "meterName": "Standard Memory Active Usage",
+      "retailPrice": 3e-06,
+      "unitOfMeasure": "1 GiB Second",
+      "currencyCode": "USD",
+      "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "type": "Consumption"
+    },
+    {
+      "armRegionName": "francecentral",
+      "productName": "Azure Container Apps",
+      "skuName": "Standard",
+      "meterName": "Standard Memory Idle Usage",
+      "retailPrice": 3e-06,
+      "unitOfMeasure": "1 GiB Second",
+      "currencyCode": "USD",
+      "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "type": "Consumption"
+    },
+    {
+      "armRegionName": "francecentral",
+      "productName": "Azure Container Apps",
+      "skuName": "Standard",
+      "meterName": "Standard vCPU Active Usage",
+      "retailPrice": 2.4e-05,
+      "unitOfMeasure": "1 Second",
+      "currencyCode": "USD",
+      "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "type": "Consumption"
+    },
+    {
+      "armRegionName": "francecentral",
+      "productName": "Azure Container Apps",
+      "skuName": "Standard",
+      "meterName": "Standard vCPU Idle Usage",
+      "retailPrice": 3e-06,
+      "unitOfMeasure": "1 Second",
+      "currencyCode": "USD",
+      "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "type": "Consumption"
+    }
+  ],
+  "status": "Official retail-rate query, not a subscription invoice or Azure benchmark.",
+  "free_grant_source": "https://learn.microsoft.com/en-us/azure/container-apps/billing",
+  "monthly_subscription_free_grants": {
+    "vCPU_seconds": 180000,
+    "GiB_seconds": 360000,
+    "HTTP_requests": 2000000
+  },
+  "assumptions": {
+    "CPU": 0.5,
+    "memory_GiB": 1,
+    "active_replica_hour_before_grants_USD": 0.054,
+    "hours_covered_by_unused_compute_grants": 100,
+    "30_day_continuously_active_compute_after_grants_USD": 33.48,
+    "continuous_scenario_hours": 720
+  },
+  "excluded_costs": [
+    "Internet egress",
+    "Any optional monitoring or networking features",
+    "HTTP requests above shared grant",
+    "Taxes and currency conversion"
+  ],
+  "student_credit": "User-confirmed USD100 remaining, not independently verified; spending limit On was verified.",
+  "limitation": "Not a zero-cost guarantee or hard maximum. Actual replica lifetime, other subscription usage and billing meters determine charges."
+}

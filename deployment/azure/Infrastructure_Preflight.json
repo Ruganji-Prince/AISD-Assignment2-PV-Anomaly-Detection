@@ -1,0 +1,53 @@
+{
+  "recorded_UTC": "2026-11-27T07:50:45.289108+00:00",
+  "status": "PREPROVISIONING_ONLY",
+  "subscription": {
+    "id": "38a91a22-90a0-45e3-aad6-ce69bf22ed3a",
+    "isDefault": true,
+    "name": "Azure for Students",
+    "state": "Enabled"
+  },
+  "subscription_policies": {
+    "locationPlacementId": "Public_2014-09-01",
+    "quotaId": "AzureForStudents_2018-01-01",
+    "spendingLimit": "On"
+  },
+  "provider": {
+    "namespace": "Microsoft.App",
+    "state": "Registered"
+  },
+  "francecentral_environment_quota": {
+    "current": 0,
+    "limit": 1
+  },
+  "quota_request": "Not submitted: registration made limit 1 available; current usage 0.",
+  "resources": [],
+  "providers_not_registered_by_this_task": {
+    "Microsoft.OperationalInsights": "Not required for proposed logs-destination none; no Log Analytics workspace planned.",
+    "Microsoft.Insights": "No persistent Azure Monitor destination planned."
+  },
+  "student_credit": {
+    "USD": 100,
+    "source": "User-confirmed; remaining credit not independently verified through CLI."
+  },
+  "proposed_not_created": {
+    "region": "francecentral",
+    "resource_group": "rg-pv-anomaly-detection",
+    "environment": "pv-anomaly-env",
+    "application": "pv-anomaly-detection",
+    "profile": "Consumption",
+    "cpu": 0.5,
+    "memory": "1Gi",
+    "min_replicas": 0,
+    "max_replicas": 1,
+    "target_port": 8000,
+    "external_https": true,
+    "logs_destination": "none",
+    "private_endpoint": false,
+    "dedicated_profile": false,
+    "database": false,
+    "paid_registry": false
+  },
+  "authorization": "Separate approval required before resource creation. No quota increase, paid support, subscription upgrade or resource provisioning performed.",
+  "limitation": "Per-environment consumption-core quota is inspectable only after an environment exists and must be checked before starting the app; regional environment quota is sufficient."
+}
