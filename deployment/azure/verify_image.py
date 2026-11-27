@@ -128,7 +128,7 @@ def main():
         runtime = json.loads(command("docker", "exec", name, "python", "-B", "-c",
             "import json,platform;from importlib.metadata import distributions;print(json.dumps({'python':platform.python_version(),'packages':{d.metadata['Name']:d.version for d in distributions()}}))"))
         report = {"status": "VERIFIED", "source_commit": manifest["source_commit"], "image_id": image["Id"],
-                  "image_uncompressed_bytes": image["Size"], "platform": "linux/amd64",
+                  "docker_reported_image_bytes": image["Size"], "platform": "linux/amd64",
                   "resource_test": {"cpus": 0.5, "memory_GiB": 1, "read_only_root": True,
                                     "startup_to_ready_seconds": startup, "snapshot": usage},
                   "health": health, "reference_cases": predictions, "invalid_cases": checks + ["duplicate", "oversize"],
