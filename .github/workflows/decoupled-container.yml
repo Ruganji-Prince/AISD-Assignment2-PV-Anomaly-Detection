@@ -37,7 +37,9 @@ jobs:
       - name: Azure identity and all six CORS origins inside Linux image
         run: |
           set -eu
-          docker run --rm --read-only --tmpfs /tmp:rw,size=64m             --cpus 0.5 --memory 1g --memory-swap 1g             -e PYTHONDONTWRITEBYTECODE=1 -e PV_FRONTEND_ORIGINS             -v "$RUNNER_TEMP/test_backend_identity.py:/app/web/tests/test_backend_identity.py:ro"             "$IMAGE:sha-$SOURCE_COMMIT" python -B -m unittest discover -s /app/web/tests -p test_backend_identity.py -v
+          docker run -d --read-only --tmpfs /tmp:rw,size=64m --cpus 0.5 --memory 1g --memory-swap 1g -e PYTHONDONTWRITEBYTECODE=1 -e PV_FRONTEND_ORIGINS -p 127.0.0.1:8768:8000 --name pv-identity-check "$IMAGE:sha-$SOURCE_COMMIT"
+          trap 'docker logs pv-identity-check; docker rm -f pv-identity-check' EXIT
+          python3 -B deployment/azure_identity/verify_linux_http.py
           echo "PV_IDENTITY_LINUX_TESTS=PASS"
       - name: Existing original Docker regression
         run: python3 technical_evaluation/refinement/container_verify.py --python-version 3.14.10
