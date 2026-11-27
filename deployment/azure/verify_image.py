@@ -67,12 +67,13 @@ def main():
     parser.add_argument("--image", required=True)
     parser.add_argument("--manifest", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--asgi-app", default="web.app:app", choices=["web.app:app", "web.azure_app:app"])
     args = parser.parse_args()
     manifest = json.loads(args.manifest.read_text(encoding="utf8"))
     image = json.loads(command("docker", "image", "inspect", args.image))[0]
     assert image["Architecture"] == "amd64" and image["Os"] == "linux"
     assert image["Config"]["User"] == "appuser"
-    assert image["Config"]["Cmd"] == ["python", "-m", "uvicorn", "web.app:app", "--host", "0.0.0.0", "--port", "8000"]
+    assert image["Config"]["Cmd"] == ["python", "-m", "uvicorn", args.asgi_app, "--host", "0.0.0.0", "--port", "8000"]
     assert image["Config"]["Labels"]["org.opencontainers.image.revision"] == manifest["source_commit"]
     assert not SECRET.search(json.dumps(image["Config"]).encode())
     layer_report = inspect_layers(args.image, manifest)

@@ -1,3 +1,4 @@
+import {ensureReady,fetchExamples,requestPrediction,subscribeService} from './api.js';
 import {scenarioNames,generateScenario} from './scenarios.js';
 import {labels,explanations} from './explanations.js';
 const $=id=>document.getElementById(id);
@@ -51,10 +52,10 @@ function renderResult(result){
 $('prediction-form').addEventListener('submit',async event=>{
  event.preventDefault();if(busy)return;clearError();const values=measurements();
  if(channels.some(k=>!Number.isFinite(values[k])||values[k]<0)){showError('Enter four finite, nonnegative numbers in volts and amperes.');await goToStep(0);$('prediction-form').reportValidity();return;}
- clearResult();setBusy(true);const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),60000);
- try{const response=await fetch('/api/predict',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(values),signal:controller.signal});const result=await response.json();if(!response.ok)throw new Error(typeof result.detail==='string'?result.detail:'Unable to analyze these measurements.');renderResult(result);}
+ clearResult();setBusy(true);
+ try{renderResult(await requestPrediction(values));}
  catch(error){showError(error.name==='AbortError'?'The request timed out. Please try again.':error instanceof TypeError?'Unable to reach the prediction service. Please check the connection.':error.message);}
- finally{clearTimeout(timer);setBusy(false);if(!$('form-error').hidden&&currentStep!==0)await goToStep(0);}
+ finally{setBusy(false);if(!$('form-error').hidden&&currentStep!==0)await goToStep(0);}
 });
 $('example-select').addEventListener('change',()=>{selected=Number($('example-select').value);seed=42;applyScenario();});$('load-example').addEventListener('click',()=>{seed++;applyScenario();});$('synthetic-tab').addEventListener('click',()=>selectSource('synthetic'));$('dataset-tab').addEventListener('click',()=>selectSource('dataset'));
 channels.forEach(k=>$(k).addEventListener('input',()=>{currentSource='manual';selected=null;clearResult();clearError();updateCharts();updateDiagram();}));
@@ -63,9 +64,14 @@ for(const [id,kind] of [['voltage-tab','voltage'],['current-tab','current']])$(i
 for(const id of ['bar1','bar2']){const node=$(id);const show=()=>{$('chart-tooltip').textContent=node.dataset.tooltip;$('chart-tooltip').hidden=false;};node.addEventListener('mouseenter',show);node.addEventListener('focus',show);node.addEventListener('click',show);node.addEventListener('mouseleave',()=>{$('chart-tooltip').hidden=true;});node.addEventListener('blur',()=>{$('chart-tooltip').hidden=true;});}
 async function initialize(){
  scenarioNames.forEach((name,k)=>{const option=document.createElement('option');option.value=k;option.textContent=name;$('example-select').append(option);});applyScenario();
- try{const response=await fetch('/api/examples');if(!response.ok)throw new Error();examples=await response.json();}catch{$('dataset-tab').disabled=true;$('dataset-tab').title='Dataset examples unavailable';}
- try{const response=await fetch('/api/health');if(!response.ok)throw new Error();$('service-status').querySelector('span').textContent='Model ready';}catch{$('service-status').querySelector('span').textContent='Service unavailable';$('service-status').classList.add('unavailable');}
+ try{await ensureReady();examples=await fetchExamples();$('dataset-tab').disabled=false;}catch{$('dataset-tab').disabled=true;$('dataset-tab').title='Connect to the cloud service to load dataset examples.';}
+
 }
+subscribeService((name,message)=>{
+ const node=$('service-status');node.dataset.state=name;node.classList.toggle('unavailable',name==='unavailable');node.querySelector('span').textContent=message;
+ $('service-retry').hidden=name!=='unavailable';$('service-retry').disabled=busy;
+});
+$('service-retry').addEventListener('click',async()=>{if(busy)return;try{await ensureReady({force:true});examples=await fetchExamples();$('dataset-tab').disabled=false;clearError();}catch(error){showError(error.message);}});
 initialize();
 
 function syncNavigation(){
