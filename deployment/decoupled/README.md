@@ -1,8 +1,8 @@
-# Verified decoupled preview - 27 November 2026
+# Decoupled production deployment - 27 November 2026
 
-Status: preview verified; Vercel production cutover and main merge require separate approval.
+Status: production cutover completed and verified. Production Vercel deployment `dpl_H77uanaDrGutfBv5vJkb5825u3Gi` serves the verified static frontend; GitHub `main` integration was completed in merge commit `d8e1b52860f587c0cf7e3d2be07dc555c2f139e6`.
 
-[Static frontend preview](https://pv-anomaly-detection-pbyhom77a-prince-r-k.vercel.app) calls the [existing Azure API](https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io) directly. Production remains the existing Vercel application. No new cloud resource or paid service was added.
+[Production static frontend](https://pv-anomaly-detection-prince-r-k.vercel.app) calls the [Azure inference API](https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io) directly. The [original verified preview](https://pv-anomaly-detection-pbyhom77a-prince-r-k.vercel.app) remains preserved. Original legacy Vercel deployment `dpl_D24pfF7JJsBL5PRSy8VRQFAeXcpU` remains available for rollback. No new cloud resource or paid service was added.
 
 ## Evidence and architecture
 
@@ -35,13 +35,13 @@ python -B -m deployment.decoupled.verify_integrity
 
 These groups total 45 tests. Existing historical full verification receipts deliberately retain their original UI hashes; their old all-files freeze check is not a current extension acceptance test. The scoped checker protects 437 existing files and verifies the original model, CSV, approved PDF and protected tag without changing historical baselines.
 
-For browser tests install the existing Playwright dependency documented in [web setup](../../web/README.md), set `PV_APP_URL` to the preview, `PV_API_URL` to Azure and `PV_EVIDENCE_DIR` to an external evidence directory, then run `node deployment/decoupled/browser_verify.cjs`. The existing `node web/tests-browser/smoke.cjs` runs the four-step regression at five viewports. `python -m deployment.decoupled.verify_preview` performs bounded live checks; set `PV_NODE` and `PV_VERCEL_CLI` to installed executables and authenticate the existing Vercel/Azure accounts. It writes current verification evidence; preserve published receipts before rerunning.
+For browser tests install the existing Playwright dependency documented in [web setup](../../web/README.md), set `PV_APP_URL` to the production frontend (or the preserved preview), `PV_API_URL` to Azure and `PV_EVIDENCE_DIR` to an external evidence directory, then run `node deployment/decoupled/browser_verify.cjs`. The existing `node web/tests-browser/smoke.cjs` runs the four-step regression at five viewports. `python -m deployment.decoupled.verify_preview` performs bounded live checks; set `PV_NODE` and `PV_VERCEL_CLI` to installed executables and authenticate the existing Vercel/Azure accounts. It writes current verification evidence; preserve published receipts before rerunning.
 
 ## Preview build and release boundary
 
 Build with `python -m frontend.build --output <fresh-project>/.vercel/output --manifest <external-manifest.json>`. Copy `frontend/vercel.json` to the fresh project, link only the existing Vercel project, then run `vercel deploy --prebuilt --environment preview --scope prince-r-k` there. Upload only that static project, never the repository or model. Add each exact new preview origin to the existing Azure CORS allowlist before use; no wildcard is permitted. Preserve local development and approved production origins. No secret belongs in the public API configuration.
 
-The current Vercel Git integration is still configured for FastAPI on main. The unapplied `frontend/production.vercel.json` is a reviewed candidate for a manually prebuilt static release policy, not an already-tested Git build pipeline. No production command or main merge is authorized at this checkpoint.
+**Current release policy:** the Vercel project framework is `null`, automatic Git deployments are disabled, and a fail-closed project-level source-build command is set. Root [`vercel.json`](../../vercel.json) also disables Git deployments and rejects source builds; verified static prebuilt output is the approved release path. The historical `frontend/production.vercel.json` is a candidate reference, not the effective root production configuration. Production promotion and main integration have already occurred. Further releases require independent verification; do not rerun the previous cutover.
 
 ## Limitations
 
