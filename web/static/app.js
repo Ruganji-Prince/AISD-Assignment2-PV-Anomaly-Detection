@@ -38,7 +38,7 @@ function selectSource(next){
  $('load-example').hidden=next==='dataset';$('example-select').value='0';
  const panel=$('scenario-panel');panel.getAnimations().forEach(x=>x.cancel());if(!matchMedia('(prefers-reduced-motion:reduce)').matches)panel.animate([{opacity:.35},{opacity:1}],{duration:200});applyScenario();
 }
-function setBusy(value){busy=value;for(const id of [...channels,'predict-button','reset-button','load-example','example-select','synthetic-tab','dataset-tab','assessment-run'])$(id).disabled=value;$('loading-spinner').hidden=!value;$('button-icon').hidden=value;$('button-label').textContent=value?'Analyzing measurements...':'Run model inference';$('step-3').setAttribute('aria-busy',String(value));$('assessment-run').textContent=value?'Analyzing measurements...':'Run inference';if(value)$('prediction-status').textContent='Analyzing measurements...';}
+function setBusy(value){busy=value;for(const id of [...channels,'service-retry','predict-button','reset-button','load-example','example-select','synthetic-tab','dataset-tab','assessment-run'])$(id).disabled=value;$('loading-spinner').hidden=!value;$('button-icon').hidden=value;$('button-label').textContent=value?'Analyzing measurements...':'Run model inference';$('step-3').setAttribute('aria-busy',String(value));$('assessment-run').textContent=value?'Analyzing measurements...':'Run inference';if(value)$('prediction-status').textContent='Analyzing measurements...';}
 function renderResult(result){
  const k=result.predicted_class;if(!Number.isInteger(k)||!explanations[k])throw new Error('The service returned an invalid prediction.');
  const content=explanations[k];$('step-3').dataset.class=String(k);$('step-3').dataset.category=result.fault_category;
