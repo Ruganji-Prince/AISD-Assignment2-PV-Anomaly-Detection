@@ -1,0 +1,56 @@
+{
+  "status": "VERIFIED",
+  "python": "3.14.10",
+  "actual_model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+  "TRAIN_reference_N": 200,
+  "TRAIN_max_probability_difference": 3.3306690738754696e-16,
+  "five_reference_probabilities": [
+    [
+      0.871468207486615,
+      0,
+      0,
+      0,
+      0.12853179251338473
+    ],
+    [
+      0.0015761485392156325,
+      0.8181753059476299,
+      0.15329459273784588,
+      0.02622964366204681,
+      0.0007243091132620211
+    ],
+    [
+      0.1152690751844842,
+      0.13440393787867513,
+      0.74234776834565,
+      0.007156058986618965,
+      0.0008231596045717725
+    ],
+    [
+      0.0011927759691153276,
+      0.008898652606912713,
+      0.06352727926119309,
+      0.9263812921627789,
+      0
+    ],
+    [
+      0.08500335838404789,
+      0,
+      0,
+      0,
+      0.9149966416159521
+    ]
+  ],
+  "five_predicted_classes": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "scope": "Administrative read-only exec in actual Azure revision; no fitting, file writes or API probability exposure.",
+  "revision": "pv-anomaly-detection--rf-e4-940f5e2",
+  "container": "pv-inference",
+  "five_reference_max_probability_difference_vs_local": 2.220446049250313e-16,
+  "recorded_UTC": "2026-11-27T08:33:01.574190+00:00"
+}

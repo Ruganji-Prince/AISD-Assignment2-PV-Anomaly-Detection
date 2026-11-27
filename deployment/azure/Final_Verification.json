@@ -1,0 +1,108 @@
+{
+  "status": "VERIFIED_PROTOTYPE_WITH_DISCLOSED_LIMITATIONS",
+  "recorded_UTC": "2026-11-27T08:56:04.336951+00:00",
+  "automated_tests": 39,
+  "existing_tests": 30,
+  "Azure_safety_cost_tests": 9,
+  "dependency_consistency_packages": 41,
+  "original_submission_files_protected": 375,
+  "benchmark": {
+    "measured_Azure_requests": 42,
+    "Azure_successes": 42,
+    "measured_Vercel_requests": 42,
+    "Vercel_successes": 42,
+    "CSV_rows_including_warmups": 90,
+    "component_statistic_groups_recomputed": 28
+  },
+  "live_validation": {
+    "fixed_reference_cases_per_cloud": 5,
+    "invalid_cases_per_cloud": 10,
+    "original_asset_byte_checks_per_cloud": 6,
+    "browser_viewport_sizes": 5
+  },
+  "Azure_probability_parity": {
+    "TRAIN_reference_rows": 200,
+    "absolute_tolerance": 1e-12,
+    "maximum_difference": 3.3306690738754696e-16
+  },
+  "scale_from_zero": {
+    "before_replicas": 0,
+    "after_replicas": 1,
+    "first_request_ms": 56941.9285999611,
+    "HTTP": 200,
+    "full_platform_cold_start_isolated": false
+  },
+  "approved_config": {
+    "vCPU": 0.5,
+    "GiB": 1,
+    "replicas": [
+      0,
+      1
+    ],
+    "HTTPS": true,
+    "port": 8000,
+    "persistent_Log_Analytics": false
+  },
+  "binary_review": [
+    {
+      "path": "deployment/azure/figures/Latency_Comparison.png",
+      "dimensions": [
+        2600,
+        700
+      ],
+      "bytes": 97088,
+      "sha256": "1b5a00b6e97475b9bf8bf260aad601cb8f930cc0ab4338bafb3efa4dff027796",
+      "source": "Saved measured latency/resource data or explicitly labeled cost scenarios; original scientific figures untouched"
+    },
+    {
+      "path": "deployment/azure/figures/Latency_Distributions.png",
+      "dimensions": [
+        2200,
+        800
+      ],
+      "bytes": 117350,
+      "sha256": "c4fec2eaaeac362902f01bcdf915d0f0ad590917997419d33ba5a95707f5a202",
+      "source": "Saved measured latency/resource data or explicitly labeled cost scenarios; original scientific figures untouched"
+    },
+    {
+      "path": "deployment/azure/figures/Monthly_Cost_Scenarios.png",
+      "dimensions": [
+        1600,
+        800
+      ],
+      "bytes": 64688,
+      "sha256": "2931291f7bf2d238b87052068c1a889ae376692efecb773f67d24039161bbd0d",
+      "source": "Saved measured latency/resource data or explicitly labeled cost scenarios; original scientific figures untouched"
+    },
+    {
+      "path": "deployment/azure/figures/Resource_Usage.png",
+      "dimensions": [
+        2000,
+        700
+      ],
+      "bytes": 118883,
+      "sha256": "82ada677d982158312cef5cab960f7b66082687ea8f5b5bbf3de0d9faa0e571b",
+      "source": "Saved measured latency/resource data or explicitly labeled cost scenarios; original scientific figures untouched"
+    }
+  ],
+  "dependency_scan": "OSV Python-package lookup completed with no matches; base OS/image vulnerability scan not completed.",
+  "remaining_limitations": [
+    "Original10ms complete-path and10MiB model targets remain unmet.",
+    "56.94-second first-access observation is close to unchanged60-second frontend prediction timeout; no cold-start bound or SLA.",
+    "ActualCost has no rows yet; billed usage and remaining student credit are not independently known.",
+    "Per-process capacity is not distributed IP/user rate limiting.",
+    "Historical TEST reference cases are deployment parity, not independent generalization."
+  ],
+  "publication_note": "This precommit receipt records executed checks; final GitHub HEAD, remote file contents, service health and clean status are verified separately after normal branch push.",
+  "relative_links": {
+    "relative_links_checked": 823,
+    "failures": []
+  },
+  "publication_safety": {
+    "files_reviewed": 65,
+    "largest_file_bytes": 118883,
+    "credential_or_private_path_findings": [],
+    "heuristic_scan_not_security_certification": true,
+    "synthetic_key_header_test_fixture": "Header string only, no key material; not included in image."
+  }
+}

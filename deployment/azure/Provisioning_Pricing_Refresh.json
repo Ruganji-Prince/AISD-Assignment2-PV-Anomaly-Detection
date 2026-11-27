@@ -1,0 +1,16 @@
+{
+  "recorded_UTC": "2026-11-27T08:04:35.957728+00:00",
+  "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20%27Azure%20Container%20Apps%27%20and%20armRegionName%20eq%20%27francecentral%27",
+  "region": "francecentral",
+  "rates_USD": {
+    "Standard Requests": 0.4,
+    "Standard Memory Active Usage": 3e-06,
+    "Standard NC T4 v3 GPU Usage": 9.1e-05,
+    "Standard NC A100 v4 GPU Usage": 0.000661,
+    "Standard Memory Idle Usage": 3e-06,
+    "Standard vCPU Active Usage": 2.4e-05,
+    "Standard vCPU Idle Usage": 3e-06
+  },
+  "approved_image_digest": "sha256:51be78bd92b20af85628dd07009afd0cdad5689353fcf8a621604b7ea82e70e6",
+  "authorization": "User explicitly approved named resource creation at 0.5 vCPU / 1 GiB / 0-1 replicas, with no scope expansion."
+}

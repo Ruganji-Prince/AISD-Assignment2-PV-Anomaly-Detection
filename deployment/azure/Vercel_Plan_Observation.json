@@ -1,0 +1,8 @@
+{
+  "recorded_UTC": "2026-11-27T08:53:46.495889+00:00",
+  "source_command": "Vercel CLI api /v2/teams/team_6XiekpkqcG4ZdtMZtV7k3vA6",
+  "team": "prince-r-k",
+  "observed_plan": "hobby",
+  "source_scope": "Read-only current-stage CLI execution; only plan and team slug retained. No Vercel configuration or deployment action performed.",
+  "actual_project_billing": "Not retrieved"
+}

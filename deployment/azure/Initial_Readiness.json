@@ -1,0 +1,18 @@
+{
+  "status": "READY",
+  "URL": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io",
+  "health": {
+    "status": "ready",
+    "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+    "python_version": "3.14.10"
+  },
+  "attempts": [
+    {
+      "attempt": 0,
+      "HTTP": 200,
+      "network_ms": 12147.957899840549,
+      "UTC": "2026-11-27T08:26:41.975919+00:00"
+    }
+  ],
+  "limitation": "Observed readiness requests, not a controlled or confirmed full platform cold-start measurement."
+}

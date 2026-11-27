@@ -1,0 +1,99 @@
+{
+  "location": "francecentral",
+  "tags": {
+    "project": "pv-anomaly-detection",
+    "purpose": "academic-evaluation"
+  },
+  "properties": {
+    "managedEnvironmentId": "/subscriptions/38a91a22-90a0-45e3-aad6-ce69bf22ed3a/resourceGroups/rg-pv-anomaly-detection/providers/Microsoft.App/managedEnvironments/pv-anomaly-env",
+    "workloadProfileName": "Consumption",
+    "configuration": {
+      "activeRevisionsMode": "Single",
+      "ingress": {
+        "external": true,
+        "targetPort": 8000,
+        "allowInsecure": false,
+        "transport": "auto"
+      },
+      "secrets": []
+    },
+    "template": {
+      "revisionSuffix": "rf-e4-940f5e2",
+      "containers": [
+        {
+          "name": "pv-inference",
+          "image": "ghcr.io/ruganji-prince/pv-anomaly-detection@sha256:51be78bd92b20af85628dd07009afd0cdad5689353fcf8a621604b7ea82e70e6",
+          "resources": {
+            "cpu": 0.5,
+            "memory": "1Gi"
+          },
+          "env": [
+            {
+              "name": "PYTHONDONTWRITEBYTECODE",
+              "value": "1"
+            },
+            {
+              "name": "PYTHONUNBUFFERED",
+              "value": "1"
+            }
+          ],
+          "probes": [
+            {
+              "type": "Startup",
+              "httpGet": {
+                "path": "/api/health",
+                "port": 8000,
+                "scheme": "HTTP"
+              },
+              "initialDelaySeconds": 10,
+              "periodSeconds": 5,
+              "timeoutSeconds": 5,
+              "failureThreshold": 24,
+              "successThreshold": 1
+            },
+            {
+              "type": "Readiness",
+              "httpGet": {
+                "path": "/api/health",
+                "port": 8000,
+                "scheme": "HTTP"
+              },
+              "initialDelaySeconds": 5,
+              "periodSeconds": 10,
+              "timeoutSeconds": 5,
+              "failureThreshold": 3,
+              "successThreshold": 1
+            },
+            {
+              "type": "Liveness",
+              "tcpSocket": {
+                "port": 8000
+              },
+              "initialDelaySeconds": 30,
+              "periodSeconds": 30,
+              "timeoutSeconds": 5,
+              "failureThreshold": 3,
+              "successThreshold": 1
+            }
+          ]
+        }
+      ],
+      "scale": {
+        "minReplicas": 0,
+        "maxReplicas": 1,
+        "cooldownPeriod": 300,
+        "pollingInterval": 30,
+        "rules": [
+          {
+            "name": "http-requests",
+            "http": {
+              "metadata": {
+                "concurrentRequests": "2"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

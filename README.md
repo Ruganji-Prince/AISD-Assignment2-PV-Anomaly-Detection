@@ -5,6 +5,16 @@
 
 The project compares photovoltaic operating-state classifiers under reduced measurement availability, balancing class-specific detection, physical input requirements, interpretability and resource constraints. The public demonstration uses the preserved four-electrical-channel Random Forest pipeline; retrospective scientific results and unmet engineering targets are reported explicitly.
 
+## Azure cloud engineering extension - 27 November 2026
+
+[Open Azure application](https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io) | [Existing Vercel application](https://pv-anomaly-detection-prince-r-k.vercel.app) | [Azure setup and evidence](deployment/azure/README.md)
+
+The original RF E4 pipeline is hosted in a Linux Consumption container in France Central at 0.5 vCPU / 1 GiB, minimum zero and maximum one replica, using the verified public GHCR immutable image. Five fixed cases and 200-row numerical parity passed; all 42 measured requests per platform succeeded in a matched Azure/Vercel run. Warm sequential network p95 was 248.99 ms / 448.21 ms; server p95 was 16.62 ms / 16.71 ms. These serving measurements do not establish independent model accuracy or platform-wide superiority.
+
+**First-access limitation:** a request after observed zero replicas took 56.94 seconds. Open the app and wait for Model ready before demonstration; the unchanged prediction timeout is 60 seconds. No always-on capacity or scheduled warming was enabled. The original 10 ms / 10 MiB targets remain unmet, and the 91/100 mock assessment is unchanged.
+
+See [architecture](deployment/azure/Architecture.md), [container provenance](deployment/azure/Container_Provenance.json), [cloud comparison and figures](deployment/azure/Cloud_Comparison.md), [latency evidence](deployment/azure/live/Latency_Summary.json), [cost analysis](deployment/azure/Cost_Analysis.md), [security](deployment/azure/Security_Verification.md), [reproduction](deployment/azure/README.md#reproduction), [Rubric 5 acceptance](deployment/azure/Acceptance_Matrix.md) and the [five-minute professor demonstration](deployment/azure/Professor_Azure_Demonstration.md). ActualCost currently has no reported rows; charges and remaining student credit remain unverified. The protected submission tag and scientific artifacts remain unchanged; Azure is a subsequent engineering extension on the existing engineering branch.
+
 ## Technical evaluation - professor quick start
 
 For evaluation preparation, follow the [10/20-minute walkthrough](technical_evaluation/defense/Evaluation_Walkthrough.md), [learning guide](technical_evaluation/defense/Student_Learning_Guide.md), [mock examination](technical_evaluation/defense/Mock_Technical_Examination.md) and [submission/offline checklist](technical_evaluation/defense/Submission_Readiness.md). These are preparation documents; historical reports and measured results remain in their original locations.

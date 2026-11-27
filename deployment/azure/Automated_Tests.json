@@ -1,0 +1,20 @@
+{
+  "recorded_UTC": "2026-11-27T08:49:59.559390+00:00",
+  "status": "PASS",
+  "existing_test_count": 30,
+  "Azure_scope_context_test_count": 9,
+  "commands": [
+    "python -B -m unittest deployment.azure.test_context deployment.azure.test_deployment -v",
+    "python -B -m technical_evaluation.refinement.verify"
+  ],
+  "original_model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+  "protected_prior_files": 293,
+  "prior_hash_mismatches": [],
+  "relative_links_at_execution": {
+    "relative_links_checked": 726,
+    "failures": []
+  },
+  "limitations": "These local tests do not claim a live Azure endpoint, browser behavior, Azure cost or platform cold-start measurement.",
+  "Azure_scope_includes": "Runtime allowlist, scope expansion/unknown quota rejection, and compute/request free-grant boundaries",
+  "total_automated_test_count": 39
+}

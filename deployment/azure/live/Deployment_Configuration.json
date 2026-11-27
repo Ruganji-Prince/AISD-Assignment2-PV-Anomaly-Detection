@@ -1,0 +1,132 @@
+{
+  "recorded_UTC": "2026-11-27T08:27:46.395321+00:00",
+  "resource_id": "/subscriptions/38a91a22-90a0-45e3-aad6-ce69bf22ed3a/resourceGroups/rg-pv-anomaly-detection/providers/Microsoft.App/containerApps/pv-anomaly-detection",
+  "region": "France Central",
+  "resource_group": "rg-pv-anomaly-detection",
+  "environment": "pv-anomaly-env",
+  "environment_mode": "WorkloadProfiles",
+  "environment_provisioning_state": "Succeeded",
+  "profiles": [
+    {
+      "enableFips": false,
+      "name": "Consumption",
+      "workloadProfileType": "Consumption"
+    }
+  ],
+  "logs_configuration": {
+    "destination": null,
+    "logAnalyticsConfiguration": null
+  },
+  "application": "pv-anomaly-detection",
+  "provisioning_state": "Succeeded",
+  "running_status": "Running",
+  "latest_revision": "pv-anomaly-detection--rf-e4-940f5e2",
+  "latest_ready_revision": "pv-anomaly-detection--rf-e4-940f5e2",
+  "workload_profile": "Consumption",
+  "ingress": {
+    "additionalPortMappings": null,
+    "allowInsecure": false,
+    "clientCertificateMode": null,
+    "corsPolicy": null,
+    "customDomains": null,
+    "exposedPort": 0,
+    "external": true,
+    "fqdn": "pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io",
+    "ipSecurityRestrictions": null,
+    "stickySessions": null,
+    "targetPort": 8000,
+    "traffic": [
+      {
+        "latestRevision": true,
+        "weight": 100
+      }
+    ],
+    "transport": "Auto"
+  },
+  "active_revisions_mode": "Single",
+  "secret_count": 0,
+  "registry_credentials_configured": false,
+  "template": {
+    "containers": [
+      {
+        "env": [
+          {
+            "name": "PYTHONDONTWRITEBYTECODE",
+            "value": "1"
+          },
+          {
+            "name": "PYTHONUNBUFFERED",
+            "value": "1"
+          }
+        ],
+        "image": "ghcr.io/ruganji-prince/pv-anomaly-detection@sha256:51be78bd92b20af85628dd07009afd0cdad5689353fcf8a621604b7ea82e70e6",
+        "name": "pv-inference",
+        "probes": [
+          {
+            "failureThreshold": 3,
+            "initialDelaySeconds": 30,
+            "periodSeconds": 30,
+            "successThreshold": 1,
+            "tcpSocket": {
+              "port": 8000
+            },
+            "timeoutSeconds": 5,
+            "type": "Liveness"
+          },
+          {
+            "failureThreshold": 3,
+            "httpGet": {
+              "path": "/api/health",
+              "port": 8000,
+              "scheme": "HTTP"
+            },
+            "initialDelaySeconds": 5,
+            "periodSeconds": 10,
+            "successThreshold": 1,
+            "timeoutSeconds": 5,
+            "type": "Readiness"
+          },
+          {
+            "failureThreshold": 24,
+            "httpGet": {
+              "path": "/api/health",
+              "port": 8000,
+              "scheme": "HTTP"
+            },
+            "initialDelaySeconds": 10,
+            "periodSeconds": 5,
+            "successThreshold": 1,
+            "timeoutSeconds": 5,
+            "type": "Startup"
+          }
+        ],
+        "resources": {
+          "cpu": 0.5,
+          "ephemeralStorage": "2Gi",
+          "memory": "1Gi"
+        }
+      }
+    ],
+    "initContainers": null,
+    "revisionSuffix": "rf-e4-940f5e2",
+    "scale": {
+      "cooldownPeriod": 300,
+      "maxReplicas": 1,
+      "minReplicas": 0,
+      "pollingInterval": 30,
+      "rules": [
+        {
+          "http": {
+            "metadata": {
+              "concurrentRequests": "2"
+            }
+          },
+          "name": "http-requests"
+        }
+      ]
+    },
+    "serviceBinds": null,
+    "terminationGracePeriodSeconds": null,
+    "volumes": null
+  }
+}

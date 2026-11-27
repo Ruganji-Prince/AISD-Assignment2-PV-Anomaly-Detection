@@ -1,0 +1,409 @@
+{
+  "status": "VERIFIED",
+  "recorded_UTC": "2026-11-27T08:27:56.062571+00:00",
+  "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+  "platforms": {
+    "Azure": {
+      "URL": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io",
+      "health": {
+        "status": "ready",
+        "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+        "python_version": "3.14.10"
+      },
+      "assets": [
+        {
+          "path": "index.html",
+          "sha256": "effb379d5fbf3a9f98ebadf966016b1949f854c130c69519b59b8d2dd3e03b33",
+          "exact_original_bytes": true
+        },
+        {
+          "path": "app.js",
+          "sha256": "f2c8c419b67c789ddd7c5ace03d538fd0da070e8076a573b6a461c34ddf4b8b4",
+          "exact_original_bytes": true
+        },
+        {
+          "path": "style.css",
+          "sha256": "6176bcd41499221aba48a845c99d3d884c920f4aa08f72e6b7a9bf252ccbba8b",
+          "exact_original_bytes": true
+        },
+        {
+          "path": "scenarios.js",
+          "sha256": "b7e43e97957e7b4f99b774ada7a6b363a823c96bdf7df5be54ccb5886c0aae25",
+          "exact_original_bytes": true
+        },
+        {
+          "path": "explanations.js",
+          "sha256": "8303706f1ff787165ba3923dcdea8fa04d9e06d5c601941f9f9e423ea327ab2e",
+          "exact_original_bytes": true
+        },
+        {
+          "path": "favicon.svg",
+          "sha256": "e720e9f2e3ee4996b38fd472e4e95d4e023a960a99aa61d43d13894cf1916142",
+          "exact_original_bytes": true
+        }
+      ],
+      "reference_cases": [
+        {
+          "case": 0,
+          "input": {
+            "vdc1": 300.031,
+            "vdc2": 329.544,
+            "idc1": 0.2247,
+            "idc2": 0.1272
+          },
+          "reference_class": 0,
+          "output": {
+            "predicted_class": 0,
+            "label": "normal",
+            "hardware_fault_class": false,
+            "environmental_shade": false,
+            "model_version": "archived-RF__E4-cf5d0ac4",
+            "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+            "range_warnings": [],
+            "fault_category": "normal",
+            "warnings": []
+          },
+          "server_timing": "body_validate;dur=0.3303, init;dur=0.0000, validation;dur=0.0074, frame;dur=0.4826, preprocessing;dur=20.1150, forest;dur=10.8182, server;dur=33.1302"
+        },
+        {
+          "case": 1,
+          "input": {
+            "vdc1": 256.461,
+            "vdc2": 208.699,
+            "idc1": 9.1373,
+            "idc2": 8.4463
+          },
+          "reference_class": 1,
+          "output": {
+            "predicted_class": 1,
+            "label": "short circuit",
+            "hardware_fault_class": true,
+            "environmental_shade": false,
+            "model_version": "archived-RF__E4-cf5d0ac4",
+            "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+            "range_warnings": [],
+            "fault_category": "hardware_fault",
+            "warnings": []
+          },
+          "server_timing": "body_validate;dur=0.4051, init;dur=0.0000, validation;dur=0.0080, frame;dur=0.4293, preprocessing;dur=5.4343, forest;dur=5.8790, server;dur=13.1552"
+        },
+        {
+          "case": 2,
+          "input": {
+            "vdc1": 259.212,
+            "vdc2": 246.611,
+            "idc1": 9.0792,
+            "idc2": 8.3303
+          },
+          "reference_class": 2,
+          "output": {
+            "predicted_class": 2,
+            "label": "resistive degradation",
+            "hardware_fault_class": true,
+            "environmental_shade": false,
+            "model_version": "archived-RF__E4-cf5d0ac4",
+            "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+            "range_warnings": [],
+            "fault_category": "hardware_fault",
+            "warnings": []
+          },
+          "server_timing": "body_validate;dur=0.3195, init;dur=0.0000, validation;dur=0.0086, frame;dur=0.3770, preprocessing;dur=5.5399, forest;dur=6.8795, server;dur=13.9896"
+        },
+        {
+          "case": 3,
+          "input": {
+            "vdc1": 262.91,
+            "vdc2": 0.8866,
+            "idc1": 8.9742,
+            "idc2": 0.0468
+          },
+          "reference_class": 3,
+          "output": {
+            "predicted_class": 3,
+            "label": "open circuit",
+            "hardware_fault_class": true,
+            "environmental_shade": false,
+            "model_version": "archived-RF__E4-cf5d0ac4",
+            "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+            "range_warnings": [],
+            "fault_category": "hardware_fault",
+            "warnings": []
+          },
+          "server_timing": "body_validate;dur=0.3858, init;dur=0.0000, validation;dur=0.0087, frame;dur=0.3330, preprocessing;dur=5.6125, forest;dur=6.2105, server;dur=13.3968"
+        },
+        {
+          "case": 4,
+          "input": {
+            "vdc1": 334.823,
+            "vdc2": 335.877,
+            "idc1": 0.4303,
+            "idc2": 0.2274
+          },
+          "reference_class": 4,
+          "output": {
+            "predicted_class": 4,
+            "label": "natural building shade",
+            "hardware_fault_class": false,
+            "environmental_shade": true,
+            "model_version": "archived-RF__E4-cf5d0ac4",
+            "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+            "range_warnings": [],
+            "fault_category": "environmental_condition",
+            "warnings": []
+          },
+          "server_timing": "body_validate;dur=0.3002, init;dur=0.0000, validation;dur=0.0094, frame;dur=0.3272, preprocessing;dur=11.6403, forest;dur=11.2961, server;dur=24.6825"
+        }
+      ],
+      "invalid_checks": [
+        {
+          "case": "missing",
+          "HTTP": 422
+        },
+        {
+          "case": "target",
+          "HTTP": 422
+        },
+        {
+          "case": "negative",
+          "HTTP": 422
+        },
+        {
+          "case": "boolean",
+          "HTTP": 422
+        },
+        {
+          "case": "text",
+          "HTTP": 422
+        },
+        {
+          "case": "null",
+          "HTTP": 422
+        },
+        {
+          "case": "nonfinite",
+          "HTTP": 422
+        },
+        {
+          "case": "duplicate",
+          "HTTP": 422
+        },
+        {
+          "case": "malformed",
+          "HTTP": 422
+        },
+        {
+          "case": "oversize",
+          "HTTP": 413
+        }
+      ],
+      "GET_predict_HTTP": 405,
+      "HTTPS_certificate_verified": true,
+      "timing_headers": true,
+      "no_probability_or_calibrated_confidence_exposed": true
+    },
+    "Vercel": {
+      "URL": "https://pv-anomaly-detection-prince-r-k.vercel.app",
+      "health": {
+        "status": "ready",
+        "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+        "python_version": "3.14.10"
+      },
+      "assets": [
+        {
+          "path": "index.html",
+          "sha256": "effb379d5fbf3a9f98ebadf966016b1949f854c130c69519b59b8d2dd3e03b33",
+          "exact_original_bytes": true
+        },
+        {
+          "path": "app.js",
+          "sha256": "f2c8c419b67c789ddd7c5ace03d538fd0da070e8076a573b6a461c34ddf4b8b4",
+          "exact_original_bytes": true
+        },
+        {
+          "path": "style.css",
+          "sha256": "6176bcd41499221aba48a845c99d3d884c920f4aa08f72e6b7a9bf252ccbba8b",
+          "exact_original_bytes": true
+        },
+        {
+          "path": "scenarios.js",
+          "sha256": "b7e43e97957e7b4f99b774ada7a6b363a823c96bdf7df5be54ccb5886c0aae25",
+          "exact_original_bytes": true
+        },
+        {
+          "path": "explanations.js",
+          "sha256": "8303706f1ff787165ba3923dcdea8fa04d9e06d5c601941f9f9e423ea327ab2e",
+          "exact_original_bytes": true
+        },
+        {
+          "path": "favicon.svg",
+          "sha256": "e720e9f2e3ee4996b38fd472e4e95d4e023a960a99aa61d43d13894cf1916142",
+          "exact_original_bytes": true
+        }
+      ],
+      "reference_cases": [
+        {
+          "case": 0,
+          "input": {
+            "vdc1": 300.031,
+            "vdc2": 329.544,
+            "idc1": 0.2247,
+            "idc2": 0.1272
+          },
+          "reference_class": 0,
+          "output": {
+            "predicted_class": 0,
+            "label": "normal",
+            "hardware_fault_class": false,
+            "environmental_shade": false,
+            "model_version": "archived-RF__E4-cf5d0ac4",
+            "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+            "range_warnings": [],
+            "fault_category": "normal",
+            "warnings": []
+          },
+          "server_timing": "body_validate;dur=0.4351, init;dur=0.0000, validation;dur=0.0116, frame;dur=0.6297, preprocessing;dur=28.5556, forest;dur=12.6866, server;dur=44.1789"
+        },
+        {
+          "case": 1,
+          "input": {
+            "vdc1": 256.461,
+            "vdc2": 208.699,
+            "idc1": 9.1373,
+            "idc2": 8.4463
+          },
+          "reference_class": 1,
+          "output": {
+            "predicted_class": 1,
+            "label": "short circuit",
+            "hardware_fault_class": true,
+            "environmental_shade": false,
+            "model_version": "archived-RF__E4-cf5d0ac4",
+            "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+            "range_warnings": [],
+            "fault_category": "hardware_fault",
+            "warnings": []
+          },
+          "server_timing": "body_validate;dur=0.4140, init;dur=0.0000, validation;dur=0.0098, frame;dur=0.5576, preprocessing;dur=6.7432, forest;dur=8.7720, server;dur=17.7178"
+        },
+        {
+          "case": 2,
+          "input": {
+            "vdc1": 259.212,
+            "vdc2": 246.611,
+            "idc1": 9.0792,
+            "idc2": 8.3303
+          },
+          "reference_class": 2,
+          "output": {
+            "predicted_class": 2,
+            "label": "resistive degradation",
+            "hardware_fault_class": true,
+            "environmental_shade": false,
+            "model_version": "archived-RF__E4-cf5d0ac4",
+            "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+            "range_warnings": [],
+            "fault_category": "hardware_fault",
+            "warnings": []
+          },
+          "server_timing": "body_validate;dur=0.3457, init;dur=0.0000, validation;dur=0.0100, frame;dur=0.4764, preprocessing;dur=6.8485, forest;dur=8.5726, server;dur=17.2745"
+        },
+        {
+          "case": 3,
+          "input": {
+            "vdc1": 262.91,
+            "vdc2": 0.8866,
+            "idc1": 8.9742,
+            "idc2": 0.0468
+          },
+          "reference_class": 3,
+          "output": {
+            "predicted_class": 3,
+            "label": "open circuit",
+            "hardware_fault_class": true,
+            "environmental_shade": false,
+            "model_version": "archived-RF__E4-cf5d0ac4",
+            "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+            "range_warnings": [],
+            "fault_category": "hardware_fault",
+            "warnings": []
+          },
+          "server_timing": "body_validate;dur=0.3904, init;dur=0.0000, validation;dur=0.0100, frame;dur=0.4472, preprocessing;dur=6.6778, forest;dur=8.7768, server;dur=17.3692"
+        },
+        {
+          "case": 4,
+          "input": {
+            "vdc1": 334.823,
+            "vdc2": 335.877,
+            "idc1": 0.4303,
+            "idc2": 0.2274
+          },
+          "reference_class": 4,
+          "output": {
+            "predicted_class": 4,
+            "label": "natural building shade",
+            "hardware_fault_class": false,
+            "environmental_shade": true,
+            "model_version": "archived-RF__E4-cf5d0ac4",
+            "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+            "range_warnings": [],
+            "fault_category": "environmental_condition",
+            "warnings": []
+          },
+          "server_timing": "body_validate;dur=0.4000, init;dur=0.0000, validation;dur=0.0098, frame;dur=0.4459, preprocessing;dur=6.3474, forest;dur=8.6685, server;dur=18.0258"
+        }
+      ],
+      "invalid_checks": [
+        {
+          "case": "missing",
+          "HTTP": 422
+        },
+        {
+          "case": "target",
+          "HTTP": 422
+        },
+        {
+          "case": "negative",
+          "HTTP": 422
+        },
+        {
+          "case": "boolean",
+          "HTTP": 422
+        },
+        {
+          "case": "text",
+          "HTTP": 422
+        },
+        {
+          "case": "null",
+          "HTTP": 422
+        },
+        {
+          "case": "nonfinite",
+          "HTTP": 422
+        },
+        {
+          "case": "duplicate",
+          "HTTP": 422
+        },
+        {
+          "case": "malformed",
+          "HTTP": 422
+        },
+        {
+          "case": "oversize",
+          "HTTP": 413
+        }
+      ],
+      "GET_predict_HTTP": 405,
+      "HTTPS_certificate_verified": true,
+      "timing_headers": true,
+      "no_probability_or_calibrated_confidence_exposed": true
+    }
+  },
+  "local_CLI_and_FastAPI_cases": 5,
+  "cloud_cases_each": 5,
+  "inference_decision": "Original multiclass argmax; class 4 environmental shade, not hardware failure",
+  "reference_scope": "Five fixed historically exposed TEST observations demonstrate deployment consistency, not independent accuracy or generalization.",
+  "probability_scope": "Public APIs do not expose probabilities; no fabricated public probability-parity claim. Container 200-row numerical parity is separately recorded.",
+  "deadline_capacity_scope": "Existing local automated tests exercise deadlines/capacity; live concurrency-two behavior is measured separately, without deliberate overload or slow-request attacks."
+}
