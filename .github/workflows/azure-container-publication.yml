@@ -8,6 +8,7 @@ on:
       - deployment/azure/prepare_context.py
       - deployment/azure/verify_image.py
       - deployment/azure/test_context.py
+      - deployment/azure/verify_registry.py
 permissions:
   contents: read
   packages: write
@@ -48,8 +49,6 @@ jobs:
           digest=$(docker image inspect "$IMAGE:sha-$GITHUB_SHA" --format '{{index .RepoDigests 0}}')
           echo "PV_GHCR_IMAGE=$digest"
           echo "PV_CONTAINER_BUILD_SECONDS=$BUILD_SECONDS"
-          docker manifest inspect "$digest" > "$RUNNER_TEMP/registry-manifest.json"
-          python3 -c 'import json,os;from pathlib import Path;v=json.loads((Path(os.environ["RUNNER_TEMP"])/"registry-manifest.json").read_text());print("PV_REGISTRY_LAYER_BYTES="+str(sum(x["size"] for x in v["layers"])))'
-          gh api /user/packages/container/pv-anomaly-detection --jq '{name:.name,visibility:.visibility,html_url:.html_url}'
+          python3 -B -m deployment.azure.verify_registry --image "$digest" --output "$RUNNER_TEMP/registry-verification.json"
           echo "Verified original-model container: $digest" >> "$GITHUB_STEP_SUMMARY"
           echo "Azure resources were not created. Separate provisioning approval remains required." >> "$GITHUB_STEP_SUMMARY"
