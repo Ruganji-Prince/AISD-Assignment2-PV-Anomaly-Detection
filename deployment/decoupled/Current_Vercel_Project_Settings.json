@@ -1,0 +1,16 @@
+{
+  "id": "prj_crdyiWPhHbKADgYXLtaSoTzAd2Ox",
+  "name": "pv-anomaly-detection",
+  "framework": "fastapi",
+  "rootDirectory": null,
+  "buildCommand": null,
+  "installCommand": null,
+  "outputDirectory": null,
+  "git_link": {
+    "type": "github",
+    "org": "Ruganji-Prince",
+    "repo": "AISD-Assignment2-PV-Anomaly-Detection",
+    "repoId": 1415770449,
+    "productionBranch": "main"
+  }
+}

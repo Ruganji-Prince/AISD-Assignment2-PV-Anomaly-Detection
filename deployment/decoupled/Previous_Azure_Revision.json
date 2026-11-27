@@ -1,0 +1,28 @@
+{
+  "recorded_UTC": "2026-11-27T09:46:16.603443+00:00",
+  "app": "pv-anomaly-detection",
+  "revision": "pv-anomaly-detection--rf-e4-940f5e2",
+  "image": "ghcr.io/ruganji-prince/pv-anomaly-detection@sha256:51be78bd92b20af85628dd07009afd0cdad5689353fcf8a621604b7ea82e70e6",
+  "allocation": {
+    "cpu": 0.5,
+    "ephemeralStorage": "2Gi",
+    "memory": "1Gi"
+  },
+  "scale": {
+    "cooldownPeriod": 300,
+    "maxReplicas": 1,
+    "minReplicas": 0,
+    "pollingInterval": 30,
+    "rules": [
+      {
+        "http": {
+          "metadata": {
+            "concurrentRequests": "2"
+          }
+        },
+        "name": "http-requests"
+      }
+    ]
+  },
+  "scope": "Preserved previous verified revision and image; no deletion or forced shutdown."
+}

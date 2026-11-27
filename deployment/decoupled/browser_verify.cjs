@@ -11,7 +11,7 @@ const records=[];
  await page.addInitScript(()=>{window.pvServiceTimes={};new MutationObserver(()=>{const node=document.getElementById('service-status');const state=node?.dataset.state;if(state&&window.pvServiceTimes[state]===undefined)window.pvServiceTimes[state]=performance.now();}).observe(document,{subtree:true,attributes:true,childList:true});});
  const response=await page.goto(base,{waitUntil:'domcontentloaded'});assert.equal(response.status(),200);
  await page.locator('#service-status').filter({hasText:'Model ready'}).waitFor({timeout:130000});
- const pageTiming=await page.evaluate(()=>({navigation:performance.getEntriesByType('navigation')[0].toJSON(),service:window.pvServiceTimes}));
+ const pageTiming=await page.evaluate(()=>({navigation:Object.fromEntries(["name", "startTime", "duration", "nextHopProtocol", "fetchStart", "domainLookupStart", "domainLookupEnd", "connectStart", "connectEnd", "requestStart", "responseStart", "responseEnd", "domContentLoadedEventEnd", "loadEventEnd", "responseStatus", "decodedBodySize"].map(k=>[k,performance.getEntriesByType('navigation')[0][k]])),service:window.pvServiceTimes}));
  async function go(k){await page.click('#step-tab-'+k);await page.waitForFunction(k=>!document.getElementById('step-'+k).hidden&&document.getElementById('step-'+k).getAnimations().length===0,k);}
  const labels=await page.evaluate(async()=>{const source=await import('/assets/explanations.js');return source.labels;});
  for(let k=0;k<5;k++){

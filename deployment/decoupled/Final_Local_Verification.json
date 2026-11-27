@@ -1,0 +1,82 @@
+{
+  "status": "PASS",
+  "unit_test_count": 45,
+  "commands": [
+    {
+      "command": "python -B -m unittest technical_evaluation.tests",
+      "exit_code": 0,
+      "summary": {
+        "tests": 7,
+        "seconds": 0.102,
+        "status": "OK",
+        "note": "Existing Starlette httpx deprecation warning in API groups; dependencies unchanged. Failure-path log messages are expected test behavior."
+      }
+    },
+    {
+      "command": "python -B -m unittest technical_evaluation.refinement.tests",
+      "exit_code": 0,
+      "summary": {
+        "tests": 7,
+        "seconds": 4.934,
+        "status": "OK",
+        "note": "Existing Starlette httpx deprecation warning in API groups; dependencies unchanged. Failure-path log messages are expected test behavior."
+      }
+    },
+    {
+      "command": "python -B -m unittest discover -s tests",
+      "exit_code": 0,
+      "summary": {
+        "tests": 6,
+        "seconds": 6.319,
+        "status": "OK",
+        "note": "Existing Starlette httpx deprecation warning in API groups; dependencies unchanged. Failure-path log messages are expected test behavior."
+      }
+    },
+    {
+      "command": "python -B -m unittest discover -s web/tests",
+      "exit_code": 0,
+      "summary": {
+        "tests": 10,
+        "seconds": 7.432,
+        "status": "OK",
+        "note": "Existing Starlette httpx deprecation warning in API groups; dependencies unchanged. Failure-path log messages are expected test behavior."
+      }
+    },
+    {
+      "command": "python -B -m unittest deployment.azure.test_context deployment.azure.test_deployment deployment.decoupled.test_backend deployment.decoupled.test_frontend",
+      "exit_code": 0,
+      "summary": {
+        "tests": 15,
+        "seconds": 2.211,
+        "status": "OK",
+        "note": "Existing Starlette httpx deprecation warning in API groups; dependencies unchanged. Failure-path log messages are expected test behavior."
+      }
+    },
+    {
+      "command": "python -B -m deployment.decoupled.verify_integrity",
+      "exit_code": 0,
+      "summary": {
+        "status": "PASS",
+        "baseline": "8d4a6b5fdcd9f236cc6e9ade7a0bc093603b773f",
+        "protected_existing_files": 437,
+        "authorized_changes": [
+          "README.md",
+          "deployment/azure/verify_image.py",
+          "web/static/app.js",
+          "web/static/index.html",
+          "web/static/style.css"
+        ],
+        "model_raw_CSV_approved_PDF_byte_identical": true,
+        "tag_preserved": true,
+        "scope": "Only approved frontend transport/readiness and backward-compatible image-verifier option may change existing files; scientific/inference sources and all historical receipts remain unchanged."
+      }
+    }
+  ],
+  "relative_links": {
+    "relative_links_checked": 880,
+    "failures": []
+  },
+  "secret_private_path_scan": [],
+  "new_evidence_files": 36,
+  "scope": "No training, historical receipt overwrite or production cutover. Scoped integrity protects approved scientific artifacts."
+}

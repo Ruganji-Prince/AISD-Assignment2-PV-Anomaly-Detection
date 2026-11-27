@@ -1,0 +1,18 @@
+{
+  "id": "dpl_D24pfF7JJsBL5PRSy8VRQFAeXcpU",
+  "url": "pv-anomaly-detection-jco5b5t1v-prince-r-k.vercel.app",
+  "alias": [
+    "pv-anomaly-detection-vert.vercel.app",
+    "pv-anomaly-detection-prince-r-k.vercel.app",
+    "pv-anomaly-detection-git-main-prince-r-k.vercel.app"
+  ],
+  "target": "production",
+  "readyState": "READY",
+  "gitSource": {
+    "ref": "main",
+    "repoId": 1415770449,
+    "sha": "d49cff533e5fe8860bacfb9942779ab003db47db",
+    "type": "github",
+    "prId": null
+  }
+}

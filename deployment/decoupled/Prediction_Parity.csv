@@ -1,0 +1,6 @@
+case,original_CLI_class,original_Azure_archived_class,new_Azure_class,displayed_label,request_destination,model_sha256
+0,0,0,0,Normal,https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io/api/predict,55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb
+1,1,1,1,Short Circuit,https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io/api/predict,55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb
+2,2,2,2,Resistive Degradation,https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io/api/predict,55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb
+3,3,3,3,Open Circuit,https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io/api/predict,55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb
+4,4,4,4,Natural Building Shade,https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io/api/predict,55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb

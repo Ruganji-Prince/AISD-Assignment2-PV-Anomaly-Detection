@@ -1,0 +1,71 @@
+{
+  "status": "VERIFIED",
+  "recorded_UTC": "2026-11-27T09:45:12.612105+00:00",
+  "image": "ghcr.io/ruganji-prince/pv-anomaly-detection@sha256:234cba831be3b1465a8447c16922602dc54f5f0dcb3a86cc5b465c0890e5023f",
+  "linux_amd64_manifest_digest": "sha256:0781dae5c1e935b1bb0b9eb9c41eab144ac5d2d594746d88fb5608112f58f5f2",
+  "image_config_digest": "sha256:eeb55fe530f9f6e015d278283b87455c6da430f5f5773113e286ec885758f337",
+  "source_commit": "cf295ed02ce909001f67e7d0199805e79ef2aff6",
+  "platform": "linux/amd64",
+  "anonymous_pull_manifest_and_all_layers_accessible": true,
+  "user_registry_credentials_used": false,
+  "runtime_layer_bytes_compressed": 157857867,
+  "layers": [
+    {
+      "digest": "sha256:40748add9f4f6f944f334cbfc286590d6e93f60fb06f6ee7ffa1b894080ad861",
+      "compressed_bytes": 29842182,
+      "anonymous_access": true
+    },
+    {
+      "digest": "sha256:80b9c2d0e69f63ff2bf7683eec5ca8d9776a0cf48d3a83ab45b0241803bc0ef5",
+      "compressed_bytes": 1290221,
+      "anonymous_access": true
+    },
+    {
+      "digest": "sha256:d8ff2d157126a8e681573358b140ea5a7f87ec9f16bf8ac9d161d9c706d77254",
+      "compressed_bytes": 12413365,
+      "anonymous_access": true
+    },
+    {
+      "digest": "sha256:4289ee8df4149e63b933624a15a0fc974f19ec722dd6ea21a34e6a0392c18473",
+      "compressed_bytes": 248,
+      "anonymous_access": true
+    },
+    {
+      "digest": "sha256:de99331a83ac95092fcc9159e25a95db68a60489fa6513d765cbf160be682bb7",
+      "compressed_bytes": 92,
+      "anonymous_access": true
+    },
+    {
+      "digest": "sha256:8b8fdc68d5b14c414193a081fd0d9beb8df24ef602ae154c54105ce6ee301723",
+      "compressed_bytes": 5989,
+      "anonymous_access": true
+    },
+    {
+      "digest": "sha256:e375e80264ca35b277eb52f6a9ab9cd3c14e0beab166b490615df8be17a4d8ac",
+      "compressed_bytes": 112846789,
+      "anonymous_access": true
+    },
+    {
+      "digest": "sha256:aac426c64f05c9c30aa790e19dc097447ead60bd5f10b414c6cf1f3cd2074b77",
+      "compressed_bytes": 7379,
+      "anonymous_access": true
+    },
+    {
+      "digest": "sha256:9b03688e946bc7643d527d08e49649bdaa2cb235d690fef964af4220cdb46e5e",
+      "compressed_bytes": 20484,
+      "anonymous_access": true
+    },
+    {
+      "digest": "sha256:ed7cac1732476b6c76b0d17fe383b284e645ab06938f744dd3ea66622357dab1",
+      "compressed_bytes": 1430503,
+      "anonymous_access": true
+    },
+    {
+      "digest": "sha256:c8e599034a4fd7837837b8c7e9177f85515552c1a68c50e05628f535317aabb9",
+      "compressed_bytes": 615,
+      "anonymous_access": true
+    }
+  ],
+  "scope": "Public pull authorization and manifest/config digest verification plus layer HEAD availability. Layer payload integrity was checked in the prepublication Docker audit; no Azure pull is claimed.",
+  "workflow_url": "https://github.com/Ruganji-Prince/AISD-Assignment2-PV-Anomaly-Detection/actions/runs/45976134017"
+}

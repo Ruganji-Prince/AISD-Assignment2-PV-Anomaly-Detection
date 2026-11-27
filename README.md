@@ -5,6 +5,14 @@
 
 The project compares photovoltaic operating-state classifiers under reduced measurement availability, balancing class-specific detection, physical input requirements, interpretability and resource constraints. The public demonstration uses the preserved four-electrical-channel Random Forest pipeline; retrospective scientific results and unmet engineering targets are reported explicitly.
 
+## Decoupled deployment preview - 27 November 2026
+
+[Open the verified static-only frontend preview](https://pv-anomaly-detection-pbyhom77a-prince-r-k.vercel.app) | [Azure inference API](https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io) | [Architecture, evidence and reproduction](deployment/decoupled/README.md)
+
+The preview serves only HTML/CSS/JavaScript assets from Vercel and sends measurements directly to the existing Azure FastAPI backend running the original RF E4 pipeline. Actual deployed-output inspection found zero inference functions, models or Python runtime files. Five original-model predictions match the CLI, and 45 unit tests plus live browser integration and layout checks passed. Explicit CORS and bounded readiness/retry handling preserve the four-step interface without local prediction fallback or keepalive. The measured 15-request warm API p95 was 263.00 ms; this is serving evidence, not a new scientific accuracy result.
+
+**Production cutover is pending explicit approval.** The production application linked above remains the previous deployment. Main and the protected submission tag are unchanged. See the [diagram](deployment/decoupled/Architecture.md), [acceptance matrix](deployment/decoupled/Acceptance_Matrix.md), [professor demonstration](deployment/decoupled/Professor_Demonstration.md), [cutover plan](deployment/decoupled/Production_Cutover_Plan.md) and [rollback guide](deployment/decoupled/Rollback_Guide.md). Original scientific findings, known TEST exposure, unmet engineering targets and mock assessment remain unchanged.
+
 ## Azure cloud engineering extension - 27 November 2026
 
 [Open Azure application](https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io) | [Existing Vercel application](https://pv-anomaly-detection-prince-r-k.vercel.app) | [Azure setup and evidence](deployment/azure/README.md)
