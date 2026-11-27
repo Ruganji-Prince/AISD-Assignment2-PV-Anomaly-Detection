@@ -1,0 +1,166 @@
+{
+  "axe_version": "4.14.1",
+  "status": "PASS",
+  "scope": "Automated WCAG A/AA scan, three widths x four panels; manual assistive-technology audit remains outside scope",
+  "keyboard_stepper": true,
+  "scenario_cards_mirror_selector": true,
+  "visible_focus": true,
+  "rows": [
+    {
+      "width": 375,
+      "step": 1,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 7
+        }
+      ],
+      "passes": 24
+    },
+    {
+      "width": 375,
+      "step": 2,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "nodes": 9
+        }
+      ],
+      "passes": 26
+    },
+    {
+      "width": 375,
+      "step": 3,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 6
+        }
+      ],
+      "passes": 26
+    },
+    {
+      "width": 375,
+      "step": 4,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 5
+        }
+      ],
+      "passes": 24
+    },
+    {
+      "width": 768,
+      "step": 1,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 7
+        }
+      ],
+      "passes": 24
+    },
+    {
+      "width": 768,
+      "step": 2,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "nodes": 10
+        }
+      ],
+      "passes": 26
+    },
+    {
+      "width": 768,
+      "step": 3,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 7
+        }
+      ],
+      "passes": 26
+    },
+    {
+      "width": 768,
+      "step": 4,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 6
+        }
+      ],
+      "passes": 24
+    },
+    {
+      "width": 1440,
+      "step": 1,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 4
+        }
+      ],
+      "passes": 24
+    },
+    {
+      "width": 1440,
+      "step": 2,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "nodes": 7
+        }
+      ],
+      "passes": 26
+    },
+    {
+      "width": 1440,
+      "step": 3,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 4
+        }
+      ],
+      "passes": 26
+    },
+    {
+      "width": 1440,
+      "step": 4,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 3
+        }
+      ],
+      "passes": 24
+    }
+  ]
+}

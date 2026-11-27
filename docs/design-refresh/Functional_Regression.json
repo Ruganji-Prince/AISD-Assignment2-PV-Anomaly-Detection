@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "url": "http://127.0.0.1:8080",
+  "one_visible_panel_during_all_transitions": true,
+  "forward_backward_direct_navigation": true,
+  "keyboard_navigation": true,
+  "reduced_motion": true,
+  "no_page_reload": true,
+  "shared_measurements_scenario_source_chart_preserved": true,
+  "prediction_and_explanations_preserved": true,
+  "stale_predictions_cleared": true,
+  "assessment_inference_and_invalid_input_redirect": true,
+  "viewports": [
+    "1366x768",
+    "1920x1080",
+    "820x1180",
+    "390x844",
+    "320x844"
+  ],
+  "intentional_vertical_scroll": true,
+  "all_dataset_classes": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "synthetic_predictions": [
+    {
+      "intent": 0,
+      "prediction": 4
+    },
+    {
+      "intent": 1,
+      "prediction": 4
+    },
+    {
+      "intent": 2,
+      "prediction": 4
+    },
+    {
+      "intent": 3,
+      "prediction": 4
+    },
+    {
+      "intent": 4,
+      "prediction": 4
+    }
+  ],
+  "generator_bounds_and_determinism": true,
+  "assessment_error_redirect": true,
+  "actual_class_explanations": true,
+  "chart_tooltips_and_updates": true,
+  "loading_errors": true,
+  "page_errors": [],
+  "adaptation": "Only the old no-desktop-vertical-scroll geometry assertion is retired; original functional checks remain unchanged. No production/source test file edited."
+}

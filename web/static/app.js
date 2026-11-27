@@ -8,7 +8,7 @@ let currentSource='synthetic';
 let hasPrediction=false,currentStep=0,navigating=false;
 const visitedSteps=new Set([0]);
 const icons=['check','bolt','resistance','disconnect','shade'];
-const colors=['#1a9d78','#e05f56','#d89835','#8a65d2','#458bc1'];
+const colors=['#087858','#b42318','#ad3c2f','#6b3fa0','#946000'];
 function icon(element,name){element.querySelector('use').setAttribute('href','#icon-'+name);}
 function measurements(){return Object.fromEntries(channels.map(k=>[k,$(k).value===''?null:Number($(k).value)]));}
 function clearResult(){ const outdated=hasPrediction;hasPrediction=false;$('view-assessment').hidden=true;$('prediction-status').textContent=outdated?'Measurements changed. Run inference again.':'Ready for inference.'; $('result-content').hidden=true;$('result-empty').hidden=false;$('result-warnings').hidden=true;delete $('step-3').dataset.class;delete $('step-3').dataset.category;}
@@ -20,11 +20,11 @@ function updateCharts(){
  const valid=keys.map(k=>Number.isFinite(values[k])&&values[k]>=0?values[k]:0);
  const maximum=Math.max(...valid,chart==='voltage'?400:10),tickMaximum=Math.ceil(maximum/(chart==='voltage'?100:2))*(chart==='voltage'?100:2);
  $('chart-heading').textContent=chart==='voltage'?'Channel voltage':'Channel current';$('chart-subtitle').textContent=`Comparison of supplied measurements (${unit})`;$('axis-label').textContent=chart==='voltage'?'Voltage (V)':'Current (A)';
- keys.forEach((key,j)=>{const node=$('bar'+(j+1));node.querySelector('.bar-fill').style.width=(valid[j]/tickMaximum*100)+'%';node.classList.toggle('zero',valid[j]/tickMaximum<.2);$('bar-value'+(j+1)).textContent=values[key]===null?'No value':`${valid[j].toFixed(chart==='voltage'?2:3)} ${unit}`;node.dataset.tooltip=`Channel ${j+1} | ${key}: ${values[key]===null?'not supplied':valid[j]+' '+unit} | ${sourceLabel()}`;node.setAttribute('aria-label',node.dataset.tooltip);});
+ keys.forEach((key,j)=>{const node=$('bar'+(j+1));node.querySelector('.bar-fill').style.width=(valid[j]/tickMaximum*100)+'%';node.classList.toggle('zero',valid[j]/tickMaximum<.2);$('bar-value'+(j+1)).textContent=values[key]===null?'No value':`${valid[j].toFixed(chart==='voltage'?2:3)} ${unit}`;node.dataset.tooltip=`Channel ${j+1} | ${key}: ${values[key]===null?'not supplied':valid[j]+' '+unit} | ${sourceLabel()}`;node.setAttribute('aria-label',$('bar-value'+(j+1)).textContent+' | '+node.dataset.tooltip);});
  $('axis-ticks').replaceChildren(...Array.from({length:5},(_,i)=>{let x=document.createElement('span');x.textContent=Number((i/4*tickMaximum).toFixed(2));return x;}));
  $('chart-data-label').textContent=currentSource==='synthetic'?'Synthetic data':currentSource==='dataset'?'Dataset values':'Manual values';$('source-badge').textContent=sourceLabel();
 }
-function updateDiagram(){const k=selected;$('scenario-diagram').dataset.scenario=k===null?'manual':String(k);$('scenario-diagram').style.setProperty('--scenario-color',k===null?'#339a86':colors[k]);icon($('diagram-icon'),k===null?'chart':icons[k]);$('diagram-label').textContent=k===null?'Manual measurements':scenarioNames[k];$('diagram-source').textContent=k===null?'SCHEMATIC ONLY':'SELECTED INTENT';}
+function updateDiagram(){const k=selected;$('scenario-diagram').dataset.scenario=k===null?'manual':String(k);$('scenario-diagram').style.setProperty('--scenario-color',k===null?'#339a86':colors[k]);icon($('diagram-icon'),k===null?'chart':icons[k]);$('diagram-label').textContent=k===null?'Manual measurements':scenarioNames[k];$('diagram-source').textContent=k===null?'SCHEMATIC ONLY':'SELECTED INTENT';updateScenarioCards();}
 function applyScenario(){
  if(busy)return;
  const values=source==='synthetic'?generateScenario(selected,seed):examples.find(x=>x.id===selected)?.measurements;
@@ -38,7 +38,7 @@ function selectSource(next){
  $('load-example').hidden=next==='dataset';$('example-select').value='0';
  const panel=$('scenario-panel');panel.getAnimations().forEach(x=>x.cancel());if(!matchMedia('(prefers-reduced-motion:reduce)').matches)panel.animate([{opacity:.35},{opacity:1}],{duration:200});applyScenario();
 }
-function setBusy(value){busy=value;for(const id of [...channels,'service-retry','predict-button','reset-button','load-example','example-select','synthetic-tab','dataset-tab','assessment-run'])$(id).disabled=value;$('loading-spinner').hidden=!value;$('button-icon').hidden=value;$('button-label').textContent=value?'Analyzing measurements...':'Run model inference';$('step-3').setAttribute('aria-busy',String(value));$('assessment-run').textContent=value?'Analyzing measurements...':'Run inference';if(value)$('prediction-status').textContent='Analyzing measurements...';}
+function setBusy(value){busy=value;document.querySelectorAll(".scenario-card").forEach(button=>button.disabled=value);for(const id of [...channels,'service-retry','predict-button','reset-button','load-example','example-select','synthetic-tab','dataset-tab','assessment-run'])$(id).disabled=value;$('loading-spinner').hidden=!value;$('button-icon').hidden=value;$('button-label').textContent=value?'Analyzing measurements...':'Run model inference';$('step-3').setAttribute('aria-busy',String(value));$('assessment-run').textContent=value?'Analyzing measurements...':'Run inference';if(value)$('prediction-status').textContent='Analyzing measurements...';}
 function renderResult(result){
  const k=result.predicted_class;if(!Number.isInteger(k)||!explanations[k])throw new Error('The service returned an invalid prediction.');
  const content=explanations[k];$('step-3').dataset.class=String(k);$('step-3').dataset.category=result.fault_category;
@@ -62,8 +62,27 @@ channels.forEach(k=>$(k).addEventListener('input',()=>{currentSource='manual';se
 $('reset-button').addEventListener('click',()=>{if(busy)return;for(const k of channels)$(k).value='';currentSource='manual';selected=null;clearResult();clearError();updateCharts();updateDiagram();$('example-status').textContent='Measurements and result cleared.';});
 for(const [id,kind] of [['voltage-tab','voltage'],['current-tab','current']])$(id).addEventListener('click',()=>{chart=kind;$('voltage-tab').setAttribute('aria-selected',String(kind==='voltage'));$('current-tab').setAttribute('aria-selected',String(kind==='current'));$('chart-panel').setAttribute('aria-labelledby',id);$('chart-tooltip').hidden=true;updateCharts();});
 for(const id of ['bar1','bar2']){const node=$(id);const show=()=>{$('chart-tooltip').textContent=node.dataset.tooltip;$('chart-tooltip').hidden=false;};node.addEventListener('mouseenter',show);node.addEventListener('focus',show);node.addEventListener('click',show);node.addEventListener('mouseleave',()=>{$('chart-tooltip').hidden=true;});node.addEventListener('blur',()=>{$('chart-tooltip').hidden=true;});}
+// Presentation-only shortcuts reuse the existing selector and its state transition.
+function updateScenarioCards(){
+ document.querySelectorAll('.scenario-card').forEach((button,k)=>{
+  button.setAttribute('aria-pressed',String(selected===k));
+  button.querySelector('.scenario-card-source').textContent=source==='dataset'?'Reference observation':'Illustrative synthetic intent';
+ });
+}
+function createScenarioCards(){
+ scenarioNames.forEach((name,k)=>{
+  const button=document.createElement('button');button.type='button';button.className='scenario-card';
+  const symbol=document.createElementNS('http://www.w3.org/2000/svg','svg');symbol.setAttribute('aria-hidden','true');
+  const use=document.createElementNS('http://www.w3.org/2000/svg','use');use.setAttribute('href','#icon-'+icons[k]);symbol.append(use);
+  const title=document.createElement('strong');title.textContent=name;
+  const kind=document.createElement('span');kind.className='scenario-card-source';
+  const action=document.createElement('span');action.className='scenario-card-action';action.textContent='Select scenario';
+  button.append(symbol,title,kind,action);button.addEventListener('click',()=>{if(busy)return;$('example-select').value=String(k);$('example-select').dispatchEvent(new Event('change'));});
+  $('scenario-cards').append(button);
+ });
+}
 async function initialize(){
- scenarioNames.forEach((name,k)=>{const option=document.createElement('option');option.value=k;option.textContent=name;$('example-select').append(option);});applyScenario();
+ scenarioNames.forEach((name,k)=>{const option=document.createElement('option');option.value=k;option.textContent=name;$('example-select').append(option);});createScenarioCards();applyScenario();
  try{await ensureReady();examples=await fetchExamples();$('dataset-tab').disabled=false;}catch{$('dataset-tab').disabled=true;$('dataset-tab').title='Connect to the cloud service to load dataset examples.';}
 
 }
@@ -79,7 +98,7 @@ function syncNavigation(){
   const state=i===currentStep?'current':visitedSteps.has(i)?'completed':'unvisited';button.dataset.state=state;
   if(i===currentStep)button.setAttribute('aria-current','step');else button.removeAttribute('aria-current');
   button.querySelector('.step-state').textContent=state==='current'?'Current':state==='completed'?'Completed':'Not visited';
-  button.setAttribute('aria-label',`${i+1}. ${['PV Measurements','PV Scenarios','Graphical Analysis','Model Assessment'][i]}, ${state==='unvisited'?'not visited':state}`);
+  button.removeAttribute('aria-label'); // Visible number, label and state provide the complete accessible name.
  });
 }
 async function goToStep(target,focusHeading=true){
@@ -92,7 +111,7 @@ async function goToStep(target,focusHeading=true){
  $('step-announcement').textContent=`Step ${target+1} of 4: ${['PV Measurements','PV Scenarios','Graphical Analysis','Model Assessment'][target]}`;
  if(duration)await next.animate([{opacity:0,transform:`translateX(${direction*10}px)`},{opacity:1,transform:'translateX(0)'}],{duration,easing:'ease-out'}).finished;
  navigating=false;if(focusHeading)$('step-heading-'+target).focus({preventScroll:true});
- if(innerWidth<651)window.scrollTo({top:0,behavior:'instant'});
+ if(innerWidth<651)$('workflow').scrollIntoView({block:'start',behavior:'instant'});
 }
 document.querySelectorAll('[data-go-step]').forEach(button=>button.addEventListener('click',()=>goToStep(Number(button.dataset.goStep))));
 document.querySelectorAll('.step-tab').forEach((button,i)=>{

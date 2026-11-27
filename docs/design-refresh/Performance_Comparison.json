@@ -1,0 +1,20 @@
+{
+  "status": "MEASURED",
+  "before_static_served_bytes": 62634,
+  "after_static_served_bytes": 65206,
+  "before_files": 9,
+  "after_files": 9,
+  "additional_runtime_dependencies": 0,
+  "external_fonts_or_media_requests": 0,
+  "model_artifacts": 0,
+  "Python_files": 0,
+  "functions": 0,
+  "browser_Azure_requests": 15,
+  "correct_successes": 15,
+  "warm_API_round_trip_ms": {
+    "p50": 159.0,
+    "p95": 227.4999999999999,
+    "p99": 280.69999999999993
+  },
+  "limitations": "Asset sizes compare actual outputs; API timings are a 15-request local-browser-to-Azure warm sample. No causal speedup, production TTFB improvement, fresh generalization result or cold-start guarantee is claimed. Baseline page screenshots used the preserved original frontend and original-model local service; after screenshots use real Azure via the permitted localhost origin."
+}
