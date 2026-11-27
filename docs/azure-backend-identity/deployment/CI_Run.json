@@ -1,0 +1,99 @@
+{
+  "conclusion": "success",
+  "headSha": "fe3f5d2b0362ca028599935cb6b71bd2f58fa363",
+  "jobs": [
+    {
+      "completedAt": "2026-11-27T18:25:58Z",
+      "conclusion": "success",
+      "databaseId": 140675995409,
+      "name": "verify-publish",
+      "startedAt": "2026-11-27T18:24:15Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-11-27T18:24:16Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-11-27T18:24:15Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T18:24:18Z",
+          "conclusion": "success",
+          "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "number": 2,
+          "startedAt": "2026-11-27T18:24:16Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T18:24:19Z",
+          "conclusion": "success",
+          "name": "Prepare exact approved committed runtime",
+          "number": 3,
+          "startedAt": "2026-11-27T18:24:18Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T18:24:57Z",
+          "conclusion": "success",
+          "name": "Build unchanged Dockerfile and pinned dependencies",
+          "number": 4,
+          "startedAt": "2026-11-27T18:24:19Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T18:25:11Z",
+          "conclusion": "success",
+          "name": "Linux integrity parity validation and security checks",
+          "number": 5,
+          "startedAt": "2026-11-27T18:24:57Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T18:25:16Z",
+          "conclusion": "success",
+          "name": "Azure identity and all six CORS origins inside Linux image",
+          "number": 6,
+          "startedAt": "2026-11-27T18:25:11Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T18:25:51Z",
+          "conclusion": "success",
+          "name": "Existing original Docker regression",
+          "number": 7,
+          "startedAt": "2026-11-27T18:25:16Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T18:25:56Z",
+          "conclusion": "success",
+          "name": "Publish only after all verification succeeds",
+          "number": 8,
+          "startedAt": "2026-11-27T18:25:51Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T18:25:57Z",
+          "conclusion": "success",
+          "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "number": 16,
+          "startedAt": "2026-11-27T18:25:56Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T18:25:57Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 17,
+          "startedAt": "2026-11-27T18:25:57Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/Ruganji-Prince/AISD-Assignment2-PV-Anomaly-Detection/actions/runs/46049197680/job/140675995409"
+    }
+  ],
+  "status": "completed",
+  "url": "https://github.com/Ruganji-Prince/AISD-Assignment2-PV-Anomaly-Detection/actions/runs/46049197680"
+}

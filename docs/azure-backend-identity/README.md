@@ -1,6 +1,6 @@
 # Azure backend identity - local candidate
 
-Status: implemented and locally verified on `design/azure-backend-identity`. **Not deployed.** The running Azure service, Vercel production, redesigned Vercel preview, main and protected submission tag remain unchanged.
+Status: implemented and locally verified on `design/azure-backend-identity`. **A controlled deployment was attempted and rolled back after a live browser navigation timeout.** Azure now serves the preserved image/configuration. See the [deployment and rollback report](deployment/README.md). Vercel production, redesigned preview, main and protected submission tag remain unchanged.
 
 ## Implementation and exact changed source files
 
@@ -46,7 +46,7 @@ Open http://127.0.0.1:8766. No new dependency or local model training is require
 
 ## Container build requirements and deployment impact
 
-**No new image has been built, published or deployed.** Docker is not available locally. Existing Python/API integration tests run in the pinned project environment; Linux image execution remains a pre-deployment requirement.
+At initial local review, no image had been built and Docker was unavailable locally. A subsequent approved Linux build and Azure deployment attempt are documented in the [deployment report](deployment/README.md); the new image was rolled back after the browser gate timed out.
 
 The current approved live image remains:
 

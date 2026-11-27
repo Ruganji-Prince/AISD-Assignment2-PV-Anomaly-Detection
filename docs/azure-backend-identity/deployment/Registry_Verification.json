@@ -1,0 +1,70 @@
+{
+  "status": "VERIFIED",
+  "recorded_UTC": "2026-11-27T18:25:56.821802+00:00",
+  "image": "ghcr.io/ruganji-prince/pv-anomaly-detection@sha256:8c233e77ec370131f44670fcaf812a5aa27a79f7ca56bb8b7eff1beebc9cd946",
+  "linux_amd64_manifest_digest": "sha256:fa3067bdfdf7ede22fa2e5509f2358b7d236e468fc00794ed995c2c6701ae6e1",
+  "image_config_digest": "sha256:af8a11b595bc82236179fd8aff0640d91c85e4d1bfd535d7a0c8d771f5ff1373",
+  "source_commit": "6cf6e8a216d3828ee8ebe005efa6a220e79a31b4",
+  "platform": "linux/amd64",
+  "anonymous_pull_manifest_and_all_layers_accessible": true,
+  "user_registry_credentials_used": false,
+  "runtime_layer_bytes_compressed": 157862323,
+  "layers": [
+    {
+      "digest": "sha256:40748add9f4f6f944f334cbfc286590d6e93f60fb06f6ee7ffa1b894080ad861",
+      "compressed_bytes": 29842182,
+      "anonymous_access": true
+    },
+    {
+      "digest": "sha256:80b9c2d0e69f63ff2bf7683eec5ca8d9776a0cf48d3a83ab45b0241803bc0ef5",
+      "compressed_bytes": 1290221,
+      "anonymous_access": true
+    },
+    {
+      "digest": "sha256:d8ff2d157126a8e681573358b140ea5a7f87ec9f16bf8ac9d161d9c706d77254",
+      "compressed_bytes": 12413365,
+      "anonymous_access": true
+    },
+    {
+      "digest": "sha256:4289ee8df4149e63b933624a15a0fc974f19ec722dd6ea21a34e6a0392c18473",
+      "compressed_bytes": 248,
+      "anonymous_access": true
+    },
+    {
+      "digest": "sha256:b8aa52b8f927e6b28962601ca78b2383e57c63b54352c3478ac075825b5f0d33",
+      "compressed_bytes": 93,
+      "anonymous_access": true
+    },
+    {
+      "digest": "sha256:22ad55913047318854658d5e853c96ab773f91dc143a6098c03dd02149fffcb0",
+      "compressed_bytes": 5989,
+      "anonymous_access": true
+    },
+    {
+      "digest": "sha256:e4d9443fbfc35e168b021ba6c7a66589b42515f8570d4fc73029a70b293c4105",
+      "compressed_bytes": 112846790,
+      "anonymous_access": true
+    },
+    {
+      "digest": "sha256:e726848c9d194bef75f5da32811bd17e1e8d035a84499c828273a8c46ff1e08c",
+      "compressed_bytes": 7378,
+      "anonymous_access": true
+    },
+    {
+      "digest": "sha256:dceb0176186a37988a1eac58c32af7b432fec3e2cebbe0ac84934bdce5f89593",
+      "compressed_bytes": 24938,
+      "anonymous_access": true
+    },
+    {
+      "digest": "sha256:2f92bcba6cddfae05f4247a31eace5836cfce7327250f8339489f554e41a4d3b",
+      "compressed_bytes": 1430504,
+      "anonymous_access": true
+    },
+    {
+      "digest": "sha256:c9e282dae402bbaf30fea3cd1a07f0615943959672c58a5fe98ba0736c2ec757",
+      "compressed_bytes": 615,
+      "anonymous_access": true
+    }
+  ],
+  "scope": "Public pull authorization and manifest/config digest verification plus layer HEAD availability. Layer payload integrity was checked in the prepublication Docker audit; no Azure pull is claimed."
+}

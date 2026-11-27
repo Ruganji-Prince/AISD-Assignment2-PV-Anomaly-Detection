@@ -1,0 +1,58 @@
+{
+  "status": "DEPLOYMENT_VERIFICATION_FAILED_ROLLBACK_VERIFIED",
+  "failure": "Live Azure browser navigation exceeded the harness default 30000ms page-load timeout. Linux and live API checks passed; browser end-to-end verification was not completed. No model mismatch was observed.",
+  "new_image_verified_but_not_active": "ghcr.io/ruganji-prince/pv-anomaly-detection@sha256:8c233e77ec370131f44670fcaf812a5aa27a79f7ca56bb8b7eff1beebc9cd946",
+  "rollback_active_revision": "pv-anomaly-detection--api-rollback-1795804638",
+  "rollback_active_image": "ghcr.io/ruganji-prince/pv-anomaly-detection@sha256:234cba831be3b1465a8447c16922602dc54f5f0dcb3a86cc5b465c0890e5023f",
+  "rollback_original_template_except_suffix_and_all_configuration_restored": true,
+  "rollback_root_HTTP": 200,
+  "rollback_root_is_original_dashboard": true,
+  "rollback_health": {
+    "status": "ready",
+    "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+    "python_version": "3.14.10"
+  },
+  "rollback_five_predictions": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "Vercel_deployments_unchanged": [
+    {
+      "host": "pv-anomaly-detection-prince-r-k.vercel.app",
+      "id": "dpl_H77uanaDrGutfBv5vJkb5825u3Gi",
+      "ready": true
+    },
+    {
+      "host": "pv-anomaly-detection-h8tneats1-prince-r-k.vercel.app",
+      "id": "dpl_9os2KxznDBHrRBFBKNTYmbeBh2VC",
+      "ready": true
+    }
+  ],
+  "both_Vercel_origins_CORS_pass": true,
+  "main_frontend_design_and_tag_unchanged": true,
+  "resources": {
+    "cpu": 0.5,
+    "ephemeralStorage": "2Gi",
+    "memory": "1Gi"
+  },
+  "scale": {
+    "cooldownPeriod": 300,
+    "maxReplicas": 1,
+    "minReplicas": 0,
+    "pollingInterval": 30,
+    "rules": [
+      {
+        "http": {
+          "metadata": {
+            "concurrentRequests": "2"
+          }
+        },
+        "name": "http-requests"
+      }
+    ]
+  },
+  "next_correction": "Use the existing bounded startup/readiness allowance for browser navigation rather than its default30-second deadline; do not change model, runtime or resources to mask this test limitation."
+}
