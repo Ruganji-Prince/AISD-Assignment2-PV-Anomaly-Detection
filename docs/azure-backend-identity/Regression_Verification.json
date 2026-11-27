@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "tests": 50,
+  "commands": [
+    {
+      "command": "python -B -m unittest technical_evaluation.tests",
+      "exit_code": 0
+    },
+    {
+      "command": "python -B -m unittest technical_evaluation.refinement.tests",
+      "exit_code": 0
+    },
+    {
+      "command": "python -B -m unittest discover -s tests",
+      "exit_code": 0
+    },
+    {
+      "command": "python -B -m unittest discover -s web/tests",
+      "exit_code": 0
+    },
+    {
+      "command": "python -B -m unittest deployment.azure.test_context deployment.azure.test_deployment deployment.decoupled.test_backend deployment.decoupled.test_frontend",
+      "exit_code": 0
+    }
+  ],
+  "byte_identical_files": [
+    "web/static/index.html",
+    "web/static/app.js",
+    "web/static/style.css",
+    "web/static/api.js",
+    "web/static/explanations.js",
+    "web/static/scenarios.js",
+    "models/rf_e4/model.pkl",
+    "phase1_strategy/Phase1_Strategy_Report.pdf",
+    "frontend/build.py",
+    "vercel.json",
+    "deployment/decoupled/Dockerfile"
+  ],
+  "all_original_API_route_source_byte_identical": true,
+  "Vercel_static_output_all_nine_hashes_identical": true,
+  "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+  "CORS_testing": "Local tests loaded the six live allowlisted origins, including redesigned preview, without modifying Azure."
+}

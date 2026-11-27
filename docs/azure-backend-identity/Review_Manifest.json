@@ -1,0 +1,86 @@
+{
+  "status": "PASS",
+  "base_main_commit": "b0d19e7cf376211e7e2ad66d7e9cf8d5357e408b",
+  "relative_links": {
+    "relative_links_checked": 889,
+    "failures": []
+  },
+  "files": [
+    {
+      "path": "deployment/decoupled/prepare_context.py",
+      "bytes": 1938,
+      "sha256": "fbef793c66e89dc33ff8cfaf03769798693b5591274ef38f2f6b08ac2b2c67a9"
+    },
+    {
+      "path": "web/app.py",
+      "bytes": 6924,
+      "sha256": "996d6fa3392e1525c63f8ddef7dcfc01918f48f8e360bc44dcf86337b916c286"
+    },
+    {
+      "path": "web/azure_app.py",
+      "bytes": 2039,
+      "sha256": "810b0e5690470428879cfa6c4580cf3c4427fd5997141c2bd573c2399fa83143"
+    },
+    {
+      "path": "docs/azure-backend-identity/browser-check.cjs",
+      "bytes": 4106,
+      "sha256": "5ff2fb68a34a571bb72e441fe3f7f7734c63d614eac689153ef1857f13b72674"
+    },
+    {
+      "path": "docs/azure-backend-identity/Browser_Verification.json",
+      "bytes": 2224,
+      "sha256": "89ba14ce6e0c4f83b5c78cb919e3d1bdebf176d0a0b4ae3e78a7b275bccec6d8"
+    },
+    {
+      "path": "docs/azure-backend-identity/Preservation_Verification.json",
+      "bytes": 2243,
+      "sha256": "0dd54af28198016b225aaf48c6b9bc544f506754063086a8a48a12d7aaad8335"
+    },
+    {
+      "path": "docs/azure-backend-identity/README.md",
+      "bytes": 8609,
+      "sha256": "b5fd4f5d2b0dbc4fa3292034976c1201f2ecf7a7d5bc936a8460dbb06bf9f588"
+    },
+    {
+      "path": "docs/azure-backend-identity/Regression_Verification.json",
+      "bytes": 1414,
+      "sha256": "121feabfeb32a8897f1a84f01ee0bf2f2b6a483ca0d36ea425174fd821c49b0b"
+    },
+    {
+      "path": "docs/azure-backend-identity/screenshots/1440.png",
+      "bytes": 159823,
+      "sha256": "8b609d5b3bb2a014a58b00ff59e97990036822d87167649e203ac307d94c898d"
+    },
+    {
+      "path": "docs/azure-backend-identity/screenshots/390.png",
+      "bytes": 148929,
+      "sha256": "2621065e338eed7f139ed1860ea3aae2ce8df8722e601cb854ee849c8a0cd7b1"
+    },
+    {
+      "path": "docs/azure-backend-identity/screenshots/768.png",
+      "bytes": 154579,
+      "sha256": "c299f5e53a61f99a98a9b4f6815d34b3084fdc6fa3c222be302cf70de9f2aa6d"
+    },
+    {
+      "path": "web/static/backend.html",
+      "bytes": 6870,
+      "sha256": "e454fce066ce8a5a1c2f63df7653b2e7f9e1c2d092244438bed7a6525f5f6299"
+    },
+    {
+      "path": "web/static/backend.css",
+      "bytes": 6467,
+      "sha256": "2179c3f34304bb36644aa5b7e7f7bf03536836431c47a53adcd3d0d308cd522e"
+    },
+    {
+      "path": "web/static/backend.js",
+      "bytes": 825,
+      "sha256": "433d9a741ae92278d713d40c1694a88d743a71d1017e21ed0d12dad5c0499ca3"
+    },
+    {
+      "path": "web/tests/test_backend_identity.py",
+      "bytes": 3507,
+      "sha256": "7ddfa4aace9d379d203fcca2a01affe0ab6f66885014dc6e2ec0b25b6bcb6f55"
+    }
+  ],
+  "scope": "Manifest excludes itself. No image publication or cloud deployment; all new binaries are inspected review screenshots."
+}

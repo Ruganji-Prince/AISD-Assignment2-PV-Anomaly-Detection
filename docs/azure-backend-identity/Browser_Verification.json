@@ -1,0 +1,100 @@
+{
+  "status": "PASS",
+  "views": [
+    {
+      "width": 390,
+      "viewport": 390,
+      "documentWidth": 390,
+      "violations": [],
+      "incomplete": [
+        "aria-prohibited-attr"
+      ]
+    },
+    {
+      "width": 768,
+      "viewport": 768,
+      "documentWidth": 768,
+      "violations": [],
+      "incomplete": [
+        "aria-prohibited-attr"
+      ]
+    },
+    {
+      "width": 1440,
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "violations": [],
+      "incomplete": [
+        "aria-prohibited-attr"
+      ]
+    }
+  ],
+  "requests": [
+    {
+      "url": "http://127.0.0.1:8766/",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:8766/assets/backend.css",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:8766/assets/backend.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:8766/assets/api.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:8766/api/health",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:8766/api/health",
+      "method": "GET"
+    }
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "links": [
+    {
+      "text": "Skip to API information",
+      "href": "#main"
+    },
+    {
+      "text": "PVPV Intelligence API",
+      "href": "/"
+    },
+    {
+      "text": "Open analysis application ↗",
+      "href": "https://pv-anomaly-detection-prince-r-k.vercel.app"
+    },
+    {
+      "text": "Public Vercel frontend ↗",
+      "href": "https://pv-anomaly-detection-prince-r-k.vercel.app"
+    },
+    {
+      "text": "Redesigned frontend preview ↗",
+      "href": "https://pv-anomaly-detection-h8tneats1-prince-r-k.vercel.app"
+    },
+    {
+      "text": "GitHub source ↗",
+      "href": "https://github.com/Ruganji-Prince/AISD-Assignment2-PV-Anomaly-Detection"
+    },
+    {
+      "text": "/api/health",
+      "href": "/api/health"
+    },
+    {
+      "text": "/api/examples",
+      "href": "/api/examples"
+    }
+  ],
+  "real_health_READY": true,
+  "no_prediction_playground": true,
+  "no_automatic_keepalive": true,
+  "manual_recheck": true,
+  "bounded_STARTING_UNAVAILABLE_and_retry": true,
+  "failure_scope": "Browser network interception and virtual clock only; no service shutdown"
+}

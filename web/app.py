@@ -83,8 +83,9 @@ async def security_headers(request, call_next):
     return response
 
 @app.get('/', include_in_schema=False)
-def homepage():
-    return FileResponse(STATIC / 'index.html')
+def homepage(request: Request):
+    filename = 'backend.html' if request.scope.get('pv_backend_identity') else 'index.html'
+    return FileResponse(STATIC / filename)
 
 @app.get('/api/health')
 async def health(request: Request):
