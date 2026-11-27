@@ -1,8 +1,8 @@
 # Preserved rollback assets
 
-No rollback or deletion was performed. Existing production deployment: dpl_D24pfF7JJsBL5PRSy8VRQFAeXcpU, `https://pv-anomaly-detection-jco5b5t1v-prince-r-k.vercel.app`. Canonical alias: `https://pv-anomaly-detection-prince-r-k.vercel.app`. [Preserved metadata](Previous_Vercel_Production.json) records its aliases and original source revision.
+Current production is the **static-only** deployment `dpl_H77uanaDrGutfBv5vJkb5825u3Gi` at `https://pv-anomaly-detection-prince-r-k.vercel.app`. The preserved **legacy** rollback deployment is `dpl_D24pfF7JJsBL5PRSy8VRQFAeXcpU`, `https://pv-anomaly-detection-jco5b5t1v-prince-r-k.vercel.app`. [Preserved metadata](Previous_Vercel_Production.json) records its aliases and original source revision.
 
-If an approved future cutover fails, restore the existing deployment with `vercel promote https://pv-anomaly-detection-jco5b5t1v-prince-r-k.vercel.app --yes --scope prince-r-k`, then verify the aliases, health and original predictions. This command is documented, not executed here.
+If a future release fails, first inspect the active alias/deployment state and the preserved legacy deployment. Restore the preserved deployment using an explicitly selected, supported Vercel rollback or production promotion operation for the existing project. A `vercel promote` call for a preview may create a new production deployment ID: **do not require ID equality**, but do verify the released assets and behavior. Confirm canonical aliases, readiness and original reference predictions after rollback. No recovery command is executed by this document.
 
 Azure currently uses revision pv-anomaly-detection--cors-cf295ed and immutable digest sha256:234cba831be3b1465a8447c16922602dc54f5f0dcb3a86cc5b465c0890e5023f. Previous revision pv-anomaly-detection--rf-e4-940f5e2 remains present, healthy and inactive; original image digest sha256:51be78bd92b20af85628dd07009afd0cdad5689353fcf8a621604b7ea82e70e6 remains preserved. Both use `ghcr.io/ruganji-prince/pv-anomaly-detection`.
 
