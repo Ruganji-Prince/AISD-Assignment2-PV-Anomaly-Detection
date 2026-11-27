@@ -23,9 +23,9 @@ def request(path, payload=None, raw=None):
         headers={"Content-Type": "application/json"} if data is not None else {})
     try:
         with urllib.request.urlopen(req, timeout=60) as response:
-            return response.status, response.read(), dict(response.headers)
+            return response.status, response.read(), {key.lower(): value for key, value in response.headers.items()}
     except urllib.error.HTTPError as error:
-        return error.code, error.read(), dict(error.headers)
+        return error.code, error.read(), {key.lower(): value for key, value in error.headers.items()}
 
 
 def inspect_layers(image, manifest):
@@ -105,7 +105,7 @@ def main():
         for case in cases:
             status, body, headers = request("/api/predict", case["input"])
             value = json.loads(body)
-            assert status == 200 and headers.get("Server-Timing")
+            assert status == 200 and headers.get("server-timing")
             reference = case["output"]
             assert all(value[key] == expected for key, expected in reference.items())
             if value["predicted_class"] == 4:
