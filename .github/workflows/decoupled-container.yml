@@ -42,7 +42,7 @@ jobs:
           python3 -B deployment/azure_identity/verify_linux_http.py
           echo "PV_IDENTITY_LINUX_TESTS=PASS"
       - name: Existing original Docker regression
-        run: python3 technical_evaluation/refinement/container_verify.py --python-version 3.14.10
+        run: python3 -B deployment/azure_identity/run_original_container_checks.py --python-version 3.14.10
       - name: Publish only after all verification succeeds
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
