@@ -1,0 +1,13 @@
+# Cross-cloud security verification
+
+The [actual static output](Frontend_Deployment_Verification.json) contains no model, fitted preprocessing, Python inference runtime or function. The Azure URL and model identity SHA are public configuration, not credentials. No token/password/key is hardcoded in frontend JavaScript. The source allowlist excludes environments, caches, datasets and private local files.
+
+[Live CORS checks](Cross_Cloud_Integration_Verification.json) confirmed exact preview/production origins and denied an unrelated origin's preflight without Access-Control-Allow-Origin. Credentials are omitted and no wildcard origin is configured. Existing timing/opaque-instance headers are exposed. This is browser-origin policy, not API authentication: direct clients can still call the intentionally public research API.
+
+The static deployment CSP permits scripts/styles from self and connections only to self plus the approved Azure origin. No unsafe-inline or arbitrary third-party API origin was added. Vercel can inject an optional preview-feedback toolbar; its external script is blocked by the restrictive CSP. Exact HTML artifact checks use Vercel's documented x-vercel-skip-toolbar request header, which removes only the provider injection. The original application assets are hash-verified, and actual remote deployment-file inventory is separately checked. No global toolbar/project setting was changed.
+
+The Azure adapter wraps, rather than reimplements, original validation, trusted SHA-before-unpickle loading, fitted transformations, predictions, safe errors, deadlines and bounded process capacity. The image uses nonroot appuser and unchanged hash-locked scientific dependencies. All-layer application hashes,200-row probability parity and original Docker tests passed. No new Azure app, environment, registry, paid service, always-on replica, credential or service principal was created. Existing resource limits remain0.5vCPU/1GiB/min0/max1.
+
+Browser network-blocking tests demonstrate controlled failure without local fallback and without stopping Azure. Existing class interpretations remain advisory. Historical TEST parity does not imply generalization, and per-process capacity does not implement distributed per-IP rate limiting. The earlier dependency/OS-scan limitations and original10ms/10MiB limitations remain. No comprehensive-security or calibrated-reliability claim is made.
+
+References: [FastAPI CORS](https://fastapi.tiangolo.com/tutorial/cors/), [Vercel Build Output API](https://vercel.com/docs/build-output-api/configuration), [Vercel toolbar test header](https://vercel.com/docs/vercel-toolbar/managing-toolbar).

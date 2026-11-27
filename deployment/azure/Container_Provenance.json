@@ -1,0 +1,32 @@
+{
+  "status": "VERIFIED_PUBLIC_CONTAINER_AZURE_NOT_PROVISIONED",
+  "source_commit": "940f5e2ca116c5413428348faa82b77bca3915c3",
+  "image_tag": "ghcr.io/ruganji-prince/pv-anomaly-detection:sha-940f5e2ca116c5413428348faa82b77bca3915c3",
+  "image_digest_reference": "ghcr.io/ruganji-prince/pv-anomaly-detection@sha256:51be78bd92b20af85628dd07009afd0cdad5689353fcf8a621604b7ea82e70e6",
+  "linux_amd64_manifest_digest": "sha256:445641229c0bd84364e0303d11f203bb616c2cd8579ae19a4c26e37005f30241",
+  "docker_reported_image_bytes": 157865753,
+  "registry_runtime_layer_bytes_compressed": 157854919,
+  "build_seconds": 37,
+  "workflow_url": "https://github.com/Ruganji-Prince/AISD-Assignment2-PV-Anomaly-Detection/actions/runs/45961709628",
+  "workflow_status": "success",
+  "python": "3.14.10",
+  "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+  "runtime_files": 24,
+  "application_files_in_image_layers": 22,
+  "azure_resource_creation": "Not authorized yet; no Azure resources created.",
+  "registry_user_credentials_required_for_pull": false,
+  "earlier_attempts": [
+    {
+      "run_id": 45960892295,
+      "status": "Stopped before publication: case-sensitive new test header lookup; corrected without runtime changes."
+    },
+    {
+      "run_id": 45961106075,
+      "status": "All image tests passed and image pushed; post-push size parser assumed single manifest rather than OCI index; corrected."
+    },
+    {
+      "run_id": 45961561850,
+      "status": "Full publication successful; subsequent script field label corrected to Docker-reported size."
+    }
+  ]
+}

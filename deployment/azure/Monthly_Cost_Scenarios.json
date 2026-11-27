@@ -1,0 +1,93 @@
+{
+  "recorded_UTC": "2026-11-27T08:35:00.646491+00:00",
+  "status": "ESTIMATED_SCENARIOS_NOT_OBSERVED_BILLING",
+  "CPU": 0.5,
+  "memory_GiB": 1,
+  "replicas": [
+    0,
+    1
+  ],
+  "scenarios": [
+    {
+      "requests": 1000,
+      "allocated_replica_hours_assumed": 10.0,
+      "vCPU_seconds": 18000.0,
+      "GiB_seconds": 36000.0,
+      "vCPU_grant_used": 18000.0,
+      "GiB_grant_used": 36000.0,
+      "estimated_compute_USD": 0.0,
+      "estimated_request_USD": 0.0,
+      "estimated_compute_and_requests_USD": 0.0,
+      "assumptions": {
+        "monthly_sessions": 30,
+        "allocated_minutes_per_session": 20,
+        "session_window": "Hypothetical 20-minute allocated replica window including startup, requests, probes and cooldown; zero outside windows",
+        "request_grouping": "Requests distributed inside session windows; other subscription grants unused",
+        "logging": "No persistent log ingestion",
+        "registry": "Public GHCR currently free"
+      }
+    },
+    {
+      "requests": 10000,
+      "allocated_replica_hours_assumed": 30.0,
+      "vCPU_seconds": 54000.0,
+      "GiB_seconds": 108000.0,
+      "vCPU_grant_used": 54000.0,
+      "GiB_grant_used": 108000.0,
+      "estimated_compute_USD": 0.0,
+      "estimated_request_USD": 0.0,
+      "estimated_compute_and_requests_USD": 0.0,
+      "assumptions": {
+        "monthly_sessions": 90,
+        "allocated_minutes_per_session": 20,
+        "session_window": "Hypothetical 20-minute allocated replica window including startup, requests, probes and cooldown; zero outside windows",
+        "request_grouping": "Requests distributed inside session windows; other subscription grants unused",
+        "logging": "No persistent log ingestion",
+        "registry": "Public GHCR currently free"
+      }
+    },
+    {
+      "requests": 100000,
+      "allocated_replica_hours_assumed": 200.0,
+      "vCPU_seconds": 360000.0,
+      "GiB_seconds": 720000.0,
+      "vCPU_grant_used": 180000,
+      "GiB_grant_used": 360000,
+      "estimated_compute_USD": 5.4,
+      "estimated_request_USD": 0.0,
+      "estimated_compute_and_requests_USD": 5.4,
+      "assumptions": {
+        "monthly_sessions": 600,
+        "allocated_minutes_per_session": 20,
+        "session_window": "Hypothetical 20-minute allocated replica window including startup, requests, probes and cooldown; zero outside windows",
+        "request_grouping": "Requests distributed inside session windows; other subscription grants unused",
+        "logging": "No persistent log ingestion",
+        "registry": "Public GHCR currently free"
+      }
+    }
+  ],
+  "continuous_30_day_active": {
+    "requests": 100000,
+    "allocated_replica_hours_assumed": 720,
+    "vCPU_seconds": 1296000.0,
+    "GiB_seconds": 2592000,
+    "vCPU_grant_used": 180000,
+    "GiB_grant_used": 360000,
+    "estimated_compute_USD": 33.48,
+    "estimated_request_USD": 0.0,
+    "estimated_compute_and_requests_USD": 33.48
+  },
+  "excluded": [
+    "Internet egress",
+    "Taxes/currency conversion",
+    "Optional features not provisioned",
+    "Other subscription consumption"
+  ],
+  "limitations": [
+    "Actual frequency and idle cooldown change replica lifetime; these are explicit activity assumptions, not a forecast.",
+    "Monthly free grants are shared per subscription and may be partly consumed elsewhere.",
+    "Request latency, CPU utilization and billed allocated replica-seconds are different quantities.",
+    "Student credit can be consumed beyond grants; USD100 starting balance is user-confirmed, not a verified remaining balance.",
+    "Scale-to-zero and a spending-limit policy do not constitute a project-specific small hard spending cap."
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "recorded_UTC": "2026-11-27T08:34:21.214766+00:00",
+  "scope": "Resource group month-to-date ActualCost",
+  "student_credit": {
+    "USD": 100,
+    "source": "User-confirmed starting balance; remaining credit not independently verified"
+  },
+  "limitations": "Billing can be delayed and free usage may not appear. A zero/empty result is not a final invoice or proof of zero grant consumption.",
+  "response": {
+    "eTag": null,
+    "id": "subscriptions/38a91a22-90a0-45e3-aad6-ce69bf22ed3a/resourcegroups/rg-pv-anomaly-detection/providers/Microsoft.CostManagement/query/e195cf65-4c02-4ea6-9400-d92bc0bbf0ae",
+    "location": null,
+    "name": "e195cf65-4c02-4ea6-9400-d92bc0bbf0ae",
+    "properties": {
+      "columns": [
+        {
+          "name": "PreTaxCost",
+          "type": "Number"
+        },
+        {
+          "name": "Currency",
+          "type": "String"
+        }
+      ],
+      "nextLink": null,
+      "rows": []
+    },
+    "sku": null,
+    "type": "Microsoft.CostManagement/query"
+  }
+}

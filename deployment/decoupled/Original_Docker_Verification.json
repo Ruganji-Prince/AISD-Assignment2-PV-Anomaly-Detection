@@ -1,0 +1,91 @@
+{
+  "status": "VERIFIED",
+  "git_commit": "cf295ed02ce909001f67e7d0199805e79ef2aff6",
+  "runner": "Standard ubuntu-latest public-repository runner",
+  "image_id": "sha256:c227995a9bfe33ab867bc06795cb09db37fe4e5fa95c3989e62246ccf63e9609",
+  "image_bytes": 157920181,
+  "build_seconds": 0.6623045910000087,
+  "startup_to_ready_seconds": 1.8364256129999887,
+  "nonroot_uid": 1000,
+  "read_only_root": true,
+  "health": {
+    "status": "ready",
+    "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+    "python_version": "3.14.10"
+  },
+  "runtime": {
+    "python": "3.14.10",
+    "platform": "Linux-7.0.0-1018-aws-x86_64-with-glibc2.41",
+    "packages": {
+      "numpy": "2.5.4",
+      "pandas": "3.0.6",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "fastapi": "0.163.1"
+    }
+  },
+  "reference_cases": [
+    {
+      "case": 0,
+      "container_API": 0,
+      "container_CLI": 0,
+      "Vercel_API": 0
+    },
+    {
+      "case": 1,
+      "container_API": 1,
+      "container_CLI": 1,
+      "Vercel_API": 1
+    },
+    {
+      "case": 2,
+      "container_API": 2,
+      "container_CLI": 2,
+      "Vercel_API": 2
+    },
+    {
+      "case": 3,
+      "container_API": 3,
+      "container_CLI": 3,
+      "Vercel_API": 3
+    },
+    {
+      "case": 4,
+      "container_API": 4,
+      "container_CLI": 4,
+      "Vercel_API": 4
+    }
+  ],
+  "TRAIN_probability_parity": {
+    "N": 200,
+    "max_probability_difference": 3.3306690738754696e-16
+  },
+  "invalid_checks": [
+    {
+      "case": "missing",
+      "status": 422
+    },
+    {
+      "case": "extra",
+      "status": 422
+    },
+    {
+      "case": "negative",
+      "status": 422
+    },
+    {
+      "case": "nonfinite",
+      "status": 422
+    },
+    {
+      "case": "duplicate",
+      "status": 422
+    },
+    {
+      "case": "oversize",
+      "status": 413
+    }
+  ],
+  "model_artifact_unchanged": true,
+  "workflow_url": "https://github.com/Ruganji-Prince/AISD-Assignment2-PV-Anomaly-Detection/actions/runs/45976134017"
+}

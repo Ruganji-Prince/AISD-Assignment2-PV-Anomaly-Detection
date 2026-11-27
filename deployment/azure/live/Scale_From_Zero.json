@@ -1,0 +1,46 @@
+{
+  "recorded_UTC": "2026-11-27T08:41:03.778880+00:00",
+  "revision": "pv-anomaly-detection--rf-e4-940f5e2",
+  "replicas_before": [],
+  "configuration_changed": false,
+  "scope": "One observed request after verified zero replicas, not isolated full platform cold-start timing. Control-plane observations cannot exclude unrelated public traffic.",
+  "replicas_after_first_request": [
+    {
+      "name": "pv-anomaly-detection--rf-e4-940f5e2-6456467f5b-29hmk",
+      "state": "Running",
+      "createdTime": "2026-11-27T08:41:05Z",
+      "containers": [
+        {
+          "name": "pv-inference",
+          "ready": true,
+          "started": true,
+          "restartCount": 0,
+          "runningState": "Running"
+        }
+      ]
+    }
+  ],
+  "requests": [
+    {
+      "phase": "first_after_observed_zero",
+      "HTTP": 200,
+      "network_ms": 56941.9285999611,
+      "server_timing": "body_validate;dur=1.2236, init;dur=0.0000, validation;dur=0.0093, frame;dur=0.6362, preprocessing;dur=20.0665, forest;dur=18.0741, server;dur=41.8203",
+      "instance": "42723cd8a74a",
+      "model_initialized_in_request": false,
+      "predicted_class": 0
+    },
+    {
+      "phase": "subsequent_request",
+      "HTTP": 200,
+      "network_ms": 705.4969000164419,
+      "server_timing": "body_validate;dur=0.5096, init;dur=0.0000, validation;dur=0.0061, frame;dur=0.3608, preprocessing;dur=5.1029, forest;dur=6.2580, server;dur=13.2150",
+      "instance": "42723cd8a74a",
+      "model_initialized_in_request": false,
+      "predicted_class": 0
+    }
+  ],
+  "status": "OBSERVED_ZERO_TO_RUNNING",
+  "limitations": "Single activation sample; DNS/TLS, ingress queueing, replica startup/readiness and network are combined. Health probes can initialize the model before the request handler; no component is fabricated or equated to billed CPU.",
+  "sanitization": "Only replica identity/state and container readiness retained; administrative websocket/log endpoint URLs omitted."
+}

@@ -1,0 +1,54 @@
+{
+  "status": "STATIC_ONLY",
+  "api_base": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io",
+  "functions": 0,
+  "model_artifacts": 0,
+  "Python_runtime_files": 0,
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 689,
+      "sha256": "d2dec8ebd178c7af2e90812ca559bb08d65d50b67ed812de9f262b1e66347c23"
+    },
+    {
+      "path": "static/config.js",
+      "bytes": 137,
+      "sha256": "e2d9292110765cbfd884a40fa1085cd2eda9ef1157ffeeaa8efd29528332206b"
+    },
+    {
+      "path": "static/index.html",
+      "bytes": 13626,
+      "sha256": "a3da5ae6b6663b59c6e3c6f39918d427ca726b772fc2c3ab7f3f98a72a9b2b7e"
+    },
+    {
+      "path": "static/assets/api.js",
+      "bytes": 3683,
+      "sha256": "b0322aede464d5be5d9d973e7c73dd789b125c30b0d119ee77e6145c97285a40"
+    },
+    {
+      "path": "static/assets/app.js",
+      "bytes": 12590,
+      "sha256": "594a893e646916ab85e664b34087f2ca888eb497ae559f07b85cccabc411b1d7"
+    },
+    {
+      "path": "static/assets/explanations.js",
+      "bytes": 2232,
+      "sha256": "8303706f1ff787165ba3923dcdea8fa04d9e06d5c601941f9f9e423ea327ab2e"
+    },
+    {
+      "path": "static/assets/favicon.svg",
+      "bytes": 281,
+      "sha256": "e720e9f2e3ee4996b38fd472e4e95d4e023a960a99aa61d43d13894cf1916142"
+    },
+    {
+      "path": "static/assets/scenarios.js",
+      "bytes": 952,
+      "sha256": "b7e43e97957e7b4f99b774ada7a6b363a823c96bdf7df5be54ccb5886c0aae25"
+    },
+    {
+      "path": "static/assets/style.css",
+      "bytes": 29133,
+      "sha256": "2b0f6489e2df05a6d689befa94462d7a7d8f55f3f49ba81802a9d634dd81510a"
+    }
+  ]
+}

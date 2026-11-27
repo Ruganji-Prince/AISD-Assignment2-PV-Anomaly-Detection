@@ -1,0 +1,151 @@
+{
+  "source_commit": "940f5e2ca116c5413428348faa82b77bca3915c3",
+  "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+  "files": [
+    {
+      "source": "Dockerfile",
+      "path": "Dockerfile",
+      "bytes": 500,
+      "sha256": "7e901eb463d1b6b2abcef2a08ff1db352dd6384fda252b8e3e6d8b33a6f8c09f"
+    },
+    {
+      "source": ".dockerignore",
+      "path": ".dockerignore",
+      "bytes": 172,
+      "sha256": "0d5c4a898bba79f3956a1ed63e681b7527d5f018a26a33544f856dc51d7b8dd5"
+    },
+    {
+      "source": "src/__init__.py",
+      "path": "src/__init__.py",
+      "bytes": 40,
+      "sha256": "9a3486d0cd33ded3efb3dc967ec30af498d30d3744454fa4fc0ffed0522bad3d"
+    },
+    {
+      "source": "src/inference/__init__.py",
+      "path": "src/inference/__init__.py",
+      "bytes": 46,
+      "sha256": "7439e321e2e5d96b19c2e59a4dd0a32c0820c6df96db31b7cc66dc9d754d242c"
+    },
+    {
+      "source": "src/inference/cli.py",
+      "path": "src/inference/cli.py",
+      "bytes": 4504,
+      "sha256": "3e12eadc385d065032fd772dffd319c9e9c77f79107ece1b1b99bdb680a8bf68"
+    },
+    {
+      "source": "src/phase2_stage1/__init__.py",
+      "path": "src/phase2_stage1/__init__.py",
+      "bytes": 89,
+      "sha256": "5505d76c04b333ae7a33da611ce28f21d2d007a3280189e400751a5c7b27f297"
+    },
+    {
+      "source": "src/phase2_stage1/contracts.py",
+      "path": "src/phase2_stage1/contracts.py",
+      "bytes": 4872,
+      "sha256": "8be88c538d23b5894ef3b2024fd9e71e856cf194a735a7d070bf17d4a67934e3"
+    },
+    {
+      "source": "src/phase2_stage1/features.py",
+      "path": "src/phase2_stage1/features.py",
+      "bytes": 2743,
+      "sha256": "802abc887b40c4750e894119efb789a73330b6825758846b51db6f565f8ad555"
+    },
+    {
+      "source": "src/phase2_stage2/__init__.py",
+      "path": "src/phase2_stage2/__init__.py",
+      "bytes": 79,
+      "sha256": "6036d9755ca5f6e1460ecd81f59ac5e64e0898b617510d5703d781ae0f4650f1"
+    },
+    {
+      "source": "src/phase2_stage2/contracts.py",
+      "path": "src/phase2_stage2/contracts.py",
+      "bytes": 3158,
+      "sha256": "375f2d36108e9747d038a9d132e32033dfa5e97d2e481f20db6e1d5f49e6a6c6"
+    },
+    {
+      "source": "src/phase2_stage2/models.py",
+      "path": "src/phase2_stage2/models.py",
+      "bytes": 3859,
+      "sha256": "06bc89f3168d6d14b13bdc0b559ec53f8854b41cd3e60bb352824bad14c3c8f4"
+    },
+    {
+      "source": "web/__init__.py",
+      "path": "web/__init__.py",
+      "bytes": 45,
+      "sha256": "930362ded4fe4d10b30899ac259eccfbc4d880a69b5e9f9b3d13c77cdc2e2fce"
+    },
+    {
+      "source": "web/app.py",
+      "path": "web/app.py",
+      "bytes": 6819,
+      "sha256": "e58dc090b920c891c47527d46e0f02e36daf4ffdfb4e6047cff3f61710ffa266"
+    },
+    {
+      "source": "web/requirements.lock",
+      "path": "web/requirements.lock",
+      "bytes": 13983,
+      "sha256": "66df0e12b40bf584ba26c434c6e156514241620ee951131dcd76c04caf08521f"
+    },
+    {
+      "source": "web/static/index.html",
+      "path": "web/static/index.html",
+      "bytes": 13527,
+      "sha256": "effb379d5fbf3a9f98ebadf966016b1949f854c130c69519b59b8d2dd3e03b33"
+    },
+    {
+      "source": "web/static/style.css",
+      "path": "web/static/style.css",
+      "bytes": 28891,
+      "sha256": "6176bcd41499221aba48a845c99d3d884c920f4aa08f72e6b7a9bf252ccbba8b"
+    },
+    {
+      "source": "web/static/app.js",
+      "path": "web/static/app.js",
+      "bytes": 12646,
+      "sha256": "f2c8c419b67c789ddd7c5ace03d538fd0da070e8076a573b6a461c34ddf4b8b4"
+    },
+    {
+      "source": "web/static/scenarios.js",
+      "path": "web/static/scenarios.js",
+      "bytes": 952,
+      "sha256": "b7e43e97957e7b4f99b774ada7a6b363a823c96bdf7df5be54ccb5886c0aae25"
+    },
+    {
+      "source": "web/static/explanations.js",
+      "path": "web/static/explanations.js",
+      "bytes": 2232,
+      "sha256": "8303706f1ff787165ba3923dcdea8fa04d9e06d5c601941f9f9e423ea327ab2e"
+    },
+    {
+      "source": "web/static/favicon.svg",
+      "path": "web/static/favicon.svg",
+      "bytes": 281,
+      "sha256": "e720e9f2e3ee4996b38fd472e4e95d4e023a960a99aa61d43d13894cf1916142"
+    },
+    {
+      "source": "models/rf_e4/model.pkl",
+      "path": "models/rf_e4/model.pkl",
+      "bytes": 12232020,
+      "sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb"
+    },
+    {
+      "source": "models/rf_e4/provenance.json",
+      "path": "models/rf_e4/provenance.json",
+      "bytes": 737,
+      "sha256": "2d17e46c3cb05ab326d053a220d6b1adff46cf549068269c3093140d1e41c8a7"
+    },
+    {
+      "source": "deployment/example_cases.json",
+      "path": "deployment/example_cases.json",
+      "bytes": 2388,
+      "sha256": "15a68bcdf8771d06528440c7d9ed00b31744160e9005dab3202cc64237461733"
+    },
+    {
+      "source": "phase1_strategy/PRIMARY_SOURCE_LICENSE.txt",
+      "path": "models/rf_e4/PRIMARY_SOURCE_LICENSE.txt",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    }
+  ],
+  "policy": "Committed-blob allowlist; no raw CSV, review files, credentials, caches or training results."
+}

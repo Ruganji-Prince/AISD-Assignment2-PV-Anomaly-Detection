@@ -1,0 +1,41 @@
+{
+  "status": "LIVE_AZURE_DEPLOYMENT_VERIFIED",
+  "recorded_UTC": "2026-11-27T08:49:59.686913+00:00",
+  "URL": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io",
+  "resource_group": "rg-pv-anomaly-detection",
+  "region": "francecentral",
+  "environment": "pv-anomaly-env",
+  "environment_mode": "WorkloadProfiles",
+  "profile": "Consumption",
+  "application": "pv-anomaly-detection",
+  "revision": "pv-anomaly-detection--rf-e4-940f5e2",
+  "image": "ghcr.io/ruganji-prince/pv-anomaly-detection@sha256:51be78bd92b20af85628dd07009afd0cdad5689353fcf8a621604b7ea82e70e6",
+  "container_source_commit": "940f5e2ca116c5413428348faa82b77bca3915c3",
+  "publication_branch": "engineering/azure-container-20261127",
+  "original_main_and_submission_tag": "d49cff533e5fe8860bacfb9942779ab003db47db",
+  "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+  "raw_CSV_sha256": "717278fdc338bf6713293c0495421a8be9ea02a0b64144e86e957a531edecb8a",
+  "Phase1_PDF_sha256": "dfb3f253f3e059ece168d9c6edffc10f68a0a21ba8b738a6fb2b2d2c1d962497",
+  "allocation": {
+    "vCPU": 0.5,
+    "GiB": 1,
+    "min_replicas": 0,
+    "max_replicas": 1
+  },
+  "secrets_configured": 0,
+  "registry_credentials": false,
+  "approved_resources": [
+    "rg-pv-anomaly-detection",
+    "pv-anomaly-env",
+    "pv-anomaly-detection"
+  ],
+  "no_retraining_or_scientific_modification": true,
+  "Vercel_production_preserved": true,
+  "observed_activation_ms": 56941.9285999611,
+  "scope_notes": [
+    "Azure CLI initially selected Express; empty environment corrected in place to WorkloadProfiles before app provisioning.",
+    "Consumption quota verified at 100 free cores before 0.5-vCPU app PUT.",
+    "No resources deleted, duplicate environments created, subscription upgrades or paid support enabled.",
+    "Container-preparation receipts remain earlier historical checkpoints; current live receipts supersede their not-yet-provisioned status."
+  ]
+}

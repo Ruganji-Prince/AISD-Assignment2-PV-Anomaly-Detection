@@ -1,0 +1,54 @@
+name: Verify and publish Azure runtime container
+on:
+  workflow_dispatch:
+  push:
+    branches: [engineering/azure-container-20261127]
+    paths:
+      - .github/workflows/azure-container-publication.yml
+      - deployment/azure/prepare_context.py
+      - deployment/azure/verify_image.py
+      - deployment/azure/test_context.py
+      - deployment/azure/verify_registry.py
+permissions:
+  contents: read
+  packages: write
+concurrency:
+  group: azure-container-publication
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.repository == 'Ruganji-Prince/AISD-Assignment2-PV-Anomaly-Detection'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      IMAGE: ghcr.io/ruganji-prince/pv-anomaly-detection
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Test allowlist safety and prepare committed-blob context
+        run: |
+          python3 -B -m unittest deployment.azure.test_context -v
+          python3 -B -m deployment.azure.prepare_context "$RUNNER_TEMP/pv-runtime" --revision "$GITHUB_SHA" --manifest "$RUNNER_TEMP/context-manifest.json"
+          cat "$RUNNER_TEMP/context-manifest.json"
+      - name: Build original Dockerfile using only allowlisted runtime files
+        run: |
+          started=$(date +%s)
+          docker build --platform linux/amd64 --build-arg PYTHON_VERSION=3.14.10             --label "org.opencontainers.image.source=https://github.com/$GITHUB_REPOSITORY"             --label "org.opencontainers.image.revision=$GITHUB_SHA"             --label "org.opencontainers.image.description=Original RF E4 PV inference runtime; Azure provisioning pending"             -t "$IMAGE:sha-$GITHUB_SHA" "$RUNNER_TEMP/pv-runtime"
+          echo "BUILD_SECONDS=$(($(date +%s)-started))" >> "$GITHUB_ENV"
+      - name: Inspect every layer and verify at 0.5 CPU and 1 GiB before publication
+        run: |
+          python3 -B -m deployment.azure.verify_image --image "$IMAGE:sha-$GITHUB_SHA" --manifest "$RUNNER_TEMP/context-manifest.json" --output "$RUNNER_TEMP/container-verification.json"
+      - name: Publish verified container using ephemeral workflow credentials
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          printf '%s' "$GH_TOKEN" | docker login ghcr.io --username "$GITHUB_ACTOR" --password-stdin
+          trap 'docker logout ghcr.io >/dev/null 2>&1' EXIT
+          docker push "$IMAGE:sha-$GITHUB_SHA"
+          digest=$(docker image inspect "$IMAGE:sha-$GITHUB_SHA" --format '{{index .RepoDigests 0}}')
+          echo "PV_GHCR_IMAGE=$digest"
+          echo "PV_CONTAINER_BUILD_SECONDS=$BUILD_SECONDS"
+          python3 -B -m deployment.azure.verify_registry --image "$digest" --output "$RUNNER_TEMP/registry-verification.json"
+          echo "Verified original-model container: $digest" >> "$GITHUB_STEP_SUMMARY"
+          echo "Azure resources were not created. Separate provisioning approval remains required." >> "$GITHUB_STEP_SUMMARY"

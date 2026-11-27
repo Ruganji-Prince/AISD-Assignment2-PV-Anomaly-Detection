@@ -1,0 +1,18 @@
+{
+  "recorded_UTC": "2026-11-27T08:53:46.495061+00:00",
+  "resource_group": "rg-pv-anomaly-detection",
+  "resources": [
+    {
+      "location": "francecentral",
+      "name": "pv-anomaly-env",
+      "type": "Microsoft.App/managedEnvironments"
+    },
+    {
+      "location": "francecentral",
+      "name": "pv-anomaly-detection",
+      "type": "Microsoft.App/containerApps"
+    }
+  ],
+  "approved_scope_only": true,
+  "scope": "Customer resources in dedicated project group; no extra customer registry, workspace, database, custom network, VM, GPU or dedicated profile."
+}

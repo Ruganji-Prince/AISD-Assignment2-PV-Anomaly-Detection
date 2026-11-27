@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "Vercel_production_unchanged": {
+    "id": "dpl_D24pfF7JJsBL5PRSy8VRQFAeXcpU",
+    "readyState": "READY",
+    "url": "pv-anomaly-detection-jco5b5t1v-prince-r-k.vercel.app"
+  },
+  "Azure_revisions": [
+    {
+      "name": "pv-anomaly-detection--rf-e4-940f5e2",
+      "active": false,
+      "healthState": "Healthy"
+    },
+    {
+      "name": "pv-anomaly-detection--cors-cf295ed",
+      "active": true,
+      "healthState": "Healthy"
+    }
+  ],
+  "no_production_cutover": true,
+  "scope": "Read-only check; no resource creation or scaling changes."
+}

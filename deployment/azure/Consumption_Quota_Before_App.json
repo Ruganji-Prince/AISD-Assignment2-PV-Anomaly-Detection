@@ -1,0 +1,48 @@
+{
+  "recorded_UTC": "2026-11-27T08:25:35.350794+00:00",
+  "environment_mode": "WorkloadProfiles",
+  "environment_state": "Succeeded",
+  "available_consumption_cores": 100,
+  "usage_response": {
+    "value": [
+      {
+        "currentValue": 0,
+        "limit": 0,
+        "name": {
+          "localizedValue": "Managed Environment General Purpose Cores",
+          "value": "ManagedEnvironmentGeneralPurposeCores"
+        },
+        "usage": 0
+      },
+      {
+        "currentValue": 0,
+        "limit": 0,
+        "name": {
+          "localizedValue": "Managed Environment Memory Optimized Cores",
+          "value": "ManagedEnvironmentMemoryOptimizedCores"
+        },
+        "usage": 0
+      },
+      {
+        "currentValue": 0,
+        "limit": 100,
+        "name": {
+          "localizedValue": "Managed Environment Consumption Cores",
+          "value": "ManagedEnvironmentConsumptionCores"
+        },
+        "usage": 0
+      },
+      {
+        "currentValue": 0,
+        "limit": 2,
+        "name": {
+          "localizedValue": "Managed Environment Consumption T 4 Gpus",
+          "value": "ManagedEnvironmentConsumptionT4Gpus"
+        },
+        "usage": 0
+      }
+    ]
+  },
+  "approved_CPU": 0.5,
+  "scope": "Verified immediately before approved app PUT; environment update remains separately reported."
+}

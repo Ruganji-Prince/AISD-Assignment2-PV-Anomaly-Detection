@@ -1,0 +1,319 @@
+{
+  "scope": "Exact staged Azure-extension files before adding this manifest; manifest itself is additionally committed. No original scientific/runtime/data file changed.",
+  "files": [
+    {
+      "status": "M",
+      "path": "README.md",
+      "bytes": 18237,
+      "sha256": "8f43ce0dc4375670954cbb92ed5ddc1a3eed142e7c30ddf3043c0dbe9f9592dd"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/Acceptance_Matrix.md",
+      "bytes": 6425,
+      "sha256": "04433424cc86e9afe0556c8ab16d1094fe80ccb900cc1719ed6631b777bc2d5e"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/Architecture.md",
+      "bytes": 3508,
+      "sha256": "361a22c2523ccd8b200153fc96e0575b5dced6cff349b884a1fd072e8511a7fc"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/Automated_Tests.json",
+      "bytes": 897,
+      "sha256": "9361285f2591d3280fbf7effd8c2d3366533135ac413aec875e396520c3738cf"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/Cleanup_Guide.md",
+      "bytes": 4278,
+      "sha256": "58838077ce8a38767378d502951121f7b9d7c32ed71f7cac8a486cfaf3287ed9"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/Cloud_Comparison.md",
+      "bytes": 6764,
+      "sha256": "3bebae55a6b0bd84c04b7553e86ea2d7e5acd3353033090dde317ea74815009b"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/Consumption_Quota_Before_App.json",
+      "bytes": 1369,
+      "sha256": "5934563f79d189cfc35eada6c9ac19152ad6be50895d313dd5a05d4bd0bee1fc"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/Cost_Analysis.md",
+      "bytes": 5024,
+      "sha256": "377cb2371430f6af7ef112e8a253eb3463df395614b68191c327ae939b4788c5"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/Dependency_Scan.json",
+      "bytes": 1204,
+      "sha256": "dc7098d3efb52b21a6d0d1c8ab08d533ca3eb5d67f53d05ea479613770c7516d"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/Deployment_Provenance.json",
+      "bytes": 2015,
+      "sha256": "bd00b82ad982c3da30a0d8e3d1dea2f2e20eb208f1b639f56b85c622ee28f8dd"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/Final_Verification.json",
+      "bytes": 4048,
+      "sha256": "820d64ae120b3bbc76331a7b90c076b2d62e61992f7b3a876e2148616cb59f98"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/Initial_Readiness.json",
+      "bytes": 577,
+      "sha256": "1c62174c5e83ead25bc2847e513aec4fe51484937a605cf5e641b2b75296ac8c"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/Monthly_Cost_Scenarios.json",
+      "bytes": 3774,
+      "sha256": "2bc32ff8ec251e7b63c2121ef9b25820bd539db39ad3e32886620867d3990607"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/Professor_Azure_Demonstration.md",
+      "bytes": 6400,
+      "sha256": "66db7047f332d040330fe290326ba1a4174c8dd830ec4abaf6b14cc5271e1d3b"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/Provisioning_Pricing_Refresh.json",
+      "bytes": 809,
+      "sha256": "de9ee5aa613d794dea1764c83d135280bc3d8b7d8de9a69d22ae4581ddb015e3"
+    },
+    {
+      "status": "M",
+      "path": "deployment/azure/README.md",
+      "bytes": 9308,
+      "sha256": "447cbc16a3ea0a8e7b2f462f7c0fbabd65480789a0a2c8585db9b458fd2562c0"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/Resource_Inventory.json",
+      "bytes": 590,
+      "sha256": "c8e6619dfd7941bfe6fc3f887bfe0d9943ca4c8dc049166b3a643832528f47ba"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/Security_Verification.md",
+      "bytes": 3830,
+      "sha256": "c0a37d19c9a4e6ba8e16a0f5fe19926cc502f05ad7e026f6247fc9b6c532491b"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/Submission_Protection.json",
+      "bytes": 47052,
+      "sha256": "7ec9bd392b320db5078215718869b8fe68b5f7e5d5dd528f97053e67ab7a9fab"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/Troubleshooting.md",
+      "bytes": 3334,
+      "sha256": "fa82cb719a29821ebeaee7c3cec17858f643e95f0d2ce0067e7fcd370839cc5c"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/Vercel_Plan_Observation.json",
+      "bytes": 390,
+      "sha256": "4c720df24a1e1b970e16d17db858517c893cd64c7fe923b9c87acfbd747b83ca"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/after_benchmark/Billing_Observation.json",
+      "bytes": 1040,
+      "sha256": "8b5c0460c3475e388be1fe294b677d10f40cb9ca7dbca87f40df940b1fcd6774"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/after_benchmark/Deployment_Configuration.json",
+      "bytes": 3777,
+      "sha256": "226c9eb77191efaa7dea17eadf668848e4d04961bfc2f57399b02d4f5718b0d7"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/after_benchmark/Resource_Usage.json",
+      "bytes": 37459,
+      "sha256": "b40ce5be8e0acc5e608965e3e96d489074a8e97c6a55ca79d8091938d81f74d6"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/benchmark.py",
+      "bytes": 6517,
+      "sha256": "39df442140e5d826706d2d49ebf61a461979c8fc2c266d3782c6318559c298b6"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/check_evidence.py",
+      "bytes": 2584,
+      "sha256": "5756166d2f24799167a9724d6d2b03a77656a50227eeee5051af361473a0cf88"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/collect.py",
+      "bytes": 5734,
+      "sha256": "44915fd0df0e79f25d8fec713a742f2374ab1c5d6d9be46bde3c00e4e526c67b"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/containerapp.json",
+      "bytes": 2806,
+      "sha256": "4c412a537a3d395f6d57141cdb4f7c6ed96e0b9f7fac8c8f4852eeb470985cc8"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/costs.py",
+      "bytes": 3017,
+      "sha256": "d81dc8e1490c3a625d04c5d1087a0168d75e5ef05ce4b2dc4954424e5a852030"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/deploy.ps1",
+      "bytes": 462,
+      "sha256": "7ae56549e95b2d279eec6d48ef81d25b370c7cff0a0569ec1be9d0b483a7c89b"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/deploy.py",
+      "bytes": 6964,
+      "sha256": "969026469799045d128503864e98474726ad26b889c7412a3ef8a4053a129276"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/environment.json",
+      "bytes": 467,
+      "sha256": "372d6af40a394133b10d3a7e81094b114334176b17028aaf76d7e553c942d21e"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/figures.py",
+      "bytes": 5326,
+      "sha256": "0ec2184348781a1534e6320c249590c08370f59da5ee2e584f5318bc2a4a1fa0"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/figures/Latency_Comparison.png",
+      "bytes": 97088,
+      "sha256": "1b5a00b6e97475b9bf8bf260aad601cb8f930cc0ab4338bafb3efa4dff027796"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/figures/Latency_Distributions.png",
+      "bytes": 117350,
+      "sha256": "c4fec2eaaeac362902f01bcdf915d0f0ad590917997419d33ba5a95707f5a202"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/figures/Monthly_Cost_Scenarios.png",
+      "bytes": 64688,
+      "sha256": "2931291f7bf2d238b87052068c1a889ae376692efecb773f67d24039161bbd0d"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/figures/Resource_Usage.png",
+      "bytes": 118883,
+      "sha256": "82ada677d982158312cef5cab960f7b66082687ea8f5b5bbf3de0d9faa0e571b"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/live/Azure_Runtime_Parity.json",
+      "bytes": 1348,
+      "sha256": "74b000f03544cbb1c622c96b7215a050c26321ac11bc6d5d2b09fd9e98d74d1a"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/live/Billing_Observation.json",
+      "bytes": 1040,
+      "sha256": "e355dac2d844423d3c33ed44497a9b6d4fa808a85f26abf872e8fe79c66ebe99"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/live/Browser_Verification.json",
+      "bytes": 1229,
+      "sha256": "f68061ba41dcc5bc057b2a40be89411b49c8a1c07c71f75187c196416889bfba"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/live/Deployment_Configuration.json",
+      "bytes": 3777,
+      "sha256": "94261432e72bbf73b6caf79f492af8aff29334e166bfeb39023df1d0327d965d"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/live/Deployment_Verification.json",
+      "bytes": 14528,
+      "sha256": "238c96eef1c106276a05196a1e8e84ea564b08e28f4b58b35f925da9fa7d7aed"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/live/Latency_Benchmark.csv",
+      "bytes": 10409,
+      "sha256": "a750908c1e1ef82064fb883fbb0b2a9717e9d1be51204a1e493a3a945035dc06"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/live/Latency_Summary.json",
+      "bytes": 66228,
+      "sha256": "7b74589bbb2704b8456963240e2604d0c8a2e0db24c8a444a505b1d5c7d1b24e"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/live/Prediction_Parity.csv",
+      "bytes": 1396,
+      "sha256": "394262b5bde7f60f677eeb23933a0c108ced4b2c7b8660afefbf56fe8301c3b1"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/live/Resource_Usage.json",
+      "bytes": 36951,
+      "sha256": "14937c1f546405c8edef4a6cb6727f53b3cead2ace83ef97fbc25c34bd776484"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/live/Scale_From_Zero.json",
+      "bytes": 2013,
+      "sha256": "1c5ec8a5cb396c262096a57186e26489b1c08300d0166f6510faefadd6c213ec"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/runtime_probe.py",
+      "bytes": 1857,
+      "sha256": "eb5de732ee9814b740590436dae068708665d09371e4371b8b9c489ef584f0c1"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/scale_zero.py",
+      "bytes": 3091,
+      "sha256": "7babf09fd58499835452344a2935fe57a27c79b20fd89f7a64cd232a62db47ce"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/test_deployment.py",
+      "bytes": 2394,
+      "sha256": "e073307f8a7dfe4674d6d1eb8d80dd95fcb4f9f90e05607b7f081edd5d1221de"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/verify.ps1",
+      "bytes": 419,
+      "sha256": "36bb88c45d0e663d7bdaaa34570003e24266676083a4e198906502278571895a"
+    },
+    {
+      "status": "A",
+      "path": "deployment/azure/verify.py",
+      "bytes": 6351,
+      "sha256": "688450df076730f6a2c2c5a6af0d03bb3fbc9fc44eaaf01a179e1611dbf889ec"
+    }
+  ],
+  "listed_files": 52,
+  "additional_manifest_file": "deployment/azure/Changed_File_Manifest.json"
+}

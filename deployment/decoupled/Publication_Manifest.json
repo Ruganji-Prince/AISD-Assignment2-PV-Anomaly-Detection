@@ -1,0 +1,242 @@
+{
+  "baseline": "8d4a6b5fdcd9f236cc6e9ade7a0bc093603b773f",
+  "implementation_source": "cf295ed02ce909001f67e7d0199805e79ef2aff6",
+  "scope": "Engineering preview branch only. This manifest excludes itself to avoid a self-referential hash. No added binaries.",
+  "files": [
+    {
+      "path": ".github/workflows/decoupled-container.yml",
+      "bytes": 3283,
+      "sha256": "2b5fe1b703f3a6cdee71ca4eb26b9ff50a385ad4cb1f8b3b8e6a1be1070df604"
+    },
+    {
+      "path": "README.md",
+      "bytes": 19851,
+      "sha256": "09a2f7cf73e4e6559686c88bb6fd5f4559c6ca76afc5788d8a1cb0013a707836"
+    },
+    {
+      "path": "deployment/azure/verify_image.py",
+      "bytes": 8922,
+      "sha256": "51da0cd09904108678dbd6990464c13cf9f800184414739b6c0d17b9009b1c1e"
+    },
+    {
+      "path": "deployment/decoupled/API_Contract.md",
+      "bytes": 2622,
+      "sha256": "13ece347d19b8da7839c6194a584fa32af3b4d2ee54976f1112e4bfb5e8e9919"
+    },
+    {
+      "path": "deployment/decoupled/Acceptance_Matrix.md",
+      "bytes": 2467,
+      "sha256": "4f8a30d7ac53409bade6e223f8d19627f608873cc89239eae10b03edca99906c"
+    },
+    {
+      "path": "deployment/decoupled/Architecture.md",
+      "bytes": 3515,
+      "sha256": "a920b0beaf7c1ee9e2c1ccd045567968f42374942ad934611d32395e8cbc966e"
+    },
+    {
+      "path": "deployment/decoupled/Azure_Revision_Configuration.json",
+      "bytes": 3131,
+      "sha256": "00bf4b9300bef042ddade610ce7ac201d0dc1283a328d15e2f8901a402f77804"
+    },
+    {
+      "path": "deployment/decoupled/Backend_Container_Verification.json",
+      "bytes": 3186,
+      "sha256": "a3590323b43805991b43872532d07081f7bae85d0e7e04f4893989dae1ede7d2"
+    },
+    {
+      "path": "deployment/decoupled/Backend_Registry_Verification.json",
+      "bytes": 2930,
+      "sha256": "a37c263c426767859f097362ae6ea92fcff34db3254ed5ae796ca3804385177b"
+    },
+    {
+      "path": "deployment/decoupled/Browser_Network_Verification.json",
+      "bytes": 17373,
+      "sha256": "d14d2b7de653e0c25b09c1763d46d2beb15b0414d216e706242f3f0529f9e349"
+    },
+    {
+      "path": "deployment/decoupled/Cold_Start_Handling.md",
+      "bytes": 2336,
+      "sha256": "9ef6349830eda9f58679d0e83bd614b73be4251aadcabf2e96d81d8c2ab84c44"
+    },
+    {
+      "path": "deployment/decoupled/Cross_Cloud_Integration_Verification.json",
+      "bytes": 8726,
+      "sha256": "3be96ce79438801686c19aa51d10a2bb037d00e4f96756ef25cb53ea0ea9be1b"
+    },
+    {
+      "path": "deployment/decoupled/Current_Architecture_Audit.md",
+      "bytes": 2116,
+      "sha256": "4b4297a333a824eb566e83241b54ebeb011074c5c29e10bcd2809a681aad0502"
+    },
+    {
+      "path": "deployment/decoupled/Current_Vercel_Project_Settings.json",
+      "bytes": 407,
+      "sha256": "85535001fd9f5d0cd6895efda882926b208c5aad336df8d99a3db8d50f941a7a"
+    },
+    {
+      "path": "deployment/decoupled/Dockerfile",
+      "bytes": 506,
+      "sha256": "d101d4af4852260b34866d8e9f0891db195b5d2a534b8454d943101e195b2372"
+    },
+    {
+      "path": "deployment/decoupled/Final_Cloud_Verification.json",
+      "bytes": 594,
+      "sha256": "a3fff2562f67ae9360dd6051c0071e0f93d806e8d8a4f0aa7b8f0da914ef0cd3"
+    },
+    {
+      "path": "deployment/decoupled/Final_Local_Verification.json",
+      "bytes": 3093,
+      "sha256": "c8653f9b058ec95d98d408d59db00d4a31857ebd95129d552406ac4e01733879"
+    },
+    {
+      "path": "deployment/decoupled/Frontend_Build_Manifest.json",
+      "bytes": 1675,
+      "sha256": "ffb0729d1cdc2ae1e4ed7bede3f9d95f55cebc82be5538090bd8e4a72d697636"
+    },
+    {
+      "path": "deployment/decoupled/Frontend_Deployment_Verification.json",
+      "bytes": 2474,
+      "sha256": "563cd1f39d3c38a7aacb798604f74d652e331bcd53a44fc3886ed4721a180b10"
+    },
+    {
+      "path": "deployment/decoupled/Frontend_Regression_Verification.json",
+      "bytes": 1251,
+      "sha256": "02da68c9b12212b4de3495747bb9d543f1ca86699f8dec79b7b63c2a38d59238"
+    },
+    {
+      "path": "deployment/decoupled/Latency_Benchmark.csv",
+      "bytes": 772,
+      "sha256": "532bcb1adf1bc1cde07b260d9a6af586a5c5e9280b690bf8491bd29a38494aac"
+    },
+    {
+      "path": "deployment/decoupled/Latency_Summary.json",
+      "bytes": 2586,
+      "sha256": "612e3bb393c08dffbaa3e3ccc8ee7e96763123ec166d54cf3d6dfe08a4217683"
+    },
+    {
+      "path": "deployment/decoupled/Original_Docker_Verification.json",
+      "bytes": 2108,
+      "sha256": "206f8e743f30af8fd964ea4fba18b6a7e97cafabdd5b6b96c0b8439b3f488efd"
+    },
+    {
+      "path": "deployment/decoupled/Performance_Evaluation.md",
+      "bytes": 1826,
+      "sha256": "cf862539910913eb58f9891dc44b05382f5f8e6854159690e6ebcc5e659fc584"
+    },
+    {
+      "path": "deployment/decoupled/Prediction_Parity.csv",
+      "bytes": 1054,
+      "sha256": "d8ed2547afc1be667c6f62d848a0f29b8551eb1728ad51962b71d7278b04d166"
+    },
+    {
+      "path": "deployment/decoupled/Preview_Deployment.json",
+      "bytes": 1263,
+      "sha256": "0f0d34a7a568a85c8c7ea4e13290cb08a2ffcc08def4dea8465a929c1d21c3f3"
+    },
+    {
+      "path": "deployment/decoupled/Previous_Azure_Revision.json",
+      "bytes": 773,
+      "sha256": "364e977a29216b0f5d8509b6d70dc95f9a5c5e1678b9fa1c23763632e9d59ffd"
+    },
+    {
+      "path": "deployment/decoupled/Previous_Vercel_Production.json",
+      "bytes": 512,
+      "sha256": "e24be75a0dc708d1dca57e2d276401120685fb8d84a3f60fffb88a4af3a14b5f"
+    },
+    {
+      "path": "deployment/decoupled/Production_Cutover_Plan.md",
+      "bytes": 2265,
+      "sha256": "2b5f0704d4d03ec51971d0ef2d65fc37a902a496833827b5b1ecfd9403928035"
+    },
+    {
+      "path": "deployment/decoupled/Professor_Demonstration.md",
+      "bytes": 1976,
+      "sha256": "0d774f6d7d1a87752a2dfe751c8ed942038ce9e22316391598ab43f1128cdc36"
+    },
+    {
+      "path": "deployment/decoupled/README.md",
+      "bytes": 5550,
+      "sha256": "4a4e4851d2aa58edc27d81bb69f1f7537152132899b4a5e48a2c97449bfd7d0d"
+    },
+    {
+      "path": "deployment/decoupled/Rollback_Guide.md",
+      "bytes": 1953,
+      "sha256": "6ddfad1d53a44be39eabf979792988fa3fc74d46033112052f4984c3e59446de"
+    },
+    {
+      "path": "deployment/decoupled/Security_Verification.md",
+      "bytes": 2675,
+      "sha256": "750d9239575f00dae4531c5def5fdb4b50109ae01c022517bc3fac40e3c8f1c3"
+    },
+    {
+      "path": "deployment/decoupled/browser_verify.cjs",
+      "bytes": 10040,
+      "sha256": "a23451aceff680c3f95ca84013d2bcd06a2e471cf4abdceb884a387df74daecb"
+    },
+    {
+      "path": "deployment/decoupled/prepare_context.py",
+      "bytes": 1863,
+      "sha256": "3eb2002c4e72139707a044bcfdd57303ecc281e657fc7a9a5ba9c0e23daf239a"
+    },
+    {
+      "path": "deployment/decoupled/test_backend.py",
+      "bytes": 1582,
+      "sha256": "adccddbd9265b5ccb4cfeab6dffce6e198fb3570ebadb4fc635103722ba56354"
+    },
+    {
+      "path": "deployment/decoupled/test_frontend.py",
+      "bytes": 1286,
+      "sha256": "95ff9d71a5b9baad67ee77321d6b5b1e346e9ebe389195391206258ee3a966cf"
+    },
+    {
+      "path": "deployment/decoupled/verify_integrity.py",
+      "bytes": 1796,
+      "sha256": "5978099251fa2066b770cc31f0c358b2773e8e525ba7eb1411031b8c308f81e0"
+    },
+    {
+      "path": "deployment/decoupled/verify_preview.py",
+      "bytes": 7170,
+      "sha256": "c056fd2dd5008419acb3924f230e9734b439f85ecc26b3eeff00bcff319db7b9"
+    },
+    {
+      "path": "frontend/build.py",
+      "bytes": 2984,
+      "sha256": "e88d8cbc5f3cce243961ca6e8d2058e95f39798feb4efc46f5d6f5640e561e5d"
+    },
+    {
+      "path": "frontend/production.vercel.json",
+      "bytes": 200,
+      "sha256": "5b0ee155a2789a1fcae2f4cd75372ff1dae2ce2eb72bb228338ae2558caef0f1"
+    },
+    {
+      "path": "frontend/vercel.json",
+      "bytes": 62,
+      "sha256": "b714e923de194286809673963dbbfb15db6c48014fda4c5d4209ad000d93018b"
+    },
+    {
+      "path": "web/azure_app.py",
+      "bytes": 1650,
+      "sha256": "52423531ca92515a358a143ce518fdb12b1836907a82468302e335d365411b83"
+    },
+    {
+      "path": "web/static/api.js",
+      "bytes": 3683,
+      "sha256": "b0322aede464d5be5d9d973e7c73dd789b125c30b0d119ee77e6145c97285a40"
+    },
+    {
+      "path": "web/static/app.js",
+      "bytes": 12590,
+      "sha256": "594a893e646916ab85e664b34087f2ca888eb497ae559f07b85cccabc411b1d7"
+    },
+    {
+      "path": "web/static/index.html",
+      "bytes": 13620,
+      "sha256": "c155d686787bb3bf944bbdbca14bd1c4847541ce8f36b9d7b5f30bf176348ae0"
+    },
+    {
+      "path": "web/static/style.css",
+      "bytes": 29133,
+      "sha256": "2b0f6489e2df05a6d689befa94462d7a7d8f55f3f49ba81802a9d634dd81510a"
+    }
+  ]
+}

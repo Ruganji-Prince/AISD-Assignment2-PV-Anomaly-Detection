@@ -1,0 +1,2230 @@
+{
+  "recorded_UTC": "2026-11-27T08:33:41.799517+00:00",
+  "URLs": {
+    "Azure": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io",
+    "Vercel": "https://pv-anomaly-detection-prince-r-k.vercel.app"
+  },
+  "client": {
+    "OS": "Windows-11-10.0.26100-SP0",
+    "python": "3.14.10",
+    "timezone_context": "Africa/Johannesburg",
+    "physical_egress_location": "Not geolocated; no claim of a Rwanda measurement location",
+    "HTTP_library": "httpx 0.28.1"
+  },
+  "protocol": {
+    "warmups_per_platform": 3,
+    "measured_per_platform": 42,
+    "sequential": 30,
+    "concurrency2": 12,
+    "payload": "Fixed normal reference case 0; identical JSON on both platforms",
+    "ordering": "Alternating platform order, same client and network",
+    "quantiles": "numpy linear quantile; sample standard deviation ddof=1"
+  },
+  "platforms": {
+    "Azure": {
+      "sequential": {
+        "requests": 30,
+        "successes": 30,
+        "failures": 0,
+        "success_rate": 1.0,
+        "network_all": {
+          "N": 30,
+          "min_ms": 156.3132000155747,
+          "max_ms": 252.11680005304515,
+          "mean_ms": 187.5697366738071,
+          "std_ms": 32.48298426133597,
+          "p50_ms": 180.28319999575615,
+          "p95_ms": 248.98803492542356,
+          "p99_ms": 251.52757802279666
+        },
+        "warm_success_network": {
+          "N": 30,
+          "min_ms": 156.3132000155747,
+          "max_ms": 252.11680005304515,
+          "mean_ms": 187.5697366738071,
+          "std_ms": 32.48298426133597,
+          "p50_ms": 180.28319999575615,
+          "p95_ms": 248.98803492542356,
+          "p99_ms": 251.52757802279666
+        },
+        "warm_server_components": {
+          "body_validate": {
+            "N": 30,
+            "min_ms": 0.269,
+            "max_ms": 2.6558,
+            "mean_ms": 0.43432999999999994,
+            "std_ms": 0.4308652890925742,
+            "p50_ms": 0.32075,
+            "p95_ms": 0.5948649999999999,
+            "p99_ms": 2.0636490000000016
+          },
+          "validation": {
+            "N": 30,
+            "min_ms": 0.005,
+            "max_ms": 0.0223,
+            "mean_ms": 0.008136666666666669,
+            "std_ms": 0.003177885149433268,
+            "p50_ms": 0.0086,
+            "p95_ms": 0.010354999999999993,
+            "p99_ms": 0.01911000000000001
+          },
+          "frame": {
+            "N": 30,
+            "min_ms": 0.3176,
+            "max_ms": 0.531,
+            "mean_ms": 0.36503,
+            "std_ms": 0.05491168552226887,
+            "p50_ms": 0.34225,
+            "p95_ms": 0.47465999999999997,
+            "p99_ms": 0.5148180000000001
+          },
+          "preprocessing": {
+            "N": 30,
+            "min_ms": 4.6782,
+            "max_ms": 7.7667,
+            "mean_ms": 5.41283,
+            "std_ms": 0.8314062839965582,
+            "p50_ms": 5.06275,
+            "p95_ms": 7.262589999999998,
+            "p99_ms": 7.749677
+          },
+          "forest": {
+            "N": 30,
+            "min_ms": 5.8346,
+            "max_ms": 8.5357,
+            "mean_ms": 6.528283333333333,
+            "std_ms": 0.6870154011641818,
+            "p50_ms": 6.17915,
+            "p95_ms": 7.868219999999998,
+            "p99_ms": 8.395688
+          },
+          "server": {
+            "N": 30,
+            "min_ms": 12.0249,
+            "max_ms": 20.2136,
+            "mean_ms": 13.67750333333333,
+            "std_ms": 1.782499137008706,
+            "p50_ms": 12.9241,
+            "p95_ms": 16.619065,
+            "p99_ms": 19.237257000000003
+          },
+          "init": {
+            "N": 30,
+            "min_ms": 0.0,
+            "max_ms": 0.0,
+            "mean_ms": 0.0,
+            "std_ms": 0.0,
+            "p50_ms": 0.0,
+            "p95_ms": 0.0,
+            "p99_ms": 0.0
+          }
+        }
+      },
+      "concurrency2": {
+        "requests": 12,
+        "successes": 12,
+        "failures": 0,
+        "success_rate": 1.0,
+        "network_all": {
+          "N": 12,
+          "min_ms": 166.9850000180304,
+          "max_ms": 919.0297999884933,
+          "mean_ms": 312.8751833185864,
+          "std_ms": 226.60598750153338,
+          "p50_ms": 204.49999999254942,
+          "p95_ms": 697.4687349982557,
+          "p99_ms": 874.7175869904461
+        },
+        "warm_success_network": {
+          "N": 12,
+          "min_ms": 166.9850000180304,
+          "max_ms": 919.0297999884933,
+          "mean_ms": 312.8751833185864,
+          "std_ms": 226.60598750153338,
+          "p50_ms": 204.49999999254942,
+          "p95_ms": 697.4687349982557,
+          "p99_ms": 874.7175869904461
+        },
+        "warm_server_components": {
+          "body_validate": {
+            "N": 12,
+            "min_ms": 0.2733,
+            "max_ms": 3.6528,
+            "mean_ms": 1.5231166666666665,
+            "std_ms": 1.1755624022208058,
+            "p50_ms": 1.2456,
+            "p95_ms": 3.3728499999999997,
+            "p99_ms": 3.5968100000000005
+          },
+          "validation": {
+            "N": 12,
+            "min_ms": 0.0049,
+            "max_ms": 0.017,
+            "mean_ms": 0.008058333333333332,
+            "std_ms": 0.00309029517076027,
+            "p50_ms": 0.00745,
+            "p95_ms": 0.012489999999999994,
+            "p99_ms": 0.016098000000000005
+          },
+          "frame": {
+            "N": 12,
+            "min_ms": 0.2362,
+            "max_ms": 0.4377,
+            "mean_ms": 0.31446666666666667,
+            "std_ms": 0.061026288423825015,
+            "p50_ms": 0.32545,
+            "p95_ms": 0.4071199999999999,
+            "p99_ms": 0.431584
+          },
+          "preprocessing": {
+            "N": 12,
+            "min_ms": 4.3518,
+            "max_ms": 5.8992,
+            "mean_ms": 5.033166666666666,
+            "std_ms": 0.5007277183048566,
+            "p50_ms": 5.16615,
+            "p95_ms": 5.8189,
+            "p99_ms": 5.88314
+          },
+          "forest": {
+            "N": 12,
+            "min_ms": 5.9388,
+            "max_ms": 10.2086,
+            "mean_ms": 7.60845,
+            "std_ms": 1.5743559615399447,
+            "p50_ms": 7.20465,
+            "p95_ms": 9.900655,
+            "p99_ms": 10.147011000000001
+          },
+          "server": {
+            "N": 12,
+            "min_ms": 11.8646,
+            "max_ms": 26.6063,
+            "mean_ms": 16.390075,
+            "std_ms": 4.474457788812365,
+            "p50_ms": 15.43205,
+            "p95_ms": 23.124799999999997,
+            "p99_ms": 25.910000000000004
+          },
+          "init": {
+            "N": 12,
+            "min_ms": 0.0,
+            "max_ms": 0.0,
+            "mean_ms": 0.0,
+            "std_ms": 0.0,
+            "p50_ms": 0.0,
+            "p95_ms": 0.0,
+            "p99_ms": 0.0
+          }
+        }
+      }
+    },
+    "Vercel": {
+      "sequential": {
+        "requests": 30,
+        "successes": 30,
+        "failures": 0,
+        "success_rate": 1.0,
+        "network_all": {
+          "N": 30,
+          "min_ms": 351.31360008381307,
+          "max_ms": 460.9568000305444,
+          "mean_ms": 390.69690665540594,
+          "std_ms": 31.13670878666459,
+          "p50_ms": 398.6759998369962,
+          "p95_ms": 448.2078799745068,
+          "p99_ms": 457.52395402174443
+        },
+        "warm_success_network": {
+          "N": 30,
+          "min_ms": 351.31360008381307,
+          "max_ms": 460.9568000305444,
+          "mean_ms": 390.69690665540594,
+          "std_ms": 31.13670878666459,
+          "p50_ms": 398.6759998369962,
+          "p95_ms": 448.2078799745068,
+          "p99_ms": 457.52395402174443
+        },
+        "warm_server_components": {
+          "body_validate": {
+            "N": 30,
+            "min_ms": 0.3235,
+            "max_ms": 0.4223,
+            "mean_ms": 0.35252666666666665,
+            "std_ms": 0.02363981056773004,
+            "p50_ms": 0.34725,
+            "p95_ms": 0.40415999999999996,
+            "p99_ms": 0.418762
+          },
+          "validation": {
+            "N": 30,
+            "min_ms": 0.0097,
+            "max_ms": 0.236,
+            "mean_ms": 0.01800666666666667,
+            "std_ms": 0.04118540864259417,
+            "p50_ms": 0.01035,
+            "p95_ms": 0.013539999999999986,
+            "p99_ms": 0.17211300000000018
+          },
+          "frame": {
+            "N": 30,
+            "min_ms": 0.4114,
+            "max_ms": 0.7262,
+            "mean_ms": 0.44247999999999993,
+            "std_ms": 0.05607615142483201,
+            "p50_ms": 0.43165,
+            "p95_ms": 0.46824499999999997,
+            "p99_ms": 0.6539900000000002
+          },
+          "preprocessing": {
+            "N": 30,
+            "min_ms": 6.0078,
+            "max_ms": 6.8798,
+            "mean_ms": 6.163279999999999,
+            "std_ms": 0.1577353029385098,
+            "p50_ms": 6.12265,
+            "p95_ms": 6.298455,
+            "p99_ms": 6.714616
+          },
+          "forest": {
+            "N": 30,
+            "min_ms": 8.2801,
+            "max_ms": 8.6553,
+            "mean_ms": 8.43387,
+            "std_ms": 0.08659085780365271,
+            "p50_ms": 8.4289,
+            "p95_ms": 8.56862,
+            "p99_ms": 8.630476
+          },
+          "server": {
+            "N": 30,
+            "min_ms": 15.9523,
+            "max_ms": 17.2519,
+            "mean_ms": 16.338103333333333,
+            "std_ms": 0.2391296336982174,
+            "p50_ms": 16.294150000000002,
+            "p95_ms": 16.7078,
+            "p99_ms": 17.126736
+          },
+          "init": {
+            "N": 30,
+            "min_ms": 0.0,
+            "max_ms": 0.0,
+            "mean_ms": 0.0,
+            "std_ms": 0.0,
+            "p50_ms": 0.0,
+            "p95_ms": 0.0,
+            "p99_ms": 0.0
+          }
+        }
+      },
+      "concurrency2": {
+        "requests": 12,
+        "successes": 12,
+        "failures": 0,
+        "success_rate": 1.0,
+        "network_all": {
+          "N": 12,
+          "min_ms": 361.1065000295639,
+          "max_ms": 6901.225100038573,
+          "mean_ms": 986.8459250040663,
+          "std_ms": 1864.8220275527437,
+          "p50_ms": 424.31210016366094,
+          "p95_ms": 3443.3620649971954,
+          "p99_ms": 6209.652493030302
+        },
+        "warm_success_network": {
+          "N": 11,
+          "min_ms": 361.1065000295639,
+          "max_ms": 614.2013999633491,
+          "mean_ms": 449.1750909100202,
+          "std_ms": 96.59344109931193,
+          "p50_ms": 395.9148002322763,
+          "p95_ms": 606.6949499072507,
+          "p99_ms": 612.7001099521294
+        },
+        "warm_server_components": {
+          "body_validate": {
+            "N": 11,
+            "min_ms": 0.3308,
+            "max_ms": 0.5558,
+            "mean_ms": 0.38193636363636363,
+            "std_ms": 0.07214781039958555,
+            "p50_ms": 0.3474,
+            "p95_ms": 0.5052,
+            "p99_ms": 0.54568
+          },
+          "validation": {
+            "N": 11,
+            "min_ms": 0.0091,
+            "max_ms": 0.0167,
+            "mean_ms": 0.010709090909090908,
+            "std_ms": 0.002035904980815433,
+            "p50_ms": 0.0103,
+            "p95_ms": 0.013649999999999999,
+            "p99_ms": 0.01609
+          },
+          "frame": {
+            "N": 11,
+            "min_ms": 0.3825,
+            "max_ms": 0.5894,
+            "mean_ms": 0.44796363636363645,
+            "std_ms": 0.06027286740693981,
+            "p50_ms": 0.4218,
+            "p95_ms": 0.5581,
+            "p99_ms": 0.5831400000000001
+          },
+          "preprocessing": {
+            "N": 11,
+            "min_ms": 5.8824,
+            "max_ms": 7.3141,
+            "mean_ms": 6.3015454545454554,
+            "std_ms": 0.42195970983883374,
+            "p50_ms": 6.1135,
+            "p95_ms": 7.00745,
+            "p99_ms": 7.25277
+          },
+          "forest": {
+            "N": 11,
+            "min_ms": 8.3044,
+            "max_ms": 8.9896,
+            "mean_ms": 8.518254545454544,
+            "std_ms": 0.20900063810254904,
+            "p50_ms": 8.4923,
+            "p95_ms": 8.871099999999998,
+            "p99_ms": 8.9659
+          },
+          "server": {
+            "N": 11,
+            "min_ms": 15.9152,
+            "max_ms": 18.0897,
+            "mean_ms": 16.626754545454546,
+            "std_ms": 0.7694475022555289,
+            "p50_ms": 16.2728,
+            "p95_ms": 17.89125,
+            "p99_ms": 18.05001
+          },
+          "init": {
+            "N": 11,
+            "min_ms": 0.0,
+            "max_ms": 0.0,
+            "mean_ms": 0.0,
+            "std_ms": 0.0,
+            "p50_ms": 0.0,
+            "p95_ms": 0.0,
+            "p99_ms": 0.0
+          }
+        }
+      }
+    }
+  },
+  "requests": [
+    {
+      "platform": "Azure",
+      "phase": "warmup",
+      "request": 0,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3179,
+        "init": 0.0,
+        "validation": 0.009,
+        "frame": 0.5107,
+        "preprocessing": 5.0712,
+        "forest": 6.9516,
+        "server": 13.9463
+      },
+      "instance": "de2b7a4d0bfe",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 626.9809000659734
+    },
+    {
+      "platform": "Vercel",
+      "phase": "warmup",
+      "request": 0,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.553,
+        "init": 2061.9409,
+        "validation": 0.0141,
+        "frame": 0.6345,
+        "preprocessing": 26.4306,
+        "forest": 11.7167,
+        "server": 2104.8308
+      },
+      "instance": "fad299935505",
+      "model_initialized": true,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 7171.537399990484
+    },
+    {
+      "platform": "Azure",
+      "phase": "warmup",
+      "request": 1,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3393,
+        "init": 0.0,
+        "validation": 0.0087,
+        "frame": 0.3758,
+        "preprocessing": 4.8477,
+        "forest": 6.1258,
+        "server": 12.5034
+      },
+      "instance": "de2b7a4d0bfe",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 500.6718998774886
+    },
+    {
+      "platform": "Vercel",
+      "phase": "warmup",
+      "request": 1,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.4239,
+        "init": 0.0,
+        "validation": 0.0103,
+        "frame": 0.4574,
+        "preprocessing": 6.3135,
+        "forest": 8.5203,
+        "server": 16.7627
+      },
+      "instance": "fad299935505",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 365.7643999904394
+    },
+    {
+      "platform": "Azure",
+      "phase": "warmup",
+      "request": 2,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.4341,
+        "init": 0.0,
+        "validation": 0.0085,
+        "frame": 0.346,
+        "preprocessing": 5.6542,
+        "forest": 6.4246,
+        "server": 13.9025
+      },
+      "instance": "de2b7a4d0bfe",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 159.15449988096952
+    },
+    {
+      "platform": "Vercel",
+      "phase": "warmup",
+      "request": 2,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3762,
+        "init": 0.0,
+        "validation": 0.011,
+        "frame": 0.4246,
+        "preprocessing": 6.89,
+        "forest": 8.5431,
+        "server": 17.1859
+      },
+      "instance": "fad299935505",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 362.076599849388
+    },
+    {
+      "platform": "Azure",
+      "phase": "sequential",
+      "request": 0,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3843,
+        "init": 0.0,
+        "validation": 0.0086,
+        "frame": 0.3387,
+        "preprocessing": 4.9319,
+        "forest": 6.1484,
+        "server": 12.6408
+      },
+      "instance": "de2b7a4d0bfe",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 252.11680005304515
+    },
+    {
+      "platform": "Vercel",
+      "phase": "sequential",
+      "request": 0,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3551,
+        "init": 0.0,
+        "validation": 0.0105,
+        "frame": 0.4544,
+        "preprocessing": 6.1513,
+        "forest": 8.6553,
+        "server": 16.5703
+      },
+      "instance": "fad299935505",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 407.522700028494
+    },
+    {
+      "platform": "Vercel",
+      "phase": "sequential",
+      "request": 1,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3443,
+        "init": 0.0,
+        "validation": 0.0107,
+        "frame": 0.4436,
+        "preprocessing": 6.139,
+        "forest": 8.4488,
+        "server": 16.2938
+      },
+      "instance": "fad299935505",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 374.2869000416249
+    },
+    {
+      "platform": "Azure",
+      "phase": "sequential",
+      "request": 1,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3094,
+        "init": 0.0,
+        "validation": 0.0088,
+        "frame": 0.3608,
+        "preprocessing": 6.3865,
+        "forest": 6.8831,
+        "server": 14.7697
+      },
+      "instance": "de2b7a4d0bfe",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 157.76730002835393
+    },
+    {
+      "platform": "Azure",
+      "phase": "sequential",
+      "request": 2,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 2.6558,
+        "init": 0.0,
+        "validation": 0.0091,
+        "frame": 0.3279,
+        "preprocessing": 7.7667,
+        "forest": 8.5357,
+        "server": 20.2136
+      },
+      "instance": "de2b7a4d0bfe",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 164.01409986428916
+    },
+    {
+      "platform": "Vercel",
+      "phase": "sequential",
+      "request": 2,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3543,
+        "init": 0.0,
+        "validation": 0.0099,
+        "frame": 0.4119,
+        "preprocessing": 6.0629,
+        "forest": 8.5697,
+        "server": 16.3482
+      },
+      "instance": "fad299935505",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 429.63979998603463
+    },
+    {
+      "platform": "Vercel",
+      "phase": "sequential",
+      "request": 3,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3401,
+        "init": 0.0,
+        "validation": 0.0105,
+        "frame": 0.4522,
+        "preprocessing": 6.183,
+        "forest": 8.4234,
+        "server": 16.303
+      },
+      "instance": "fad299935505",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 410.56400001980364
+    },
+    {
+      "platform": "Azure",
+      "phase": "sequential",
+      "request": 3,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3188,
+        "init": 0.0,
+        "validation": 0.005,
+        "frame": 0.3271,
+        "preprocessing": 4.94,
+        "forest": 5.958,
+        "server": 12.4094
+      },
+      "instance": "de2b7a4d0bfe",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 201.40150003135204
+    },
+    {
+      "platform": "Azure",
+      "phase": "sequential",
+      "request": 4,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.6139,
+        "init": 0.0,
+        "validation": 0.0076,
+        "frame": 0.3591,
+        "preprocessing": 5.0616,
+        "forest": 7.3209,
+        "server": 15.9606
+      },
+      "instance": "de2b7a4d0bfe",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 205.7777000591159
+    },
+    {
+      "platform": "Vercel",
+      "phase": "sequential",
+      "request": 4,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3969,
+        "init": 0.0,
+        "validation": 0.0099,
+        "frame": 0.4502,
+        "preprocessing": 6.0489,
+        "forest": 8.4344,
+        "server": 16.3457
+      },
+      "instance": "fad299935505",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 351.31360008381307
+    },
+    {
+      "platform": "Vercel",
+      "phase": "sequential",
+      "request": 5,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3565,
+        "init": 0.0,
+        "validation": 0.0102,
+        "frame": 0.4175,
+        "preprocessing": 6.0884,
+        "forest": 8.4916,
+        "server": 16.2625
+      },
+      "instance": "fad299935505",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 367.09089996293187
+    },
+    {
+      "platform": "Azure",
+      "phase": "sequential",
+      "request": 5,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.5624,
+        "init": 0.0,
+        "validation": 0.0085,
+        "frame": 0.3516,
+        "preprocessing": 5.3626,
+        "forest": 7.2794,
+        "server": 14.4153
+      },
+      "instance": "de2b7a4d0bfe",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 157.52810006961226
+    },
+    {
+      "platform": "Azure",
+      "phase": "sequential",
+      "request": 6,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.5553,
+        "init": 0.0,
+        "validation": 0.0089,
+        "frame": 0.3293,
+        "preprocessing": 7.708,
+        "forest": 6.5125,
+        "server": 16.8469
+      },
+      "instance": "de2b7a4d0bfe",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 160.60289996676147
+    },
+    {
+      "platform": "Vercel",
+      "phase": "sequential",
+      "request": 6,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.351,
+        "init": 0.0,
+        "validation": 0.0104,
+        "frame": 0.4467,
+        "preprocessing": 6.0577,
+        "forest": 8.5331,
+        "server": 16.3181
+      },
+      "instance": "fad299935505",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 359.15519995614886
+    },
+    {
+      "platform": "Vercel",
+      "phase": "sequential",
+      "request": 7,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3513,
+        "init": 0.0,
+        "validation": 0.0101,
+        "frame": 0.4321,
+        "preprocessing": 6.2683,
+        "forest": 8.3859,
+        "server": 16.4288
+      },
+      "instance": "fad299935505",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 449.1194000001997
+    },
+    {
+      "platform": "Azure",
+      "phase": "sequential",
+      "request": 7,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.4724,
+        "init": 0.0,
+        "validation": 0.0082,
+        "frame": 0.3245,
+        "preprocessing": 5.285,
+        "forest": 6.1321,
+        "server": 12.9501
+      },
+      "instance": "de2b7a4d0bfe",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 158.1055000424385
+    },
+    {
+      "platform": "Azure",
+      "phase": "sequential",
+      "request": 8,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3261,
+        "init": 0.0,
+        "validation": 0.0091,
+        "frame": 0.4268,
+        "preprocessing": 5.2075,
+        "forest": 5.8346,
+        "server": 12.8075
+      },
+      "instance": "de2b7a4d0bfe",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 158.74949982389808
+    },
+    {
+      "platform": "Vercel",
+      "phase": "sequential",
+      "request": 8,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3624,
+        "init": 0.0,
+        "validation": 0.236,
+        "frame": 0.7262,
+        "preprocessing": 6.097,
+        "forest": 8.411,
+        "server": 16.8203
+      },
+      "instance": "fad299935505",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 399.1190998349339
+    },
+    {
+      "platform": "Vercel",
+      "phase": "sequential",
+      "request": 9,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3347,
+        "init": 0.0,
+        "validation": 0.0102,
+        "frame": 0.4139,
+        "preprocessing": 6.0738,
+        "forest": 8.4899,
+        "server": 16.232
+      },
+      "instance": "fad299935505",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 409.79379997588694
+    },
+    {
+      "platform": "Azure",
+      "phase": "sequential",
+      "request": 9,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.2821,
+        "init": 0.0,
+        "validation": 0.0223,
+        "frame": 0.3325,
+        "preprocessing": 5.9677,
+        "forest": 7.6425,
+        "server": 15.1091
+      },
+      "instance": "de2b7a4d0bfe",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 203.27369985170662
+    },
+    {
+      "platform": "Azure",
+      "phase": "sequential",
+      "request": 10,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3606,
+        "init": 0.0,
+        "validation": 0.0113,
+        "frame": 0.531,
+        "preprocessing": 5.7978,
+        "forest": 6.1389,
+        "server": 13.7027
+      },
+      "instance": "de2b7a4d0bfe",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 160.0138999056071
+    },
+    {
+      "platform": "Vercel",
+      "phase": "sequential",
+      "request": 10,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3437,
+        "init": 0.0,
+        "validation": 0.0099,
+        "frame": 0.4355,
+        "preprocessing": 6.1264,
+        "forest": 8.4485,
+        "server": 16.2402
+      },
+      "instance": "fad299935505",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 361.97700002230704
+    },
+    {
+      "platform": "Vercel",
+      "phase": "sequential",
+      "request": 11,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3476,
+        "init": 0.0,
+        "validation": 0.0108,
+        "frame": 0.4312,
+        "preprocessing": 6.1189,
+        "forest": 8.37,
+        "server": 16.1522
+      },
+      "instance": "fad299935505",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 402.8413000050932
+    },
+    {
+      "platform": "Azure",
+      "phase": "sequential",
+      "request": 11,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.2786,
+        "init": 0.0,
+        "validation": 0.0088,
+        "frame": 0.329,
+        "preprocessing": 5.0639,
+        "forest": 6.1878,
+        "server": 12.6557
+      },
+      "instance": "de2b7a4d0bfe",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 197.20629998482764
+    },
+    {
+      "platform": "Azure",
+      "phase": "sequential",
+      "request": 12,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.5716,
+        "init": 0.0,
+        "validation": 0.0082,
+        "frame": 0.42,
+        "preprocessing": 5.3863,
+        "forest": 6.2928,
+        "server": 13.4791
+      },
+      "instance": "de2b7a4d0bfe",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 209.06350016593933
+    },
+    {
+      "platform": "Vercel",
+      "phase": "sequential",
+      "request": 12,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3262,
+        "init": 0.0,
+        "validation": 0.01,
+        "frame": 0.4114,
+        "preprocessing": 6.0305,
+        "forest": 8.2801,
+        "server": 15.9523
+      },
+      "instance": "fad299935505",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 359.18379994109273
+    },
+    {
+      "platform": "Vercel",
+      "phase": "sequential",
+      "request": 13,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3747,
+        "init": 0.0,
+        "validation": 0.0103,
+        "frame": 0.4143,
+        "preprocessing": 6.0965,
+        "forest": 8.3896,
+        "server": 16.1673
+      },
+      "instance": "fad299935505",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 460.9568000305444
+    },
+    {
+      "platform": "Azure",
+      "phase": "sequential",
+      "request": 13,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.2903,
+        "init": 0.0,
+        "validation": 0.0086,
+        "frame": 0.3376,
+        "preprocessing": 6.7182,
+        "forest": 8.0529,
+        "server": 16.3406
+      },
+      "instance": "de2b7a4d0bfe",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 203.8350000511855
+    },
+    {
+      "platform": "Azure",
+      "phase": "sequential",
+      "request": 14,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.2727,
+        "init": 0.0,
+        "validation": 0.0054,
+        "frame": 0.3177,
+        "preprocessing": 4.8393,
+        "forest": 6.1655,
+        "server": 12.3127
+      },
+      "instance": "de2b7a4d0bfe",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 217.0744000468403
+    },
+    {
+      "platform": "Vercel",
+      "phase": "sequential",
+      "request": 14,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3762,
+        "init": 0.0,
+        "validation": 0.0098,
+        "frame": 0.4258,
+        "preprocessing": 6.0078,
+        "forest": 8.3584,
+        "server": 16.1714
+      },
+      "instance": "fad299935505",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 400.1761998515576
+    },
+    {
+      "platform": "Vercel",
+      "phase": "sequential",
+      "request": 15,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3488,
+        "init": 0.0,
+        "validation": 0.0104,
+        "frame": 0.4218,
+        "preprocessing": 6.2527,
+        "forest": 8.3222,
+        "server": 16.232
+      },
+      "instance": "fad299935505",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 368.565599899739
+    },
+    {
+      "platform": "Azure",
+      "phase": "sequential",
+      "request": 15,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3054,
+        "init": 0.0,
+        "validation": 0.0058,
+        "frame": 0.3507,
+        "preprocessing": 4.7307,
+        "forest": 6.0663,
+        "server": 12.418
+      },
+      "instance": "de2b7a4d0bfe",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 247.6472998969257
+    },
+    {
+      "platform": "Azure",
+      "phase": "sequential",
+      "request": 16,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.296,
+        "init": 0.0,
+        "validation": 0.005,
+        "frame": 0.3176,
+        "preprocessing": 6.1394,
+        "forest": 5.9824,
+        "server": 13.6364
+      },
+      "instance": "de2b7a4d0bfe",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 156.3132000155747
+    },
+    {
+      "platform": "Vercel",
+      "phase": "sequential",
+      "request": 16,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3504,
+        "init": 0.0,
+        "validation": 0.0102,
+        "frame": 0.4573,
+        "preprocessing": 6.0928,
+        "forest": 8.4827,
+        "server": 16.3945
+      },
+      "instance": "fad299935505",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 398.2328998390585
+    },
+    {
+      "platform": "Vercel",
+      "phase": "sequential",
+      "request": 17,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3261,
+        "init": 0.0,
+        "validation": 0.0099,
+        "frame": 0.4175,
+        "preprocessing": 6.1669,
+        "forest": 8.4442,
+        "server": 16.2209
+      },
+      "instance": "fad299935505",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 364.95640012435615
+    },
+    {
+      "platform": "Azure",
+      "phase": "sequential",
+      "request": 17,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.269,
+        "init": 0.0,
+        "validation": 0.006,
+        "frame": 0.3376,
+        "preprocessing": 4.7186,
+        "forest": 5.922,
+        "server": 12.0249
+      },
+      "instance": "de2b7a4d0bfe",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 157.19750011339784
+    },
+    {
+      "platform": "Azure",
+      "phase": "sequential",
+      "request": 18,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.2966,
+        "init": 0.0,
+        "validation": 0.0057,
+        "frame": 0.474,
+        "preprocessing": 4.6782,
+        "forest": 6.164,
+        "server": 12.4359
+      },
+      "instance": "de2b7a4d0bfe",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 156.60559991374612
+    },
+    {
+      "platform": "Vercel",
+      "phase": "sequential",
+      "request": 18,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3332,
+        "init": 0.0,
+        "validation": 0.0097,
+        "frame": 0.4153,
+        "preprocessing": 6.0874,
+        "forest": 8.3978,
+        "server": 16.26
+      },
+      "instance": "fad299935505",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 400.76160011813045
+    },
+    {
+      "platform": "Vercel",
+      "phase": "sequential",
+      "request": 19,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.344,
+        "init": 0.0,
+        "validation": 0.0104,
+        "frame": 0.4475,
+        "preprocessing": 6.2841,
+        "forest": 8.3262,
+        "server": 16.4325
+      },
+      "instance": "fad299935505",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 360.28539994731545
+    },
+    {
+      "platform": "Azure",
+      "phase": "sequential",
+      "request": 19,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3331,
+        "init": 0.0,
+        "validation": 0.0087,
+        "frame": 0.3423,
+        "preprocessing": 5.0078,
+        "forest": 6.5915,
+        "server": 13.0446
+      },
+      "instance": "de2b7a4d0bfe",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 159.84600014053285
+    },
+    {
+      "platform": "Azure",
+      "phase": "sequential",
+      "request": 20,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.2749,
+        "init": 0.0,
+        "validation": 0.0092,
+        "frame": 0.4752,
+        "preprocessing": 5.0384,
+        "forest": 6.3196,
+        "server": 12.8981
+      },
+      "instance": "de2b7a4d0bfe",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 197.57350021973252
+    },
+    {
+      "platform": "Vercel",
+      "phase": "sequential",
+      "request": 20,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3364,
+        "init": 0.0,
+        "validation": 0.0101,
+        "frame": 0.4772,
+        "preprocessing": 6.8798,
+        "forest": 8.5673,
+        "server": 17.2519
+      },
+      "instance": "fad299935505",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 352.67000016756356
+    },
+    {
+      "platform": "Vercel",
+      "phase": "sequential",
+      "request": 21,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.4101,
+        "init": 0.0,
+        "validation": 0.0106,
+        "frame": 0.4394,
+        "preprocessing": 6.1862,
+        "forest": 8.3214,
+        "server": 16.2945
+      },
+      "instance": "fad299935505",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 447.0937999431044
+    },
+    {
+      "platform": "Azure",
+      "phase": "sequential",
+      "request": 21,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3757,
+        "init": 0.0,
+        "validation": 0.0087,
+        "frame": 0.3376,
+        "preprocessing": 4.9262,
+        "forest": 6.2063,
+        "server": 12.7667
+      },
+      "instance": "de2b7a4d0bfe",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 158.24449993669987
+    },
+    {
+      "platform": "Azure",
+      "phase": "sequential",
+      "request": 22,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.2827,
+        "init": 0.0,
+        "validation": 0.0088,
+        "frame": 0.453,
+        "preprocessing": 5.3278,
+        "forest": 7.3991,
+        "server": 14.3198
+      },
+      "instance": "de2b7a4d0bfe",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 167.5031001213938
+    },
+    {
+      "platform": "Vercel",
+      "phase": "sequential",
+      "request": 22,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3235,
+        "init": 0.0,
+        "validation": 0.0101,
+        "frame": 0.414,
+        "preprocessing": 6.3102,
+        "forest": 8.4774,
+        "server": 16.4573
+      },
+      "instance": "fad299935505",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 363.823400111869
+    },
+    {
+      "platform": "Vercel",
+      "phase": "sequential",
+      "request": 23,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3469,
+        "init": 0.0,
+        "validation": 0.0157,
+        "frame": 0.4464,
+        "preprocessing": 6.2405,
+        "forest": 8.441,
+        "server": 16.4102
+      },
+      "instance": "fad299935505",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 364.9965999647975
+    },
+    {
+      "platform": "Azure",
+      "phase": "sequential",
+      "request": 23,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3056,
+        "init": 0.0,
+        "validation": 0.0086,
+        "frame": 0.3435,
+        "preprocessing": 4.8887,
+        "forest": 6.0552,
+        "server": 12.4316
+      },
+      "instance": "de2b7a4d0bfe",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 156.95970016531646
+    },
+    {
+      "platform": "Azure",
+      "phase": "sequential",
+      "request": 24,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3102,
+        "init": 0.0,
+        "validation": 0.0087,
+        "frame": 0.3788,
+        "preprocessing": 4.9415,
+        "forest": 6.1705,
+        "server": 12.669
+      },
+      "instance": "de2b7a4d0bfe",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 242.4273998476565
+    },
+    {
+      "platform": "Vercel",
+      "phase": "sequential",
+      "request": 24,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3393,
+        "init": 0.0,
+        "validation": 0.0107,
+        "frame": 0.4274,
+        "preprocessing": 6.211,
+        "forest": 8.5542,
+        "server": 16.4949
+      },
+      "instance": "fad299935505",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 410.2075998671353
+    },
+    {
+      "platform": "Vercel",
+      "phase": "sequential",
+      "request": 25,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3387,
+        "init": 0.0,
+        "validation": 0.0109,
+        "frame": 0.4268,
+        "preprocessing": 6.1482,
+        "forest": 8.485,
+        "server": 16.2769
+      },
+      "instance": "fad299935505",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 408.4137000609189
+    },
+    {
+      "platform": "Azure",
+      "phase": "sequential",
+      "request": 25,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3539,
+        "init": 0.0,
+        "validation": 0.009,
+        "frame": 0.3355,
+        "preprocessing": 4.8137,
+        "forest": 7.0599,
+        "server": 13.6412
+      },
+      "instance": "de2b7a4d0bfe",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 193.0632998701185
+    },
+    {
+      "platform": "Azure",
+      "phase": "sequential",
+      "request": 26,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3227,
+        "init": 0.0,
+        "validation": 0.0053,
+        "frame": 0.3202,
+        "preprocessing": 5.1572,
+        "forest": 6.0663,
+        "server": 12.6396
+      },
+      "instance": "de2b7a4d0bfe",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 216.3098999299109
+    },
+    {
+      "platform": "Vercel",
+      "phase": "sequential",
+      "request": 26,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3699,
+        "init": 0.0,
+        "validation": 0.0107,
+        "frame": 0.4414,
+        "preprocessing": 6.0973,
+        "forest": 8.3245,
+        "server": 16.1034
+      },
+      "instance": "fad299935505",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 408.963399939239
+    },
+    {
+      "platform": "Vercel",
+      "phase": "sequential",
+      "request": 27,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.4223,
+        "init": 0.0,
+        "validation": 0.0107,
+        "frame": 0.4263,
+        "preprocessing": 6.2528,
+        "forest": 8.3821,
+        "server": 16.4572
+      },
+      "instance": "fad299935505",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 410.8311999589205
+    },
+    {
+      "platform": "Azure",
+      "phase": "sequential",
+      "request": 27,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.375,
+        "init": 0.0,
+        "validation": 0.005,
+        "frame": 0.3422,
+        "preprocessing": 6.1694,
+        "forest": 6.63,
+        "server": 14.3255
+      },
+      "instance": "de2b7a4d0bfe",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 157.69829996861517
+    },
+    {
+      "platform": "Azure",
+      "phase": "sequential",
+      "request": 28,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.387,
+        "init": 0.0,
+        "validation": 0.005,
+        "frame": 0.345,
+        "preprocessing": 4.7125,
+        "forest": 6.028,
+        "server": 12.2294
+      },
+      "instance": "de2b7a4d0bfe",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 250.08499994874
+    },
+    {
+      "platform": "Vercel",
+      "phase": "sequential",
+      "request": 28,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3366,
+        "init": 0.0,
+        "validation": 0.0103,
+        "frame": 0.4139,
+        "preprocessing": 6.0647,
+        "forest": 8.3824,
+        "server": 16.0736
+      },
+      "instance": "fad299935505",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 354.5224000699818
+    },
+    {
+      "platform": "Vercel",
+      "phase": "sequential",
+      "request": 29,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3346,
+        "init": 0.0,
+        "validation": 0.0106,
+        "frame": 0.4353,
+        "preprocessing": 6.0734,
+        "forest": 8.418,
+        "server": 16.1772
+      },
+      "instance": "fad299935505",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 363.84269990958273
+    },
+    {
+      "platform": "Azure",
+      "phase": "sequential",
+      "request": 29,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.2878,
+        "init": 0.0,
+        "validation": 0.0062,
+        "frame": 0.3841,
+        "preprocessing": 4.7118,
+        "forest": 6.1023,
+        "server": 12.2306
+      },
+      "instance": "de2b7a4d0bfe",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 203.08760018087924
+    },
+    {
+      "platform": "Azure",
+      "phase": "concurrency2",
+      "request": 0,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 2.5532,
+        "init": 0.0,
+        "validation": 0.0052,
+        "frame": 0.3216,
+        "preprocessing": 5.8992,
+        "forest": 6.7521,
+        "server": 16.2781
+      },
+      "instance": "de2b7a4d0bfe",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 205.75109985657036
+    },
+    {
+      "platform": "Azure",
+      "phase": "concurrency2",
+      "request": 1,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.2733,
+        "init": 0.0,
+        "validation": 0.0086,
+        "frame": 0.332,
+        "preprocessing": 4.7609,
+        "forest": 5.9388,
+        "server": 12.1578
+      },
+      "instance": "de2b7a4d0bfe",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 919.0297999884933
+    },
+    {
+      "platform": "Vercel",
+      "phase": "concurrency2",
+      "request": 0,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3493,
+        "init": 0.0,
+        "validation": 0.0095,
+        "frame": 0.4122,
+        "preprocessing": 6.0916,
+        "forest": 8.5054,
+        "server": 16.2279
+      },
+      "instance": "fad299935505",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 363.5400999337435
+    },
+    {
+      "platform": "Vercel",
+      "phase": "concurrency2",
+      "request": 1,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3437,
+        "init": 0.0,
+        "validation": 0.0103,
+        "frame": 0.4147,
+        "preprocessing": 6.0535,
+        "forest": 8.3352,
+        "server": 16.1834
+      },
+      "instance": "fad299935505",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 614.2013999633491
+    },
+    {
+      "platform": "Vercel",
+      "phase": "concurrency2",
+      "request": 2,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3476,
+        "init": 0.0,
+        "validation": 0.0106,
+        "frame": 0.4218,
+        "preprocessing": 6.2346,
+        "forest": 8.4266,
+        "server": 16.3414
+      },
+      "instance": "fad299935505",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 515.570200048387
+    },
+    {
+      "platform": "Vercel",
+      "phase": "concurrency2",
+      "request": 3,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3454,
+        "init": 0.0,
+        "validation": 0.0105,
+        "frame": 0.4333,
+        "preprocessing": 6.0122,
+        "forest": 8.4126,
+        "server": 16.1429
+      },
+      "instance": "fad299935505",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 514.3293000292033
+    },
+    {
+      "platform": "Azure",
+      "phase": "concurrency2",
+      "request": 2,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 2.224,
+        "init": 0.0,
+        "validation": 0.0084,
+        "frame": 0.3386,
+        "preprocessing": 5.1863,
+        "forest": 7.6572,
+        "server": 17.0334
+      },
+      "instance": "de2b7a4d0bfe",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 198.31599993631244
+    },
+    {
+      "platform": "Azure",
+      "phase": "concurrency2",
+      "request": 3,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.343,
+        "init": 0.0,
+        "validation": 0.0075,
+        "frame": 0.2362,
+        "preprocessing": 4.5617,
+        "forest": 6.2137,
+        "server": 12.1509
+      },
+      "instance": "de2b7a4d0bfe",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 196.79589988663793
+    },
+    {
+      "platform": "Azure",
+      "phase": "concurrency2",
+      "request": 4,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 3.1438,
+        "init": 0.0,
+        "validation": 0.017,
+        "frame": 0.3821,
+        "preprocessing": 5.7532,
+        "forest": 9.4125,
+        "server": 20.2763
+      },
+      "instance": "de2b7a4d0bfe",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 166.9850000180304
+    },
+    {
+      "platform": "Azure",
+      "phase": "concurrency2",
+      "request": 5,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.8433,
+        "init": 0.0,
+        "validation": 0.0074,
+        "frame": 0.2535,
+        "preprocessing": 4.3799,
+        "forest": 6.3622,
+        "server": 12.654
+      },
+      "instance": "de2b7a4d0bfe",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 174.44720002822578
+    },
+    {
+      "platform": "Vercel",
+      "phase": "concurrency2",
+      "request": 4,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3308,
+        "init": 0.0,
+        "validation": 0.0102,
+        "frame": 0.4207,
+        "preprocessing": 6.0614,
+        "forest": 8.3158,
+        "server": 15.9904
+      },
+      "instance": "fad299935505",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 361.1065000295639
+    },
+    {
+      "platform": "Vercel",
+      "phase": "concurrency2",
+      "request": 5,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.4466,
+        "init": 0.0,
+        "validation": 0.0091,
+        "frame": 0.3825,
+        "preprocessing": 5.8824,
+        "forest": 8.3044,
+        "server": 15.9152
+      },
+      "instance": "fad299935505",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 389.6259998437017
+    },
+    {
+      "platform": "Vercel",
+      "phase": "concurrency2",
+      "request": 6,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3384,
+        "init": 0.0,
+        "validation": 0.01,
+        "frame": 0.415,
+        "preprocessing": 6.1135,
+        "forest": 8.4923,
+        "server": 16.2728
+      },
+      "instance": "fad299935505",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 452.70940009504557
+    },
+    {
+      "platform": "Vercel",
+      "phase": "concurrency2",
+      "request": 7,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.5608,
+        "init": 2156.5518,
+        "validation": 0.0153,
+        "frame": 0.6855,
+        "preprocessing": 27.4617,
+        "forest": 11.9314,
+        "server": 2200.5317
+      },
+      "instance": "f1519e8f24a0",
+      "model_initialized": true,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 6901.225100038573
+    },
+    {
+      "platform": "Azure",
+      "phase": "concurrency2",
+      "request": 7,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.398,
+        "init": 0.0,
+        "validation": 0.0074,
+        "frame": 0.2402,
+        "preprocessing": 4.3518,
+        "forest": 6.1255,
+        "server": 11.8646
+      },
+      "instance": "de2b7a4d0bfe",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 511.64859998971224
+    },
+    {
+      "platform": "Azure",
+      "phase": "concurrency2",
+      "request": 6,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.35,
+        "init": 0.0,
+        "validation": 0.0088,
+        "frame": 0.3492,
+        "preprocessing": 5.2232,
+        "forest": 7.6888,
+        "server": 14.586
+      },
+      "instance": "de2b7a4d0bfe",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 516.1915000062436
+    },
+    {
+      "platform": "Azure",
+      "phase": "concurrency2",
+      "request": 8,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 1.3904,
+        "init": 0.0,
+        "validation": 0.0083,
+        "frame": 0.3293,
+        "preprocessing": 5.2236,
+        "forest": 9.0352,
+        "server": 26.6063
+      },
+      "instance": "de2b7a4d0bfe",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 203.24890012852848
+    },
+    {
+      "platform": "Azure",
+      "phase": "concurrency2",
+      "request": 9,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 3.6528,
+        "init": 0.0,
+        "validation": 0.0061,
+        "frame": 0.2591,
+        "preprocessing": 4.6547,
+        "forest": 10.2086,
+        "server": 20.0695
+      },
+      "instance": "de2b7a4d0bfe",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 201.51230017654598
+    },
+    {
+      "platform": "Vercel",
+      "phase": "concurrency2",
+      "request": 8,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.4546,
+        "init": 0.0,
+        "validation": 0.0102,
+        "frame": 0.5268,
+        "preprocessing": 6.6524,
+        "forest": 8.7526,
+        "server": 17.5795
+      },
+      "instance": "f1519e8f24a0",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 362.73359996266663
+    },
+    {
+      "platform": "Vercel",
+      "phase": "concurrency2",
+      "request": 9,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.5558,
+        "init": 0.0,
+        "validation": 0.0104,
+        "frame": 0.4384,
+        "preprocessing": 7.3141,
+        "forest": 8.6562,
+        "server": 18.0897
+      },
+      "instance": "f1519e8f24a0",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 599.1884998511523
+    },
+    {
+      "platform": "Vercel",
+      "phase": "concurrency2",
+      "request": 11,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3474,
+        "init": 0.0,
+        "validation": 0.0167,
+        "frame": 0.5894,
+        "preprocessing": 6.7008,
+        "forest": 8.9896,
+        "server": 17.6928
+      },
+      "instance": "f1519e8f24a0",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 372.0062000211328
+    },
+    {
+      "platform": "Vercel",
+      "phase": "concurrency2",
+      "request": 10,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 0.3417,
+        "init": 0.0,
+        "validation": 0.0103,
+        "frame": 0.4728,
+        "preprocessing": 6.2005,
+        "forest": 8.5101,
+        "server": 16.4583
+      },
+      "instance": "fad299935505",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 395.9148002322763
+    },
+    {
+      "platform": "Azure",
+      "phase": "concurrency2",
+      "request": 10,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 2.0048,
+        "init": 0.0,
+        "validation": 0.0049,
+        "frame": 0.4377,
+        "preprocessing": 5.146,
+        "forest": 9.6487,
+        "server": 19.07
+      },
+      "instance": "de2b7a4d0bfe",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 230.6416998617351
+    },
+    {
+      "platform": "Azure",
+      "phase": "concurrency2",
+      "request": 11,
+      "HTTP": 200,
+      "correct_class": true,
+      "server_timing_ms": {
+        "body_validate": 1.1008,
+        "init": 0.0,
+        "validation": 0.0071,
+        "frame": 0.2941,
+        "preprocessing": 5.2575,
+        "forest": 6.2581,
+        "server": 13.934
+      },
+      "instance": "de2b7a4d0bfe",
+      "model_initialized": false,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "network_ms": 229.93419994600117
+    }
+  ],
+  "engineering_complete_path_target_ms": 10,
+  "limitations": [
+    "42 measured requests/platform cannot establish tail reliability; p99 is sample-sensitive.",
+    "Server timing ends at response headers and excludes network, response transfer and pre-application platform startup.",
+    "X-PV-Initialized identifies model-cache loading, not confirmed full platform cold start.",
+    "Wall-clock HTTP latency is not billed CPU or billed replica lifetime."
+  ]
+}

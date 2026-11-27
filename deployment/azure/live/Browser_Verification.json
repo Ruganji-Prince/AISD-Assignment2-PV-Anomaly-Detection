@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "recorded_UTC": "2026-11-27T08:33:01.574190+00:00",
+  "URL": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io",
+  "command": "PV_APP_URL=<Azure URL> node web/tests-browser/smoke.cjs",
+  "viewports": [
+    "1366x768",
+    "1920x1080",
+    "820x1180",
+    "390x844",
+    "320x844"
+  ],
+  "passed": [
+    "one visible step",
+    "forward/backward/direct navigation",
+    "keyboard navigation",
+    "reduced motion",
+    "no page reload",
+    "shared measurements/scenario/chart state",
+    "prediction and condition explanations",
+    "stale prediction clearing",
+    "assessment and invalid input redirect",
+    "desktop no vertical scroll",
+    "all five historical dataset classes",
+    "synthetic generator bounds/determinism",
+    "error/loading handling",
+    "chart tooltips/updates"
+  ],
+  "page_errors": [],
+  "synthetic_fixture_predicted_classes": [
+    4,
+    4,
+    4,
+    4,
+    4
+  ],
+  "synthetic_limitation": "Illustrative synthetic intents are not guaranteed model classes; existing predictions remain unchanged.",
+  "screenshots": "Stored outside the public repository in the local Azure preparation workspace."
+}

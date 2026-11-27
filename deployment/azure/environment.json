@@ -1,0 +1,21 @@
+{
+  "location": "francecentral",
+  "tags": {
+    "project": "pv-anomaly-detection",
+    "purpose": "academic-evaluation"
+  },
+  "properties": {
+    "environmentMode": "WorkloadProfiles",
+    "workloadProfiles": [
+      {
+        "name": "Consumption",
+        "workloadProfileType": "Consumption"
+      }
+    ],
+    "appLogsConfiguration": {
+      "destination": null
+    },
+    "publicNetworkAccess": "Enabled",
+    "zoneRedundant": false
+  }
+}

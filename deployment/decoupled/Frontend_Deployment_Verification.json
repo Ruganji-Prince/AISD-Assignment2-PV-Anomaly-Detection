@@ -1,0 +1,81 @@
+{
+  "status": "VERIFIED",
+  "frontend": "https://pv-anomaly-detection-pbyhom77a-prince-r-k.vercel.app",
+  "deployment_id": "dpl_7d4mEEWCvfvUnRCJ9ukKX9Js8oLD",
+  "actual_deployment_files": [
+    "src/.vercel/output/config.json",
+    "src/.vercel/output/static/assets/api.js",
+    "src/.vercel/output/static/assets/app.js",
+    "src/.vercel/output/static/assets/explanations.js",
+    "src/.vercel/output/static/assets/favicon.svg",
+    "src/.vercel/output/static/assets/scenarios.js",
+    "src/.vercel/output/static/assets/style.css",
+    "src/.vercel/output/static/config.js",
+    "src/.vercel/output/static/index.html"
+  ],
+  "static_files": 9,
+  "served_asset_hashes_verified": 8,
+  "inference_functions": 0,
+  "model_artifacts": 0,
+  "Python_runtime_files": 0,
+  "Vercel_api_predict_HTTP": 404,
+  "build_output_records": 1,
+  "build_function_outputs": [],
+  "Azure": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io",
+  "Azure_revision": "pv-anomaly-detection--cors-cf295ed",
+  "Azure_image": "ghcr.io/ruganji-prince/pv-anomaly-detection@sha256:234cba831be3b1465a8447c16922602dc54f5f0dcb3a86cc5b465c0890e5023f",
+  "Azure_resources": {
+    "cpu": 0.5,
+    "ephemeralStorage": "2Gi",
+    "memory": "1Gi"
+  },
+  "scale": {
+    "cooldownPeriod": 300,
+    "maxReplicas": 1,
+    "minReplicas": 0,
+    "pollingInterval": 30,
+    "rules": [
+      {
+        "http": {
+          "metadata": {
+            "concurrentRequests": "2"
+          }
+        },
+        "name": "http-requests"
+      }
+    ]
+  },
+  "live_invalid_checks": [
+    {
+      "case": "missing",
+      "HTTP": 422
+    },
+    {
+      "case": "target",
+      "HTTP": 422
+    },
+    {
+      "case": "negative",
+      "HTTP": 422
+    },
+    {
+      "case": "boolean",
+      "HTTP": 422
+    },
+    {
+      "case": "nonfinite",
+      "HTTP": 422
+    },
+    {
+      "case": "duplicate",
+      "HTTP": 422
+    },
+    {
+      "case": "oversize",
+      "HTTP": 413
+    }
+  ],
+  "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+  "asset_hash_method": "Provider-documented x-vercel-skip-toolbar request header excludes platform preview-feedback HTML injection; app assets otherwise unchanged. Default preview CSP blocks that optional external toolbar.",
+  "scope": "Real HTTPS previews and Azure inference; fixed historical TEST cases verify deployment consistency only."
+}

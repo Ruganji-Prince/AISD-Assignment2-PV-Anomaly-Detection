@@ -1,0 +1,36 @@
+{
+  "status": "ok",
+  "deployment": {
+    "id": "dpl_7d4mEEWCvfvUnRCJ9ukKX9Js8oLD",
+    "url": "https://pv-anomaly-detection-pbyhom77a-prince-r-k.vercel.app",
+    "productionUrl": null,
+    "inspectorUrl": "https://vercel.com/prince-r-k/pv-anomaly-detection/7d4mEEWCvfvUnRCJ9ukKX9Js8oLD",
+    "readyState": "READY",
+    "target": null,
+    "environment": "preview",
+    "deploymentApiUrl": "https://api.vercel.com/v13/deployments/dpl_7d4mEEWCvfvUnRCJ9ukKX9Js8oLD",
+    "buildMachine": {
+      "cores": 2,
+      "memory": 8192,
+      "machine": "basic",
+      "selectionType": "fixed",
+      "selectionSource": "plan-default"
+    },
+    "deploymentProtection": []
+  },
+  "message": "Deployment pv-anomaly-detection-pbyhom77a-prince-r-k.vercel.app ready.",
+  "next": [
+    {
+      "command": "vercel curl https://pv-anomaly-detection-pbyhom77a-prince-r-k.vercel.app",
+      "when": "Verify deployment, including when Deployment Protection is enabled"
+    },
+    {
+      "command": "vercel inspect pv-anomaly-detection-pbyhom77a-prince-r-k.vercel.app --scope prince-r-k",
+      "when": "Inspect deployment"
+    },
+    {
+      "command": "vercel deploy --prod --scope prince-r-k",
+      "when": "Promote to production"
+    }
+  ]
+}

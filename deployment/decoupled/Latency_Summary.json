@@ -1,0 +1,81 @@
+{
+  "status": "MEASURED",
+  "requests": 15,
+  "successes": 15,
+  "frontend": "https://pv-anomaly-detection-pbyhom77a-prince-r-k.vercel.app",
+  "Azure": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io",
+  "statistics": {
+    "API_round_trip_ms": {
+      "N": 15,
+      "min_ms": 156.0,
+      "max_ms": 298.0,
+      "mean_ms": 190.73333333333332,
+      "std_ms": 40.67548694355408,
+      "p50_ms": 179.0,
+      "p95_ms": 262.99999999999994,
+      "p99_ms": 291.0
+    },
+    "preprocessing_ms": {
+      "N": 15,
+      "min_ms": 4.9766,
+      "max_ms": 10.5415,
+      "mean_ms": 5.801280000000001,
+      "std_ms": 1.3758333024025837,
+      "p50_ms": 5.377,
+      "p95_ms": 7.623759999999995,
+      "p99_ms": 9.957951999999997
+    },
+    "forest_ms": {
+      "N": 15,
+      "min_ms": 5.8467,
+      "max_ms": 8.692,
+      "mean_ms": 6.553093333333333,
+      "std_ms": 0.757414347318434,
+      "p50_ms": 6.3254,
+      "p95_ms": 7.7357999999999985,
+      "p99_ms": 8.50076
+    },
+    "server_ms": {
+      "N": 15,
+      "min_ms": 12.5729,
+      "max_ms": 21.139,
+      "mean_ms": 14.200439999999999,
+      "std_ms": 2.041711795388509,
+      "p50_ms": 13.9156,
+      "p95_ms": 17.067939999999993,
+      "p99_ms": 20.324787999999995
+    }
+  },
+  "page_timing": {
+    "navigation": {
+      "name": "https://pv-anomaly-detection-pbyhom77a-prince-r-k.vercel.app/",
+      "startTime": 0,
+      "duration": 4205.700000047684,
+      "nextHopProtocol": "h2",
+      "fetchStart": 0.20000004768371582,
+      "domainLookupStart": 2691.7000000476837,
+      "domainLookupEnd": 2701.5999999046326,
+      "connectStart": 2701.5999999046326,
+      "connectEnd": 2917.2000000476837,
+      "requestStart": 2917.7999999523163,
+      "responseStart": 3004.899999856949,
+      "responseEnd": 3290,
+      "domContentLoadedEventEnd": 4204.099999904633,
+      "loadEventEnd": 4205.700000047684,
+      "responseStatus": 200,
+      "decodedBodySize": 13626
+    },
+    "service": {
+      "connecting": 4204,
+      "ready": 4708.799999952316
+    }
+  },
+  "five_case_DOM_update_ms": [
+    308.19999980926514,
+    309.39999985694885,
+    342.59999990463257,
+    429.60000014305115,
+    298.90000009536743
+  ],
+  "scope": "Real browser-origin requests; warm single-client15-request sample. DOM update duration includes API/JSON handling and is not isolated paint time. Earlier httpx benchmarks differ in client/protocol/time and are historical comparisons, not a controlled model-improvement experiment."
+}
