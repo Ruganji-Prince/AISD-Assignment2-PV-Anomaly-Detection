@@ -1,0 +1,104 @@
+{
+  "status": "PARTIAL_CORS_BLOCKED",
+  "production_recommendation": "NO-GO",
+  "branch": "feature/train-class-measurement-ranges",
+  "preview_URL": "https://pv-anomaly-detection-8u71v1zjs-prince-r-k.vercel.app",
+  "preview_deployment_id": "dpl_CxdDd7gXxnJxBFhkzz5uCfZNTGHM",
+  "deployed_runtime_commit": "044be27c3d113b42bc075bccc013b6f92a3c1b7c",
+  "deployment_environment": "preview",
+  "production_alias_changed": false,
+  "actual_Azure": {
+    "approved_browser_origin": "http://127.0.0.1:8080",
+    "manual_reference_predictions": 5,
+    "automatic_observations": 10,
+    "restart_predictions": 1,
+    "outside_range_manual_predictions": 1,
+    "total_completed_predictions": 17,
+    "all_five_predicted_classes": true,
+    "retained_replay_disagreement": {
+      "position": 10,
+      "source_class": 0,
+      "predicted_class": 4
+    },
+    "maximum_inflight": 1,
+    "response_to_next_request_ms": [
+      5002.9695,
+      5011.8066,
+      5011.414200000001,
+      5008.768500000002,
+      5010.872599999999,
+      5171.2965,
+      5017.173899999994,
+      5003.713499999998,
+      5018.183799999999
+    ],
+    "scope": "17completed genuine production Azure predictions across the verified manual checkpoint and12 recorded requests in Azure_Integration.json; not150 or independent accuracy."
+  },
+  "preview_inference": {
+    "manual": "FAIL_CORS",
+    "automatic": "FAIL_CORS",
+    "browser_POST": "TypeError: Failed to fetch",
+    "preflight_HTTP": 400,
+    "allow_origin": null,
+    "origin": "https://pv-anomaly-detection-8u71v1zjs-prince-r-k.vercel.app",
+    "full_end_to_end_pass": false
+  },
+  "passed": {
+    "Python_tests": 53,
+    "Node_tests": 14,
+    "local_mocked_browser_checks": 21,
+    "local_original_model_HTTP_predictions": 26,
+    "legacy_browser_functional_regression": true,
+    "actual_Azure_approved_localhost_integration": true,
+    "preview_static_files_inventory": 11,
+    "preview_served_asset_hash_matches": 10,
+    "preview_all150_recorded_examples": true,
+    "preview_four_step_keyboard_navigation": true,
+    "preview_desktop_mobile": true,
+    "preview_negative_input_validation": true,
+    "preview_Pause_Restart_hidden_tab_safety": true,
+    "preview_no_fabricated_results": true
+  },
+  "accessibility": {
+    "sampled_chart_label_min_ratio": 14.589829203082733,
+    "chart_threshold": 4.5,
+    "opaque_background": true,
+    "keyboard_focus_outline": "3px; visible focus asserted on preview",
+    "automated_axe_violations": 0,
+    "automated_modes_and_widths": 4,
+    "incomplete_color_contrast": "Supplemented by computed-color/visual review of sampled charts and class badges; not exhaustive assistive technology certification."
+  },
+  "resolved_findings": [
+    "Native Window timer receiver: fixed wrappers, new Node regression, real-time Azure replay passed.",
+    "30second harness wait before initial Azure response: aligned to existing120second startup allowance; no application timing changed.",
+    "Accidental UTF-8 delimiter mojibake in test edit: restored original delimiter, exact20cell comparison passed; original HTML/data unchanged."
+  ],
+  "Azure_changes": false,
+  "proxy_or_security_bypass": false,
+  "required_smallest_change": {
+    "requires_separate_approval": true,
+    "setting": "Existing PV_FRONTEND_ORIGINS JSON allowlist",
+    "append_exactly": "https://pv-anomaly-detection-8u71v1zjs-prince-r-k.vercel.app",
+    "preserve_existing_origins": 6,
+    "wildcards": false,
+    "after_approval": "Verify the preview browser with actual Azure calls, all five references and automatic replay before considering production approval."
+  },
+  "preservation": {
+    "receipt": "Azure_Preservation.json",
+    "original_model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+    "scientific_integrity": "Local_Integrity.json",
+    "production_Vercel_deployment": "dpl_EobcLSoR4iY4NSXYn5jxNCX5jvba",
+    "Azure_revision": "pv-anomaly-detection--submission-api-20261128",
+    "Azure_image": "sha256:8c233e77ec370131f44670fcaf812a5aa27a79f7ca56bb8b7eff1beebc9cd946",
+    "main": "d007880c89a0312dbdf540678e9c8bf4cec3216e",
+    "submission_tag_object": "b39525d624839615eb23c5d2f52cbe3e188756f3",
+    "submission_tag_target": "d49cff533e5fe8860bacfb9942779ab003db47db"
+  },
+  "publication_note": "Final documentation commit may follow the deployed runtime commit. Only docs/evidence/test harness may differ; no redeployment needed when runtime assets match.",
+  "final_scientific_integrity": {
+    "protected_baseline_files": 604,
+    "all_hashes_match": true,
+    "relative_links_checked": 114,
+    "runtime_assets_unchanged_after_deployed_commit": true
+  }
+}

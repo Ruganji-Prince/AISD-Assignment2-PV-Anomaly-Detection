@@ -5,6 +5,66 @@
 
 The project compares photovoltaic operating-state classifiers under reduced measurement availability, balancing class-specific detection, physical input requirements, interpretability and resource constraints. The public demonstration uses the preserved four-electrical-channel Random Forest pipeline; retrospective scientific results and unmet engineering targets are reported explicitly.
 
+## Historical replay and manual inference — feature-branch candidate
+
+**Step 4: [public static preview](https://pv-anomaly-detection-8u71v1zjs-prince-r-k.vercel.app) is READY. Browser-to-Azure inference on that hostname is BLOCKED by CORS; production promotion is NO-GO. Both modes passed genuine Azure checks from the already-approved localhost origin. Production is unchanged.** Publication evidence will be recorded in [preview verification](docs/replay-preview/README.md).
+
+**Manual Inference** is selected by default. Enter four finite nonnegative measurements, optionally load any of the 150 recorded TRAIN examples, then press **Run model inference**. Loading an example fills inputs only; it never runs or supplies a prediction. Actual returned classes, physical-category explanations, charts and out-of-training-range warnings are displayed separately from the recorded source label.
+
+**Automatic Monitoring Demo** starts only after **Start**. It loads the frozen 150-observation TRAIN selection, confirms Azure readiness, submits one four-channel vector and waits approximately five seconds **after inference completes** before advancing. It stops after 25 observations (five per source class). **Pause**, **Restart**, mode switching and tab hiding cancel browser work and reject stale responses. Returning to a visible tab does not resume automatically. A canceled browser request may already be computing on the server. API failures never produce substitute predictions or a local model fallback.
+
+The replay is deliberately selected and balanced TRAIN data, not a chronological recording, physical sensor stream or representative class prevalence. All 13 disagreements remain in the 150-record pool; 137/150=91.33% is selected TRAIN-subset agreement, **not independent model accuracy**. The original RF E4 on Azure performs every inference in a cloud-connected demonstration. Vercel serves static assets only, with no model, Python runtime or inference function.
+
+### Observed class-conditional TRAIN ranges
+
+Frozen TRAIN positions [0,1,006,129), without filtering or new fitting. Values below are P5–P95 descriptive marginal intervals, rounded to four decimals.
+
+| Source class | TRAIN N | vdc1 P5–P95 (V) | vdc2 P5–P95 (V) | idc1 P5–P95 (A) | idc2 P5–P95 (A) |
+| --- | ---: | --- | --- | --- | --- |
+| 0 — Normal operation | 844,805 | 0.4668–292.5700 | 0.4250–290.0140 | 0.0510–8.2122 | 0.0064–7.8652 |
+| 1 — Short circuit | 1,226 | 258.7753–267.7080 | 200.5577–209.1983 | 8.7727–9.4214 | 8.4549–9.1426 |
+| 2 — Resistive degradation | 5,695 | 246.8404–267.2385 | 227.2595–258.5468 | 7.8330–9.3198 | 6.6115–8.8145 |
+| 3 — Open circuit | 1,204 | 1.6395–266.8979 | 2.1527–273.0028 | 0.1015–9.1426 | 0.0432–9.0932 |
+| 4 — Natural building shade | 153,199 | 258.3207–320.4700 | 242.9450–348.6480 | 0.4538–7.2223 | 0.0994–6.1335 |
+
+Class-conditional ranges overlap. These intervals are **not guaranteed classification thresholds or Random Forest decision boundaries**. The model evaluates joint combinations of four electrical measurements and its fitted preprocessing. Class4, natural building shade, is an **environmental condition**, not a hardware fault.
+
+[Complete statistics: minimum, maximum, quartiles, median, mean and sample standard deviation](technical_evaluation/PV_Class_Measurement_Ranges.md) | [Full-precision CSV](technical_evaluation/PV_Class_Measurement_Ranges.csv) | [Deterministic analysis script](technical_evaluation/class_measurement_ranges.py) | [Replay selection and limits](technical_evaluation/PV_Replay_Selection_Method.md).
+
+### Five fixed historical reference examples
+
+In **Manual Inference**, type the four measurements from any row below into the matching Vdc1,Vdc2,Idc1,Idc2 fields, then press **Run model inference**. Open **Model Assessment** for the actual returned label. Expected labels below are parity references, never replacements for an API response.
+
+| Expected class | vdc1 (V) | vdc2 (V) | idc1 (A) | idc2 (A) |
+| --- | ---: | ---: | ---: | ---: |
+| 0 — Normal operation | 300.031 | 329.544 | 0.2247 | 0.1272 |
+| 1 — Short circuit | 256.461 | 208.699 | 9.1373 | 8.4463 |
+| 2 — Resistive degradation | 259.212 | 246.611 | 9.0792 | 8.3303 |
+| 3 — Open circuit | 262.91 | 0.8866 | 8.9742 | 0.0468 |
+| 4 — Natural building shade | 334.823 | 335.877 | 0.4303 | 0.2274 |
+
+These are the five original [historical reference fixtures](deployment/example_cases.json), previously taken from TEST and retained for serving parity. They are separate from the new TRAIN-only replay and optional 150-observation selector. No additional TEST/VALIDATION observation was selected for replay or used to tune a model/threshold. Successful fixture predictions do not establish independent accuracy. The optional TRAIN selector contains 30 diverse observations per source class, including retained disagreements; a source label does not promise the model's output.
+
+### Current static build and local checks
+
+Use the pinned Python3.14.10 environment and `technical_evaluation/requirements.txt`. Run from the repository root, with Git and Node on PATH:
+
+```sh
+python -B -m unittest discover -s web/tests
+node --test web/tests-browser/replay.test.mjs
+python -B web/tests-browser/run_replay_checks.py --legacy
+```
+
+The browser command builds and tests static output against the real **local** original-model API; it does not establish live Azure or preview connectivity. Current cloud evidence is linked above and must distinguish live Azure calls from mocks. For interactive local review and full checks, see the [mode implementation guide](docs/historical-replay/README.md).
+
+Actual static-only build (use a fresh destination):
+
+```sh
+python -m frontend.build --output .cache/pv-preview/.vercel/output --manifest .cache/pv-preview-manifest.json
+```
+
+The default API origin is the existing Azure HTTPS endpoint. The exact eleven-file output includes only configuration, ten static assets and the curated 150-record replay. Full raw data, models, Python, tests and private review material are excluded. Source builds remain fail-closed; only verified prebuilt output may be deployed to the existing project. A new preview origin requires explicit Azure CORS approval if absent from the allowlist. No proxy, wildcard, browser-security bypass, production promotion or main merge is implied.
+
 ## Final verified release - 28 November 2026
 
 [Production PV analysis frontend](https://pv-anomaly-detection-prince-r-k.vercel.app) | [Independent Azure API landing page](https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io) | [Submission freeze and verification evidence](docs/final-release/README.md)
@@ -31,7 +91,9 @@ The original RF E4 pipeline is hosted in a Linux Consumption container in France
 
 See [architecture](deployment/azure/Architecture.md), [container provenance](deployment/azure/Container_Provenance.json), [cloud comparison and figures](deployment/azure/Cloud_Comparison.md), [latency evidence](deployment/azure/live/Latency_Summary.json), [cost analysis](deployment/azure/Cost_Analysis.md), [security](deployment/azure/Security_Verification.md), [reproduction](deployment/azure/README.md#reproduction), [Rubric 5 acceptance](deployment/azure/Acceptance_Matrix.md) and the [five-minute professor demonstration](deployment/azure/Professor_Azure_Demonstration.md). ActualCost currently has no reported rows; charges and remaining student credit remain unverified. The protected submission tag and scientific artifacts remain unchanged; Azure is a subsequent engineering extension on the existing engineering branch.
 
-## Technical evaluation - professor quick start
+## Historical technical evaluation - professor quick start
+
+For this feature branch, use the current checks above. Earlier whole-file snapshot gates reject subsequently approved frontend updates; scientific baselines and historical receipts remain preserved.
 
 For evaluation preparation, follow the [10/20-minute walkthrough](technical_evaluation/defense/Evaluation_Walkthrough.md), [learning guide](technical_evaluation/defense/Student_Learning_Guide.md), [mock examination](technical_evaluation/defense/Mock_Technical_Examination.md) and [submission/offline checklist](technical_evaluation/defense/Submission_Readiness.md). These are preparation documents; historical reports and measured results remain in their original locations.
 

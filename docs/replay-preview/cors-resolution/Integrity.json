@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "protected_files_unchanged": 604,
+  "key_sha256": {
+    "models/rf_e4/model.pkl": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+    "data/raw/pv_fault_dataset.csv": "717278fdc338bf6713293c0495421a8be9ea02a0b64144e86e957a531edecb8a",
+    "phase1_strategy/Phase1_Strategy_Report.pdf": "dfb3f253f3e059ece168d9c6edffc10f68a0a21ba8b738a6fb2b2d2c1d962497"
+  },
+  "submission_tag_unchanged": true,
+  "tracked_diff_from_step4": [],
+  "frozen_split_unchanged": true
+}

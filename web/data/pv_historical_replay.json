@@ -1,0 +1,1357 @@
+{
+  "schema_version": 1,
+  "source": "historical TRAIN observations",
+  "suggested_interval_ms": 5000,
+  "observations": [
+    {
+      "source_class": 1,
+      "measurements": {
+        "vdc1": 263.341,
+        "vdc2": 204.286,
+        "idc1": 9.2173,
+        "idc2": 8.9151
+      }
+    },
+    {
+      "source_class": 0,
+      "measurements": {
+        "vdc1": 1.7618,
+        "vdc2": 2.4247,
+        "idc1": 0.0996,
+        "idc2": 0.0385
+      }
+    },
+    {
+      "source_class": 2,
+      "measurements": {
+        "vdc1": 254.584,
+        "vdc2": 236.121,
+        "idc1": 8.9037,
+        "idc2": 8.3712
+      }
+    },
+    {
+      "source_class": 4,
+      "measurements": {
+        "vdc1": 277.683,
+        "vdc2": 300.519,
+        "idc1": 4.6586,
+        "idc2": 2.5762
+      }
+    },
+    {
+      "source_class": 3,
+      "measurements": {
+        "vdc1": 265.33,
+        "vdc2": 2.177,
+        "idc1": 9.0215,
+        "idc2": 0.0478
+      }
+    },
+    {
+      "source_class": 4,
+      "measurements": {
+        "vdc1": 320.883,
+        "vdc2": 231.41,
+        "idc1": 0.3205,
+        "idc2": 6.5465
+      }
+    },
+    {
+      "source_class": 2,
+      "measurements": {
+        "vdc1": 266.988,
+        "vdc2": 336.269,
+        "idc1": 9.3458,
+        "idc2": 1.721
+      }
+    },
+    {
+      "source_class": 1,
+      "measurements": {
+        "vdc1": 259.683,
+        "vdc2": 194.657,
+        "idc1": 9.4236,
+        "idc2": 9.3334
+      }
+    },
+    {
+      "source_class": 3,
+      "measurements": {
+        "vdc1": 1.6622,
+        "vdc2": 267.642,
+        "idc1": 0.1074,
+        "idc2": 8.9771
+      }
+    },
+    {
+      "source_class": 0,
+      "measurements": {
+        "vdc1": 242.339,
+        "vdc2": 238.379,
+        "idc1": 1.6107,
+        "idc2": 1.4366
+      }
+    },
+    {
+      "source_class": 3,
+      "measurements": {
+        "vdc1": 256.882,
+        "vdc2": 0.7901,
+        "idc1": 7.8348,
+        "idc2": 0.0401
+      }
+    },
+    {
+      "source_class": 4,
+      "measurements": {
+        "vdc1": 352.117,
+        "vdc2": 353.428,
+        "idc1": 0.2296,
+        "idc2": 0.0568
+      }
+    },
+    {
+      "source_class": 1,
+      "measurements": {
+        "vdc1": 258.369,
+        "vdc2": 238.199,
+        "idc1": 9.4635,
+        "idc2": 5.5914
+      }
+    },
+    {
+      "source_class": 2,
+      "measurements": {
+        "vdc1": 266.376,
+        "vdc2": 269.952,
+        "idc1": 7.546,
+        "idc2": 6.0576
+      }
+    },
+    {
+      "source_class": 0,
+      "measurements": {
+        "vdc1": 0.4515,
+        "vdc2": 0.3895,
+        "idc1": 0.0418,
+        "idc2": 0.0068
+      }
+    },
+    {
+      "source_class": 4,
+      "measurements": {
+        "vdc1": 266.4,
+        "vdc2": 197.534,
+        "idc1": 0.9065,
+        "idc2": 0.8474
+      }
+    },
+    {
+      "source_class": 2,
+      "measurements": {
+        "vdc1": 247.897,
+        "vdc2": 0.8586,
+        "idc1": 9.299,
+        "idc2": 0.0454
+      }
+    },
+    {
+      "source_class": 0,
+      "measurements": {
+        "vdc1": 280.185,
+        "vdc2": 280.182,
+        "idc1": 7.6066,
+        "idc2": 7.5951
+      }
+    },
+    {
+      "source_class": 1,
+      "measurements": {
+        "vdc1": 266.994,
+        "vdc2": 252.821,
+        "idc1": 8.7818,
+        "idc2": 1.6139
+      }
+    },
+    {
+      "source_class": 3,
+      "measurements": {
+        "vdc1": 1.6438,
+        "vdc2": 261.777,
+        "idc1": 0.1047,
+        "idc2": 9.1506
+      }
+    },
+    {
+      "source_class": 0,
+      "measurements": {
+        "vdc1": 287.047,
+        "vdc2": 287.068,
+        "idc1": 0.7221,
+        "idc2": 0.7114
+      }
+    },
+    {
+      "source_class": 2,
+      "measurements": {
+        "vdc1": 269.324,
+        "vdc2": 241.591,
+        "idc1": 9.2535,
+        "idc2": 9.0019
+      }
+    },
+    {
+      "source_class": 1,
+      "measurements": {
+        "vdc1": 270.842,
+        "vdc2": 205.773,
+        "idc1": 8.6993,
+        "idc2": 8.617
+      }
+    },
+    {
+      "source_class": 4,
+      "measurements": {
+        "vdc1": 257.979,
+        "vdc2": 233.817,
+        "idc1": 9.3977,
+        "idc2": 9.436
+      }
+    },
+    {
+      "source_class": 3,
+      "measurements": {
+        "vdc1": 258.663,
+        "vdc2": 2.1546,
+        "idc1": 9.141,
+        "idc2": 0.0418
+      }
+    },
+    {
+      "source_class": 4,
+      "measurements": {
+        "vdc1": 246.763,
+        "vdc2": 53.4102,
+        "idc1": 8.5697,
+        "idc2": 0.3693
+      }
+    },
+    {
+      "source_class": 1,
+      "measurements": {
+        "vdc1": 259.945,
+        "vdc2": 231.831,
+        "idc1": 9.3314,
+        "idc2": 9.4363
+      }
+    },
+    {
+      "source_class": 3,
+      "measurements": {
+        "vdc1": 1.6326,
+        "vdc2": 273.902,
+        "idc1": 0.1013,
+        "idc2": 8.8637
+      }
+    },
+    {
+      "source_class": 0,
+      "measurements": {
+        "vdc1": 289.0,
+        "vdc2": 319.051,
+        "idc1": 0.3142,
+        "idc2": 0.3088
+      }
+    },
+    {
+      "source_class": 2,
+      "measurements": {
+        "vdc1": 263.746,
+        "vdc2": 249.411,
+        "idc1": 9.4326,
+        "idc2": 8.7273
+      }
+    },
+    {
+      "source_class": 4,
+      "measurements": {
+        "vdc1": 176.518,
+        "vdc2": 332.718,
+        "idc1": 1.1311,
+        "idc2": 0.1423
+      }
+    },
+    {
+      "source_class": 0,
+      "measurements": {
+        "vdc1": 304.822,
+        "vdc2": 303.783,
+        "idc1": 0.0493,
+        "idc2": 0.0098
+      }
+    },
+    {
+      "source_class": 2,
+      "measurements": {
+        "vdc1": 245.521,
+        "vdc2": 232.514,
+        "idc1": 9.4123,
+        "idc2": 8.5905
+      }
+    },
+    {
+      "source_class": 1,
+      "measurements": {
+        "vdc1": 265.799,
+        "vdc2": 231.986,
+        "idc1": 8.7345,
+        "idc2": 8.8476
+      }
+    },
+    {
+      "source_class": 3,
+      "measurements": {
+        "vdc1": 268.169,
+        "vdc2": 2.1491,
+        "idc1": 8.9611,
+        "idc2": 0.0436
+      }
+    },
+    {
+      "source_class": 1,
+      "measurements": {
+        "vdc1": 256.832,
+        "vdc2": 200.479,
+        "idc1": 9.477,
+        "idc2": 9.1381
+      }
+    },
+    {
+      "source_class": 0,
+      "measurements": {
+        "vdc1": 285.228,
+        "vdc2": 285.226,
+        "idc1": 5.7906,
+        "idc2": 5.5073
+      }
+    },
+    {
+      "source_class": 2,
+      "measurements": {
+        "vdc1": 250.2,
+        "vdc2": 223.915,
+        "idc1": 9.1712,
+        "idc2": 8.7865
+      }
+    },
+    {
+      "source_class": 3,
+      "measurements": {
+        "vdc1": 0.7783,
+        "vdc2": 270.148,
+        "idc1": 0.1101,
+        "idc2": 9.0993
+      }
+    },
+    {
+      "source_class": 4,
+      "measurements": {
+        "vdc1": 212.021,
+        "vdc2": 212.175,
+        "idc1": 2.7406,
+        "idc2": 0.3274
+      }
+    },
+    {
+      "source_class": 2,
+      "measurements": {
+        "vdc1": 264.112,
+        "vdc2": 239.647,
+        "idc1": 7.8555,
+        "idc2": 7.6565
+      }
+    },
+    {
+      "source_class": 4,
+      "measurements": {
+        "vdc1": 312.122,
+        "vdc2": 299.533,
+        "idc1": 0.3287,
+        "idc2": 6.7685
+      }
+    },
+    {
+      "source_class": 0,
+      "measurements": {
+        "vdc1": 312.442,
+        "vdc2": 368.749,
+        "idc1": 0.3173,
+        "idc2": 0.1063
+      }
+    },
+    {
+      "source_class": 3,
+      "measurements": {
+        "vdc1": 259.12,
+        "vdc2": 2.1807,
+        "idc1": 9.2276,
+        "idc2": 0.0485
+      }
+    },
+    {
+      "source_class": 1,
+      "measurements": {
+        "vdc1": 263.753,
+        "vdc2": 199.191,
+        "idc1": 8.8947,
+        "idc2": 8.7762
+      }
+    },
+    {
+      "source_class": 0,
+      "measurements": {
+        "vdc1": 253.762,
+        "vdc2": 252.819,
+        "idc1": 9.0794,
+        "idc2": 9.0272
+      }
+    },
+    {
+      "source_class": 4,
+      "measurements": {
+        "vdc1": 324.592,
+        "vdc2": 242.029,
+        "idc1": 4.4787,
+        "idc2": 0.2591
+      }
+    },
+    {
+      "source_class": 3,
+      "measurements": {
+        "vdc1": 1.6673,
+        "vdc2": 269.207,
+        "idc1": 0.102,
+        "idc2": 9.123
+      }
+    },
+    {
+      "source_class": 2,
+      "measurements": {
+        "vdc1": 268.448,
+        "vdc2": 0.9052,
+        "idc1": 9.2071,
+        "idc2": 0.0468
+      }
+    },
+    {
+      "source_class": 1,
+      "measurements": {
+        "vdc1": 256.098,
+        "vdc2": 203.86,
+        "idc1": 9.1534,
+        "idc2": 8.634
+      }
+    },
+    {
+      "source_class": 2,
+      "measurements": {
+        "vdc1": 269.799,
+        "vdc2": 277.077,
+        "idc1": 9.2481,
+        "idc2": 7.0844
+      }
+    },
+    {
+      "source_class": 4,
+      "measurements": {
+        "vdc1": 327.284,
+        "vdc2": 283.0,
+        "idc1": 0.299,
+        "idc2": 0.1168
+      }
+    },
+    {
+      "source_class": 1,
+      "measurements": {
+        "vdc1": 265.796,
+        "vdc2": 206.107,
+        "idc1": 8.7492,
+        "idc2": 8.4545
+      }
+    },
+    {
+      "source_class": 0,
+      "measurements": {
+        "vdc1": 275.359,
+        "vdc2": 301.573,
+        "idc1": 0.3486,
+        "idc2": 0.3445
+      }
+    },
+    {
+      "source_class": 3,
+      "measurements": {
+        "vdc1": 264.67,
+        "vdc2": 2.0917,
+        "idc1": 9.1035,
+        "idc2": 0.0487
+      }
+    },
+    {
+      "source_class": 4,
+      "measurements": {
+        "vdc1": 262.698,
+        "vdc2": 341.971,
+        "idc1": 9.0325,
+        "idc2": 0.0492
+      }
+    },
+    {
+      "source_class": 0,
+      "measurements": {
+        "vdc1": 336.922,
+        "vdc2": 279.123,
+        "idc1": 0.1426,
+        "idc2": 0.0372
+      }
+    },
+    {
+      "source_class": 3,
+      "measurements": {
+        "vdc1": 1.6677,
+        "vdc2": 273.013,
+        "idc1": 0.1084,
+        "idc2": 8.8405
+      }
+    },
+    {
+      "source_class": 2,
+      "measurements": {
+        "vdc1": 247.793,
+        "vdc2": 239.538,
+        "idc1": 8.5064,
+        "idc2": 7.6831
+      }
+    },
+    {
+      "source_class": 1,
+      "measurements": {
+        "vdc1": 263.36,
+        "vdc2": 200.862,
+        "idc1": 8.8375,
+        "idc2": 9.1481
+      }
+    },
+    {
+      "source_class": 0,
+      "measurements": {
+        "vdc1": 21.6909,
+        "vdc2": 21.6871,
+        "idc1": 0.0601,
+        "idc2": 0.0064
+      }
+    },
+    {
+      "source_class": 2,
+      "measurements": {
+        "vdc1": 254.784,
+        "vdc2": 223.064,
+        "idc1": 8.2995,
+        "idc2": 8.2299
+      }
+    },
+    {
+      "source_class": 3,
+      "measurements": {
+        "vdc1": 262.566,
+        "vdc2": 2.1516,
+        "idc1": 9.0161,
+        "idc2": 0.0445
+      }
+    },
+    {
+      "source_class": 1,
+      "measurements": {
+        "vdc1": 267.912,
+        "vdc2": 204.307,
+        "idc1": 9.1487,
+        "idc2": 9.0389
+      }
+    },
+    {
+      "source_class": 4,
+      "measurements": {
+        "vdc1": 298.497,
+        "vdc2": 240.679,
+        "idc1": 5.4302,
+        "idc2": 5.8178
+      }
+    },
+    {
+      "source_class": 2,
+      "measurements": {
+        "vdc1": 263.323,
+        "vdc2": 246.893,
+        "idc1": 7.8555,
+        "idc2": 7.3839
+      }
+    },
+    {
+      "source_class": 3,
+      "measurements": {
+        "vdc1": 1.6398,
+        "vdc2": 269.707,
+        "idc1": 0.0997,
+        "idc2": 9.019
+      }
+    },
+    {
+      "source_class": 4,
+      "measurements": {
+        "vdc1": 313.217,
+        "vdc2": 357.458,
+        "idc1": 2.5731,
+        "idc2": 0.0919
+      }
+    },
+    {
+      "source_class": 0,
+      "measurements": {
+        "vdc1": 289.719,
+        "vdc2": 289.48,
+        "idc1": 7.4184,
+        "idc2": 7.3527
+      }
+    },
+    {
+      "source_class": 1,
+      "measurements": {
+        "vdc1": 263.048,
+        "vdc2": 210.383,
+        "idc1": 9.3122,
+        "idc2": 8.7264
+      }
+    },
+    {
+      "source_class": 0,
+      "measurements": {
+        "vdc1": 309.03,
+        "vdc2": 309.069,
+        "idc1": 0.2217,
+        "idc2": 0.0753
+      }
+    },
+    {
+      "source_class": 1,
+      "measurements": {
+        "vdc1": 259.499,
+        "vdc2": 200.158,
+        "idc1": 9.0549,
+        "idc2": 8.7824
+      }
+    },
+    {
+      "source_class": 4,
+      "measurements": {
+        "vdc1": 279.277,
+        "vdc2": 265.716,
+        "idc1": 2.766,
+        "idc2": 2.6537
+      }
+    },
+    {
+      "source_class": 3,
+      "measurements": {
+        "vdc1": 265.452,
+        "vdc2": 2.1732,
+        "idc1": 9.0911,
+        "idc2": 0.0431
+      }
+    },
+    {
+      "source_class": 2,
+      "measurements": {
+        "vdc1": 269.12,
+        "vdc2": 249.623,
+        "idc1": 9.0021,
+        "idc2": 8.5305
+      }
+    },
+    {
+      "source_class": 3,
+      "measurements": {
+        "vdc1": 1.6332,
+        "vdc2": 271.608,
+        "idc1": 0.1117,
+        "idc2": 8.967
+      }
+    },
+    {
+      "source_class": 1,
+      "measurements": {
+        "vdc1": 260.376,
+        "vdc2": 214.856,
+        "idc1": 8.8992,
+        "idc2": 8.8952
+      }
+    },
+    {
+      "source_class": 4,
+      "measurements": {
+        "vdc1": 252.123,
+        "vdc2": 298.647,
+        "idc1": 8.1435,
+        "idc2": 5.2081
+      }
+    },
+    {
+      "source_class": 0,
+      "measurements": {
+        "vdc1": 279.629,
+        "vdc2": 264.485,
+        "idc1": 6.6448,
+        "idc2": 6.5867
+      }
+    },
+    {
+      "source_class": 2,
+      "measurements": {
+        "vdc1": 242.138,
+        "vdc2": 223.755,
+        "idc1": 9.0578,
+        "idc2": 8.513
+      }
+    },
+    {
+      "source_class": 0,
+      "measurements": {
+        "vdc1": 0.678,
+        "vdc2": 0.6747,
+        "idc1": 0.107,
+        "idc2": 0.0394
+      }
+    },
+    {
+      "source_class": 3,
+      "measurements": {
+        "vdc1": 260.544,
+        "vdc2": 2.1776,
+        "idc1": 9.0441,
+        "idc2": 0.0457
+      }
+    },
+    {
+      "source_class": 1,
+      "measurements": {
+        "vdc1": 261.885,
+        "vdc2": 207.752,
+        "idc1": 8.9034,
+        "idc2": 8.4035
+      }
+    },
+    {
+      "source_class": 4,
+      "measurements": {
+        "vdc1": 291.753,
+        "vdc2": 291.056,
+        "idc1": 1.9383,
+        "idc2": 0.166
+      }
+    },
+    {
+      "source_class": 2,
+      "measurements": {
+        "vdc1": 263.65,
+        "vdc2": 244.017,
+        "idc1": 9.384,
+        "idc2": 8.8535
+      }
+    },
+    {
+      "source_class": 0,
+      "measurements": {
+        "vdc1": 283.008,
+        "vdc2": 291.849,
+        "idc1": 7.8384,
+        "idc2": 7.5081
+      }
+    },
+    {
+      "source_class": 1,
+      "measurements": {
+        "vdc1": 262.724,
+        "vdc2": 201.928,
+        "idc1": 9.2848,
+        "idc2": 9.0772
+      }
+    },
+    {
+      "source_class": 4,
+      "measurements": {
+        "vdc1": 278.331,
+        "vdc2": 278.067,
+        "idc1": 5.7883,
+        "idc2": 5.2618
+      }
+    },
+    {
+      "source_class": 3,
+      "measurements": {
+        "vdc1": 1.6707,
+        "vdc2": 272.477,
+        "idc1": 0.1011,
+        "idc2": 8.9819
+      }
+    },
+    {
+      "source_class": 2,
+      "measurements": {
+        "vdc1": 252.616,
+        "vdc2": 231.343,
+        "idc1": 9.1665,
+        "idc2": 8.6132
+      }
+    },
+    {
+      "source_class": 4,
+      "measurements": {
+        "vdc1": 222.504,
+        "vdc2": 261.751,
+        "idc1": 2.1454,
+        "idc2": 0.2283
+      }
+    },
+    {
+      "source_class": 0,
+      "measurements": {
+        "vdc1": 308.56,
+        "vdc2": 307.482,
+        "idc1": 0.0706,
+        "idc2": 0.007
+      }
+    },
+    {
+      "source_class": 3,
+      "measurements": {
+        "vdc1": 269.548,
+        "vdc2": 2.1675,
+        "idc1": 8.9004,
+        "idc2": 0.0464
+      }
+    },
+    {
+      "source_class": 2,
+      "measurements": {
+        "vdc1": 245.789,
+        "vdc2": 222.0,
+        "idc1": 8.8537,
+        "idc2": 8.4622
+      }
+    },
+    {
+      "source_class": 1,
+      "measurements": {
+        "vdc1": 263.496,
+        "vdc2": 220.778,
+        "idc1": 9.2034,
+        "idc2": 9.4548
+      }
+    },
+    {
+      "source_class": 3,
+      "measurements": {
+        "vdc1": 1.6704,
+        "vdc2": 271.391,
+        "idc1": 0.1078,
+        "idc2": 9.0587
+      }
+    },
+    {
+      "source_class": 0,
+      "measurements": {
+        "vdc1": 254.852,
+        "vdc2": 254.943,
+        "idc1": 7.8059,
+        "idc2": 7.3801
+      }
+    },
+    {
+      "source_class": 2,
+      "measurements": {
+        "vdc1": 256.701,
+        "vdc2": 243.098,
+        "idc1": 8.1865,
+        "idc2": 7.5776
+      }
+    },
+    {
+      "source_class": 4,
+      "measurements": {
+        "vdc1": 321.355,
+        "vdc2": 224.275,
+        "idc1": 2.0654,
+        "idc2": 2.6699
+      }
+    },
+    {
+      "source_class": 1,
+      "measurements": {
+        "vdc1": 258.101,
+        "vdc2": 204.623,
+        "idc1": 9.4763,
+        "idc2": 9.0022
+      }
+    },
+    {
+      "source_class": 3,
+      "measurements": {
+        "vdc1": 260.897,
+        "vdc2": 2.1863,
+        "idc1": 9.1639,
+        "idc2": 0.0426
+      }
+    },
+    {
+      "source_class": 4,
+      "measurements": {
+        "vdc1": 257.394,
+        "vdc2": 270.206,
+        "idc1": 5.9106,
+        "idc2": 1.0248
+      }
+    },
+    {
+      "source_class": 2,
+      "measurements": {
+        "vdc1": 251.594,
+        "vdc2": 234.559,
+        "idc1": 9.1601,
+        "idc2": 8.4545
+      }
+    },
+    {
+      "source_class": 1,
+      "measurements": {
+        "vdc1": 265.163,
+        "vdc2": 203.763,
+        "idc1": 8.8847,
+        "idc2": 8.6529
+      }
+    },
+    {
+      "source_class": 0,
+      "measurements": {
+        "vdc1": 0.7476,
+        "vdc2": 0.5753,
+        "idc1": 0.0671,
+        "idc2": 0.0059
+      }
+    },
+    {
+      "source_class": 1,
+      "measurements": {
+        "vdc1": 265.46,
+        "vdc2": 200.458,
+        "idc1": 9.2272,
+        "idc2": 9.1736
+      }
+    },
+    {
+      "source_class": 4,
+      "measurements": {
+        "vdc1": 313.469,
+        "vdc2": 278.49,
+        "idc1": 3.8123,
+        "idc2": 6.7048
+      }
+    },
+    {
+      "source_class": 2,
+      "measurements": {
+        "vdc1": 244.855,
+        "vdc2": 230.576,
+        "idc1": 8.6242,
+        "idc2": 8.0393
+      }
+    },
+    {
+      "source_class": 3,
+      "measurements": {
+        "vdc1": 1.6553,
+        "vdc2": 266.342,
+        "idc1": 0.1094,
+        "idc2": 9.1353
+      }
+    },
+    {
+      "source_class": 0,
+      "measurements": {
+        "vdc1": 283.843,
+        "vdc2": 283.581,
+        "idc1": 1.1875,
+        "idc2": 1.1492
+      }
+    },
+    {
+      "source_class": 3,
+      "measurements": {
+        "vdc1": 266.847,
+        "vdc2": 2.1549,
+        "idc1": 9.0048,
+        "idc2": 0.0489
+      }
+    },
+    {
+      "source_class": 0,
+      "measurements": {
+        "vdc1": 70.489,
+        "vdc2": 4.7928,
+        "idc1": 0.06,
+        "idc2": 0.0087
+      }
+    },
+    {
+      "source_class": 1,
+      "measurements": {
+        "vdc1": 262.413,
+        "vdc2": 204.122,
+        "idc1": 8.8596,
+        "idc2": 8.5247
+      }
+    },
+    {
+      "source_class": 4,
+      "measurements": {
+        "vdc1": 287.931,
+        "vdc2": 337.683,
+        "idc1": 6.688,
+        "idc2": 1.7638
+      }
+    },
+    {
+      "source_class": 2,
+      "measurements": {
+        "vdc1": 256.607,
+        "vdc2": 237.696,
+        "idc1": 8.1042,
+        "idc2": 7.7097
+      }
+    },
+    {
+      "source_class": 4,
+      "measurements": {
+        "vdc1": 312.301,
+        "vdc2": 318.084,
+        "idc1": 4.6301,
+        "idc2": 1.7143
+      }
+    },
+    {
+      "source_class": 3,
+      "measurements": {
+        "vdc1": 1.6391,
+        "vdc2": 264.878,
+        "idc1": 0.1055,
+        "idc2": 9.0474
+      }
+    },
+    {
+      "source_class": 0,
+      "measurements": {
+        "vdc1": 277.832,
+        "vdc2": 277.832,
+        "idc1": 7.7352,
+        "idc2": 7.6729
+      }
+    },
+    {
+      "source_class": 2,
+      "measurements": {
+        "vdc1": 270.537,
+        "vdc2": 245.583,
+        "idc1": 8.9183,
+        "idc2": 8.6664
+      }
+    },
+    {
+      "source_class": 1,
+      "measurements": {
+        "vdc1": 259.263,
+        "vdc2": 199.724,
+        "idc1": 9.3815,
+        "idc2": 9.1508
+      }
+    },
+    {
+      "source_class": 3,
+      "measurements": {
+        "vdc1": 266.333,
+        "vdc2": 2.1719,
+        "idc1": 8.9605,
+        "idc2": 0.0416
+      }
+    },
+    {
+      "source_class": 1,
+      "measurements": {
+        "vdc1": 266.285,
+        "vdc2": 205.999,
+        "idc1": 9.2163,
+        "idc2": 8.971
+      }
+    },
+    {
+      "source_class": 0,
+      "measurements": {
+        "vdc1": 1.5807,
+        "vdc2": 1.3926,
+        "idc1": 0.0523,
+        "idc2": 0.0104
+      }
+    },
+    {
+      "source_class": 4,
+      "measurements": {
+        "vdc1": 307.402,
+        "vdc2": 281.514,
+        "idc1": 3.0576,
+        "idc2": 2.4437
+      }
+    },
+    {
+      "source_class": 2,
+      "measurements": {
+        "vdc1": 248.293,
+        "vdc2": 229.428,
+        "idc1": 8.4353,
+        "idc2": 7.992
+      }
+    },
+    {
+      "source_class": 1,
+      "measurements": {
+        "vdc1": 260.819,
+        "vdc2": 203.258,
+        "idc1": 9.3366,
+        "idc2": 9.0132
+      }
+    },
+    {
+      "source_class": 2,
+      "measurements": {
+        "vdc1": 253.0,
+        "vdc2": 231.942,
+        "idc1": 8.9323,
+        "idc2": 8.5124
+      }
+    },
+    {
+      "source_class": 3,
+      "measurements": {
+        "vdc1": 1.6581,
+        "vdc2": 265.291,
+        "idc1": 0.101,
+        "idc2": 9.0473
+      }
+    },
+    {
+      "source_class": 0,
+      "measurements": {
+        "vdc1": 160.073,
+        "vdc2": 327.96,
+        "idc1": 0.3671,
+        "idc2": 0.1468
+      }
+    },
+    {
+      "source_class": 4,
+      "measurements": {
+        "vdc1": 285.597,
+        "vdc2": 244.692,
+        "idc1": 3.3621,
+        "idc2": 3.3162
+      }
+    },
+    {
+      "source_class": 1,
+      "measurements": {
+        "vdc1": 264.622,
+        "vdc2": 206.71,
+        "idc1": 8.9408,
+        "idc2": 8.5904
+      }
+    },
+    {
+      "source_class": 0,
+      "measurements": {
+        "vdc1": 268.667,
+        "vdc2": 268.269,
+        "idc1": 0.2858,
+        "idc2": 0.19
+      }
+    },
+    {
+      "source_class": 3,
+      "measurements": {
+        "vdc1": 264.877,
+        "vdc2": 2.1736,
+        "idc1": 9.1087,
+        "idc2": 0.0506
+      }
+    },
+    {
+      "source_class": 2,
+      "measurements": {
+        "vdc1": 266.383,
+        "vdc2": 250.385,
+        "idc1": 9.0998,
+        "idc2": 8.4771
+      }
+    },
+    {
+      "source_class": 4,
+      "measurements": {
+        "vdc1": 268.854,
+        "vdc2": 288.949,
+        "idc1": 0.4283,
+        "idc2": 0.1039
+      }
+    },
+    {
+      "source_class": 2,
+      "measurements": {
+        "vdc1": 248.008,
+        "vdc2": 229.72,
+        "idc1": 9.326,
+        "idc2": 8.6856
+      }
+    },
+    {
+      "source_class": 4,
+      "measurements": {
+        "vdc1": 251.972,
+        "vdc2": 292.217,
+        "idc1": 7.2228,
+        "idc2": 7.0812
+      }
+    },
+    {
+      "source_class": 3,
+      "measurements": {
+        "vdc1": 1.6464,
+        "vdc2": 269.411,
+        "idc1": 0.1036,
+        "idc2": 8.9183
+      }
+    },
+    {
+      "source_class": 0,
+      "measurements": {
+        "vdc1": 317.202,
+        "vdc2": 224.932,
+        "idc1": 2.0309,
+        "idc2": 2.5935
+      }
+    },
+    {
+      "source_class": 1,
+      "measurements": {
+        "vdc1": 268.763,
+        "vdc2": 202.527,
+        "idc1": 8.7183,
+        "idc2": 8.6819
+      }
+    },
+    {
+      "source_class": 2,
+      "measurements": {
+        "vdc1": 246.746,
+        "vdc2": 235.18,
+        "idc1": 9.1024,
+        "idc2": 8.3306
+      }
+    },
+    {
+      "source_class": 0,
+      "measurements": {
+        "vdc1": 257.661,
+        "vdc2": 257.663,
+        "idc1": 0.098,
+        "idc2": 0.0262
+      }
+    },
+    {
+      "source_class": 3,
+      "measurements": {
+        "vdc1": 264.988,
+        "vdc2": 2.1526,
+        "idc1": 9.1214,
+        "idc2": 0.0424
+      }
+    },
+    {
+      "source_class": 1,
+      "measurements": {
+        "vdc1": 262.219,
+        "vdc2": 201.973,
+        "idc1": 8.8657,
+        "idc2": 8.6075
+      }
+    },
+    {
+      "source_class": 4,
+      "measurements": {
+        "vdc1": 297.676,
+        "vdc2": 261.212,
+        "idc1": 5.8336,
+        "idc2": 2.8759
+      }
+    },
+    {
+      "source_class": 3,
+      "measurements": {
+        "vdc1": 1.6409,
+        "vdc2": 267.049,
+        "idc1": 0.1006,
+        "idc2": 9.1117
+      }
+    },
+    {
+      "source_class": 4,
+      "measurements": {
+        "vdc1": 266.303,
+        "vdc2": 319.625,
+        "idc1": 3.9225,
+        "idc2": 0.591
+      }
+    },
+    {
+      "source_class": 1,
+      "measurements": {
+        "vdc1": 261.241,
+        "vdc2": 202.726,
+        "idc1": 9.0018,
+        "idc2": 8.6501
+      }
+    },
+    {
+      "source_class": 0,
+      "measurements": {
+        "vdc1": 242.851,
+        "vdc2": 256.555,
+        "idc1": 9.2181,
+        "idc2": 8.7438
+      }
+    },
+    {
+      "source_class": 2,
+      "measurements": {
+        "vdc1": 256.38,
+        "vdc2": 0.8864,
+        "idc1": 9.6181,
+        "idc2": 0.0447
+      }
+    }
+  ]
+}

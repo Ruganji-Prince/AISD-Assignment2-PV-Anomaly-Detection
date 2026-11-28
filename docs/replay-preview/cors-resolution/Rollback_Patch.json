@@ -1,0 +1,91 @@
+{
+  "properties": {
+    "template": {
+      "containers": [
+        {
+          "env": [
+            {
+              "name": "PYTHONDONTWRITEBYTECODE",
+              "value": "1"
+            },
+            {
+              "name": "PYTHONUNBUFFERED",
+              "value": "1"
+            },
+            {
+              "name": "PV_FRONTEND_ORIGINS",
+              "value": "[\"https://pv-anomaly-detection-prince-r-k.vercel.app\",\"https://pv-anomaly-detection-vert.vercel.app\",\"https://pv-anomaly-detection-pbyhom77a-prince-r-k.vercel.app\",\"http://localhost:8080\",\"http://127.0.0.1:8080\",\"https://pv-anomaly-detection-h8tneats1-prince-r-k.vercel.app\"]"
+            }
+          ],
+          "image": "ghcr.io/ruganji-prince/pv-anomaly-detection@sha256:8c233e77ec370131f44670fcaf812a5aa27a79f7ca56bb8b7eff1beebc9cd946",
+          "name": "pv-inference",
+          "probes": [
+            {
+              "failureThreshold": 3,
+              "initialDelaySeconds": 30,
+              "periodSeconds": 30,
+              "successThreshold": 1,
+              "tcpSocket": {
+                "port": 8000
+              },
+              "timeoutSeconds": 5,
+              "type": "Liveness"
+            },
+            {
+              "failureThreshold": 3,
+              "httpGet": {
+                "path": "/api/health",
+                "port": 8000,
+                "scheme": "HTTP"
+              },
+              "initialDelaySeconds": 5,
+              "periodSeconds": 10,
+              "successThreshold": 1,
+              "timeoutSeconds": 5,
+              "type": "Readiness"
+            },
+            {
+              "failureThreshold": 24,
+              "httpGet": {
+                "path": "/api/health",
+                "port": 8000,
+                "scheme": "HTTP"
+              },
+              "initialDelaySeconds": 10,
+              "periodSeconds": 5,
+              "successThreshold": 1,
+              "timeoutSeconds": 5,
+              "type": "Startup"
+            }
+          ],
+          "resources": {
+            "cpu": 0.5,
+            "ephemeralStorage": "2Gi",
+            "memory": "1Gi"
+          }
+        }
+      ],
+      "initContainers": null,
+      "revisionSuffix": "rollback-replay-cors-20261128",
+      "scale": {
+        "cooldownPeriod": 300,
+        "maxReplicas": 1,
+        "minReplicas": 0,
+        "pollingInterval": 30,
+        "rules": [
+          {
+            "http": {
+              "metadata": {
+                "concurrentRequests": "2"
+              }
+            },
+            "name": "http-requests"
+          }
+        ]
+      },
+      "serviceBinds": null,
+      "terminationGracePeriodSeconds": null,
+      "volumes": null
+    }
+  }
+}

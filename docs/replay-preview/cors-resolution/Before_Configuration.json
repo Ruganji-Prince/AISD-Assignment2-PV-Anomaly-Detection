@@ -1,0 +1,69 @@
+{
+  "status": "VERIFIED_BEFORE_CHANGE",
+  "subscription_type": "Azure for Students",
+  "active_revision": "pv-anomaly-detection--submission-api-20261128",
+  "image": "ghcr.io/ruganji-prince/pv-anomaly-detection@sha256:8c233e77ec370131f44670fcaf812a5aa27a79f7ca56bb8b7eff1beebc9cd946",
+  "resources": {
+    "cpu": 0.5,
+    "ephemeralStorage": "2Gi",
+    "memory": "1Gi"
+  },
+  "scale": {
+    "cooldownPeriod": 300,
+    "maxReplicas": 1,
+    "minReplicas": 0,
+    "pollingInterval": 30,
+    "rules": [
+      {
+        "http": {
+          "metadata": {
+            "concurrentRequests": "2"
+          }
+        },
+        "name": "http-requests"
+      }
+    ]
+  },
+  "previous_origins": [
+    "https://pv-anomaly-detection-prince-r-k.vercel.app",
+    "https://pv-anomaly-detection-vert.vercel.app",
+    "https://pv-anomaly-detection-pbyhom77a-prince-r-k.vercel.app",
+    "http://localhost:8080",
+    "http://127.0.0.1:8080",
+    "https://pv-anomaly-detection-h8tneats1-prince-r-k.vercel.app"
+  ],
+  "environment_variable_names": [
+    "PYTHONDONTWRITEBYTECODE",
+    "PYTHONUNBUFFERED",
+    "PV_FRONTEND_ORIGINS"
+  ],
+  "ingress": {
+    "additionalPortMappings": null,
+    "allowInsecure": false,
+    "clientCertificateMode": null,
+    "corsPolicy": null,
+    "customDomains": null,
+    "exposedPort": 0,
+    "external": true,
+    "fqdn": "pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io",
+    "ipSecurityRestrictions": null,
+    "stickySessions": null,
+    "targetPort": 8000,
+    "traffic": [
+      {
+        "latestRevision": true,
+        "weight": 100
+      }
+    ],
+    "transport": "Auto"
+  },
+  "active_revisions_mode": "Single",
+  "configuration_sha256": "6fd469af58d4e55a42bb9a370cb87149bd3751ba0d2bb75186d1bd35f6e16f8b",
+  "template_sha256": "8d49276bff21fc77b344824391b8b609ce8594df6798e17890ce7b05161245d8",
+  "model_health": {
+    "status": "ready",
+    "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+    "python_version": "3.14.10"
+  },
+  "backup_scope": "Full private resource snapshot stored only in ignored cache. Public rollback template contains only the three audited nonsecret runtime variables and original settings."
+}

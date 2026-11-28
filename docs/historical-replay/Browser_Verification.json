@@ -1,0 +1,231 @@
+{
+  "status": "PASS",
+  "mocked_transport": {
+    "default_manual": true,
+    "no_start_without_action": true,
+    "all25_exact_payloads": true,
+    "maximum_inflight_requests": 1,
+    "bounded25": true,
+    "no_post_completion_keepalive": true,
+    "late_response_invalidated": true,
+    "pause_stops_traffic": true,
+    "restart_resets_to_first": true,
+    "mode_switch_cancels": true,
+    "visibility_pause_no_auto_resume": true,
+    "error_stops_without_prediction": true,
+    "source_separate_from_returned_class": true,
+    "all150_manual_examples": true,
+    "arbitrary_manual_values": true,
+    "range_warnings": true,
+    "charts_and_actual_explanations": true,
+    "four_step_keyboard_navigation": true,
+    "viewports": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "range_table": true,
+    "legacy_dataset_controls": true
+  },
+  "real_local_HTTP": {
+    "backend": "Unchanged web.azure_app:app and original RF E4; no mocked routes",
+    "source": "Local static build on8080 -> original FastAPI on8787",
+    "five_predicted_classes": true,
+    "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+    "observations": [
+      {
+        "position": 1,
+        "source_class": 1,
+        "predicted_class": 1
+      },
+      {
+        "position": 2,
+        "source_class": 0,
+        "predicted_class": 0
+      },
+      {
+        "position": 3,
+        "source_class": 2,
+        "predicted_class": 2
+      },
+      {
+        "position": 4,
+        "source_class": 4,
+        "predicted_class": 4
+      },
+      {
+        "position": 5,
+        "source_class": 3,
+        "predicted_class": 3
+      },
+      {
+        "position": 6,
+        "source_class": 4,
+        "predicted_class": 4
+      },
+      {
+        "position": 7,
+        "source_class": 2,
+        "predicted_class": 2
+      },
+      {
+        "position": 8,
+        "source_class": 1,
+        "predicted_class": 1
+      },
+      {
+        "position": 9,
+        "source_class": 3,
+        "predicted_class": 3
+      },
+      {
+        "position": 10,
+        "source_class": 0,
+        "predicted_class": 4
+      },
+      {
+        "position": 11,
+        "source_class": 3,
+        "predicted_class": 3
+      },
+      {
+        "position": 12,
+        "source_class": 4,
+        "predicted_class": 4
+      },
+      {
+        "position": 13,
+        "source_class": 1,
+        "predicted_class": 1
+      },
+      {
+        "position": 14,
+        "source_class": 2,
+        "predicted_class": 2
+      },
+      {
+        "position": 15,
+        "source_class": 0,
+        "predicted_class": 0
+      },
+      {
+        "position": 16,
+        "source_class": 4,
+        "predicted_class": 4
+      },
+      {
+        "position": 17,
+        "source_class": 2,
+        "predicted_class": 3
+      },
+      {
+        "position": 18,
+        "source_class": 0,
+        "predicted_class": 0
+      },
+      {
+        "position": 19,
+        "source_class": 1,
+        "predicted_class": 1
+      },
+      {
+        "position": 20,
+        "source_class": 3,
+        "predicted_class": 3
+      },
+      {
+        "position": 21,
+        "source_class": 0,
+        "predicted_class": 4
+      },
+      {
+        "position": 22,
+        "source_class": 2,
+        "predicted_class": 2
+      },
+      {
+        "position": 23,
+        "source_class": 1,
+        "predicted_class": 1
+      },
+      {
+        "position": 24,
+        "source_class": 4,
+        "predicted_class": 1
+      },
+      {
+        "position": 25,
+        "source_class": 3,
+        "predicted_class": 3
+      }
+    ],
+    "manual_out_of_range_response": {
+      "predicted_class": 0,
+      "label": "normal",
+      "hardware_fault_class": false,
+      "environmental_shade": false,
+      "model_version": "archived-RF__E4-cf5d0ac4",
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+      "range_warnings": [
+        "vdc1",
+        "vdc2",
+        "idc1",
+        "idc2"
+      ],
+      "fault_category": "normal",
+      "warnings": [
+        "vdc1 is outside the observed training range. This is not a certified operating limit.",
+        "vdc2 is outside the observed training range. This is not a certified operating limit.",
+        "idc1 is outside the observed training range. This is not a certified operating limit.",
+        "idc2 is outside the observed training range. This is not a certified operating limit."
+      ]
+    }
+  },
+  "screenshots": [
+    "automatic-1440.png",
+    "automatic-390.png",
+    "manual-1440.png",
+    "manual-390.png"
+  ],
+  "limitations": [
+    "Scheduling tests use virtual time; no five-second acquisition cadence claim.",
+    "Visibility is a simulated browser property/event.",
+    "Local real API integration does not establish live Azure availability or independent accuracy.",
+    "No deployment or production change."
+  ],
+  "accessibility": [
+    {
+      "mode": "automatic",
+      "width": 1440,
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "mode": "automatic",
+      "width": 390,
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "mode": "manual",
+      "width": 1440,
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "mode": "manual",
+      "width": 390,
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "status": "STATIC_ONLY",
+  "api_base": "http://127.0.0.1:8787",
+  "functions": 0,
+  "model_artifacts": 0,
+  "Python_runtime_files": 0,
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 626,
+      "sha256": "7bff67943e48dac7578fe69d7fd6603f8cc39ceb78bf580d763677766886bbe2"
+    },
+    {
+      "path": "static/config.js",
+      "bytes": 74,
+      "sha256": "027cb95cdb3e426930c4ff2677aeb905290ee6bc601e702041cf532536a4132b"
+    },
+    {
+      "path": "static/index.html",
+      "bytes": 22623,
+      "sha256": "88d08016366491d90df1558c0f3f4879b249b1690e6b5d20e87c171b4644041e"
+    },
+    {
+      "path": "static/assets/api.js",
+      "bytes": 5018,
+      "sha256": "f9ac6a5c74f80bbd28f4c5d8c340bf5978e1ad401a53cd554e04aaf8d0c881e6"
+    },
+    {
+      "path": "static/assets/app.js",
+      "bytes": 21493,
+      "sha256": "faa01286f6bb1657c80c5e6d90eb9212b14a89544a68ec6979559f8680a9cf1a"
+    },
+    {
+      "path": "static/assets/explanations.js",
+      "bytes": 2232,
+      "sha256": "8303706f1ff787165ba3923dcdea8fa04d9e06d5c601941f9f9e423ea327ab2e"
+    },
+    {
+      "path": "static/assets/favicon.svg",
+      "bytes": 281,
+      "sha256": "e720e9f2e3ee4996b38fd472e4e95d4e023a960a99aa61d43d13894cf1916142"
+    },
+    {
+      "path": "static/assets/replay.js",
+      "bytes": 4191,
+      "sha256": "8cb477168ea7011b75662893c6391d7f116928271d3e2199db8f618041d792a4"
+    },
+    {
+      "path": "static/assets/scenarios.js",
+      "bytes": 952,
+      "sha256": "b7e43e97957e7b4f99b774ada7a6b363a823c96bdf7df5be54ccb5886c0aae25"
+    },
+    {
+      "path": "static/assets/style.css",
+      "bytes": 28230,
+      "sha256": "f4201e414d26fd33e36af56dbbcb70eee13eced7fa1e83014b7bfb4d135d58bd"
+    },
+    {
+      "path": "static/data/pv_historical_replay.json",
+      "bytes": 25071,
+      "sha256": "a13ebaa969b92093ff4d2861f8d86141ba00c991f816c1561be77b13e850fa37"
+    }
+  ]
+}

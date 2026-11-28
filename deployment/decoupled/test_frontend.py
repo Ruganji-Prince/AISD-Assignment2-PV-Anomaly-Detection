@@ -8,7 +8,9 @@ class StaticTests(unittest.TestCase):
     def test_output_has_only_frontend_files(self):
         with tempfile.TemporaryDirectory() as temp:
             out=Path(temp)/"output";report=build(out)
-            self.assertEqual(len(report["files"]),9)
+            self.assertEqual({r["path"] for r in report["files"]},{"config.json","static/config.js","static/index.html","static/data/pv_historical_replay.json",*("static/assets/"+n for n in ASSETS)})
+            self.assertEqual(len(report["files"]),11)
+            self.assertEqual((out/"static/data/pv_historical_replay.json").read_bytes(),(Path(__file__).resolve().parents[2]/"web/data/pv_historical_replay.json").read_bytes())
             self.assertFalse((out/"functions").exists())
             self.assertTrue(all(Path(r["path"]).suffix in {".json",".html",".js",".css",".svg"} for r in report["files"]))
             self.assertIn(AZURE,(out/"static/config.js").read_text())

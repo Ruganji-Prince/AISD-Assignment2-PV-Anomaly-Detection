@@ -1,0 +1,106 @@
+{
+  "status": "GO_PENDING_APPROVAL",
+  "acceptance": [
+    {
+      "requirement": "CORS preview/production accepted; unrelated rejected",
+      "evidence": "CORS.json",
+      "status": "PASS"
+    },
+    {
+      "requirement": "Exactly one origin appended; six preserved",
+      "evidence": "Before_Configuration.json; After_Configuration.json",
+      "status": "PASS"
+    },
+    {
+      "requirement": "Image/resources/scaling/security unchanged",
+      "evidence": "After_Configuration.json",
+      "status": "PASS"
+    },
+    {
+      "requirement": "Five original classes from public preview",
+      "evidence": "Azure_Integration.json",
+      "status": "PASS"
+    },
+    {
+      "requirement": "Rendered measurements/category/explanations",
+      "evidence": "Preview_UI.json",
+      "status": "PASS"
+    },
+    {
+      "requirement": "25 genuine replay predictions, four visible disagreements",
+      "evidence": "Azure_Integration.json",
+      "status": "PASS"
+    },
+    {
+      "requirement": "Sequential five-second waits and 25 cap",
+      "evidence": "Azure_Integration.json",
+      "status": "PASS"
+    },
+    {
+      "requirement": "Pause/Restart/hidden/mode/failure safeguards",
+      "evidence": "Azure_Integration.json; local-regression/Browser_Verification.json",
+      "status": "PASS"
+    },
+    {
+      "requirement": "Five production classes and four steps",
+      "evidence": "Production_Browser.json",
+      "status": "PASS"
+    },
+    {
+      "requirement": "Production deployment unchanged",
+      "evidence": "Vercel_State.json",
+      "status": "PASS"
+    },
+    {
+      "requirement": "Static-only preview, no models/Python/functions",
+      "evidence": "Vercel_State.json; Static_Parity.json",
+      "status": "PASS"
+    },
+    {
+      "requirement": "53 Python and 14 Node unit tests",
+      "evidence": "Regression_Tests.json",
+      "status": "PASS"
+    },
+    {
+      "requirement": "21 browser regression checks and 26 local original-model predictions",
+      "evidence": "local-regression/Browser_Verification.json",
+      "status": "PASS"
+    },
+    {
+      "requirement": "Original model/raw/PDF and 604 protected files unchanged",
+      "evidence": "Integrity.json",
+      "status": "PASS"
+    },
+    {
+      "requirement": "Frozen split and submission tag unchanged",
+      "evidence": "Integrity.json",
+      "status": "PASS"
+    },
+    {
+      "requirement": "Live responsive layouts, four widths and four steps",
+      "evidence": "Preview_UI.json",
+      "status": "PASS"
+    },
+    {
+      "requirement": "No runtime source edits, no promotion or new resources",
+      "evidence": "Integrity.json; Vercel_State.json",
+      "status": "PASS"
+    }
+  ],
+  "passing_acceptance_checks": 17,
+  "failing_acceptance_checks": 0,
+  "unit_tests": {
+    "python_pass": 53,
+    "node_pass": 14,
+    "fail": 0
+  },
+  "actual_Azure_prediction_requests": 47,
+  "request_accounting": "32 preview integration + 5 production + 5 rendered-content checks before CSP-tool failure + 5 final rendered-content checks. No 150-row Azure run.",
+  "accessibility": "PARTIAL: zero axe violations on four local built states; color-contrast inconclusive reviewed by computed contrast checks. Live CSP correctly blocks inline audit injection; live responsive/content/navigation checked without weakening CSP. Not assistive-technology certification.",
+  "harness_incidents": [
+    "PATCH returned empty successful body; readiness verified by GET without retrying mutation.",
+    "Inline axe injection blocked by live CSP; final harness preserves CSP and uses local axe evidence."
+  ],
+  "no_application_changes": true,
+  "no_promotion": true
+}

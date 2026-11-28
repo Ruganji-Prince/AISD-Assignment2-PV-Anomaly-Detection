@@ -1,0 +1,49 @@
+[
+  {
+    "command": [
+      "-B",
+      "-m",
+      "unittest",
+      "technical_evaluation.tests",
+      "technical_evaluation.refinement.tests",
+      "deployment.azure.test_context",
+      "deployment.azure.test_deployment",
+      "deployment.decoupled.test_backend",
+      "deployment.decoupled.test_frontend"
+    ],
+    "exit_code": 0,
+    "output": "<local-user>/AppData\\Local\\PV_Technical_Evaluation_20261124\\submission_readiness_environment\\Lib\\site-packages\\fastapi\\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n  from starlette.testclient import TestClient as TestClient  # noqa\n..........Original model inference unavailable; no prediction returned.\n...................\n----------------------------------------------------------------------\nRan 29 tests in 1.866s\n\nOK\n"
+  },
+  {
+    "command": [
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "web/tests"
+    ],
+    "exit_code": 0,
+    "output": "<local-user>/AppData\\Local\\PV_Technical_Evaluation_20261124\\submission_readiness_environment\\Lib\\site-packages\\fastapi\\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n  from starlette.testclient import TestClient as TestClient  # noqa\n..Original fitted model failed readiness verification.\nOriginal model inference unavailable; no prediction returned.\n................\n----------------------------------------------------------------------\nRan 18 tests in 4.941s\n\nOK\n"
+  },
+  {
+    "command": [
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests"
+    ],
+    "exit_code": 0,
+    "output": "......\n----------------------------------------------------------------------\nRan 6 tests in 4.304s\n\nOK\n"
+  },
+  {
+    "command": [
+      "--test",
+      "web/tests-browser/replay.test.mjs"
+    ],
+    "exit_code": 0,
+    "output": "(node:15220) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of fil<repository>/web/static/replay.js is not specified and it doesn't parse as CommonJS.\nReparsing as ES module because module syntax was detected. This incurs a performance overhead.\nTo eliminate this warning, add \"type\": \"module\" to \\\\?\\D:\\CMU_Studies\\Year_2_Studies\\Fall_Semester\\AI_System_Design\\Assignments\\Assignment2\\class-measurement-ranges\\web\\package.json.\n(Use `node --trace-warnings ...` to show where the warning was created)\n\u2714 real replay validates all150 including all13 recorded disagreements (2.6377ms)\n\u2714 invalid, duplicated and extra-field historical data rejected (1.2157ms)\n\u2714 no scheduler traffic without explicit Start (0.3364ms)\n\u2714 native browser timers retain the global receiver (0.4631ms)\n\u2714 25bounded sequential observations contain five classes and exact payloads (4.3571ms)\n\u2714 next delay starts after inference resolves, never overlaps (0.5325ms)\n\u2714 Pause cancels waiting and no future requests are made (0.2355ms)\n\u2714 Pause invalidates late response and resume retries same observation (0.3265ms)\n\u2714 Restart clears counter and invalidates previous generation (0.3122ms)\n\u2714 repeated Start does not duplicate in-flight work (0.2153ms)\n\u2714 load/readiness/API failures stop with no invented result (0.4891ms)\n\u2714 cancel during readiness prevents any inference (0.1623ms)\n\u2714 API AbortSignal cancels health and prevents retry traffic (2.2357ms)\n\u2714 API forwards only supplied four channels and aborts active fetch (19.6425ms)\n\u2139 tests 14\n\u2139 suites 0\n\u2139 pass 14\n\u2139 fail 0\n\u2139 cancelled 0\n\u2139 skipped 0\n\u2139 todo 0\n\u2139 duration_ms 108.8587\n"
+  }
+]
