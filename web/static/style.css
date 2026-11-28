@@ -217,3 +217,24 @@ footer>span { display: flex; align-items: center; gap: 8px; }.back-top { font-we
 .research-notes h3 { font-size:1.125rem; color:var(--navy); margin:0 0 12px; }.research-notes ul { padding-left:20px; margin:0; }.research-notes li { margin:8px 0; color:var(--ink); font-size:.9375rem; }
 @media(max-width:1100px){.scenario-card-grid{grid-template-columns:repeat(3,minmax(0,1fr));}}
 @media(max-width:650px){.scenario-card-grid{grid-template-columns:repeat(2,minmax(0,1fr));}.scenario-card{padding:14px;}.scenario-card[aria-pressed=true]{padding:13px;}.scenario-card strong{font-size:.9375rem;}.research-tag{width:100%;font-size:.625rem;}.research-notes{padding:18px;}}
+
+/* Monitoring controls retain the existing visual identity and native keyboard controls. */
+.mode-selector,.replay-controls { display:flex; flex-wrap:wrap; gap:12px; margin:18px 0; align-items:center; }
+.mode-selector button[aria-pressed=true] { background:var(--navy); color:white; border-color:var(--navy); }
+.replay-panel { background:white; border:1px solid var(--line); border-top:4px solid var(--ocean); border-radius:var(--radius); padding:24px; margin:0 0 24px; }
+.replay-panel h3 { margin-top:0; color:var(--navy); }
+.replay-measurements,.replay-outcomes { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:16px; }
+.replay-outcomes { grid-template-columns:repeat(3,minmax(0,1fr)); }
+.replay-panel dt { color:var(--muted); font-size:.875rem; }.replay-panel dd { margin:6px 0; font-weight:650; overflow-wrap:anywhere; }
+.recorded-examples { margin:18px 0 24px; }.recorded-examples label { display:block; margin-bottom:8px; font-weight:650; }
+.recorded-examples .scenario-control { flex-wrap:wrap; }.recorded-examples select { min-width:0; max-width:100%; flex:1 1 230px; }
+.observed-ranges { margin:24px 0; padding:16px; border:1px solid var(--line); border-radius:10px; }
+.observed-ranges summary { cursor:pointer; font-weight:700; color:var(--navy); }.range-table { overflow:auto; margin:16px 0; }
+.range-table table { width:100%; border-collapse:collapse; font-size:.875rem; }.range-table caption { text-align:left; margin-bottom:10px; }
+.range-table th,.range-table td { padding:10px; border:1px solid var(--line); text-align:left; white-space:nowrap; }
+.replay-panel[data-state=error] { border-top-color:var(--short); }
+@media(max-width:650px){.mode-selector button { flex:1 1 100%; }.replay-panel { padding:18px; }.replay-measurements,.replay-outcomes { grid-template-columns:repeat(2,minmax(0,1fr)); }.replay-controls button { flex:1 1 25%; }.replay-controls>span { width:100%; }}
+
+/* Keep the expanded statistics table inside the card on narrow screens. */
+.observed-ranges { width:100%; min-width:0; max-width:100%; }
+.range-table { width:100%; min-width:0; max-width:100%; }
