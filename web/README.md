@@ -8,7 +8,7 @@ A responsive four-step application backed by FastAPI and the original fitted Ran
 
 ## Historical replay and manual inference — feature-branch candidate
 
-**Step 4 status: both modes verified against the production Azure API from the approved localhost origin; public preview verification pending. Production is unchanged.** Publication evidence will be recorded in [preview verification](../docs/replay-preview/README.md).
+**Step 4: [public static preview](https://pv-anomaly-detection-8u71v1zjs-prince-r-k.vercel.app) is READY. Browser-to-Azure inference on that hostname is BLOCKED by CORS; production promotion is NO-GO. Both modes passed genuine Azure checks from the already-approved localhost origin. Production is unchanged.** Publication evidence will be recorded in [preview verification](../docs/replay-preview/README.md).
 
 **Manual Inference** is selected by default. Enter four finite nonnegative measurements, optionally load any of the 150 recorded TRAIN examples, then press **Run model inference**. Loading an example fills inputs only; it never runs or supplies a prediction. Actual returned classes, physical-category explanations, charts and out-of-training-range warnings are displayed separately from the recorded source label.
 

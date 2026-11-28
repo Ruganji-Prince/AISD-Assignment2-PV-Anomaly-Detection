@@ -1,0 +1,75 @@
+{
+  "status": "PARTIAL_CORS_BLOCKED",
+  "preview": "https://pv-anomaly-detection-8u71v1zjs-prince-r-k.vercel.app",
+  "API": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io",
+  "browser_native_POST": {
+    "blocked": true,
+    "name": "TypeError",
+    "message": "Failed to fetch"
+  },
+  "manual_mode": {
+    "default": true,
+    "all150examples": true,
+    "source_classes": 5,
+    "measurements_match_frozen_fixture": true,
+    "negative_input_rejected": true,
+    "real_inference": "BLOCKED_BY_CORS"
+  },
+  "automatic_mode": {
+    "Start_Pause_Restart_controls": true,
+    "Pause_cancels_readiness": true,
+    "simulated_hidden_tab_pauses": true,
+    "no_auto_resume_or_future_requests": true,
+    "no_fabricated_prediction": true,
+    "real_inference": "BLOCKED_BY_CORS",
+    "live_five_second_sequence": "NOT_EXECUTED_ON_PREVIEW: CORS prevents readiness. Verified separately with actual Azure from localhost."
+  },
+  "UI": {
+    "four_steps": true,
+    "keyboard_focus": {
+      "id": "step-tab-1",
+      "visible": true,
+      "outline": "solid",
+      "width": "3px",
+      "color": "rgb(8, 126, 153)"
+    },
+    "viewports": [
+      1440,
+      390
+    ],
+    "ranges20cells": true,
+    "chart_label_colors": {
+      "color": "rgb(16, 43, 63)",
+      "background": "rgb(255, 255, 255)"
+    }
+  },
+  "page_errors": [],
+  "console_errors": [
+    "Access to fetch at 'https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io/api/health' from origin 'https://pv-anomaly-detection-8u71v1zjs-prince-r-k.vercel.app' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+    "Failed to load resource: net::ERR_FAILED",
+    "Access to fetch at 'https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io/api/predict' from origin 'https://pv-anomaly-detection-8u71v1zjs-prince-r-k.vercel.app' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+    "Failed to load resource: net::ERR_FAILED",
+    "Access to fetch at 'https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io/api/health' from origin 'https://pv-anomaly-detection-8u71v1zjs-prince-r-k.vercel.app' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+    "Failed to load resource: net::ERR_FAILED"
+  ],
+  "network": [
+    {
+      "url": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io/api/health",
+      "method": "GET"
+    },
+    {
+      "url": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io/api/predict",
+      "method": "POST"
+    },
+    {
+      "url": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io/api/health",
+      "method": "GET"
+    },
+    {
+      "url": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io/api/health",
+      "method": "GET"
+    }
+  ],
+  "source_security": "Default Chromium security; no successful responses mocked, no proxy, no origin/credential bypass.",
+  "production_recommendation": "NO-GO until exact preview origin is separately approved and full preview-to-Azure browser inference passes."
+}
