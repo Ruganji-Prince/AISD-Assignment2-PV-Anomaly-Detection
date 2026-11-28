@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "original_text_nodes_preserved": 113,
+  "original_ids_preserved": 77,
+  "missing_text": [],
+  "missing_ids": [],
+  "byte_identical_files": [
+    "web/static/api.js",
+    "web/static/explanations.js",
+    "web/static/scenarios.js",
+    "models/rf_e4/model.pkl",
+    "phase1_strategy/Phase1_Strategy_Report.pdf",
+    "vercel.json",
+    "frontend/build.py"
+  ],
+  "unit_tests": 45,
+  "commands": [
+    {
+      "command": "python -B -m unittest technical_evaluation.tests",
+      "exit_code": 0
+    },
+    {
+      "command": "python -B -m unittest technical_evaluation.refinement.tests",
+      "exit_code": 0
+    },
+    {
+      "command": "python -B -m unittest discover -s tests",
+      "exit_code": 0
+    },
+    {
+      "command": "python -B -m unittest discover -s web/tests",
+      "exit_code": 0
+    },
+    {
+      "command": "python -B -m unittest deployment.azure.test_context deployment.azure.test_deployment deployment.decoupled.test_backend deployment.decoupled.test_frontend",
+      "exit_code": 0
+    }
+  ],
+  "no_backend_API_model_build_safeguard_changes": true
+}

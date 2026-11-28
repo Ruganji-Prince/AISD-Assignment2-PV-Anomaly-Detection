@@ -1,0 +1,633 @@
+{
+  "phase": "after",
+  "status": "PASS",
+  "viewportChecks": [
+    {
+      "width": 375,
+      "step": 1,
+      "scrollWidth": 375,
+      "panels": 1,
+      "bodyFont": "16px",
+      "inputs": [
+        {
+          "id": "vdc1",
+          "height": 56
+        },
+        {
+          "id": "vdc2",
+          "height": 56
+        },
+        {
+          "id": "idc1",
+          "height": 56
+        },
+        {
+          "id": "idc2",
+          "height": 56
+        }
+      ],
+      "heading": "01 PV measurements"
+    },
+    {
+      "width": 375,
+      "step": 2,
+      "scrollWidth": 375,
+      "panels": 1,
+      "bodyFont": "16px",
+      "inputs": [
+        {
+          "id": "vdc1",
+          "height": 0
+        },
+        {
+          "id": "vdc2",
+          "height": 0
+        },
+        {
+          "id": "idc1",
+          "height": 0
+        },
+        {
+          "id": "idc2",
+          "height": 0
+        }
+      ],
+      "heading": "02 PV scenarios"
+    },
+    {
+      "width": 375,
+      "step": 3,
+      "scrollWidth": 375,
+      "panels": 1,
+      "bodyFont": "16px",
+      "inputs": [
+        {
+          "id": "vdc1",
+          "height": 0
+        },
+        {
+          "id": "vdc2",
+          "height": 0
+        },
+        {
+          "id": "idc1",
+          "height": 0
+        },
+        {
+          "id": "idc2",
+          "height": 0
+        }
+      ],
+      "heading": "03 Graphical analysis"
+    },
+    {
+      "width": 375,
+      "step": 4,
+      "scrollWidth": 375,
+      "panels": 1,
+      "bodyFont": "16px",
+      "inputs": [
+        {
+          "id": "vdc1",
+          "height": 0
+        },
+        {
+          "id": "vdc2",
+          "height": 0
+        },
+        {
+          "id": "idc1",
+          "height": 0
+        },
+        {
+          "id": "idc2",
+          "height": 0
+        }
+      ],
+      "heading": "04 Model assessment"
+    },
+    {
+      "width": 430,
+      "step": 1,
+      "scrollWidth": 430,
+      "panels": 1,
+      "bodyFont": "16px",
+      "inputs": [
+        {
+          "id": "vdc1",
+          "height": 56
+        },
+        {
+          "id": "vdc2",
+          "height": 56
+        },
+        {
+          "id": "idc1",
+          "height": 56
+        },
+        {
+          "id": "idc2",
+          "height": 56
+        }
+      ],
+      "heading": "01 PV measurements"
+    },
+    {
+      "width": 430,
+      "step": 2,
+      "scrollWidth": 430,
+      "panels": 1,
+      "bodyFont": "16px",
+      "inputs": [
+        {
+          "id": "vdc1",
+          "height": 0
+        },
+        {
+          "id": "vdc2",
+          "height": 0
+        },
+        {
+          "id": "idc1",
+          "height": 0
+        },
+        {
+          "id": "idc2",
+          "height": 0
+        }
+      ],
+      "heading": "02 PV scenarios"
+    },
+    {
+      "width": 430,
+      "step": 3,
+      "scrollWidth": 430,
+      "panels": 1,
+      "bodyFont": "16px",
+      "inputs": [
+        {
+          "id": "vdc1",
+          "height": 0
+        },
+        {
+          "id": "vdc2",
+          "height": 0
+        },
+        {
+          "id": "idc1",
+          "height": 0
+        },
+        {
+          "id": "idc2",
+          "height": 0
+        }
+      ],
+      "heading": "03 Graphical analysis"
+    },
+    {
+      "width": 430,
+      "step": 4,
+      "scrollWidth": 430,
+      "panels": 1,
+      "bodyFont": "16px",
+      "inputs": [
+        {
+          "id": "vdc1",
+          "height": 0
+        },
+        {
+          "id": "vdc2",
+          "height": 0
+        },
+        {
+          "id": "idc1",
+          "height": 0
+        },
+        {
+          "id": "idc2",
+          "height": 0
+        }
+      ],
+      "heading": "04 Model assessment"
+    },
+    {
+      "width": 768,
+      "step": 1,
+      "scrollWidth": 768,
+      "panels": 1,
+      "bodyFont": "16px",
+      "inputs": [
+        {
+          "id": "vdc1",
+          "height": 56
+        },
+        {
+          "id": "vdc2",
+          "height": 56
+        },
+        {
+          "id": "idc1",
+          "height": 56
+        },
+        {
+          "id": "idc2",
+          "height": 56
+        }
+      ],
+      "heading": "01 PV measurements"
+    },
+    {
+      "width": 768,
+      "step": 2,
+      "scrollWidth": 768,
+      "panels": 1,
+      "bodyFont": "16px",
+      "inputs": [
+        {
+          "id": "vdc1",
+          "height": 0
+        },
+        {
+          "id": "vdc2",
+          "height": 0
+        },
+        {
+          "id": "idc1",
+          "height": 0
+        },
+        {
+          "id": "idc2",
+          "height": 0
+        }
+      ],
+      "heading": "02 PV scenarios"
+    },
+    {
+      "width": 768,
+      "step": 3,
+      "scrollWidth": 768,
+      "panels": 1,
+      "bodyFont": "16px",
+      "inputs": [
+        {
+          "id": "vdc1",
+          "height": 0
+        },
+        {
+          "id": "vdc2",
+          "height": 0
+        },
+        {
+          "id": "idc1",
+          "height": 0
+        },
+        {
+          "id": "idc2",
+          "height": 0
+        }
+      ],
+      "heading": "03 Graphical analysis"
+    },
+    {
+      "width": 768,
+      "step": 4,
+      "scrollWidth": 768,
+      "panels": 1,
+      "bodyFont": "16px",
+      "inputs": [
+        {
+          "id": "vdc1",
+          "height": 0
+        },
+        {
+          "id": "vdc2",
+          "height": 0
+        },
+        {
+          "id": "idc1",
+          "height": 0
+        },
+        {
+          "id": "idc2",
+          "height": 0
+        }
+      ],
+      "heading": "04 Model assessment"
+    },
+    {
+      "width": 1024,
+      "step": 1,
+      "scrollWidth": 1024,
+      "panels": 1,
+      "bodyFont": "16px",
+      "inputs": [
+        {
+          "id": "vdc1",
+          "height": 56
+        },
+        {
+          "id": "vdc2",
+          "height": 56
+        },
+        {
+          "id": "idc1",
+          "height": 56
+        },
+        {
+          "id": "idc2",
+          "height": 56
+        }
+      ],
+      "heading": "01 PV measurements"
+    },
+    {
+      "width": 1024,
+      "step": 2,
+      "scrollWidth": 1024,
+      "panels": 1,
+      "bodyFont": "16px",
+      "inputs": [
+        {
+          "id": "vdc1",
+          "height": 0
+        },
+        {
+          "id": "vdc2",
+          "height": 0
+        },
+        {
+          "id": "idc1",
+          "height": 0
+        },
+        {
+          "id": "idc2",
+          "height": 0
+        }
+      ],
+      "heading": "02 PV scenarios"
+    },
+    {
+      "width": 1024,
+      "step": 3,
+      "scrollWidth": 1024,
+      "panels": 1,
+      "bodyFont": "16px",
+      "inputs": [
+        {
+          "id": "vdc1",
+          "height": 0
+        },
+        {
+          "id": "vdc2",
+          "height": 0
+        },
+        {
+          "id": "idc1",
+          "height": 0
+        },
+        {
+          "id": "idc2",
+          "height": 0
+        }
+      ],
+      "heading": "03 Graphical analysis"
+    },
+    {
+      "width": 1024,
+      "step": 4,
+      "scrollWidth": 1024,
+      "panels": 1,
+      "bodyFont": "16px",
+      "inputs": [
+        {
+          "id": "vdc1",
+          "height": 0
+        },
+        {
+          "id": "vdc2",
+          "height": 0
+        },
+        {
+          "id": "idc1",
+          "height": 0
+        },
+        {
+          "id": "idc2",
+          "height": 0
+        }
+      ],
+      "heading": "04 Model assessment"
+    },
+    {
+      "width": 1440,
+      "step": 1,
+      "scrollWidth": 1440,
+      "panels": 1,
+      "bodyFont": "16px",
+      "inputs": [
+        {
+          "id": "vdc1",
+          "height": 56
+        },
+        {
+          "id": "vdc2",
+          "height": 56
+        },
+        {
+          "id": "idc1",
+          "height": 56
+        },
+        {
+          "id": "idc2",
+          "height": 56
+        }
+      ],
+      "heading": "01 PV measurements"
+    },
+    {
+      "width": 1440,
+      "step": 2,
+      "scrollWidth": 1440,
+      "panels": 1,
+      "bodyFont": "16px",
+      "inputs": [
+        {
+          "id": "vdc1",
+          "height": 0
+        },
+        {
+          "id": "vdc2",
+          "height": 0
+        },
+        {
+          "id": "idc1",
+          "height": 0
+        },
+        {
+          "id": "idc2",
+          "height": 0
+        }
+      ],
+      "heading": "02 PV scenarios"
+    },
+    {
+      "width": 1440,
+      "step": 3,
+      "scrollWidth": 1440,
+      "panels": 1,
+      "bodyFont": "16px",
+      "inputs": [
+        {
+          "id": "vdc1",
+          "height": 0
+        },
+        {
+          "id": "vdc2",
+          "height": 0
+        },
+        {
+          "id": "idc1",
+          "height": 0
+        },
+        {
+          "id": "idc2",
+          "height": 0
+        }
+      ],
+      "heading": "03 Graphical analysis"
+    },
+    {
+      "width": 1440,
+      "step": 4,
+      "scrollWidth": 1440,
+      "panels": 1,
+      "bodyFont": "16px",
+      "inputs": [
+        {
+          "id": "vdc1",
+          "height": 0
+        },
+        {
+          "id": "vdc2",
+          "height": 0
+        },
+        {
+          "id": "idc1",
+          "height": 0
+        },
+        {
+          "id": "idc2",
+          "height": 0
+        }
+      ],
+      "heading": "04 Model assessment"
+    },
+    {
+      "width": 1920,
+      "step": 1,
+      "scrollWidth": 1920,
+      "panels": 1,
+      "bodyFont": "16px",
+      "inputs": [
+        {
+          "id": "vdc1",
+          "height": 56
+        },
+        {
+          "id": "vdc2",
+          "height": 56
+        },
+        {
+          "id": "idc1",
+          "height": 56
+        },
+        {
+          "id": "idc2",
+          "height": 56
+        }
+      ],
+      "heading": "01 PV measurements"
+    },
+    {
+      "width": 1920,
+      "step": 2,
+      "scrollWidth": 1920,
+      "panels": 1,
+      "bodyFont": "16px",
+      "inputs": [
+        {
+          "id": "vdc1",
+          "height": 0
+        },
+        {
+          "id": "vdc2",
+          "height": 0
+        },
+        {
+          "id": "idc1",
+          "height": 0
+        },
+        {
+          "id": "idc2",
+          "height": 0
+        }
+      ],
+      "heading": "02 PV scenarios"
+    },
+    {
+      "width": 1920,
+      "step": 3,
+      "scrollWidth": 1920,
+      "panels": 1,
+      "bodyFont": "16px",
+      "inputs": [
+        {
+          "id": "vdc1",
+          "height": 0
+        },
+        {
+          "id": "vdc2",
+          "height": 0
+        },
+        {
+          "id": "idc1",
+          "height": 0
+        },
+        {
+          "id": "idc2",
+          "height": 0
+        }
+      ],
+      "heading": "03 Graphical analysis"
+    },
+    {
+      "width": 1920,
+      "step": 4,
+      "scrollWidth": 1920,
+      "panels": 1,
+      "bodyFont": "16px",
+      "inputs": [
+        {
+          "id": "vdc1",
+          "height": 0
+        },
+        {
+          "id": "vdc2",
+          "height": 0
+        },
+        {
+          "id": "idc1",
+          "height": 0
+        },
+        {
+          "id": "idc2",
+          "height": 0
+        }
+      ],
+      "heading": "04 Model assessment"
+    }
+  ],
+  "screenshots": 24,
+  "JavaScriptErrors": [],
+  "CSPViolations": []
+}
