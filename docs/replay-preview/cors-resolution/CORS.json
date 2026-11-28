@@ -1,0 +1,20 @@
+[
+  {
+    "origin": "https://pv-anomaly-detection-8u71v1zjs-prince-r-k.vercel.app",
+    "status": 200,
+    "allow_origin": "https://pv-anomaly-detection-8u71v1zjs-prince-r-k.vercel.app",
+    "body": "OK"
+  },
+  {
+    "origin": "https://pv-anomaly-detection-prince-r-k.vercel.app",
+    "status": 200,
+    "allow_origin": "https://pv-anomaly-detection-prince-r-k.vercel.app",
+    "body": "OK"
+  },
+  {
+    "origin": "https://unrelated.invalid",
+    "status": 400,
+    "allow_origin": null,
+    "body": "Disallowed CORS origin"
+  }
+]
