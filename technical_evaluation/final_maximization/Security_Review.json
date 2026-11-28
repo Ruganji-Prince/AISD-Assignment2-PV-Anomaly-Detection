@@ -1,0 +1,16 @@
+{
+  "status": "PASS_WITH_REVIEWED_TEST_FIXTURE",
+  "reachable_commits": 79,
+  "reachable_blobs_scanned": 840,
+  "history_signature_matches": [
+    {
+      "path": "deployment/azure/test_context.py",
+      "object": "18851e2c5578e48efa08968c6e0393b03fbd046b",
+      "classification": "Marker-only private-key header used by test_secret_detection; no encoded key body. Not a credential."
+    }
+  ],
+  "tracked_environment_candidates": [],
+  "new_work_signature_matches": [],
+  "scan": "Existing technical_evaluation.security.main, writer redirected in memory; assert failed on marker and retained as reviewed false-positive, not suppressed in original scanner.",
+  "limitations": "High-specificity patterns only, reachable local refs only; excludes provider account stores, unreachable Git objects, arbitrary credentials, and remote private logs. No proof of universal secret absence."
+}

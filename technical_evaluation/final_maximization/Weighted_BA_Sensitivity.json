@@ -1,0 +1,487 @@
+{
+  "status": "REPRODUCED_FROM_SAVED_CONFUSIONS",
+  "definition": "sum(w_k * recall_k) / sum(w_k); w=(1,h,h,h,1); h in [1,2,5,10,20]. h=1 equals ordinary balanced accuracy.",
+  "limitation": "Hypothetical class priority sensitivity, not stakeholder-elicited operational utility. No model/feature/threshold selected from TEST.",
+  "rows": [
+    {
+      "model": "Dummy_most_frequent",
+      "partition": "VALIDATION_BLOCK13",
+      "hardware_class_weight": 1,
+      "weighted_balanced_accuracy": 0.2
+    },
+    {
+      "model": "Dummy_most_frequent",
+      "partition": "VALIDATION_BLOCK13",
+      "hardware_class_weight": 2,
+      "weighted_balanced_accuracy": 0.125
+    },
+    {
+      "model": "Dummy_most_frequent",
+      "partition": "VALIDATION_BLOCK13",
+      "hardware_class_weight": 5,
+      "weighted_balanced_accuracy": 0.058823529411764705
+    },
+    {
+      "model": "Dummy_most_frequent",
+      "partition": "VALIDATION_BLOCK13",
+      "hardware_class_weight": 10,
+      "weighted_balanced_accuracy": 0.03125
+    },
+    {
+      "model": "Dummy_most_frequent",
+      "partition": "VALIDATION_BLOCK13",
+      "hardware_class_weight": 20,
+      "weighted_balanced_accuracy": 0.016129032258064516
+    },
+    {
+      "model": "Dummy_most_frequent",
+      "partition": "TEST",
+      "hardware_class_weight": 1,
+      "weighted_balanced_accuracy": 0.2
+    },
+    {
+      "model": "Dummy_most_frequent",
+      "partition": "TEST",
+      "hardware_class_weight": 2,
+      "weighted_balanced_accuracy": 0.125
+    },
+    {
+      "model": "Dummy_most_frequent",
+      "partition": "TEST",
+      "hardware_class_weight": 5,
+      "weighted_balanced_accuracy": 0.058823529411764705
+    },
+    {
+      "model": "Dummy_most_frequent",
+      "partition": "TEST",
+      "hardware_class_weight": 10,
+      "weighted_balanced_accuracy": 0.03125
+    },
+    {
+      "model": "Dummy_most_frequent",
+      "partition": "TEST",
+      "hardware_class_weight": 20,
+      "weighted_balanced_accuracy": 0.016129032258064516
+    },
+    {
+      "model": "Dummy_prior",
+      "partition": "VALIDATION_BLOCK13",
+      "hardware_class_weight": 1,
+      "weighted_balanced_accuracy": 0.2
+    },
+    {
+      "model": "Dummy_prior",
+      "partition": "VALIDATION_BLOCK13",
+      "hardware_class_weight": 2,
+      "weighted_balanced_accuracy": 0.125
+    },
+    {
+      "model": "Dummy_prior",
+      "partition": "VALIDATION_BLOCK13",
+      "hardware_class_weight": 5,
+      "weighted_balanced_accuracy": 0.058823529411764705
+    },
+    {
+      "model": "Dummy_prior",
+      "partition": "VALIDATION_BLOCK13",
+      "hardware_class_weight": 10,
+      "weighted_balanced_accuracy": 0.03125
+    },
+    {
+      "model": "Dummy_prior",
+      "partition": "VALIDATION_BLOCK13",
+      "hardware_class_weight": 20,
+      "weighted_balanced_accuracy": 0.016129032258064516
+    },
+    {
+      "model": "Dummy_prior",
+      "partition": "TEST",
+      "hardware_class_weight": 1,
+      "weighted_balanced_accuracy": 0.2
+    },
+    {
+      "model": "Dummy_prior",
+      "partition": "TEST",
+      "hardware_class_weight": 2,
+      "weighted_balanced_accuracy": 0.125
+    },
+    {
+      "model": "Dummy_prior",
+      "partition": "TEST",
+      "hardware_class_weight": 5,
+      "weighted_balanced_accuracy": 0.058823529411764705
+    },
+    {
+      "model": "Dummy_prior",
+      "partition": "TEST",
+      "hardware_class_weight": 10,
+      "weighted_balanced_accuracy": 0.03125
+    },
+    {
+      "model": "Dummy_prior",
+      "partition": "TEST",
+      "hardware_class_weight": 20,
+      "weighted_balanced_accuracy": 0.016129032258064516
+    },
+    {
+      "model": "original_RF_E4",
+      "partition": "VALIDATION_BLOCK13",
+      "hardware_class_weight": 1,
+      "weighted_balanced_accuracy": 0.9628116895500156
+    },
+    {
+      "model": "original_RF_E4",
+      "partition": "VALIDATION_BLOCK13",
+      "hardware_class_weight": 2,
+      "weighted_balanced_accuracy": 0.9700152116269315
+    },
+    {
+      "model": "original_RF_E4",
+      "partition": "VALIDATION_BLOCK13",
+      "hardware_class_weight": 5,
+      "weighted_balanced_accuracy": 0.9763712605183277
+    },
+    {
+      "model": "original_RF_E4",
+      "partition": "VALIDATION_BLOCK13",
+      "hardware_class_weight": 10,
+      "weighted_balanced_accuracy": 0.9790196142230762
+    },
+    {
+      "model": "original_RF_E4",
+      "partition": "VALIDATION_BLOCK13",
+      "hardware_class_weight": 20,
+      "weighted_balanced_accuracy": 0.9804719372224543
+    },
+    {
+      "model": "original_RF_E4",
+      "partition": "TEST",
+      "hardware_class_weight": 1,
+      "weighted_balanced_accuracy": 0.9856510577234892
+    },
+    {
+      "model": "original_RF_E4",
+      "partition": "TEST",
+      "hardware_class_weight": 2,
+      "weighted_balanced_accuracy": 0.9898225797440451
+    },
+    {
+      "model": "original_RF_E4",
+      "partition": "TEST",
+      "hardware_class_weight": 5,
+      "weighted_balanced_accuracy": 0.9935033344680652
+    },
+    {
+      "model": "original_RF_E4",
+      "partition": "TEST",
+      "hardware_class_weight": 10,
+      "weighted_balanced_accuracy": 0.9950369822697401
+    },
+    {
+      "model": "original_RF_E4",
+      "partition": "TEST",
+      "hardware_class_weight": 20,
+      "weighted_balanced_accuracy": 0.9958780149351749
+    },
+    {
+      "model": "LR__F6",
+      "partition": "VALIDATION_BLOCK13",
+      "hardware_class_weight": 1,
+      "weighted_balanced_accuracy": 0.92702411202819
+    },
+    {
+      "model": "LR__F6",
+      "partition": "VALIDATION_BLOCK13",
+      "hardware_class_weight": 2,
+      "weighted_balanced_accuracy": 0.9495041646995326
+    },
+    {
+      "model": "LR__F6",
+      "partition": "VALIDATION_BLOCK13",
+      "hardware_class_weight": 5,
+      "weighted_balanced_accuracy": 0.9693395052918937
+    },
+    {
+      "model": "LR__F6",
+      "partition": "VALIDATION_BLOCK13",
+      "hardware_class_weight": 10,
+      "weighted_balanced_accuracy": 0.9776042305387109
+    },
+    {
+      "model": "LR__F6",
+      "partition": "VALIDATION_BLOCK13",
+      "hardware_class_weight": 20,
+      "weighted_balanced_accuracy": 0.9821364992224492
+    },
+    {
+      "model": "LR__F6",
+      "partition": "TEST",
+      "hardware_class_weight": 1,
+      "weighted_balanced_accuracy": 0.9123494152945307
+    },
+    {
+      "model": "LR__F6",
+      "partition": "TEST",
+      "hardware_class_weight": 2,
+      "weighted_balanced_accuracy": 0.9264264566522324
+    },
+    {
+      "model": "LR__F6",
+      "partition": "TEST",
+      "hardware_class_weight": 5,
+      "weighted_balanced_accuracy": 0.9388473754972634
+    },
+    {
+      "model": "LR__F6",
+      "partition": "TEST",
+      "hardware_class_weight": 10,
+      "weighted_balanced_accuracy": 0.9440227583493598
+    },
+    {
+      "model": "LR__F6",
+      "partition": "TEST",
+      "hardware_class_weight": 20,
+      "weighted_balanced_accuracy": 0.9468608715263157
+    },
+    {
+      "model": "LR__E4",
+      "partition": "VALIDATION_BLOCK13",
+      "hardware_class_weight": 1,
+      "weighted_balanced_accuracy": 0.7792030133405496
+    },
+    {
+      "model": "LR__E4",
+      "partition": "VALIDATION_BLOCK13",
+      "hardware_class_weight": 2,
+      "weighted_balanced_accuracy": 0.8576232832145625
+    },
+    {
+      "model": "LR__E4",
+      "partition": "VALIDATION_BLOCK13",
+      "hardware_class_weight": 5,
+      "weighted_balanced_accuracy": 0.9268176389857504
+    },
+    {
+      "model": "LR__E4",
+      "partition": "VALIDATION_BLOCK13",
+      "hardware_class_weight": 10,
+      "weighted_balanced_accuracy": 0.9556486205570787
+    },
+    {
+      "model": "LR__E4",
+      "partition": "VALIDATION_BLOCK13",
+      "hardware_class_weight": 20,
+      "weighted_balanced_accuracy": 0.9714591588381297
+    },
+    {
+      "model": "LR__E4",
+      "partition": "TEST",
+      "hardware_class_weight": 1,
+      "weighted_balanced_accuracy": 0.8501376863002822
+    },
+    {
+      "model": "LR__E4",
+      "partition": "TEST",
+      "hardware_class_weight": 2,
+      "weighted_balanced_accuracy": 0.8724385331285998
+    },
+    {
+      "model": "LR__E4",
+      "partition": "TEST",
+      "hardware_class_weight": 5,
+      "weighted_balanced_accuracy": 0.8921157509182915
+    },
+    {
+      "model": "LR__E4",
+      "partition": "TEST",
+      "hardware_class_weight": 10,
+      "weighted_balanced_accuracy": 0.9003145916639964
+    },
+    {
+      "model": "LR__E4",
+      "partition": "TEST",
+      "hardware_class_weight": 20,
+      "weighted_balanced_accuracy": 0.9048107301374476
+    },
+    {
+      "model": "RF__F6",
+      "partition": "VALIDATION_BLOCK13",
+      "hardware_class_weight": 1,
+      "weighted_balanced_accuracy": 0.8763385748585055
+    },
+    {
+      "model": "RF__F6",
+      "partition": "VALIDATION_BLOCK13",
+      "hardware_class_weight": 2,
+      "weighted_balanced_accuracy": 0.8625993478777619
+    },
+    {
+      "model": "RF__F6",
+      "partition": "VALIDATION_BLOCK13",
+      "hardware_class_weight": 5,
+      "weighted_balanced_accuracy": 0.8504765005418118
+    },
+    {
+      "model": "RF__F6",
+      "partition": "VALIDATION_BLOCK13",
+      "hardware_class_weight": 10,
+      "weighted_balanced_accuracy": 0.8454253141518325
+    },
+    {
+      "model": "RF__F6",
+      "partition": "VALIDATION_BLOCK13",
+      "hardware_class_weight": 20,
+      "weighted_balanced_accuracy": 0.8426553087121667
+    },
+    {
+      "model": "RF__F6",
+      "partition": "TEST",
+      "hardware_class_weight": 1,
+      "weighted_balanced_accuracy": 0.9787845879238436
+    },
+    {
+      "model": "RF__F6",
+      "partition": "TEST",
+      "hardware_class_weight": 2,
+      "weighted_balanced_accuracy": 0.9819603472265217
+    },
+    {
+      "model": "RF__F6",
+      "partition": "TEST",
+      "hardware_class_weight": 5,
+      "weighted_balanced_accuracy": 0.9847624877877081
+    },
+    {
+      "model": "RF__F6",
+      "partition": "TEST",
+      "hardware_class_weight": 10,
+      "weighted_balanced_accuracy": 0.9859300463548694
+    },
+    {
+      "model": "RF__F6",
+      "partition": "TEST",
+      "hardware_class_weight": 20,
+      "weighted_balanced_accuracy": 0.9865703204078287
+    },
+    {
+      "model": "LightGBM__E4",
+      "partition": "VALIDATION_BLOCK13",
+      "hardware_class_weight": 1,
+      "weighted_balanced_accuracy": 0.8664457349002241
+    },
+    {
+      "model": "LightGBM__E4",
+      "partition": "VALIDATION_BLOCK13",
+      "hardware_class_weight": 2,
+      "weighted_balanced_accuracy": 0.8365332804144107
+    },
+    {
+      "model": "LightGBM__E4",
+      "partition": "VALIDATION_BLOCK13",
+      "hardware_class_weight": 5,
+      "weighted_balanced_accuracy": 0.8101399382210459
+    },
+    {
+      "model": "LightGBM__E4",
+      "partition": "VALIDATION_BLOCK13",
+      "hardware_class_weight": 10,
+      "weighted_balanced_accuracy": 0.7991427123071437
+    },
+    {
+      "model": "LightGBM__E4",
+      "partition": "VALIDATION_BLOCK13",
+      "hardware_class_weight": 20,
+      "weighted_balanced_accuracy": 0.7931119755156493
+    },
+    {
+      "model": "LightGBM__E4",
+      "partition": "TEST",
+      "hardware_class_weight": 1,
+      "weighted_balanced_accuracy": 0.8963406852885454
+    },
+    {
+      "model": "LightGBM__E4",
+      "partition": "TEST",
+      "hardware_class_weight": 2,
+      "weighted_balanced_accuracy": 0.8716487210948783
+    },
+    {
+      "model": "LightGBM__E4",
+      "partition": "TEST",
+      "hardware_class_weight": 5,
+      "weighted_balanced_accuracy": 0.8498616938651723
+    },
+    {
+      "model": "LightGBM__E4",
+      "partition": "TEST",
+      "hardware_class_weight": 10,
+      "weighted_balanced_accuracy": 0.8407837658527947
+    },
+    {
+      "model": "LightGBM__E4",
+      "partition": "TEST",
+      "hardware_class_weight": 20,
+      "weighted_balanced_accuracy": 0.8358055472653618
+    },
+    {
+      "model": "LightGBM__F6",
+      "partition": "VALIDATION_BLOCK13",
+      "hardware_class_weight": 1,
+      "weighted_balanced_accuracy": 0.8680232709411234
+    },
+    {
+      "model": "LightGBM__F6",
+      "partition": "VALIDATION_BLOCK13",
+      "hardware_class_weight": 2,
+      "weighted_balanced_accuracy": 0.8380279828707539
+    },
+    {
+      "model": "LightGBM__F6",
+      "partition": "VALIDATION_BLOCK13",
+      "hardware_class_weight": 5,
+      "weighted_balanced_accuracy": 0.8115615522204278
+    },
+    {
+      "model": "LightGBM__F6",
+      "partition": "VALIDATION_BLOCK13",
+      "hardware_class_weight": 10,
+      "weighted_balanced_accuracy": 0.800533872782792
+    },
+    {
+      "model": "LightGBM__F6",
+      "partition": "VALIDATION_BLOCK13",
+      "hardware_class_weight": 20,
+      "weighted_balanced_accuracy": 0.7944864356718305
+    },
+    {
+      "model": "LightGBM__F6",
+      "partition": "TEST",
+      "hardware_class_weight": 1,
+      "weighted_balanced_accuracy": 0.8957432093199154
+    },
+    {
+      "model": "LightGBM__F6",
+      "partition": "TEST",
+      "hardware_class_weight": 2,
+      "weighted_balanced_accuracy": 0.8712689008957283
+    },
+    {
+      "model": "LightGBM__F6",
+      "partition": "TEST",
+      "hardware_class_weight": 5,
+      "weighted_balanced_accuracy": 0.8496739228743869
+    },
+    {
+      "model": "LightGBM__F6",
+      "partition": "TEST",
+      "hardware_class_weight": 10,
+      "weighted_balanced_accuracy": 0.8406760153654945
+    },
+    {
+      "model": "LightGBM__F6",
+      "partition": "TEST",
+      "hardware_class_weight": 20,
+      "weighted_balanced_accuracy": 0.8357416789896503
+    }
+  ]
+}

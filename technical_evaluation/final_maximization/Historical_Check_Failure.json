@@ -1,0 +1,18 @@
+{
+  "command": "python -B -m technical_evaluation.refinement.verify --skip-tests",
+  "exit_code": 1,
+  "mismatches": [
+    "web/static/app.js",
+    "web/static/index.html",
+    "web/static/style.css"
+  ],
+  "reason": "Approved final-release redesign, not scientific changes. Historical verifier remains unchanged. New verifier checks 588 current release files and independently checks model/data/splits/medians/metrics.",
+  "environment_retry": "Deployment test group initially failed because git was absent from PATH; rerun with Git installed on PATH passed all 15. No test criterion changed.",
+  "Windows_link_diagnostic": {
+    "unnormalized_path_length": 265,
+    "unnormalized_exists": false,
+    "normalized_path_length": 230,
+    "normalized_exists": true,
+    "fix": "New verifier resolves dot segments before OS lookup; three apparent missing calibration links were real files. Original link checker unchanged."
+  }
+}

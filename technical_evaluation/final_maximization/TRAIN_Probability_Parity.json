@@ -1,0 +1,7 @@
+{
+  "status": "REPRODUCED",
+  "TRAIN_positions": 200,
+  "max_absolute_probability_difference": 2.220446049250313e-16,
+  "tolerance": 1e-12,
+  "scope": "Original preserved artifact on current verified local runtime, existing TRAIN-only fixture; no refit or TEST selection."
+}

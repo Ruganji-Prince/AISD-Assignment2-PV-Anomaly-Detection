@@ -1,0 +1,11 @@
+{
+  "max_parallel_repeat_probability_delta": 3.3306690738754696e-16,
+  "max_parallel_sequential_probability_delta": 3.3306690738754696e-16,
+  "all_argmax_equal": true,
+  "hardware_AP_parallel_1": 0.9933539300157145,
+  "hardware_AP_parallel_2": 0.9933540208512915,
+  "hardware_AP_sequential": 0.9933538717893011,
+  "archived_hardware_AP": 0.9933539110201307,
+  "tolerance_retained": 1e-12,
+  "status": "PARTIAL: ranking AP at tied scores is not reproduced to 1e-12; no stored scientific result altered."
+}

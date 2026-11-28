@@ -1,0 +1,444 @@
+{
+  "status": "PASS_WITH_DISCLOSED_PARTIAL_REQUIREMENTS",
+  "audit_UTC": "2026-11-28T07:28:02.072690+00:00",
+  "client_date": "2026-11-28",
+  "timezone_context": "Africa/Johannesburg",
+  "baseline_public_commit": "d007880c89a0312dbdf540678e9c8bf4cec3216e",
+  "audit_branch": "audit/final-rubric-maximization",
+  "score": [
+    18,
+    18,
+    18,
+    19,
+    18
+  ],
+  "score_total": 91,
+  "score_type": "Conservative independent mock judgment, not official grade",
+  "requirements": {
+    "VERIFIED": 66,
+    "PARTIAL": 19,
+    "NOT APPLICABLE": 2,
+    "MISSING": 0
+  },
+  "local_reverification": {
+    "status": "PASS",
+    "protected_release_files": 588,
+    "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+    "raw_shape": [
+      1373798,
+      7
+    ],
+    "missing_and_infinite_N": 0,
+    "paired_zero_N": 62,
+    "split_bounds": {
+      "TRAIN": [
+        0,
+        1006129
+      ],
+      "VALIDATION": [
+        1056990,
+        1173967
+      ],
+      "TEST": [
+        1227337,
+        1373798
+      ]
+    },
+    "excluded_N": 104231,
+    "TRAIN_medians_recomputed": [
+      51.2504,
+      53.1038,
+      0.1105,
+      0.0432
+    ],
+    "CLI_cases": 5,
+    "TRAIN_class_support": {
+      "0": 844805,
+      "1": 1226,
+      "2": 5695,
+      "3": 1204,
+      "4": 153199
+    },
+    "TRAIN_class_weights_recomputed": {
+      "0": 0.23819200880676605,
+      "1": 164.13197389885806,
+      "2": 35.3337664618086,
+      "3": 167.1310631229236,
+      "4": 1.3134929079171536
+    },
+    "cross_partition_duplicate_rechecks": [
+      {
+        "physical_channels": 6,
+        "first": "VALIDATION",
+        "second": "TRAIN",
+        "shared_hashes": 0
+      },
+      {
+        "physical_channels": 6,
+        "first": "TEST",
+        "second": "TRAIN",
+        "shared_hashes": 0
+      },
+      {
+        "physical_channels": 6,
+        "first": "TEST",
+        "second": "VALIDATION",
+        "shared_hashes": 0
+      },
+      {
+        "physical_channels": 4,
+        "first": "VALIDATION",
+        "second": "TRAIN",
+        "shared_hashes": 0
+      },
+      {
+        "physical_channels": 4,
+        "first": "TEST",
+        "second": "TRAIN",
+        "shared_hashes": 0
+      },
+      {
+        "physical_channels": 4,
+        "first": "TEST",
+        "second": "VALIDATION",
+        "shared_hashes": 0
+      }
+    ],
+    "macro_F1_recomputed_from_saved_confusions": 186,
+    "links": {
+      "relative_links_checked": 1169,
+      "failures": [],
+      "scope": "Local file destinations; heading anchors and remote link availability are not certified."
+    },
+    "scope": "Current raw/schema/exact-feature-overlap/median/CLI/hash/metric checks; full-neighbor, fold fitting and calibration experiments inspected, not refitted here."
+  },
+  "tests": {
+    "status": "PASS",
+    "count": 50,
+    "groups": [
+      14,
+      6,
+      15,
+      15
+    ],
+    "fresh_environment": true,
+    "Git_on_PATH_required": true,
+    "criteria_changed": false
+  },
+  "clean_clone": {
+    "status": "PASS",
+    "public_anonymous_clone": true,
+    "revision": "d007880c89a0312dbdf540678e9c8bf4cec3216e",
+    "audit_package_overlay_only": true,
+    "fresh_isolated_environment": true,
+    "Python": "3.14.10",
+    "packages_installed": 41,
+    "dependency_check": "PASS",
+    "essential_verifier": "PASS",
+    "offline_five_case_CLI": "PASS",
+    "actual_localhost_HTTP": "Clean_Clone_Local_API.json",
+    "full_notebook_rerun_this_audit": false,
+    "prior_13_cell_execution_receipt": "../refinement/results/clean_clone.json"
+  },
+  "TRAIN_probability_parity": {
+    "status": "REPRODUCED",
+    "TRAIN_positions": 200,
+    "max_absolute_probability_difference": 2.220446049250313e-16,
+    "tolerance": 1e-12,
+    "scope": "Original preserved artifact on current verified local runtime, existing TRAIN-only fixture; no refit or TEST selection."
+  },
+  "new_bounded_analysis": {
+    "weighted_BA": "Weighted_BA_Sensitivity.json",
+    "sensitivity_rows": 80,
+    "fixed_RF_metric_reproduction": "Metric_Reproduction.json",
+    "hardware_AP_exact_1e_12": "FAIL retained as PARTIAL; see AP_Numerical_Diagnostic.json",
+    "new_training_or_TEST_selection": false
+  },
+  "historical_gate": {
+    "status": "FAIL_RETAINED",
+    "details": "Historical_Check_Failure.json",
+    "criteria_weakened": false,
+    "reason": "Approved frontend files no longer match historical full-file snapshot"
+  },
+  "live_HTTP": {
+    "status": "PASS",
+    "health_HTTP": 200,
+    "first_health_network_ms": 62900.48399986699,
+    "five_cases": [
+      {
+        "class": 0,
+        "HTTP": 200,
+        "end_to_end_ms": 478.3940000925213,
+        "server_timing": "body_validate;dur=0.3583, init;dur=0.0000, validation;dur=0.0059, frame;dur=0.4648, preprocessing;dur=17.2866, forest;dur=8.0511, server;dur=27.5923"
+      },
+      {
+        "class": 1,
+        "HTTP": 200,
+        "end_to_end_ms": 468.7481999862939,
+        "server_timing": "body_validate;dur=0.3193, init;dur=0.0000, validation;dur=0.0059, frame;dur=0.3845, preprocessing;dur=5.4886, forest;dur=9.9324, server;dur=17.0470"
+      },
+      {
+        "class": 2,
+        "HTTP": 200,
+        "end_to_end_ms": 470.70679999887943,
+        "server_timing": "body_validate;dur=0.3282, init;dur=0.0000, validation;dur=0.0083, frame;dur=0.4250, preprocessing;dur=4.8973, forest;dur=6.6094, server;dur=13.2997"
+      },
+      {
+        "class": 3,
+        "HTTP": 200,
+        "end_to_end_ms": 482.52329998649657,
+        "server_timing": "body_validate;dur=0.2936, init;dur=0.0000, validation;dur=0.0085, frame;dur=0.3494, preprocessing;dur=6.1639, forest;dur=6.3149, server;dur=14.0022"
+      },
+      {
+        "class": 4,
+        "HTTP": 200,
+        "end_to_end_ms": 476.13639989867806,
+        "server_timing": "body_validate;dur=0.2787, init;dur=0.0000, validation;dur=0.0062, frame;dur=0.3509, preprocessing;dur=4.8658, forest;dur=5.9848, server;dur=12.2505"
+      }
+    ],
+    "CORS": [
+      {
+        "origin": "https://pv-anomaly-detection-prince-r-k.vercel.app",
+        "HTTP": 200
+      },
+      {
+        "origin": "https://pv-anomaly-detection-vert.vercel.app",
+        "HTTP": 200
+      },
+      {
+        "origin": "https://pv-anomaly-detection-pbyhom77a-prince-r-k.vercel.app",
+        "HTTP": 200
+      },
+      {
+        "origin": "http://localhost:8080",
+        "HTTP": 200
+      },
+      {
+        "origin": "http://127.0.0.1:8080",
+        "HTTP": 200
+      },
+      {
+        "origin": "https://pv-anomaly-detection-h8tneats1-prince-r-k.vercel.app",
+        "HTTP": 200
+      },
+      {
+        "origin": "https://unrelated.invalid",
+        "HTTP": 400
+      }
+    ],
+    "invalid_rejected": [
+      "missing",
+      "target",
+      "negative",
+      "duplicate",
+      "nonfinite",
+      "oversize"
+    ],
+    "served_static_asset_hashes_match": [
+      "/config.js",
+      "/",
+      "/assets/api.js",
+      "/assets/app.js",
+      "/assets/explanations.js",
+      "/assets/favicon.svg",
+      "/assets/scenarios.js",
+      "/assets/style.css"
+    ],
+    "scope": "Bounded serving parity checks, not accuracy, load testing, a new latency benchmark or forced cold-start measurement."
+  },
+  "current_browser": {
+    "status": "PASS",
+    "five_classes": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "four_steps": true,
+    "viewports": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "details": "Browser_Verification.json",
+    "full_failure_accessibility_suites": "Existing docs/final-release receipts retained, not newly rerun"
+  },
+  "cloud": {
+    "Azure_configuration": {
+      "latest_ready_revision": "pv-anomaly-detection--submission-api-20261128",
+      "image": "ghcr.io/ruganji-prince/pv-anomaly-detection@sha256:8c233e77ec370131f44670fcaf812a5aa27a79f7ca56bb8b7eff1beebc9cd946",
+      "resources": {
+        "cpu": 0.5,
+        "ephemeralStorage": "2Gi",
+        "memory": "1Gi"
+      },
+      "scale": {
+        "cooldownPeriod": 300,
+        "maxReplicas": 1,
+        "minReplicas": 0,
+        "pollingInterval": 30,
+        "rules": [
+          {
+            "http": {
+              "metadata": {
+                "concurrentRequests": "2"
+              }
+            },
+            "name": "http-requests"
+          }
+        ]
+      },
+      "HTTPS": true,
+      "port": 8000,
+      "secret_names": [],
+      "CORS_origins": [
+        "[\"https://pv-anomaly-detection-prince-r-k.vercel.app\",\"https://pv-anomaly-detection-vert.vercel.app\",\"https://pv-anomaly-detection-pbyhom77a-prince-r-k.vercel.app\",\"http://localhost:8080\",\"http://127.0.0.1:8080\",\"https://pv-anomaly-detection-h8tneats1-prince-r-k.vercel.app\"]"
+      ]
+    },
+    "Vercel_deployment": "dpl_EobcLSoR4iY4NSXYn5jxNCX5jvba",
+    "Vercel_state": "READY",
+    "Vercel_deployed_file_listing_count": 9,
+    "Vercel_listing_truncated": false,
+    "Vercel_functions": 0,
+    "Vercel_model_files": 0,
+    "Vercel_Python_files": 0,
+    "read_only_only": true,
+    "new_deployments_or_resources": false
+  },
+  "security": {
+    "reachable_history_scan": "840 blobs /79commits; marker fixture reviewed",
+    "current_tracked_and_new_files_scanned": 611,
+    "matches": [
+      {
+        "file": "deployment/azure/test_context.py",
+        "kind": "private_key"
+      }
+    ],
+    "genuine_credential_detected": false,
+    "new_private_paths": [],
+    "limitations": "Heuristics do not prove arbitrary secret absence; no new dependency-advisory database query this audit."
+  },
+  "submission_tag": {
+    "name": "submission-ready-20261124",
+    "object": "b39525d624839615eb23c5d2f52cbe3e188756f3",
+    "target": "d49cff533e5fe8860bacfb9942779ab003db47db",
+    "unchanged": true
+  },
+  "mandatory": {
+    "A_GitHub_README": "PASS: anonymous clone, current command, fresh install and essential execution",
+    "B_implementation_leakage": "PASS within inspected source/fit/metadata boundaries; no pristine physical TEST claim",
+    "C_cloud_and_secret_scan": "PASS with bounded-scan and operational limitations"
+  },
+  "remaining_critical_blockers": [],
+  "remaining_partial_requirements": 19,
+  "manifest": [
+    {
+      "path": "README.md",
+      "bytes": 22032
+    },
+    {
+      "path": "technical_evaluation/final_maximization/AP_Numerical_Diagnostic.json",
+      "bytes": 516
+    },
+    {
+      "path": "technical_evaluation/final_maximization/browser_check.cjs",
+      "bytes": 4823
+    },
+    {
+      "path": "technical_evaluation/final_maximization/Browser_Verification.json",
+      "bytes": 6828
+    },
+    {
+      "path": "technical_evaluation/final_maximization/Clean_Clone_Local_API.json",
+      "bytes": 492
+    },
+    {
+      "path": "technical_evaluation/final_maximization/Cloud_Configuration.json",
+      "bytes": 991
+    },
+    {
+      "path": "technical_evaluation/final_maximization/Final_Rubric_Audit.md",
+      "bytes": 15479
+    },
+    {
+      "path": "technical_evaluation/final_maximization/Final_Score_Justification.md",
+      "bytes": 3696
+    },
+    {
+      "path": "technical_evaluation/final_maximization/Historical_Check_Failure.json",
+      "bytes": 945
+    },
+    {
+      "path": "technical_evaluation/final_maximization/Live_Verification.json",
+      "bytes": 2664
+    },
+    {
+      "path": "technical_evaluation/final_maximization/Metric_Reproduction.json",
+      "bytes": 6505
+    },
+    {
+      "path": "technical_evaluation/final_maximization/Official_Grid_Provenance.json",
+      "bytes": 1238
+    },
+    {
+      "path": "technical_evaluation/final_maximization/README.md",
+      "bytes": 4422
+    },
+    {
+      "path": "technical_evaluation/final_maximization/Release_Manifest.json",
+      "bytes": 73057
+    },
+    {
+      "path": "technical_evaluation/final_maximization/Remaining_Gaps.md",
+      "bytes": 3854
+    },
+    {
+      "path": "technical_evaluation/final_maximization/Requirement_Evidence_Matrix.json",
+      "bytes": 77228
+    },
+    {
+      "path": "technical_evaluation/final_maximization/Requirement_Evidence_Matrix.md",
+      "bytes": 49731
+    },
+    {
+      "path": "technical_evaluation/final_maximization/Security_Review.json",
+      "bytes": 902
+    },
+    {
+      "path": "technical_evaluation/final_maximization/Technical_Examination_Guide.md",
+      "bytes": 12658
+    },
+    {
+      "path": "technical_evaluation/final_maximization/TRAIN_Probability_Parity.json",
+      "bytes": 280
+    },
+    {
+      "path": "technical_evaluation/final_maximization/verify.py",
+      "bytes": 10770
+    },
+    {
+      "path": "technical_evaluation/final_maximization/Weighted_BA_Sensitivity.json",
+      "bytes": 13981
+    }
+  ],
+  "scope": "No refit/model replacement, no scientific artifact changes, no cloud mutation, no main merge. Audit evidence only; approved root README corrections.",
+  "final_regression_tests": 50,
+  "public_main_and_submission_tag_checked_before_commit": true,
+  "manifest_scope": "Reviewed changed files; this self-referential verification receipt is excluded from its own sized manifest. All added files are text/JSON/code; no binaries.",
+  "publication_safety": {
+    "Vercel_project": {
+      "id": "prj_crdyiWPhHbKADgYXLtaSoTzAd2Ox",
+      "framework": null,
+      "link": null,
+      "buildCommand": "echo 'Unverified source deployment blocked: use tested prebuilt static release' && exit 1",
+      "installCommand": "echo \"Manual static prebuilt releases only\"",
+      "outputDirectory": ".vercel/output/static",
+      "commandForIgnoringBuildStep": "exit 0"
+    },
+    "GitHub_workflows": "No push trigger matches audit/final-rubric-maximization; container identity workflow is manual only.",
+    "main_unchanged": "d007880c89a0312dbdf540678e9c8bf4cec3216e",
+    "cloud_write_operations": 0
+  }
+}

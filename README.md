@@ -33,6 +33,8 @@ See [architecture](deployment/azure/Architecture.md), [container provenance](dep
 
 ## Technical evaluation - professor quick start
 
+The [final independent rubric audit](technical_evaluation/final_maximization/README.md) provides release-specific checks and a five-minute, no-slides defense guide. The historical snapshot verifier remains unchanged; it rejects the subsequently approved frontend files. The new check protects all other 588 release files and does not refit models or overwrite scientific evidence.
+
 For evaluation preparation, follow the [10/20-minute walkthrough](technical_evaluation/defense/Evaluation_Walkthrough.md), [learning guide](technical_evaluation/defense/Student_Learning_Guide.md), [mock examination](technical_evaluation/defense/Mock_Technical_Examination.md) and [submission/offline checklist](technical_evaluation/defense/Submission_Readiness.md). These are preparation documents; historical reports and measured results remain in their original locations.
 
 Start with the [Professor Quick Start](technical_evaluation/defense/Professor_Quick_Start.md), [Technical Defense Guide](technical_evaluation/defense/Technical_Defense_Guide.md), [43-requirement evidence index](technical_evaluation/defense/Rubric_Evidence_Index.md) and [current refinement report](technical_evaluation/refinement/Final_Report.md). The independent engineering mock assessment is **91/100**, compared with the previous 88/100; this is not an official grade. The original dataset, fitted RF model, academic reports and four-step design are preserved.
@@ -40,7 +42,7 @@ Start with the [Professor Quick Start](technical_evaluation/defense/Professor_Qu
 ```powershell
 uv venv --python 3.14.10 .venv
 uv pip install --python .venv -r technical_evaluation/requirements.txt
-.\.venv\Scripts\python.exe -B -m technical_evaluation.refinement.verify
+.\.venv\Scripts\python.exe -B -m technical_evaluation.final_maximization.verify --tests
 .\.venv\Scripts\python.exe -m uvicorn web.app:app --host 127.0.0.1 --port 8000
 ```
 
@@ -161,7 +163,7 @@ The Phase 1 PDF, Assignment 3 IEEE report, executed preprocessing notebook, orig
 
 ## Public web application
 
-The [PV Anomaly Detection dashboard](https://pv-anomaly-detection-prince-r-k.vercel.app) accepts four electrical measurements and calls the original fitted RF E4 pipeline through a Python FastAPI endpoint on Vercel. The responsive HTML/CSS/JavaScript interface includes dataset examples, five-class results, validation, loading and error states. Natural building shade is identified as an environmental condition. No confidence percentages or calibrated probabilities are presented.
+The [PV Anomaly Detection dashboard](https://pv-anomaly-detection-prince-r-k.vercel.app) accepts four electrical measurements and calls the original fitted RF E4 pipeline directly through the FastAPI endpoint on Azure. Vercel serves static frontend assets only. The responsive HTML/CSS/JavaScript interface includes dataset examples, five-class results, validation, loading and error states. Natural building shade is identified as an environmental condition. No confidence percentages or calibrated probabilities are presented.
 
 Anonymous live API and browser checks pass for all five existing examples, including desktop and 390/320-pixel mobile layouts. The original model SHA-256, fitted preprocessing, parameters and scientific results are unchanged. Explicitly verified runtimes include Python 3.14.2, 3.14.7, 3.14.8 and 3.14.10; training used 3.14.7. Current compatibility and Linux evidence are recorded in the technical evaluation package.
 

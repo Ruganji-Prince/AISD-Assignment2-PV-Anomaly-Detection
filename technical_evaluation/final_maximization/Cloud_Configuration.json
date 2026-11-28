@@ -1,0 +1,31 @@
+{
+  "latest_ready_revision": "pv-anomaly-detection--submission-api-20261128",
+  "image": "ghcr.io/ruganji-prince/pv-anomaly-detection@sha256:8c233e77ec370131f44670fcaf812a5aa27a79f7ca56bb8b7eff1beebc9cd946",
+  "resources": {
+    "cpu": 0.5,
+    "ephemeralStorage": "2Gi",
+    "memory": "1Gi"
+  },
+  "scale": {
+    "cooldownPeriod": 300,
+    "maxReplicas": 1,
+    "minReplicas": 0,
+    "pollingInterval": 30,
+    "rules": [
+      {
+        "http": {
+          "metadata": {
+            "concurrentRequests": "2"
+          }
+        },
+        "name": "http-requests"
+      }
+    ]
+  },
+  "HTTPS": true,
+  "port": 8000,
+  "secret_names": [],
+  "CORS_origins": [
+    "[\"https://pv-anomaly-detection-prince-r-k.vercel.app\",\"https://pv-anomaly-detection-vert.vercel.app\",\"https://pv-anomaly-detection-pbyhom77a-prince-r-k.vercel.app\",\"http://localhost:8080\",\"http://127.0.0.1:8080\",\"https://pv-anomaly-detection-h8tneats1-prince-r-k.vercel.app\"]"
+  ]
+}

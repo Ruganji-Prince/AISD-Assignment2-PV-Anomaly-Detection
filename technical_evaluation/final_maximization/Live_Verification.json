@@ -1,0 +1,86 @@
+{
+  "status": "PASS",
+  "health_HTTP": 200,
+  "first_health_network_ms": 62900.48399986699,
+  "five_cases": [
+    {
+      "class": 0,
+      "HTTP": 200,
+      "end_to_end_ms": 478.3940000925213,
+      "server_timing": "body_validate;dur=0.3583, init;dur=0.0000, validation;dur=0.0059, frame;dur=0.4648, preprocessing;dur=17.2866, forest;dur=8.0511, server;dur=27.5923"
+    },
+    {
+      "class": 1,
+      "HTTP": 200,
+      "end_to_end_ms": 468.7481999862939,
+      "server_timing": "body_validate;dur=0.3193, init;dur=0.0000, validation;dur=0.0059, frame;dur=0.3845, preprocessing;dur=5.4886, forest;dur=9.9324, server;dur=17.0470"
+    },
+    {
+      "class": 2,
+      "HTTP": 200,
+      "end_to_end_ms": 470.70679999887943,
+      "server_timing": "body_validate;dur=0.3282, init;dur=0.0000, validation;dur=0.0083, frame;dur=0.4250, preprocessing;dur=4.8973, forest;dur=6.6094, server;dur=13.2997"
+    },
+    {
+      "class": 3,
+      "HTTP": 200,
+      "end_to_end_ms": 482.52329998649657,
+      "server_timing": "body_validate;dur=0.2936, init;dur=0.0000, validation;dur=0.0085, frame;dur=0.3494, preprocessing;dur=6.1639, forest;dur=6.3149, server;dur=14.0022"
+    },
+    {
+      "class": 4,
+      "HTTP": 200,
+      "end_to_end_ms": 476.13639989867806,
+      "server_timing": "body_validate;dur=0.2787, init;dur=0.0000, validation;dur=0.0062, frame;dur=0.3509, preprocessing;dur=4.8658, forest;dur=5.9848, server;dur=12.2505"
+    }
+  ],
+  "CORS": [
+    {
+      "origin": "https://pv-anomaly-detection-prince-r-k.vercel.app",
+      "HTTP": 200
+    },
+    {
+      "origin": "https://pv-anomaly-detection-vert.vercel.app",
+      "HTTP": 200
+    },
+    {
+      "origin": "https://pv-anomaly-detection-pbyhom77a-prince-r-k.vercel.app",
+      "HTTP": 200
+    },
+    {
+      "origin": "http://localhost:8080",
+      "HTTP": 200
+    },
+    {
+      "origin": "http://127.0.0.1:8080",
+      "HTTP": 200
+    },
+    {
+      "origin": "https://pv-anomaly-detection-h8tneats1-prince-r-k.vercel.app",
+      "HTTP": 200
+    },
+    {
+      "origin": "https://unrelated.invalid",
+      "HTTP": 400
+    }
+  ],
+  "invalid_rejected": [
+    "missing",
+    "target",
+    "negative",
+    "duplicate",
+    "nonfinite",
+    "oversize"
+  ],
+  "served_static_asset_hashes_match": [
+    "/config.js",
+    "/",
+    "/assets/api.js",
+    "/assets/app.js",
+    "/assets/explanations.js",
+    "/assets/favicon.svg",
+    "/assets/scenarios.js",
+    "/assets/style.css"
+  ],
+  "scope": "Bounded serving parity checks, not accuracy, load testing, a new latency benchmark or forced cold-start measurement."
+}

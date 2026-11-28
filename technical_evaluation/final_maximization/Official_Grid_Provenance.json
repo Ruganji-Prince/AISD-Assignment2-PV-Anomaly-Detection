@@ -1,0 +1,55 @@
+{
+  "title": "04-652 AI SYSTEM DESIGN | TECHNICAL EVALUATION GRID",
+  "pages": 1,
+  "source_filename": "04-652_AI_System_Design_Technical_Evaluation_Grid.pdf",
+  "sha256": "a2a90b6e79f34ff9e84bb02c309db9006d1cf99880cc41cec8deba288686fdab",
+  "categories": [
+    {
+      "id": 1,
+      "maximum": 20,
+      "exemplary_band": [
+        18,
+        20
+      ]
+    },
+    {
+      "id": 2,
+      "maximum": 20,
+      "exemplary_band": [
+        18,
+        20
+      ]
+    },
+    {
+      "id": 3,
+      "maximum": 20,
+      "exemplary_band": [
+        18,
+        20
+      ]
+    },
+    {
+      "id": 4,
+      "maximum": 20,
+      "exemplary_band": [
+        18,
+        20
+      ]
+    },
+    {
+      "id": 5,
+      "maximum": 20,
+      "exemplary_band": [
+        18,
+        20
+      ]
+    }
+  ],
+  "VIF_cutoff": "No numeric VIF threshold specified in this official grid. Project uses >10; |rho| >=0.85 is explicit.",
+  "mandatory_checks": [
+    "GitHub & README verified (-10 if missing)",
+    "Zero Unaddressed Leakage Confirmed",
+    "Cloud Endpoint Live & Secrets Safe"
+  ],
+  "access": "Professor-supplied local PDF reviewed; original not republished as project-authored content."
+}

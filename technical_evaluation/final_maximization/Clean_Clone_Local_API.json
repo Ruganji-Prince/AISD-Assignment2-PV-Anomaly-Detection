@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "source": "Anonymous public release clone with only audit package overlay; newly isolated41-package environment.",
+  "health": {
+    "status": "ready",
+    "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+    "python_version": "3.14.10"
+  },
+  "five_case_classes": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "HTTP": 200,
+  "server_entrypoint": "web.azure_app:app",
+  "host": "127.0.0.1",
+  "cloud_changes": false
+}
