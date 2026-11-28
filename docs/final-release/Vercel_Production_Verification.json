@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "production_url": "https://pv-anomaly-detection-prince-r-k.vercel.app",
+  "active_deployment": "dpl_EobcLSoR4iY4NSXYn5jxNCX5jvba",
+  "production_READY": true,
+  "served_assets_match_approved_preview": 8,
+  "model_files": 0,
+  "Python_runtime_files": 0,
+  "inference_functions": 0,
+  "rollback_deployment_preserved": "dpl_H77uanaDrGutfBv5vJkb5825u3Gi",
+  "source_build_safeguard_preserved": true,
+  "release_method": "Identical static prebuilt output staged without domains, then promoted; no application rebuild."
+}

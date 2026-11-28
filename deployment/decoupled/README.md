@@ -1,6 +1,9 @@
 # Decoupled production deployment - 27 November 2026
 
-Status: production cutover completed and verified. Production Vercel deployment `dpl_H77uanaDrGutfBv5vJkb5825u3Gi` serves the verified static frontend; GitHub `main` integration was completed in merge commit `d8e1b52860f587c0cf7e3d2be07dc555c2f139e6`.
+> Current release: both official services are verified live as of 28 November 2026. See the [final release and submission freeze](../../docs/final-release/README.md). The earlier checkpoint evidence below remains historical.
+
+
+Historical checkpoint status: production cutover completed and verified. Production Vercel deployment `dpl_H77uanaDrGutfBv5vJkb5825u3Gi` serves the verified static frontend; GitHub `main` integration was completed in merge commit `d8e1b52860f587c0cf7e3d2be07dc555c2f139e6`.
 
 [Production static frontend](https://pv-anomaly-detection-prince-r-k.vercel.app) calls the [Azure inference API](https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io) directly. The [original verified preview](https://pv-anomaly-detection-pbyhom77a-prince-r-k.vercel.app) remains preserved. Original legacy Vercel deployment `dpl_D24pfF7JJsBL5PRSy8VRQFAeXcpU` remains available for rollback. No new cloud resource or paid service was added.
 

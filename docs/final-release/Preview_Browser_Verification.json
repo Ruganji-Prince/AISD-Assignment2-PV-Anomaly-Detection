@@ -1,0 +1,424 @@
+{
+  "status": "VERIFIED",
+  "frontend": "https://pv-anomaly-detection-h8tneats1-prince-r-k.vercel.app",
+  "API": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io",
+  "page_timing": {
+    "navigation": {
+      "name": "https://pv-anomaly-detection-h8tneats1-prince-r-k.vercel.app/",
+      "startTime": 0,
+      "duration": 1413.1999998092651,
+      "nextHopProtocol": "h2",
+      "fetchStart": 0.2999999523162842,
+      "domainLookupStart": 5.5,
+      "domainLookupEnd": 13.899999856948853,
+      "connectStart": 13.899999856948853,
+      "connectEnd": 248.79999995231628,
+      "requestStart": 249.19999980926514,
+      "responseStart": 364,
+      "responseEnd": 623.7999999523163,
+      "domContentLoadedEventEnd": 1400.1999998092651,
+      "loadEventEnd": 1413.1999998092651,
+      "responseStatus": 200,
+      "decodedBodySize": 17925
+    },
+    "service": {
+      "connecting": 1400,
+      "ready": 1922.2999999523163
+    }
+  },
+  "five_reference_predictions": [
+    {
+      "case": 0,
+      "input": {
+        "vdc1": 300.031,
+        "vdc2": 329.544,
+        "idc1": 0.2247,
+        "idc2": 0.1272
+      },
+      "url": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io/api/predict",
+      "method": "POST",
+      "HTTP": 200,
+      "response": {
+        "predicted_class": 0,
+        "label": "normal",
+        "hardware_fault_class": false,
+        "environmental_shade": false,
+        "model_version": "archived-RF__E4-cf5d0ac4",
+        "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+        "range_warnings": [],
+        "fault_category": "normal",
+        "warnings": []
+      },
+      "displayed_label": "Normal",
+      "server_timing": "body_validate;dur=0.2979, init;dur=0.0000, validation;dur=0.0089, frame;dur=0.3638, preprocessing;dur=6.9303, forest;dur=6.1757, server;dur=14.7297",
+      "Azure_instance": "54b3c899655c",
+      "DOM_update_ms": 442.7000000476837
+    },
+    {
+      "case": 1,
+      "input": {
+        "vdc1": 256.461,
+        "vdc2": 208.699,
+        "idc1": 9.1373,
+        "idc2": 8.4463
+      },
+      "url": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io/api/predict",
+      "method": "POST",
+      "HTTP": 200,
+      "response": {
+        "predicted_class": 1,
+        "label": "short circuit",
+        "hardware_fault_class": true,
+        "environmental_shade": false,
+        "model_version": "archived-RF__E4-cf5d0ac4",
+        "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+        "range_warnings": [],
+        "fault_category": "hardware_fault",
+        "warnings": []
+      },
+      "displayed_label": "Short Circuit",
+      "server_timing": "body_validate;dur=0.3017, init;dur=0.0000, validation;dur=0.0091, frame;dur=0.4008, preprocessing;dur=6.0241, forest;dur=9.5930, server;dur=17.2219",
+      "Azure_instance": "54b3c899655c",
+      "DOM_update_ms": 373.2000000476837
+    },
+    {
+      "case": 2,
+      "input": {
+        "vdc1": 259.212,
+        "vdc2": 246.611,
+        "idc1": 9.0792,
+        "idc2": 8.3303
+      },
+      "url": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io/api/predict",
+      "method": "POST",
+      "HTTP": 200,
+      "response": {
+        "predicted_class": 2,
+        "label": "resistive degradation",
+        "hardware_fault_class": true,
+        "environmental_shade": false,
+        "model_version": "archived-RF__E4-cf5d0ac4",
+        "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+        "range_warnings": [],
+        "fault_category": "hardware_fault",
+        "warnings": []
+      },
+      "displayed_label": "Resistive Degradation",
+      "server_timing": "body_validate;dur=0.3096, init;dur=0.0000, validation;dur=0.0046, frame;dur=0.4176, preprocessing;dur=4.9003, forest;dur=6.3607, server;dur=12.8758",
+      "Azure_instance": "54b3c899655c",
+      "DOM_update_ms": 394
+    },
+    {
+      "case": 3,
+      "input": {
+        "vdc1": 262.91,
+        "vdc2": 0.8866,
+        "idc1": 8.9742,
+        "idc2": 0.0468
+      },
+      "url": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io/api/predict",
+      "method": "POST",
+      "HTTP": 200,
+      "response": {
+        "predicted_class": 3,
+        "label": "open circuit",
+        "hardware_fault_class": true,
+        "environmental_shade": false,
+        "model_version": "archived-RF__E4-cf5d0ac4",
+        "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+        "range_warnings": [],
+        "fault_category": "hardware_fault",
+        "warnings": []
+      },
+      "displayed_label": "Open Circuit",
+      "server_timing": "body_validate;dur=0.2905, init;dur=0.0000, validation;dur=0.0113, frame;dur=0.5031, preprocessing;dur=5.6644, forest;dur=10.1321, server;dur=19.1373",
+      "Azure_instance": "54b3c899655c",
+      "DOM_update_ms": 330.2000000476837
+    },
+    {
+      "case": 4,
+      "input": {
+        "vdc1": 334.823,
+        "vdc2": 335.877,
+        "idc1": 0.4303,
+        "idc2": 0.2274
+      },
+      "url": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io/api/predict",
+      "method": "POST",
+      "HTTP": 200,
+      "response": {
+        "predicted_class": 4,
+        "label": "natural building shade",
+        "hardware_fault_class": false,
+        "environmental_shade": true,
+        "model_version": "archived-RF__E4-cf5d0ac4",
+        "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+        "range_warnings": [],
+        "fault_category": "environmental_condition",
+        "warnings": []
+      },
+      "displayed_label": "Natural Building Shade",
+      "server_timing": "body_validate;dur=0.4341, init;dur=0.0000, validation;dur=0.0085, frame;dur=0.3775, preprocessing;dur=8.6827, forest;dur=6.1251, server;dur=16.5738",
+      "Azure_instance": "54b3c899655c",
+      "DOM_update_ms": 361.39999985694885
+    }
+  ],
+  "API_requests": [
+    {
+      "url": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io/api/health",
+      "method": "GET"
+    },
+    {
+      "url": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io/api/examples",
+      "method": "GET"
+    },
+    {
+      "url": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io/api/predict",
+      "method": "POST"
+    },
+    {
+      "url": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io/api/predict",
+      "method": "POST"
+    },
+    {
+      "url": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io/api/predict",
+      "method": "POST"
+    },
+    {
+      "url": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io/api/predict",
+      "method": "POST"
+    },
+    {
+      "url": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io/api/predict",
+      "method": "POST"
+    },
+    {
+      "url": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io/api/predict",
+      "method": "POST"
+    },
+    {
+      "url": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io/api/predict",
+      "method": "POST"
+    },
+    {
+      "url": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io/api/health",
+      "method": "GET"
+    },
+    {
+      "url": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io/api/examples",
+      "method": "GET"
+    },
+    {
+      "url": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io/api/predict",
+      "method": "POST"
+    },
+    {
+      "url": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io/api/predict",
+      "method": "POST"
+    },
+    {
+      "url": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io/api/predict",
+      "method": "POST"
+    },
+    {
+      "url": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io/api/predict",
+      "method": "POST"
+    },
+    {
+      "url": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io/api/predict",
+      "method": "POST"
+    },
+    {
+      "url": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io/api/predict",
+      "method": "POST"
+    },
+    {
+      "url": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io/api/predict",
+      "method": "POST"
+    },
+    {
+      "url": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io/api/predict",
+      "method": "POST"
+    },
+    {
+      "url": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io/api/predict",
+      "method": "POST"
+    },
+    {
+      "url": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io/api/predict",
+      "method": "POST"
+    },
+    {
+      "url": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io/api/predict",
+      "method": "POST"
+    },
+    {
+      "url": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io/api/predict",
+      "method": "POST"
+    },
+    {
+      "url": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io/api/predict",
+      "method": "POST"
+    },
+    {
+      "url": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io/api/predict",
+      "method": "POST"
+    },
+    {
+      "url": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io/api/predict",
+      "method": "POST"
+    }
+  ],
+  "duplicate_submissions_one_request": true,
+  "blocked_Azure_no_fallback": true,
+  "blocked_error": "Unable to reach the prediction service. Please check the connection.",
+  "retry_recovers": true,
+  "no_keepalive_after_ready": true,
+  "bounded_startup_failure": {
+    "simulation": "Browser network abort and virtual clock, no backend shutdown",
+    "health_attempts": 1,
+    "stops_after_bound": true
+  },
+  "starting_state_mobile_no_overflow": true,
+  "bounded_inference_timeout": true,
+  "browser_benchmark": [
+    {
+      "request": 0,
+      "HTTP": 200,
+      "predicted_class": 0,
+      "API_round_trip_ms": 172,
+      "Server_Timing": "body_validate;dur=0.2996, init;dur=0.0000, validation;dur=0.0049, frame;dur=0.4968, preprocessing;dur=5.5092, forest;dur=5.9795, server;dur=13.0686",
+      "Azure_instance": "54b3c899655c",
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb"
+    },
+    {
+      "request": 1,
+      "HTTP": 200,
+      "predicted_class": 0,
+      "API_round_trip_ms": 173,
+      "Server_Timing": "body_validate;dur=0.2773, init;dur=0.0000, validation;dur=0.0059, frame;dur=0.4221, preprocessing;dur=4.7807, forest;dur=6.1821, server;dur=12.4455",
+      "Azure_instance": "54b3c899655c",
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb"
+    },
+    {
+      "request": 2,
+      "HTTP": 200,
+      "predicted_class": 0,
+      "API_round_trip_ms": 161,
+      "Server_Timing": "body_validate;dur=0.3103, init;dur=0.0000, validation;dur=0.0082, frame;dur=0.3610, preprocessing;dur=5.6336, forest;dur=5.9540, server;dur=13.1447",
+      "Azure_instance": "54b3c899655c",
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb"
+    },
+    {
+      "request": 3,
+      "HTTP": 200,
+      "predicted_class": 0,
+      "API_round_trip_ms": 171,
+      "Server_Timing": "body_validate;dur=0.3332, init;dur=0.0000, validation;dur=0.0060, frame;dur=0.3453, preprocessing;dur=5.6430, forest;dur=6.0734, server;dur=13.2083",
+      "Azure_instance": "54b3c899655c",
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb"
+    },
+    {
+      "request": 4,
+      "HTTP": 200,
+      "predicted_class": 0,
+      "API_round_trip_ms": 164,
+      "Server_Timing": "body_validate;dur=0.3279, init;dur=0.0000, validation;dur=0.0053, frame;dur=0.3631, preprocessing;dur=5.0951, forest;dur=6.0986, server;dur=12.7272",
+      "Azure_instance": "54b3c899655c",
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb"
+    },
+    {
+      "request": 5,
+      "HTTP": 200,
+      "predicted_class": 0,
+      "API_round_trip_ms": 167,
+      "Server_Timing": "body_validate;dur=0.3056, init;dur=0.0000, validation;dur=0.0044, frame;dur=0.4079, preprocessing;dur=4.9844, forest;dur=6.0433, server;dur=12.5127",
+      "Azure_instance": "54b3c899655c",
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb"
+    },
+    {
+      "request": 6,
+      "HTTP": 200,
+      "predicted_class": 0,
+      "API_round_trip_ms": 188,
+      "Server_Timing": "body_validate;dur=0.2949, init;dur=0.0000, validation;dur=0.0052, frame;dur=0.3367, preprocessing;dur=5.4320, forest;dur=6.2988, server;dur=13.1900",
+      "Azure_instance": "54b3c899655c",
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb"
+    },
+    {
+      "request": 7,
+      "HTTP": 200,
+      "predicted_class": 0,
+      "API_round_trip_ms": 416,
+      "Server_Timing": "body_validate;dur=0.3193, init;dur=0.0000, validation;dur=0.0053, frame;dur=0.3574, preprocessing;dur=5.3120, forest;dur=6.5813, server;dur=13.4122",
+      "Azure_instance": "54b3c899655c",
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb"
+    },
+    {
+      "request": 8,
+      "HTTP": 200,
+      "predicted_class": 0,
+      "API_round_trip_ms": 164,
+      "Server_Timing": "body_validate;dur=0.3013, init;dur=0.0000, validation;dur=0.0059, frame;dur=0.3391, preprocessing;dur=5.3084, forest;dur=6.1988, server;dur=12.9715",
+      "Azure_instance": "54b3c899655c",
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb"
+    },
+    {
+      "request": 9,
+      "HTTP": 200,
+      "predicted_class": 0,
+      "API_round_trip_ms": 167,
+      "Server_Timing": "body_validate;dur=0.6506, init;dur=0.0000, validation;dur=0.0058, frame;dur=0.3863, preprocessing;dur=5.2845, forest;dur=6.0429, server;dur=13.4753",
+      "Azure_instance": "54b3c899655c",
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb"
+    },
+    {
+      "request": 10,
+      "HTTP": 200,
+      "predicted_class": 0,
+      "API_round_trip_ms": 178,
+      "Server_Timing": "body_validate;dur=0.2803, init;dur=0.0000, validation;dur=0.0085, frame;dur=0.3501, preprocessing;dur=7.3980, forest;dur=10.5274, server;dur=19.4778",
+      "Azure_instance": "54b3c899655c",
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb"
+    },
+    {
+      "request": 11,
+      "HTTP": 200,
+      "predicted_class": 0,
+      "API_round_trip_ms": 230,
+      "Server_Timing": "body_validate;dur=0.3170, init;dur=0.0000, validation;dur=0.0082, frame;dur=0.4311, preprocessing;dur=6.8243, forest;dur=11.9000, server;dur=20.2591",
+      "Azure_instance": "54b3c899655c",
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb"
+    },
+    {
+      "request": 12,
+      "HTTP": 200,
+      "predicted_class": 0,
+      "API_round_trip_ms": 173,
+      "Server_Timing": "body_validate;dur=0.4336, init;dur=0.0000, validation;dur=0.0082, frame;dur=0.3539, preprocessing;dur=13.7590, forest;dur=7.1902, server;dur=22.6169",
+      "Azure_instance": "54b3c899655c",
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb"
+    },
+    {
+      "request": 13,
+      "HTTP": 200,
+      "predicted_class": 0,
+      "API_round_trip_ms": 171,
+      "Server_Timing": "body_validate;dur=0.3482, init;dur=0.0000, validation;dur=0.0087, frame;dur=0.4144, preprocessing;dur=5.7274, forest;dur=6.5866, server;dur=14.0102",
+      "Azure_instance": "54b3c899655c",
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb"
+    },
+    {
+      "request": 14,
+      "HTTP": 200,
+      "predicted_class": 0,
+      "API_round_trip_ms": 557,
+      "Server_Timing": "body_validate;dur=0.3266, init;dur=0.0000, validation;dur=0.0091, frame;dur=0.3606, preprocessing;dur=10.7795, forest;dur=6.1489, server;dur=18.6594",
+      "Azure_instance": "54b3c899655c",
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb"
+    }
+  ],
+  "probabilities_not_fabricated": true,
+  "source_scope": "Predetermined historical TEST cases demonstrate deployment parity, not independent accuracy",
+  "page_errors": []
+}

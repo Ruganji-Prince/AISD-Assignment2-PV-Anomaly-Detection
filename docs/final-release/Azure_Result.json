@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "new_landing_live": true,
+  "revision": "pv-anomaly-detection--submission-api-20261128",
+  "image": "ghcr.io/ruganji-prince/pv-anomaly-detection@sha256:8c233e77ec370131f44670fcaf812a5aa27a79f7ca56bb8b7eff1beebc9cd946",
+  "API_and_browser_verified": true
+}

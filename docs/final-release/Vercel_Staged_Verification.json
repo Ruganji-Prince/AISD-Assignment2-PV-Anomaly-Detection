@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "staged_id": "dpl_EobcLSoR4iY4NSXYn5jxNCX5jvba",
+  "target": "production",
+  "public_served_asset_hashes_match_approved_preview": 8,
+  "inference_functions": 0,
+  "model_artifacts": 0,
+  "Python_runtime_files": 0,
+  "source_build_executed": false,
+  "production_aliases_not_yet_changed": true
+}

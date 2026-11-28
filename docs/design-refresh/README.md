@@ -1,6 +1,9 @@
 # PV frontend design review
 
-Status: implementation and local Azure-backed verification complete. Public design preview is blocked by the existing exact-origin CORS allowlist; production and main are unchanged by this branch.
+> Current release: both official services are verified live as of 28 November 2026. See the [final release and submission freeze](../final-release/README.md). The earlier checkpoint evidence below remains historical.
+
+
+Historical checkpoint status: implementation and local Azure-backed verification complete. Public design preview is blocked by the existing exact-origin CORS allowlist; production and main are unchanged by this branch.
 
 ## Starting point and design audit
 

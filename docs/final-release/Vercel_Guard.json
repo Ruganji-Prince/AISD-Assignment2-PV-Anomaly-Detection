@@ -1,0 +1,9 @@
+{
+  "id": "prj_crdyiWPhHbKADgYXLtaSoTzAd2Ox",
+  "framework": null,
+  "link": null,
+  "buildCommand": "echo 'Unverified source deployment blocked: use tested prebuilt static release' && exit 1",
+  "installCommand": "echo \"Manual static prebuilt releases only\"",
+  "outputDirectory": ".vercel/output/static",
+  "commandForIgnoringBuildStep": "exit 0"
+}

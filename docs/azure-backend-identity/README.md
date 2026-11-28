@@ -1,6 +1,9 @@
 # Azure backend identity - local candidate
 
-Status: implemented and locally verified on `design/azure-backend-identity`. **A controlled deployment was attempted and rolled back after a live browser navigation timeout.** Azure now serves the preserved image/configuration. See the [deployment and rollback report](deployment/README.md). Vercel production, redesigned preview, main and protected submission tag remain unchanged.
+> Current release: both official services are verified live as of 28 November 2026. See the [final release and submission freeze](../final-release/README.md). The earlier checkpoint evidence below remains historical.
+
+
+Historical checkpoint status: implemented and locally verified on `design/azure-backend-identity`. **A controlled deployment was attempted and rolled back after a live browser navigation timeout.** At that checkpoint, Azure was restored to the preserved image/configuration. See the [deployment and rollback report](deployment/README.md). Vercel production, redesigned preview, main and protected submission tag remain unchanged.
 
 ## Implementation and exact changed source files
 

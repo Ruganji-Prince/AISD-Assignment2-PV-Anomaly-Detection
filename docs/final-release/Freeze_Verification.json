@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "baseline_main": "b0d19e7cf376211e7e2ad66d7e9cf8d5357e408b",
+  "protected_existing_files_unchanged": 475,
+  "approved_existing_files_changed": [
+    ".github/workflows/decoupled-container.yml",
+    "README.md",
+    "deployment/decoupled/README.md",
+    "deployment/decoupled/browser_verify.cjs",
+    "deployment/decoupled/prepare_context.py",
+    "web/app.py",
+    "web/azure_app.py",
+    "web/static/app.js",
+    "web/static/index.html",
+    "web/static/style.css"
+  ],
+  "protected_model_PDF_CSV_SHA256": {
+    "models/rf_e4/model.pkl": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+    "phase1_strategy/Phase1_Strategy_Report.pdf": "dfb3f253f3e059ece168d9c6edffc10f68a0a21ba8b738a6fb2b2d2c1d962497",
+    "data/raw/pv_fault_dataset.csv": "717278fdc338bf6713293c0495421a8be9ea02a0b64144e86e957a531edecb8a"
+  },
+  "no_scientific_or_model_path_changes": true,
+  "submission_tag_object_and_target_unchanged": true,
+  "merged_frontend_build_all_nine_hashes_equal_deployed_artifact": true,
+  "tests": 50,
+  "commands": [
+    {
+      "command": "python -B -m unittest technical_evaluation.tests",
+      "exit_code": 0
+    },
+    {
+      "command": "python -B -m unittest technical_evaluation.refinement.tests",
+      "exit_code": 0
+    },
+    {
+      "command": "python -B -m unittest discover -s tests",
+      "exit_code": 0
+    },
+    {
+      "command": "python -B -m unittest discover -s web/tests",
+      "exit_code": 0
+    },
+    {
+      "command": "python -B -m unittest deployment.azure.test_context deployment.azure.test_deployment deployment.decoupled.test_backend deployment.decoupled.test_frontend",
+      "exit_code": 0
+    }
+  ],
+  "normal_merges_no_history_rewrite": true,
+  "README_scientific_and_reproduction_content_suffix_byte_identical": true,
+  "relative_Markdown_links": {
+    "relative_links_checked": 926,
+    "failures": []
+  },
+  "new_release_evidence_secret_private_path_and_size_scan": "PASS"
+}
