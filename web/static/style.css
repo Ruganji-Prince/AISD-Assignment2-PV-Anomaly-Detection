@@ -238,3 +238,5 @@ footer>span { display: flex; align-items: center; gap: 8px; }.back-top { font-we
 /* Keep the expanded statistics table inside the card on narrow screens. */
 .observed-ranges { width:100%; min-width:0; max-width:100%; }
 .range-table { width:100%; min-width:0; max-width:100%; }
+/* A value can straddle filled/unfilled bars; keep one legible text background. */
+.bar-value { color:var(--ink); background:#fff; padding:2px 6px; border-radius:4px; text-shadow:none; }

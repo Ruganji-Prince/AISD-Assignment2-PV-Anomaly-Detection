@@ -26,6 +26,13 @@ test('invalid, duplicated and extra-field historical data rejected',()=>{
  for(const mutate of [x=>x.observations.pop(),x=>x.observations[0].measurements.idc1=Infinity,x=>x.observations[0].measurements.f_nv=1,x=>x.observations[1]=structuredClone(x.observations[0])]){const copy=structuredClone(data);mutate(copy);assert.throws(()=>validateReplay(copy));}
 });
 test('no scheduler traffic without explicit Start',async()=>{const f=fixture();await f.clock.advance(100000);assert.equal(f.calls.length,0);assert.equal(f.replay.cursor,0);});
+test('native browser timers retain the global receiver',async()=>{
+ const oldSet=globalThis.setTimeout,oldClear=globalThis.clearTimeout;
+ globalThis.setTimeout=function(...args){assert.equal(this,globalThis);return oldSet(...args);};
+ globalThis.clearTimeout=function(...args){assert.equal(this,globalThis);return oldClear(...args);};
+ const replay=new Replay({load:async()=>data,ready:async()=>{},infer:async()=>({predicted_class:0})});
+ try{await replay.start();assert.equal(replay.cursor,1);replay.pause();}finally{globalThis.setTimeout=oldSet;globalThis.clearTimeout=oldClear;}
+});
 test('25bounded sequential observations contain five classes and exact payloads',async()=>{
  const f=fixture();await f.replay.start();for(let i=1;i<25;i++)await f.clock.advance(5000);
  assert.equal(f.calls.length,25);assert.equal(f.replay.cursor,25);assert.equal(f.states.at(-1).s,'completed');

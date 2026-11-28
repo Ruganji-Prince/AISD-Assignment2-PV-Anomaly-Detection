@@ -1,0 +1,518 @@
+{
+  "status": "PASS",
+  "browser_origin": "http://127.0.0.1:8080",
+  "API": "https://pv-anomaly-detection.wittygrass-37610045.francecentral.azurecontainerapps.io",
+  "health": {
+    "status": "ready",
+    "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+    "python_version": "3.14.10"
+  },
+  "manual_reference_cases": [
+    {
+      "reference_class": 0,
+      "input": {
+        "vdc1": 300.031,
+        "vdc2": 329.544,
+        "idc1": 0.2247,
+        "idc2": 0.1272
+      },
+      "HTTP": 200,
+      "verified_reference_fields": {
+        "predicted_class": 0,
+        "label": "normal",
+        "hardware_fault_class": false,
+        "environmental_shade": false,
+        "model_version": "archived-RF__E4-cf5d0ac4",
+        "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+        "range_warnings": []
+      }
+    },
+    {
+      "reference_class": 1,
+      "input": {
+        "vdc1": 256.461,
+        "vdc2": 208.699,
+        "idc1": 9.1373,
+        "idc2": 8.4463
+      },
+      "HTTP": 200,
+      "verified_reference_fields": {
+        "predicted_class": 1,
+        "label": "short circuit",
+        "hardware_fault_class": true,
+        "environmental_shade": false,
+        "model_version": "archived-RF__E4-cf5d0ac4",
+        "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+        "range_warnings": []
+      }
+    },
+    {
+      "reference_class": 2,
+      "input": {
+        "vdc1": 259.212,
+        "vdc2": 246.611,
+        "idc1": 9.0792,
+        "idc2": 8.3303
+      },
+      "HTTP": 200,
+      "verified_reference_fields": {
+        "predicted_class": 2,
+        "label": "resistive degradation",
+        "hardware_fault_class": true,
+        "environmental_shade": false,
+        "model_version": "archived-RF__E4-cf5d0ac4",
+        "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+        "range_warnings": []
+      }
+    },
+    {
+      "reference_class": 3,
+      "input": {
+        "vdc1": 262.91,
+        "vdc2": 0.8866,
+        "idc1": 8.9742,
+        "idc2": 0.0468
+      },
+      "HTTP": 200,
+      "verified_reference_fields": {
+        "predicted_class": 3,
+        "label": "open circuit",
+        "hardware_fault_class": true,
+        "environmental_shade": false,
+        "model_version": "archived-RF__E4-cf5d0ac4",
+        "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+        "range_warnings": []
+      }
+    },
+    {
+      "reference_class": 4,
+      "input": {
+        "vdc1": 334.823,
+        "vdc2": 335.877,
+        "idc1": 0.4303,
+        "idc2": 0.2274
+      },
+      "HTTP": 200,
+      "verified_reference_fields": {
+        "predicted_class": 4,
+        "label": "natural building shade",
+        "hardware_fault_class": false,
+        "environmental_shade": true,
+        "model_version": "archived-RF__E4-cf5d0ac4",
+        "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+        "range_warnings": []
+      }
+    }
+  ],
+  "automatic_observations": [
+    {
+      "position": 1,
+      "source_class": 1,
+      "predicted_class": 1,
+      "agrees": true,
+      "input": {
+        "vdc1": 263.341,
+        "vdc2": 204.286,
+        "idc1": 9.2173,
+        "idc2": 8.9151
+      }
+    },
+    {
+      "position": 2,
+      "source_class": 0,
+      "predicted_class": 0,
+      "agrees": true,
+      "input": {
+        "vdc1": 1.7618,
+        "vdc2": 2.4247,
+        "idc1": 0.0996,
+        "idc2": 0.0385
+      }
+    },
+    {
+      "position": 3,
+      "source_class": 2,
+      "predicted_class": 2,
+      "agrees": true,
+      "input": {
+        "vdc1": 254.584,
+        "vdc2": 236.121,
+        "idc1": 8.9037,
+        "idc2": 8.3712
+      }
+    },
+    {
+      "position": 4,
+      "source_class": 4,
+      "predicted_class": 4,
+      "agrees": true,
+      "input": {
+        "vdc1": 277.683,
+        "vdc2": 300.519,
+        "idc1": 4.6586,
+        "idc2": 2.5762
+      }
+    },
+    {
+      "position": 5,
+      "source_class": 3,
+      "predicted_class": 3,
+      "agrees": true,
+      "input": {
+        "vdc1": 265.33,
+        "vdc2": 2.177,
+        "idc1": 9.0215,
+        "idc2": 0.0478
+      }
+    },
+    {
+      "position": 6,
+      "source_class": 4,
+      "predicted_class": 4,
+      "agrees": true,
+      "input": {
+        "vdc1": 320.883,
+        "vdc2": 231.41,
+        "idc1": 0.3205,
+        "idc2": 6.5465
+      }
+    },
+    {
+      "position": 7,
+      "source_class": 2,
+      "predicted_class": 2,
+      "agrees": true,
+      "input": {
+        "vdc1": 266.988,
+        "vdc2": 336.269,
+        "idc1": 9.3458,
+        "idc2": 1.721
+      }
+    },
+    {
+      "position": 8,
+      "source_class": 1,
+      "predicted_class": 1,
+      "agrees": true,
+      "input": {
+        "vdc1": 259.683,
+        "vdc2": 194.657,
+        "idc1": 9.4236,
+        "idc2": 9.3334
+      }
+    },
+    {
+      "position": 9,
+      "source_class": 3,
+      "predicted_class": 3,
+      "agrees": true,
+      "input": {
+        "vdc1": 1.6622,
+        "vdc2": 267.642,
+        "idc1": 0.1074,
+        "idc2": 8.9771
+      }
+    },
+    {
+      "position": 10,
+      "source_class": 0,
+      "predicted_class": 4,
+      "agrees": false,
+      "input": {
+        "vdc1": 242.339,
+        "vdc2": 238.379,
+        "idc1": 1.6107,
+        "idc2": 1.4366
+      }
+    }
+  ],
+  "real_prediction_requests": [
+    {
+      "phase": "automatic",
+      "input": {
+        "vdc1": 263.341,
+        "vdc2": 204.286,
+        "idc1": 9.2173,
+        "idc2": 8.9151
+      },
+      "start_ms": 2793.1435,
+      "finish_ms": 3376.952
+    },
+    {
+      "phase": "automatic",
+      "input": {
+        "vdc1": 1.7618,
+        "vdc2": 2.4247,
+        "idc1": 0.0996,
+        "idc2": 0.0385
+      },
+      "start_ms": 8379.9215,
+      "finish_ms": 8883.8038
+    },
+    {
+      "phase": "automatic",
+      "input": {
+        "vdc1": 254.584,
+        "vdc2": 236.121,
+        "idc1": 8.9037,
+        "idc2": 8.3712
+      },
+      "start_ms": 13895.6104,
+      "finish_ms": 14242.1268
+    },
+    {
+      "phase": "automatic",
+      "input": {
+        "vdc1": 277.683,
+        "vdc2": 300.519,
+        "idc1": 4.6586,
+        "idc2": 2.5762
+      },
+      "start_ms": 19253.541,
+      "finish_ms": 19669.1288
+    },
+    {
+      "phase": "automatic",
+      "input": {
+        "vdc1": 265.33,
+        "vdc2": 2.177,
+        "idc1": 9.0215,
+        "idc2": 0.0478
+      },
+      "start_ms": 24677.8973,
+      "finish_ms": 25033.0511
+    },
+    {
+      "phase": "automatic",
+      "input": {
+        "vdc1": 320.883,
+        "vdc2": 231.41,
+        "idc1": 0.3205,
+        "idc2": 6.5465
+      },
+      "start_ms": 30043.9237,
+      "finish_ms": 30461.6375
+    },
+    {
+      "phase": "automatic",
+      "input": {
+        "vdc1": 266.988,
+        "vdc2": 336.269,
+        "idc1": 9.3458,
+        "idc2": 1.721
+      },
+      "start_ms": 35632.934,
+      "finish_ms": 35967.7542
+    },
+    {
+      "phase": "automatic",
+      "input": {
+        "vdc1": 259.683,
+        "vdc2": 194.657,
+        "idc1": 9.4236,
+        "idc2": 9.3334
+      },
+      "start_ms": 40984.9281,
+      "finish_ms": 41339.1898
+    },
+    {
+      "phase": "automatic",
+      "input": {
+        "vdc1": 1.6622,
+        "vdc2": 267.642,
+        "idc1": 0.1074,
+        "idc2": 8.9771
+      },
+      "start_ms": 46342.9033,
+      "finish_ms": 46773.672
+    },
+    {
+      "phase": "automatic",
+      "input": {
+        "vdc1": 242.339,
+        "vdc2": 238.379,
+        "idc1": 1.6107,
+        "idc2": 1.4366
+      },
+      "start_ms": 51791.8558,
+      "finish_ms": 52203.565
+    },
+    {
+      "phase": "restart",
+      "input": {
+        "vdc1": 263.341,
+        "vdc2": 204.286,
+        "idc1": 9.2173,
+        "idc2": 8.9151
+      },
+      "start_ms": 58595.5426,
+      "finish_ms": 58942.5273
+    },
+    {
+      "phase": "manual_outside",
+      "input": {
+        "vdc1": 1000,
+        "vdc2": 500,
+        "idc1": 20,
+        "idc2": 10
+      },
+      "start_ms": 64719.2139,
+      "finish_ms": 65125.7916
+    }
+  ],
+  "sequential": {
+    "maximum_active": 1,
+    "response_end_to_next_request_ms": [
+      5002.9695,
+      5011.8066,
+      5011.414200000001,
+      5008.768500000002,
+      5010.872599999999,
+      5171.2965,
+      5017.173899999994,
+      5003.713499999998,
+      5018.183799999999
+    ],
+    "timer_ms": 5000,
+    "measurement_tolerance_ms": 200
+  },
+  "pause_no_future_requests": true,
+  "restart_first_observation": true,
+  "simulated_hidden_tab_pauses": true,
+  "manual_outside_response": {
+    "predicted_class": 0,
+    "label": "normal",
+    "hardware_fault_class": false,
+    "environmental_shade": false,
+    "model_version": "archived-RF__E4-cf5d0ac4",
+    "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+    "range_warnings": [
+      "vdc1",
+      "vdc2",
+      "idc1",
+      "idc2"
+    ],
+    "fault_category": "normal",
+    "warnings": [
+      "vdc1 is outside the observed training range. This is not a certified operating limit.",
+      "vdc2 is outside the observed training range. This is not a certified operating limit.",
+      "idc1 is outside the observed training range. This is not a certified operating limit.",
+      "idc2 is outside the observed training range. This is not a certified operating limit."
+    ]
+  },
+  "controlled_failure": {
+    "method": "Browser abort and virtual-time startup expiry; no fabricated response",
+    "no_prediction": true
+  },
+  "manual_contrast_review": {
+    "method": "Computed foreground and opaque background, WCAG relative luminance; visually inspect screenshots; disabled controls excluded. No text-shadow credit.",
+    "former_white_over_unfilled_ratio": 1.102254937272669,
+    "former_dark_over_teal_ratio": 3.0948835768828067,
+    "final_bar_checks": [
+      {
+        "width": 1440,
+        "chart": "voltage-tab",
+        "element": "bar-value1",
+        "foreground": "rgb(16, 43, 63)",
+        "background": "rgb(255, 255, 255)",
+        "font_px": 15,
+        "font_weight": "700",
+        "text": "1000.00 V",
+        "ratio": 14.589829203082733,
+        "threshold": 4.5
+      },
+      {
+        "width": 1440,
+        "chart": "voltage-tab",
+        "element": "bar-value2",
+        "foreground": "rgb(16, 43, 63)",
+        "background": "rgb(255, 255, 255)",
+        "font_px": 15,
+        "font_weight": "700",
+        "text": "500.00 V",
+        "ratio": 14.589829203082733,
+        "threshold": 4.5
+      },
+      {
+        "width": 1440,
+        "chart": "current-tab",
+        "element": "bar-value1",
+        "foreground": "rgb(16, 43, 63)",
+        "background": "rgb(255, 255, 255)",
+        "font_px": 15,
+        "font_weight": "700",
+        "text": "20.000 A",
+        "ratio": 14.589829203082733,
+        "threshold": 4.5
+      },
+      {
+        "width": 1440,
+        "chart": "current-tab",
+        "element": "bar-value2",
+        "foreground": "rgb(16, 43, 63)",
+        "background": "rgb(255, 255, 255)",
+        "font_px": 15,
+        "font_weight": "700",
+        "text": "10.000 A",
+        "ratio": 14.589829203082733,
+        "threshold": 4.5
+      },
+      {
+        "width": 390,
+        "chart": "voltage-tab",
+        "element": "bar-value1",
+        "foreground": "rgb(16, 43, 63)",
+        "background": "rgb(255, 255, 255)",
+        "font_px": 13,
+        "font_weight": "700",
+        "text": "1000.00 V",
+        "ratio": 14.589829203082733,
+        "threshold": 4.5
+      },
+      {
+        "width": 390,
+        "chart": "voltage-tab",
+        "element": "bar-value2",
+        "foreground": "rgb(16, 43, 63)",
+        "background": "rgb(255, 255, 255)",
+        "font_px": 13,
+        "font_weight": "700",
+        "text": "500.00 V",
+        "ratio": 14.589829203082733,
+        "threshold": 4.5
+      },
+      {
+        "width": 390,
+        "chart": "current-tab",
+        "element": "bar-value1",
+        "foreground": "rgb(16, 43, 63)",
+        "background": "rgb(255, 255, 255)",
+        "font_px": 13,
+        "font_weight": "700",
+        "text": "20.000 A",
+        "ratio": 14.589829203082733,
+        "threshold": 4.5
+      },
+      {
+        "width": 390,
+        "chart": "current-tab",
+        "element": "bar-value2",
+        "foreground": "rgb(16, 43, 63)",
+        "background": "rgb(255, 255, 255)",
+        "font_px": 13,
+        "font_weight": "700",
+        "text": "10.000 A",
+        "ratio": 14.589829203082733,
+        "threshold": 4.5
+      }
+    ],
+    "limitations": "Sampled rendered states, not exhaustive assistive-technology certification."
+  },
+  "source": "Actual existing Azure model requests from an already-approved localhost origin; no mocked successful response. Historical fixtures are parity checks, not independent accuracy.",
+  "screenshots": [
+    "azure-manual-1440.png",
+    "azure-manual-390.png",
+    "azure-automatic-1440.png",
+    "azure-automatic-390.png"
+  ]
+}

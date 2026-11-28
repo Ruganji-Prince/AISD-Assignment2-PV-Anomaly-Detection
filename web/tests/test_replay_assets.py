@@ -9,7 +9,8 @@ from joblib import parallel_backend
 from src.inference.cli import load_model, SHA256
 
 ROOT=Path(__file__).resolve().parents[2]
-APPROVED_EXISTING_CHANGES={'web/static/index.html','web/static/app.js','web/static/api.js','web/static/style.css','frontend/build.py','deployment/decoupled/test_frontend.py'}
+# Step 4 explicitly authorizes both current README updates; scientific files remain protected.
+APPROVED_EXISTING_CHANGES={'README.md','web/README.md','web/static/index.html','web/static/app.js','web/static/api.js','web/static/style.css','frontend/build.py','deployment/decoupled/test_frontend.py'}
 
 class ReplayAssetsTests(unittest.TestCase):
     def test_scientific_files_and_original_replay_preserved(self):

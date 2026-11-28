@@ -1,0 +1,23 @@
+[
+  {
+    "command": "python -B -m unittest technical_evaluation.tests technical_evaluation.refinement.tests deployment.azure.test_context deployment.azure.test_deployment deployment.decoupled.test_backend deployment.decoupled.test_frontend",
+    "count": 29,
+    "status": "PASS"
+  },
+  {
+    "command": "python -B -m unittest discover -s web/tests",
+    "count": 18,
+    "status": "PASS"
+  },
+  {
+    "command": "python -B -m unittest discover -s tests",
+    "count": 6,
+    "status": "PASS"
+  },
+  {
+    "command": "node --test web/tests-browser/replay.test.mjs",
+    "count": 14,
+    "status": "PASS",
+    "scope": "Fake timers/mocked transport plus native browser timer-receiver regression."
+  }
+]

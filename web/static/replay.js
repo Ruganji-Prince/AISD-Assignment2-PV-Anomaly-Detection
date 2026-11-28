@@ -18,7 +18,7 @@ export async function loadReplay(signal){
  return validateReplay(await response.json());
 }
 export class Replay{
- constructor({load=loadReplay,ready,infer,onObservation=()=>{},onResult=()=>{},onState=()=>{},onCancel=()=>{},setTimer=setTimeout,clearTimer=clearTimeout,limit=25,delay=5000}){
+ constructor({load=loadReplay,ready,infer,onObservation=()=>{},onResult=()=>{},onState=()=>{},onCancel=()=>{},setTimer=(fn,ms)=>globalThis.setTimeout(fn,ms),clearTimer=id=>globalThis.clearTimeout(id),limit=25,delay=5000}){
   Object.assign(this,{load,ready,infer,onObservation,onResult,onState,onCancel,setTimer,clearTimer,limit,delay});
   this.cursor=0;this.generation=0;this.running=false;this.timer=null;this.controller=null;this.data=null;
  }
