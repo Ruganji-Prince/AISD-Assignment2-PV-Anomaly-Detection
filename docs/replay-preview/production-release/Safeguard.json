@@ -1,0 +1,7 @@
+{
+  "id": "prj_crdyiWPhHbKADgYXLtaSoTzAd2Ox",
+  "buildCommand": "echo 'Unverified source deployment blocked: use tested prebuilt static release' && exit 1",
+  "commandForIgnoringBuildStep": "exit 0",
+  "link": null,
+  "framework": null
+}

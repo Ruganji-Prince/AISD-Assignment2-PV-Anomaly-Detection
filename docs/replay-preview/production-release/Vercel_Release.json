@@ -1,0 +1,120 @@
+{
+  "production": {
+    "id": "dpl_2vL2km2fbH8GYrppVnXtXh3zysZG",
+    "name": "pv-anomaly-detection",
+    "url": "pv-anomaly-detection-400soh69p-prince-r-k.vercel.app",
+    "type": "LAMBDAS",
+    "state": "READY",
+    "createdAt": 1795879458682,
+    "creator": {
+      "uid": "9tjpxq8qvjxXeolotWx5SsFM",
+      "username": "ruganjiprince-6867"
+    },
+    "project": {
+      "id": "prj_crdyiWPhHbKADgYXLtaSoTzAd2Ox",
+      "name": "pv-anomaly-detection",
+      "framework": null
+    },
+    "meta": {
+      "githubCommitRef": "feature/train-class-measurement-ranges",
+      "githubCommitSha": "044be27c3d113b42bc075bccc013b6f92a3c1b7c",
+      "githubRepo": "AISD-Assignment2-PV-Anomaly-Detection",
+      "githubOrg": "Ruganji-Prince"
+    },
+    "alias": [
+      "pv-anomaly-detection-vert.vercel.app",
+      "pv-anomaly-detection-prince-r-k.vercel.app"
+    ],
+    "target": "production",
+    "regions": [
+      "iad1"
+    ],
+    "buildingAt": 1795879460722,
+    "ready": 1795879462697,
+    "readyState": "READY",
+    "source": "cli",
+    "aliasError": null
+  },
+  "rollback": {
+    "id": "dpl_EobcLSoR4iY4NSXYn5jxNCX5jvba",
+    "name": "pv-anomaly-detection",
+    "url": "pv-anomaly-detection-231o7tyw5-prince-r-k.vercel.app",
+    "type": "LAMBDAS",
+    "state": "READY",
+    "createdAt": 1795848158801,
+    "creator": {
+      "uid": "9tjpxq8qvjxXeolotWx5SsFM",
+      "username": "ruganjiprince-6867"
+    },
+    "project": {
+      "id": "prj_crdyiWPhHbKADgYXLtaSoTzAd2Ox",
+      "name": "pv-anomaly-detection",
+      "framework": null
+    },
+    "meta": {},
+    "alias": [],
+    "target": "production",
+    "regions": [
+      "iad1"
+    ],
+    "buildingAt": 1795848158801,
+    "ready": 1795848158801,
+    "readyState": "READY",
+    "source": "cli",
+    "aliasError": null
+  },
+  "inventory": {
+    "files": [
+      {
+        "path": "src/.vercel/output/config.json",
+        "uid": "dd5204c65667fae5acc537672e8c411e54c482b6"
+      },
+      {
+        "path": "src/.vercel/output/static/assets/api.js",
+        "uid": "624166c1817f39532c5fd25398c110c82e41e341"
+      },
+      {
+        "path": "src/.vercel/output/static/assets/app.js",
+        "uid": "d1c8a0041ea74e6ac08cf35927130e4768612dbb"
+      },
+      {
+        "path": "src/.vercel/output/static/assets/explanations.js",
+        "uid": "b92051fd803c70e666ffd5adfd33b476898c6be1"
+      },
+      {
+        "path": "src/.vercel/output/static/assets/favicon.svg",
+        "uid": "da1fc254f7ecb3f178231b3b06c24ffae0f305eb"
+      },
+      {
+        "path": "src/.vercel/output/static/assets/replay.js",
+        "uid": "58a7176481cb697627f5ebb62a895d2fe6812a36"
+      },
+      {
+        "path": "src/.vercel/output/static/assets/scenarios.js",
+        "uid": "5ef0aa2d6673bfabb2afcd038f430ea925d4a138"
+      },
+      {
+        "path": "src/.vercel/output/static/assets/style.css",
+        "uid": "b79311b06be123df5caf4f7beb7b4ea41698c61c"
+      },
+      {
+        "path": "src/.vercel/output/static/config.js",
+        "uid": "0a093762e3df0b95643b8c52f67dbea1d3288d11"
+      },
+      {
+        "path": "src/.vercel/output/static/data/pv_historical_replay.json",
+        "uid": "d0008d952f298065f2cb088e7945b2da540abaa7"
+      },
+      {
+        "path": "src/.vercel/output/static/index.html",
+        "uid": "41dc8c0454e34487c4d20e3f18fda3bdfaefa385"
+      }
+    ],
+    "context": {
+      "totalFiles": 11,
+      "returnedFiles": 11,
+      "truncated": false
+    }
+  },
+  "exact_preview_file_identifiers": true
+}

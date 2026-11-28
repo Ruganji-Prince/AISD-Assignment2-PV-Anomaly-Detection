@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "configuration_identical": true,
+  "template_identical": true,
+  "revision": "pv-anomaly-detection--cors-replay-20261128",
+  "no_Azure_mutation_performed": true
+}

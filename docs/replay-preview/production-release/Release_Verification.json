@@ -1,0 +1,30 @@
+{
+  "status": "PRODUCTION_VERIFIED",
+  "production": "https://pv-anomaly-detection-prince-r-k.vercel.app",
+  "deployment_id": "dpl_2vL2km2fbH8GYrppVnXtXh3zysZG",
+  "rollback_deployment_id": "dpl_EobcLSoR4iY4NSXYn5jxNCX5jvba",
+  "approved_feature_commit": "12700e78d742442ac535323611958227f2873032",
+  "main_before": "d007880c89a0312dbdf540678e9c8bf4cec3216e",
+  "merge_commit": "b6702e4ae01ffb0c3868e22ee7987c777e4660d2",
+  "manual_classes_pass": 5,
+  "replay_observations_pass": 25,
+  "visible_disagreements": 4,
+  "maximum_replay_concurrency": 1,
+  "response_to_next_request_ms": {
+    "min": 5001.742599999998,
+    "max": 5176.146500000003
+  },
+  "total_Azure_prediction_requests": 39,
+  "python_tests_pass": 53,
+  "node_tests_pass": 14,
+  "critical_failures": 0,
+  "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+  "Azure_changes": false,
+  "new_resources": false,
+  "test_limitations": [
+    "Historically inspected TEST fixtures are parity checks only.",
+    "Selected TRAIN replay is not independent accuracy.",
+    "Hidden-tab/failure assertions include controlled browser simulations.",
+    "Accessibility remains a sampled audit; unchanged static assets inherit Step 5 local axe and computed-contrast evidence."
+  ]
+}

@@ -2,13 +2,13 @@
 
 **Public application: [https://pv-anomaly-detection-prince-r-k.vercel.app](https://pv-anomaly-detection-prince-r-k.vercel.app)**
 
-The canonical production application remains the previously verified static frontend. The new feature-branch preview is subject to the separate connectivity status below.
+The canonical production application serves the verified static frontend with manual inference and bounded historical TRAIN replay. Predictions are obtained directly from the unchanged Azure backend.
 
 A responsive four-step application backed by FastAPI and the original fitted Random Forest E4 pipeline. No model fitting, replacement, confidence percentage or probability calibration is performed. Natural building shade is an environmental condition, not a hardware-failure class.
 
-## Historical replay and manual inference — feature-branch candidate
+## Historical replay and manual inference — production
 
-**Step 4: [public static preview](https://pv-anomaly-detection-8u71v1zjs-prince-r-k.vercel.app) is READY. Browser-to-Azure inference on that hostname is BLOCKED by CORS; production promotion is NO-GO. Both modes passed genuine Azure checks from the already-approved localhost origin. Production is unchanged.** Publication evidence will be recorded in [preview verification](../docs/replay-preview/README.md).
+**Production release: Manual Inference and Automatic Monitoring Demo are live on the [canonical application](https://pv-anomaly-detection-prince-r-k.vercel.app), using genuine Azure RF E4 inference.** All five reference classes and the bounded historical replay passed production verification. See the [release evidence and rollback instructions](../docs/replay-preview/production-release/README.md).
 
 **Manual Inference** is selected by default. Enter four finite nonnegative measurements, optionally load any of the 150 recorded TRAIN examples, then press **Run model inference**. Loading an example fills inputs only; it never runs or supplies a prediction. Actual returned classes, physical-category explanations, charts and out-of-training-range warnings are displayed separately from the recorded source label.
 

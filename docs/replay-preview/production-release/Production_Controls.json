@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "actual_Azure_requests": 2,
+  "pause_stops_future_requests": true,
+  "restart_first_observation": true,
+  "manual_mode_stops_future_requests": true,
+  "native_wait_ms": 5500
+}

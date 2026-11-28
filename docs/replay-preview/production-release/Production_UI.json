@@ -1,0 +1,298 @@
+{
+  "status": "PASS",
+  "URL": "https://pv-anomaly-detection-prince-r-k.vercel.app",
+  "health": {
+    "status": "ready",
+    "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+    "python_version": "3.14.10"
+  },
+  "manual_reference_cases": [
+    {
+      "reference_class": 0,
+      "input": {
+        "vdc1": 300.031,
+        "vdc2": 329.544,
+        "idc1": 0.2247,
+        "idc2": 0.1272
+      },
+      "HTTP": 200,
+      "response": {
+        "predicted_class": 0,
+        "label": "normal",
+        "hardware_fault_class": false,
+        "environmental_shade": false,
+        "model_version": "archived-RF__E4-cf5d0ac4",
+        "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+        "range_warnings": [],
+        "fault_category": "normal",
+        "warnings": []
+      },
+      "displayed": {
+        "expected": {
+          "category": "Normal operation",
+          "symbol": "check",
+          "meaning": "These measurements appear consistent with the model's learned normal operating patterns.",
+          "cause": "Similar channel conditions can occur during normal generation. A normal prediction does not establish that every component is healthy.",
+          "check": "Continue routine monitoring and compare with expected site performance."
+        },
+        "actual": {
+          "category": "Normal operation",
+          "meaning": "These measurements appear consistent with the model's learned normal operating patterns.",
+          "cause": "Similar channel conditions can occur during normal generation. A normal prediction does not establish that every component is healthy.",
+          "check": "Continue routine monitoring and compare with expected site performance."
+        }
+      }
+    },
+    {
+      "reference_class": 1,
+      "input": {
+        "vdc1": 256.461,
+        "vdc2": 208.699,
+        "idc1": 9.1373,
+        "idc2": 8.4463
+      },
+      "HTTP": 200,
+      "response": {
+        "predicted_class": 1,
+        "label": "short circuit",
+        "hardware_fault_class": true,
+        "environmental_shade": false,
+        "model_version": "archived-RF__E4-cf5d0ac4",
+        "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+        "range_warnings": [],
+        "fault_category": "hardware_fault",
+        "warnings": []
+      },
+      "displayed": {
+        "expected": {
+          "category": "Hardware-fault class",
+          "symbol": "bolt",
+          "meaning": "The model detected a pattern associated with short-circuit faults. This is a prediction, not a confirmed diagnosis.",
+          "cause": "Insulation damage or an unintended electrical connection may create a short circuit. The model has not identified the actual cause.",
+          "check": "Arrange qualified electrical inspection. Do not open or test energized PV equipment."
+        },
+        "actual": {
+          "category": "Hardware-fault class",
+          "meaning": "The model detected a pattern associated with short-circuit faults. This is a prediction, not a confirmed diagnosis.",
+          "cause": "Insulation damage or an unintended electrical connection may create a short circuit. The model has not identified the actual cause.",
+          "check": "Arrange qualified electrical inspection. Do not open or test energized PV equipment."
+        }
+      }
+    },
+    {
+      "reference_class": 2,
+      "input": {
+        "vdc1": 259.212,
+        "vdc2": 246.611,
+        "idc1": 9.0792,
+        "idc2": 8.3303
+      },
+      "HTTP": 200,
+      "response": {
+        "predicted_class": 2,
+        "label": "resistive degradation",
+        "hardware_fault_class": true,
+        "environmental_shade": false,
+        "model_version": "archived-RF__E4-cf5d0ac4",
+        "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+        "range_warnings": [],
+        "fault_category": "hardware_fault",
+        "warnings": []
+      },
+      "displayed": {
+        "expected": {
+          "category": "Hardware-fault class",
+          "symbol": "resistance",
+          "meaning": "The model detected a pattern associated with increased electrical resistance or degraded performance.",
+          "cause": "Loose, corroded or degraded connections can contribute to increased resistance. Other operating conditions may produce similar measurements.",
+          "check": "Ask a qualified professional to inspect connections and review system performance."
+        },
+        "actual": {
+          "category": "Hardware-fault class",
+          "meaning": "The model detected a pattern associated with increased electrical resistance or degraded performance.",
+          "cause": "Loose, corroded or degraded connections can contribute to increased resistance. Other operating conditions may produce similar measurements.",
+          "check": "Ask a qualified professional to inspect connections and review system performance."
+        }
+      }
+    },
+    {
+      "reference_class": 3,
+      "input": {
+        "vdc1": 262.91,
+        "vdc2": 0.8866,
+        "idc1": 8.9742,
+        "idc2": 0.0468
+      },
+      "HTTP": 200,
+      "response": {
+        "predicted_class": 3,
+        "label": "open circuit",
+        "hardware_fault_class": true,
+        "environmental_shade": false,
+        "model_version": "archived-RF__E4-cf5d0ac4",
+        "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+        "range_warnings": [],
+        "fault_category": "hardware_fault",
+        "warnings": []
+      },
+      "displayed": {
+        "expected": {
+          "category": "Hardware-fault class",
+          "symbol": "disconnect",
+          "meaning": "The model detected a pattern associated with an interrupted electrical path. Physical confirmation is still required.",
+          "cause": "A disconnected or damaged conductor, connector or protective component may interrupt current. The actual cause is not established.",
+          "check": "Arrange wiring and connection checks through qualified, appropriately isolated electrical procedures."
+        },
+        "actual": {
+          "category": "Hardware-fault class",
+          "meaning": "The model detected a pattern associated with an interrupted electrical path. Physical confirmation is still required.",
+          "cause": "A disconnected or damaged conductor, connector or protective component may interrupt current. The actual cause is not established.",
+          "check": "Arrange wiring and connection checks through qualified, appropriately isolated electrical procedures."
+        }
+      }
+    },
+    {
+      "reference_class": 4,
+      "input": {
+        "vdc1": 334.823,
+        "vdc2": 335.877,
+        "idc1": 0.4303,
+        "idc2": 0.2274
+      },
+      "HTTP": 200,
+      "response": {
+        "predicted_class": 4,
+        "label": "natural building shade",
+        "hardware_fault_class": false,
+        "environmental_shade": true,
+        "model_version": "archived-RF__E4-cf5d0ac4",
+        "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+        "range_warnings": [],
+        "fault_category": "environmental_condition",
+        "warnings": []
+      },
+      "displayed": {
+        "expected": {
+          "category": "Environmental effect",
+          "symbol": "shade",
+          "meaning": "The model detected a pattern associated with natural building shade. Shade is not automatically an equipment failure.",
+          "cause": "Reduced or uneven sunlight can change PV output without damaged equipment. Nearby buildings or other obstructions may contribute.",
+          "check": "Review visible shading and compare output under different sunlight conditions. Seek qualified assessment if unexplained changes persist."
+        },
+        "actual": {
+          "category": "Environmental effect",
+          "meaning": "The model detected a pattern associated with natural building shade. Shade is not automatically an equipment failure.",
+          "cause": "Reduced or uneven sunlight can change PV output without damaged equipment. Nearby buildings or other obstructions may contribute.",
+          "check": "Review visible shading and compare output under different sunlight conditions. Seek qualified assessment if unexplained changes persist."
+        }
+      }
+    }
+  ],
+  "four_steps": true,
+  "responsive_widths": [
+    320,
+    390,
+    768,
+    1440
+  ],
+  "accessibility": [
+    {
+      "width": 320,
+      "step": 0,
+      "visible": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "width": 320,
+      "step": 1,
+      "visible": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "width": 320,
+      "step": 2,
+      "visible": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "width": 320,
+      "step": 3,
+      "visible": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "width": 390,
+      "step": 0,
+      "visible": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "width": 390,
+      "step": 1,
+      "visible": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "width": 390,
+      "step": 2,
+      "visible": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "width": 390,
+      "step": 3,
+      "visible": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "width": 768,
+      "step": 0,
+      "visible": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "width": 768,
+      "step": 1,
+      "visible": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "width": 768,
+      "step": 2,
+      "visible": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "width": 768,
+      "step": 3,
+      "visible": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "width": 1440,
+      "step": 0,
+      "visible": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "width": 1440,
+      "step": 1,
+      "visible": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "width": 1440,
+      "step": 2,
+      "visible": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "width": 1440,
+      "step": 3,
+      "visible": true,
+      "no_horizontal_overflow": true
+    }
+  ],
+  "accessibility_method": "Live layout/navigation and rendered content checks; axe WCAG audit on byte-identical local build. Live CSP blocks inline axe injection and was preserved.",
+  "page_errors": []
+}
