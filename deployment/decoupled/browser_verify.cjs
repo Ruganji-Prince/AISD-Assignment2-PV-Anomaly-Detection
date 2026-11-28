@@ -9,7 +9,7 @@ const records=[];
  page.on('pageerror',error=>errors.push(error.message));let requests=[];
  page.on('request',r=>{if(r.url().includes('/api/'))requests.push({url:r.url(),method:r.method()});});
  await page.addInitScript(()=>{window.pvServiceTimes={};new MutationObserver(()=>{const node=document.getElementById('service-status');const state=node?.dataset.state;if(state&&window.pvServiceTimes[state]===undefined)window.pvServiceTimes[state]=performance.now();}).observe(document,{subtree:true,attributes:true,childList:true});});
- const response=await page.goto(base,{waitUntil:'domcontentloaded'});assert.equal(response.status(),200);
+ const response=await page.goto(base,{waitUntil:'domcontentloaded',timeout:120000});assert.equal(response.status(),200);
  await page.locator('#service-status').filter({hasText:'Model ready'}).waitFor({timeout:130000});
  const pageTiming=await page.evaluate(()=>({navigation:Object.fromEntries(["name", "startTime", "duration", "nextHopProtocol", "fetchStart", "domainLookupStart", "domainLookupEnd", "connectStart", "connectEnd", "requestStart", "responseStart", "responseEnd", "domContentLoadedEventEnd", "loadEventEnd", "responseStatus", "decodedBodySize"].map(k=>[k,performance.getEntriesByType('navigation')[0][k]])),service:window.pvServiceTimes}));
  async function go(k){await page.click('#step-tab-'+k);await page.waitForFunction(k=>!document.getElementById('step-'+k).hidden&&document.getElementById('step-'+k).getAnimations().length===0,k);}
@@ -43,17 +43,17 @@ const records=[];
  // Explicitly simulated startup failure, advanced with virtual time; Azure remains running.
  const failure=await context.newPage();await failure.clock.install();let blockedHealth=0;
  await failure.route(api+'/**',route=>{if(route.request().url().endsWith('/api/health'))blockedHealth++;return route.abort('failed');});
- await failure.goto(base,{waitUntil:'domcontentloaded'});await failure.clock.fastForward(121000);await failure.locator('#service-status').filter({hasText:'unavailable'}).waitFor({timeout:10000});
+ await failure.goto(base,{waitUntil:'domcontentloaded',timeout:120000});await failure.clock.fastForward(121000);await failure.locator('#service-status').filter({hasText:'unavailable'}).waitFor({timeout:10000});
  const terminalCount=blockedHealth;await failure.clock.fastForward(300000);assert.equal(blockedHealth,terminalCount);assert(terminalCount<=61);assert.equal(await failure.locator('#service-retry').isVisible(),true);await failure.close();
  // A held browser request expires at the distinct inference deadline; no backend shutdown.
- const timeoutPage=await context.newPage();await timeoutPage.clock.install();await timeoutPage.goto(base,{waitUntil:'domcontentloaded'});await timeoutPage.locator('#service-status').filter({hasText:'Model ready'}).waitFor({timeout:130000});
+ const timeoutPage=await context.newPage();await timeoutPage.clock.install();await timeoutPage.goto(base,{waitUntil:'domcontentloaded',timeout:120000});await timeoutPage.locator('#service-status').filter({hasText:'Model ready'}).waitFor({timeout:130000});
  let releaseTimeout;const timeoutStarted=timeoutPage.waitForRequest(r=>r.url()===api+'/api/predict'&&r.method()==='POST');
  await timeoutPage.route(api+'/api/predict',async route=>{await new Promise(resolve=>{releaseTimeout=resolve;});try{await route.abort('failed');}catch{}});
  await timeoutPage.click('#predict-button');await timeoutStarted;await timeoutPage.clock.fastForward(61000);
  await timeoutPage.locator('#form-error').filter({hasText:'timed out'}).waitFor({timeout:10000});assert.equal(await timeoutPage.$eval('#result-content',node=>node.hidden),true);releaseTimeout();await timeoutPage.close();
  // Delayed real health checks show starting state without changing the backend.
  const starting=await context.newPage();await starting.setViewportSize({width:320,height:844});await starting.route(api+'/api/health',async route=>{await new Promise(r=>setTimeout(r,2500));await route.continue();});
- await starting.goto(base,{waitUntil:'domcontentloaded'});await starting.locator('#service-status').filter({hasText:'Starting cloud'}).waitFor({timeout:10000});
+ await starting.goto(base,{waitUntil:'domcontentloaded',timeout:120000});await starting.locator('#service-status').filter({hasText:'Starting cloud'}).waitFor({timeout:10000});
  assert((await starting.evaluate(()=>document.documentElement.scrollWidth))<=320);await starting.locator('#service-status').filter({hasText:'Model ready'}).waitFor({timeout:130000});await starting.close();
  // Browser-origin benchmark: actual cross-origin JSON calls, no Python/Vercel inference proxy.
  const bench=await page.evaluate(async({api,input})=>{const rows=[];for(let i=0;i<15;i++){const started=performance.now();const r=await fetch(api+'/api/predict',{method:'POST',credentials:'omit',headers:{'Content-Type':'application/json'},body:JSON.stringify(input)});const result=await r.json();rows.push({request:i,HTTP:r.status,predicted_class:result.predicted_class,API_round_trip_ms:performance.now()-started,Server_Timing:r.headers.get('server-timing'),Azure_instance:r.headers.get('x-pv-instance'),model_sha256:result.model_sha256});}return rows;},{api,input:cases[0].input});

@@ -1,58 +1,58 @@
-name: Verify and publish decoupled Azure backend
+name: Verify and publish Azure backend identity
 on:
   workflow_dispatch:
-  push:
-    branches: [engineering/decoupled-20261127]
-    paths:
-      - .github/workflows/decoupled-container.yml
-      - deployment/decoupled/Dockerfile
-      - deployment/decoupled/prepare_context.py
-      - web/azure_app.py
-      - web/static/api.js
-      - web/static/app.js
-      - web/static/index.html
 permissions:
   contents: read
   packages: write
 concurrency:
-  group: decoupled-container-publication
+  group: azure-backend-identity-publication
   cancel-in-progress: false
 jobs:
-  publish:
+  verify-publish:
     if: github.repository == 'Ruganji-Prince/AISD-Assignment2-PV-Anomaly-Detection'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     env:
       IMAGE: ghcr.io/ruganji-prince/pv-anomaly-detection
+      SOURCE_COMMIT: 6cf6e8a216d3828ee8ebe005efa6a220e79a31b4
+      PV_FRONTEND_ORIGINS: '["https://pv-anomaly-detection-prince-r-k.vercel.app","https://pv-anomaly-detection-vert.vercel.app","https://pv-anomaly-detection-pbyhom77a-prince-r-k.vercel.app","http://localhost:8080","http://127.0.0.1:8080","https://pv-anomaly-detection-h8tneats1-prince-r-k.vercel.app"]'
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           persist-credentials: false
-      - name: Test allowlist safety and prepare committed-blob context
+          fetch-depth: 0
+      - name: Prepare exact approved committed runtime
         run: |
+          set -eu
+          git show "$SOURCE_COMMIT:web/tests/test_backend_identity.py" > "$RUNNER_TEMP/test_backend_identity.py"
           python3 -B -m unittest deployment.azure.test_context -v
-          python3 -B -m deployment.decoupled.prepare_context "$RUNNER_TEMP/pv-runtime" --revision "$GITHUB_SHA" --manifest "$RUNNER_TEMP/context-manifest.json"
+          python3 -B -m deployment.decoupled.prepare_context "$RUNNER_TEMP/pv-runtime" --revision "$SOURCE_COMMIT" --manifest "$RUNNER_TEMP/context-manifest.json"
           cat "$RUNNER_TEMP/context-manifest.json"
-      - name: Build original Dockerfile using only allowlisted runtime files
+      - name: Build unchanged Dockerfile and pinned dependencies
         run: |
-          started=$(date +%s)
-          docker build --platform linux/amd64 --build-arg PYTHON_VERSION=3.14.10             --label "org.opencontainers.image.source=https://github.com/$GITHUB_REPOSITORY"             --label "org.opencontainers.image.revision=$GITHUB_SHA"             --label "org.opencontainers.image.description=Original RF E4 PV inference runtime; Azure provisioning pending"             -t "$IMAGE:sha-$GITHUB_SHA" "$RUNNER_TEMP/pv-runtime"
-          echo "BUILD_SECONDS=$(($(date +%s)-started))" >> "$GITHUB_ENV"
-      - name: Inspect every layer and verify at 0.5 CPU and 1 GiB before publication
+          docker build --platform linux/amd64 --build-arg PYTHON_VERSION=3.14.10             --label "org.opencontainers.image.source=https://github.com/$GITHUB_REPOSITORY"             --label "org.opencontainers.image.revision=$SOURCE_COMMIT"             --label "org.opencontainers.image.description=Original RF E4 with Azure API information landing page"             -t "$IMAGE:sha-$SOURCE_COMMIT" "$RUNNER_TEMP/pv-runtime"
+      - name: Linux integrity parity validation and security checks
         run: |
-          python3 -B -m deployment.azure.verify_image --image "$IMAGE:sha-$GITHUB_SHA" --manifest "$RUNNER_TEMP/context-manifest.json" --output "$RUNNER_TEMP/container-verification.json" --asgi-app web.azure_app:app
-      - name: Run existing original Docker verification
-        run: python3 technical_evaluation/refinement/container_verify.py --python-version 3.14.10
-      - name: Publish verified container using ephemeral workflow credentials
+          python3 -B -m deployment.azure.verify_image --image "$IMAGE:sha-$SOURCE_COMMIT" --manifest "$RUNNER_TEMP/context-manifest.json" --output "$RUNNER_TEMP/container-verification.json" --asgi-app web.azure_app:app
+      - name: Azure identity and all six CORS origins inside Linux image
+        run: |
+          set -eu
+          docker run -d --read-only --tmpfs /tmp:rw,size=64m --cpus 0.5 --memory 1g --memory-swap 1g -e PYTHONDONTWRITEBYTECODE=1 -e PV_FRONTEND_ORIGINS -p 127.0.0.1:8768:8000 --name pv-identity-check "$IMAGE:sha-$SOURCE_COMMIT"
+          trap 'docker logs pv-identity-check; docker rm -f pv-identity-check' EXIT
+          python3 -B deployment/azure_identity/verify_linux_http.py
+          echo "PV_IDENTITY_LINUX_TESTS=PASS"
+      - name: Existing original Docker regression
+        run: python3 -B deployment/azure_identity/run_original_container_checks.py --python-version 3.14.10
+      - name: Publish only after all verification succeeds
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          set -eu
           printf '%s' "$GH_TOKEN" | docker login ghcr.io --username "$GITHUB_ACTOR" --password-stdin
           trap 'docker logout ghcr.io >/dev/null 2>&1' EXIT
-          docker push "$IMAGE:sha-$GITHUB_SHA"
-          digest=$(docker image inspect "$IMAGE:sha-$GITHUB_SHA" --format '{{index .RepoDigests 0}}')
-          echo "PV_GHCR_IMAGE=$digest"
-          echo "PV_CONTAINER_BUILD_SECONDS=$BUILD_SECONDS"
+          docker push "$IMAGE:sha-$SOURCE_COMMIT"
+          digest=$(docker image inspect "$IMAGE:sha-$SOURCE_COMMIT" --format '{{index .RepoDigests 0}}')
           python3 -B -m deployment.azure.verify_registry --image "$digest" --output "$RUNNER_TEMP/registry-verification.json"
-          echo "Verified original-model container: $digest" >> "$GITHUB_STEP_SUMMARY"
-          echo "Azure resources were not created. Separate provisioning approval remains required." >> "$GITHUB_STEP_SUMMARY"
+          echo "PV_IDENTITY_IMAGE=$digest"
+          echo "Verified immutable image: $digest" >> "$GITHUB_STEP_SUMMARY"
+          echo "Application source: $SOURCE_COMMIT. No Azure or Vercel configuration was changed by this workflow." >> "$GITHUB_STEP_SUMMARY"

@@ -1,0 +1,90 @@
+{
+  "status": "VERIFIED",
+  "git_commit": "fe3f5d2b0362ca028599935cb6b71bd2f58fa363",
+  "runner": "Standard ubuntu-latest public-repository runner",
+  "image_id": "sha256:182dd15646a906ee7a4055d9d729975fb397d9d8437851b87df5c88e1b315bed",
+  "image_bytes": 157925545,
+  "build_seconds": 0.7306656699999934,
+  "startup_to_ready_seconds": 2.2283341540000094,
+  "nonroot_uid": 1000,
+  "read_only_root": true,
+  "health": {
+    "status": "ready",
+    "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb",
+    "python_version": "3.14.10"
+  },
+  "runtime": {
+    "python": "3.14.10",
+    "platform": "Linux-7.0.0-1020-azure-x86_64-with-glibc2.41",
+    "packages": {
+      "numpy": "2.5.4",
+      "pandas": "3.0.6",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "fastapi": "0.163.1"
+    }
+  },
+  "reference_cases": [
+    {
+      "case": 0,
+      "container_API": 0,
+      "container_CLI": 0,
+      "Azure_API": 0
+    },
+    {
+      "case": 1,
+      "container_API": 1,
+      "container_CLI": 1,
+      "Azure_API": 1
+    },
+    {
+      "case": 2,
+      "container_API": 2,
+      "container_CLI": 2,
+      "Azure_API": 2
+    },
+    {
+      "case": 3,
+      "container_API": 3,
+      "container_CLI": 3,
+      "Azure_API": 3
+    },
+    {
+      "case": 4,
+      "container_API": 4,
+      "container_CLI": 4,
+      "Azure_API": 4
+    }
+  ],
+  "TRAIN_probability_parity": {
+    "N": 200,
+    "max_probability_difference": 2.220446049250313e-16
+  },
+  "invalid_checks": [
+    {
+      "case": "missing",
+      "status": 422
+    },
+    {
+      "case": "extra",
+      "status": 422
+    },
+    {
+      "case": "negative",
+      "status": 422
+    },
+    {
+      "case": "nonfinite",
+      "status": 422
+    },
+    {
+      "case": "duplicate",
+      "status": 422
+    },
+    {
+      "case": "oversize",
+      "status": 413
+    }
+  ],
+  "model_artifact_unchanged": true
+}

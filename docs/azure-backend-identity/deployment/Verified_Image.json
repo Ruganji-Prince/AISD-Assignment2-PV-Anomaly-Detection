@@ -1,0 +1,12 @@
+{
+  "Linux_workflow_conclusion": "success",
+  "workflow_url": "https://github.com/Ruganji-Prince/AISD-Assignment2-PV-Anomaly-Detection/actions/runs/46049197680",
+  "workflow_commit": "fe3f5d2b0362ca028599935cb6b71bd2f58fa363",
+  "application_source": "6cf6e8a216d3828ee8ebe005efa6a220e79a31b4",
+  "immutable_image": "ghcr.io/ruganji-prince/pv-anomaly-detection@sha256:8c233e77ec370131f44670fcaf812a5aa27a79f7ca56bb8b7eff1beebc9cd946",
+  "Linux_platform": "linux/amd64",
+  "five_class_parity": true,
+  "all_six_CORS_origins": true,
+  "validation_and_security": true,
+  "public_registry_verification": "VERIFIED"
+}

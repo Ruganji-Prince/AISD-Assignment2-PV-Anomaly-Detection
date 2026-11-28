@@ -1,0 +1,65 @@
+{
+  "status": "PASS",
+  "Vercel_deployments_unchanged": [
+    {
+      "url": "https://pv-anomaly-detection-prince-r-k.vercel.app",
+      "id": "dpl_H77uanaDrGutfBv5vJkb5825u3Gi",
+      "READY": true
+    },
+    {
+      "url": "https://pv-anomaly-detection-h8tneats1-prince-r-k.vercel.app",
+      "id": "dpl_9os2KxznDBHrRBFBKNTYmbeBh2VC",
+      "READY": true
+    }
+  ],
+  "Azure_revision_unchanged": "pv-anomaly-detection--cors-design-h8tneats1",
+  "Azure_image_unchanged": "ghcr.io/ruganji-prince/pv-anomaly-detection@sha256:234cba831be3b1465a8447c16922602dc54f5f0dcb3a86cc5b465c0890e5023f",
+  "Azure_resources_unchanged": {
+    "cpu": 0.5,
+    "ephemeralStorage": "2Gi",
+    "memory": "1Gi"
+  },
+  "Azure_scale_limits_unchanged": {
+    "min": 0,
+    "max": 1
+  },
+  "all_six_origins_preserved": [
+    "https://pv-anomaly-detection-prince-r-k.vercel.app",
+    "https://pv-anomaly-detection-vert.vercel.app",
+    "https://pv-anomaly-detection-pbyhom77a-prince-r-k.vercel.app",
+    "http://localhost:8080",
+    "http://127.0.0.1:8080",
+    "https://pv-anomaly-detection-h8tneats1-prince-r-k.vercel.app"
+  ],
+  "both_Vercel_origin_preflights_pass": true,
+  "five_candidate_vs_live_predictions": [
+    {
+      "class": 0,
+      "local_candidate_equals_live_Azure": true,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb"
+    },
+    {
+      "class": 1,
+      "local_candidate_equals_live_Azure": true,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb"
+    },
+    {
+      "class": 2,
+      "local_candidate_equals_live_Azure": true,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb"
+    },
+    {
+      "class": 3,
+      "local_candidate_equals_live_Azure": true,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb"
+    },
+    {
+      "class": 4,
+      "local_candidate_equals_live_Azure": true,
+      "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb"
+    }
+  ],
+  "live_Azure_root_still_original_dashboard": true,
+  "Git_main_frontend_design_and_tag_unchanged": true,
+  "no_cloud_mutation": true
+}

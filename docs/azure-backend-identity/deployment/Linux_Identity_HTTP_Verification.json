@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "scope": "Actual Linux image HTTP; no optional TestClient dependency or runtime package changes",
+  "root_identity": true,
+  "asset_routes": true,
+  "security_headers": true,
+  "docs_remain_disabled": true,
+  "five_classes": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "CORS": [
+    {
+      "origin": "https://pv-anomaly-detection-prince-r-k.vercel.app",
+      "HTTP": 200
+    },
+    {
+      "origin": "https://pv-anomaly-detection-vert.vercel.app",
+      "HTTP": 200
+    },
+    {
+      "origin": "https://pv-anomaly-detection-pbyhom77a-prince-r-k.vercel.app",
+      "HTTP": 200
+    },
+    {
+      "origin": "http://localhost:8080",
+      "HTTP": 200
+    },
+    {
+      "origin": "http://127.0.0.1:8080",
+      "HTTP": 200
+    },
+    {
+      "origin": "https://pv-anomaly-detection-h8tneats1-prince-r-k.vercel.app",
+      "HTTP": 200
+    },
+    {
+      "origin": "https://unrelated.invalid",
+      "HTTP": 400
+    }
+  ],
+  "invalid_payloads_rejected": [
+    "missing",
+    "target",
+    "negative",
+    "boolean",
+    "duplicate",
+    "nonfinite",
+    "oversize"
+  ],
+  "model_sha256": "55b0e94d86f548b14444182de977f521e4ab79e7d92b339190b45ed23bd5ccdb"
+}

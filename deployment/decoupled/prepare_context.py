@@ -11,7 +11,7 @@ def prepare(destination,revision="HEAD"):
     destination=Path(destination)
     if destination.exists():raise ValueError("Use a fresh context directory")
     destination.mkdir(parents=True)
-    sources=[v for v in FILES if v!="Dockerfile"]+["deployment/decoupled/Dockerfile","web/azure_app.py","web/static/api.js",*ATTRIBUTION]
+    sources=[v for v in FILES if v!="Dockerfile"]+["deployment/decoupled/Dockerfile","web/azure_app.py","web/static/api.js","web/static/backend.html","web/static/backend.css","web/static/backend.js",*ATTRIBUTION]
     records=[]
     for source in sources:
         data=git("show",commit+":"+source)

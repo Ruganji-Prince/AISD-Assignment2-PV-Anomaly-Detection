@@ -24,6 +24,14 @@ def trusted_origins(value=None):
     return list(dict.fromkeys(origins))
 
 ORIGINS=trusted_origins(os.environ.get("PV_FRONTEND_ORIGINS"))
-app=CORSMiddleware(inference_app,allow_origins=ORIGINS,allow_methods=["GET","POST"],
+async def azure_interface(scope, receive, send):
+    # Only the Azure root presentation changes. All routes retain the original app,
+    # security/timing middleware, validation, lifecycle and inference implementation.
+    if scope["type"] == "http" and scope["path"] == "/":
+        scope = {**scope, "pv_backend_identity": True}
+    await inference_app(scope, receive, send)
+
+
+app=CORSMiddleware(azure_interface,allow_origins=ORIGINS,allow_methods=["GET","POST"],
                    allow_headers=["Content-Type"],allow_credentials=False,
                    expose_headers=["Server-Timing","X-PV-Instance","X-PV-Initialized","Retry-After"],max_age=600)
